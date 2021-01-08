@@ -1,102 +1,92 @@
-CREATE DATABASE IF NOT EXISTS portal_hackatones CHARACTER SET="utf8mb4" COLLATE="utf8mb4_unicode_ci";
-use portal_hackatones;
+CREATE DATABASE IF NOT EXISTS portal_hackathones CHARACTER SET="utf8mb4" COLLATE="utf8mb4_unicode_ci";
+use portal_hackathones;
 
-CREATE TABLE IF NOT EXISTS usuario (
+CREATE TABLE IF NOT EXISTS competitor (
     id INTEGER AUTO_INCREMENT PRIMARY KEY,
-	activo ENUM ('true','false') NOT NULL DEFAULT 'true',
-	nombre VARCHAR(50) not null,
-    apellidos VARCHAR(50) not null,
-    fecha_registro timestamp not null ,
+	active_user ENUM ('true','false') NOT NULL DEFAULT 'true',
+	user_name VARCHAR(50) not null,
+    surname VARCHAR(50) not null,
+    register_date timestamp not null ,
     email varchar(50) not null,
-    especialidad ENUM ('desarrollador','diseñador','marketing','otro'),
-    usr_password varchar(50) not null,
-    fecha_creacion timestamp not null default current_timestamp,
-    ultima_modificacion timestamp not null default current_timestamp
+    professional_profile ENUM ('desarrollador','diseñador','marketing','otro'),
+    rol ENUM ('user','organizer'),
+    user_password varchar(100) not null,
+    creation_date timestamp not null default current_timestamp,
+    last_update timestamp not null default current_timestamp on update current_timestamp
 ) ;
 
-CREATE TABLE IF NOT EXISTS organizador (
-    id INTEGER AUTO_INCREMENT PRIMARY KEY,
-	activo ENUM ('true','false') NOT NULL DEFAULT 'true',
-	nombre VARCHAR(50) not null,
-    apellidos VARCHAR(50) not null,
-    fecha_registro timestamp not null ,
-    email varchar(50) not null,
-    usr_password varchar(50) not null,
-    fecha_creacion timestamp not null default current_timestamp,
-    ultima_modificacion timestamp not null default current_timestamp
-) ;
 
-create table if not exists enlace (
+create table if not exists link (
 	id integer auto_increment primary key,
     url varchar(100) not null,
-    nombre varchar(30) not null,
-    fecha_creacion timestamp not null default current_timestamp,
-    ultima_modificacion timestamp not null default current_timestamp
+    web_name varchar(30) not null,
+    creation_date timestamp not null default current_timestamp,
+    last_update timestamp not null default current_timestamp on update current_timestamp
 );
 
-create table if not exists tecnologia (
+create table if not exists tech (
 	id integer auto_increment primary key,
-    nombre varchar(50) not null,
-    fecha_creacion timestamp not null default current_timestamp,
-    ultima_modificacion timestamp not null default current_timestamp
+    tech_name varchar(50) not null,
+    creation_date timestamp not null default current_timestamp,
+    last_update timestamp not null default current_timestamp on update current_timestamp
 );
 
-create table if not exists hackaton (
+create table if not exists hackathon (
 	id integer auto_increment primary key,
-	formato enum ('online','presencial','semipresencial') not null ,
-    fecha_inicio date not null,
-    fecha_fin date not null,
-    estado enum ('pendiente','realizado','cancelado') default 'pendiente',
-    descripcion text ,
-    id_organizador integer not null,
-    fecha_creacion timestamp not null default current_timestamp,
-    ultima_modificacion timestamp not null default current_timestamp,
+	hackathon_place enum ('online','presencial','semipresencial') not null ,
+    city varchar(50),
+    start_date date not null,
+    end_date date not null,
+    hackathon_status enum ('pendiente','realizado','cancelado') default 'pendiente',
+    hackathon_info text ,
+    id_organizer integer not null,
+    creation_date timestamp not null default current_timestamp,
+    last_update timestamp not null default current_timestamp on update current_timestamp,
     
     constraint hackaton_fk1 
-		FOREIGN KEY(id_organizador) REFERENCES organizador(id) ON DELETE CASCADE
+		FOREIGN KEY(id_organizer) REFERENCES competitor(id) ON DELETE CASCADE
 );
 
 
 
-create table if not exists usuario_hackaton (
-	id_usuario int not null,
-	id_hackaton int not null,
-    estado enum ('inscrito','cancelado','asistente') default 'inscrito',
+create table if not exists competitor_hackathon (
+	id_competitor int not null,
+	id_hackathon int not null,
+    inscription_status enum ('inscrito','cancelado','asistente') default 'inscrito',
     ranking int not null default 0,
-    id_reserva varchar(20) not null,
-    primary key (id_usuario,id_hackaton),
-    fecha_creacion timestamp not null default current_timestamp,
-    ultima_modificacion timestamp not null default current_timestamp,
+    id_booking varchar(20) not null,
+    primary key (id_competitor,id_hackathon),
+    creation_date timestamp not null default current_timestamp,
+    last_update timestamp not null default current_timestamp on update current_timestamp,
     
-    constraint usuario_hackaton_fk1 
-		FOREIGN KEY(id_usuario) REFERENCES usuario(id) ON DELETE CASCADE,
-	 constraint usuario_hackaton_fk2 
-		FOREIGN KEY(id_hackaton) REFERENCES hackaton(id) ON DELETE CASCADE
+    constraint competitor_hackathon_fk1 
+		FOREIGN KEY(id_competitor) REFERENCES competitor(id) ON DELETE CASCADE,
+	 constraint competitor_hackathon_fk2 
+		FOREIGN KEY(id_hackathon) REFERENCES hackathon(id) ON DELETE CASCADE
 );
 
-create table if not exists hackaton_enlace (
-	id_hackaton integer not null,
-    id_enlace integer not null,
-    primary key (id_hackaton, id_enlace),
-    fecha_creacion timestamp not null default current_timestamp,
-    ultima_modificacion timestamp not null default current_timestamp,
+create table if not exists hackathon_link (
+	id_hackathon integer not null,
+    id_link integer not null,
+    primary key (id_hackathon, id_link),
+    creation_date timestamp not null default current_timestamp,
+    last_update timestamp not null default current_timestamp on update current_timestamp,
     
-    constraint hackaton_enlace_fk1 
-		FOREIGN KEY(id_hackaton) REFERENCES hackaton(id) ON DELETE CASCADE,
-	 constraint hackaton_enlace_fk2 
-		FOREIGN KEY(id_enlace) REFERENCES enlace(id) ON DELETE CASCADE    
+    constraint hackathon_link_fk1 
+		FOREIGN KEY(id_hackathon) REFERENCES hackathon(id) ON DELETE CASCADE,
+	 constraint hackathon_link_fk2 
+		FOREIGN KEY(id_link) REFERENCES link(id) ON DELETE CASCADE    
 );
 
-create table if not exists hackaton_tecnologia (
-	id_hackaton integer not null,
-    id_tecnologia integer not null,
-    primary key (id_hackaton, id_tecnologia),
-    fecha_creacion timestamp not null default current_timestamp,
-    ultima_modificacion timestamp not null default current_timestamp,
+create table if not exists hackathon_tech (
+	id_hackathon integer not null,
+    id_tech integer not null,
+    primary key (id_hackathon, id_tech),
+    creation_date timestamp not null default current_timestamp,
+    last_update timestamp not null default current_timestamp on update current_timestamp,
     
-    constraint hackaton_tecnologia_fk1 
-		FOREIGN KEY(id_hackaton) REFERENCES hackaton(id) ON DELETE CASCADE,
-	 constraint hackaton_tecnologia_fk2 
-		FOREIGN KEY(id_tecnologia) REFERENCES tecnologia(id) ON DELETE CASCADE    
+    constraint hackathon_tech_fk1 
+		FOREIGN KEY(id_hackathon) REFERENCES hackathon(id) ON DELETE CASCADE,
+	 constraint hackathon_tech_fk2 
+		FOREIGN KEY(id_tech) REFERENCES tech(id) ON DELETE CASCADE    
 );
-
