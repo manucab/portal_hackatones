@@ -1,7 +1,6 @@
 //Dependencies
 
 require("dotenv").config();
-const get = require('../controllers/get/showAll')
 
 
 const bodyParser = require("body-parser");
@@ -21,7 +20,6 @@ app.use(bodyParser.urlencoded({extended: true}))
 
 app.use('/user',userRouter)
 
-console.log(port)
 
 
 
