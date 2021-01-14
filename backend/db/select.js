@@ -1,22 +1,5 @@
-const { getConnection } = require("./connection");
+const performQuery = require("./performQuery")
 
-const performQuery = async (query, params) => {
-  let connection;
-
-  try {
-    connection = await getConnection();
-
-    const [result] = await connection.query(query, params);
-
-    return result;
-  } catch (e) {
-    throw new Error("database-error");
-  } finally {
-    if (connection) {
-      connection.release();
-    }
-  }
-};
 
 const profileInfo = async (id) => {
   const queryProfile =
@@ -29,7 +12,9 @@ const profileInfo = async (id) => {
         join tech d on d.id = c.id_tech
         where b.id_competitor=?`;
 
-    const queryStats = `select count(*) participaciones, round (avg(ranking),0) puesto_medio, min(ranking) mejor_puesto  
+    const queryStats = `select count(*) participaciones,
+        coalesce(round (avg(ranking),0),'Sin registros previos') puesto_medio,
+        coalesce(min(ranking),'Sin registros previos') mejor_puesto  
         from competitor_hackathon a where a.id_competitor=?`
   const params = [id];
 
@@ -43,6 +28,5 @@ const profileInfo = async (id) => {
 };
 
 module.exports = {
-  performQuery,
   profileInfo,
 };
