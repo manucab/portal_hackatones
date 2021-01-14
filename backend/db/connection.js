@@ -1,3 +1,4 @@
+// Variables && instances
 require('dotenv').config();
 const mysql = require("mysql2/promise");
 
@@ -16,12 +17,15 @@ async function getConnection() {
             });
         }
 
-        return  await pool.getConnection();
+        return await pool.getConnection();
     } catch (e) {
         console.log('Error conecton with database', 'e=>', e);
     }
 
 }
+
+
+getConnection();
 
 module.exports = {
     getConnection,
