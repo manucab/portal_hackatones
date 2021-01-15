@@ -30,6 +30,24 @@ const updateProfileInfo = async (id,name,surname,email,professional_profile,rol)
 
 }
 
+const rateHackathon = async (idUser,idHackathon,rate) => {
+
+    //Inscription_status is used to be sure the hackathon has alreday been ended.
+    //This works if in the front we only have a button to rate in already finished hackathons
+    const query= `
+    update competitor_hackathon
+    set rate = ?
+    where id_competitor = ? and id_hackathon = ? and inscription_status = 'asistente'`
+    
+    const params = [rate,idUser,idHackathon]
+    
+    result = await performQuery(query,params)
+
+    return 'Gracias por valorar el hackathon' 
+
+}
+
 module.exports = {
-    updateProfileInfo
+    updateProfileInfo,
+    rateHackathon
 }
