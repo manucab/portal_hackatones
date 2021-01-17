@@ -2,16 +2,14 @@
 require('dotenv').config();
 const bcrypt = require('bcrypt');
 const jwt = require('jsonwebtoken');
-const { loginValidator } = require('../validators/validateLogin');
-const { getUserDB } = require('../db/select');
+const { loginValidator } = require('../../validators/validateLogin');
+const { getAdminDB } = require('../../db/adminRoot/db_Select');
 
 
 const login = async(req, res) => {
 
     // 1. Get params
     const { email, password } = req.body
-
-    console.log('Email, password', email, password);
 
     try {
 
@@ -25,31 +23,41 @@ const login = async(req, res) => {
         }
 
         // 3. If are valid, check if they are in the database
-        const user = await getUserDB(email);
+        const user = await getAdminDB(email);
 
-        console.info('UserDB:', user);
+        console.log('user :>> ', user);
+
+        console.log('user.password :>> ', user[0].password);
 
         // Not user in database --> failed
         if (user.length === 0) {
             console.log('!user', user);
-            res.status(401).send();
+            res.status(401).send('User not found');
             return;
         }
 
         // 4. Check password with bcrypt
-        const db_password = user.password;
+        const db_password = user[0].password;
         const passwordIsvalid = await bcrypt.compare(password, db_password);
+
+
+        console.log('db_password :>> ', db_password);
+        console.log('password :>> ', password);
+
+        console.log(passwordIsvalid);
 
         // If not valid password --> failed
         if (!passwordIsvalid) {
+            console.log('Invalid password');
             res.status(401).send()
             return
         }
 
         // info to put inside the token
         const tokenPayload = {
-            email: user.email,
-            rol: user.rol
+            email: user[0].email,
+            key_admin: user[0].key_admin,
+            id_admin: user[0].id_admin
         }
 
         console.log(tokenPayload);

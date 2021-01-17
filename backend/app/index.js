@@ -5,21 +5,54 @@ const cors = require("cors");
 const express = require("express");
 
 const port = process.env.PORT || 4444;
-
-// Routes
-// const userRouter = require('../routes/user');
-
 const app = express();
 
-//Middlewares
+// Routes
+const adminRouter = require('../routes/admin/admin');
+const loginRouter = require('../routes/login');
+
+
+// const userRouter = require('../routes/user');
+
+
+// Middlewares
 app.use(cors());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
 
+// Endpoints
+// Admin
+app.use('/admin', adminRouter);
+// Landingpage
+app.use('/login', loginRouter);
+
+
+
+// app.post('/validate', validateAccount);
+// app.post('/register', register);
+
+// //Hackathones Page
+// app.get('/hackathon/:filters', filterHackathons);
+// app.get('/hackathon/:id', getHackathonInfo);
+
+// //Hackathon Page
+// app.post('/hackathon/id/enroll', isAuthenticated, enrollHackathon);
+// app.post('/hackathon/id/comments', isAuthenticated, postComment);
+// app.post('/hackathon/id/comments/id', isAuthenticated, isRightUser, modifyComment);
+
+
+// //Create Hackathon Page
+// app.post('/createhackathon', isAuthenticated, isOrganizer, createHackathon);
+
+
+//// ********************************
+
+
+
 // app.use('/user', userRouter);
 
-// Test connection db
+// // Test connection db
 // const db = require('../db/connection');
 
 // console.log(db.getConnection());
