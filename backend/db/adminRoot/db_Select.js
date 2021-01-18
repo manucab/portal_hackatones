@@ -3,7 +3,7 @@ const { performQuery } = require('../performQuery');
 
 const getUserDB = async(email) => {
 
-    const query = 'select * from user where email=?';
+    const query = 'select * from competitor where email=?';
 
     const params = [email];
 
@@ -14,7 +14,7 @@ const getUserDB = async(email) => {
 
 const getAllUsersDB = async() => {
 
-    const query = 'select * from user';
+    const query = 'select * from competitor';
 
     const params = [];
 

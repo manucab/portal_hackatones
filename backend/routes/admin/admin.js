@@ -13,7 +13,7 @@ const { createInitAdmin } = require('../../controllers/admin/initRoot');
 const { login } = require('../../controllers/admin/login');
 // // Post
 const { newAdmin } = require('../../controllers/admin/newAdmin');
-// const { newUser } = require('../../controllers/admin/post/newUser');
+const { newUser } = require('../../controllers/admin/newUser');
 
 
 // Middelware
@@ -33,13 +33,13 @@ const { isAuthenticated, isAdmin } = require('../../middelwares/authorization/au
 
 
 // ** POST **
-// // Login admin
-router.post('/login', login);
 // Create a default admin 'root'
 router.post('/init/:key', iskeyRoot, createInitAdmin);
-// // Create admin
+// Login admin
+router.post('/login', login);
+// Create admin
 router.post('/newAdmin', isAuthenticated, isAdmin, newAdmin);
-// // Create new user
-// router.post('/newUser', isAuthenticated, isAdmin, newUser);
+// Create new user
+router.post('/newUser', isAuthenticated, isAdmin, newUser);
 
 module.exports = router;
