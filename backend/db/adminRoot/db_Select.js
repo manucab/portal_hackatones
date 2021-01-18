@@ -57,10 +57,22 @@ const getCodeAdminqDB = async(code) => {
     return result;
 }
 
+const getOrganizerDB = async(email) => {
+
+    const query = 'select * from competitor where email=? and rol="organizer" ';
+
+    const params = [email];
+
+    const result = await performQuery(query, params);
+
+    return result;
+}
+
 module.exports = {
     getUserDB,
     getCodeAdminqDB,
     getAdminDB,
     getAllUsersDB,
-    getAllAdminsDB
+    getAllAdminsDB,
+    getOrganizerDB
 }

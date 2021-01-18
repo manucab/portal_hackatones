@@ -2,7 +2,7 @@
 require('dotenv').config();
 const { performQuery } = require('../db/performQuery');
 
-// Get user 
+// Get user
 const getUserDB = async(email) => {
 
     const query = 'select * from competitor where email=?';
@@ -13,7 +13,6 @@ const getUserDB = async(email) => {
 
     return result;
 }
-
 
 module.exports = {
     getUserDB

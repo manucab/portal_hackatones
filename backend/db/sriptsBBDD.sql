@@ -84,9 +84,23 @@ create table if not exists hackathon_tech (
     primary key (id_hackathon, id_tech),
     creation_date timestamp not null default current_timestamp,
     last_update timestamp not null default current_timestamp on update current_timestamp,
-    
+
     constraint hackathon_tech_fk1
 		FOREIGN KEY(id_hackathon) REFERENCES hackathon(id) ON DELETE CASCADE,
 	 constraint hackathon_tech_fk2
 		FOREIGN KEY(id_tech) REFERENCES tech(id) ON DELETE CASCADE
 );
+
+// Create a table of admins
+create table  if not exists admin (
+
+	id_admin int unsigned auto_increment primary key,
+	code varchar(100) unique,
+	key_admin varchar(100) not null unique,
+	name varchar(100) not null,
+	email varchar(100) not null unique,
+	state boolean not null default 0,
+	password varchar(100) not null,
+	creationDate timestamp default current_timestamp,
+	updateDate timestamp default current_timestamp on update current_timestamp
+	);

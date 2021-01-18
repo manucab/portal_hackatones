@@ -5,13 +5,12 @@ const router = express.Router();
 // Controller
 const { createHackathon } = require('../controllers/post');
 
-
 // Middelware
-const { isAuthenticated, isAdmin } = require('../middelwares/authorization/auth');
+const { isAuthenticated, isAdmin, isOrganizer } = require('../middelwares/authorization/auth');
 
 // **** POST *****
-// Create a new hack
-router.post('/', isAuthenticated /*, isOrganizer || */ , isAdmin, createHackathon);
+// Create a new hackathon
+router.post('/', isAuthenticated , isAdmin || isOrganizer , createHackathon);
 
 
 module.exports = router;

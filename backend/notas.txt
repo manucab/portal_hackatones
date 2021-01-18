@@ -1,3 +1,5 @@
-Bd en 'competitor' valor por defecto en 'active_user' deberia de ser 'false'
-Falta en user un apartado q se llame code o algo asi, para verificar que ese codigo de activacion es el mismo que se paso por email.
-Register_data en competitor, timestamp??¿ por defecto¿?
+1. Bd en 'competitor' valor por defecto en 'active_user' deberia de ser 'false'
+2. Falta en user un apartado q se llame code o algo asi, para verificar que ese codigo de activacion es el mismo que se paso por email.
+3. Register_data en competitor, timestamp??¿ por defecto¿?
+4. Añadit a db a la tabla de hackathon un campo que sea especifico para ese hackathon. Tipo un identificador para comprobar si exixte uno
+parecisdo en la base de datos.

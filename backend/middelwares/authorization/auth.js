@@ -1,7 +1,7 @@
 // Variables && instances
 require('dotenv').config();
 const jwt = require('jsonwebtoken');
-const { getAdminDB, getCodeAdminqDB } = require('../../db/adminRoot/db_Select');
+const { getAdminDB, getCodeAdminqDB,getOrganizerDB } = require('../../db/adminRoot/db_Select');
 const { resetAdminCode } = require('../../db/adminRoot/db_update');
 
 const isAuthenticated = async(req, res, next) => {
@@ -75,7 +75,38 @@ const isAdmin = async(req, res, next) => {
 
 }
 
+// Check if you are an organizer
+const isOrganizer = async(req, res, next) => {
+
+     const { email } = req.auth;
+
+     // 2. Search in database
+     const user = await getOrganizerDB(email);
+
+     console.log('user isOrganizer:>> ', user);
+
+    // if not user --> failed
+    if (!user) {
+        res.status(401).send();
+        return;
+    }
+
+
+    console.log('user.state :>> ', user[0].state);
+
+
+    if (user[0].state) {
+        console.log('Is organizer and state ACTIVE');
+        next();
+    }else{
+      console.log('Is organizer but, he isnst ACTIVE');
+      res.status(401).send('The organizer exists but its status is not activated');
+    }
+
+}
+
 module.exports = {
     isAdmin,
-    isAuthenticated
+    isAuthenticated,
+    isOrganizer
 };
