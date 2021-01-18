@@ -10,6 +10,7 @@ const app = express();
 // Routes
 const adminRouter = require('../routes/admin/admin');
 const loginRouter = require('../routes/login');
+const createHackathonRouter = require('../routes/createHackathon');
 
 
 // const userRouter = require('../routes/user');
@@ -32,19 +33,18 @@ app.use('/login', loginRouter);
 // app.post('/validate', validateAccount);
 // app.post('/register', register);
 
-// //Hackathones Page
+//Hackathones Page
 // app.get('/hackathon/:filters', filterHackathons);
 // app.get('/hackathon/:id', getHackathonInfo);
 
 // //Hackathon Page
-// app.post('/hackathon/id/enroll', isAuthenticated, enrollHackathon);
+// app.post('/hackathon/id/enroll', isAuthenticated, enrollHackathon); // Inscribirse a un hackathon
 // app.post('/hackathon/id/comments', isAuthenticated, postComment);
 // app.post('/hackathon/id/comments/id', isAuthenticated, isRightUser, modifyComment);
 
 
-// //Create Hackathon Page
-// app.post('/createhackathon', isAuthenticated, isOrganizer, createHackathon);
-
+// Create Hackathon Page
+app.use('/createhackathon', createHackathonRouter);
 
 //// ********************************
 

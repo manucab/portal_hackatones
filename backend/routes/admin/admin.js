@@ -42,4 +42,5 @@ router.post('/newAdmin', isAuthenticated, isAdmin, newAdmin);
 // Create new user
 router.post('/newUser', isAuthenticated, isAdmin, newUser);
 
+
 module.exports = router;
