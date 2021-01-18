@@ -1,12 +1,13 @@
+const formatDate = require ('../utils/formatDate')
 const performQuery = require("./performQuery")
 
 
 const updateProfileInfo = async (id,name,surname,email,professional_profile,rol) => {
 
     
-    const queryInfo = `select * from competitor where id = ?`
-    const paramsInfo = [id]
-    infoToUpdate = await performQuery(queryInfo,paramsInfo)
+    const queryOriginalInfo = `select * from competitor where id = ?`
+    const paramsOriginalInfo = [id]
+    originalInfo = await performQuery(queryOriginalInfo,paramsOriginalInfo)
 
     const query= `
     update competitor
@@ -16,11 +17,11 @@ const updateProfileInfo = async (id,name,surname,email,professional_profile,rol)
     professional_profile = ?,
     rol = ? 
     where id = ?`
-    const params = [name || infoToUpdate[0].user_name,
-        surname || infoToUpdate[0].surname,
-        email || infoToUpdate[0].email,
-        professional_profile || infoToUpdate[0].professional_profile,
-        rol || infoToUpdate[0].rol,
+    const params = [name || originalInfo[0].user_name,
+        surname || originalInfo[0].surname,
+        email || originalInfo[0].email,
+        professional_profile || originalInfo[0].professional_profile,
+        rol || originalInfo[0].rol,
         id]
    
     
@@ -47,7 +48,43 @@ const rateHackathon = async (idUser,idHackathon,rate) => {
 
 }
 
+const modifyHackathon = async (idUser,idHackathon,name,place,city,start_date,end_date,status,info) => {
+
+    const queryOriginalInfo = `select * from hackathon where id = ?`
+    const paramsOriginalInfo = [idHackathon]
+    originalInfo = await performQuery(queryOriginalInfo,paramsOriginalInfo)
+
+    const query= `
+    update hackathon
+    set hackathon_name = ?,
+    hackathon_place = ?,
+    city = ?,
+    start_date = ?,
+    end_date = ?,
+    hackathon_status =?,
+    hackathon_info = ?
+    where id = ? and id_organizer = ?`
+    const params = [name || originalInfo[0].hackathon_name,
+        place || originalInfo[0].hackathon_place,
+        city || originalInfo[0].city,
+        start_date || formatDate(originalInfo[0].start_date),
+        end_date || formatDate(originalInfo[0].end_date),
+        status || originalInfo[0].hackathon_status,
+        info || originalInfo[0].hackathon_info,
+        idHackathon,
+        idUser]
+    console.log(params)
+    
+    result = await performQuery(query,params)
+
+    return 'Cambios realizados con éxito' 
+
+}
+
+
+
 module.exports = {
     updateProfileInfo,
-    rateHackathon
+    rateHackathon,
+    modifyHackathon
 }
