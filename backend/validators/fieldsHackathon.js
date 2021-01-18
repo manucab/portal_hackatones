@@ -1,11 +1,10 @@
 const Joi = require('joi');
 
 const fieldsHackathons = Joi.object({
-
-// Comprobar con objetos ..... *******
-
-  place:  Joi.string()
-      .validate(['online', 'presencial', 'semipresencial']),
+  place:  Joi.string().valid('online', 'presencial', 'semipresencial').required(),
+start_date: Joi.date().required(),
+end_date: Joi.date().required(),
+id_organizer: Joi.number().required(),
 })
 
 module.exports = {
