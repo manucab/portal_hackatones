@@ -13,6 +13,4 @@ const deleteUser = async (req,res) => {
     res.send(info)
 }
 
-module.exports = {
-    deleteUser
-}
+module.exports = deleteUser

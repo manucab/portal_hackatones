@@ -14,6 +14,4 @@ const rateHackathon = async (req,res) => {
     res.send(info)
 }
 
-module.exports = {
-    rateHackathon
-}
+module.exports = rateHackathon

@@ -12,7 +12,7 @@ const profileInfo = async (id) => {
         join competitor_hackathon b on a.id=b.id_hackathon
         join hackathon_tech c on c.id_hackathon = b.id_hackathon
         join tech d on d.id = c.id_tech
-        where b.id_competitor=?`;
+        where b.id_competitor=? and not a.hackathon_status = 'cancelado'`;
 
     const queryStats = `select count(*) participaciones,
         coalesce(round (avg(ranking),0),'Sin registros previos') puesto_medio,

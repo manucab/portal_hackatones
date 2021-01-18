@@ -13,6 +13,4 @@ const profileInfo = async (req,res) => {
     res.send(info)
 }
 
-module.exports = {
-    profileInfo
-}
+module.exports = profileInfo

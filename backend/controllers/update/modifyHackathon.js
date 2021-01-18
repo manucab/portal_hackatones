@@ -17,6 +17,4 @@ const modifyHackathon = async (req,res) => {
     res.send(info)
 }
 
-module.exports = {
-    modifyHackathon
-}
+module.exports = modifyHackathon

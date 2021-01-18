@@ -14,6 +14,4 @@ const updateProfileInfo = async (req,res) => {
     res.send(info)
 }
 
-module.exports = {
-    updateProfileInfo
-}
+module.exports = updateProfileInfo
