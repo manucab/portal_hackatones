@@ -24,7 +24,7 @@ const profileInfo = async (id) => {
   const hackathones = await performQuery(queryHackathons, params);
   const stats = await performQuery(queryStats, params)
 
-  result = [profile, hackathones, stats];
+  const result = [profile, hackathones, stats];
 
   return result;
 };
@@ -42,7 +42,7 @@ const filterPosts = async (filter) => {
 
     console.log(query)
 
-    result = await performQuery(query,params)
+    const result = await performQuery(query,params)
     return result
 
 
@@ -53,7 +53,7 @@ const filterPosts = async (filter) => {
     ORDER  BY puntuacion DESC LIMIT 50;`
     const params = [filter,filter]
 
-    result = await performQuery(query,params)
+    const result = await performQuery(query,params)
     return result
 
   }

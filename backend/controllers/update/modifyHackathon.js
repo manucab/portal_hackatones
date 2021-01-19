@@ -8,13 +8,12 @@ const modifyHackathon = async (req,res) => {
 
     try {
         await hackathonValidator.validateAsync(req.body)
-        info = await db.modifyHackathon(idUser,idHackathon,name,place,city,start_date,end_date,status,info)
+        result = await db.modifyHackathon(idUser,idHackathon,name,place,city,start_date,end_date,status,info)
     } catch (e) {
-        console.log(e)
         res.send(e.message)
         return
     }
-    res.send(info)
+    res.send(result)
 }
 
 module.exports = modifyHackathon

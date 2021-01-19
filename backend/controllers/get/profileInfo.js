@@ -5,12 +5,12 @@ const profileInfo = async (req,res) => {
     const {id} = req.params
 
     try {
-        info = await db.profileInfo(id)
+        result = await db.profileInfo(id)
     } catch (e) {
         res.send(e.message)
         return
     }
-    res.send(info)
+    res.send(result)
 }
 
 module.exports = profileInfo

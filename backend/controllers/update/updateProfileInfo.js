@@ -6,12 +6,12 @@ const updateProfileInfo = async (req,res) => {
     const {id} = req.params
 
     try {
-        info = await db.updateProfileInfo(id,name ,surname, email, professional_profile, rol)
+        result = await db.updateProfileInfo(id,name ,surname, email, professional_profile, rol)
     } catch (e) {
         res.send(e.message)
         return
     }
-    res.send(info)
+    res.send(result)
 }
 
 module.exports = updateProfileInfo

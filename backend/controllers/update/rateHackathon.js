@@ -6,12 +6,12 @@ const rateHackathon = async (req,res) => {
     const {idUser,idHackathon} = req.params
 
     try {
-        info = await db.rateHackathon(idUser,idHackathon,rate)
+        result = await db.rateHackathon(idUser,idHackathon,rate)
     } catch (e) {
         res.send(e.message)
         return
     }
-    res.send(info)
+    res.send(result)
 }
 
 module.exports = rateHackathon
