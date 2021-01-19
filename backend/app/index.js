@@ -8,6 +8,7 @@ const cors = require("cors");
 const express = require("express");
 
 const userRouter = require('../routes/user')
+const blogRouter = require('../routes/blog')
 
 const app = express();
 
@@ -19,6 +20,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}))
 
 app.use('/user',userRouter)
+app.use('/blog',blogRouter)
 
 
 
