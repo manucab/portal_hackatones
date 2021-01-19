@@ -13,6 +13,7 @@ const adminRouter = require('../routes/admin/admin');
 const loginRouter = require('../routes/login');
 const createHackathonRouter = require('../routes/createHackathon');
 const userRouter = require('../routes/user');
+const registerRouter = require('../routes/');
 
 // Middlewares
 app.use(cors());
@@ -26,6 +27,8 @@ app.use('/', homeRouter);
 app.use('/admin', adminRouter);
 // Login
 app.use('/login', loginRouter);
+// Register
+app.user('/register',registerRouter );
 
 // app.post('/register', register);
 
@@ -34,15 +37,16 @@ app.use('/login', loginRouter);
 // app.get('/hackathon/:id', getHackathonInfo);
 
 // Hackathon Page
-// app.post('/hackathon/id/enroll', isAuthenticated, enrollHackathon);  Inscribirse a un hackathon
-// app.post('/hackathon/id/comments', isAuthenticated, postComment);
-// app.post('/hackathon/id/comments/id', isAuthenticated, isRightUser, modifyComment);
+// app.post('/hackathon/id/enroll', isAuthenticated, enrollHackathon); // Inscribirse a un hackathon
+// app.post('/hackathon/id/comments', isAuthenticated, postComment); // Publicar comentario
+// app.post('/hackathon/id/comments/id', isAuthenticated, isRightUser, modifyComment); // Modificar comentario
 
 // Create Hackathon Page
 app.use('/createhackathon', createHackathonRouter);
 
 //// ********************************
 
+//User -> validate account
  app.use('/user', userRouter);
 
 //  Test connection db
