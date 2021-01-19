@@ -1,6 +1,5 @@
 const db = require('../../db/update')
 const {hackathonValidator} = require('../../validators/hackathonValidator')
-
 const modifyHackathon = async (req,res) => {
 
     let {name,place,city,start_date,end_date,status,info} = req.body

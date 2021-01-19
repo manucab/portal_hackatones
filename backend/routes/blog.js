@@ -3,8 +3,10 @@ const router = express.Router()
 
 const addPost = require('../controllers/post/addPost')
 const filterPosts = require('../controllers/get/filterPosts')
+const modifyPost = require('../controllers/update/modifyPost')
 
 router.get('/:filter',filterPosts)
-router.put('/insert', addPost)
+router.post('/add', addPost)
+router.put('/:id/modify',modifyPost)
 
 module.exports = router

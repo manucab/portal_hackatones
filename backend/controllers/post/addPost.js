@@ -1,4 +1,4 @@
-const db = require('../../db/')
+const db = require('../../db/update')
 
 const addPost = async (req,res) => {
 
