@@ -45,8 +45,22 @@ const deleteHackathon = async (idUser,idHackathon) => {
 
 }
 
+const deletePost = async (idPost) => {
+
+    const query= `delete from post
+    where id = ?`
+    const params = [idPost]
+   
+    result = await performQuery(query,params)
+
+    return 'Se ha eliminado el post' 
+
+
+}
+
 module.exports = {
     deleteUser,
     cancelHackathonBooking,
-    deleteHackathon
+    deleteHackathon,
+    deletePost
 }
