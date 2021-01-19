@@ -12,6 +12,21 @@ const resetAdminCode = async(code) => {
     return result;
 }
 
+
+const updateStateUser = async(id_user) => {
+
+    const query = 'update competitor set active_user="true", code="" where id=?';
+
+    const params = [id_user];
+
+    const result = await performQuery(query, params);
+
+    return result;
+}
+
+
+
 module.exports = {
-    resetAdminCode
+    resetAdminCode,
+    updateStateUser
 }

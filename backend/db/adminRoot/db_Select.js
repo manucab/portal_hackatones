@@ -1,6 +1,19 @@
 require('dotenv').config();
 const { performQuery } = require('../performQuery');
 
+
+const getCodeUserDB = async(code) => {
+
+    const query = 'select * from competitor where code=?';
+
+    const params = [code];
+
+    const [result] = await performQuery(query, params);
+
+    return result;
+}
+
+
 const getUserDB = async(email) => {
 
     const query = 'select * from competitor where email=?';
@@ -74,5 +87,6 @@ module.exports = {
     getAdminDB,
     getAllUsersDB,
     getAllAdminsDB,
-    getOrganizerDB
+    getOrganizerDB,
+    getCodeUserDB
 }

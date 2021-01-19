@@ -12,6 +12,7 @@ const homeRouter = require('../routes/home');
 const adminRouter = require('../routes/admin/admin');
 const loginRouter = require('../routes/login');
 const createHackathonRouter = require('../routes/createHackathon');
+const userRouter = require('../routes/user');
 
 // Middlewares
 app.use(cors());
@@ -26,7 +27,6 @@ app.use('/admin', adminRouter);
 // Login
 app.use('/login', loginRouter);
 
-// app.post('/validate', validateAccount);
 // app.post('/register', register);
 
 //Hackathones Page
@@ -43,7 +43,7 @@ app.use('/createhackathon', createHackathonRouter);
 
 //// ********************************
 
-// app.use('/user', userRouter);
+ app.use('/user', userRouter);
 
 //  Test connection db
 // const db = require('../db/connection');

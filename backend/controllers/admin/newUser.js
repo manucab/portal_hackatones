@@ -43,7 +43,7 @@ const newUser = async(req, res) => {
         // Generate code for url validation
         const validationCode = cryptoRandomString({ length: parseInt(process.env.CODE_LEN), type: 'alphanumeric' });
 
-        let result = await registerNewUser(email, name, surname, register_date, professional_profile, rol, passwordEncrypt);
+        let result = await registerNewUser(email, name, surname, register_date, professional_profile, rol, passwordEncrypt,validationCode);
 
         result = (result === undefined) ? '[]' : result;
 
