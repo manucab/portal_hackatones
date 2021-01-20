@@ -12,9 +12,6 @@ const newUser = async(req, res) => {
     // 1. Get params
     const { email, name, surname, register_date, professional_profile, rol, password } = req.body
 
-    console.log(name);
-
-
     try {
 
         // 2. Check if the parameters are valid
@@ -28,8 +25,6 @@ const newUser = async(req, res) => {
 
         // 2.1 Check that this user not exist in Database
         const userDB = await getUserDB(email);
-
-        console.log('userDB :>> ', userDB);
 
         if (userDB) {
             console.log('A user with that name already exists');

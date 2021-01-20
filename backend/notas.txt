@@ -3,3 +3,4 @@
 3. Register_data en competitor, timestamp??¿ por defecto¿?
 4. Añadit a db a la tabla de hackathon un campo que sea especifico para ese hackathon. Tipo un identificador para comprobar si exixte uno
 parecisdo en la base de datos.
+5. Uso de transactions

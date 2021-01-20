@@ -3,16 +3,14 @@ const express = require('express');
 const router = express.Router();
 
 // Controller
-const {register} = require('../controllers/post');
+const {newUser} = require('../controllers/admin/newUser');
 
 // Middelware
+const  {isUser} =  require('../middelwares/authorization/auth');
+
 
 // **** POST *****
-// Register with new user in db
-
-router.post('/',isUser,register);
-
-// # Falta, hacer el controlador del login
-
+// Register new user in db
+router.post('/',isUser,newUser);
 
 module.exports = router;

@@ -91,7 +91,7 @@ create table if not exists hackathon_tech (
 		FOREIGN KEY(id_tech) REFERENCES tech(id) ON DELETE CASCADE
 );
 
-// Create a table of admins
+-- Create a table of admins
 create table  if not exists admin (
 
 	id_admin int unsigned auto_increment primary key,
@@ -104,3 +104,9 @@ create table  if not exists admin (
 	creationDate timestamp default current_timestamp,
 	updateDate timestamp default current_timestamp on update current_timestamp
 	);
+
+-- Modifications in the database:
+  -- Change default value in table 'competitor' and column 'active_user'
+  alter table competitor alter column active_user set default 'false';
+  -- Add a column 'code' in table 'competitor'
+  alter table competitor add column code varchar(100) not null;

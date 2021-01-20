@@ -3,6 +3,7 @@ require('dotenv').config();
 const jwt = require('jsonwebtoken');
 const {getAdminDB, getCodeAdminqDB, getOrganizerDB} = require('../../db/adminRoot/db_Select');
 const {resetAdminCode} = require('../../db/adminRoot/db_update');
+const {getUserDB} = require('../../db/select');
 
 const isAuthenticated = async (req, res, next) => {
 
@@ -85,8 +86,38 @@ const isOrganizer = async (req, res, next) => {
 
 }
 
+// Check if exist that user
+const isUser = async (req, res, next) => {
+
+  // 1. Obtein data email
+  const {email} = req.body;
+
+  console.log('email', email);
+  try {
+
+    // 2. Search in database
+    const user = await getUserDB(email);
+
+    // if user exist-> faild
+    if (user) {
+      console.log(`The user with email ${email} already exists`);
+      return   res.redirect('/');
+    }
+
+    console.log('The user not exist in db, he can register now');
+    next();
+
+  } catch (e) {
+    console.log('Error in auth isUser', e);
+    res.status(401).send();
+    return;
+  }
+
+}
+
 module.exports = {
   isAdmin,
   isAuthenticated,
-  isOrganizer
+  isOrganizer,
+  isUser
 };

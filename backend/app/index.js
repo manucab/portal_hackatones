@@ -13,7 +13,7 @@ const adminRouter = require('../routes/admin/admin');
 const loginRouter = require('../routes/login');
 const createHackathonRouter = require('../routes/createHackathon');
 const userRouter = require('../routes/user');
-const registerRouter = require('../routes/');
+const registerRouter = require('../routes/register');
 
 // Middlewares
 app.use(cors());
@@ -28,7 +28,7 @@ app.use('/admin', adminRouter);
 // Login
 app.use('/login', loginRouter);
 // Register
-app.user('/register',registerRouter );
+app.use('/register',registerRouter);
 
 // app.post('/register', register);
 
