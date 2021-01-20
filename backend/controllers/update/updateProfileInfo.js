@@ -1,4 +1,5 @@
 const db = require('../../db/update')
+const profileInfoValidator = require('../../validators/profileInfoValidator')
 
 const updateProfileInfo = async (req,res) => {
 
@@ -6,6 +7,7 @@ const updateProfileInfo = async (req,res) => {
     const {id} = req.params
 
     try {
+        await profileInfoValidator.validateAsync(req.body)
         result = await db.updateProfileInfo(id,name ,surname, email, professional_profile, rol)
     } catch (e) {
         res.send(e.message)
