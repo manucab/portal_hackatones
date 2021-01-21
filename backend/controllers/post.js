@@ -76,7 +76,8 @@ const createHackathon = async (req, res) => {
     start_date,
     end_date,
     id_organizer,
-    hackathon_info
+    hackathon_info,
+ thematic
   } = req.body
 
   try {
@@ -91,7 +92,7 @@ const createHackathon = async (req, res) => {
     }
 
     // if the params are valid, then post into db the new hackathon
-    await createHackathonDB(place, city, start_date, end_date, id_organizer, hackathon_info);
+    await createHackathonDB(place, city, start_date, end_date, id_organizer, hackathon_info,thematic);
 
     console.log('Create new hackathon successfully');
     res.send('Create new hackathon successfully');

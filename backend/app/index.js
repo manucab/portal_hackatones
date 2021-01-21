@@ -14,6 +14,7 @@ const loginRouter = require('../routes/login');
 const createHackathonRouter = require('../routes/createHackathon');
 const userRouter = require('../routes/user');
 const registerRouter = require('../routes/register');
+const hackathonRouter = require('../routes/hackathon');
 
 // Middlewares
 app.use(cors());
@@ -29,8 +30,8 @@ app.use('/admin', adminRouter);
 app.use('/login', loginRouter);
 // Register
 app.use('/register',registerRouter);
-
-// app.post('/register', register);
+// Hackathon
+app.use('/hackathon', hackathonRouter);
 
 //Hackathones Page
 // app.get('/hackathon/:filters', filterHackathons);

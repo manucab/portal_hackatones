@@ -4,3 +4,11 @@
 4. Añadit a db a la tabla de hackathon un campo que sea especifico para ese hackathon. Tipo un identificador para comprobar si exixte uno
 parecisdo en la base de datos.
 5. Uso de transactions
+6. Falta tematica en el hackaton en sql
+
+
+SELECT first_name, last_name, subsidiary_id, employee_id
+  FROM employees
+ WHERE ( subsidiary_id    = :sub_id OR :sub_id IS NULL )
+   AND ( employee_id      = :emp_id OR :emp_id IS NULL )
+   AND ( UPPER(last_name) = :name   OR :name   IS NULL )

@@ -110,3 +110,5 @@ create table  if not exists admin (
   alter table competitor alter column active_user set default 'false';
   -- Add a column 'code' in table 'competitor'
   alter table competitor add column code varchar(100) not null;
+  -- Add a column 'thematic' in table 'hackaton'
+  alter table hackathon add column thematic varchar(100) not null;
