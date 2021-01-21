@@ -11,5 +11,7 @@ const {getHackathonByFilters} = require('../controllers/get');
 // **** GET  *****
 // Search hackathons by some filters
 router.get('/filters',getHackathonByFilters);
+// Search hackathon by id
+router.get('/:id', getHackathonByFilters);
 
 module.exports = router;

@@ -23,13 +23,17 @@ const getHackathonByFilters = async (req, res) => {
     thematic
   } = req.query;
 
-  console.log(hackathon_place, city, start_date, end_date, technologies, thematic);
+  const {id} = req.params;
+
+console.log(id);
+
+  console.log(id,hackathon_place, city, start_date, end_date, technologies, thematic);
 
   // 1.0 Check the parameters are valid????
 
   try {
     //  2. Search parameters -> {hackathon_place, city,start_date, end_date, technologies,thematic }
-    const result = await getHackathonInfoDB(hackathon_place, city, start_date, end_date /*, technologies */,thematic);
+    const result = await getHackathonInfoDB(id,hackathon_place, city, start_date, end_date /*, technologies */,thematic);
     console.log('Result', result);
 
     if (!result){

@@ -1,38 +1,56 @@
 // Variables & instances
 require('dotenv').config();
-const { performQuery } = require('../db/performQuery');
-const { performQuery2 } = require('../db/performQuery2');
+const {performQuery} = require('../db/performQuery');
+const {performQuery2} = require('../db/performQuery2');
 
 // Get user
-const getUserDB = async(email) => {
+const getUserDB = async (email) => {
 
-    const query = 'select * from competitor where email=?';
+  const query = 'select * from competitor where email=?';
 
-    const params = [email];
+  const params = [email];
 
-    const [result] = await performQuery(query, params);
+  const [result] = await performQuery(query, params);
 
-    return result;
+  return result;
 }
 
 // Get hackaton info by some filters
-const getHackathonInfoDB = async(hackathon_place, city,start_date, end_date/*, technologies*/,thematic) => {
+const getHackathonInfoDB = async (id, hackathon_place, city, start_date, end_date,
+/* , technologies */
+thematic) => {
 
-     const query = `select * from hackathon where (hackathon_place = ? or ? is null ) and (city = ? or ? is null) and (start_date = ? or ?  is null) and (end_date =? or ? is null)  and (thematic = ? or ? is null)`;
-                              // and (technologies = ? or ? is null);
+  const query = `select * from hackathon where (id = ? or ? is null)
+     and (hackathon_place = ? or ? is null )
+     and (city = ? or ? is null)
+     and (start_date = ? or ?  is null)
+     and (end_date =? or ? is null)
+      and (thematic = ? or ? is null)`;
+  // and (technologies = ? or ? is null);
 
-                            
-     const params = [hackathon_place,hackathon_place, city, city,start_date,start_date, end_date,end_date /*, technologies*/,thematic,thematic];
+  const params = [
+    id,
+    id,
+    hackathon_place,
+    hackathon_place,
+    city,
+    city,
+    start_date,
+    start_date,
+    end_date,
+    end_date,
+    /* , technologies */
+    thematic,
+    thematic
+  ];
 
-    const result = await performQuery(query, params);
+  const result = await performQuery(query, params);
 
-    return result;
-
+  return result;
 
 }
 
-
 module.exports = {
-    getUserDB,
-    getHackathonInfoDB
+  getUserDB,
+  getHackathonInfoDB
 }
