@@ -8,17 +8,10 @@ const getIsAdminIsUserDB = async(email) => {
 
     const params = [email, email];
 
-    const result = await performQuery(query, params);
+    const [result] = await performQuery(query, params);
 
     return result;
 }
-
-/*
-select id_admin, name, email,state from admin where email='furboenvena10@gmail.com'  union all
- select id, user_name, email, active_user  from competitor where email='furboenvena10@gmail.es';
-*/
-
-
 
 const getCodeUserDB = async(code) => {
 
@@ -60,7 +53,7 @@ const getAdminDB = async(email) => {
 
     const params = [email];
 
-    const result = await performQuery(query, params);
+    const [result] = await performQuery(query, params);
 
     return result;
 }
@@ -94,7 +87,7 @@ const getOrganizerDB = async(email) => {
 
     const params = [email];
 
-    const result = await performQuery(query, params);
+    const [result] = await performQuery(query, params);
 
     return result;
 }

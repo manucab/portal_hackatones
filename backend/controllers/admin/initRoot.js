@@ -20,7 +20,6 @@ const createInitAdmin = async(req, res) => {
 
 }
 
-
 module.exports = {
     createInitAdmin
 }

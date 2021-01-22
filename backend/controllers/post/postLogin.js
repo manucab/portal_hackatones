@@ -28,15 +28,17 @@ const login = async(req, res) => {
 
         console.info('UserDB:', user);
 
+        console.log('user.password :>> ', user.user_password);
+
         // Not user in database --> failed
-        if (user.length === 0) {
+        if (!user) {
             console.log('!user', user);
             res.status(401).send();
             return;
         }
 
         // 4. Check password with bcrypt
-        const db_password = user.password;
+        const db_password = user.user_password;
         const passwordIsvalid = await bcrypt.compare(password, db_password);
 
         // If not valid password --> failed

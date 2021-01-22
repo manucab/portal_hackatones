@@ -44,10 +44,16 @@ const isAuthenticated = async(req, res, next) => {
 
 const isAdmin = async(req, res, next) => {
 
+
+    console.log('isAdmin');
+
     const { email } = req.auth;
 
     // 2. Search in database
     const user = await getAdminDB(email);
+
+    console.log('user :>> ', user);
+
 
     // if not user --> failed
     if (!user) {
@@ -55,7 +61,7 @@ const isAdmin = async(req, res, next) => {
         return;
     }
 
-    if (user[0].state) {
+    if (user.state) {
         console.log('Is admin and state ACTIVE');
         next();
     }
@@ -64,6 +70,8 @@ const isAdmin = async(req, res, next) => {
 
 // Check if you are an organizer
 const isOrganizer = async(req, res, next) => {
+
+    console.log('isOrganizer');
 
     const { email } = req.auth;
 
@@ -76,7 +84,9 @@ const isOrganizer = async(req, res, next) => {
         return;
     }
 
-    if (user[0].state) {
+    console.log('user :>> ', user);
+
+    if (user.state) {
         console.log('Is organizer and state ACTIVE');
         next();
     } else {
@@ -88,6 +98,8 @@ const isOrganizer = async(req, res, next) => {
 
 // Check if exist that user
 const isUser = async(req, res, next) => {
+
+    console.log('isUser');
 
     // 1. Obtein data email
     const { email } = req.body;

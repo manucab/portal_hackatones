@@ -11,16 +11,8 @@ const { login } = require('../controllers/post/postLogin');
 // const { isAuthenticated, isAdmin } = require('../../middelwares/authorization/auth');
 
 // **** POST *****
-// Login admin
-
-router.post('/', login
-    /* login  (req, res) => {
-    console.log('Login');
-    res.send('Login'); 
-}*/
-);
-
-// # Falta, hacer el controlador del login
+// Login user
+router.post('/', login);
 
 
 module.exports = router;
