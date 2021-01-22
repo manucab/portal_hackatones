@@ -2,6 +2,24 @@ require('dotenv').config();
 const { performQuery } = require('../performQuery');
 
 
+const getIsAdminIsUserDB = async(email) => {
+
+    const query = 'select id_admin, name, email,state from admin where email=?  union all select id, user_name, email, active_user  from competitor where email=?';
+
+    const params = [email, email];
+
+    const result = await performQuery(query, params);
+
+    return result;
+}
+
+/*
+select id_admin, name, email,state from admin where email='furboenvena10@gmail.com'  union all
+ select id, user_name, email, active_user  from competitor where email='furboenvena10@gmail.es';
+*/
+
+
+
 const getCodeUserDB = async(code) => {
 
     const query = 'select * from competitor where code=?';
@@ -81,6 +99,7 @@ const getOrganizerDB = async(email) => {
     return result;
 }
 
+
 module.exports = {
     getUserDB,
     getCodeAdminqDB,
@@ -88,5 +107,6 @@ module.exports = {
     getAllUsersDB,
     getAllAdminsDB,
     getOrganizerDB,
-    getCodeUserDB
+    getCodeUserDB,
+    getIsAdminIsUserDB
 }
