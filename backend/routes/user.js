@@ -3,13 +3,13 @@ const express = require('express');
 const router = express.Router();
 
 // Controllers
-const {activeUser} = require('../controllers/update');
+const { activeUser } = require('../controllers/update/updateActiveUser');
 
 // Middelwares
-const {isCodeUser} = require('../middelwares/validateAccount/isCodeUser');
+const { isCodeUser } = require('../middelwares/validateAccount/isCodeUser');
 
 // Get event
-router.post('/validate/:code', isCodeUser,activeUser);
+router.post('/validate/:code', isCodeUser, activeUser);
 
 
 module.exports = router;
