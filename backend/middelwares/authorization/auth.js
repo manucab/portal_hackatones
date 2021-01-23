@@ -4,6 +4,7 @@ const jwt = require('jsonwebtoken');
 const { getAdminDB, getCodeAdminqDB, getOrganizerDB, getIsAdminIsUserDB } = require('../../db/adminRoot/db_Select');
 const { resetAdminCode } = require('../../db/adminRoot/db_update');
 const { getUserDB } = require('../../db/select');
+const { loginValidator } = require('../../validators/validateLogin');
 
 const isAuthenticated = async(req, res, next) => {
 
@@ -99,13 +100,14 @@ const isOrganizer = async(req, res, next) => {
 // Check if exist that user
 const isUser = async(req, res, next) => {
 
-    console.log('isUser');
+    // 1. Get params
+    const { email, password } = req.body
 
-    // 1. Obtein data email
-    const { email } = req.body;
 
-    console.log('email', email);
     try {
+
+        // 2. Check if the parameters are valid
+        await loginValidator.validateAsync({ email, password });
 
         // 2. Search in database
         const user = await getUserDB(email);
@@ -113,13 +115,16 @@ const isUser = async(req, res, next) => {
         // if user exist-> faild
         if (user) {
             console.log(`The user with email ${email} already exists`);
-            return res.redirect('/');
+            return res.send(`The user with email ${email} already exists`);
         }
 
         console.log('The user not exist in db, he can register now');
         next();
 
     } catch (e) {
+        let msgError = e.message || 'Error in login';
+
+        console.log(msgError);
         console.log('Error in auth isUser', e);
         res.status(401).send();
         return;

@@ -7,12 +7,11 @@ const { login } = require('../controllers/post/postLogin');
 
 
 // Middelware
-// const { iskeyRoot } = require('../../middelwares/root/isKeyRoot');
-// const { isAuthenticated, isAdmin } = require('../../middelwares/authorization/auth');
+const { isUserRight } = require('../middelwares/login/mdw_login');
 
 // **** POST *****
 // Login user
-router.post('/', login);
+router.post('/', isUserRight, login);
 
 
 module.exports = router;

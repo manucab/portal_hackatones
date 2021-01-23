@@ -16,12 +16,6 @@ const login = async(req, res) => {
         // 2. Check if the parameters are valid
         const validParams = await loginValidator.validateAsync({ email, password });
 
-        if (!validParams) {
-            console.log('Error in valid params');
-            res.status(401).send();
-            return
-        }
-
         // 3. If are valid, check if they are in the database
         const user = await getAdminDB(email);
 
@@ -71,6 +65,9 @@ const login = async(req, res) => {
         res.json({ token });
         console.log('Login OK');
     } catch (e) {
+        let msgError = e.message || 'Error in login';
+
+        console.log(msgError);
         console.log('Error login', e);
         res.status(401).send();
     }

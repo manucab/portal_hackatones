@@ -1,65 +1,47 @@
 // Variables && instances
 require('dotenv').config();
-const bcrypt = require('bcrypt');
 const jwt = require('jsonwebtoken');
-const { loginValidator } = require('../../validators/validateLogin');
-const { getUserDB } = require('../../db/select');
+const utils = require('../../utils/utils');
+const cryptoRandomString = require('crypto-random-string');
+
 
 const login = async(req, res) => {
 
     // 1. Get params
     const { email, password } = req.body
-
-    console.log('Email, password', email, password);
+    const rol = req.rol;
+    const state = req.state;
+    const id = req.id;
 
     try {
+        // 1.1 NO --> envio email ACTIVE ACCOUNT
 
-        // 2. Check if the parameters are valid
-        const validParams = await loginValidator.validateAsync({ email, password });
+        if (state === 'true') {
 
-        if (!validParams) {
-            console.log('Error in valid params');
-            res.status(401).send();
-            return
+            // info to put inside the token
+            const tokenPayload = {
+                email: email,
+                rol: rol
+            }
+
+            // 5. Generate token, expire in 2 day
+            const token = jwt.sign(tokenPayload, process.env.SECRET, { expiresIn: '2d' });
+
+            res.json({ token });
+            console.log('Login OK');
+        } else {
+
+            // Generate code for url validation
+            const validationCode = cryptoRandomString({ length: parseInt(process.env.CODE_LEN), type: 'alphanumeric' });
+            // 4. Send email to confirm count
+            let link = `http://${process.env.PUBLIC_DOMAIN}/user/validate/${id}/${validationCode}`;
+            await utils.sendConfirmationMail(email, link);
+
+            console.log('Your account is not validated yet. We have sent you an email');
+            res.send('Your account is not validated yet. We have sent you an email');
         }
 
-        // 3. If are valid, check if they are in the database
-        const user = await getUserDB(email);
 
-        console.info('UserDB:', user);
-
-        console.log('user.password :>> ', user.user_password);
-
-        // Not user in database --> failed
-        if (!user) {
-            console.log('!user', user);
-            res.status(401).send();
-            return;
-        }
-
-        // 4. Check password with bcrypt
-        const db_password = user.user_password;
-        const passwordIsvalid = await bcrypt.compare(password, db_password);
-
-        // If not valid password --> failed
-        if (!passwordIsvalid) {
-            res.status(401).send()
-            return
-        }
-
-        // info to put inside the token
-        const tokenPayload = {
-            email: user.email,
-            rol: user.rol
-        }
-
-        console.log(tokenPayload);
-
-        // 5. Generate token, expire in one day
-        const token = jwt.sign(tokenPayload, process.env.SECRET, { expiresIn: '1d' });
-
-        res.json({ token });
-        console.log('Login OK');
     } catch (e) {
         console.log('Error login', e);
         res.status(401).send();
