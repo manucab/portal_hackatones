@@ -112,3 +112,6 @@ create table  if not exists admin (
   alter table competitor add column code varchar(100) not null;
   -- Add a column 'thematic' in table 'hackaton'
   alter table hackathon add column thematic varchar(100) not null;
+  -- Change defaul value in table 'competitor' and column 'register_date' for current_timestamp
+  alter table competitor modify column register_date timestamp not null  default current_timestamp;
+

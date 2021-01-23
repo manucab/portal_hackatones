@@ -124,9 +124,8 @@ const isUser = async(req, res, next) => {
     } catch (e) {
         let msgError = e.message || 'Error in login';
 
-        console.log(msgError);
-        console.log('Error in auth isUser', e);
-        res.status(401).send();
+        console.log('Error in auth isUser', msgError);
+        res.status(401).send(msgError);
         return;
     }
 

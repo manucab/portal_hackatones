@@ -1,8 +1,6 @@
 // Variables && instances
 require('dotenv').config();
 const { registerNewUser } = require('../../db/adminRoot/db_Insert');
-const { getUserDB } = require('../../db/adminRoot/db_Select');
-const { loginValidator } = require('../../validators/validateLogin');
 const cryptoRandomString = require('crypto-random-string');
 const bcrypt = require('bcrypt');
 const utils = require('../../utils/utils');
@@ -21,14 +19,10 @@ const newUser = async(req, res) => {
         const validationCode = cryptoRandomString({ length: parseInt(process.env.CODE_LEN), type: 'alphanumeric' });
 
         // Insert into db new user
-        let { insertId } = await registerNewUser(email, name, surname, register_date, professional_profile, rol, passwordEncrypt, validationCode);
-
-        console.log('result', insertId);
+        // TODO -- Check format date 
+        let { insertId } = await registerNewUser(email.toLowerCase(), name.toLowerCase(), surname.toLowerCase(), register_date, professional_profile.toLowerCase(), rol.toLowerCase(), passwordEncrypt, validationCode);
 
         let link = `http://${process.env.PUBLIC_DOMAIN}/user/validate/${insertId}/${validationCode}`;
-
-
-        console.log('link :>> ', link);
 
         // 4. Send email to confirm count
         await utils.sendConfirmationMail(email, link)
@@ -39,9 +33,8 @@ const newUser = async(req, res) => {
 
         let msgError = e.message || 'Error in login';
 
-        console.log(msgError);
-        console.log('Error post new user db', 'e=>', e);
-        res.status(500).send();
+        console.log('Error post new user db', 'e=>', msgError);
+        res.status(500).send(msgError);
     }
 
 }

@@ -11,7 +11,7 @@ const performQuery = async(query, params) => {
 
         return result;
     } catch (e) {
-        console.log('e :>> ', e);
+        console.log('e performQuery :>> ', e);
         throw new Error("database-error", e);
 
     } finally {
