@@ -1,0 +1,55 @@
+2021-01-24 -- 14:25:02:252 -- error: This is an error log
+2021-01-24 -- 14:25:02:252 -- warn: This is a warn log
+2021-01-24 -- 14:25:02:252 -- info: This is a info log
+2021-01-24 -- 14:25:02:252 -- http: This is a http log
+2021-01-24 -- 14:25:02:252 -- debug: This is a debug log
+2021-01-24 -- 14:25:08:258 -- http: POST / 404 140 - 2.652 ms
+
+2021-01-24 -- 14:25:17:2517 -- http: POST / 404 140 - 2.239 ms
+
+2021-01-24 -- 14:25:23:2523 -- http: GET / 200 9 - 8.402 ms
+
+2021-01-24 -- 14:25:26:2526 -- http: GET / 200 9 - 1.288 ms
+
+2021-01-24 -- 14:25:56:2556 -- error: This is an error log
+2021-01-24 -- 14:25:56:2556 -- warn: This is a warn log
+2021-01-24 -- 14:25:56:2556 -- info: This is a info log
+2021-01-24 -- 14:25:56:2556 -- http: This is a http log
+2021-01-24 -- 14:25:56:2556 -- debug: This is a debug log
+2021-01-24 -- 14:25:58:2558 -- http: ::1 - - [24/Jan/2021:13:25:58 +0000] "GET / HTTP/1.1" 200 9 "-" "PostmanRuntime/7.26.8"
+
+2021-01-24 -- 14:26:00:260 -- http: ::1 - - [24/Jan/2021:13:26:00 +0000] "GET / HTTP/1.1" 200 9 "-" "PostmanRuntime/7.26.8"
+
+2021-01-24 -- 14:26:00:260 -- http: ::1 - - [24/Jan/2021:13:26:00 +0000] "GET / HTTP/1.1" 200 9 "-" "PostmanRuntime/7.26.8"
+
+2021-01-24 -- 14:27:16:2716 -- error: This is an error log
+2021-01-24 -- 14:27:16:2716 -- warn: This is a warn log
+2021-01-24 -- 14:27:16:2716 -- info: This is a info log
+2021-01-24 -- 14:27:16:2716 -- http: This is a http log
+2021-01-24 -- 14:27:16:2716 -- debug: This is a debug log
+2021-01-24 -- 14:27:17:2717 -- http: GET / 200 9 - 3.818 ms
+
+2021-01-24 -- 14:27:17:2717 -- http: GET / 200 9 - 1.529 ms
+
+2021-01-24 -- 14:29:10:2910 -- error: This is an error log
+2021-01-24 -- 14:29:10:2910 -- warn: This is a warn log
+2021-01-24 -- 14:29:10:2910 -- info: This is a info log
+2021-01-24 -- 14:29:10:2910 -- http: This is a http log
+2021-01-24 -- 14:29:10:2910 -- debug: This is a debug log
+2021-01-24 -- 14:29:12:2912 -- http: GET / 200 9 - 4.584 ms
+
+2021-01-24 -- 14:29:26:2926 -- http: GET / 200 9 - 6.097 ms
+
+2021-01-24 -- 14:29:27:2927 -- http: GET / 200 9 - 3.879 ms
+
+2021-01-24 -- 14:29:29:2929 -- http: GET / 200 9 - 3.655 ms
+
+2021-01-24 -- 14:30:35:3035 -- error: This is an error log
+2021-01-24 -- 14:30:35:3035 -- warn: This is a warn log
+2021-01-24 -- 14:30:35:3035 -- info: This is a info log
+2021-01-24 -- 14:30:35:3035 -- http: This is a http log
+2021-01-24 -- 14:30:35:3035 -- debug: This is a debug log
+2021-01-24 -- 14:30:37:3037 -- http: GET -- / -- 200 -- 9 - 4.039 ms
+
+2021-01-24 -- 14:31:10:3110 -- http: GET -- /register -- 404 -- 147 - 1.484 ms
+

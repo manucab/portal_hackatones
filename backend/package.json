@@ -2,7 +2,7 @@
     "name": "backend",
     "version": "1.0.0",
     "description": "Init branch ss",
-    "main": "index.js",
+    "main": "app/index.js",
     "scripts": {
         "dev": "nodemon app/index.js",
         "test": "echo \"Error: no test specified\" && exit 1"
@@ -24,7 +24,8 @@
         "mysql": "^2.18.1",
         "mysql2": "^2.2.5",
         "store": "^2.0.12",
-        "winston": "^3.3.3"
+        "winston": "^3.3.3",
+        "morgan": "^1.10.0"
     },
     "author": "",
     "license": "ISC",

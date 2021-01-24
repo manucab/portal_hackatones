@@ -1,8 +1,0 @@
-2021-01-24 13:42:27:4227 [31merror[39m: [31mThis is an error log[39m
-2021-01-24 13:42:51:4251 -- [31merror[39m: [31mThis is an error log[39m
-2021-01-24 13:43:26:4326 -- error: This is an error log
-24pmte: 2021-01-24  13our: 13:44:50:4450 -- error: This is an error log
-2021-01-24 -- 13:45:38:4538 -- error: This is an error log
-2021-01-24 -- 13:46:58:4658 -- E: This is an error log
-2021-01-24 -- 13:47:48:4748 -- Error: This is an error log
-2021-01-24 -- 13:48:14:4814 -- error: This is an error log

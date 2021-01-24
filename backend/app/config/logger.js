@@ -50,6 +50,14 @@ const transports = [
         maxsize: 5242880, // 5MB
         maxFiles: 31
     }),
+    new winston.transports.File({
+        filename: 'logs/access.log',
+        leve: 'http',
+        json: true,
+        zippedArchive: true,
+        maxsize: 5242880, // 5MB
+        maxFiles: 31
+    })
 ]
 
 const logger = winston.createLogger({

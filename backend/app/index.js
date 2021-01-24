@@ -3,6 +3,7 @@ require('dotenv').config();
 const bodyParser = require("body-parser");
 const cors = require("cors");
 const express = require("express");
+const morgan = require('morgan');
 
 const logger = require('./config/logger');
 
@@ -22,6 +23,10 @@ const hackathonRouter = require('../routes/hackathon');
 app.use(cors());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
+
+const formatMorgan = ':method -- :url -- :status -- :res[content-length] - :response-time ms';
+
+app.use(morgan(formatMorgan, { stream: { write: (message) => logger.http(message) } }));
 
 // Endpoints
 // Home
