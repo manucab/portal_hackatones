@@ -4,8 +4,9 @@ const bodyParser = require("body-parser");
 const cors = require("cors");
 const express = require("express");
 const morgan = require('morgan');
+const requestId = require('express-request-id')();
 
-const logger = require('./config/logger');
+const { logger } = require('./config/logger');
 
 const port = process.env.PORT || 4444;
 const app = express();
@@ -18,15 +19,14 @@ const createHackathonRouter = require('../routes/createHackathon');
 const userRouter = require('../routes/user');
 const registerRouter = require('../routes/register');
 const hackathonRouter = require('../routes/hackathon');
+const { use } = require('../routes/home');
 
 // Middlewares
 app.use(cors());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
-
-const formatMorgan = ':method -- :url -- :status -- :res[content-length] - :response-time ms';
-
-app.use(morgan(formatMorgan, { stream: { write: (message) => logger.http(message) } }));
+app.use(requestId);
+app.use(logger.requests);
 
 // Endpoints
 // Home
@@ -39,15 +39,6 @@ app.use('/login', loginRouter);
 app.use('/register', registerRouter);
 // Hackathon
 app.use('/hackathon', hackathonRouter);
-
-
-logger.error("This is an error log");
-logger.warn("This is a warn log");
-logger.info("This is a info log");
-logger.http("This is a http log");
-logger.debug("This is a debug log");
-
-
 
 //Hackathones Page
 // app.get('/hackathon/:filters', filterHackathons);
@@ -66,20 +57,38 @@ app.use('/createhackathon', createHackathonRouter);
 //User -> validate account
 app.use('/user', userRouter);
 
-//  Test connection db
-// const db = require('../db/connection');
 
-// console.log(db.getConnection());
 
-// const dbtest = async(req, res) => {
+// No router found handler
+app.use((req, res, next) => {
 
-//     result = await db.getConnection()
+    next({
+        message: 'Router not found',
+        statusCode: 404,
+        level: 'warn',
+    });
 
-//     console.log(result.connection.authorized);
 
-// }
+});
 
-// dbtest();
+app.use((err, req, res, next) => {
+
+    const {
+        message,
+        statusCode = 500,
+        level = 'error'
+    } = err;
+    // const log = `${logger.header(req)} ${statusCode} ${message}`;
+    const log = `${statusCode} ${message}`;
+
+    logger[level](log);
+
+    res.status(statusCode);
+    res.json({ message });
+
+});
+
+
 
 app.listen(port, err => {
     if (err) {

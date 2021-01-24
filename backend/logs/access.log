@@ -1,0 +1,5 @@
+2021-01-24 -- 17:48:57:4857 -- [31merror[39m: [31mThis is an error log[39m
+2021-01-24 -- 17:48:57:4857 -- [33mwarn[39m: [33mThis is a warn log[39m
+2021-01-24 -- 17:48:57:4857 -- [32minfo[39m: [32mThis is a info log[39m
+2021-01-24 -- 17:48:57:4857 -- [35mhttp[39m: [35mThis is a http log[39m
+2021-01-24 -- 17:48:57:4857 -- [37mdebug[39m: [37mThis is a debug log[39m
