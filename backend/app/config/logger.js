@@ -1,4 +1,5 @@
 const winston = require('winston');
+// Todo rotate files with winston-daily-rotate-file
 
 const levels = {
     error: 0,
@@ -25,10 +26,10 @@ const colors = {
 winston.addColors(colors)
 
 const format = winston.format.combine(
-    winston.format.timestamp({ format: 'YYYY-MM-DD HH:mm:ss:ms' }),
-    winston.format.colorize({ all: true }),
+    winston.format.timestamp({ format: 'YYYY-MM-DD -- HH:mm:ss:ms' }),
+    // winston.format.colorize({ all: true }),
     winston.format.printf(
-        (info) => `${info.timestamp} ${info.level}: ${info.message}`,
+        (info) => `${info.timestamp} -- ${info.level}: ${info.message}`,
     ),
 )
 
@@ -37,8 +38,18 @@ const transports = [
     new winston.transports.File({
         filename: 'logs/error.log',
         level: 'error',
+        json: true,
+        zippedArchive: true,
+        maxsize: 5242880, // 5MB
+        maxFiles: 31
     }),
-    new winston.transports.File({ filename: 'logs/all.log' }),
+    new winston.transports.File({
+        filename: 'logs/all.log',
+        json: true,
+        zippedArchive: true,
+        maxsize: 5242880, // 5MB
+        maxFiles: 31
+    }),
 ]
 
 const logger = winston.createLogger({
