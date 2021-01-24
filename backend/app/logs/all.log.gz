@@ -335,3 +335,23 @@
 2021-01-24 -- 20:47:56:4756 -- warn: 404 Router not found
 2021-01-24 -- 20:47:56:4756 -- http: GET -- /user/validate/27/jmuwWbGbFfMZ3qdQzDvDzvkDaS2uEMvcvBS6MEoU -- 9f873aa7-6e4d-49b1-b681-4b1906b12695 -- 404 -- 30 - 5.767 ms
 2021-01-24 -- 20:57:28:5728 -- http: POST -- /user/validate/27/jmuwWbGbFfMZ3qdQzDvDzvkDaS2uEMvcvBS6MEoU -- fbb1e251-9317-4afa-b4d9-877e832f83a1 -- 200 -- 28 - 28.432 ms
+2021-01-24 -- 21:15:07:157 -- warn: 404 Router not found
+2021-01-24 -- 21:15:07:157 -- http: POST -- /registere -- ae53cb34-4e1d-46db-8def-b345f7008b90 -- 404 -- 30 - 11.466 ms
+2021-01-24 -- 21:15:15:1515 -- http: POST -- /register -- 7fdd344f-f9fa-43fa-8df5-c8d03a845356 -- 200 -- 58 - 16.798 ms
+2021-01-24 -- 21:16:00:160 -- warn: 404 Router not found
+2021-01-24 -- 21:16:00:160 -- http: GET -- /user/validate/27/jmuwWbGbFfMZ3qdQzDvDzvkDaS2uEMvcvBS6MEoU -- 10d137c3-2717-4935-b8cf-fa5c65d44200 -- 404 -- 30 - 7.459 ms
+2021-01-24 -- 21:16:13:1613 -- http: POST -- /user/validate/27/jmuwWbGbFfMZ3qdQzDvDzvkDaS2uEMvcvBS6MEoU -- c0a4f836-54de-439c-8228-bce304eae7fd -- 200 -- 28 - 14.877 ms
+2021-01-24 -- 21:35:17:3517 -- http: GET -- / -- 23567708-49d5-4307-82c4-e19531d24124 -- 200 -- 9 - 5.857 ms
+2021-01-24 -- 21:39:11:3911 -- http: GET -- / -- 52d9ade6-5a7f-498b-9c82-e4003e1e7725 -- 200 -- 9 - 8.018 ms
+2021-01-24 -- 21:39:24:3924 -- http: GET -- / -- 1259078f-2fe1-4fec-84dc-a6e613beddf1 -- 200 -- 9 - 2.946 ms
+2021-01-24 -- 21:48:16:4816 -- http: GET -- / -- 70954331-63ca-49dd-8bb7-ca3919be04bd -- 200 -- 9 - 9.824 ms
+2021-01-24 -- 21:48:39:4839 -- http: GET -- / -- 34ac06b8-8bcd-4a88-81e7-3a6dca5217cb -- 200 -- 9 - 39.869 ms
+2021-01-24 -- 22:15:04:154 -- http: GET -- / -- 801364a9-9b24-4a22-bf7a-be68ab5c6f30 -- 200 -- 9 - 23.691 ms
+2021-01-24 -- 22:15:17:1517 -- http: GET -- / -- 7a50ffa5-1fb6-4d59-95f1-5e198366aaad -- 200 -- 9 - 25.228 ms
+2021-01-24 -- 22:22:59:2259 -- http: GET -- / -- 299f5077-6084-43bc-b5a5-1318bb18992b -- 200 -- 9 - 6.717 ms
+2021-01-24 -- 22:23:20:2320 -- http: GET -- / -- ad2e649c-f0e8-44fe-8bf3-05ab0702bb43 -- 200 -- 9 - 2.935 ms
+2021-01-24 -- 22:24:29:2429 -- http: GET -- / -- 88979c1a-c358-4e39-b1bf-f3e226496fea -- 200 -- 9 - 20.230 ms
+2021-01-24 -- 22:24:49:2449 -- http: GET -- / -- c9ea5a33-86cf-4a1a-af44-f3131b3add08 -- 200 -- 9 - 5.509 ms
+2021-01-24 -- 22:25:33:2533 -- http: GET -- / -- 1ea8c22f-7ea0-4f86-a693-2a8a57f3a503 -- 200 -- 9 - 11.160 ms
+2021-01-24 -- 22:25:58:2558 -- http: GET -- / -- 6b02c44f-003f-47a5-a480-9583bafdc81a -- 200 -- 9 - 10.729 ms
+2021-01-24 -- 22:26:12:2612 -- http: GET -- / -- 5420bfea-90f5-412a-87c4-9f6454c01d93 -- 200 -- 9 - 9.361 ms

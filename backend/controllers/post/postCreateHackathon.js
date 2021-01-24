@@ -20,13 +20,7 @@ const createHackathon = async(req, res) => {
     try {
 
         // 2. Check if the parameters are valid
-        const validParams = await fieldsHackathons.validateAsync({ place, start_date, end_date, id_organizer });
-
-        if (!validParams) {
-            console.log('Error in valid params');
-            res.status(401).send();
-            return
-        }
+        await fieldsHackathons.validateAsync({ place, start_date, end_date, id_organizer });
 
         // if the params are valid, then post into db the new hackathon
         await createHackathonDB(place, city, start_date, end_date, id_organizer, hackathon_info, thematic);

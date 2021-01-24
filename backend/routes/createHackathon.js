@@ -6,11 +6,11 @@ const router = express.Router();
 const { createHackathon } = require('../controllers/post/postCreateHackathon');
 
 // Middelware
-const { isAuthenticated, isAdmin, isOrganizer } = require('../middelwares/authorization/auth');
+const { isAuthenticated, isOrganizer } = require('../middelwares/authorization/auth');
 
 // **** POST *****
 // Create a new hackathon
-router.post('/', isAuthenticated, isAdmin || isOrganizer, createHackathon);
+router.post('/', isAuthenticated, isOrganizer, createHackathon);
 
 
 module.exports = router;

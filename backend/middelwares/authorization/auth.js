@@ -72,8 +72,6 @@ const isAdmin = async(req, res, next) => {
 // Check if you are an organizer
 const isOrganizer = async(req, res, next) => {
 
-    console.log('isOrganizer');
-
     const { email } = req.auth;
 
     // 2. Search in database
@@ -85,13 +83,11 @@ const isOrganizer = async(req, res, next) => {
         return;
     }
 
-    console.log('user :>> ', user);
-
     if (user.state) {
         console.log('Is organizer and state ACTIVE');
         next();
     } else {
-        console.log('Is organizer but, he isnst ACTIVE');
+        console.log("Is organizer but, he isn't ACTIVE");
         res.status(401).send('The organizer exists but its status is not activated');
     }
 
