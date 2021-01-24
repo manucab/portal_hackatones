@@ -60,7 +60,6 @@ const isCodeUser = async(req, res, next) => {
         await performQuery(query, params);
         console.log('Rollback, fail in isCoder function');
 
-
         res.status(401).send();
         return;
     }
