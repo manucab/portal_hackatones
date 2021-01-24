@@ -1,5 +1,4 @@
 // Variables && instances
-const { getCodeUserDB } = require('../../db/adminRoot/db_Select');
 const { updateStateUser } = require('../../db/adminRoot/db_update');
 const { performQuery } = require('../../db/performQuery');
 
@@ -9,7 +8,7 @@ let params = [];
 const activeUser = async(req, res) => {
 
     // 1. Get code params
-    const { code, id } = req.params;
+    const { id } = req.params;
 
     try {
 
@@ -18,30 +17,8 @@ const activeUser = async(req, res) => {
         const resInitTransaction = await performQuery(query, params);
         console.log('Start transaction');
 
-        // 1. Get the user who has that code
-        const userDB = await getCodeUserDB(code, parseInt(id));
-
-        if (!userDB) {
-            console.log('Fail, user no into db');
-
-            // Rollback mysql
-            query = 'rollback';
-            await performQuery(query, params);
-            console.log('Rollback not userDB');
-
-            res.status(401).send();
-            return;
-        }
-
         // 2.1 change state to true and reset code
-        if (userDB.id === parseInt(id)) {
-            await updateStateUser(userDB.id);
-        } else {
-
-            res.status(500).send('Id not legal');
-            return;
-        }
-
+        await updateStateUser(parseInt(id));
 
         console.log('Update state is successfully');
 
@@ -53,7 +30,6 @@ const activeUser = async(req, res) => {
         res.send('Update state is successfully');
 
     } catch (e) {
-        console.log('error in activeUser', e);
 
         // Rollback mysql
         query = 'rollback';
