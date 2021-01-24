@@ -13,11 +13,11 @@ const getIsAdminIsUserDB = async(email) => {
     return result;
 }
 
-const getCodeUserDB = async(code) => {
+const getCodeUserDB = async(code, id) => {
 
-    const query = 'select * from competitor where code=?';
+    const query = 'select * from competitor where (code=?) and (id=?)';
 
-    const params = [code];
+    const params = [code, id];
 
     const [result] = await performQuery(query, params);
 

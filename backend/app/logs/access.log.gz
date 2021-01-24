@@ -189,3 +189,31 @@
 2021-01-24 -- 18:59:47:5947 -- http: GET -- / -- c63c0a62-d7f9-48c4-adc5-38233c2b85f2 -- 200 -- 9 - 7.232 ms
 2021-01-24 -- 18:59:55:5955 -- warn: 404 Router not found
 2021-01-24 -- 18:59:55:5955 -- http: GET -- /register -- 44d1957c-91c6-4710-9da7-0d3dc655d86d -- 404 -- 30 - 4.941 ms
+2021-01-24 -- 20:14:26:1426 -- http: POST -- /register -- 67f34492-fc69-47cc-ba8d-af19bc5aee25 -- 200 -- 28 - 1225.295 ms
+2021-01-24 -- 20:15:32:1532 -- http: POST -- /register -- 535c1e98-704a-4b44-a7f3-7c1501777ab7 -- 200 -- 57 - 6.023 ms
+2021-01-24 -- 20:19:25:1925 -- http: POST -- /register -- 7acacea4-47a6-4e17-844b-0d198935ea84 -- 200 -- 28 - 670.427 ms
+2021-01-24 -- 20:20:13:2013 -- http: POST -- /register -- 587c29c6-7fd2-4a64-bef5-b7643e1ff10f -- 200 -- 28 - 887.864 ms
+2021-01-24 -- 20:20:36:2036 -- warn: 404 Router not found
+2021-01-24 -- 20:20:36:2036 -- http: GET -- /user/validate/27/jmuwWbGbFfMZ3qdQzDvDzvkDaS2uEMvcvBS6MEoU -- 16aa42ea-6344-4856-85fc-49919483ed50 -- 404 -- 30 - 14.358 ms
+2021-01-24 -- 20:21:06:216 -- warn: 404 Router not found
+2021-01-24 -- 20:21:06:216 -- http: GET -- /user/validate/26/jmuwWbGbFfMZ3qdQzDvDzvkDaS2uEMvcvBS6MEoU -- 86513878-2f14-46ce-9848-e4adb01d0e35 -- 404 -- 30 - 1.327 ms
+2021-01-24 -- 20:21:20:2120 -- warn: 404 Router not found
+2021-01-24 -- 20:21:20:2120 -- http: GET -- /user/validate/27/jmuwWbGbFfMZ3qdQzDvDzvkDaS2uEMvcvBS6MEoU -- 49c09cab-dce3-46b7-94da-195a5ff7164f -- 404 -- 30 - 1.159 ms
+2021-01-24 -- 20:21:29:2129 -- warn: 404 Router not found
+2021-01-24 -- 20:21:29:2129 -- http: GET -- /user/validate/27/jmuwWbGbFfMZ3qdQzDvDzvkDaS2uEMvcvBS6MEoU -- ee942dc3-fd10-4fbb-b554-4a0270ceb579 -- 404 -- 30 - 1.496 ms
+2021-01-24 -- 20:21:32:2132 -- http: POST -- /user/validate/27/jmuwWbGbFfMZ3qdQzDvDzvkDaS2uEMvcvBS6MEoU -- c3c9b9b5-fda1-4192-9979-531ff5aeac07 -- 401 -- - - 28.797 ms
+2021-01-24 -- 20:21:37:2137 -- http: POST -- /user/validate/27/jmuwWbGbFfMZ3qdQzDvDzvkDaS2uEMvcvBS6MEoU -- 653bbee0-cd2b-4eb2-bcee-771bbfde1aa2 -- 401 -- - - 21.819 ms
+2021-01-24 -- 20:22:20:2220 -- http: POST -- /user/validate/27/jmuwWbGbFfMZ3qdQzDvDzvkDaS2uEMvcvBS6MEoU -- f4f9ceb4-d835-4de9-be5b-4fc719e6b1c9 -- 401 -- - - 36.965 ms
+2021-01-24 -- 20:23:39:2339 -- http: POST -- /user/validate/27/jmuwWbGbFfMZ3qdQzDvDzvkDaS2uEMvcvBS6MEoU -- a676805e-eabd-4a7c-ac52-cd0cae6f9433 -- 401 -- - - 48.538 ms
+2021-01-24 -- 20:24:52:2452 -- http: POST -- /user/validate/27/jmuwWbGbFfMZ3qdQzDvDzvkDaS2uEMvcvBS6MEoU -- c3601887-9b8b-459f-b5cf-47941717a9e3 -- 401 -- - - 45.545 ms
+2021-01-24 -- 20:25:53:2553 -- http: POST -- /user/validate/27/jmuwWbGbFfMZ3qdQzDvDzvkDaS2uEMvcvBS6MEoU -- c9ae7b55-8060-4685-a69e-670a4c8779dc -- 401 -- - - 48.304 ms
+2021-01-24 -- 20:26:38:2638 -- http: POST -- /user/validate/27/jmuwWbGbFfMZ3qdQzDvDzvkDaS2uEMvcvBS6MEoU -- 644291dd-1b4a-4b91-b153-31cf2061e94b -- 401 -- - - 130.129 ms
+2021-01-24 -- 20:37:15:3715 -- http: POST -- /user/validate/27/jmuwWbGbFfMZ3qdQzDvDzvkDaS2uEMvcvBS6MEoU -- 92096651-2bda-411a-ab7b-d97ea5723bf5 -- 401 -- - - 41.407 ms
+2021-01-24 -- 20:38:12:3812 -- http: POST -- /user/validate/27/jmuwWbGbFfMZ3qdQzDvDzvkDaS2uEMvcvBS6MEoU -- e4779cd5-e828-450b-b4e7-701246ea97f0 -- 500 -- 12 - 36.046 ms
+2021-01-24 -- 20:39:23:3923 -- http: POST -- /user/validate/27/jmuwWbGbFfMZ3qdQzDvDzvkDaS2uEMvcvBS6MEoU -- ea090221-ed4f-4053-ba96-494f88f27203 -- 500 -- 12 - 81.840 ms
+2021-01-24 -- 20:40:40:4040 -- http: POST -- /user/validate/27/jmuwWbGbFfMZ3qdQzDvDzvkDaS2uEMvcvBS6MEoU -- 3417ed2a-850e-44e4-9ebc-3bda67125aa6 -- 500 -- 12 - 27.278 ms
+2021-01-24 -- 20:41:41:4141 -- http: POST -- /user/validate/27/jmuwWbGbFfMZ3qdQzDvDzvkDaS2uEMvcvBS6MEoU -- 3f9bb1ec-bd3f-4c44-a344-6b4157a15b4d -- 200 -- 28 - 86.952 ms
+2021-01-24 -- 20:46:03:463 -- http: POST -- /user/validate/27/jmuwWbGbFfMZ3qdQzDvDzvkDaS2uEMvcvBS6MEoU -- 494f7cf4-8ab6-4847-b059-249b515683ba -- 200 -- 28 - 36.476 ms
+2021-01-24 -- 20:47:46:4746 -- http: POST -- /user/validate/27/jmuwWbGbFfMZ3qdQzDvDzvkDaS2uEMvcvBS6MEoU -- 28989760-ec14-43bc-a35b-e5575b9d2d23 -- 200 -- 28 - 41.996 ms
+2021-01-24 -- 20:47:56:4756 -- warn: 404 Router not found
+2021-01-24 -- 20:47:56:4756 -- http: GET -- /user/validate/27/jmuwWbGbFfMZ3qdQzDvDzvkDaS2uEMvcvBS6MEoU -- 9f873aa7-6e4d-49b1-b681-4b1906b12695 -- 404 -- 30 - 5.767 ms

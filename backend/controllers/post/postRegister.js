@@ -37,6 +37,11 @@ const newUser = async(req, res) => {
         // 4. Send email to confirm count
         await utils.sendConfirmationMail(email, link);
 
+        // Commit mysql
+        query = 'commit';
+        await performQuery(query, params);
+        console.log('Commit');
+
         console.log('Register new user sucessfull');
         res.send('Register new user sucessfull');
     } catch (e) {

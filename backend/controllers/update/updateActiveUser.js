@@ -9,16 +9,17 @@ let params = [];
 const activeUser = async(req, res) => {
 
     // 1. Get code params
-    const { code } = req.params;
+    const { code, id } = req.params;
 
     try {
 
+        // Init transaction mysql
+        query = 'start transaction';
+        const resInitTransaction = await performQuery(query, params);
+        console.log('Start transaction');
+
         // 1. Get the user who has that code
-        const userDB = await getCodeUserDB(code);
-
-        console.log('activeUser user', userDB.id);
-
-
+        const userDB = await getCodeUserDB(code, parseInt(id));
 
         if (!userDB) {
             console.log('Fail, user no into db');
@@ -33,7 +34,14 @@ const activeUser = async(req, res) => {
         }
 
         // 2.1 change state to true and reset code
-        await updateStateUser(userDB.id);
+        if (userDB.id === parseInt(id)) {
+            await updateStateUser(userDB.id);
+        } else {
+
+            res.status(500).send('Id not legal');
+            return;
+        }
+
 
         console.log('Update state is successfully');
 

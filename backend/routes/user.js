@@ -9,7 +9,7 @@ const { activeUser } = require('../controllers/update/updateActiveUser');
 const { isCodeUser } = require('../middelwares/validateAccount/isCodeUser');
 
 // Get event
-router.post('/validate/:code', isCodeUser, activeUser);
+router.post('/validate/:id/:code', isCodeUser, activeUser);
 
 
 module.exports = router;
