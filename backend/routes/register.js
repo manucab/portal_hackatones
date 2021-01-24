@@ -7,10 +7,11 @@ const { newUser } = require('../controllers/post/postRegister');
 
 // Middelware
 const { isUser } = require('../middelwares/authorization/auth');
+const { isValidParamsRegister } = require('../middelwares/register/mdw_register');
 
 
 // **** POST *****
 // Register new user in db
-router.post('/', isUser, newUser);
+router.post('/', isValidParamsRegister, isUser, newUser);
 
 module.exports = router;

@@ -4,6 +4,8 @@ const bodyParser = require("body-parser");
 const cors = require("cors");
 const express = require("express");
 
+const logger = require('./config/logger');
+
 const port = process.env.PORT || 4444;
 const app = express();
 
@@ -19,7 +21,7 @@ const hackathonRouter = require('../routes/hackathon');
 // Middlewares
 app.use(cors());
 app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({extended: true}));
+app.use(bodyParser.urlencoded({ extended: true }));
 
 // Endpoints
 // Home
@@ -29,9 +31,18 @@ app.use('/admin', adminRouter);
 // Login
 app.use('/login', loginRouter);
 // Register
-app.use('/register',registerRouter);
+app.use('/register', registerRouter);
 // Hackathon
 app.use('/hackathon', hackathonRouter);
+
+
+logger.error("This is an error log");
+logger.warn("This is a warn log");
+logger.info("This is a info log");
+logger.http("This is a http log");
+logger.debug("This is a debug log");
+
+
 
 //Hackathones Page
 // app.get('/hackathon/:filters', filterHackathons);
@@ -48,7 +59,7 @@ app.use('/createhackathon', createHackathonRouter);
 //// ********************************
 
 //User -> validate account
- app.use('/user', userRouter);
+app.use('/user', userRouter);
 
 //  Test connection db
 // const db = require('../db/connection');
@@ -66,13 +77,13 @@ app.use('/createhackathon', createHackathonRouter);
 // dbtest();
 
 app.listen(port, err => {
-  if (err) {
-    return console.log('ERROR', err);
-  }
-  console.log(`listening on port ${port}`);
+    if (err) {
+        return console.log('ERROR', err);
+    }
+    console.log(`listening on port ${port}`);
 
-  /*
-    let messageListen = (err) ? `Error, $ {err}` : `listening on port ${port}`;
-   return console.log(messageListen);
-    */
+    /*
+      let messageListen = (err) ? `Error, $ {err}` : `listening on port ${port}`;
+     return console.log(messageListen);
+      */
 })

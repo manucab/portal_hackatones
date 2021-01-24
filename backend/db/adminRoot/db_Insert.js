@@ -1,15 +1,14 @@
 require('dotenv').config();
 const { performQuery } = require('../../db/performQuery');
 
-const registerNewUser = async(email, name, surname, register_date, professional_profile, rol, passwordEncrypt, validationCode) => {
+const registerNewUser = async(email, name, surname, professional_profile, rol, passwordEncrypt, validationCode) => {
 
-    const query = 'insert into competitor (email,user_name,surname,register_date,professional_profile,rol, user_password, code) values( ? , ? , ? , ? , ?, ?, ?, ?)';
+    const query = 'insert into competitor (email,user_name,surname,professional_profile,rol, user_password, code) values( ? , ? , ? , ?, ?, ?, ?)';
 
     const params = [
         email,
         name,
         surname,
-        register_date,
         professional_profile,
         rol,
         passwordEncrypt,
