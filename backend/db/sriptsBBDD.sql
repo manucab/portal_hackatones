@@ -98,8 +98,7 @@ add column code varchar(100) not null;
 alter table hackathon
 add column thematic varchar(100) not null;
 -- Change defaul value in table 'competitor' and column 'register_date' for current_timestamp
-alter table competitor
-modify column register_date timestamp not null default current_timestamp;
+alter table competitor modify column register_date timestamp not null default current_timestamp;
 -- Create new table of hackathon_tech1
 create table if not exists hackathon_tech1 (
     id_tech1 int unsigned auto_increment,

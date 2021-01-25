@@ -396,3 +396,6 @@
 2021-01-25 -- 15:28:12:2812 -- http: POST -- /createhackathon -- 27 -- 200 -- 33 - 44.631 ms
 2021-01-25 -- 15:28:26:2826 -- http: POST -- /createhackathon -- 27 -- 401 -- - - 7.201 ms
 2021-01-25 -- 15:28:28:2828 -- http: POST -- /createhackathon -- 27 -- 200 -- 33 - 7.155 ms
+2021-01-25 -- 17:04:11:411 -- http: POST -- /createhackathon -- 27 -- 200 -- 33 - 49.637 ms
+2021-01-25 -- 17:05:41:541 -- warn: 404 Router not found
+2021-01-25 -- 17:05:41:541 -- http: POST -- /createhackathonf -- 372396ad-a98a-46e5-95c1-e3fdb1ee381c -- 404 -- 30 - 10.326 ms

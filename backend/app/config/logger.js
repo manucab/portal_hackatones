@@ -1,7 +1,7 @@
 const winston = require('winston');
 const stripFinalNewLine = require('strip-final-newline');
 const morgan = require('morgan');
-// Todo rotate files with winston-daily-rotate-file
+// TODO rotate files with winston-daily-rotate-file
 
 const levels = {
     error: 0,

@@ -11,14 +11,6 @@ const createHackathon = async(req, res) => {
 
     const { id } = req.auth;
 
-    console.log(req.auth)
-
-    console.log('id user', id);
-
-    console.log('webName :>> ', webName);
-
-    // console.log('id_organizer :>> ', id_organizer);
-
     try {
 
         // 2. Check if the parameters are valid
