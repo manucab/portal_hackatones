@@ -26,7 +26,8 @@ const login = async(req, res) => {
             // info to put inside the token
             const tokenPayload = {
                 email: email,
-                rol: rol
+                rol: rol,
+                id: id
             }
 
             // 5. Generate token, expire in 2 day

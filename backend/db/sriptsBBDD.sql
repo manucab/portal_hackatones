@@ -119,4 +119,5 @@ create table if not exists hackathon_link1 (
     primary key (id_link1, id_hackathon),
     creation_date timestamp not null default current_timestamp,
     last_update timestamp not null default current_timestamp on update current_timestamp,
+    constraint hackathon_link1_fk1 FOREIGN KEY(id_hackathon) REFERENCES hackathon(id) ON DELETE CASCADE
 );

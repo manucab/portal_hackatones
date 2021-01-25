@@ -6,7 +6,6 @@ const upload = multer();
 const cors = require("cors");
 const express = require("express");
 const requestId = require('express-request-id')();
-
 const { logger } = require('./config/logger');
 
 const port = process.env.PORT || 4444;
@@ -63,29 +62,29 @@ app.use('/user', userRouter);
 
 // **** Router not found ****
 // No router found handler
-app.use((req, res, next) => {
+// app.use((req, res, next) => {
 
-    next({
-        message: 'Router not found',
-        statusCode: 404,
-        level: 'warn',
-    });
+//     next({
+//         message: 'Router not found',
+//         statusCode: 404,
+//         level: 'warn',
+//     });
 
 
-});
+// });
 
-app.use((err, req, res, next) => {
+// app.use((err, req, res, next) => {
 
-    const { message, statusCode = 500, level = 'error' } = err;
-    // const log = `${logger.header(req)} ${statusCode} ${message}`;
-    const log = `${statusCode} ${message}`;
+//     const { message, statusCode = 500, level = 'error' } = err;
+//     // const log = `${logger.header(req)} ${statusCode} ${message}`;
+//     const log = `${statusCode} ${message}`;
 
-    logger[level](log);
+//     logger[level](log);
 
-    res.status(statusCode);
-    res.json({ message });
+//     res.status(statusCode);
+//     res.json({ message });
 
-});
+// });
 
 
 

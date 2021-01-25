@@ -5,6 +5,7 @@ const { getAdminDB, getCodeAdminqDB, getOrganizerDB, getIsAdminIsUserDB } = requ
 const { resetAdminCode } = require('../../db/adminRoot/db_update');
 const { getUserDB } = require('../../db/select');
 const { loginValidator } = require('../../validators/validateLogin');
+const { emailValidator } = require('../../validators/val_email');
 
 const isAuthenticated = async(req, res, next) => {
 
@@ -15,7 +16,7 @@ const isAuthenticated = async(req, res, next) => {
         if (!authorization) {
             // Authorization failure, redirect login page
             console.log('Authorization failure, no token');
-            res.redirect('/login');
+            return res.status(401).send('Authorization failure, no token');
         } else if (authorization) {
 
             // 1. Check the token, decode token and search user with email of token
@@ -31,6 +32,9 @@ const isAuthenticated = async(req, res, next) => {
             }
 
             req.auth = decodedToken;
+
+            console.log(decodedToken);
+
             next();
 
         }
@@ -48,48 +52,83 @@ const isAdmin = async(req, res, next) => {
 
     console.log('isAdmin');
 
-    const { email } = req.auth;
+    const { email } = req.auth || req.body;
 
-    // 2. Search in database
-    const user = await getAdminDB(email);
-
-    console.log('user :>> ', user);
+    try {
 
 
-    // if not user --> failed
-    if (!user) {
-        res.status(401).send();
+
+        // 1. Check email
+        await emailValidator.validateAsync({ email });
+
+        // 2. Search in database
+        const user = await getAdminDB(email);
+
+        console.log('user :>> ', user);
+
+
+        // if not user --> failed
+        if (!user) {
+            res.status(401).send();
+            return;
+        }
+
+        if (user.state) {
+            console.log('Is admin and state ACTIVE');
+            next();
+        }
+    } catch (e) {
+        console.log('Error in auth isAdmin', e.message);
+        res.status(401).send(e.message);
         return;
     }
 
-    if (user.state) {
-        console.log('Is admin and state ACTIVE');
-        next();
-    }
 
 }
 
 // Check if you are an organizer
 const isOrganizer = async(req, res, next) => {
 
-    const { email } = req.auth;
+    const { email } = req.auth || req.body;
 
-    // 2. Search in database
-    const user = await getOrganizerDB(email);
+    console.log('isOrganizer check email', email);
 
-    // if not user --> failed
-    if (!user) {
-        res.status(401).send();
+
+    try {
+
+        // 1. Check email
+        await emailValidator.validateAsync({ email });
+
+        // 2. Search in database
+        const user = await getOrganizerDB(email);
+
+        console.log('user.state :>> ', user.active_user);
+        console.log('user.id :>> ', user.id);
+
+        // if not user --> failed
+        if (!user) {
+            res.status(401).send();
+            return;
+        }
+
+        if (user.active_user) {
+            console.log('Is organizer and state ACTIVE');
+
+            req.id = user.id;
+            next();
+        } else {
+            console.log("Is organizer but, he isn't ACTIVE");
+            res.status(401).send('The organizer exists but its status is not activated');
+        }
+
+    } catch (e) {
+        console.log('Error in auth isAdmin', e.message);
+        res.status(401).send(e.message);
         return;
     }
 
-    if (user.state) {
-        console.log('Is organizer and state ACTIVE');
-        next();
-    } else {
-        console.log("Is organizer but, he isn't ACTIVE");
-        res.status(401).send('The organizer exists but its status is not activated');
-    }
+
+
 
 }
 
@@ -97,7 +136,7 @@ const isOrganizer = async(req, res, next) => {
 const isUser = async(req, res, next) => {
 
     // 1. Get params
-    const { email, password } = req.body
+    const { email, password } = req.body || req.body;
 
 
     try {

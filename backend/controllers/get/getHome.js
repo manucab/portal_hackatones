@@ -6,7 +6,6 @@ const homePage = (req, res, error) => {
 
     console.log('Home Page');
     res.send('Home page');
-
 }
 
 
