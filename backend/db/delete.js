@@ -53,7 +53,7 @@ const deletePost = async (idPost) => {
    
     result = await performQuery(query,params)
 
-    return 'Se ha eliminado el post' 
+    return 'The post has been deleted' 
 
 
 }

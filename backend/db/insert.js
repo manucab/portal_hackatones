@@ -7,7 +7,7 @@ const addPost = async (title,content,publicationDate) => {
     const params = [title,content,publicationDate]
 
     await performQuery(query,params)
-    return 'Se ha añadido un nuevo post'
+    return 'The new post has been added'
 
 }
 

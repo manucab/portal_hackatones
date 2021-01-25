@@ -61,7 +61,22 @@ const filterPosts = async (filter) => {
 
 }
 
+const getUserDB = async(email) => {
+
+  const query = 'select * from competitor where email=?';
+
+  const params = [email];
+
+  const [result] = await performQuery(query, params);
+
+  return result;
+}
+
+
+
+
 module.exports = {
   profileInfo,
-  filterPosts
+  filterPosts,
+  getUserDB
 };

@@ -2,12 +2,27 @@ const formatDate = require ('../utils/formatDate')
 const performQuery = require("./performQuery")
 
 
-const updateProfileInfo = async (id,name,surname,email,professional_profile,rol) => {
+const updateProfileInfo = async (id,
+    name,
+    surname,
+    email,
+    professional_profile,
+    rol,
+    newPassword) => {
 
     
     const queryOriginalInfo = `select * from competitor where id = ?`
     const paramsOriginalInfo = [id]
     originalInfo = await performQuery(queryOriginalInfo,paramsOriginalInfo)
+    
+    name = name || originalInfo[0].user_name
+    surname =  surname || originalInfo[0].surname
+    email =  email || originalInfo[0].email
+    professional_profile = professional_profile || originalInfo[0].professional_profile
+    rol = rol || originalInfo[0].rol
+    newPassword = newPassword || originalInfo[0].user_password
+
+
 
     const query= `
     update competitor
@@ -15,19 +30,21 @@ const updateProfileInfo = async (id,name,surname,email,professional_profile,rol)
     surname = ?,
     email = ?,
     professional_profile = ?,
-    rol = ? 
+    rol = ?,
+    user_password = ? 
     where id = ?`
-    const params = [name || originalInfo[0].user_name,
-        surname || originalInfo[0].surname,
-        email || originalInfo[0].email,
-        professional_profile || originalInfo[0].professional_profile,
-        rol || originalInfo[0].rol,
+    const params = [name ,
+        surname ,
+        email,
+        professional_profile,
+        rol,
+        newPassword,
         id]
    
     
     result = await performQuery(query,params)
 
-    return 'Cambios realizados con éxito' 
+    return 'Your profile has been updated' 
 
 }
 
@@ -44,7 +61,7 @@ const rateHackathon = async (idUser,idHackathon,rate) => {
     
     result = await performQuery(query,params)
 
-    return 'Gracias por valorar el hackathon' 
+    return 'Thank you for rate this hackathon' 
 
 }
 
@@ -77,7 +94,7 @@ const modifyHackathon = async (idUser,idHackathon,name,place,city,start_date,end
     
     result = await performQuery(query,params)
 
-    return 'Cambios realizados con éxito' 
+    return 'The hackathon has been succesfully modified' 
 
 }
 
@@ -104,7 +121,7 @@ const modifyPost = async (idPost,title,content,publication_date,hidden) => {
     
     result = await performQuery(query,params)
 
-    return 'Cambios realizados con éxito' 
+    return 'The post has been succesfully modified' 
 
 }
 
