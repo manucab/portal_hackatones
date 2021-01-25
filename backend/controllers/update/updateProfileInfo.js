@@ -30,7 +30,6 @@ const updateProfileInfo = async (req, res) => {
       }
       const userDB = await getUserDB(email);
       const passwordDB = userDB.user_password;
-      console.log(passwordDB);
 
       if (currentPassword != passwordDB) {
         res.status(401).send("Incorrect current password");
