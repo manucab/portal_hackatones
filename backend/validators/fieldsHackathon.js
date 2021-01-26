@@ -8,7 +8,7 @@ const fieldsHackathons = Joi.object({
         .valid('online', 'presencial', 'semipresencial')
         .required()
         .error(
-            new Error('The valid values of the venue are: online, presencial, semipresencial')
+            new Error('The valid values of place are: online, presencial, semipresencial')
         ),
     city: Joi.string().lowercase().trim()
         .alphanum()

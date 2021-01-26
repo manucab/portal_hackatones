@@ -19,7 +19,7 @@ const createHackathon = async(req, res) => {
     try {
 
         // 2. Check if the parameters are valid
-        await fieldsHackathons.validateAsync({ city, start_date, end_date, hackathon_status, hackathon_info, tech, thematic, link, webName });
+        await fieldsHackathons.validateAsync({ place, city, start_date, end_date, hackathon_status, hackathon_info, tech, thematic, link, webName });
 
         console.log('Validate fields ok!!');
 
@@ -40,12 +40,12 @@ const createHackathon = async(req, res) => {
 
         );
         // 3.1 Get id_hackathon
-        const id_hackathon = res_insertNewHackathon.insertId;
+        let id_hackathon = res_insertNewHackathon.insertId;
 
         // Insert new tech and table hackathon_tech
-        for (t of tech) {
-            await auxInsertTech(t, id_hackathon);
-        }
+        //    for (const t of tech) {
+        await auxInsertTech(tech, id_hackathon);
+        //   }
 
 
         console.log('Insert into table hackathon_tech OK!!');
@@ -70,7 +70,7 @@ const createHackathon = async(req, res) => {
         await performQuery(query, params);
         console.log('Rollback query');
 
-        console.log('Error postCreateHackathon', e.message);
+        console.log('Error postCreateHackathon', e);
         res.status(401).send();
     }
 }

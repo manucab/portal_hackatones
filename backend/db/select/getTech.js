@@ -3,13 +3,13 @@ require('dotenv').config();
 const { performQuery } = require('../performQuery');
 
 // Get user
-const getTechDB = async(tech) => {
+const getTechDB = async(tech, items) => {
 
-    const query = 'select * from tech where tech_name=?';
+    const query = `select * from tech where tech_name in (${items})`;
 
-    const params = [tech];
+    const params = [...tech];
 
-    const [result] = await performQuery(query, params);
+    const result = await performQuery(query, params);
 
     return result;
 }

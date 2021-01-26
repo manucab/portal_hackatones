@@ -3,11 +3,11 @@ require('dotenv').config();
 const { performQuery } = require('../performQuery');
 
 // Get user
-const insertNewTechDB = async(tech) => {
+const insertNewTechDB = async(tech, items) => {
 
-    const query = 'insert into tech (tech_name) values (?)';
+    const query = `insert into tech (tech_name) values ${items}`;
 
-    const params = [tech];
+    const params = [...tech];
 
     const result = await performQuery(query, params);
 

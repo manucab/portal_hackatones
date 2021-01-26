@@ -2,11 +2,11 @@ require('dotenv').config();
 const { performQuery } = require('../performQuery');
 
 
-const insertNewHackathonTechDB = async(id_hackathon, id_tech) => {
+const insertNewHackathonTechDB = async(values, arg) => {
 
-    const query = 'insert into hackathon_tech (id_hackathon, id_tech) values (?,?)';
+    const query = `insert into hackathon_tech (id_hackathon, id_tech) values ${arg}`;
 
-    const params = [id_hackathon, id_tech];
+    const params = [...values];
 
     const result = await performQuery(query, params);
 
