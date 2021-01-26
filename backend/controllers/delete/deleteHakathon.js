@@ -1,16 +1,23 @@
-const dbDeleteHackathon = require('../../db/delete/deleteHackathon')
+const dbDeleteHackathon = require("../../db/delete/deleteHackathon");
+const getHackathonId = require("../../db/select/getHackathonId")
 
-const deleteHackathon = async (req,res) => {
+const deleteHackathon = async (req, res) => {
+  const { idUser, idHackathon } = req.params;
 
-    const {idUser,idHackathon} = req.params
+  try {
+    const check = getHackathonId(idHackathon);
+    const checked = check.length === 1;
 
-    try {
-        result = await dbDeleteHackathon(idUser, idHackathon)
-    } catch (e) {
-        res.send(e.message)
-        return
+    if (!checked) {
+      res.status(401).send("Hackathon not found");
+      return;
     }
-    res.send(result)
-}
+    result = await dbDeleteHackathon(idUser, idHackathon);
+  } catch (e) {
+    res.send(e.message);
+    return;
+  }
+  res.send(result);
+};
 
-module.exports = deleteHackathon
+module.exports = deleteHackathon;
