@@ -27,15 +27,25 @@ const hackathonValidator = Joi.object({
         ),
         
     end_date: Joi.date()
-    .error(
-        new Error('Error date format')
-    ),
+        .error(
+            new Error('Error date format')
+        ),
 
 
     info: Joi.string()
         .min(3)
         .error(
             new Error('description should be a string with minimun 3 characters')
+        ),
+    techs: Joi.array()
+        .min(1)
+        .error(
+            new Error('Techs must be an array')
+        ),
+    links: Joi.array()
+        .min(1)
+        .error(
+            new Error('Links must be an array')
         ),
 })
 
