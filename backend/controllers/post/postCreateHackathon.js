@@ -51,12 +51,6 @@ const createHackathon = async(req, res) => {
         // 5. Insert new links and table hackathon_link
         await auxInsertLink(links, id_hackathon);
 
-
-
-        // ********* Part of link, a same of tech
-        //   link.toLowerCase(),
-        //   webName.toLowerCase(),
-
         // Commit mysql
         query = 'commit';
         await performQuery(query, params);
