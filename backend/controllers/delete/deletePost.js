@@ -1,11 +1,11 @@
-const db = require('../../db/delete')
+const dbDeletePost = require('../../db/delete/deletePost')
 
 const deletePost = async (req,res) => {
 
     const {id} = req.params
 
     try {
-        result = await db.deletePost(id)
+        result = await dbDeletePost(id)
     } catch (e) {
         res.send(e.message)
         return

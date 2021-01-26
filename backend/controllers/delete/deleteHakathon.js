@@ -1,11 +1,11 @@
-const db = require('../../db/delete')
+const dbDeleteHackathon = require('../../db/delete/deleteHackathon')
 
 const deleteHackathon = async (req,res) => {
 
     const {idUser,idHackathon} = req.params
 
     try {
-        result = await db.deleteHackathon(idUser, idHackathon)
+        result = await dbDeleteHackathon(idUser, idHackathon)
     } catch (e) {
         res.send(e.message)
         return

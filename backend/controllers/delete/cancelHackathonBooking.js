@@ -1,6 +1,5 @@
-const db = require('../../db/delete')
-const { getParticipation } = require('../../db/select')
-
+const dbCancelHackathonBooking = require('../../db/delete/cancelHackathonBooking')
+const getParticipation = require('../../db/select/getParticipation')
 const cancelHackathonBooking = async (req,res) => {
 
     const {idUser,idHackathon} = req.params
@@ -15,7 +14,7 @@ const cancelHackathonBooking = async (req,res) => {
             return;
         } 
         
-        result = await db.cancelHackathonBooking(idUser, idHackathon)
+        result = await dbCancelHackathonBooking(idUser, idHackathon)
         
 
     } catch (e) {

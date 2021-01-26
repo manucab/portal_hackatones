@@ -1,5 +1,6 @@
-const db = require('../../db/update')
+const dbModifyHackathon = require('../../db/update/modifyHackathon')
 const {hackathonValidator} = require('../../validators/hackathonValidator')
+
 const modifyHackathon = async (req,res) => {
 
     let {name,place,city,start_date,end_date,status,info} = req.body
@@ -7,7 +8,7 @@ const modifyHackathon = async (req,res) => {
 
     try {
         await hackathonValidator.validateAsync(req.body)
-        result = await db.modifyHackathon(idUser,idHackathon,name,place,city,start_date,end_date,status,info)
+        result = await dbModifyHackathon(idUser,idHackathon,name,place,city,start_date,end_date,status,info)
     } catch (e) {
         res.send(e.message)
         return

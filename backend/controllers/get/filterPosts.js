@@ -1,11 +1,11 @@
-const db = require('../../db/select')
+const dbFilterPosts = require('../../db/select/filterPosts')
 
 const filterPosts = async (req,res) => {
 
     const {filter} = req.params
 
     try {
-        result = await db.filterPosts(filter)
+        result = await dbFilterPosts(filter)
     } catch (e) {
         res.send(e.message)
         return

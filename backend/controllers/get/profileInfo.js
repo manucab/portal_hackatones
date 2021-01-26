@@ -1,6 +1,6 @@
-const db = require("../../db/select");
+const dbGetProfileInfo = require("../../db/select/getProfileInfo");
 
-const profileInfo = async (req, res) => {
+const getProfileInfo = async (req, res) => {
   const { id } = req.params;
   let profile;
   let hackathons;
@@ -8,7 +8,7 @@ const profileInfo = async (req, res) => {
   let data
 
   try {
-    data = await db.profileInfo(id);
+    data = await dbGetProfileInfo(id);
     profile = data[0];
     hackathons = data[1];
     stats = data[2];
@@ -24,4 +24,4 @@ const profileInfo = async (req, res) => {
   res.send(data);
 };
 
-module.exports = profileInfo;
+module.exports = getProfileInfo;

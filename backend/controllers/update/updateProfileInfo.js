@@ -1,5 +1,5 @@
-const db = require("../../db/update");
-const {getUserById } = require("../../db/select");
+const dbUpdateProfileInfo = require("../../db/update/updateProfileInfo");
+const getUserById  = require("../../db/select/getUserById");
 const profileInfoValidator = require("../../validators/profileInfoValidator");
 
 const updateProfileInfo = async (req, res) => {
@@ -18,6 +18,14 @@ const updateProfileInfo = async (req, res) => {
   try {
     //Check if user want to change password
     //Check that the new password and the password confimation are equals
+    const check = await getUserById(id)
+    const checked = check.length === 1
+
+    if(!checked) {
+      res.status(401).send("User not found");
+      return;
+    }
+
     if (newPassword) {
       await profileInfoValidator.validateAsync(req.body);
       if (newPassword != passwordConfirmation) {
@@ -39,7 +47,7 @@ const updateProfileInfo = async (req, res) => {
 
     await profileInfoValidator.validateAsync(req.body);
 
-    result = await db.updateProfileInfo(
+    result = await dbUpdateProfileInfo(
       id,
       name,
       surname,

@@ -1,4 +1,4 @@
-const db = require('../../db/update')
+const dbModifyPost = require('../../db/update/modifyPost')
 const postValidator = require('../../validators/postValidator')
 
 const modifyPost = async (req,res) => {
@@ -8,7 +8,7 @@ const modifyPost = async (req,res) => {
 
     try {
         await postValidator.validateAsync(req.body)
-        result = await db.modifyPost(id,title,content,publication_date,hidden)
+        result = await dbModifyPost(id,title,content,publication_date,hidden)
     } catch (e) {
         res.send(e.message)
         return

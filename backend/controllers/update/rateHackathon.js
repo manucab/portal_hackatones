@@ -1,4 +1,4 @@
-const db = require('../../db/update')
+const dbRateHackathon = require('../../db/update/rateHackathon')
 const isPossibleToRate = require('../../utils/isPossibleToRate')
 
 const rateHackathon = async (req,res) => {
@@ -13,7 +13,7 @@ const rateHackathon = async (req,res) => {
       return
         }
 
-        result = await db.rateHackathon(idUser,idHackathon,rate)
+        result = await dbRateHackathon(idUser,idHackathon,rate)
     } catch (e) {
         res.send(e.message)
         return

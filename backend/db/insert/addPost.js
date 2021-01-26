@@ -1,4 +1,4 @@
-const performQuery = require("./performQuery")
+const performQuery = require("../performQuery")
 
 const addPost = async (title,content,publicationDate) => {
 
@@ -11,6 +11,4 @@ const addPost = async (title,content,publicationDate) => {
 
 }
 
-module.exports = {
-    addPost
-}
+module.exports = addPost

@@ -1,5 +1,5 @@
-const db = require("../../db/delete");
-const { getUserById } = require("../../db/select");
+const dbDeleteUser = require("../../db/delete/deleteUser");
+const getUserById = require("../../db/select/getUserById");
 
 const deleteUser = async (req, res) => {
   const { id } = req.params;
@@ -12,7 +12,7 @@ const deleteUser = async (req, res) => {
       res.status(401).send("User not found");
       return;
     }
-    result = await db.deleteUser(id);
+    result = await dbDeleteUser(id);
   } catch (e) {
     res.send(e.message);
     return;
