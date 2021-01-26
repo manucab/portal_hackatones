@@ -52,12 +52,12 @@ const filterPosts = async (filter) => {
   }
 };
 
-const getUserDB = async (email) => {
-  const query = "select * from competitor where email=?";
+const getUserById = async (id) => {
+  const query = "select * from competitor where id=?";
 
-  const params = [email];
+  const params = [id];
 
-  const [result] = await performQuery(query, params);
+  const result = await performQuery(query, params);
 
   return result;
 };
@@ -70,9 +70,21 @@ const getUsersIdDB = async () => {
   return result;
 };
 
+const getParticipation = async (idUser,idHackathon) => {
+
+  const query = `select * from competitor_hackathon 
+    where id_competitor = ? and id_hackathon = ?`
+
+  const params = [idUser,idHackathon]
+  result = performQuery(query,params)
+  return result
+}
+
+
 module.exports = {
   profileInfo,
   filterPosts,
-  getUserDB,
+  getUserById,
   getUsersIdDB,
+  getParticipation
 };

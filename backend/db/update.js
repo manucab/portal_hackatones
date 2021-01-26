@@ -1,30 +1,31 @@
-const formatDate = require ('../utils/formatDate')
-const performQuery = require("./performQuery")
+const formatDate = require("../utils/formatDate");
+const performQuery = require("./performQuery");
 
+const updateProfileInfo = async (
+  id,
+  name,
+  surname,
+  email,
+  professional_profile,
+  rol,
+  newPassword
+) => {
+  const queryOriginalInfo = `select * from competitor where id = ?`;
+  const paramsOriginalInfo = [id];
+  const originalInfo = await performQuery(
+    queryOriginalInfo,
+    paramsOriginalInfo
+  );
 
-const updateProfileInfo = async (id,
-    name,
-    surname,
-    email,
-    professional_profile,
-    rol,
-    newPassword) => {
+  name = name || originalInfo[0].user_name;
+  surname = surname || originalInfo[0].surname;
+  email = email || originalInfo[0].email;
+  professional_profile =
+    professional_profile || originalInfo[0].professional_profile;
+  rol = rol || originalInfo[0].rol;
+  newPassword = newPassword || originalInfo[0].user_password;
 
-    
-    const queryOriginalInfo = `select * from competitor where id = ?`
-    const paramsOriginalInfo = [id]
-    originalInfo = await performQuery(queryOriginalInfo,paramsOriginalInfo)
-    
-    name = name || originalInfo[0].user_name
-    surname =  surname || originalInfo[0].surname
-    email =  email || originalInfo[0].email
-    professional_profile = professional_profile || originalInfo[0].professional_profile
-    rol = rol || originalInfo[0].rol
-    newPassword = newPassword || originalInfo[0].user_password
-
-
-
-    const query= `
+  const query = `
     update competitor
     set user_name = ?,
     surname = ?,
@@ -32,46 +33,55 @@ const updateProfileInfo = async (id,
     professional_profile = ?,
     rol = ?,
     user_password = ? 
-    where id = ?`
-    const params = [name ,
-        surname ,
-        email,
-        professional_profile,
-        rol,
-        newPassword,
-        id]
-   
-    
-    result = await performQuery(query,params)
+    where id = ?`;
+  const params = [
+    name,
+    surname,
+    email,
+    professional_profile,
+    rol,
+    newPassword,
+    id,
+  ];
 
-    return 'Your profile has been updated' 
+  result = await performQuery(query, params);
 
-}
+  return "Your profile has been updated";
+};
 
-const rateHackathon = async (idUser,idHackathon,rate) => {
-
-    //Inscription_status is used to be sure the hackathon has alreday been ended.
-    //This works if in the front we only have a button to rate in already finished hackathons
-    const query= `
+const rateHackathon = async (idUser, idHackathon, rate) => {
+  const query = `
     update competitor_hackathon
     set rate = ?
-    where id_competitor = ? and id_hackathon = ? and inscription_status = 'asistente'`
-    
-    const params = [rate,idUser,idHackathon]
-    
-    result = await performQuery(query,params)
+    where id_competitor = ? and id_hackathon = ? and inscription_status = 'asistente'`;
 
-    return 'Thank you for rate this hackathon' 
+  const params = [rate, idUser, idHackathon];
 
-}
+  result = await performQuery(query, params);
 
-const modifyHackathon = async (idUser,idHackathon,name,place,city,start_date,end_date,status,info) => {
+  return "Thank you for rate this hackathon";
+};
 
-    const queryOriginalInfo = `select * from hackathon where id = ?`
-    const paramsOriginalInfo = [idHackathon]
-    originalInfo = await performQuery(queryOriginalInfo,paramsOriginalInfo)
+const modifyHackathon = async (
+  idUser,
+  idHackathon,
+  name,
+  place,
+  city,
+  start_date,
+  end_date,
+  status,
+  info
+) => {
+  const queryOriginalInfo = `select * from hackathon where id = ?`;
+  const paramsOriginalInfo = [idHackathon];
+  originalInfo = await performQuery(queryOriginalInfo, paramsOriginalInfo);
+  const checkedHackathon = originalInfo.length === 1;
+  if (!checkedHackathon) {
+    return "Hackathon not found";
+  }
 
-    const query= `
+  const query = `
     update hackathon
     set hackathon_name = ?,
     hackathon_place = ?,
@@ -80,55 +90,56 @@ const modifyHackathon = async (idUser,idHackathon,name,place,city,start_date,end
     end_date = ?,
     hackathon_status =?,
     hackathon_info = ?
-    where id = ? and id_organizer = ?`
-    const params = [name || originalInfo[0].hackathon_name,
-        place || originalInfo[0].hackathon_place,
-        city || originalInfo[0].city,
-        start_date || formatDate(originalInfo[0].start_date),
-        end_date || formatDate(originalInfo[0].end_date),
-        status || originalInfo[0].hackathon_status,
-        info || originalInfo[0].hackathon_info,
-        idHackathon,
-        idUser]
-    console.log(params)
-    
-    result = await performQuery(query,params)
+    where id = ? and id_organizer = ?`;
+  const params = [
+    name || originalInfo[0].hackathon_name,
+    place || originalInfo[0].hackathon_place,
+    city || originalInfo[0].city,
+    start_date || formatDate(originalInfo[0].start_date),
+    end_date || formatDate(originalInfo[0].end_date),
+    status || originalInfo[0].hackathon_status,
+    info || originalInfo[0].hackathon_info,
+    idHackathon,
+    idUser,
+  ];
 
-    return 'The hackathon has been succesfully modified' 
+  result = await performQuery(query, params);
 
-}
+  return "The hackathon has been succesfully modified";
+};
 
-const modifyPost = async (idPost,title,content,publication_date,hidden) => {
+const modifyPost = async (idPost, title, content, publication_date, hidden) => {
+  const queryOriginalInfo = `select * from post where id = ?`;
+  const paramsOriginalInfo = [idPost];
+  originalInfo = await performQuery(queryOriginalInfo, paramsOriginalInfo);
 
-    const queryOriginalInfo = `select * from post where id = ?`
-    const paramsOriginalInfo = [idPost]
-    originalInfo = await performQuery(queryOriginalInfo,paramsOriginalInfo)
-   
-    const newTitle = title || originalInfo[0].title
-    const newContent = content || originalInfo[0].content
-    const newPublicationDate = publication_date || originalInfo[0].publication_date
-    const newHidden = hidden || originalInfo[0].hidden
+  const newTitle = title || originalInfo[0].title;
+  const newContent = content || originalInfo[0].content;
+  const newPublicationDate =
+    publication_date || originalInfo[0].publication_date;
+  const newHidden = hidden || originalInfo[0].hidden;
 
-    const query= `
+  const query = `
     update post
     set title = ?,
     content = ?,
     publication_date = ?,
     hidden = ?
-    where id = ?`    
+    where id = ?`;
 
-    const params = [newTitle,newContent,newPublicationDate,newHidden,idPost]
-    
-    result = await performQuery(query,params)
+  const params = [newTitle, newContent, newPublicationDate, newHidden, idPost];
 
-    return 'The post has been succesfully modified' 
+  result = await performQuery(query, params);
 
-}
+  return "The post has been succesfully modified";
+};
 
+const forgotPassword = async (email) => {};
 
 module.exports = {
-    updateProfileInfo,
-    rateHackathon,
-    modifyHackathon,
-    modifyPost
-}
+  updateProfileInfo,
+  rateHackathon,
+  modifyHackathon,
+  modifyPost,
+  forgotPassword,
+};

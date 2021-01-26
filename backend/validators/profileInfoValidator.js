@@ -15,10 +15,10 @@ const profileInfoValidator = Joi.object({
 
   professional_profile: Joi.date()
     .valid("desarrollador", "diseñador", "marketing", "otro")
-    .error(new Error("Error wrong value")),
+    .error(new Error("Personal Profile should be desarrollador, diseñador ,marketing or otro")),
   rol: Joi.date()
     .valid("user", "organizer")
-    .error(new Error("Error wrong value")),
+    .error(new Error("Error rol value should be user or organizer")),
   newPassword: Joi.string()
     .pattern(new RegExp("^[a-zA-Z0-9]{8,16}$"))
     .error(new Error("The Password must have 8 caracters min.")),

@@ -1,5 +1,5 @@
 const db = require("../../db/update");
-const { getUserDB } = require("../../db/select");
+const {getUserById } = require("../../db/select");
 const profileInfoValidator = require("../../validators/profileInfoValidator");
 
 const updateProfileInfo = async (req, res) => {
@@ -28,7 +28,7 @@ const updateProfileInfo = async (req, res) => {
           );
         return;
       }
-      const userDB = await getUserDB(email);
+      const userDB = await getUserById(id);
       const passwordDB = userDB.user_password;
 
       if (currentPassword != passwordDB) {
@@ -36,6 +36,8 @@ const updateProfileInfo = async (req, res) => {
         return;
       }
     }
+
+    await profileInfoValidator.validateAsync(req.body);
 
     result = await db.updateProfileInfo(
       id,
