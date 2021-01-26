@@ -30,6 +30,10 @@
               id_notExist.splice(index_notExist, 1);
           });
 
+
+          //links_notExist = links.filter(item => !links_exist.includes(item));
+
+
           // 5. Prepare the params of query
           params = getParams(id_notExist.length, '(?)');
 

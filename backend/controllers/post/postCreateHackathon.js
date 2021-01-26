@@ -10,7 +10,7 @@ const { auxInsertLink } = require('../post/auxInsertLink');
 const createHackathon = async(req, res) => {
 
     // 1. Get params
-    const { place, city, start_date, end_date, hackathon_status, hackathon_info, tech, thematic, link, webName } = req.body
+    const { place, city, start_date, end_date, hackathon_status, hackathon_info, tech, thematic, links /*, webName */ } = req.body
 
     const id_organizer = req.auth.id;
 
@@ -20,7 +20,7 @@ const createHackathon = async(req, res) => {
     try {
 
         // 2. Check if the parameters are valid
-        await fieldsHackathons.validateAsync({ place, city, start_date, end_date, hackathon_status, hackathon_info, tech, thematic, link, webName });
+        await fieldsHackathons.validateAsync({ place, city, start_date, end_date, hackathon_status, hackathon_info, tech, thematic, links /*, webName*/ });
 
         console.log('Validate fields ok!!');
 
@@ -49,7 +49,7 @@ const createHackathon = async(req, res) => {
         console.log('Insert into table hackathon_tech OK!!');
 
         // 5. Insert new links and table hackathon_link
-        await auxInsertLink();
+        await auxInsertLink(links, id_hackathon);
 
 
 

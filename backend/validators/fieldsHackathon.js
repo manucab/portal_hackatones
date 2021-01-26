@@ -53,16 +53,36 @@ const fieldsHackathons = Joi.object({
         .error(
             new Error('The thematic of hackathon is not valid')
         ),
-    link: Joi.string().hostname().lowercase().trim()
-        .required()
-        .error(
-            new Error('The link of hackathon is not valid')
-        ),
-    webName: Joi.string().lowercase().trim()
-        .required()
-        .error(
-            new Error('The webName of hackathon is not valid')
-        ),
+
+    // Joi.array().items(
+    //     Joi.object({
+    //       a: Joi.string(),
+    //       b: Joi.number()
+    //     })
+
+
+    links: Joi.array().items(Joi.object({
+        link: Joi.string().hostname().lowercase().trim()
+            .required()
+            .error(
+                new Error('The link of hackathon is not valid')
+            ),
+        webName: Joi.string().lowercase().trim()
+            .required()
+            .error(
+                new Error('The webName of hackathon is not valid')
+            ),
+    })),
+    // link: Joi.string().hostname().lowercase().trim()
+    //     .required()
+    //     .error(
+    //         new Error('The link of hackathon is not valid')
+    //     ),
+    // webName: Joi.string().lowercase().trim()
+    //     .required()
+    //     .error(
+    //         new Error('The webName of hackathon is not valid')
+    //     ),
 
 })
 
