@@ -11,65 +11,54 @@
       let id_exist = [];
       let id_notExist = tech;
 
-      // tech --> array de las tech que llegan
-      // params --> tamaño del array --> mismo numero de ? en params
+      // Fucntion for prepara string query mysql, amoung of values as ? or a pair (?,?)
+      const getParams = (len, format) => Array(len).fill(`${format}`).join();
 
-      // Obtenemos el numero de parametros para la query
-      tech.forEach(item => { params.push('?') });
-      // params.join() --> convertimos un array en un string separado por comas
+      // 1. Prepare the query
+      params = getParams(tech.length, '?');
 
-      id_exist = await getTechDB(tech, params.join());
+      // 2.  Get the tech that exist in db
+      id_exist = await getTechDB(tech, params);
 
-
+      // 3. Check if exist new tech
       if (id_exist.length < tech.length) {
 
+          // 4. Delete techs that exist and to keep with new techs
           id_exist.forEach((item, index_exist) => {
               let nameTech = item.tech_name;
               let index_notExist = id_notExist.indexOf(nameTech);
               id_notExist.splice(index_notExist, 1);
           });
 
+          // 5. Prepare the params of query
+          params = getParams(id_notExist.length, '(?)');
 
-          params = [];
+          // 6. Get id of that tech
+          const { affectedRows, insertId } = await insertNewTechDB(id_notExist, params);
 
-          // Obtenemos el numero de parametros para la query
-          id_notExist.forEach(item => { params.push('(?)') });
-
-          // Get id of that tech
-          const { affectedRows, insertId } = await insertNewTechDB(id_notExist, params.join());
-
+          // 6.1 add to id_tech the id's of new techs
           for (let j = 0; j < affectedRows; j++) {
-
               let id_new = insertId + j;
               id_tech.push(id_new);
           }
-
-
       }
 
-      //s   plus id exist
+      // 7. Add id that tech to add in table hackathon_tech
+      id_exist.forEach(item => id_tech.push(item.id));
 
-      id_exist.forEach(item => {
-          id_tech.push(item.id);
-      });
-
-
-
-      //   // 4. Insert in table hackathon_tech (id_tech and id_hackathon)
-
-      // Ordenamos el array de menor a mayor
+      // 8. Sort array from smallest to largest
       id_tech = id_tech.sort((a, b) => a - b);
 
-      params = id_tech.map(item => '(?,?)');
+      // 9. Prepare params of string query values (id_hackathon, tech))
+      params = getParams(id_tech.length, '(?,?)');
 
       let valuesTech = [];
 
-      id_tech.forEach(item => {
-          valuesTech.push(id_hackathon, item);
-      });
+      // Prepare values to format of query (id_hackathon, tech) values (), (), ()
+      id_tech.forEach(item => valuesTech.push(id_hackathon, item));
 
-      await insertNewHackathonTechDB(valuesTech, params.join());
-
+      // Insert into table new hackathon_tech
+      await insertNewHackathonTechDB(valuesTech, params);
 
   }
 

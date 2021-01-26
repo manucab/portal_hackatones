@@ -4,6 +4,7 @@ const { fieldsHackathons } = require('../../validators/fieldsHackathon');
 const { createHackathonDB } = require('../../db/insert/insertNewHackathon');
 const { performQuery } = require('../../db/performQuery');
 const { auxInsertTech } = require('../post/auxInsertTech');
+const { auxInsertLink } = require('../post/auxInsertLink');
 
 /* Create a new hackathon*/
 const createHackathon = async(req, res) => {
@@ -42,13 +43,14 @@ const createHackathon = async(req, res) => {
         // 3.1 Get id_hackathon
         let id_hackathon = res_insertNewHackathon.insertId;
 
-        // Insert new tech and table hackathon_tech
-        //    for (const t of tech) {
+        // 4. Insert new tech and table hackathon_tech
         await auxInsertTech(tech, id_hackathon);
-        //   }
-
 
         console.log('Insert into table hackathon_tech OK!!');
+
+        // 5. Insert new links and table hackathon_link
+        await auxInsertLink();
+
 
 
         // ********* Part of link, a same of tech
