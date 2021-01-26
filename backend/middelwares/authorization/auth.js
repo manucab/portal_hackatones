@@ -33,8 +33,6 @@ const isAuthenticated = async(req, res, next) => {
 
             req.auth = decodedToken;
 
-            console.log(decodedToken);
-
             next();
 
         }
@@ -64,9 +62,6 @@ const isAdmin = async(req, res, next) => {
         // 2. Search in database
         const user = await getAdminDB(email);
 
-        console.log('user :>> ', user);
-
-
         // if not user --> failed
         if (!user) {
             res.status(401).send();
@@ -91,9 +86,6 @@ const isOrganizer = async(req, res, next) => {
 
     const { email } = req.auth || req.body;
 
-    console.log('isOrganizer check email', email);
-
-
     try {
 
         // 1. Check email
@@ -101,9 +93,6 @@ const isOrganizer = async(req, res, next) => {
 
         // 2. Search in database
         const user = await getOrganizerDB(email);
-
-        console.log('user.state :>> ', user.active_user);
-        console.log('user.id :>> ', user.id);
 
         // if not user --> failed
         if (!user) {

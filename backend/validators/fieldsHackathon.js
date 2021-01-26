@@ -39,9 +39,9 @@ const fieldsHackathons = Joi.object({
         .error(
             new Error('The info of hackathon is not valid')
         ),
-    tech: Joi.string().lowercase().trim()
+    tech: Joi.array()
+        .items(Joi.string(), Joi.number())
         .required()
-        .min(2)
         .max(50)
         .error(
             new Error('The tech of hackathon is not valid')

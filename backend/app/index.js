@@ -8,7 +8,7 @@ const express = require("express");
 const requestId = require('express-request-id')();
 const { logger } = require('./config/logger');
 
-const port = process.env.PORT || 4444;
+const port = process.env.PORT || 3000;
 const app = express();
 
 // Routes

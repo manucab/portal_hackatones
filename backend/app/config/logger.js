@@ -52,20 +52,20 @@ const transports = [
     //     colorize: true
     // }),
     new winston.transports.File({
-        filename: 'logs/error.log',
+        filename: '../logs/error.log',
         level: 'error',
         zippedArchive: true,
         maxsize: 5242880,
         maxFiles: 31
     }),
     new winston.transports.File({
-        filename: 'logs/all.log',
+        filename: '../logs/all.log',
         zippedArchive: true,
         maxsize: 5242880,
         maxFiles: 31
     }),
     new winston.transports.File({
-        filename: 'logs/access.log',
+        filename: '../logs/access.log',
         leve: 'http',
         zippedArchive: true,
         maxsize: 5242880,

@@ -11,8 +11,8 @@ const performQuery = async(query, params) => {
 
         return result;
     } catch (e) {
-        console.log('e performQuery :>> ', e);
-        throw new Error("database-error", e);
+        console.log('e performQuery :>> ', e.sqlMessage);
+        throw new Error("database-error", e.sqlMessage);
 
     } finally {
         if (connection) {
