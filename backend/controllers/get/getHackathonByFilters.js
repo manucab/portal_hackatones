@@ -2,10 +2,10 @@
 require('dotenv').config();
 const { logger } = require("../../app/config/logger");
 const { getHackathonInfoDB } = require('../../db/select');
-const { getLinksDB } = require('../../db/select/getLinks');
 const { getListLinkByHackathonDB } = require('../../db/select/getListLinkByHackathon');
 const { getListTechByHackathonDB } = require('../../db/select/getListTechByHackathon');
 const { performQuery } = require('../../db/performQuery');
+const { filterHackathons } = require('../../validators/val_filterHackathon');
 
 const getHackathonByFilters = async(req, res) => {
 
@@ -14,19 +14,13 @@ const getHackathonByFilters = async(req, res) => {
     let params = [];
 
     // 1. Get parameters of req.query
-    const {
-        hackathon_place,
-        city,
-        start_date,
-        end_date,
-        thematic,
-        tech
-    } = req.query;
+    const { hackathon_place, city, start_date, end_date, thematic, tech } = req.query;
 
     const { id } = req.params;
 
     // 1.0 Check the parameters are valid????
     // TODO -- valide params !!!
+    await filterHackathons.validateAsync({ hackathon_place, city, start_date, end_date, tech, thematic });
 
     try {
 
@@ -42,6 +36,7 @@ const getHackathonByFilters = async(req, res) => {
         //  2. Search parameters -> {hackathon_place, city,start_date, end_date, technologies,thematic }
         const listHackathons = await getHackathonInfoDB(id, hackathon_place, city, start_date, end_date, thematic);
 
+        // Get id's of hackathons filter for search tech and link 
         let listIdHackathons = listHackathons.map(item => item.id);
 
 
@@ -70,7 +65,8 @@ const getHackathonByFilters = async(req, res) => {
 
             // Filter of technologies
             if (tech) {
-                hackathon = listHackathons.filter(item => item['tech'].includes(tech));
+                // Filter for technologies, get array of tech hackathon and filter with parameter array tech
+                hackathon = listHackathons.filter(item => item['tech'].some(j => tech.includes(j)));
             } else {
                 hackathon = [...listHackathons];
             }
@@ -79,11 +75,11 @@ const getHackathonByFilters = async(req, res) => {
             hackathon.forEach(item => {
                 msgResponse.push({
                     hackathon_place: item.hackathon_place,
-                    city: item.city,
+                    city: item.city || 'not info',
                     start_date: item.start_date,
                     end_date: item.end_date,
-                    hackathon_status: item.hackathon_status,
-                    hackathon_info: item.hackathon_info,
+                    hackathon_status: item.hackathon_status || 'not info',
+                    hackathon_info: item.hackathon_info || 'not info',
                     thematic: item.thematic,
                     link: item.link || 'not info',
                     tech: item.tech || 'not info'
@@ -93,8 +89,6 @@ const getHackathonByFilters = async(req, res) => {
             })
 
         }
-
-
 
         // Commit mysql
         query = 'commit';

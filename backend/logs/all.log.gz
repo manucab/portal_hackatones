@@ -932,3 +932,161 @@
 2021-01-28 -- 02:12:41:1241 -- info: Init transaction query
 2021-01-28 -- 02:12:41:1241 -- info: Commit
 2021-01-28 -- 02:12:41:1241 -- http: GET -- /hackathon/search/filters?hackathon_place=online&city=vigo&tech=java -- 42fb8778-e5c6-470f-a286-a1d3e2dbfb20 -- 200 -- 783 - 6.315 ms
+2021-01-28 -- 10:40:16:4016 -- info: listening on port 3000
+2021-01-28 -- 10:40:46:4046 -- info: listening on port 3000
+2021-01-28 -- 10:42:21:4221 -- info: listening on port 3000
+2021-01-28 -- 10:43:10:4310 -- info: listening on port 3000
+2021-01-28 -- 10:43:14:4314 -- info: Init transaction query
+2021-01-28 -- 10:43:14:4314 -- info: Commit
+2021-01-28 -- 10:43:14:4314 -- http: GET -- /hackathon/search/filters?hackathon_place=online&city=vigo&tech[]=java -- a5d0d8ba-42c0-46cb-84bb-4c6db623ecf4 -- 200 -- 2 - 66.223 ms
+2021-01-28 -- 10:43:33:4333 -- info: Init transaction query
+2021-01-28 -- 10:43:33:4333 -- info: Commit
+2021-01-28 -- 10:43:33:4333 -- http: GET -- /hackathon/search/filters?hackathon_place=online&city=vigo&tech[0]=java -- a536dd19-442b-4f03-b129-902afb61cadc -- 200 -- 2 - 7.959 ms
+2021-01-28 -- 10:43:40:4340 -- info: Init transaction query
+2021-01-28 -- 10:43:40:4340 -- info: Commit
+2021-01-28 -- 10:43:40:4340 -- http: GET -- /hackathon/search/filters?tech[0]=java -- 1d8efa6a-ab45-4fc4-96cf-f73af6d48a49 -- 200 -- 2 - 7.540 ms
+2021-01-28 -- 10:51:08:518 -- info: Init transaction query
+2021-01-28 -- 10:51:08:518 -- info: Commit
+2021-01-28 -- 10:51:08:518 -- http: GET -- /hackathon/search/filters?hackathon_place=online -- e43bc93f-6e09-4a7b-8ec2-e0b3fa5b0b19 -- 200 -- 1495 - 16.597 ms
+2021-01-28 -- 10:52:04:524 -- info: listening on port 3000
+2021-01-28 -- 10:52:08:528 -- info: Init transaction query
+2021-01-28 -- 10:52:08:528 -- info: Commit
+2021-01-28 -- 10:52:08:528 -- http: GET -- /hackathon/search/filters?hackathon_place=online -- 0fdc835d-4feb-4986-8083-7c747641f401 -- 200 -- 783 - 25.154 ms
+2021-01-28 -- 10:52:18:5218 -- info: Init transaction query
+2021-01-28 -- 10:52:18:5218 -- info: Commit
+2021-01-28 -- 10:52:18:5218 -- http: GET -- /hackathon/search/filters?hackathon_place=online&tech[0]=java -- c1b5da1f-6326-43bb-8482-4a1e9962a2dd -- 200 -- 783 - 10.573 ms
+2021-01-28 -- 10:52:31:5231 -- info: Init transaction query
+2021-01-28 -- 10:52:31:5231 -- info: Commit
+2021-01-28 -- 10:52:31:5231 -- http: GET -- /hackathon/search/filters?tech[0]=java -- 2820a62a-3763-4a19-8d0f-5e5e69906b21 -- 200 -- 783 - 11.679 ms
+2021-01-28 -- 10:53:29:5329 -- info: listening on port 3000
+2021-01-28 -- 10:53:32:5332 -- info: Init transaction query
+2021-01-28 -- 10:53:32:5332 -- info: Commit
+2021-01-28 -- 10:53:32:5332 -- http: GET -- /hackathon/search/filters?tech[0]=java -- 4e4c1c22-d96c-4387-8685-1e92e35cfe8d -- 200 -- 783 - 34.339 ms
+2021-01-28 -- 10:53:52:5352 -- info: Init transaction query
+2021-01-28 -- 10:53:52:5352 -- info: Commit
+2021-01-28 -- 10:53:52:5352 -- http: GET -- /hackathon/search/filters?tech[0]=python -- 8fc9a3fb-8fbc-48ef-bb0f-ed2b42a417a7 -- 200 -- 783 - 12.610 ms
+2021-01-28 -- 10:54:06:546 -- info: Init transaction query
+2021-01-28 -- 10:54:06:546 -- info: Commit
+2021-01-28 -- 10:54:06:546 -- http: GET -- /hackathon/search/filters?tech[0]=python -- 32677d5f-5825-4f25-870b-a033491700da -- 200 -- 783 - 9.549 ms
+2021-01-28 -- 10:54:58:5458 -- info: Init transaction query
+2021-01-28 -- 10:54:58:5458 -- info: Commit
+2021-01-28 -- 10:54:58:5458 -- http: GET -- /hackathon/search/filters?tech[0]=python -- f032b7c8-a05b-4128-98e3-a9a208202fc5 -- 200 -- 783 - 8.828 ms
+2021-01-28 -- 10:55:24:5524 -- info: listening on port 3000
+2021-01-28 -- 10:55:27:5527 -- info: Init transaction query
+2021-01-28 -- 10:55:28:5528 -- info: Commit
+2021-01-28 -- 10:55:28:5528 -- http: GET -- /hackathon/search/filters?tech[0]=python -- d5adfed1-a7bf-44f5-829b-8f8603df8e70 -- 200 -- 732 - 32.675 ms
+2021-01-28 -- 10:55:37:5537 -- info: Init transaction query
+2021-01-28 -- 10:55:37:5537 -- info: Commit
+2021-01-28 -- 10:55:37:5537 -- http: GET -- /hackathon/search/filters?tech[0]=c -- 4263fac2-23c2-45b2-b836-bd62c89f63af -- 200 -- 2 - 10.249 ms
+2021-01-28 -- 10:55:41:5541 -- info: Init transaction query
+2021-01-28 -- 10:55:41:5541 -- info: Commit
+2021-01-28 -- 10:55:41:5541 -- http: GET -- /hackathon/search/filters?tech[0]=C -- b01ae79f-1ca0-472e-9021-8597efd86b3a -- 200 -- 357 - 38.434 ms
+2021-01-28 -- 10:56:02:562 -- info: Init transaction query
+2021-01-28 -- 10:56:02:562 -- info: Commit
+2021-01-28 -- 10:56:02:562 -- http: GET -- /hackathon/search/filters?tech[0]=C&tech[1]=javascript -- 5e662a0e-16cd-4cb6-8b63-c96849359685 -- 200 -- 357 - 7.402 ms
+2021-01-28 -- 10:56:08:568 -- info: Init transaction query
+2021-01-28 -- 10:56:08:568 -- info: Commit
+2021-01-28 -- 10:56:08:568 -- http: GET -- /hackathon/search/filters?tech[0]=python&tech[1]=javascript -- 9dc0532d-fe76-4741-9196-be3879653bd1 -- 200 -- 732 - 15.994 ms
+2021-01-28 -- 10:56:32:5632 -- info: Init transaction query
+2021-01-28 -- 10:56:32:5632 -- info: Commit
+2021-01-28 -- 10:56:32:5632 -- http: GET -- /hackathon/search/filters?tech[0]=python&tech[1]=javascript&tech[2]=java -- def4e89a-cad4-4361-858a-d5984183685a -- 200 -- 732 - 8.752 ms
+2021-01-28 -- 11:06:31:631 -- info: listening on port 3000
+2021-01-28 -- 11:06:34:634 -- info: Init transaction query
+2021-01-28 -- 11:06:34:634 -- error: Rollback query
+2021-01-28 -- 11:06:34:634 -- error: Error get hackathon info python is not a function
+2021-01-28 -- 11:06:34:634 -- http: GET -- /hackathon/search/filters?tech[0]=python -- 7fe2ab0d-2599-45dc-838a-8865780ba5ae -- 500 -- 5 - 32.834 ms
+2021-01-28 -- 11:07:42:742 -- info: listening on port 3000
+2021-01-28 -- 11:07:45:745 -- info: Init transaction query
+2021-01-28 -- 11:07:45:745 -- info: Commit
+2021-01-28 -- 11:07:45:745 -- http: GET -- /hackathon/search/filters?tech[0]=python -- 0670c819-56c7-497c-910c-3abd502e682a -- 200 -- 732 - 37.919 ms
+2021-01-28 -- 11:08:01:81 -- info: Init transaction query
+2021-01-28 -- 11:08:01:81 -- info: Commit
+2021-01-28 -- 11:08:01:81 -- http: GET -- /hackathon/search/filters?tech[0]=C -- f927360a-f6e2-4a71-8ab0-fc90d220d486 -- 200 -- 357 - 13.800 ms
+2021-01-28 -- 11:08:09:89 -- info: Init transaction query
+2021-01-28 -- 11:08:09:89 -- info: Commit
+2021-01-28 -- 11:08:09:89 -- http: GET -- /hackathon/search/filters?tech[0]=java -- ed326a40-d208-4180-a687-c4bf98920c81 -- 200 -- 1139 - 9.362 ms
+2021-01-28 -- 11:09:54:954 -- info: listening on port 3000
+2021-01-28 -- 11:09:57:957 -- info: Init transaction query
+2021-01-28 -- 11:09:57:957 -- info: Commit
+2021-01-28 -- 11:09:57:957 -- http: GET -- /hackathon/search/filters?tech[0]=java -- e5278772-8f43-45c7-a257-883d20e589e1 -- 200 -- 783 - 56.783 ms
+2021-01-28 -- 11:10:07:107 -- info: Init transaction query
+2021-01-28 -- 11:10:08:108 -- info: Commit
+2021-01-28 -- 11:10:08:108 -- http: GET -- /hackathon/search/filters?tech[0]=C -- 5c8d8970-fade-4971-891c-91308e6d5456 -- 200 -- 357 - 15.380 ms
+2021-01-28 -- 11:10:20:1020 -- info: Init transaction query
+2021-01-28 -- 11:10:20:1020 -- info: Commit
+2021-01-28 -- 11:10:20:1020 -- http: GET -- /hackathon/search/filters?tech[0]=javascript -- 17fa2ccb-763f-4849-827d-243aeb2484a7 -- 200 -- 764 - 52.289 ms
+2021-01-28 -- 11:11:05:115 -- info: listening on port 3000
+2021-01-28 -- 11:11:08:118 -- info: Init transaction query
+2021-01-28 -- 11:11:08:118 -- error: Rollback query
+2021-01-28 -- 11:11:08:118 -- error: Error get hackathon info python is not a function
+2021-01-28 -- 11:11:08:118 -- http: GET -- /hackathon/search/filters?tech[0]=javascript -- 4728058e-986e-410f-b761-2651ac4158dd -- 500 -- 5 - 41.232 ms
+2021-01-28 -- 11:12:37:1237 -- info: listening on port 3000
+2021-01-28 -- 11:12:40:1240 -- info: Init transaction query
+2021-01-28 -- 11:12:40:1240 -- info: Commit
+2021-01-28 -- 11:12:40:1240 -- http: GET -- /hackathon/search/filters?tech[0]=javascript -- 6969b7da-51ef-48b7-903f-82236076083e -- 200 -- 2 - 29.607 ms
+2021-01-28 -- 11:12:44:1244 -- info: Init transaction query
+2021-01-28 -- 11:12:44:1244 -- info: Commit
+2021-01-28 -- 11:12:44:1244 -- http: GET -- /hackathon/search/filters?tech[0]=javascript -- 0e735bdf-a6cc-4c24-9050-5a4483a4de31 -- 200 -- 2 - 8.459 ms
+2021-01-28 -- 11:12:48:1248 -- info: Init transaction query
+2021-01-28 -- 11:12:48:1248 -- info: Commit
+2021-01-28 -- 11:12:48:1248 -- http: GET -- /hackathon/search/filters?tech[0]=java -- eb2c59ac-3e82-45f4-a7dd-c6bd4cfed802 -- 200 -- 2 - 8.974 ms
+2021-01-28 -- 11:12:59:1259 -- info: listening on port 3000
+2021-01-28 -- 11:13:01:131 -- info: Init transaction query
+2021-01-28 -- 11:13:01:131 -- info: Commit
+2021-01-28 -- 11:13:01:131 -- http: GET -- /hackathon/search/filters?tech[0]=java -- dedec3c6-7d24-4dc4-83db-f45a137bd6d7 -- 200 -- 783 - 32.354 ms
+2021-01-28 -- 11:13:18:1318 -- info: Init transaction query
+2021-01-28 -- 11:13:18:1318 -- info: Commit
+2021-01-28 -- 11:13:18:1318 -- http: GET -- /hackathon/search/filters?tech[0]=java&tech[1]=javascript -- 79ae4601-12bf-4843-a2b4-872d447452ff -- 200 -- 1139 - 17.555 ms
+2021-01-28 -- 11:13:36:1336 -- info: Init transaction query
+2021-01-28 -- 11:13:36:1336 -- info: Commit
+2021-01-28 -- 11:13:36:1336 -- http: GET -- /hackathon/search/filters?tech[0]=java&tech[1]=python -- dfbebf2f-3ef6-49d1-9b4b-53a49cfbbc7f -- 200 -- 1139 - 7.022 ms
+2021-01-28 -- 11:13:45:1345 -- info: Init transaction query
+2021-01-28 -- 11:13:45:1345 -- info: Commit
+2021-01-28 -- 11:13:45:1345 -- http: GET -- /hackathon/search/filters?tech[0]=java&tech[1]=C -- 9684990c-4cf8-4f55-af99-20cbdd85b046 -- 200 -- 1139 - 9.412 ms
+2021-01-28 -- 11:13:58:1358 -- info: Init transaction query
+2021-01-28 -- 11:13:58:1358 -- info: Commit
+2021-01-28 -- 11:13:58:1358 -- http: GET -- /hackathon/search/filters?tech[0]=java -- 942a93e4-fef0-4bb3-83e6-95529483af47 -- 200 -- 783 - 11.838 ms
+2021-01-28 -- 11:14:08:148 -- info: Init transaction query
+2021-01-28 -- 11:14:08:148 -- info: Commit
+2021-01-28 -- 11:14:08:148 -- http: GET -- /hackathon/search/filters?tech[0]=python -- e73cab71-e82f-416c-b263-a349c7ab7243 -- 200 -- 732 - 11.477 ms
+2021-01-28 -- 11:14:20:1420 -- info: Init transaction query
+2021-01-28 -- 11:14:20:1420 -- info: Commit
+2021-01-28 -- 11:14:20:1420 -- http: GET -- /hackathon/search/filters?tech[0]=java -- 0d94ed06-c525-4f9d-9e95-af3cff86bcfc -- 200 -- 783 - 41.056 ms
+2021-01-28 -- 11:14:34:1434 -- info: Init transaction query
+2021-01-28 -- 11:14:34:1434 -- info: Commit
+2021-01-28 -- 11:14:34:1434 -- http: GET -- /hackathon/search/filters?tech[0]=javascript -- fd3f457d-c96f-46c1-8a7d-98de408004e2 -- 200 -- 764 - 10.352 ms
+2021-01-28 -- 11:17:06:176 -- info: listening on port 3000
+2021-01-28 -- 11:17:09:179 -- info: Init transaction query
+2021-01-28 -- 11:17:09:179 -- info: Commit
+2021-01-28 -- 11:17:09:179 -- http: GET -- /hackathon/search/filters?tech[0]=javascript -- fbe59e21-423b-4dd7-85b1-49fbc0be2f55 -- 200 -- 2 - 40.350 ms
+2021-01-28 -- 11:17:54:1754 -- info: Init transaction query
+2021-01-28 -- 11:17:54:1754 -- info: Commit
+2021-01-28 -- 11:17:54:1754 -- http: GET -- /hackathon/search/filters?hackathon_place=online&city=vigo&thematic=gaming&tech[0]=javascript -- 0ecba634-0d04-4a1d-bbfd-69e96f30c6a8 -- 200 -- 2 - 7.556 ms
+2021-01-28 -- 11:18:04:184 -- info: Init transaction query
+2021-01-28 -- 11:18:04:184 -- info: Commit
+2021-01-28 -- 11:18:04:184 -- http: GET -- /hackathon/search/filters?hackathon_place=online&city=vigo&thematic=gaming -- d710d858-0cdf-4134-829d-991e309460ef -- 200 -- 357 - 11.962 ms
+2021-01-28 -- 11:23:55:2355 -- info: listening on port 3000
+2021-01-28 -- 11:23:58:2358 -- info: Init transaction query
+2021-01-28 -- 11:23:58:2358 -- info: Commit
+2021-01-28 -- 11:23:58:2358 -- http: GET -- /hackathon/search/filters?hackathon_place=online&city=vigo&thematic=gaming -- 63282fa8-448d-4951-ae85-14614bc8f8d6 -- 200 -- 357 - 37.431 ms
+2021-01-28 -- 11:24:03:243 -- info: Init transaction query
+2021-01-28 -- 11:24:03:243 -- info: Commit
+2021-01-28 -- 11:24:03:243 -- http: GET -- /hackathon/search/filters?hackathon_place=online&city=vigo&thematic=gaming&tech[0]=javascript&tech[1]=C -- fb7e2e1b-e9c3-4db5-a518-04f8a4a4bb9b -- 200 -- 357 - 26.048 ms
+2021-01-28 -- 11:24:06:246 -- info: Init transaction query
+2021-01-28 -- 11:24:06:246 -- info: Commit
+2021-01-28 -- 11:24:06:246 -- http: GET -- /hackathon/search/filters?hackathon_place=online&city=vigo&thematic=gaming&tech[0]=javascript&tech[1]=C&tech[2]=java -- 4e5d2a4d-431f-4cf5-9964-fbb0d347a17a -- 200 -- 357 - 15.645 ms
+2021-01-28 -- 11:24:38:2438 -- info: Init transaction query
+2021-01-28 -- 11:24:38:2438 -- info: Commit
+2021-01-28 -- 11:24:38:2438 -- http: GET -- /hackathon/search/filters?hackathon_place=online&city=vigo&thematic=gaming&tech[0]=javascript&tech[2]=java -- b6927189-c34c-4cc3-917a-2f518124857e -- 200 -- 357 - 7.309 ms
+2021-01-28 -- 11:24:50:2450 -- info: Init transaction query
+2021-01-28 -- 11:24:50:2450 -- info: Commit
+2021-01-28 -- 11:24:50:2450 -- http: GET -- /hackathon/search/filters?hackathon_place=online&city=vigo&tech[2]=java -- e28a4376-6e57-420c-910e-a2bd8f7deba3 -- 200 -- 783 - 10.728 ms
+2021-01-28 -- 11:24:56:2456 -- info: Init transaction query
+2021-01-28 -- 11:24:56:2456 -- info: Commit
+2021-01-28 -- 11:24:56:2456 -- http: GET -- /hackathon/search/filters?hackathon_place=online&city=vigo&tech[0]=javascript&tech[2]=java -- 22c343ad-08eb-4224-9162-8d90048813d4 -- 200 -- 1139 - 11.865 ms
+2021-01-28 -- 11:25:03:253 -- info: Init transaction query
+2021-01-28 -- 11:25:03:253 -- info: Commit
+2021-01-28 -- 11:25:03:253 -- http: GET -- /hackathon/search/filters?hackathon_place=online&city=vigo&tech[0]=javascript&tech[1]=C&tech[2]=java -- 8afc0460-5043-4441-bfd1-d6df55f2e2ee -- 200 -- 1139 - 8.658 ms
+2021-01-28 -- 11:25:15:2515 -- info: Init transaction query
+2021-01-28 -- 11:25:15:2515 -- info: Commit
+2021-01-28 -- 11:25:15:2515 -- http: GET -- /hackathon/search/filters?hackathon_place=online&city=vigo&tech[0]=javascript&tech[1]=C&tech[2]=java&tech[3]=python -- 7934e453-d6f3-46a2-8119-f525fa137d12 -- 200 -- 1495 - 5.083 ms

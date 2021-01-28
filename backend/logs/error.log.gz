@@ -75,3 +75,7 @@
 2021-01-28 -- 01:49:21:4921 -- error: Error get hackathon info Cannot read property 'includes' of undefined
 2021-01-28 -- 02:01:56:156 -- error: Rollback query
 2021-01-28 -- 02:01:56:156 -- error: Error get hackathon info Invalid status code:  Numero de resultados_ 4
+2021-01-28 -- 11:06:34:634 -- error: Rollback query
+2021-01-28 -- 11:06:34:634 -- error: Error get hackathon info python is not a function
+2021-01-28 -- 11:11:08:118 -- error: Rollback query
+2021-01-28 -- 11:11:08:118 -- error: Error get hackathon info python is not a function
