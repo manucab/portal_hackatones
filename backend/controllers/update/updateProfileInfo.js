@@ -51,9 +51,9 @@ const updateProfileInfo = async (req, res) => {
       id,
       name,
       surname,
-      email,
-      professional_profile,
-      rol,
+      email.toLowerCase(),
+      professional_profile.toLowerCase(),
+      rol.toLowerCase(),
       newPassword
     );
   } catch (e) {

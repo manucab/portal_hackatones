@@ -71,9 +71,9 @@ const modifyHackathon = async (
     hackathon_info = ?
     where id = ? and id_organizer = ?`;
   const params = [
-    name || originalInfo[0].hackathon_name,
-    place || originalInfo[0].hackathon_place,
-    city || originalInfo[0].city,
+    name.toLowerCase() || originalInfo[0].hackathon_name,
+    place.toLowerCase() || originalInfo[0].hackathon_place,
+    city.toLowerCase() || originalInfo[0].city,
     start_date || formatDate(originalInfo[0].start_date),
     end_date || formatDate(originalInfo[0].end_date),
     status || originalInfo[0].hackathon_status,
