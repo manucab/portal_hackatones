@@ -7,6 +7,7 @@ const activeUser = async(req, res) => {
 
     let query = '';
     let params = [];
+    let msgInfo = [];
 
     // 1. Get code params
     const { id } = req.params;
@@ -16,26 +17,30 @@ const activeUser = async(req, res) => {
         // Init transaction mysql
         query = 'start transaction';
         const resInitTransaction = await performQuery(query, params);
-        logger.info('Start transaction');
+        logger.info(query);
+
+        msgInfo = 'Update state is successfully';
 
         // 2.1 change state to true and reset code
         await updateStateUser(parseInt(id));
 
-        logger.debug('Update state is successfully');
+        logger.debug(msgInfo);
 
         // Commit mysql
         query = 'commit';
         await performQuery(query, params);
-        logger.info('Commit');
+        logger.info(query);
 
-        res.json({ info: 'Update state is successfully' });
+        // TODO -- send email welcome
+
+        res.json({ info: msgInfo });
 
     } catch (e) {
 
         // Rollback mysql
         query = 'rollback';
         await performQuery(query, params);
-        logger.info('Rollback query');
+        logger.info(query);
 
         let msgError = ('Error in active user', e.message);
         logger.error(msgError);
