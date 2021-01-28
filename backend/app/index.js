@@ -10,6 +10,7 @@ const express = require("express");
 const userRouter = require('../routes/user')
 const blogRouter = require('../routes/blog')
 const forgotPasswordRouter = require('../routes/forgotPassword')
+const hackathonRouter = require('../routes/hackathon')
 
 const app = express();
 
@@ -23,6 +24,9 @@ app.use(bodyParser.urlencoded({extended: true}))
 app.use('/user',userRouter)
 app.use('/blog',blogRouter)
 app.use('/forgot-password',forgotPasswordRouter)
+app.use('/hackathon',hackathonRouter)
+
+
 
 
 
