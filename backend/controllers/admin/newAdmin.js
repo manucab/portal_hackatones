@@ -21,11 +21,9 @@ const newAdmin = async(req, res) => {
         const adminDB = await getAdminDB(email);
 
         if (adminDB.length > 0) {
-            logger.info('A admin with that name already exists');
-            // TODO - check redirect register ??
-            res.redirect('/');
-            // res.status(500).send();
-            return;
+            let msgInfo = 'A admin with that name already exists'
+            logger.info(msgInfo);
+            return res.status(500).json({ info: msgInfo });
         }
 
         // 3. Post new admin
