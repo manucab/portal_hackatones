@@ -1,27 +1,4 @@
 {
-<<<<<<< HEAD
-  "name": "backend",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "dependencies": {
-    "@sendgrid/mail": "^7.4.2",
-    "body-parser": "^1.19.0",
-    "cors": "^2.8.5",
-    "dotenv": "^8.2.0",
-    "express": "^4.17.1",
-    "joi": "^17.3.0",
-    "jsonwebtoken": "^8.5.1",
-    "luxon": "^1.25.0",
-    "mysql2": "^2.2.5"
-  },
-  "author": "",
-  "license": "ISC"
-}
-=======
     "name": "backend",
     "version": "1.0.0",
     "description": "Init branch ss",
@@ -59,4 +36,3 @@
         "nodemon": "^2.0.7"
     }
 }
->>>>>>> 24aa97d05ce9b694816e4dc53b11ee67711dd25d

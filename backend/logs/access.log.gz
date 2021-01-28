@@ -1462,3 +1462,4 @@
 2021-01-28 -- 13:32:16:3216 -- info: Init transaction query
 2021-01-28 -- 13:32:16:3216 -- info: Commit
 2021-01-28 -- 13:32:16:3216 -- http: GET -- /hackathon/search/filters?tech[]=Rust -- 2513ac92-a4bb-42e2-86c9-3ab620e22bba -- 200 -- 1439 - 11.236 ms
+2021-01-28 -- 19:45:47:4547 -- info: listening on port 3000
