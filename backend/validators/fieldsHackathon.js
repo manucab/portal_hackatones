@@ -54,13 +54,6 @@ const fieldsHackathons = Joi.object({
             new Error('The thematic of hackathon is not valid')
         ),
 
-    // Joi.array().items(
-    //     Joi.object({
-    //       a: Joi.string(),
-    //       b: Joi.number()
-    //     })
-
-
     links: Joi.array().items(Joi.object({
         link: Joi.string().hostname().lowercase().trim()
             .required()

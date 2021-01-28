@@ -1,5 +1,6 @@
 // Variables && instances
 require('dotenv').config();
+const { logger } = require('../../app/config/logger');
 const { createRoot } = require('../../db/adminRoot/db_initAdminRoot');
 
 const createInitAdmin = async(req, res) => {
@@ -14,7 +15,7 @@ const createInitAdmin = async(req, res) => {
         res.send(resQuery);
 
     } catch (e) {
-        console.log('Fail insert defaul admin "root" ');
+        logger.error('Fail insert defaul admin "root"');
         res.status(500).send();
     }
 

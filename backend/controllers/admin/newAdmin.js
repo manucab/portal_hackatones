@@ -1,5 +1,6 @@
 // Variables && instances
 require('dotenv').config();
+const { logger } = require("../../app/config/logger");
 const { registerNewAdmin } = require('../../db/adminRoot/db_Insert');
 const { getAdminDB } = require('../../db/adminRoot/db_Select');
 const { loginValidator } = require('../../validators/validateLogin');
@@ -14,25 +15,16 @@ const newAdmin = async(req, res) => {
     try {
 
         // 2. Check if the parameters are valid
-        const validParams = await loginValidator.validateAsync({ email, password });
-
-        console.log('validParams :>> ', validParams);
-
-        if (!validParams) {
-            console.log('Error in valid params');
-            res.status(401).send();
-            return
-        }
-
+        await loginValidator.validateAsync({ email, password });
 
         // 2.1 Check yhat this user not exist in Database
         const adminDB = await getAdminDB(email);
 
-        console.log('adminDB newUser :>> ', adminDB);
-
         if (adminDB.length > 0) {
-            console.log('A admin with that name already exists');
-            res.status(401).send();
+            logger.info('A admin with that name already exists');
+            // TODO - check redirect register ??
+            res.redirect('/');
+            // res.status(500).send();
             return;
         }
 
@@ -42,15 +34,14 @@ const newAdmin = async(req, res) => {
         // Encrypt password
         const passwordEncrypt = await bcrypt.hash(password, 10);
 
-        let result = await registerNewAdmin(name, email, passwordEncrypt, key_admin);
+        await registerNewAdmin(name, email, passwordEncrypt, key_admin);
 
-        result = (result === undefined) ? '[]' : result;
-
-        console.log('Register new Admin sucessfull');
-        res.send('Register new Admin sucessfull');
+        logger.info('Register new Admin sucessfully');
+        res.send('Register new Admin sucessfully');
     } catch (e) {
-        console.log('Error post new admin db', 'e=>', e);
-        res.status(500).send();
+        let msgError = e.message || 'Error insert new admin';
+        logger.error('Error insert new admin', msgError);
+        res.status(500).send(msgError);
     }
 
 }

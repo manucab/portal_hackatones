@@ -43,10 +43,6 @@ app.use('/register', registerRouter);
 // Hackathon
 app.use('/hackathon', hackathonRouter);
 
-//Hackathones Page
-// app.get('/hackathon/:filters', filterHackathons);
-// app.get('/hackathon/:id', getHackathonInfo);
-
 // Hackathon Page
 // app.post('/hackathon/id/enroll', isAuthenticated, enrollHackathon); // Inscribirse a un hackathon
 // app.post('/hackathon/id/comments', isAuthenticated, postComment); // Publicar comentario
@@ -90,9 +86,9 @@ app.use((err, req, res, next) => {
 
 app.listen(port, err => {
     if (err) {
-        return console.log('ERROR', err);
+        return logger.error('ERROR', err);
     }
-    console.log(`listening on port ${port}`);
+    logger.info(`listening on port ${port}`);
 
     /*
       let messageListen = (err) ? `Error, $ {err}` : `listening on port ${port}`;

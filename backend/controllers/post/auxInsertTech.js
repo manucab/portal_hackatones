@@ -9,7 +9,8 @@
       let id_tech = [];
       let params = [];
       let id_exist = [];
-      let id_notExist = tech;
+      let valuesTech = [];
+      let id_notExist = [];
 
       // Fucntion for prepara string query mysql, amoung of values as ? or a pair (?,?)
       const getParams = (len, format) => Array(len).fill(`${format}`).join();
@@ -24,15 +25,7 @@
       if (id_exist.length < tech.length) {
 
           // 4. Delete techs that exist and to keep with new techs
-          id_exist.forEach((item, index_exist) => {
-              let nameTech = item.tech_name;
-              let index_notExist = id_notExist.indexOf(nameTech);
-              id_notExist.splice(index_notExist, 1);
-          });
-
-
-          //links_notExist = links.filter(item => !links_exist.includes(item));
-
+          id_notExist = tech.filter(item => !id_exist.includes(item));
 
           // 5. Prepare the params of query
           params = getParams(id_notExist.length, '(?)');
@@ -55,8 +48,6 @@
 
       // 9. Prepare params of string query values (id_hackathon, tech))
       params = getParams(id_tech.length, '(?,?)');
-
-      let valuesTech = [];
 
       // Prepare values to format of query (id_hackathon, tech) values (), (), ()
       id_tech.forEach(item => valuesTech.push(id_hackathon, item));

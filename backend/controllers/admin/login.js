@@ -1,5 +1,6 @@
 // Variables && instances
 require('dotenv').config();
+const { logger } = require('../../app/config/logger');
 const bcrypt = require('bcrypt');
 const jwt = require('jsonwebtoken');
 const { loginValidator } = require('../../validators/validateLogin');
@@ -19,14 +20,14 @@ const login = async(req, res) => {
         // 3. If are valid, check if they are in the database
         const user = await getAdminDB(email);
 
-        console.log('user :>> ', user);
+        logger.debug('user :>> ', user);
 
-        console.log('user.password :>> ', user[0].password);
+        logger.debug('user.password :>> ', user[0].password);
 
         // Not user in database --> failed
         if (user.length === 0) {
-            console.log('!user', user);
-            res.status(401).send('User not found');
+            logger.error('User not found', user);
+            res.status(500).send('User not found');
             return;
         }
 
@@ -34,16 +35,10 @@ const login = async(req, res) => {
         const db_password = user[0].password;
         const passwordIsvalid = await bcrypt.compare(password, db_password);
 
-
-        console.log('db_password :>> ', db_password);
-        console.log('password :>> ', password);
-
-        console.log(passwordIsvalid);
-
         // If not valid password --> failed
         if (!passwordIsvalid) {
-            console.log('Invalid password');
-            res.status(401).send()
+            logger.info('Invalid password');
+            res.status(401).send('Invalid password');
             return
         }
 
@@ -54,22 +49,19 @@ const login = async(req, res) => {
             id_admin: user[0].id_admin
         }
 
-        console.log(tokenPayload);
+        logger.debug(tokenPayload);
 
-        // 5. Generate token, expire in one day
+        // 5. Generate token, expire in two day
         const token = jwt.sign(tokenPayload, process.env.SECRET, {
-            expiresIn: '1d'
+            expiresIn: '2d'
         });
 
-
         res.json({ token });
-        console.log('Login OK');
+        logger.debug('Login OK');
     } catch (e) {
-        let msgError = e.message || 'Error in login';
-
-        console.log(msgError);
-        console.log('Error login', e);
-        res.status(401).send();
+        let msgError = e.message || 'Error in login, not authenticated';
+        logger.error(msgError);
+        res.status(401).send(msgError);
     }
 }
 

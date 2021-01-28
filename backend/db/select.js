@@ -15,9 +15,7 @@ const getUserDB = async(email) => {
 }
 
 // Get hackaton info by some filters
-const getHackathonInfoDB = async(id, hackathon_place, city, start_date, end_date,
-    /* , technologies */
-    thematic) => {
+const getHackathonInfoDB = async(id, hackathon_place, city, start_date, end_date, thematic) => {
 
     const query = `select * from hackathon where (id = ? or ? is null)
      and (hackathon_place = ? or ? is null )

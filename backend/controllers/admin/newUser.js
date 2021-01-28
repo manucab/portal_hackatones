@@ -6,6 +6,7 @@ const { loginValidator } = require('../../validators/validateLogin');
 const cryptoRandomString = require('crypto-random-string');
 const bcrypt = require('bcrypt');
 const utils = require('../../utils/utils');
+const { logger } = require('../../app/config/logger');
 
 const newUser = async(req, res) => {
 
@@ -15,20 +16,16 @@ const newUser = async(req, res) => {
     try {
 
         // 2. Check if the parameters are valid
-        const validParams = await loginValidator.validateAsync({ email, password });
-
-        if (!validParams) {
-            console.log('Error in valid params');
-            res.status(401).send();
-            return;
-        }
+        await loginValidator.validateAsync({ email, password });
 
         // 2.1 Check that this user not exist in Database
         const userDB = await getUserDB(email);
 
         if (userDB) {
-            console.log('A user with that name already exists');
-            res.status(401).send();
+            logger.info('A user with that name already exists');
+            // TODO - check redirect register ??
+            res.redirect('/');
+            // res.status(500).send();
             return;
         }
 
@@ -38,20 +35,18 @@ const newUser = async(req, res) => {
         // Generate code for url validation
         const validationCode = cryptoRandomString({ length: parseInt(process.env.CODE_LEN), type: 'alphanumeric' });
 
-        let result = await registerNewUser(email, name, surname, register_date, professional_profile, rol, passwordEncrypt,validationCode);
-
-        result = (result === undefined) ? '[]' : result;
+        await registerNewUser(email, name, surname, register_date, professional_profile, rol, passwordEncrypt, validationCode);
 
         // 4. Send email to confirm count
-        await utils.sendConfirmationMail(email, `http://${process.env.PUBLIC_DOMAIN}/user/validate/${validationCode}`)
+        await utils.sendConfirmationMail(email, `http://${process.env.PUBLIC_DOMAIN}/user/validate/${validationCode}`);
 
-        console.log('Register new user sucessfull');
+        logger.info('Register new user sucessfull');
         res.send('Register new user sucessfull');
     } catch (e) {
-        console.log('Error post new user db', 'e=>', e);
-        res.status(500).send();
+        let msgError = e.message || 'Error insert new user';
+        logger.error('Error insert new user', msgError);
+        res.status(500).send(msgError);
     }
-
 }
 
 module.exports = {

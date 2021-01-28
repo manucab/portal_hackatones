@@ -312,3 +312,623 @@
 2021-01-27 -- 00:06:55:655 -- http: POST -- /createhackathon -- 27 -- 200 -- 33 - 18.874 ms
 2021-01-27 -- 00:07:12:712 -- http: POST -- /createhackathon -- 27 -- 200 -- 33 - 49.817 ms
 2021-01-27 -- 00:07:37:737 -- http: POST -- /createhackathon -- 27 -- 200 -- 33 - 20.183 ms
+2021-01-27 -- 00:16:10:1610 -- http: POST -- /createhackathon -- 27 -- 200 -- 33 - 102.456 ms
+2021-01-27 -- 00:16:27:1627 -- http: POST -- /createhackathon -- 27 -- 200 -- 33 - 31.251 ms
+2021-01-27 -- 00:16:54:1654 -- http: POST -- /createhackathon -- 27 -- 200 -- 33 - 49.746 ms
+2021-01-27 -- 00:20:24:2024 -- http: POST -- /createhackathon -- 27 -- 200 -- 33 - 50.479 ms
+2021-01-27 -- 00:20:33:2033 -- http: POST -- /createhackathon -- 27 -- 200 -- 33 - 28.412 ms
+2021-01-27 -- 00:20:37:2037 -- http: POST -- /createhackathon -- 27 -- 200 -- 33 - 22.208 ms
+2021-01-27 -- 00:21:28:2128 -- http: POST -- /createhackathon -- 27 -- 200 -- 33 - 25.585 ms
+2021-01-27 -- 00:22:39:2239 -- http: POST -- /createhackathon -- 27 -- 200 -- 33 - 13.203 ms
+2021-01-27 -- 00:27:21:2721 -- http: POST -- /createhackathon -- 27 -- 401 -- - - 56.208 ms
+2021-01-27 -- 00:27:32:2732 -- http: POST -- /createhackathon -- 27 -- 401 -- - - 6.361 ms
+2021-01-27 -- 00:28:12:2812 -- http: POST -- /createhackathon -- 27 -- 401 -- - - 8.121 ms
+2021-01-27 -- 00:28:33:2833 -- http: POST -- /createhackathon -- 27 -- 401 -- - - 56.954 ms
+2021-01-27 -- 00:29:24:2924 -- http: POST -- /createhackathon -- 27 -- 401 -- - - 31.431 ms
+2021-01-27 -- 00:29:40:2940 -- http: POST -- /createhackathon -- 27 -- 200 -- 33 - 17.254 ms
+2021-01-27 -- 00:29:44:2944 -- http: POST -- /createhackathon -- 27 -- 200 -- 33 - 22.233 ms
+2021-01-27 -- 00:29:47:2947 -- http: POST -- /createhackathon -- 27 -- 200 -- 33 - 20.415 ms
+2021-01-27 -- 00:29:51:2951 -- http: POST -- /createhackathon -- 27 -- 200 -- 33 - 19.029 ms
+2021-01-27 -- 00:29:55:2955 -- http: POST -- /createhackathon -- 27 -- 200 -- 33 - 24.754 ms
+2021-01-27 -- 16:35:22:3522 -- error: listening on port 3000
+2021-01-27 -- 16:36:30:3630 -- info: listening on port 3000
+2021-01-27 -- 16:38:21:3821 -- http: POST -- /createhackathon -- 4bc74b5c-2fe9-44e3-a5d3-3c37af012c03 -- 401 -- - - 6.382 ms
+2021-01-27 -- 16:38:39:3839 -- http: POST -- /login -- 27 -- 200 -- 220 - 204.369 ms
+2021-01-27 -- 16:38:57:3857 -- http: POST -- /createhackathon -- 27 -- 401 -- - - 79.312 ms
+2021-01-27 -- 16:39:45:3945 -- http: POST -- /createhackathon -- 27 -- 200 -- 33 - 168.208 ms
+2021-01-27 -- 16:41:59:4159 -- http: POST -- /createhackathon -- 27 -- 200 -- 33 - 36.187 ms
+2021-01-27 -- 16:42:41:4241 -- http: POST -- /createhackathon -- 27 -- 200 -- 33 - 30.874 ms
+2021-01-27 -- 16:46:10:4610 -- warn: 404 Router not found
+2021-01-27 -- 16:46:10:4610 -- http: GET -- /search/1 -- 3b0e3aa2-547c-433f-b1e2-38fe5e1371b3 -- 404 -- 30 - 1.135 ms
+2021-01-27 -- 16:46:18:4618 -- info: listening on port 3000
+2021-01-27 -- 16:46:20:4620 -- warn: 404 Router not found
+2021-01-27 -- 16:46:20:4620 -- http: GET -- /search/1 -- dad2eaf8-d804-4195-8236-44246969932f -- 404 -- 30 - 68.515 ms
+2021-01-27 -- 16:46:41:4641 -- warn: 404 Router not found
+2021-01-27 -- 16:46:41:4641 -- http: GET -- /hackathon/search/1 -- ea067782-77d1-4731-affd-d324f541e97f -- 404 -- 30 - 2.205 ms
+2021-01-27 -- 16:46:56:4656 -- info: listening on port 3000
+2021-01-27 -- 16:47:48:4748 -- info: listening on port 3000
+2021-01-27 -- 16:47:50:4750 -- info: Init transaction query
+2021-01-27 -- 16:47:50:4750 -- info: Commit
+2021-01-27 -- 16:47:50:4750 -- http: GET -- /hackathon/search/1 -- 7086ee99-cba5-49e4-b70e-7c847c5ba43d -- 200 -- 272 - 49.160 ms
+2021-01-27 -- 21:45:29:4529 -- info: listening on port 3000
+2021-01-27 -- 21:46:43:4643 -- http: POST -- /createhackathon -- 27 -- 200 -- 33 - 156.029 ms
+2021-01-27 -- 23:04:26:426 -- info: listening on port 3000
+2021-01-27 -- 23:04:36:436 -- info: Init transaction query
+2021-01-27 -- 23:04:36:436 -- info: Commit
+2021-01-27 -- 23:04:36:436 -- http: GET -- /hackathon/search/1 -- 9af546bd-968e-4f0f-93f2-8d73bd2e93c3 -- 200 -- 272 - 100.386 ms
+2021-01-27 -- 23:07:00:70 -- info: listening on port 3000
+2021-01-27 -- 23:07:04:74 -- info: Init transaction query
+2021-01-27 -- 23:07:04:74 -- error: Rollback query
+2021-01-27 -- 23:07:04:74 -- error: Error get hackathon info Cannot destructure property 'hackathon_place' of 'req.query' as it is undefined.
+2021-01-27 -- 23:07:04:74 -- http: GET -- /hackathon/search/1 -- dc36307e-aca7-46f3-bf9e-61aeae40bdee -- 500 -- 5 - 148.813 ms
+2021-01-27 -- 23:07:52:752 -- info: listening on port 3000
+2021-01-27 -- 23:07:55:755 -- info: Init transaction query
+2021-01-27 -- 23:07:55:755 -- debug: Cannot destructure property 'hackathon_place' of 'req.query' as it is undefined.
+2021-01-27 -- 23:07:55:755 -- error: Rollback query
+2021-01-27 -- 23:07:55:755 -- error: Error get hackathon info Cannot destructure property 'hackathon_place' of 'req.query' as it is undefined.
+2021-01-27 -- 23:07:55:755 -- http: GET -- /hackathon/search/1 -- a6ee0464-22fe-41a5-9d45-1811918e257e -- 500 -- 5 - 39.670 ms
+2021-01-27 -- 23:08:16:816 -- info: Init transaction query
+2021-01-27 -- 23:08:16:816 -- debug: Cannot destructure property 'hackathon_place' of 'req.query' as it is undefined.
+2021-01-27 -- 23:08:16:816 -- error: Rollback query
+2021-01-27 -- 23:08:16:816 -- error: Error get hackathon info Cannot destructure property 'hackathon_place' of 'req.query' as it is undefined.
+2021-01-27 -- 23:08:16:816 -- http: GET -- /hackathon/search/1 -- fdb0134a-5192-473e-a5dc-9682062f436a -- 500 -- 5 - 18.073 ms
+2021-01-27 -- 23:08:34:834 -- info: listening on port 3000
+2021-01-27 -- 23:08:36:836 -- info: Init transaction query
+2021-01-27 -- 23:08:36:836 -- error: Rollback query
+2021-01-27 -- 23:08:36:836 -- error: Error get hackathon info Cannot destructure property 'hackathon_place' of 'req.query' as it is undefined.
+2021-01-27 -- 23:08:36:836 -- http: GET -- /hackathon/search/1 -- a4009296-08f9-47d8-9172-f2842d0ef60a -- 500 -- 5 - 53.560 ms
+2021-01-27 -- 23:09:35:935 -- info: listening on port 3000
+2021-01-27 -- 23:09:37:937 -- info: Init transaction query
+2021-01-27 -- 23:09:37:937 -- error: Rollback query
+2021-01-27 -- 23:09:37:937 -- error: Error get hackathon info getListLinkByHackathonDB is not defined
+2021-01-27 -- 23:09:37:937 -- http: GET -- /hackathon/search/1 -- ce84fa77-3e48-4e93-a61c-0cee1e469792 -- 500 -- 5 - 83.014 ms
+2021-01-27 -- 23:10:28:1028 -- info: listening on port 3000
+2021-01-27 -- 23:10:31:1031 -- info: Init transaction query
+2021-01-27 -- 23:10:31:1031 -- info: Commit
+2021-01-27 -- 23:10:31:1031 -- http: GET -- /hackathon/search/1 -- 41a9a595-58c4-48f1-83e2-cfef25dea76e -- 200 -- 272 - 160.800 ms
+2021-01-27 -- 23:11:24:1124 -- info: listening on port 3000
+2021-01-27 -- 23:11:28:1128 -- info: Init transaction query
+2021-01-27 -- 23:11:28:1128 -- info: Commit
+2021-01-27 -- 23:11:28:1128 -- http: GET -- /hackathon/search/1 -- ad4309fe-4c69-43e5-a91d-1e52785d611f -- 200 -- 272 - 47.198 ms
+2021-01-27 -- 23:12:27:1227 -- warn: 404 Router not found
+2021-01-27 -- 23:12:27:1227 -- http: GET -- /hackathon/filters -- def4bba0-a961-4052-b526-761f046f794d -- 404 -- 30 - 2.697 ms
+2021-01-27 -- 23:13:06:136 -- warn: 404 Router not found
+2021-01-27 -- 23:13:06:136 -- http: GET -- /hackathon/1 -- 5606992e-f491-4266-819f-dcc9116476b2 -- 404 -- 30 - 1.142 ms
+2021-01-27 -- 23:13:10:1310 -- warn: 404 Router not found
+2021-01-27 -- 23:13:10:1310 -- http: GET -- /hackathon/1 -- d64c897a-016a-47b0-8ebe-e588d5be4d63 -- 404 -- 30 - 1.109 ms
+2021-01-27 -- 23:13:23:1323 -- warn: 404 Router not found
+2021-01-27 -- 23:13:23:1323 -- http: GET -- /search/filters -- d66f126f-2e77-475f-abf9-467d0c867135 -- 404 -- 30 - 1.070 ms
+2021-01-27 -- 23:14:02:142 -- warn: 404 Router not found
+2021-01-27 -- 23:14:02:142 -- http: GET -- /search/4 -- 2c09f6e0-b687-4d31-a09d-721bbd3e7cfa -- 404 -- 30 - 1.965 ms
+2021-01-27 -- 23:14:14:1414 -- info: Init transaction query
+2021-01-27 -- 23:14:14:1414 -- info: Commit
+2021-01-27 -- 23:14:14:1414 -- http: GET -- /hackathon/search/4 -- dbf6bdd8-f37a-4b55-bf62-6c6d9de69e54 -- 200 -- 278 - 10.959 ms
+2021-01-27 -- 23:14:52:1452 -- info: listening on port 3000
+2021-01-27 -- 23:14:57:1457 -- info: Init transaction query
+2021-01-27 -- 23:14:57:1457 -- info: Commit
+2021-01-27 -- 23:14:57:1457 -- http: GET -- /hackathon/search/4 -- 4b609152-eaa7-4a01-8128-a4c05fece083 -- 200 -- 278 - 28.882 ms
+2021-01-27 -- 23:44:28:4428 -- info: listening on port 3000
+2021-01-27 -- 23:44:33:4433 -- info: Init transaction query
+2021-01-27 -- 23:44:33:4433 -- info: Commit
+2021-01-27 -- 23:44:33:4433 -- http: GET -- /hackathon/search/4 -- f554de44-3be2-4b30-8dca-55238cb8112c -- 200 -- 278 - 73.474 ms
+2021-01-27 -- 23:45:52:4552 -- info: listening on port 3000
+2021-01-27 -- 23:46:09:469 -- info: Init transaction query
+2021-01-27 -- 23:46:09:469 -- info: Commit
+2021-01-27 -- 23:46:09:469 -- http: GET -- /hackathon/search/4 -- acdbd57f-fb23-4351-a1ca-fb38e1165f0c -- 200 -- 278 - 33.824 ms
+2021-01-27 -- 23:46:52:4652 -- info: listening on port 3000
+2021-01-27 -- 23:46:55:4655 -- info: Init transaction query
+2021-01-27 -- 23:46:55:4655 -- info: Commit
+2021-01-27 -- 23:46:55:4655 -- http: GET -- /hackathon/search/4 -- 12e3f568-535c-4b10-ae59-91f9f9808a13 -- 200 -- 278 - 114.793 ms
+2021-01-27 -- 23:47:55:4755 -- info: listening on port 3000
+2021-01-27 -- 23:48:03:483 -- info: Init transaction query
+2021-01-27 -- 23:48:03:483 -- error: Rollback query
+2021-01-27 -- 23:48:03:483 -- error: Error get hackathon info info is not defined
+2021-01-27 -- 23:48:03:483 -- http: GET -- /hackathon/search/4 -- 4f6c39f1-7921-4c17-b254-4a662136e34e -- 500 -- 5 - 40.140 ms
+2021-01-27 -- 23:48:23:4823 -- info: listening on port 3000
+2021-01-27 -- 23:48:25:4825 -- info: Init transaction query
+2021-01-27 -- 23:48:25:4825 -- info: Commit
+2021-01-27 -- 23:48:25:4825 -- http: GET -- /hackathon/search/4 -- 44042918-9b92-4351-a0d4-944a81b5d215 -- 200 -- 278 - 38.892 ms
+2021-01-27 -- 23:48:52:4852 -- info: listening on port 3000
+2021-01-27 -- 23:48:54:4854 -- info: Init transaction query
+2021-01-27 -- 23:48:54:4854 -- info: Commit
+2021-01-27 -- 23:48:54:4854 -- http: GET -- /hackathon/search/4 -- 293ab123-a32c-4ea9-9f35-ee9392b0515d -- 200 -- 278 - 66.031 ms
+2021-01-27 -- 23:52:46:5246 -- info: listening on port 3000
+2021-01-27 -- 23:52:49:5249 -- info: Init transaction query
+2021-01-27 -- 23:52:49:5249 -- error: Rollback query
+2021-01-27 -- 23:52:49:5249 -- error: Error get hackathon info result is not defined
+2021-01-27 -- 23:52:49:5249 -- http: GET -- /hackathon/search/4 -- 968f3af2-1d9d-4fbd-869a-aa1fd585cd33 -- 500 -- 5 - 57.712 ms
+2021-01-27 -- 23:53:08:538 -- info: listening on port 3000
+2021-01-27 -- 23:53:10:5310 -- info: Init transaction query
+2021-01-27 -- 23:53:10:5310 -- error: Rollback query
+2021-01-27 -- 23:53:10:5310 -- error: Error get hackathon info result is not defined
+2021-01-27 -- 23:53:10:5310 -- http: GET -- /hackathon/search/4 -- b0897cfc-7ca0-4568-b800-908c4e6e94da -- 500 -- 5 - 46.615 ms
+2021-01-27 -- 23:53:26:5326 -- info: listening on port 3000
+2021-01-27 -- 23:53:28:5328 -- info: Init transaction query
+2021-01-27 -- 23:53:28:5328 -- info: Commit
+2021-01-27 -- 23:53:28:5328 -- http: GET -- /hackathon/search/4 -- 19b47bed-a7ec-48ef-8e86-ec9167dff2a5 -- 200 -- 278 - 29.238 ms
+2021-01-27 -- 23:54:30:5430 -- info: listening on port 3000
+2021-01-27 -- 23:54:34:5434 -- info: Init transaction query
+2021-01-27 -- 23:54:34:5434 -- info: Commit
+2021-01-27 -- 23:54:34:5434 -- http: GET -- /hackathon/search/4 -- 4841a2c7-cc0b-4c6e-9730-6d96216ce529 -- 200 -- 278 - 68.712 ms
+2021-01-27 -- 23:57:00:570 -- info: listening on port 3000
+2021-01-27 -- 23:57:03:573 -- info: Init transaction query
+2021-01-27 -- 23:57:03:573 -- info: Commit
+2021-01-27 -- 23:57:03:573 -- http: GET -- /hackathon/search/4 -- 2fe8fd3e-498c-4549-83e4-60273d58d145 -- 200 -- 278 - 28.075 ms
+2021-01-27 -- 23:57:37:5737 -- info: listening on port 3000
+2021-01-27 -- 23:57:40:5740 -- info: Init transaction query
+2021-01-27 -- 23:57:40:5740 -- info: Commit
+2021-01-27 -- 23:57:40:5740 -- http: GET -- /hackathon/search/4 -- c51ae83e-3dd4-422f-8a06-064689c6bbb4 -- 200 -- 278 - 76.034 ms
+2021-01-27 -- 23:58:16:5816 -- info: listening on port 3000
+2021-01-27 -- 23:58:18:5818 -- info: Init transaction query
+2021-01-27 -- 23:58:18:5818 -- info: Commit
+2021-01-27 -- 23:58:18:5818 -- http: GET -- /hackathon/search/4 -- b24176ac-c739-4765-a13b-868f2340f958 -- 200 -- 278 - 98.720 ms
+2021-01-27 -- 23:59:59:5959 -- info: listening on port 3000
+2021-01-28 -- 00:00:01:01 -- info: Init transaction query
+2021-01-28 -- 00:00:01:01 -- info: Commit
+2021-01-28 -- 00:00:01:01 -- http: GET -- /hackathon/search/4 -- ba54fb82-e9b1-45b4-bbb6-02b95e1b9484 -- 200 -- 278 - 182.239 ms
+2021-01-28 -- 00:02:39:239 -- info: listening on port 3000
+2021-01-28 -- 00:02:42:242 -- info: Init transaction query
+2021-01-28 -- 00:02:42:242 -- info: Commit
+2021-01-28 -- 00:02:42:242 -- http: GET -- /hackathon/search/4 -- 032f087e-0fc3-4a48-9e29-51dbf0c39431 -- 200 -- 278 - 30.253 ms
+2021-01-28 -- 00:04:02:42 -- info: listening on port 3000
+2021-01-28 -- 00:04:05:45 -- info: Init transaction query
+2021-01-28 -- 00:04:05:45 -- info: Commit
+2021-01-28 -- 00:04:05:45 -- http: GET -- /hackathon/search/4 -- 2319a162-b7e0-4593-bd74-b851ff396d5a -- 200 -- 278 - 115.615 ms
+2021-01-28 -- 00:06:57:657 -- info: listening on port 3000
+2021-01-28 -- 00:06:59:659 -- info: Init transaction query
+2021-01-28 -- 00:06:59:659 -- info: Commit
+2021-01-28 -- 00:06:59:659 -- http: GET -- /hackathon/search/4 -- ca184ae9-1f96-468b-b340-e31184957f57 -- 200 -- 278 - 76.671 ms
+2021-01-28 -- 00:07:41:741 -- info: listening on port 3000
+2021-01-28 -- 00:07:45:745 -- info: Init transaction query
+2021-01-28 -- 00:07:45:745 -- info: Commit
+2021-01-28 -- 00:07:45:745 -- http: GET -- /hackathon/search/4 -- fb9d535b-d8d5-4255-92bf-223b4eb7d540 -- 200 -- 278 - 98.868 ms
+2021-01-28 -- 00:08:27:827 -- info: listening on port 3000
+2021-01-28 -- 00:08:29:829 -- info: Init transaction query
+2021-01-28 -- 00:08:29:829 -- info: Commit
+2021-01-28 -- 00:08:29:829 -- http: GET -- /hackathon/search/4 -- ed7778ff-963b-4f3b-875d-1328d0406125 -- 200 -- 278 - 39.702 ms
+2021-01-28 -- 00:08:53:853 -- info: listening on port 3000
+2021-01-28 -- 00:08:55:855 -- info: Init transaction query
+2021-01-28 -- 00:08:56:856 -- info: Commit
+2021-01-28 -- 00:08:56:856 -- http: GET -- /hackathon/search/4 -- 821f50c6-6a6d-4bfd-92b2-948b7c889da0 -- 200 -- 278 - 74.807 ms
+2021-01-28 -- 00:09:50:950 -- info: listening on port 3000
+2021-01-28 -- 00:09:52:952 -- info: Init transaction query
+2021-01-28 -- 00:09:52:952 -- info: Commit
+2021-01-28 -- 00:09:52:952 -- http: GET -- /hackathon/search/4 -- 3508281f-e53e-4ccd-9c2d-a365473c6c2c -- 200 -- 278 - 75.046 ms
+2021-01-28 -- 00:10:33:1033 -- info: listening on port 3000
+2021-01-28 -- 00:10:37:1037 -- info: Init transaction query
+2021-01-28 -- 00:10:37:1037 -- info: Commit
+2021-01-28 -- 00:10:37:1037 -- http: GET -- /hackathon/search/4 -- 3ff99f3c-b32a-4838-850a-c98ce5619944 -- 200 -- 278 - 113.707 ms
+2021-01-28 -- 00:11:45:1145 -- info: listening on port 3000
+2021-01-28 -- 00:11:48:1148 -- info: Init transaction query
+2021-01-28 -- 00:11:48:1148 -- info: Commit
+2021-01-28 -- 00:11:48:1148 -- http: GET -- /hackathon/search/4 -- c7d68bc5-c553-4c8c-844c-5aba78e414c6 -- 200 -- 278 - 32.447 ms
+2021-01-28 -- 00:12:40:1240 -- info: listening on port 3000
+2021-01-28 -- 00:12:41:1241 -- info: Init transaction query
+2021-01-28 -- 00:12:41:1241 -- info: Commit
+2021-01-28 -- 00:12:41:1241 -- http: GET -- /hackathon/search/4 -- 6ec98348-e556-4799-9ad4-57844f7236c6 -- 200 -- 278 - 29.054 ms
+2021-01-28 -- 00:15:22:1522 -- info: listening on port 3000
+2021-01-28 -- 00:15:25:1525 -- info: Init transaction query
+2021-01-28 -- 00:15:25:1525 -- error: Rollback query
+2021-01-28 -- 00:15:25:1525 -- error: Error get hackathon info item.link is not iterable
+2021-01-28 -- 00:15:25:1525 -- http: GET -- /hackathon/search/4 -- 5c0b5f42-f8f5-4b38-b3a7-e9bd7610f999 -- 500 -- 5 - 32.555 ms
+2021-01-28 -- 00:16:09:169 -- info: listening on port 3000
+2021-01-28 -- 00:16:11:1611 -- info: Init transaction query
+2021-01-28 -- 00:16:11:1611 -- error: Rollback query
+2021-01-28 -- 00:16:11:1611 -- error: Error get hackathon info Cannot read property 'push' of undefined
+2021-01-28 -- 00:16:12:1612 -- http: GET -- /hackathon/search/4 -- 1d971325-f403-4d0d-b151-66ffc4250af2 -- 500 -- 5 - 143.076 ms
+2021-01-28 -- 00:17:58:1758 -- info: listening on port 3000
+2021-01-28 -- 00:18:00:180 -- info: Init transaction query
+2021-01-28 -- 00:18:00:180 -- info: Commit
+2021-01-28 -- 00:18:00:180 -- http: GET -- /hackathon/search/4 -- a8984bc6-7b26-4a5d-877b-3ee9b1036409 -- 200 -- 296 - 40.873 ms
+2021-01-28 -- 00:18:24:1824 -- info: listening on port 3000
+2021-01-28 -- 00:18:25:1825 -- info: Init transaction query
+2021-01-28 -- 00:18:25:1825 -- info: Commit
+2021-01-28 -- 00:18:25:1825 -- http: GET -- /hackathon/search/4 -- 9cda65e1-af79-407a-af61-c6b08684f1e5 -- 200 -- 296 - 68.817 ms
+2021-01-28 -- 00:20:00:200 -- info: listening on port 3000
+2021-01-28 -- 00:20:02:202 -- info: Init transaction query
+2021-01-28 -- 00:20:02:202 -- error: Rollback query
+2021-01-28 -- 00:20:02:202 -- error: Error get hackathon info Cannot read property 'link' of undefined
+2021-01-28 -- 00:20:02:202 -- http: GET -- /hackathon/search/4 -- 79e112c8-7bef-403c-a961-05f845885cab -- 500 -- 5 - 56.385 ms
+2021-01-28 -- 00:20:44:2044 -- info: listening on port 3000
+2021-01-28 -- 00:20:46:2046 -- info: Init transaction query
+2021-01-28 -- 00:20:46:2046 -- info: Commit
+2021-01-28 -- 00:20:46:2046 -- http: GET -- /hackathon/search/4 -- 8b21499d-28b8-4bb2-9027-a8a3419042b4 -- 200 -- 296 - 69.564 ms
+2021-01-28 -- 00:21:31:2131 -- info: listening on port 3000
+2021-01-28 -- 00:21:34:2134 -- info: Init transaction query
+2021-01-28 -- 00:21:34:2134 -- info: Commit
+2021-01-28 -- 00:21:34:2134 -- http: GET -- /hackathon/search/4 -- d565d9b1-3649-4510-abb9-5e33673679cb -- 200 -- 379 - 46.512 ms
+2021-01-28 -- 00:26:31:2631 -- info: listening on port 3000
+2021-01-28 -- 00:26:34:2634 -- info: Init transaction query
+2021-01-28 -- 00:26:34:2634 -- info: Commit
+2021-01-28 -- 00:26:34:2634 -- http: GET -- /hackathon/search/4 -- fdec4f65-f62b-40cc-9676-7ed3419c39fa -- 200 -- 296 - 39.769 ms
+2021-01-28 -- 00:27:50:2750 -- info: listening on port 3000
+2021-01-28 -- 00:27:52:2752 -- info: Init transaction query
+2021-01-28 -- 00:27:52:2752 -- info: Commit
+2021-01-28 -- 00:27:52:2752 -- http: GET -- /hackathon/search/4 -- e7b47133-e503-4df6-87ec-0c143a655aa1 -- 200 -- 296 - 147.143 ms
+2021-01-28 -- 00:28:26:2826 -- info: listening on port 3000
+2021-01-28 -- 00:28:28:2828 -- info: Init transaction query
+2021-01-28 -- 00:28:28:2828 -- info: Commit
+2021-01-28 -- 00:28:28:2828 -- http: GET -- /hackathon/search/4 -- 26889635-7416-47ed-92c9-a0e394b0cc51 -- 200 -- 379 - 42.543 ms
+2021-01-28 -- 00:28:47:2847 -- info: Init transaction query
+2021-01-28 -- 00:28:47:2847 -- info: Commit
+2021-01-28 -- 00:28:47:2847 -- http: GET -- /hackathon/search/1 -- 99afd937-6ed4-4be8-abab-6439a6b60581 -- 200 -- 339 - 10.221 ms
+2021-01-28 -- 00:28:49:2849 -- info: Init transaction query
+2021-01-28 -- 00:28:49:2849 -- info: Commit
+2021-01-28 -- 00:28:49:2849 -- http: GET -- /hackathon/search/3 -- 76d3f7ca-f0e1-4b71-9d8d-c91fe3476ff2 -- 200 -- 331 - 11.356 ms
+2021-01-28 -- 00:28:52:2852 -- info: Init transaction query
+2021-01-28 -- 00:28:52:2852 -- error: Rollback query
+2021-01-28 -- 00:28:52:2852 -- error: Error get hackathon info database-error
+2021-01-28 -- 00:28:52:2852 -- http: GET -- /hackathon/search/5 -- 7a283622-be7b-4bf6-9d95-858b7d60d33a -- 500 -- 5 - 17.414 ms
+2021-01-28 -- 00:28:54:2854 -- info: Init transaction query
+2021-01-28 -- 00:28:54:2854 -- info: Commit
+2021-01-28 -- 00:28:54:2854 -- http: GET -- /hackathon/search/4 -- 85885d40-111f-4b6f-b703-1d75f044ae90 -- 200 -- 379 - 4.836 ms
+2021-01-28 -- 00:28:56:2856 -- info: Init transaction query
+2021-01-28 -- 00:28:56:2856 -- info: Commit
+2021-01-28 -- 00:28:56:2856 -- http: GET -- /hackathon/search/3 -- 50dd10ef-ee9c-4602-a722-19dd9dd8fcc9 -- 200 -- 331 - 17.776 ms
+2021-01-28 -- 00:28:58:2858 -- info: Init transaction query
+2021-01-28 -- 00:28:58:2858 -- info: Commit
+2021-01-28 -- 00:28:58:2858 -- http: GET -- /hackathon/search/2 -- bdcf985a-9403-411d-8cc3-4ab885a42797 -- 200 -- 342 - 9.303 ms
+2021-01-28 -- 00:30:02:302 -- info: listening on port 3000
+2021-01-28 -- 00:30:04:304 -- info: Init transaction query
+2021-01-28 -- 00:30:04:304 -- debug: result :>> 
+2021-01-28 -- 00:30:04:304 -- info: Commit
+2021-01-28 -- 00:30:04:304 -- http: GET -- /hackathon/search/2 -- 63957bb4-e52f-4ba7-9805-b82660d5f6e7 -- 200 -- 342 - 59.811 ms
+2021-01-28 -- 00:30:53:3053 -- info: listening on port 3000
+2021-01-28 -- 00:30:55:3055 -- info: Init transaction query
+2021-01-28 -- 00:30:55:3055 -- info: result :>> 
+2021-01-28 -- 00:30:55:3055 -- info: Commit
+2021-01-28 -- 00:30:55:3055 -- http: GET -- /hackathon/search/2 -- 363f7c99-8b0c-4af4-8f4b-b013444f985e -- 200 -- 342 - 38.072 ms
+2021-01-28 -- 00:31:43:3143 -- info: listening on port 3000
+2021-01-28 -- 00:31:51:3151 -- info: Init transaction query
+2021-01-28 -- 00:31:51:3151 -- debug: msgResponse :>> 
+2021-01-28 -- 00:31:51:3151 -- info: Commit
+2021-01-28 -- 00:31:51:3151 -- http: GET -- /hackathon/search/2 -- a4a58831-9e65-4ff6-906d-c43d46420a13 -- 200 -- 342 - 35.579 ms
+2021-01-28 -- 00:34:23:3423 -- info: listening on port 3000
+2021-01-28 -- 00:34:25:3425 -- info: Init transaction query
+2021-01-28 -- 00:34:25:3425 -- debug: msgResponse :>>  [object Object]
+2021-01-28 -- 00:34:25:3425 -- info: Commit
+2021-01-28 -- 00:34:25:3425 -- http: GET -- /hackathon/search/2 -- 3b1b3cd1-dc71-47cf-b9b5-e3ba5c7f4418 -- 200 -- 342 - 92.840 ms
+2021-01-28 -- 00:36:56:3656 -- info: listening on port 3000
+2021-01-28 -- 00:37:00:370 -- info: Init transaction query
+2021-01-28 -- 00:37:00:370 -- debug: msgResponse :>>  [object Object]
+2021-01-28 -- 00:37:00:370 -- info: Commit
+2021-01-28 -- 00:37:00:370 -- http: GET -- /hackathon/search/2 -- 24c97536-8a5a-4796-b64c-93c23c961a0b -- 200 -- 342 - 31.099 ms
+2021-01-28 -- 00:37:54:3754 -- info: listening on port 3000
+2021-01-28 -- 00:38:00:380 -- info: Init transaction query
+2021-01-28 -- 00:38:00:380 -- debug: msgResponse :>>  [object Object]
+2021-01-28 -- 00:38:00:380 -- info: Commit
+2021-01-28 -- 00:38:00:380 -- http: GET -- /hackathon/search/2 -- 60ab3994-6d09-4b5b-8984-a2751dab3673 -- 200 -- 342 - 48.489 ms
+2021-01-28 -- 00:40:12:4012 -- info: listening on port 3000
+2021-01-28 -- 00:40:16:4016 -- info: Init transaction query
+2021-01-28 -- 00:40:16:4016 -- debug: msgResponse :>>  [object Object]
+2021-01-28 -- 00:40:16:4016 -- info: Commit
+2021-01-28 -- 00:40:16:4016 -- http: GET -- /hackathon/search/2 -- 974acff6-5f62-4c44-abeb-93f6311e2783 -- 200 -- 342 - 143.413 ms
+2021-01-28 -- 00:41:47:4147 -- info: listening on port 3000
+2021-01-28 -- 00:41:50:4150 -- info: Init transaction query
+2021-01-28 -- 00:41:50:4150 -- debug: msgResponse :>>  [object Object]
+2021-01-28 -- 00:41:50:4150 -- info: Commit
+2021-01-28 -- 00:41:50:4150 -- http: GET -- /hackathon/search/2 -- 51c497c7-13be-4237-a906-a46f4c1b1cb4 -- 200 -- 342 - 34.384 ms
+2021-01-28 -- 00:43:04:434 -- info: listening on port 3000
+2021-01-28 -- 00:43:06:436 -- info: Init transaction query
+2021-01-28 -- 00:43:06:436 -- debug: msgResponse :>>  [object Object]
+2021-01-28 -- 00:43:06:436 -- info: Commit
+2021-01-28 -- 00:43:06:436 -- http: GET -- /hackathon/search/2 -- 04c4dcf7-2f7d-49f8-bb03-5f94833f7147 -- 200 -- 342 - 29.168 ms
+2021-01-28 -- 00:45:02:452 -- info: listening on port 3000
+2021-01-28 -- 00:45:05:455 -- info: Init transaction query
+2021-01-28 -- 00:45:05:455 -- debug: msgResponse :>>  [object Object]
+2021-01-28 -- 00:45:05:455 -- info: Commit
+2021-01-28 -- 00:45:05:455 -- http: GET -- /hackathon/search/2 -- a91c1df0-9222-4096-a29b-643aecb7a886 -- 200 -- 342 - 30.652 ms
+2021-01-28 -- 00:45:46:4546 -- info: listening on port 3000
+2021-01-28 -- 00:45:50:4550 -- info: Init transaction query
+2021-01-28 -- 00:45:50:4550 -- debug: msgResponse :>>  [object Object]
+2021-01-28 -- 00:45:50:4550 -- info: Commit
+2021-01-28 -- 00:45:50:4550 -- http: GET -- /hackathon/search/2 -- e0dd13ca-4464-4c6d-bbfc-6de8a337691a -- 200 -- 342 - 113.257 ms
+2021-01-28 -- 00:49:09:499 -- info: listening on port 3000
+2021-01-28 -- 00:49:13:4913 -- info: Init transaction query
+2021-01-28 -- 00:49:13:4913 -- debug: msgResponse :>>  [object Object]
+2021-01-28 -- 00:49:13:4913 -- info: Commit
+2021-01-28 -- 00:49:13:4913 -- http: GET -- /hackathon/search/2 -- 133378a0-1da5-421f-a060-64569e576524 -- 200 -- 342 - 28.333 ms
+2021-01-28 -- 00:49:59:4959 -- info: listening on port 3000
+2021-01-28 -- 00:50:01:501 -- info: Init transaction query
+2021-01-28 -- 00:50:01:501 -- debug: msgResponse :>>  [object Object]
+2021-01-28 -- 00:50:01:501 -- debug: [object Object]
+2021-01-28 -- 00:50:01:501 -- info: Commit
+2021-01-28 -- 00:50:01:501 -- http: GET -- /hackathon/search/2 -- 60b42ba2-5997-42d1-9170-f6d950f0642c -- 200 -- 342 - 30.513 ms
+2021-01-28 -- 00:50:38:5038 -- info: listening on port 3000
+2021-01-28 -- 00:50:41:5041 -- info: Init transaction query
+2021-01-28 -- 00:50:41:5041 -- debug: msgResponse :>>  [object Object]
+2021-01-28 -- 00:50:41:5041 -- debug: [object Object]
+2021-01-28 -- 00:50:41:5041 -- info: Commit
+2021-01-28 -- 00:50:41:5041 -- http: GET -- /hackathon/search/2 -- fd5f61cb-9d29-4eba-b495-264a554cae24 -- 200 -- 342 - 115.368 ms
+2021-01-28 -- 00:52:18:5218 -- info: listening on port 3000
+2021-01-28 -- 00:52:21:5221 -- info: Init transaction query
+2021-01-28 -- 00:52:21:5221 -- debug: msgResponse :>>  [object Object]
+2021-01-28 -- 00:52:21:5221 -- debug: [object Object]
+2021-01-28 -- 00:52:21:5221 -- info: Commit
+2021-01-28 -- 00:52:21:5221 -- http: GET -- /hackathon/search/2 -- 8313dd84-c854-40e1-9210-27d196793dbc -- 200 -- 342 - 39.223 ms
+2021-01-28 -- 01:07:39:739 -- info: listening on port 3000
+2021-01-28 -- 01:07:43:743 -- info: Init transaction query
+2021-01-28 -- 01:07:43:743 -- error: Rollback query
+2021-01-28 -- 01:07:43:743 -- error: Error get hackathon info database-error
+2021-01-28 -- 01:07:43:743 -- http: GET -- /hackathon/search/2 -- fa3af80e-6fb4-401a-8819-230dd3c1296f -- 500 -- 5 - 86.425 ms
+2021-01-28 -- 01:08:35:835 -- info: listening on port 3000
+2021-01-28 -- 01:08:37:837 -- info: Init transaction query
+2021-01-28 -- 01:08:37:837 -- error: Rollback query
+2021-01-28 -- 01:08:37:837 -- error: Error get hackathon info database-error
+2021-01-28 -- 01:08:37:837 -- http: GET -- /hackathon/search/2 -- 71f53a94-cda8-45a9-9bba-f0175834f454 -- 500 -- 5 - 34.933 ms
+2021-01-28 -- 01:09:53:953 -- info: listening on port 3000
+2021-01-28 -- 01:09:56:956 -- info: Init transaction query
+2021-01-28 -- 01:09:56:956 -- error: Rollback query
+2021-01-28 -- 01:09:56:956 -- error: Error get hackathon info resTech is not defined
+2021-01-28 -- 01:09:56:956 -- http: GET -- /hackathon/search/2 -- 49cb82a4-4960-4722-aeef-8e6a7d9f34be -- 500 -- 5 - 32.544 ms
+2021-01-28 -- 01:11:20:1120 -- info: listening on port 3000
+2021-01-28 -- 01:11:22:1122 -- info: Init transaction query
+2021-01-28 -- 01:11:22:1122 -- error: Rollback query
+2021-01-28 -- 01:11:22:1122 -- error: Error get hackathon info resTech is not defined
+2021-01-28 -- 01:11:22:1122 -- http: GET -- /hackathon/search/2 -- 014c0640-8e47-4665-8021-b522644f990f -- 500 -- 5 - 59.719 ms
+2021-01-28 -- 01:11:36:1136 -- info: listening on port 3000
+2021-01-28 -- 01:11:39:1139 -- info: Init transaction query
+2021-01-28 -- 01:11:39:1139 -- debug: [object Object],[object Object],[object Object]
+2021-01-28 -- 01:11:39:1139 -- info: Commit
+2021-01-28 -- 01:11:39:1139 -- http: GET -- /hackathon/search/2 -- cbbf643d-3b78-40d3-9f1a-0025c9ba2dfc -- 200 -- 342 - 163.240 ms
+2021-01-28 -- 01:12:41:1241 -- info: Init transaction query
+2021-01-28 -- 01:12:41:1241 -- debug: [object Object],[object Object]
+2021-01-28 -- 01:12:41:1241 -- info: Commit
+2021-01-28 -- 01:12:41:1241 -- http: GET -- /hackathon/search/3 -- 3d5c2d42-6268-41ca-827c-cd71db6ce791 -- 200 -- 331 - 14.880 ms
+2021-01-28 -- 01:15:09:159 -- info: listening on port 3000
+2021-01-28 -- 01:15:12:1512 -- info: Init transaction query
+2021-01-28 -- 01:15:12:1512 -- debug: [object Object],[object Object]
+2021-01-28 -- 01:15:12:1512 -- info: Commit
+2021-01-28 -- 01:15:12:1512 -- http: GET -- /hackathon/search/3 -- c576d56e-c564-4793-9e78-298f650b8178 -- 200 -- 331 - 43.447 ms
+2021-01-28 -- 01:15:42:1542 -- info: listening on port 3000
+2021-01-28 -- 01:15:45:1545 -- info: Init transaction query
+2021-01-28 -- 01:15:45:1545 -- debug: [object Object],[object Object]
+2021-01-28 -- 01:15:45:1545 -- info: Commit
+2021-01-28 -- 01:15:45:1545 -- http: GET -- /hackathon/search/3 -- 56064bf3-5b01-4594-86ed-857cecb801db -- 200 -- 331 - 148.227 ms
+2021-01-28 -- 01:16:51:1651 -- info: listening on port 3000
+2021-01-28 -- 01:16:53:1653 -- info: Init transaction query
+2021-01-28 -- 01:16:53:1653 -- debug: [object Object],[object Object]
+2021-01-28 -- 01:16:53:1653 -- info: Commit
+2021-01-28 -- 01:16:53:1653 -- http: GET -- /hackathon/search/3 -- 953ff142-f981-43be-9d2a-b3db63c730b0 -- 200 -- 375 - 105.380 ms
+2021-01-28 -- 01:18:15:1815 -- info: listening on port 3000
+2021-01-28 -- 01:18:18:1818 -- info: Init transaction query
+2021-01-28 -- 01:18:18:1818 -- debug: [object Object],[object Object]
+2021-01-28 -- 01:18:18:1818 -- info: Commit
+2021-01-28 -- 01:18:18:1818 -- http: GET -- /hackathon/search/3 -- 4e490d34-6fe9-4c97-81fe-ca26acb6da43 -- 200 -- 357 - 50.664 ms
+2021-01-28 -- 01:19:46:1946 -- info: listening on port 3000
+2021-01-28 -- 01:19:48:1948 -- info: Init transaction query
+2021-01-28 -- 01:19:48:1948 -- info: Commit
+2021-01-28 -- 01:19:48:1948 -- http: GET -- /hackathon/search/3 -- 736d8b89-8fce-40a4-83c8-dbfc3551a13b -- 200 -- 357 - 33.978 ms
+2021-01-28 -- 01:19:52:1952 -- info: Init transaction query
+2021-01-28 -- 01:19:52:1952 -- info: Commit
+2021-01-28 -- 01:19:52:1952 -- http: GET -- /hackathon/search/4 -- 27cd4053-fc32-4a63-9645-feec591f834e -- 200 -- 408 - 17.325 ms
+2021-01-28 -- 01:20:41:2041 -- info: Init transaction query
+2021-01-28 -- 01:20:41:2041 -- error: Rollback query
+2021-01-28 -- 01:20:41:2041 -- error: Error get hackathon info database-error
+2021-01-28 -- 01:20:41:2041 -- http: GET -- /hackathon/search/filters -- db9594bb-ae3b-4572-995e-87d7e2d83a91 -- 500 -- 5 - 8.140 ms
+2021-01-28 -- 01:21:14:2114 -- info: Init transaction query
+2021-01-28 -- 01:21:14:2114 -- error: Rollback query
+2021-01-28 -- 01:21:14:2114 -- error: Error get hackathon info database-error
+2021-01-28 -- 01:21:14:2114 -- http: GET -- /hackathon/search/filters -- fc3e63d3-c5f3-4d44-9119-971c1dbffad7 -- 500 -- 5 - 4.667 ms
+2021-01-28 -- 01:24:03:243 -- info: Init transaction query
+2021-01-28 -- 01:24:03:243 -- error: Rollback query
+2021-01-28 -- 01:24:03:243 -- error: Error get hackathon info database-error
+2021-01-28 -- 01:24:03:243 -- http: GET -- /hackathon/search/filters -- 32a60d87-481c-434c-ab49-85a87ab93fbb -- 500 -- 5 - 7.432 ms
+2021-01-28 -- 01:24:18:2418 -- info: Init transaction query
+2021-01-28 -- 01:24:18:2418 -- error: Rollback query
+2021-01-28 -- 01:24:18:2418 -- error: Error get hackathon info database-error
+2021-01-28 -- 01:24:18:2418 -- http: GET -- /hackathon/search/filters -- 003d768e-83a7-485f-8570-ee1e6da85106 -- 500 -- 5 - 4.174 ms
+2021-01-28 -- 01:24:19:2419 -- info: Init transaction query
+2021-01-28 -- 01:24:19:2419 -- error: Rollback query
+2021-01-28 -- 01:24:19:2419 -- error: Error get hackathon info database-error
+2021-01-28 -- 01:24:19:2419 -- http: GET -- /hackathon/search/filters -- 50b8fed8-2a8f-4cb6-9e8d-7beaad99958f -- 500 -- 5 - 8.455 ms
+2021-01-28 -- 01:25:36:2536 -- info: listening on port 3000
+2021-01-28 -- 01:25:37:2537 -- info: Init transaction query
+2021-01-28 -- 01:25:37:2537 -- error: Rollback query
+2021-01-28 -- 01:25:37:2537 -- error: Error get hackathon info database-error
+2021-01-28 -- 01:25:37:2537 -- http: GET -- /hackathon/search/filters -- faa2e000-a66a-401b-912d-41e9f2997831 -- 500 -- 5 - 79.058 ms
+2021-01-28 -- 01:26:28:2628 -- info: Init transaction query
+2021-01-28 -- 01:26:28:2628 -- error: Rollback query
+2021-01-28 -- 01:26:28:2628 -- error: Error get hackathon info database-error
+2021-01-28 -- 01:26:28:2628 -- http: GET -- /hackathon/search/filters -- 69b6d489-61b4-449c-8756-4711c04ab46d -- 500 -- 5 - 14.716 ms
+2021-01-28 -- 01:26:33:2633 -- info: listening on port 3000
+2021-01-28 -- 01:26:36:2636 -- info: Init transaction query
+2021-01-28 -- 01:26:36:2636 -- error: Rollback query
+2021-01-28 -- 01:26:36:2636 -- error: Error get hackathon info database-error
+2021-01-28 -- 01:26:36:2636 -- http: GET -- /hackathon/search/filters -- 2680141f-7342-48d8-9685-edea64f3cd4d -- 500 -- 5 - 42.691 ms
+2021-01-28 -- 01:27:37:2737 -- info: listening on port 3000
+2021-01-28 -- 01:27:40:2740 -- info: Init transaction query
+2021-01-28 -- 01:27:40:2740 -- error: Rollback query
+2021-01-28 -- 01:27:40:2740 -- error: Error get hackathon info database-error
+2021-01-28 -- 01:27:40:2740 -- http: GET -- /hackathon/search/filters?hackathon_place=online -- ad30f075-770d-4b41-8fb2-327354c24d7c -- 500 -- 5 - 37.906 ms
+2021-01-28 -- 01:30:05:305 -- info: listening on port 3000
+2021-01-28 -- 01:30:07:307 -- info: Init transaction query
+2021-01-28 -- 01:30:07:307 -- error: Rollback query
+2021-01-28 -- 01:30:07:307 -- error: Error get hackathon info database-error
+2021-01-28 -- 01:30:07:307 -- http: GET -- /hackathon/search/filters?hackathon_place=online -- 32df1db1-0e58-48c2-806b-174b83a16945 -- 500 -- 5 - 84.459 ms
+2021-01-28 -- 01:33:01:331 -- info: listening on port 3000
+2021-01-28 -- 01:33:03:333 -- info: Init transaction query
+2021-01-28 -- 01:33:03:333 -- error: Rollback query
+2021-01-28 -- 01:33:03:333 -- error: Error get hackathon info database-error
+2021-01-28 -- 01:33:03:333 -- http: GET -- /hackathon/search/filters?hackathon_place=online -- d6b7636a-874f-40f8-a91d-5162012bf32d -- 500 -- 5 - 116.045 ms
+2021-01-28 -- 01:33:37:3337 -- info: listening on port 3000
+2021-01-28 -- 01:33:39:3339 -- info: Init transaction query
+2021-01-28 -- 01:33:39:3339 -- error: Rollback query
+2021-01-28 -- 01:33:39:3339 -- error: Error get hackathon info database-error
+2021-01-28 -- 01:33:39:3339 -- http: GET -- /hackathon/search/filters?hackathon_place=online -- 191f4f07-8cdd-4f5a-9afd-b65fab821ef1 -- 500 -- 5 - 80.007 ms
+2021-01-28 -- 01:34:29:3429 -- info: listening on port 3000
+2021-01-28 -- 01:34:32:3432 -- info: Init transaction query
+2021-01-28 -- 01:34:32:3432 -- error: Rollback query
+2021-01-28 -- 01:34:32:3432 -- error: Error get hackathon info database-error
+2021-01-28 -- 01:34:32:3432 -- http: GET -- /hackathon/search/filters?hackathon_place=online -- df3af35a-d89e-415e-8955-6005e1aac51e -- 500 -- 5 - 67.051 ms
+2021-01-28 -- 01:34:52:3452 -- info: listening on port 3000
+2021-01-28 -- 01:34:55:3455 -- info: Init transaction query
+2021-01-28 -- 01:34:55:3455 -- info: Commit
+2021-01-28 -- 01:34:55:3455 -- http: GET -- /hackathon/search/filters?hackathon_place=online -- 5c5a447c-43f0-48a4-8a18-f5a5e4b0cbe3 -- 200 -- 1495 - 107.797 ms
+2021-01-28 -- 01:35:26:3526 -- info: Init transaction query
+2021-01-28 -- 01:35:26:3526 -- info: Commit
+2021-01-28 -- 01:35:26:3526 -- http: GET -- /hackathon/search/2 -- db00d115-d7e9-4b99-9447-5dab8a97e4ef -- 200 -- 376 - 15.852 ms
+2021-01-28 -- 01:35:33:3533 -- info: Init transaction query
+2021-01-28 -- 01:35:33:3533 -- info: Commit
+2021-01-28 -- 01:35:33:3533 -- http: GET -- /hackathon/search/4 -- 6bd4aa2a-6e1c-4c26-9261-0e314f6562dc -- 200 -- 408 - 5.423 ms
+2021-01-28 -- 01:35:34:3534 -- info: Init transaction query
+2021-01-28 -- 01:35:34:3534 -- error: Rollback query
+2021-01-28 -- 01:35:34:3534 -- error: Error get hackathon info database-error
+2021-01-28 -- 01:35:34:3534 -- http: GET -- /hackathon/search/5 -- 000cc9d4-a25e-4e61-86ff-0ec785133133 -- 500 -- 5 - 22.468 ms
+2021-01-28 -- 01:35:36:3536 -- info: Init transaction query
+2021-01-28 -- 01:35:36:3536 -- info: Commit
+2021-01-28 -- 01:35:36:3536 -- http: GET -- /hackathon/search/3 -- 88f05c36-1a90-4972-babc-c15c0aed49de -- 200 -- 357 - 5.289 ms
+2021-01-28 -- 01:35:38:3538 -- info: Init transaction query
+2021-01-28 -- 01:35:38:3538 -- info: Commit
+2021-01-28 -- 01:35:38:3538 -- http: GET -- /hackathon/search/2 -- cccab514-a60f-433a-9cf6-859d98d5ed95 -- 200 -- 376 - 4.502 ms
+2021-01-28 -- 01:35:42:3542 -- info: Init transaction query
+2021-01-28 -- 01:35:42:3542 -- info: Commit
+2021-01-28 -- 01:35:42:3542 -- http: GET -- /hackathon/search/filters?hackathon_place=online -- c1226726-779e-4c3a-bc7d-6d7b68821d8e -- 200 -- 1495 - 9.384 ms
+2021-01-28 -- 01:35:54:3554 -- info: Init transaction query
+2021-01-28 -- 01:35:54:3554 -- error: Rollback query
+2021-01-28 -- 01:35:54:3554 -- error: Error get hackathon info database-error
+2021-01-28 -- 01:35:54:3554 -- http: GET -- /hackathon/search/filters?hackathon_place=online&city=madrid -- 9c6cfebb-901d-4bce-b07e-b46bb8fa4386 -- 500 -- 5 - 33.089 ms
+2021-01-28 -- 01:36:48:3648 -- info: listening on port 3000
+2021-01-28 -- 01:36:50:3650 -- info: Init transaction query
+2021-01-28 -- 01:36:50:3650 -- error: Rollback query
+2021-01-28 -- 01:36:50:3650 -- error: Error get hackathon info database-error
+2021-01-28 -- 01:36:50:3650 -- http: GET -- /hackathon/search/filters?hackathon_place=online&city=madrid -- 2a761d5c-9cb3-408a-856f-e34885b7b213 -- 500 -- 5 - 49.599 ms
+2021-01-28 -- 01:37:03:373 -- info: listening on port 3000
+2021-01-28 -- 01:37:05:375 -- info: Init transaction query
+2021-01-28 -- 01:37:05:375 -- error: Rollback query
+2021-01-28 -- 01:37:05:375 -- error: Error get hackathon info database-error
+2021-01-28 -- 01:37:05:375 -- http: GET -- /hackathon/search/filters?hackathon_place=online&city=madrid -- 3181edf3-1442-444d-b853-4f1b27ec88d3 -- 500 -- 5 - 67.594 ms
+2021-01-28 -- 01:37:25:3725 -- info: listening on port 3000
+2021-01-28 -- 01:37:27:3727 -- info: Init transaction query
+2021-01-28 -- 01:37:27:3727 -- info: Commit
+2021-01-28 -- 01:37:27:3727 -- http: GET -- /hackathon/search/filters?hackathon_place=online&city=madrid -- 71f1c4c7-e4b7-435d-ade7-7f162b3ebe56 -- 200 -- 26 - 48.162 ms
+2021-01-28 -- 01:37:30:3730 -- info: Init transaction query
+2021-01-28 -- 01:37:30:3730 -- info: Commit
+2021-01-28 -- 01:37:30:3730 -- http: GET -- /hackathon/search/filters?hackathon_place=online&city=madrid -- 0892ea9d-e920-4e53-aa37-eaa2e8245571 -- 200 -- 26 - 7.907 ms
+2021-01-28 -- 01:37:38:3738 -- info: Init transaction query
+2021-01-28 -- 01:37:38:3738 -- info: Commit
+2021-01-28 -- 01:37:38:3738 -- http: GET -- /hackathon/search/filters?hackathon_place=online&city=vigo -- d4dca4ff-ccfd-4a9c-9320-0deb5c581576 -- 200 -- 1495 - 15.531 ms
+2021-01-28 -- 01:45:12:4512 -- info: listening on port 3000
+2021-01-28 -- 01:45:15:4515 -- info: Init transaction query
+2021-01-28 -- 01:45:15:4515 -- info: Commit
+2021-01-28 -- 01:45:15:4515 -- http: GET -- /hackathon/search/filters?hackathon_place=online&city=vigo&thematic=gaming&tech -- 800a502d-c543-48aa-a558-443bbcf5abf9 -- 200 -- 357 - 52.107 ms
+2021-01-28 -- 01:45:31:4531 -- info: Init transaction query
+2021-01-28 -- 01:45:31:4531 -- info: Commit
+2021-01-28 -- 01:45:31:4531 -- http: GET -- /hackathon/search/filters?hackathon_place=online&city=vigo&thematic=gaming&tech=java -- aa5c8218-4f1e-4a79-8ef8-90644a7650b8 -- 200 -- 357 - 10.155 ms
+2021-01-28 -- 01:48:22:4822 -- info: listening on port 3000
+2021-01-28 -- 01:48:26:4826 -- info: Init transaction query
+2021-01-28 -- 01:48:26:4826 -- error: Rollback query
+2021-01-28 -- 01:48:26:4826 -- error: Error get hackathon info item.includes is not a function
+2021-01-28 -- 01:48:26:4826 -- http: GET -- /hackathon/search/filters?hackathon_place=online&city=vigo&thematic=gaming&tech=java -- 76213c20-b682-450b-9061-fce53b3aa7a2 -- 500 -- 5 - 63.619 ms
+2021-01-28 -- 01:49:03:493 -- info: listening on port 3000
+2021-01-28 -- 01:49:06:496 -- info: Init transaction query
+2021-01-28 -- 01:49:06:496 -- error: Rollback query
+2021-01-28 -- 01:49:06:496 -- error: Error get hackathon info Cannot read property 'includes' of undefined
+2021-01-28 -- 01:49:06:496 -- http: GET -- /hackathon/search/filters?hackathon_place=online&city=vigo&thematic=gaming&tech=java -- ef3ef4ef-7c2b-4efc-b477-e0d83dea434b -- 500 -- 5 - 59.159 ms
+2021-01-28 -- 01:49:21:4921 -- info: Init transaction query
+2021-01-28 -- 01:49:21:4921 -- error: Rollback query
+2021-01-28 -- 01:49:21:4921 -- error: Error get hackathon info Cannot read property 'includes' of undefined
+2021-01-28 -- 01:49:21:4921 -- http: GET -- /hackathon/search/filters?hackathon_place=online&city=vigo&thematic=gaming&tech=java -- 59bc6d61-fdbd-4dae-9dfa-6b7c8e6dfcd0 -- 500 -- 5 - 13.756 ms
+2021-01-28 -- 01:49:23:4923 -- info: listening on port 3000
+2021-01-28 -- 01:49:25:4925 -- info: Init transaction query
+2021-01-28 -- 01:49:25:4925 -- info: Commit
+2021-01-28 -- 01:49:25:4925 -- http: GET -- /hackathon/search/filters?hackathon_place=online&city=vigo&thematic=gaming&tech=java -- 33caf515-4ead-4f96-9307-c5abc2be99bd -- 200 -- 2 - 47.993 ms
+2021-01-28 -- 01:50:23:5023 -- info: listening on port 3000
+2021-01-28 -- 01:50:25:5025 -- info: Init transaction query
+2021-01-28 -- 01:50:25:5025 -- info: Commit
+2021-01-28 -- 01:50:25:5025 -- http: GET -- /hackathon/search/filters?hackathon_place=online&city=vigo&thematic=gaming&tech=java -- c2a8ae81-574f-4f24-9584-cf80a6f03b6a -- 200 -- 2 - 66.336 ms
+2021-01-28 -- 01:50:47:5047 -- info: Init transaction query
+2021-01-28 -- 01:50:47:5047 -- info: Commit
+2021-01-28 -- 01:50:47:5047 -- http: GET -- /hackathon/search/filters?hackathon_place=online&city=vigo&thematic=gaming&tech=python -- fa2b5440-091a-46ca-9b3d-0564a224221c -- 200 -- 2 - 12.445 ms
+2021-01-28 -- 01:51:28:5128 -- info: listening on port 3000
+2021-01-28 -- 01:51:37:5137 -- info: Init transaction query
+2021-01-28 -- 01:51:37:5137 -- info: Commit
+2021-01-28 -- 01:51:37:5137 -- http: GET -- /hackathon/search/filters?hackathon_place=online&city=vigo&thematic=gaming&tech=python -- 601efdc7-9569-44e4-8c04-d2cec44d5705 -- 200 -- 2 - 45.743 ms
+2021-01-28 -- 01:53:53:5353 -- info: listening on port 3000
+2021-01-28 -- 01:53:56:5356 -- info: Init transaction query
+2021-01-28 -- 01:53:56:5356 -- info: Commit
+2021-01-28 -- 01:53:56:5356 -- http: GET -- /hackathon/search/filters?hackathon_place=online&city=vigo&thematic=gaming&tech=python -- 360ccd3d-b7d5-4df7-b2cf-0c7a9e398436 -- 200 -- 2 - 43.609 ms
+2021-01-28 -- 01:54:38:5438 -- info: listening on port 3000
+2021-01-28 -- 01:54:41:5441 -- info: Init transaction query
+2021-01-28 -- 01:54:41:5441 -- info: Commit
+2021-01-28 -- 01:54:41:5441 -- http: GET -- /hackathon/search/filters?hackathon_place=online&city=vigo&thematic=gaming&tech=python -- 0cbbde44-3efc-4bff-9afe-6ec8ea699f88 -- 200 -- 2 - 57.461 ms
+2021-01-28 -- 01:55:21:5521 -- info: Init transaction query
+2021-01-28 -- 01:55:21:5521 -- info: Commit
+2021-01-28 -- 01:55:21:5521 -- http: GET -- /hackathon/search/filters?hackathon_place=online&city=vigo&thematic=gaming&tech=javascript -- ede4ed43-55b8-45e8-b3e2-115875d8b378 -- 200 -- 357 - 31.824 ms
+2021-01-28 -- 01:55:42:5542 -- info: listening on port 3000
+2021-01-28 -- 01:55:45:5545 -- info: Init transaction query
+2021-01-28 -- 01:55:45:5545 -- info: Commit
+2021-01-28 -- 01:55:45:5545 -- http: GET -- /hackathon/search/filters?hackathon_place=online&city=vigo&thematic=gaming&tech=javascript -- dcf839e4-f66e-4994-9c67-44398104ecdc -- 200 -- 357 - 56.303 ms
+2021-01-28 -- 01:55:59:5559 -- info: Init transaction query
+2021-01-28 -- 01:55:59:5559 -- info: Commit
+2021-01-28 -- 01:55:59:5559 -- http: GET -- /hackathon/search/filters?hackathon_place=online&city=vigo&tech=python -- d6599ca9-fa22-47c5-aaae-6e498dd3323e -- 200 -- 732 - 13.538 ms
+2021-01-28 -- 01:56:17:5617 -- info: Init transaction query
+2021-01-28 -- 01:56:17:5617 -- info: Commit
+2021-01-28 -- 01:56:17:5617 -- http: GET -- /hackathon/search/filters?hackathon_place=online&city=vigo&tech=java -- c9e3910b-a90f-44b7-b7c2-0eb46b0fe54e -- 200 -- 783 - 21.079 ms
+2021-01-28 -- 01:56:46:5646 -- info: Init transaction query
+2021-01-28 -- 01:56:46:5646 -- info: Commit
+2021-01-28 -- 01:56:46:5646 -- http: GET -- /hackathon/search/filters?hackathon_place=online&city=vigo&tech= -- a950160c-7dc6-4740-aa31-e5f40273db87 -- 200 -- 1495 - 5.946 ms
+2021-01-28 -- 01:57:08:578 -- info: Init transaction query
+2021-01-28 -- 01:57:08:578 -- info: Commit
+2021-01-28 -- 01:57:08:578 -- http: GET -- /hackathon/search/filters?hackathon_place=online&city=vigo -- 76f8a630-b14c-4a74-a11b-c430378abb22 -- 200 -- 1495 - 6.389 ms
+2021-01-28 -- 01:57:28:5728 -- info: Init transaction query
+2021-01-28 -- 01:57:28:5728 -- info: Commit
+2021-01-28 -- 01:57:28:5728 -- http: GET -- /hackathon/search/filters?hackathon_place=online&city=vigo&tech=%22%22 -- 8658d79f-b6e5-4802-b092-cf87bc4efa2b -- 200 -- 2 - 12.324 ms
+2021-01-28 -- 01:57:54:5754 -- info: Init transaction query
+2021-01-28 -- 01:57:54:5754 -- info: Commit
+2021-01-28 -- 01:57:54:5754 -- http: GET -- /hackathon/search/filters?hackathon_place=online&city=vigo -- 7480acd9-47cf-4895-8385-c54b5e4693a3 -- 200 -- 1495 - 23.033 ms
+2021-01-28 -- 01:58:57:5857 -- info: Init transaction query
+2021-01-28 -- 01:58:57:5857 -- info: Commit
+2021-01-28 -- 01:58:57:5857 -- http: GET -- /hackathon/search/filters?hackathon_place=online&city=vigo -- 9f590c53-faf3-4f83-98c5-8f2598d36fbe -- 200 -- 1495 - 4.655 ms
+2021-01-28 -- 01:58:58:5858 -- info: Init transaction query
+2021-01-28 -- 01:58:58:5858 -- info: Commit
+2021-01-28 -- 01:58:58:5858 -- http: GET -- /hackathon/search/filters?hackathon_place=online&city=vigo -- 675f321d-4941-4897-9c4c-b6b194899c51 -- 200 -- 1495 - 7.496 ms
+2021-01-28 -- 01:59:02:592 -- info: Init transaction query
+2021-01-28 -- 01:59:02:592 -- info: Commit
+2021-01-28 -- 01:59:02:592 -- http: GET -- /hackathon/search/filters?hackathon_place=online -- 7eaeb096-8aaf-4324-addb-b225c6e565cd -- 200 -- 1495 - 39.691 ms
+2021-01-28 -- 01:59:05:595 -- info: Init transaction query
+2021-01-28 -- 01:59:05:595 -- info: Commit
+2021-01-28 -- 01:59:05:595 -- http: GET -- /hackathon/search/filters -- 8174525c-69ec-44c7-b070-d328682eb19e -- 200 -- 1495 - 6.438 ms
+2021-01-28 -- 02:01:22:122 -- info: listening on port 3000
+2021-01-28 -- 02:01:24:124 -- info: Init transaction query
+2021-01-28 -- 02:01:25:125 -- info: Commit
+2021-01-28 -- 02:01:25:125 -- http: GET -- /hackathon/search/filters -- 7e1a11a8-c555-4075-98d3-f42f6d47e3f3 -- 200 -- 91 - 46.975 ms
+2021-01-28 -- 02:01:53:153 -- info: listening on port 3000
+2021-01-28 -- 02:01:56:156 -- info: Init transaction query
+2021-01-28 -- 02:01:56:156 -- info: Commit
+2021-01-28 -- 02:01:56:156 -- error: Rollback query
+2021-01-28 -- 02:01:56:156 -- error: Error get hackathon info Invalid status code:  Numero de resultados_ 4
+2021-01-28 -- 02:01:56:156 -- http: GET -- /hackathon/search/filters -- 65159973-92d1-4c9b-8239-cb1a47387011 -- 500 -- 5 - 58.935 ms
+2021-01-28 -- 02:03:13:313 -- info: listening on port 3000
+2021-01-28 -- 02:03:16:316 -- info: Init transaction query
+2021-01-28 -- 02:03:17:317 -- info: Commit
+2021-01-28 -- 02:03:17:317 -- http: GET -- /hackathon/search/filters -- 7e6a8128-f8a4-47df-94a0-4c10307ef50f -- 200 -- 23 - 62.703 ms
+2021-01-28 -- 02:03:35:335 -- info: listening on port 3000
+2021-01-28 -- 02:03:38:338 -- info: Init transaction query
+2021-01-28 -- 02:03:38:338 -- info: Commit
+2021-01-28 -- 02:03:38:338 -- http: GET -- /hackathon/search/filters -- d8855ea1-c3c2-49a9-b2e7-3e364c28c860 -- 200 -- 1495 - 56.372 ms
+2021-01-28 -- 02:04:21:421 -- info: listening on port 3000
+2021-01-28 -- 02:04:24:424 -- info: Init transaction query
+2021-01-28 -- 02:04:24:424 -- info: Commit
+2021-01-28 -- 02:04:24:424 -- http: GET -- /hackathon/search/filters -- 1b6a2f42-6414-4fd3-9e25-86f1f67fdf99 -- 200 -- 1495 - 150.110 ms
+2021-01-28 -- 02:08:55:855 -- info: listening on port 3000
+2021-01-28 -- 02:08:58:858 -- info: Init transaction query
+2021-01-28 -- 02:08:58:858 -- info: Commit
+2021-01-28 -- 02:08:58:858 -- http: GET -- /hackathon/search/filters -- 1000d79b-002e-4722-8a37-449bbb9fd048 -- 200 -- 1495 - 29.436 ms
+2021-01-28 -- 02:10:43:1043 -- info: listening on port 3000
+2021-01-28 -- 02:10:46:1046 -- info: Init transaction query
+2021-01-28 -- 02:10:46:1046 -- info: Commit
+2021-01-28 -- 02:10:46:1046 -- http: GET -- /hackathon/search/filters -- 9ee52369-0341-430c-b7c1-bc7819f1b820 -- 200 -- 1495 - 56.809 ms
+2021-01-28 -- 02:12:10:1210 -- info: listening on port 3000
+2021-01-28 -- 02:12:16:1216 -- info: Init transaction query
+2021-01-28 -- 02:12:16:1216 -- info: Commit
+2021-01-28 -- 02:12:16:1216 -- http: GET -- /hackathon/search/filters -- 2f723ea7-cbaf-4fa5-946a-ba3b06ef2e1f -- 200 -- 1495 - 33.862 ms
+2021-01-28 -- 02:12:27:1227 -- info: Init transaction query
+2021-01-28 -- 02:12:27:1227 -- info: Commit
+2021-01-28 -- 02:12:27:1227 -- http: GET -- /hackathon/search/filters?hackathon_place=online -- 00380413-b346-468f-91f9-2bdcf4dcc4f1 -- 200 -- 1495 - 12.334 ms
+2021-01-28 -- 02:12:34:1234 -- info: Init transaction query
+2021-01-28 -- 02:12:34:1234 -- info: Commit
+2021-01-28 -- 02:12:34:1234 -- http: GET -- /hackathon/search/filters?hackathon_place=online&city=vigo -- 797a921d-5dab-4f38-939e-90969464b720 -- 200 -- 1495 - 12.419 ms
+2021-01-28 -- 02:12:41:1241 -- info: Init transaction query
+2021-01-28 -- 02:12:41:1241 -- info: Commit
+2021-01-28 -- 02:12:41:1241 -- http: GET -- /hackathon/search/filters?hackathon_place=online&city=vigo&tech=java -- 42fb8778-e5c6-470f-a286-a1d3e2dbfb20 -- 200 -- 783 - 6.315 ms

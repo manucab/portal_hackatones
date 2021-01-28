@@ -41,9 +41,9 @@ const formatDev = winston.format.combine(
     winston.format.json(true),
     winston.format.colorize({ all: true }),
     winston.format.prettyPrint(),
-    winston.format.printf(
-        (info) => `${info.timestamp} -- ${info.level}: ${info.message}`,
-    ),
+    winston.format.printf((info) => `${info.timestamp} -- ${info.level} : ${info.message}`),
+
+
 )
 
 const transports = [

@@ -46,10 +46,12 @@ const createHackathon = async(req, res) => {
         // 4. Insert new tech and table hackathon_tech
         await auxInsertTech(tech, id_hackathon);
 
-        console.log('Insert into table hackathon_tech OK!!');
+        console.log('Insert into tables tech and hackathon_tech OK!!');
 
         // 5. Insert new links and table hackathon_link
         await auxInsertLink(links, id_hackathon);
+
+        console.log('Insert into tables lin and hackathon_link OK!!');
 
         // Commit mysql
         query = 'commit';
