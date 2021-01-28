@@ -1,0 +1,32 @@
+
+SELECT first_name, last_name, subsidiary_id, employee_id
+  FROM employees
+ WHERE ( subsidiary_id    = :sub_id OR :sub_id IS NULL )
+   AND ( employee_id      = :emp_id OR :emp_id IS NULL )
+   AND ( UPPER(last_name) = :name   OR :name   IS NULL )
+
+
+# State run
+NODE_ENV=development
+# Server
+PORT=3000
+DB_HOST=localhost
+# Database
+DB_USER=
+DB_KEY=
+DB_NAME=portal_hackathones
+# Admin root
+ROOT_NAME= root
+ROOT_PASSWORD= rootMaster21
+ROOT_KEY_INIT= BKRLEODJEkgk5fdk332dfschwe
+ROOT_EMAIL= root@root.com
+#
+SECRET=master45#*
+# Utils
+EMAIL_API_KEY=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
+#
+PUBLIC_DOMAIN=localhost:3000
+# Code user valid account dd
+CODE_LEN=40
+# Password len
+PASSWORD_LEN = 10

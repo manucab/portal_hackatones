@@ -1,0 +1,25 @@
+* App
+        - index.js
+        -.env
+* Controllers
+        - get
+        - post
+        -delelete
+        -update
+*Middelwares
+* Db
+        - Select.js
+        - Insert.js
+        -Update.js
+        -Delete.js
+        -Connection.js
+*Utils
+*Media
+*Validators
+*Views
+        - SchemaEmail
+
+
+1.0 // Variables && instances
+2.0 // Routers
+3.0 // EndPoints

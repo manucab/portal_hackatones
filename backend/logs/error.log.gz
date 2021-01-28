@@ -1,0 +1,123 @@
+2021-01-26 -- 17:08:41:841 -- error: asdfasdfasdf
+2021-01-26 -- 17:09:07:97 -- error: asdfasdfasdf
+2021-01-27 -- 16:35:22:3522 -- error: listening on port 3000
+2021-01-27 -- 23:07:04:74 -- error: Rollback query
+2021-01-27 -- 23:07:04:74 -- error: Error get hackathon info Cannot destructure property 'hackathon_place' of 'req.query' as it is undefined.
+2021-01-27 -- 23:07:55:755 -- error: Rollback query
+2021-01-27 -- 23:07:55:755 -- error: Error get hackathon info Cannot destructure property 'hackathon_place' of 'req.query' as it is undefined.
+2021-01-27 -- 23:08:16:816 -- error: Rollback query
+2021-01-27 -- 23:08:16:816 -- error: Error get hackathon info Cannot destructure property 'hackathon_place' of 'req.query' as it is undefined.
+2021-01-27 -- 23:08:36:836 -- error: Rollback query
+2021-01-27 -- 23:08:36:836 -- error: Error get hackathon info Cannot destructure property 'hackathon_place' of 'req.query' as it is undefined.
+2021-01-27 -- 23:09:37:937 -- error: Rollback query
+2021-01-27 -- 23:09:37:937 -- error: Error get hackathon info getListLinkByHackathonDB is not defined
+2021-01-27 -- 23:48:03:483 -- error: Rollback query
+2021-01-27 -- 23:48:03:483 -- error: Error get hackathon info info is not defined
+2021-01-27 -- 23:52:49:5249 -- error: Rollback query
+2021-01-27 -- 23:52:49:5249 -- error: Error get hackathon info result is not defined
+2021-01-27 -- 23:53:10:5310 -- error: Rollback query
+2021-01-27 -- 23:53:10:5310 -- error: Error get hackathon info result is not defined
+2021-01-28 -- 00:15:25:1525 -- error: Rollback query
+2021-01-28 -- 00:15:25:1525 -- error: Error get hackathon info item.link is not iterable
+2021-01-28 -- 00:16:11:1611 -- error: Rollback query
+2021-01-28 -- 00:16:11:1611 -- error: Error get hackathon info Cannot read property 'push' of undefined
+2021-01-28 -- 00:20:02:202 -- error: Rollback query
+2021-01-28 -- 00:20:02:202 -- error: Error get hackathon info Cannot read property 'link' of undefined
+2021-01-28 -- 00:28:52:2852 -- error: Rollback query
+2021-01-28 -- 00:28:52:2852 -- error: Error get hackathon info database-error
+2021-01-28 -- 01:07:43:743 -- error: Rollback query
+2021-01-28 -- 01:07:43:743 -- error: Error get hackathon info database-error
+2021-01-28 -- 01:08:37:837 -- error: Rollback query
+2021-01-28 -- 01:08:37:837 -- error: Error get hackathon info database-error
+2021-01-28 -- 01:09:56:956 -- error: Rollback query
+2021-01-28 -- 01:09:56:956 -- error: Error get hackathon info resTech is not defined
+2021-01-28 -- 01:11:22:1122 -- error: Rollback query
+2021-01-28 -- 01:11:22:1122 -- error: Error get hackathon info resTech is not defined
+2021-01-28 -- 01:20:41:2041 -- error: Rollback query
+2021-01-28 -- 01:20:41:2041 -- error: Error get hackathon info database-error
+2021-01-28 -- 01:21:14:2114 -- error: Rollback query
+2021-01-28 -- 01:21:14:2114 -- error: Error get hackathon info database-error
+2021-01-28 -- 01:24:03:243 -- error: Rollback query
+2021-01-28 -- 01:24:03:243 -- error: Error get hackathon info database-error
+2021-01-28 -- 01:24:18:2418 -- error: Rollback query
+2021-01-28 -- 01:24:18:2418 -- error: Error get hackathon info database-error
+2021-01-28 -- 01:24:19:2419 -- error: Rollback query
+2021-01-28 -- 01:24:19:2419 -- error: Error get hackathon info database-error
+2021-01-28 -- 01:25:37:2537 -- error: Rollback query
+2021-01-28 -- 01:25:37:2537 -- error: Error get hackathon info database-error
+2021-01-28 -- 01:26:28:2628 -- error: Rollback query
+2021-01-28 -- 01:26:28:2628 -- error: Error get hackathon info database-error
+2021-01-28 -- 01:26:36:2636 -- error: Rollback query
+2021-01-28 -- 01:26:36:2636 -- error: Error get hackathon info database-error
+2021-01-28 -- 01:27:40:2740 -- error: Rollback query
+2021-01-28 -- 01:27:40:2740 -- error: Error get hackathon info database-error
+2021-01-28 -- 01:30:07:307 -- error: Rollback query
+2021-01-28 -- 01:30:07:307 -- error: Error get hackathon info database-error
+2021-01-28 -- 01:33:03:333 -- error: Rollback query
+2021-01-28 -- 01:33:03:333 -- error: Error get hackathon info database-error
+2021-01-28 -- 01:33:39:3339 -- error: Rollback query
+2021-01-28 -- 01:33:39:3339 -- error: Error get hackathon info database-error
+2021-01-28 -- 01:34:32:3432 -- error: Rollback query
+2021-01-28 -- 01:34:32:3432 -- error: Error get hackathon info database-error
+2021-01-28 -- 01:35:34:3534 -- error: Rollback query
+2021-01-28 -- 01:35:34:3534 -- error: Error get hackathon info database-error
+2021-01-28 -- 01:35:54:3554 -- error: Rollback query
+2021-01-28 -- 01:35:54:3554 -- error: Error get hackathon info database-error
+2021-01-28 -- 01:36:50:3650 -- error: Rollback query
+2021-01-28 -- 01:36:50:3650 -- error: Error get hackathon info database-error
+2021-01-28 -- 01:37:05:375 -- error: Rollback query
+2021-01-28 -- 01:37:05:375 -- error: Error get hackathon info database-error
+2021-01-28 -- 01:48:26:4826 -- error: Rollback query
+2021-01-28 -- 01:48:26:4826 -- error: Error get hackathon info item.includes is not a function
+2021-01-28 -- 01:49:06:496 -- error: Rollback query
+2021-01-28 -- 01:49:06:496 -- error: Error get hackathon info Cannot read property 'includes' of undefined
+2021-01-28 -- 01:49:21:4921 -- error: Rollback query
+2021-01-28 -- 01:49:21:4921 -- error: Error get hackathon info Cannot read property 'includes' of undefined
+2021-01-28 -- 02:01:56:156 -- error: Rollback query
+2021-01-28 -- 02:01:56:156 -- error: Error get hackathon info Invalid status code:  Numero de resultados_ 4
+2021-01-28 -- 11:06:34:634 -- error: Rollback query
+2021-01-28 -- 11:06:34:634 -- error: Error get hackathon info python is not a function
+2021-01-28 -- 11:11:08:118 -- error: Rollback query
+2021-01-28 -- 11:11:08:118 -- error: Error get hackathon info python is not a function
+2021-01-28 -- 12:49:45:4945 -- error: Email must have the following structure: name@xxxx.[com, es, net]
+2021-01-28 -- 12:50:36:5036 -- error: Email must have the following structure: name@xxxx.[com, es, net]
+2021-01-28 -- 12:52:39:5239 -- error: The name entered is not valid
+2021-01-28 -- 12:53:07:537 -- error: The name entered is not valid
+2021-01-28 -- 12:53:20:5320 -- error: The surname entered is not valid
+2021-01-28 -- 12:53:26:5326 -- error: The professional profile entered is not valid
+2021-01-28 -- 12:53:40:5340 -- error: The rol entered is not valid
+2021-01-28 -- 13:04:52:452 -- error: Rollback query
+2021-01-28 -- 13:04:52:452 -- error: Error get hackathon info The valid values of place are: online, presencial, semipresencial
+2021-01-28 -- 13:08:28:828 -- error: rollback
+2021-01-28 -- 13:08:28:828 -- error: The valid values of place are: online, presencial, semipresencial
+2021-01-28 -- 13:09:02:92 -- error: rollback
+2021-01-28 -- 13:09:02:92 -- error: The tech of hackathon is not valid
+2021-01-28 -- 13:09:05:95 -- error: rollback
+2021-01-28 -- 13:09:05:95 -- error: The tech of hackathon is not valid
+2021-01-28 -- 13:09:08:98 -- error: rollback
+2021-01-28 -- 13:09:08:98 -- error: The tech of hackathon is not valid
+2021-01-28 -- 13:09:45:945 -- error: rollback
+2021-01-28 -- 13:09:45:945 -- error: The tech of hackathon is not valid
+2021-01-28 -- 13:10:31:1031 -- error: rollback
+2021-01-28 -- 13:10:31:1031 -- error: The tech of hackathon is not valid
+2021-01-28 -- 13:15:15:1515 -- error: rollback
+2021-01-28 -- 13:15:15:1515 -- error: The tech of hackathon is not valid
+2021-01-28 -- 13:17:19:1719 -- error: rollback
+2021-01-28 -- 13:17:19:1719 -- error: The tech of hackathon is not valid
+2021-01-28 -- 13:18:37:1837 -- error: Error login
+2021-01-28 -- 13:18:49:1849 -- error: Error login
+2021-01-28 -- 13:19:06:196 -- error: Error login
+2021-01-28 -- 13:19:17:1917 -- error: Error login
+2021-01-28 -- 13:19:31:1931 -- error: Error login
+2021-01-28 -- 13:19:48:1948 -- error: Error login
+2021-01-28 -- 13:20:22:2022 -- error: Error login
+2021-01-28 -- 13:20:31:2031 -- error: Error login
+2021-01-28 -- 13:21:36:2136 -- error: Error login
+2021-01-28 -- 13:21:50:2150 -- error: Error login
+2021-01-28 -- 13:23:02:232 -- error: Error login
+2021-01-28 -- 13:23:39:2339 -- error: Error login
+2021-01-28 -- 13:26:18:2618 -- error: Error login
+2021-01-28 -- 13:27:14:2714 -- error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+2021-01-28 -- 13:27:14:2714 -- error: Error login
+2021-01-28 -- 13:29:50:2950 -- error: Error login
+2021-01-28 -- 13:29:57:2957 -- error: Error login

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 const express = require('express')
 const router = express.Router()
 
@@ -23,3 +24,20 @@ router.put('/:idUser/:idHackathon/delete',deleteHackathon)
 
 
 module.exports = router
+=======
+// Variables && instances
+const express = require('express');
+const router = express.Router();
+
+// Controllers
+const { activeUser } = require('../controllers/update/updateActiveUser');
+
+// Middelwares
+const { isCodeUser } = require('../middelwares/validateAccount/isCodeUser');
+
+// Get event
+router.post('/validate/:id/:code', isCodeUser, activeUser);
+
+
+module.exports = router;
+>>>>>>> 24aa97d05ce9b694816e4dc53b11ee67711dd25d

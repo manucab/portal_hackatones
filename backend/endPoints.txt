@@ -1,0 +1,51 @@
+//Indice endpoints portal de hackathones
+
+//Middlewares predefinidos
+app.use(bodyParser.json())
+app.use(bodyParser.urlencoded({ extended: true }))
+
+
+//Landingpage
+app.post('/login',login)
+app.post('/validate',validateAccount)
+app.post('/register',register)
+
+//Hackathones Page
+app.get('/hackathon/:filters',filterHackathons)
+app.get('/hackathon/:id',getHackathonInfo)
+
+//Hackathon Page
+app.post('/hackathon/id/enroll',isAuthenticated,enrollHackathon)
+app.post('/hackathon/id/comments',isAuthenticated,postComment)
+app.post('/hackathon/id/comments/id',isAuthenticated,isRightUser,modifyComment)
+
+
+//Create Hackathon Page
+app.post('/createhackathon',isAuthenticated,isOrganizer,createHackathon)
+
+
+
+//Hasta aquí Carlos
+
+
+
+//User profile page
+//getProfileInfo icluiría todo lo necesario para rellenar la página de profile (info,hackathones,foto,...)
+app.get('/user/id',isAuthenticated,isRightUser,getProfileInfo)
+//Posibilidad de hacer los 2 en el mismo endpoint
+app.put('/user/id/modifyinfo',isAuthenticated,isRightUser,modifyProfileInfo)
+app.put('/user/id/changepassword',isAuthenticated,isRightUser,changePassword)
+//Pongo put porque prefiero evitar borrar cosas de la BBDD
+app.put('/user/id/delete',isAuthenticated,isRightUser,deleteUser)
+app.put('user/id/hackathon/id/cancel',isAuthenticated,isRightUser,cancelParticipation)
+app.post('user/id/hackathon/id/rate',isAuthenticated,isRightUser,hasAttended,rateHackathon)
+
+//Organizer profile
+app.put('/user/id/hackathon/id/modify',isAuthenticated,isOrganizer,isRightUser,modifyHackathon)
+app.put('/user/id/hackathon/id/delete',isAuthenticated,isOrganizer,isRightUser,deleteHackathon)
+
+//Blog
+app.get('/blog/:keyword',filterPosts)
+app.post('/blog/newpost',isAdmin,createPost)
+app.put('/blog/id/modify',isAdmin,modifyPost)
+app.delete('/blog/id/delete',isAdmin,deletePost)
