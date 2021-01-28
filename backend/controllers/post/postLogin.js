@@ -5,6 +5,7 @@ const utils = require('../../utils/utils');
 const cryptoRandomString = require('crypto-random-string');
 const { updateValidationCode } = require('../../db/update/db_updatevalidationCode');
 const { performQuery } = require('../../db/performQuery');
+const { logger } = require("../../app/config/logger");
 
 
 const login = async(req, res) => {
@@ -19,10 +20,8 @@ const login = async(req, res) => {
     let params = [];
 
     try {
-        // 1.1 NO --> envio email ACTIVE ACCOUNT
-
+        // 1.1 NO --> send email ACTIVE ACCOUNT
         if (state === 'true') {
-
             // info to put inside the token
             const tokenPayload = {
                 email: email,
@@ -34,7 +33,7 @@ const login = async(req, res) => {
             const token = jwt.sign(tokenPayload, process.env.SECRET, { expiresIn: '2d' });
 
             res.json({ token });
-            console.log('Login OK');
+            logger.debug('Login OK');
         } else {
 
             // Generate code for url validation
@@ -43,7 +42,7 @@ const login = async(req, res) => {
             //Start transaction mysql
             query = 'start transaction';
             await performQuery(query, params);
-            console.log('Init transaction query');
+            logger.info('Init transaction query');
 
             // Save in db new validationCode
             let result = await updateValidationCode(validationCode, id);
@@ -55,10 +54,13 @@ const login = async(req, res) => {
             // All correct --> commit
             query = 'commit';
             await performQuery(query, params);
-            console.log('Commit query');
+            logger.info('Commit query');
 
-            console.log('Your account is not validated yet. We have sent you an email');
-            res.send('Your account is not validated yet. We have sent you an email');
+
+            let msgInfo = 'Your account is not validated yet. We have sent you an email';
+
+            logger.debug(msgInfo);
+            res.json({ info: msgInfo });
         }
 
 
@@ -67,10 +69,11 @@ const login = async(req, res) => {
         // Something wrong --> Rollback
         query = 'rollback';
         await performQuery(query, params);
-        console.log('Rollback query');
+        logger.info('Rollback query');
 
-        console.log('Error login', e);
-        res.status(401).send();
+        let msgError = e.message || 'Error in login';
+        logger.error('Error login', msgError);
+        res.status(401).send(msgError);
     }
 }
 

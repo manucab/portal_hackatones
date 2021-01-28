@@ -5,11 +5,16 @@ const cryptoRandomString = require('crypto-random-string');
 const bcrypt = require('bcrypt');
 const utils = require('../../utils/utils');
 const { performQuery } = require('../../db/performQuery');
+const { logger } = require("../../app/config/logger");
 
-let query = '';
-let params = [];
+
+
+
 
 const newUser = async(req, res) => {
+
+    let query = '';
+    let params = [];
 
     // 1. Get params
     const { email, name, surname, professional_profile, rol, password } = req.body;
@@ -26,7 +31,7 @@ const newUser = async(req, res) => {
         //Start transaction mysql
         query = 'start transaction';
         await performQuery(query, params);
-        console.log('Init transaction query');
+        logger.info('Init transaction query');
 
         // Insert into db new user
         // TODO -- Check format date 
@@ -40,20 +45,22 @@ const newUser = async(req, res) => {
         // Commit mysql
         query = 'commit';
         await performQuery(query, params);
-        console.log('Commit');
+        logger.info('Commit');
 
-        console.log('Register new user sucessfull');
-        res.send('Register new user sucessfull');
+        let msgInfo = 'Register new user sucessfull';
+
+        logger.debug(msgInfo);
+        res.json(msgInfo);
     } catch (e) {
 
         // Something wrong --> Rollback
         query = 'rollback';
         await performQuery(query, params);
-        console.log('Rollback query');
+        logger.info('Rollback query');
 
         let msgError = e.message || 'Error in postRegister';
 
-        console.log('Error postRegister', 'e=>', msgError, e);
+        logger.debug('Error postRegister', 'e=>', msgError);
         res.status(500).send(msgError);
     }
 

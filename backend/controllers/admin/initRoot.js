@@ -12,11 +12,12 @@ const createInitAdmin = async(req, res) => {
         // Check result query insert default root
         const resQuery = (result.affectedRows === 0) ? 'Root exist' : 'Root create';
 
-        res.send(resQuery);
+        res.json({ info: resQuery });
 
     } catch (e) {
-        logger.error('Fail insert defaul admin "root"');
-        res.status(500).send();
+        let msgError = ('Error in init root:', e.message);
+        logger.error(msgError);
+        res.status(500).send(msgError);
     }
 
 }

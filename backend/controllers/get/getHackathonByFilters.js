@@ -18,15 +18,14 @@ const getHackathonByFilters = async(req, res) => {
 
     const { id } = req.params;
 
-    // 1.0 Check the parameters are valid????
-    // TODO -- valide params !!!
-    await filterHackathons.validateAsync({ hackathon_place, city, start_date, end_date, tech, thematic });
 
     try {
 
+        // 1.0 Check the parameters are valid?
+        await filterHackathons.validateAsync({ hackathon_place, city, start_date, end_date, tech, thematic });
+
         // Fucntion for prepara string query mysql, amoung of values as ? or a pair (?,?)
         const getParams = (len, format) => Array(len).fill(`${format}`).join();
-
 
         //Start transaction mysql
         query = 'start transaction';
@@ -100,14 +99,14 @@ const getHackathonByFilters = async(req, res) => {
 
     } catch (e) {
 
-        console.log(e);
         // Something wrong --> Rollback
         query = 'rollback';
         await performQuery(query, params);
-        logger.error('Rollback query');
+        logger.error(query);
 
-        logger.error('Error get hackathon info', e);
-        res.status(500).send('Error');
+        let msgError = ('Error get hackathon info:', e.message);
+        logger.error(msgError);
+        return res.status(500).json({ info: msgError });
     }
 
 }

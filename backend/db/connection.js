@@ -1,6 +1,8 @@
 // Variables && instances
 require('dotenv').config();
 const mysql = require("mysql2/promise");
+const { logger } = require("../app/config/logger");
+
 
 let pool;
 
@@ -19,13 +21,12 @@ async function getConnection() {
 
         return await pool.getConnection();
     } catch (e) {
-        console.log('Error conecton with database', 'e=>', e);
+        let msgError = ('Error conecton with database:', e.message);
+        logger.error(msgError);
+        res.status(500).send(msgError);
     }
 
 }
-
-
-getConnection();
 
 module.exports = {
     getConnection,

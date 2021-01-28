@@ -4,7 +4,6 @@ const { getLinksDB } = require('../../db/select/getLinks');
 const { insertNewLinkDB } = require('../../db/insert/insertNewLink');
 const { insertNewHackathonLinkDB } = require('../../db/insert/insertNewHackathonLink');
 
-
 const auxInsertLink = async(links, id_hackathon) => {
 
     let links_exist = [];

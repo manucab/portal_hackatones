@@ -2,6 +2,8 @@ require('dotenv').config();
 const { performQuery } = require('../performQuery');
 const bcrypt = require('bcrypt');
 const cryptoRandomString = require('crypto-random-string');
+const { logger } = require("../../app/config/logger");
+
 
 const createRoot = async(req, res) => {
 
@@ -18,8 +20,10 @@ const createRoot = async(req, res) => {
 
         return result;
     } catch (e) {
-        console.log('Error insert defaul admin "root" ', e);
-        res.status(500).send();
+
+        let msgError = ('Error insert defaul admin "root":', e.message);
+        logger.error(msgError);
+        res.status(500).send(msgError);
     }
 
 }

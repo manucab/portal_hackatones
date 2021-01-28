@@ -1,11 +1,12 @@
 const { http } = require("winston");
 const { logger } = require("./app/config/logger");
 
-let msgError = e.message || 'Error in login';
-logger.error('Error login', msgError);
-res.status(401).send(msgError);
+let msgError = ('Error in active user:', e.message);
+logger.error(msgError);
+return res.status(401).send(msgError);
 
 
+let msgInfo = '';
 
 
 

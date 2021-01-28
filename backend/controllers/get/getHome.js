@@ -4,8 +4,10 @@ const { logger } = require('../../app/config/logger');
 
 const homePage = (req, res, error) => {
 
-    console.log('Home Page');
-    res.send('Home page');
+    let msgInfo = 'Home page';
+
+    logger.info(msgInfo);
+    res.json({ info: msgInfo });
 }
 
 

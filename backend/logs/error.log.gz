@@ -79,3 +79,45 @@
 2021-01-28 -- 11:06:34:634 -- error: Error get hackathon info python is not a function
 2021-01-28 -- 11:11:08:118 -- error: Rollback query
 2021-01-28 -- 11:11:08:118 -- error: Error get hackathon info python is not a function
+2021-01-28 -- 12:49:45:4945 -- error: Email must have the following structure: name@xxxx.[com, es, net]
+2021-01-28 -- 12:50:36:5036 -- error: Email must have the following structure: name@xxxx.[com, es, net]
+2021-01-28 -- 12:52:39:5239 -- error: The name entered is not valid
+2021-01-28 -- 12:53:07:537 -- error: The name entered is not valid
+2021-01-28 -- 12:53:20:5320 -- error: The surname entered is not valid
+2021-01-28 -- 12:53:26:5326 -- error: The professional profile entered is not valid
+2021-01-28 -- 12:53:40:5340 -- error: The rol entered is not valid
+2021-01-28 -- 13:04:52:452 -- error: Rollback query
+2021-01-28 -- 13:04:52:452 -- error: Error get hackathon info The valid values of place are: online, presencial, semipresencial
+2021-01-28 -- 13:08:28:828 -- error: rollback
+2021-01-28 -- 13:08:28:828 -- error: The valid values of place are: online, presencial, semipresencial
+2021-01-28 -- 13:09:02:92 -- error: rollback
+2021-01-28 -- 13:09:02:92 -- error: The tech of hackathon is not valid
+2021-01-28 -- 13:09:05:95 -- error: rollback
+2021-01-28 -- 13:09:05:95 -- error: The tech of hackathon is not valid
+2021-01-28 -- 13:09:08:98 -- error: rollback
+2021-01-28 -- 13:09:08:98 -- error: The tech of hackathon is not valid
+2021-01-28 -- 13:09:45:945 -- error: rollback
+2021-01-28 -- 13:09:45:945 -- error: The tech of hackathon is not valid
+2021-01-28 -- 13:10:31:1031 -- error: rollback
+2021-01-28 -- 13:10:31:1031 -- error: The tech of hackathon is not valid
+2021-01-28 -- 13:15:15:1515 -- error: rollback
+2021-01-28 -- 13:15:15:1515 -- error: The tech of hackathon is not valid
+2021-01-28 -- 13:17:19:1719 -- error: rollback
+2021-01-28 -- 13:17:19:1719 -- error: The tech of hackathon is not valid
+2021-01-28 -- 13:18:37:1837 -- error: Error login
+2021-01-28 -- 13:18:49:1849 -- error: Error login
+2021-01-28 -- 13:19:06:196 -- error: Error login
+2021-01-28 -- 13:19:17:1917 -- error: Error login
+2021-01-28 -- 13:19:31:1931 -- error: Error login
+2021-01-28 -- 13:19:48:1948 -- error: Error login
+2021-01-28 -- 13:20:22:2022 -- error: Error login
+2021-01-28 -- 13:20:31:2031 -- error: Error login
+2021-01-28 -- 13:21:36:2136 -- error: Error login
+2021-01-28 -- 13:21:50:2150 -- error: Error login
+2021-01-28 -- 13:23:02:232 -- error: Error login
+2021-01-28 -- 13:23:39:2339 -- error: Error login
+2021-01-28 -- 13:26:18:2618 -- error: Error login
+2021-01-28 -- 13:27:14:2714 -- error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+2021-01-28 -- 13:27:14:2714 -- error: Error login
+2021-01-28 -- 13:29:50:2950 -- error: Error login
+2021-01-28 -- 13:29:57:2957 -- error: Error login

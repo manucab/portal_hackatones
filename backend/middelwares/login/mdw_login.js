@@ -3,6 +3,7 @@ require('dotenv').config();
 const { loginValidator } = require('../../validators/validateLogin');
 const { getUserDB } = require('../../db/adminRoot/db_Select');
 const bcrypt = require('bcrypt');
+const { logger } = require("../../app/config/logger");
 
 // Check if exist user and password is rigth
 const isUserRight = async(req, res, next) => {
@@ -10,25 +11,22 @@ const isUserRight = async(req, res, next) => {
     // 1. Get params
     const { email, password } = req.body
 
+    let msgInfo = '';
+
+
     try {
 
         // 2. Check if the parameters are valid
         const validParams = await loginValidator.validateAsync({ email, password });
-
-        if (!validParams) {
-            console.log('Error in valid params');
-            res.status(401).send('Error in valid params');
-            return;
-        }
 
         // 3. If are valid, check if they are in the database
         const user = await getUserDB(email);
 
         // Not user in database --> failed
         if (!user) {
-            console.log('!user', user);
-            res.status(401).send('User does not exist in the db');
-            return;
+            msgInfo = 'User does not exist in the db'
+            logger.info(msgInfo);
+            return res.status(401).json({ info: msgInfo });
         }
 
         // 4. Check password with bcrypt
@@ -37,8 +35,9 @@ const isUserRight = async(req, res, next) => {
 
         // If not valid password --> failed
         if (!passwordIsvalid) {
-            res.status(401).send('Wrong password');
-            return;
+            msgInfo = 'Wrong password'
+            logger.info(msgInfo);
+            return res.status(401).json({ info: msgInfo });
         }
 
         req.rol = user.rol;
@@ -48,11 +47,9 @@ const isUserRight = async(req, res, next) => {
         next();
 
     } catch (e) {
-        let msgError = e.message || 'Error in login';
-
-        console.log(msgError);
-        res.status(401).send(msgError);
-        return;
+        let msgError = ('Error in login:', e.message);
+        logger.error(msgError);
+        return res.status(401).send(msgError);
     }
 }
 

@@ -1090,3 +1090,375 @@
 2021-01-28 -- 11:25:15:2515 -- info: Init transaction query
 2021-01-28 -- 11:25:15:2515 -- info: Commit
 2021-01-28 -- 11:25:15:2515 -- http: GET -- /hackathon/search/filters?hackathon_place=online&city=vigo&tech[0]=javascript&tech[1]=C&tech[2]=java&tech[3]=python -- 7934e453-d6f3-46a2-8119-f525fa137d12 -- 200 -- 1495 - 5.083 ms
+2021-01-28 -- 12:45:39:4539 -- info: listening on port 3000
+2021-01-28 -- 12:46:21:4621 -- info: listening on port 3000
+2021-01-28 -- 12:46:28:4628 -- info: listening on port 3000
+2021-01-28 -- 12:46:32:4632 -- info: Init transaction query
+2021-01-28 -- 12:46:32:4632 -- info: Commit
+2021-01-28 -- 12:46:32:4632 -- http: GET -- /hackathon/search/filters?hackathon_place=online&city=vigo&tech[0]=javascript&tech[1]=C&tech[2]=java&tech[3]=python -- e15a510e-654b-42b0-b938-5cd18ccff6ab -- 200 -- 1495 - 59.337 ms
+2021-01-28 -- 12:46:38:4638 -- info: Init transaction query
+2021-01-28 -- 12:46:38:4638 -- info: Commit
+2021-01-28 -- 12:46:38:4638 -- http: GET -- /hackathon/search/filters?hackathon_place=online&city=vigo&tech[0]=javascript&tech[1]=C&tech[2]=java&tech[3]=python -- a6226758-50af-43ad-8189-47a6167c5612 -- 200 -- 1495 - 6.801 ms
+2021-01-28 -- 12:46:42:4642 -- info: Init transaction query
+2021-01-28 -- 12:46:43:4643 -- info: Commit
+2021-01-28 -- 12:46:43:4643 -- http: GET -- /hackathon/search/filters?hackathon_place=online&city=vigo&tech[0]=javascript -- 31bae335-b831-43c6-a9a6-c8a2f18e7086 -- 200 -- 764 - 10.775 ms
+2021-01-28 -- 12:46:48:4648 -- info: Init transaction query
+2021-01-28 -- 12:46:48:4648 -- info: Commit
+2021-01-28 -- 12:46:48:4648 -- http: GET -- /hackathon/search/filters?hackathon_place=online&tech[0]=javascript -- 0f8ed470-e05f-4678-b691-e0ae15c59f9e -- 200 -- 764 - 5.966 ms
+2021-01-28 -- 12:46:53:4653 -- info: Init transaction query
+2021-01-28 -- 12:46:53:4653 -- info: Commit
+2021-01-28 -- 12:46:53:4653 -- http: GET -- /hackathon/search/filters?hackathon_place=online -- d46a5701-2cb0-43d5-b8d0-4422e86c0420 -- 200 -- 1495 - 4.871 ms
+2021-01-28 -- 12:47:41:4741 -- info: Home Page
+2021-01-28 -- 12:47:41:4741 -- http: GET -- / -- adae41dd-e850-40bc-8942-e818d16b3bed -- 200 -- 9 - 1.082 ms
+2021-01-28 -- 12:48:43:4843 -- info: listening on port 3000
+2021-01-28 -- 12:48:46:4846 -- info: Home page
+2021-01-28 -- 12:48:46:4846 -- http: GET -- / -- 42da7902-3634-465c-8359-705e5e89a57e -- 200 -- 20 - 8.334 ms
+2021-01-28 -- 12:49:06:496 -- warn: 404 Router not found
+2021-01-28 -- 12:49:06:496 -- http: GET -- /admin -- 4f648465-1a63-4c53-b815-adb63b041701 -- 404 -- 30 - 3.135 ms
+2021-01-28 -- 12:49:45:4945 -- error: Email must have the following structure: name@xxxx.[com, es, net]
+2021-01-28 -- 12:49:45:4945 -- http: POST -- /login -- 2fb4fa19-73af-4258-a39d-06c6a90e862e -- 401 -- 65 - 9.982 ms
+2021-01-28 -- 12:50:22:5022 -- info: Wrong password
+2021-01-28 -- 12:50:22:5022 -- http: POST -- /login -- 2cebdc9a-d39e-4e75-8d83-ab373ce3c150 -- 401 -- 25 - 104.099 ms
+2021-01-28 -- 12:50:36:5036 -- error: Email must have the following structure: name@xxxx.[com, es, net]
+2021-01-28 -- 12:50:36:5036 -- http: POST -- /login -- 08b6e59a-bcdc-4284-b661-9940fa565f7a -- 401 -- 65 - 3.176 ms
+2021-01-28 -- 12:50:42:5042 -- debug: Login OK
+2021-01-28 -- 12:50:42:5042 -- http: POST -- /login -- 27 -- 200 -- 220 - 78.093 ms
+2021-01-28 -- 12:52:39:5239 -- error: The name entered is not valid
+2021-01-28 -- 12:52:39:5239 -- http: POST -- /register -- 6bf0e4b2-ca5f-4eb7-bc4b-b04c61c3c819 -- 500 -- 29 - 1.302 ms
+2021-01-28 -- 12:53:07:537 -- error: The name entered is not valid
+2021-01-28 -- 12:53:07:537 -- http: POST -- /register -- fbcd723f-9082-4260-8c0d-9746a1cddd03 -- 500 -- 29 - 1.546 ms
+2021-01-28 -- 12:53:20:5320 -- error: The surname entered is not valid
+2021-01-28 -- 12:53:20:5320 -- http: POST -- /register -- 5a2e61c4-8739-4b0e-b60c-5d74968518a0 -- 500 -- 32 - 1.323 ms
+2021-01-28 -- 12:53:26:5326 -- error: The professional profile entered is not valid
+2021-01-28 -- 12:53:26:5326 -- http: POST -- /register -- 6209e0d4-32ca-4cff-b7e5-1ec3b83b62df -- 500 -- 45 - 1.152 ms
+2021-01-28 -- 12:53:40:5340 -- error: The rol entered is not valid
+2021-01-28 -- 12:53:40:5340 -- http: POST -- /register -- a2eb5fcd-8bf3-4113-b316-c0dcfdb3cbce -- 500 -- 28 - 2.367 ms
+2021-01-28 -- 12:53:45:5345 -- debug: The user not exist in db, he can register now
+2021-01-28 -- 12:53:45:5345 -- info: Init transaction query
+2021-01-28 -- 12:53:47:5347 -- info: Commit
+2021-01-28 -- 12:53:47:5347 -- debug: Register new user sucessfull
+2021-01-28 -- 12:53:47:5347 -- http: POST -- /register -- 3505bfe1-0d8d-42c8-a3d5-8aafd432111f -- 200 -- 30 - 1950.630 ms
+2021-01-28 -- 12:54:39:5439 -- warn: 404 Router not found
+2021-01-28 -- 12:54:39:5439 -- http: POST -- /hackathon/search/2 -- 84fef723-4835-481f-b70a-147968509f24 -- 404 -- 30 - 2.767 ms
+2021-01-28 -- 12:54:57:5457 -- warn: 404 Router not found
+2021-01-28 -- 12:54:57:5457 -- http: POST -- /hackathon/search/2 -- df6f74d1-1563-4fe7-ab6b-a26084a47fad -- 404 -- 30 - 0.954 ms
+2021-01-28 -- 12:55:02:552 -- warn: 404 Router not found
+2021-01-28 -- 12:55:02:552 -- http: POST -- /hackathon/search/1 -- 89fa37b0-d0a4-434e-ad98-bf8c85c34d17 -- 404 -- 30 - 1.021 ms
+2021-01-28 -- 12:55:04:554 -- warn: 404 Router not found
+2021-01-28 -- 12:55:04:554 -- http: POST -- /hackathon/search/4 -- 3155bfbd-f36e-49c0-b58d-a57d1cec2ed5 -- 404 -- 30 - 0.755 ms
+2021-01-28 -- 12:55:08:558 -- warn: 404 Router not found
+2021-01-28 -- 12:55:08:558 -- http: POST -- /hackathon/search/258 -- 96aa32a5-83eb-4f08-9e99-620eba0d43e4 -- 404 -- 30 - 0.822 ms
+2021-01-28 -- 12:55:39:5539 -- warn: 404 Router not found
+2021-01-28 -- 12:55:39:5539 -- http: POST -- /hackathon/search/id=1 -- a1ec0c81-25f1-49df-ac1b-5585ea299ad4 -- 404 -- 30 - 0.811 ms
+2021-01-28 -- 12:55:45:5545 -- warn: 404 Router not found
+2021-01-28 -- 12:55:45:5545 -- http: POST -- /hackathon/search/8 -- 57528793-6be8-4608-b1aa-90bc678d5772 -- 404 -- 30 - 2.152 ms
+2021-01-28 -- 12:55:47:5547 -- warn: 404 Router not found
+2021-01-28 -- 12:55:47:5547 -- http: POST -- /hackathon/search/8 -- 275738bf-bf9c-4540-92e1-fa8eb3e137a4 -- 404 -- 30 - 1.745 ms
+2021-01-28 -- 12:55:51:5551 -- warn: 404 Router not found
+2021-01-28 -- 12:55:51:5551 -- http: POST -- /hackathon/search/8 -- 292df96d-cfa2-4b97-9d33-7a982b23b76c -- 404 -- 30 - 0.979 ms
+2021-01-28 -- 12:55:59:5559 -- info: Init transaction query
+2021-01-28 -- 12:55:59:5559 -- info: Commit
+2021-01-28 -- 12:55:59:5559 -- http: GET -- /hackathon/search/2 -- 7c303480-66ad-4109-9339-cc70a703c06d -- 200 -- 376 - 24.428 ms
+2021-01-28 -- 12:56:08:568 -- info: Init transaction query
+2021-01-28 -- 12:56:08:568 -- info: Commit
+2021-01-28 -- 12:56:08:568 -- http: GET -- /hackathon/search/8 -- 0e5bd263-0655-4b03-a82b-925130a40ba2 -- 200 -- 26 - 17.675 ms
+2021-01-28 -- 12:56:13:5613 -- info: Init transaction query
+2021-01-28 -- 12:56:13:5613 -- info: Commit
+2021-01-28 -- 12:56:13:5613 -- http: GET -- /hackathon/search/6 -- 7069d882-6328-4377-bc4f-1cd5004f5cd9 -- 200 -- 26 - 4.900 ms
+2021-01-28 -- 12:56:15:5615 -- info: Init transaction query
+2021-01-28 -- 12:56:15:5615 -- info: Commit
+2021-01-28 -- 12:56:15:5615 -- http: GET -- /hackathon/search/4 -- 419f38d9-ac18-464e-868f-43caa751503f -- 200 -- 408 - 5.093 ms
+2021-01-28 -- 12:56:16:5616 -- info: Init transaction query
+2021-01-28 -- 12:56:16:5616 -- info: Commit
+2021-01-28 -- 12:56:16:5616 -- http: GET -- /hackathon/search/5 -- 9c28b637-8d81-49a1-9ebf-01629e93d055 -- 200 -- 26 - 8.698 ms
+2021-01-28 -- 12:56:20:5620 -- info: Init transaction query
+2021-01-28 -- 12:56:20:5620 -- info: Commit
+2021-01-28 -- 12:56:20:5620 -- http: GET -- /hackathon/search/4 -- ce9d9bb4-c3cd-484b-85f7-4ec3edd48aef -- 200 -- 408 - 11.668 ms
+2021-01-28 -- 12:56:26:5626 -- info: Init transaction query
+2021-01-28 -- 12:56:26:5626 -- info: Commit
+2021-01-28 -- 12:56:26:5626 -- http: GET -- /hackathon/search/1 -- 2cb2865d-f326-48f9-ab88-47745669d97c -- 200 -- 357 - 6.749 ms
+2021-01-28 -- 12:56:28:5628 -- info: Init transaction query
+2021-01-28 -- 12:56:28:5628 -- info: Commit
+2021-01-28 -- 12:56:28:5628 -- http: GET -- /hackathon/search/2 -- 46c45f52-f20b-40aa-8358-ff86830eedeb -- 200 -- 376 - 9.261 ms
+2021-01-28 -- 12:56:30:5630 -- info: Init transaction query
+2021-01-28 -- 12:56:30:5630 -- info: Commit
+2021-01-28 -- 12:56:30:5630 -- http: GET -- /hackathon/search/3 -- d52272e3-5308-4a91-b2be-19961f35f890 -- 200 -- 357 - 7.002 ms
+2021-01-28 -- 12:56:31:5631 -- info: Init transaction query
+2021-01-28 -- 12:56:31:5631 -- info: Commit
+2021-01-28 -- 12:56:31:5631 -- http: GET -- /hackathon/search/4 -- dd58d3be-c388-4abc-8a0d-1a2b51e15839 -- 200 -- 408 - 26.909 ms
+2021-01-28 -- 12:56:31:5631 -- info: Init transaction query
+2021-01-28 -- 12:56:31:5631 -- info: Commit
+2021-01-28 -- 12:56:31:5631 -- http: GET -- /hackathon/search/5 -- a48bd968-c634-49f9-b3c3-17976b7445a8 -- 200 -- 26 - 4.957 ms
+2021-01-28 -- 12:56:34:5634 -- info: Init transaction query
+2021-01-28 -- 12:56:34:5634 -- info: Commit
+2021-01-28 -- 12:56:34:5634 -- http: GET -- /hackathon/search/4 -- 98d2cfcf-9902-4501-bd0f-e654a6f73fd5 -- 200 -- 408 - 4.998 ms
+2021-01-28 -- 12:56:36:5636 -- info: Init transaction query
+2021-01-28 -- 12:56:36:5636 -- info: Commit
+2021-01-28 -- 12:56:36:5636 -- http: GET -- /hackathon/search/3 -- 0de0e6fa-0aef-464e-b5bc-7bcb78ee9048 -- 200 -- 357 - 4.717 ms
+2021-01-28 -- 12:56:38:5638 -- info: Init transaction query
+2021-01-28 -- 12:56:38:5638 -- info: Commit
+2021-01-28 -- 12:56:38:5638 -- http: GET -- /hackathon/search/2 -- 84ff7896-bcd2-4f1a-98fe-a557ce81372f -- 200 -- 376 - 8.875 ms
+2021-01-28 -- 12:57:12:5712 -- info: Init transaction query
+2021-01-28 -- 12:57:12:5712 -- info: Commit
+2021-01-28 -- 12:57:12:5712 -- http: GET -- /hackathon/search/filters -- 3501a496-6fe8-4b8d-9650-0cf44c2aeb75 -- 200 -- 1495 - 10.287 ms
+2021-01-28 -- 12:57:23:5723 -- info: Init transaction query
+2021-01-28 -- 12:57:23:5723 -- info: Commit
+2021-01-28 -- 12:57:23:5723 -- http: GET -- /hackathon/search/filters -- 869f844a-825c-40de-96cc-0416e4adda8f -- 200 -- 1495 - 8.528 ms
+2021-01-28 -- 12:57:34:5734 -- info: Init transaction query
+2021-01-28 -- 12:57:34:5734 -- info: Commit
+2021-01-28 -- 12:57:34:5734 -- http: GET -- /hackathon/search/filters -- a3279f83-4469-4386-9f34-1ecd2db0ce95 -- 200 -- 1495 - 4.558 ms
+2021-01-28 -- 12:57:44:5744 -- info: Init transaction query
+2021-01-28 -- 12:57:44:5744 -- info: Commit
+2021-01-28 -- 12:57:44:5744 -- http: GET -- /hackathon/search/filters -- 7e7472f0-9b2c-4623-acfe-320bc1c72397 -- 200 -- 1495 - 6.050 ms
+2021-01-28 -- 12:58:56:5856 -- info: listening on port 3000
+2021-01-28 -- 12:58:59:5859 -- info: Init transaction query
+2021-01-28 -- 12:58:59:5859 -- info: Commit
+2021-01-28 -- 12:58:59:5859 -- http: GET -- /hackathon/search/filters -- 73c0ec06-a097-408f-b5be-3ff36f2cf67f -- 200 -- 1495 - 56.943 ms
+2021-01-28 -- 12:59:11:5911 -- info: Init transaction query
+2021-01-28 -- 12:59:11:5911 -- info: Commit
+2021-01-28 -- 12:59:11:5911 -- http: GET -- /hackathon/search/filters -- dcca1ac7-a4ee-4eae-bdfe-55405d18dfd1 -- 200 -- 1495 - 8.378 ms
+2021-01-28 -- 13:00:24:024 -- info: Init transaction query
+2021-01-28 -- 13:00:24:024 -- info: Commit
+2021-01-28 -- 13:00:24:024 -- http: GET -- /hackathon/search/filters -- e231e3cd-2926-4c3a-a690-dbcd7388abd8 -- 200 -- 1495 - 8.540 ms
+2021-01-28 -- 13:02:57:257 -- info: listening on port 3000
+2021-01-28 -- 13:02:59:259 -- info: Init transaction query
+2021-01-28 -- 13:02:59:259 -- debug: undefined
+2021-01-28 -- 13:02:59:259 -- info: Commit
+2021-01-28 -- 13:02:59:259 -- http: GET -- /hackathon/search/filters -- c814d194-f9ba-4a18-827b-ef31f06ad670 -- 200 -- 1495 - 63.411 ms
+2021-01-28 -- 13:03:28:328 -- info: listening on port 3000
+2021-01-28 -- 13:03:30:330 -- info: Init transaction query
+2021-01-28 -- 13:03:30:330 -- info: Commit
+2021-01-28 -- 13:03:30:330 -- http: GET -- /hackathon/search/filters -- c7999d43-fe52-420d-9341-0f70250d055a -- 200 -- 1495 - 61.900 ms
+2021-01-28 -- 13:03:41:341 -- info: Init transaction query
+2021-01-28 -- 13:03:41:341 -- info: Commit
+2021-01-28 -- 13:03:41:341 -- http: GET -- /hackathon/search/filters -- 40c99d50-6025-445e-b58b-299e6595821b -- 200 -- 1495 - 12.262 ms
+2021-01-28 -- 13:04:05:45 -- info: listening on port 3000
+2021-01-28 -- 13:04:49:449 -- info: listening on port 3000
+2021-01-28 -- 13:04:52:452 -- error: Rollback query
+2021-01-28 -- 13:04:52:452 -- error: Error get hackathon info The valid values of place are: online, presencial, semipresencial
+2021-01-28 -- 13:04:52:452 -- http: GET -- /hackathon/search/filters?hackathon_place=pp -- c32f8f4d-28ec-4c02-8bd2-e730a73e6734 -- 500 -- 5 - 52.123 ms
+2021-01-28 -- 13:08:25:825 -- info: listening on port 3000
+2021-01-28 -- 13:08:28:828 -- error: rollback
+2021-01-28 -- 13:08:28:828 -- error: The valid values of place are: online, presencial, semipresencial
+2021-01-28 -- 13:08:28:828 -- http: GET -- /hackathon/search/filters?hackathon_place=pp -- 2f634bc6-cb49-459a-9150-4dc6d7b1e26b -- 500 -- 76 - 57.898 ms
+2021-01-28 -- 13:08:39:839 -- info: Init transaction query
+2021-01-28 -- 13:08:39:839 -- info: Commit
+2021-01-28 -- 13:08:39:839 -- http: GET -- /hackathon/search/filters?hackathon_place=online -- a1be9058-0859-45f9-a8bd-112f051aca2b -- 200 -- 1495 - 60.401 ms
+2021-01-28 -- 13:08:50:850 -- info: Init transaction query
+2021-01-28 -- 13:08:50:850 -- info: Commit
+2021-01-28 -- 13:08:50:850 -- http: GET -- /hackathon/search/filters?hackathon_place=presencial -- 4dcc35e8-4e42-43ec-982d-570d742274b6 -- 200 -- 26 - 3.928 ms
+2021-01-28 -- 13:09:02:92 -- error: rollback
+2021-01-28 -- 13:09:02:92 -- error: The tech of hackathon is not valid
+2021-01-28 -- 13:09:02:92 -- http: GET -- /hackathon/search/filters?hackathon_place=presencial&tech=java -- 33c51676-083a-435c-b24f-e82273dff625 -- 500 -- 45 - 3.503 ms
+2021-01-28 -- 13:09:05:95 -- error: rollback
+2021-01-28 -- 13:09:05:95 -- error: The tech of hackathon is not valid
+2021-01-28 -- 13:09:05:95 -- http: GET -- /hackathon/search/filters?tech=java -- 550923c7-cf27-4574-8951-7db2f54b4f67 -- 500 -- 45 - 2.424 ms
+2021-01-28 -- 13:09:08:98 -- error: rollback
+2021-01-28 -- 13:09:08:98 -- error: The tech of hackathon is not valid
+2021-01-28 -- 13:09:08:98 -- http: GET -- /hackathon/search/filters?tech=java -- e7055753-4517-4aa7-ad74-b63584923d2b -- 500 -- 45 - 2.482 ms
+2021-01-28 -- 13:09:18:918 -- info: Init transaction query
+2021-01-28 -- 13:09:18:918 -- info: Commit
+2021-01-28 -- 13:09:18:918 -- http: GET -- /hackathon/search/filters?tech[0]=java -- 2b81b634-6cbc-44d6-8080-14d3acb63f21 -- 200 -- 783 - 6.346 ms
+2021-01-28 -- 13:09:29:929 -- info: Init transaction query
+2021-01-28 -- 13:09:29:929 -- info: Commit
+2021-01-28 -- 13:09:29:929 -- http: GET -- /hackathon/search/filters?tech[0]=python -- 53715722-511b-4b1e-b83e-f13d965809a1 -- 200 -- 732 - 9.170 ms
+2021-01-28 -- 13:09:45:945 -- error: rollback
+2021-01-28 -- 13:09:45:945 -- error: The tech of hackathon is not valid
+2021-01-28 -- 13:09:45:945 -- http: GET -- /hackathon/search/filters?tech=[python] -- 654a8a58-5cc0-4b3b-af6b-e07f2498a4e8 -- 500 -- 45 - 13.482 ms
+2021-01-28 -- 13:09:54:954 -- info: Init transaction query
+2021-01-28 -- 13:09:54:954 -- info: Commit
+2021-01-28 -- 13:09:54:954 -- http: GET -- /hackathon/search/filters?tech[]=[python] -- 8957d63d-b283-421e-b9f2-7dae202729b5 -- 200 -- 2 - 8.220 ms
+2021-01-28 -- 13:09:59:959 -- info: Init transaction query
+2021-01-28 -- 13:09:59:959 -- info: Commit
+2021-01-28 -- 13:09:59:959 -- http: GET -- /hackathon/search/filters?tech[]=python -- f861fea1-eb63-488b-9c37-b7ce29d96650 -- 200 -- 732 - 8.028 ms
+2021-01-28 -- 13:10:04:104 -- info: Init transaction query
+2021-01-28 -- 13:10:04:104 -- info: Commit
+2021-01-28 -- 13:10:04:104 -- http: GET -- /hackathon/search/filters?tech[]=python,java -- 9804ee88-5ad9-4804-b026-39f464445d98 -- 200 -- 2 - 6.492 ms
+2021-01-28 -- 13:10:10:1010 -- info: Init transaction query
+2021-01-28 -- 13:10:10:1010 -- info: Commit
+2021-01-28 -- 13:10:10:1010 -- http: GET -- /hackathon/search/filters?tech[]=python,c -- df099fa5-1245-4929-a212-e9981e82eb68 -- 200 -- 2 - 8.946 ms
+2021-01-28 -- 13:10:14:1014 -- info: Init transaction query
+2021-01-28 -- 13:10:14:1014 -- info: Commit
+2021-01-28 -- 13:10:14:1014 -- http: GET -- /hackathon/search/filters?tech[]=python -- 04889bfa-25a5-45ba-bf79-2933123bb644 -- 200 -- 732 - 17.912 ms
+2021-01-28 -- 13:10:24:1024 -- info: Init transaction query
+2021-01-28 -- 13:10:24:1024 -- info: Commit
+2021-01-28 -- 13:10:24:1024 -- http: GET -- /hackathon/search/filters?tech=python&tech=java -- 6c4d0ffd-8bee-46d5-a99b-b660d4103da4 -- 200 -- 1139 - 4.664 ms
+2021-01-28 -- 13:10:31:1031 -- error: rollback
+2021-01-28 -- 13:10:31:1031 -- error: The tech of hackathon is not valid
+2021-01-28 -- 13:10:31:1031 -- http: GET -- /hackathon/search/filters?tech=python -- a9eee5f6-9d45-4a0a-90da-26566b855ae2 -- 500 -- 45 - 1.860 ms
+2021-01-28 -- 13:11:38:1138 -- info: Init transaction query
+2021-01-28 -- 13:11:38:1138 -- info: Commit
+2021-01-28 -- 13:11:38:1138 -- http: GET -- /hackathon/search/1 -- e3282041-4d63-4e4f-9c48-309ddd52cae1 -- 200 -- 357 - 6.935 ms
+2021-01-28 -- 13:15:08:158 -- info: listening on port 3000
+2021-01-28 -- 13:15:12:1512 -- info: Init transaction query
+2021-01-28 -- 13:15:12:1512 -- info: Commit
+2021-01-28 -- 13:15:12:1512 -- http: GET -- /hackathon/search/1 -- 87ea663c-9a9c-433b-8b9e-9b86991e3843 -- 200 -- 357 - 57.573 ms
+2021-01-28 -- 13:15:15:1515 -- error: rollback
+2021-01-28 -- 13:15:15:1515 -- error: The tech of hackathon is not valid
+2021-01-28 -- 13:15:15:1515 -- http: GET -- /hackathon/search/filters?tech=python -- cd3de09b-7335-4069-985b-13e323a23ffd -- 500 -- 45 - 11.612 ms
+2021-01-28 -- 13:15:28:1528 -- info: Init transaction query
+2021-01-28 -- 13:15:28:1528 -- info: Commit
+2021-01-28 -- 13:15:28:1528 -- http: GET -- /hackathon/search/filters?tech[]=python -- e2e465f2-8ff2-4d7b-b4e2-1fbab0d00de9 -- 200 -- 732 - 9.432 ms
+2021-01-28 -- 13:17:10:1710 -- info: listening on port 3000
+2021-01-28 -- 13:17:16:1716 -- info: Init transaction query
+2021-01-28 -- 13:17:16:1716 -- info: Commit
+2021-01-28 -- 13:17:16:1716 -- http: GET -- /hackathon/search/filters?tech[]=python -- 3cb5ef22-23cc-4033-b8e6-84db74cc71ec -- 200 -- 732 - 52.763 ms
+2021-01-28 -- 13:17:19:1719 -- error: rollback
+2021-01-28 -- 13:17:19:1719 -- error: The tech of hackathon is not valid
+2021-01-28 -- 13:17:19:1719 -- http: GET -- /hackathon/search/filters?tech=python -- ac5a275e-1884-4580-91e7-a1f30d486502 -- 500 -- 45 - 4.077 ms
+2021-01-28 -- 13:17:26:1726 -- info: Init transaction query
+2021-01-28 -- 13:17:26:1726 -- info: Commit
+2021-01-28 -- 13:17:26:1726 -- http: GET -- /hackathon/search/filters?tech[]=python -- af568a35-e5a8-47af-87bf-dea270de5ea7 -- 200 -- 732 - 5.035 ms
+2021-01-28 -- 13:17:37:1737 -- debug: Login OK
+2021-01-28 -- 13:17:37:1737 -- http: POST -- /login?email=furboenvena10@gmail.com&password=hackathon213 -- 27 -- 200 -- 220 - 104.604 ms
+2021-01-28 -- 13:18:17:1817 -- warn: 404 Router not found
+2021-01-28 -- 13:18:17:1817 -- http: GET -- /createhackathon -- d9072f5e-64cf-4c8d-b34a-c8c77f284f72 -- 404 -- 30 - 3.215 ms
+2021-01-28 -- 13:18:27:1827 -- warn: 404 Router not found
+2021-01-28 -- 13:18:27:1827 -- http: GET -- /createhackathon/ -- 1145d327-4e7e-4998-83fb-c3d965796baf -- 404 -- 30 - 0.993 ms
+2021-01-28 -- 13:18:37:1837 -- info: Is organizer and state ACTIVE
+2021-01-28 -- 13:18:37:1837 -- info: Rollback query
+2021-01-28 -- 13:18:37:1837 -- error: Error login
+2021-01-28 -- 13:18:37:1837 -- http: POST -- /createhackathon/ -- 27 -- 500 -- 65 - 17.165 ms
+2021-01-28 -- 13:18:49:1849 -- info: Is organizer and state ACTIVE
+2021-01-28 -- 13:18:49:1849 -- info: Rollback query
+2021-01-28 -- 13:18:49:1849 -- error: Error login
+2021-01-28 -- 13:18:49:1849 -- http: POST -- /createhackathon/ -- 27 -- 500 -- 35 - 6.214 ms
+2021-01-28 -- 13:19:06:196 -- info: Is organizer and state ACTIVE
+2021-01-28 -- 13:19:06:196 -- info: Rollback query
+2021-01-28 -- 13:19:06:196 -- error: Error login
+2021-01-28 -- 13:19:06:196 -- http: POST -- /createhackathon/ -- 27 -- 500 -- 33 - 4.951 ms
+2021-01-28 -- 13:19:17:1917 -- info: Is organizer and state ACTIVE
+2021-01-28 -- 13:19:17:1917 -- info: Rollback query
+2021-01-28 -- 13:19:17:1917 -- error: Error login
+2021-01-28 -- 13:19:17:1917 -- http: POST -- /createhackathon/ -- 27 -- 500 -- 34 - 18.414 ms
+2021-01-28 -- 13:19:31:1931 -- info: Is organizer and state ACTIVE
+2021-01-28 -- 13:19:31:1931 -- info: Rollback query
+2021-01-28 -- 13:19:31:1931 -- error: Error login
+2021-01-28 -- 13:19:31:1931 -- http: POST -- /createhackathon/ -- 27 -- 500 -- 34 - 26.995 ms
+2021-01-28 -- 13:19:48:1948 -- info: Is organizer and state ACTIVE
+2021-01-28 -- 13:19:48:1948 -- info: Rollback query
+2021-01-28 -- 13:19:48:1948 -- error: Error login
+2021-01-28 -- 13:19:48:1948 -- http: POST -- /createhackathon/ -- 27 -- 500 -- 34 - 5.035 ms
+2021-01-28 -- 13:20:22:2022 -- info: Is organizer and state ACTIVE
+2021-01-28 -- 13:20:22:2022 -- info: Rollback query
+2021-01-28 -- 13:20:22:2022 -- error: Error login
+2021-01-28 -- 13:20:22:2022 -- http: POST -- /createhackathon/ -- 27 -- 500 -- 38 - 3.828 ms
+2021-01-28 -- 13:20:31:2031 -- info: Is organizer and state ACTIVE
+2021-01-28 -- 13:20:31:2031 -- debug: Validate fields ok!!
+2021-01-28 -- 13:20:31:2031 -- info: Init transaction query
+2021-01-28 -- 13:20:31:2031 -- info: Rollback query
+2021-01-28 -- 13:20:31:2031 -- error: Error login
+2021-01-28 -- 13:20:31:2031 -- http: POST -- /createhackathon/ -- 27 -- 500 -- 47 - 13.648 ms
+2021-01-28 -- 13:21:18:2118 -- info: listening on port 3000
+2021-01-28 -- 13:21:34:2134 -- info: listening on port 3000
+2021-01-28 -- 13:21:36:2136 -- info: Is organizer and state ACTIVE
+2021-01-28 -- 13:21:36:2136 -- debug: Validate fields ok!!
+2021-01-28 -- 13:21:36:2136 -- info: Init transaction query
+2021-01-28 -- 13:21:36:2136 -- info: Rollback query
+2021-01-28 -- 13:21:36:2136 -- error: Error login
+2021-01-28 -- 13:21:36:2136 -- http: POST -- /createhackathon/ -- 27 -- 500 -- 47 - 52.073 ms
+2021-01-28 -- 13:21:47:2147 -- info: listening on port 3000
+2021-01-28 -- 13:21:50:2150 -- info: Is organizer and state ACTIVE
+2021-01-28 -- 13:21:50:2150 -- debug: Validate fields ok!!
+2021-01-28 -- 13:21:50:2150 -- info: Init transaction query
+2021-01-28 -- 13:21:50:2150 -- info: Rollback query
+2021-01-28 -- 13:21:50:2150 -- error: Error login
+2021-01-28 -- 13:21:50:2150 -- http: POST -- /createhackathon/ -- 27 -- 500 -- 47 - 61.934 ms
+2021-01-28 -- 13:22:59:2259 -- info: listening on port 3000
+2021-01-28 -- 13:23:02:232 -- info: Is organizer and state ACTIVE
+2021-01-28 -- 13:23:02:232 -- debug: Validate fields ok!!
+2021-01-28 -- 13:23:02:232 -- info: Init transaction query
+2021-01-28 -- 13:23:02:232 -- info: Rollback query
+2021-01-28 -- 13:23:02:232 -- error: Error login
+2021-01-28 -- 13:23:02:232 -- http: POST -- /createhackathon/ -- 27 -- 500 -- 47 - 74.641 ms
+2021-01-28 -- 13:23:35:2335 -- info: listening on port 3000
+2021-01-28 -- 13:23:39:2339 -- info: Is organizer and state ACTIVE
+2021-01-28 -- 13:23:39:2339 -- debug: Validate fields ok!!
+2021-01-28 -- 13:23:39:2339 -- info: Init transaction query
+2021-01-28 -- 13:23:39:2339 -- debug: Insert into tables tech and hackathon_tech OK!!
+2021-01-28 -- 13:23:39:2339 -- info: Rollback query
+2021-01-28 -- 13:23:39:2339 -- error: Error login
+2021-01-28 -- 13:23:39:2339 -- http: POST -- /createhackathon/ -- 27 -- 500 -- 39 - 95.647 ms
+2021-01-28 -- 13:26:09:269 -- info: listening on port 3000
+2021-01-28 -- 13:26:18:2618 -- info: Is organizer and state ACTIVE
+2021-01-28 -- 13:26:18:2618 -- debug: Validate fields ok!!
+2021-01-28 -- 13:26:18:2618 -- info: Init transaction query
+2021-01-28 -- 13:26:18:2618 -- debug: Insert into tables tech and hackathon_tech OK!!
+2021-01-28 -- 13:26:18:2618 -- info: Rollback query
+2021-01-28 -- 13:26:18:2618 -- error: Error login
+2021-01-28 -- 13:26:18:2618 -- http: POST -- /createhackathon/ -- 27 -- 500 -- 19 - 82.923 ms
+2021-01-28 -- 13:27:11:2711 -- info: listening on port 3000
+2021-01-28 -- 13:27:14:2714 -- info: Is organizer and state ACTIVE
+2021-01-28 -- 13:27:14:2714 -- debug: Validate fields ok!!
+2021-01-28 -- 13:27:14:2714 -- info: Init transaction query
+2021-01-28 -- 13:27:14:2714 -- debug: Insert into tables tech and hackathon_tech OK!!
+2021-01-28 -- 13:27:14:2714 -- error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+2021-01-28 -- 13:27:14:2714 -- info: Rollback query
+2021-01-28 -- 13:27:14:2714 -- error: Error login
+2021-01-28 -- 13:27:14:2714 -- http: POST -- /createhackathon/ -- 27 -- 500 -- 147 - 83.687 ms
+2021-01-28 -- 13:29:09:299 -- info: listening on port 3000
+2021-01-28 -- 13:29:12:2912 -- info: Is organizer and state ACTIVE
+2021-01-28 -- 13:29:12:2912 -- debug: Validate fields ok!!
+2021-01-28 -- 13:29:12:2912 -- info: Init transaction query
+2021-01-28 -- 13:29:12:2912 -- debug: Insert into tables tech and hackathon_tech OK!!
+2021-01-28 -- 13:29:12:2912 -- debug: Insert into tables lin and hackathon_link OK!!
+2021-01-28 -- 13:29:12:2912 -- info: Commit
+2021-01-28 -- 13:29:12:2912 -- debug: Create new hackathon successfully
+2021-01-28 -- 13:29:12:2912 -- http: POST -- /createhackathon/ -- 27 -- 200 -- 33 - 66.247 ms
+2021-01-28 -- 13:29:34:2934 -- info: Is organizer and state ACTIVE
+2021-01-28 -- 13:29:34:2934 -- debug: Validate fields ok!!
+2021-01-28 -- 13:29:34:2934 -- info: Init transaction query
+2021-01-28 -- 13:29:34:2934 -- debug: Insert into tables tech and hackathon_tech OK!!
+2021-01-28 -- 13:29:34:2934 -- debug: Insert into tables lin and hackathon_link OK!!
+2021-01-28 -- 13:29:34:2934 -- info: Commit
+2021-01-28 -- 13:29:34:2934 -- debug: Create new hackathon successfully
+2021-01-28 -- 13:29:34:2934 -- http: POST -- /createhackathon/ -- 27 -- 200 -- 33 - 57.402 ms
+2021-01-28 -- 13:29:40:2940 -- info: Is organizer and state ACTIVE
+2021-01-28 -- 13:29:40:2940 -- debug: Validate fields ok!!
+2021-01-28 -- 13:29:40:2940 -- info: Init transaction query
+2021-01-28 -- 13:29:40:2940 -- debug: Insert into tables tech and hackathon_tech OK!!
+2021-01-28 -- 13:29:40:2940 -- debug: Insert into tables lin and hackathon_link OK!!
+2021-01-28 -- 13:29:40:2940 -- info: Commit
+2021-01-28 -- 13:29:40:2940 -- debug: Create new hackathon successfully
+2021-01-28 -- 13:29:40:2940 -- http: POST -- /createhackathon/ -- 27 -- 200 -- 33 - 16.007 ms
+2021-01-28 -- 13:29:50:2950 -- info: Is organizer and state ACTIVE
+2021-01-28 -- 13:29:50:2950 -- info: Rollback query
+2021-01-28 -- 13:29:50:2950 -- error: Error login
+2021-01-28 -- 13:29:50:2950 -- http: POST -- /createhackathon/ -- 27 -- 500 -- 38 - 10.236 ms
+2021-01-28 -- 13:29:57:2957 -- info: Is organizer and state ACTIVE
+2021-01-28 -- 13:29:57:2957 -- info: Rollback query
+2021-01-28 -- 13:29:57:2957 -- error: Error login
+2021-01-28 -- 13:29:57:2957 -- http: POST -- /createhackathon/ -- 27 -- 500 -- 34 - 25.025 ms
+2021-01-28 -- 13:30:03:303 -- info: Is organizer and state ACTIVE
+2021-01-28 -- 13:30:03:303 -- debug: Validate fields ok!!
+2021-01-28 -- 13:30:03:303 -- info: Init transaction query
+2021-01-28 -- 13:30:03:303 -- debug: Insert into tables tech and hackathon_tech OK!!
+2021-01-28 -- 13:30:03:303 -- debug: Insert into tables lin and hackathon_link OK!!
+2021-01-28 -- 13:30:03:303 -- info: Commit
+2021-01-28 -- 13:30:03:303 -- debug: Create new hackathon successfully
+2021-01-28 -- 13:30:03:303 -- http: POST -- /createhackathon/ -- 27 -- 200 -- 33 - 31.021 ms
+2021-01-28 -- 13:30:35:3035 -- info: Is organizer and state ACTIVE
+2021-01-28 -- 13:30:35:3035 -- debug: Validate fields ok!!
+2021-01-28 -- 13:30:35:3035 -- info: Init transaction query
+2021-01-28 -- 13:30:35:3035 -- debug: Insert into tables tech and hackathon_tech OK!!
+2021-01-28 -- 13:30:35:3035 -- debug: Insert into tables lin and hackathon_link OK!!
+2021-01-28 -- 13:30:35:3035 -- info: Commit
+2021-01-28 -- 13:30:35:3035 -- debug: Create new hackathon successfully
+2021-01-28 -- 13:30:35:3035 -- http: POST -- /createhackathon/ -- 27 -- 200 -- 33 - 29.233 ms
+2021-01-28 -- 13:30:49:3049 -- info: Init transaction query
+2021-01-28 -- 13:30:49:3049 -- info: Commit
+2021-01-28 -- 13:30:49:3049 -- http: GET -- /hackathon/search/filters?tech[]=rust -- c2bf23bb-9b23-4f93-9dcb-3706835ca3bd -- 200 -- 2 - 13.387 ms
+2021-01-28 -- 13:31:07:317 -- info: Init transaction query
+2021-01-28 -- 13:31:07:317 -- info: Commit
+2021-01-28 -- 13:31:07:317 -- http: GET -- /hackathon/search/filters?tech[]=Rust -- c446fc54-3a78-4a7f-b670-5fb54f7bdc2f -- 200 -- 1166 - 5.316 ms
+2021-01-28 -- 13:32:12:3212 -- info: Is organizer and state ACTIVE
+2021-01-28 -- 13:32:12:3212 -- debug: Validate fields ok!!
+2021-01-28 -- 13:32:12:3212 -- info: Init transaction query
+2021-01-28 -- 13:32:12:3212 -- debug: Insert into tables tech and hackathon_tech OK!!
+2021-01-28 -- 13:32:12:3212 -- debug: Insert into tables lin and hackathon_link OK!!
+2021-01-28 -- 13:32:12:3212 -- info: Commit
+2021-01-28 -- 13:32:12:3212 -- debug: Create new hackathon successfully
+2021-01-28 -- 13:32:12:3212 -- http: POST -- /createhackathon/ -- 27 -- 200 -- 33 - 88.949 ms
+2021-01-28 -- 13:32:16:3216 -- info: Init transaction query
+2021-01-28 -- 13:32:16:3216 -- info: Commit
+2021-01-28 -- 13:32:16:3216 -- http: GET -- /hackathon/search/filters?tech[]=Rust -- 2513ac92-a4bb-42e2-86c9-3ab620e22bba -- 200 -- 1439 - 11.236 ms

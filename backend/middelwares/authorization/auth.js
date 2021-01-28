@@ -1,13 +1,16 @@
 // Variables && instances
 require('dotenv').config();
 const jwt = require('jsonwebtoken');
-const { getAdminDB, getCodeAdminqDB, getOrganizerDB, getIsAdminIsUserDB } = require('../../db/adminRoot/db_Select');
-const { resetAdminCode } = require('../../db/adminRoot/db_update');
+const { getAdminDB, getOrganizerDB, getIsAdminIsUserDB } = require('../../db/adminRoot/db_Select');
 const { getUserDB } = require('../../db/select');
 const { loginValidator } = require('../../validators/validateLogin');
 const { emailValidator } = require('../../validators/val_email');
+const { logger } = require("../../app/config/logger");
+
 
 const isAuthenticated = async(req, res, next) => {
+
+    let msgInfo = 'Authorization failure, no token';
 
     // Store the token of postman
     const { authorization } = req.headers;
@@ -15,8 +18,8 @@ const isAuthenticated = async(req, res, next) => {
 
         if (!authorization) {
             // Authorization failure, redirect login page
-            console.log('Authorization failure, no token');
-            return res.status(401).send('Authorization failure, no token');
+            logger.info(msgInfo);
+            return res.status(401).json({ info: msgInfo });
         } else if (authorization) {
 
             // 1. Check the token, decode token and search user with email of token
@@ -27,8 +30,8 @@ const isAuthenticated = async(req, res, next) => {
 
             // if not user --> failed
             if (!user) {
-                res.status(401).send();
-                return;
+                msgInfo = 'Not exist user in db';
+                return res.status(401).json({ info: msgInfo });
             }
 
             req.auth = decodedToken;
@@ -38,23 +41,21 @@ const isAuthenticated = async(req, res, next) => {
         }
 
     } catch (e) {
-        res.status(401).send();
-        console.log('error in authorization', e);
-        return;
 
+        let msgError = ('Error in authorization:', e.message);
+        logger.error(msgError);
+        res.status(401).json({ info: msgError });
+        return;
     }
 }
 
 const isAdmin = async(req, res, next) => {
 
-
-    console.log('isAdmin');
-
     const { email } = req.auth || req.body;
 
+    let msgInfo = 'Not exist admin in db';
+
     try {
-
-
 
         // 1. Check email
         await emailValidator.validateAsync({ email });
@@ -64,18 +65,19 @@ const isAdmin = async(req, res, next) => {
 
         // if not user --> failed
         if (!user) {
-            res.status(401).send();
-            return;
+            return res.status(401).json({ info: msgInfo });
         }
 
         if (user.state) {
-            console.log('Is admin and state ACTIVE');
+            msgInfo = 'Is admin and state ACTIVE';
+            logger.info(msgInfo);
             next();
         }
     } catch (e) {
-        console.log('Error in auth isAdmin', e.message);
-        res.status(401).send(e.message);
-        return;
+
+        let msgError = ('Error in auth isAdmin:', e.message);
+        logger.error(msgError);
+        return res.status(401).send(msgError);
     }
 
 
@@ -96,37 +98,36 @@ const isOrganizer = async(req, res, next) => {
 
         // if not user --> failed
         if (!user) {
-            res.status(401).send();
-            return;
+            msgInfo = 'Not exist user in db';
+            return res.status(401).json({ info: msgInfo });
         }
 
         if (user.active_user) {
-            console.log('Is organizer and state ACTIVE');
-
+            msgInfo = 'Is organizer and state ACTIVE';
+            logger.info(msgInfo);
             req.id = user.id;
             next();
         } else {
-            console.log("Is organizer but, he isn't ACTIVE");
-            res.status(401).send('The organizer exists but its status is not activated');
+            msgInfo = "Is organizer but, he isn't ACTIVE";
+            logger.info(msgInfo);
+            res.status(401).json({ info: msgInfo });
         }
 
     } catch (e) {
-        console.log('Error in auth isAdmin', e.message);
-        res.status(401).send(e.message);
-        return;
+
+        let msgError = ('Error in auth organizer:', e.message);
+        logger.error(msgError);
+        return res.status(401).send(msgError);
     }
-
-
-
-
 }
 
 // Check if exist that user
 const isUser = async(req, res, next) => {
 
+    let msgInfo = '';
+
     // 1. Get params
     const { email, password } = req.body || req.body;
-
 
     try {
 
@@ -138,19 +139,20 @@ const isUser = async(req, res, next) => {
 
         // if user exist-> faild
         if (user) {
-            console.log(`The user with email ${email} already exists`);
-            return res.send(`The user with email ${email} already exists`);
+
+            msgInfo = `The user with email ${email} already exists`;
+            logger.info(msgInfo);
+            return res.json(msgInfo);
         }
 
-        console.log('The user not exist in db, he can register now');
+        logger.debug('The user not exist in db, he can register now');
         next();
 
     } catch (e) {
-        let msgError = e.message || 'Error in login';
 
-        console.log('Error in auth isUser', msgError);
-        res.status(401).send(msgError);
-        return;
+        let msgError = ('Error in auth user:', e.message);
+        logger.error(msgError);
+        return res.status(401).send(msgError);
     }
 
 }

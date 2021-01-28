@@ -66,17 +66,6 @@ const fieldsHackathons = Joi.object({
                 new Error('The webName of hackathon is not valid')
             ),
     })),
-    // link: Joi.string().hostname().lowercase().trim()
-    //     .required()
-    //     .error(
-    //         new Error('The link of hackathon is not valid')
-    //     ),
-    // webName: Joi.string().lowercase().trim()
-    //     .required()
-    //     .error(
-    //         new Error('The webName of hackathon is not valid')
-    //     ),
-
 })
 
 module.exports = {

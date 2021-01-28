@@ -23,7 +23,6 @@ const getHackathonInfoDB = async(id, hackathon_place, city, start_date, end_date
      and (start_date = ? or ?  is null)
      and (end_date =? or ? is null)
       and (thematic = ? or ? is null)`;
-    // and (technologies = ? or ? is null);
 
     const params = [
         id,
@@ -36,7 +35,6 @@ const getHackathonInfoDB = async(id, hackathon_place, city, start_date, end_date
         start_date,
         end_date,
         end_date,
-        /* , technologies */
         thematic,
         thematic
     ];

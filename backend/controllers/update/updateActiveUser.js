@@ -1,11 +1,12 @@
 // Variables && instances
 const { updateStateUser } = require('../../db/adminRoot/db_update');
 const { performQuery } = require('../../db/performQuery');
-
-let query = '';
-let params = [];
+const { logger } = require("../../app/config/logger");
 
 const activeUser = async(req, res) => {
+
+    let query = '';
+    let params = [];
 
     // 1. Get code params
     const { id } = req.params;
@@ -15,28 +16,30 @@ const activeUser = async(req, res) => {
         // Init transaction mysql
         query = 'start transaction';
         const resInitTransaction = await performQuery(query, params);
-        console.log('Start transaction');
+        logger.info('Start transaction');
 
         // 2.1 change state to true and reset code
         await updateStateUser(parseInt(id));
 
-        console.log('Update state is successfully');
+        logger.debug('Update state is successfully');
 
         // Commit mysql
         query = 'commit';
         await performQuery(query, params);
-        console.log('Commit');
+        logger.info('Commit');
 
-        res.send('Update state is successfully');
+        res.json({ info: 'Update state is successfully' });
 
     } catch (e) {
 
         // Rollback mysql
         query = 'rollback';
         await performQuery(query, params);
-        console.log('Rollback, error in activeUser( function)');
+        logger.info('Rollback query');
 
-        res.status(401).send();
+        let msgError = ('Error in active user', e.message);
+        logger.error(msgError);
+        res.status(401).send(msgError);
         return;
     }
 
