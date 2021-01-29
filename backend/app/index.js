@@ -18,7 +18,7 @@ const loginRouter = require('../routes/login');
 const createHackathonRouter = require('../routes/createHackathon');
 const userRouter = require('../routes/user');
 const registerRouter = require('../routes/register');
-const hackathonRouter = require('../routes/hackathon');
+const hackathonRouter = require('../routes/hºackathon');
 const blogRouter = require('../routes/blog')
 const forgotPasswordRouter = require('../routes/forgotPassword')
 
