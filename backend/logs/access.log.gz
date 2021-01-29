@@ -1836,3 +1836,102 @@
 2021-01-29 -- 12:17:47:1747 -- info: Commit
 2021-01-29 -- 12:17:47:1747 -- debug: Create new hackathon successfully
 2021-01-29 -- 12:17:47:1747 -- http: POST -- /createhackathon -- 2 -- 200 -- 33 - 38.619 ms
+2021-01-29 -- 12:36:19:3619 -- info: listening on port 3000
+2021-01-29 -- 12:38:24:3824 -- info: Home page
+2021-01-29 -- 12:38:24:3824 -- http: GET -- / -- fe363545-e42b-4199-9356-e0ac4510e316 -- 200 -- 20 - 5.506 ms
+2021-01-29 -- 12:39:29:3929 -- error: Email must have the following structure: name@xxxx.[com, es, net]
+2021-01-29 -- 12:39:29:3929 -- http: POST -- /register -- 36b763c9-94b1-4389-a016-220f4d6ee2ad -- 500 -- 65 - 4.198 ms
+2021-01-29 -- 12:39:39:3939 -- error: The name entered is not valid
+2021-01-29 -- 12:39:39:3939 -- http: POST -- /register -- 0ab0286b-a2d3-49c7-b377-592674af5547 -- 500 -- 29 - 2.603 ms
+2021-01-29 -- 12:39:48:3948 -- error: The surname entered is not valid
+2021-01-29 -- 12:39:48:3948 -- http: POST -- /register -- ab899fb3-cf0e-4925-8c46-acfead429304 -- 500 -- 32 - 2.248 ms
+2021-01-29 -- 12:40:26:4026 -- error: The rol entered is not valid
+2021-01-29 -- 12:40:26:4026 -- http: POST -- /register -- 19566d93-c819-4dcf-9d10-bec7d1ccfb9b -- 500 -- 28 - 1.619 ms
+2021-01-29 -- 12:40:40:4040 -- error: Password must have 8 caracters min.
+2021-01-29 -- 12:40:40:4040 -- http: POST -- /register -- 3ddf4262-4c7c-48f8-a91c-a8097e82c9ef -- 500 -- 35 - 2.179 ms
+2021-01-29 -- 12:40:52:4052 -- error: Access denied for user 'fgjcarlos'@'localhost' (using password: YES)
+2021-01-29 -- 12:40:52:4052 -- error: undefined
+2021-01-29 -- 12:40:52:4052 -- error: 
+2021-01-29 -- 12:40:52:4052 -- http: POST -- /register -- 637d2f0f-a868-4d41-bab2-6dd0c333b2af -- 401 -- 0 - 218.731 ms
+2021-01-29 -- 12:43:56:4356 -- info: listening on port 3000
+2021-01-29 -- 12:44:06:446 -- debug: The user not exist in db, he can register now
+2021-01-29 -- 12:44:06:446 -- info: Init transaction query
+2021-01-29 -- 12:44:06:446 -- error: Unknown column 'code' in 'field list'
+2021-01-29 -- 12:44:06:446 -- info: Rollback query
+2021-01-29 -- 12:44:06:446 -- debug: Error postRegister
+2021-01-29 -- 12:44:06:446 -- http: POST -- /register -- 82465aba-8486-403e-8904-9f6d56ee2910 -- 500 -- 37 - 195.343 ms
+2021-01-29 -- 12:52:03:523 -- info: listening on port 3000
+2021-01-29 -- 12:52:14:5214 -- debug: The user not exist in db, he can register now
+2021-01-29 -- 12:52:14:5214 -- info: Init transaction query
+2021-01-29 -- 12:52:16:5216 -- info: Commit
+2021-01-29 -- 12:52:16:5216 -- debug: Register new user sucessfull
+2021-01-29 -- 12:52:16:5216 -- http: POST -- /register -- 7eddd687-5888-4eae-831a-431e12041caa -- 200 -- 30 - 1826.056 ms
+2021-01-29 -- 13:00:34:034 -- info: listening on port 3000
+2021-01-29 -- 13:01:18:118 -- debug: The user not exist in db, he can register now
+2021-01-29 -- 13:01:18:118 -- info: Init transaction query
+2021-01-29 -- 13:01:18:118 -- error: Column 'profile_picture' cannot be null
+2021-01-29 -- 13:01:18:118 -- info: Rollback query
+2021-01-29 -- 13:01:18:118 -- debug: Error postRegister
+2021-01-29 -- 13:01:18:118 -- http: POST -- /register -- d62e3d07-5d6d-4759-a210-d1128cfaece8 -- 500 -- 39 - 130.124 ms
+2021-01-29 -- 13:06:24:624 -- info: listening on port 3000
+2021-01-29 -- 13:06:31:631 -- debug: The user not exist in db, he can register now
+2021-01-29 -- 13:06:31:631 -- info: Rollback query
+2021-01-29 -- 13:06:31:631 -- debug: Error postRegister
+2021-01-29 -- 13:06:31:631 -- http: POST -- /register -- 297f84c6-6d3e-4228-953f-b68c19d86ff3 -- 500 -- 32 - 39.479 ms
+2021-01-29 -- 13:06:53:653 -- info: listening on port 3000
+2021-01-29 -- 13:06:57:657 -- debug: The user not exist in db, he can register now
+2021-01-29 -- 13:06:57:657 -- info: Init transaction query
+2021-01-29 -- 13:06:59:659 -- info: Commit
+2021-01-29 -- 13:06:59:659 -- debug: Register new user sucessfull
+2021-01-29 -- 13:06:59:659 -- http: POST -- /register -- 07b972f4-fd56-4b01-91ee-6055eba77cf2 -- 200 -- 30 - 1206.362 ms
+2021-01-29 -- 13:08:18:818 -- info: listening on port 3000
+2021-01-29 -- 13:08:28:828 -- info: listening on port 3000
+2021-01-29 -- 13:09:18:918 -- debug: The user not exist in db, he can register now
+2021-01-29 -- 13:09:18:918 -- info: Init transaction query
+2021-01-29 -- 13:09:18:918 -- error: Column 'profile_picture' cannot be null
+2021-01-29 -- 13:09:18:918 -- info: Rollback query
+2021-01-29 -- 13:09:18:918 -- debug: Error postRegister
+2021-01-29 -- 13:09:18:918 -- http: POST -- /register -- 9da581fa-05d2-4adf-885c-73dd13486120 -- 500 -- 39 - 134.436 ms
+2021-01-29 -- 13:09:58:958 -- info: listening on port 3000
+2021-01-29 -- 13:10:02:102 -- debug: The user not exist in db, he can register now
+2021-01-29 -- 13:10:02:102 -- info: Init transaction query
+2021-01-29 -- 13:10:02:102 -- error: Column 'profile_picture' cannot be null
+2021-01-29 -- 13:10:02:102 -- info: Rollback query
+2021-01-29 -- 13:10:02:102 -- debug: Error postRegister
+2021-01-29 -- 13:10:02:102 -- http: POST -- /register -- 79c7f7d7-4456-403f-bfe7-186b0cff4468 -- 500 -- 39 - 130.881 ms
+2021-01-29 -- 13:11:52:1152 -- info: listening on port 3000
+2021-01-29 -- 13:11:55:1155 -- debug: The user not exist in db, he can register now
+2021-01-29 -- 13:11:55:1155 -- info: Init transaction query
+2021-01-29 -- 13:11:56:1156 -- error: Column 'profile_picture' cannot be null
+2021-01-29 -- 13:11:56:1156 -- info: Rollback query
+2021-01-29 -- 13:11:56:1156 -- debug: Error postRegister
+2021-01-29 -- 13:11:56:1156 -- http: POST -- /register -- 9fdfdbf6-01e9-4916-9cb9-26e623b4f722 -- 500 -- 39 - 129.012 ms
+2021-01-29 -- 13:13:36:1336 -- info: listening on port 3000
+2021-01-29 -- 13:13:39:1339 -- debug: The user not exist in db, he can register now
+2021-01-29 -- 13:13:39:1339 -- info: Rollback query
+2021-01-29 -- 13:13:39:1339 -- debug: Error postRegister
+2021-01-29 -- 13:13:39:1339 -- http: POST -- /register -- d76c6a6d-a5b1-4fe1-a462-594797d39f68 -- 500 -- 32 - 35.443 ms
+2021-01-29 -- 13:13:50:1350 -- info: listening on port 3000
+2021-01-29 -- 13:13:54:1354 -- debug: The user not exist in db, he can register now
+2021-01-29 -- 13:13:54:1354 -- info: Init transaction query
+2021-01-29 -- 13:13:55:1355 -- info: Commit
+2021-01-29 -- 13:13:55:1355 -- debug: Register new user sucessfull
+2021-01-29 -- 13:13:55:1355 -- http: POST -- /register -- 1ff3c93d-e615-427b-9705-06a5ac78210d -- 200 -- 30 - 874.441 ms
+2021-01-29 -- 13:14:12:1412 -- info: Init transaction query
+2021-01-29 -- 13:14:12:1412 -- info: Commit query
+2021-01-29 -- 13:14:12:1412 -- debug: Your account is not validated yet. We have sent you an email
+2021-01-29 -- 13:14:12:1412 -- http: POST -- /login -- 1 -- 200 -- 71 - 562.446 ms
+2021-01-29 -- 13:17:03:173 -- warn: 404 Router not found
+2021-01-29 -- 13:17:03:173 -- http: GET -- /user/validate/1/5XI5xN4u7aXcnrX3YUapPDwdrl53XcJLjRdXJffD -- ab958a52-cbfc-4a4f-ae29-2b5539311548 -- 404 -- 30 - 1.942 ms
+2021-01-29 -- 13:17:14:1714 -- info: start transaction
+2021-01-29 -- 13:17:14:1714 -- debug: Code exist in database, ok
+2021-01-29 -- 13:17:14:1714 -- info: commit
+2021-01-29 -- 13:17:14:1714 -- info: start transaction
+2021-01-29 -- 13:17:14:1714 -- debug: Update state is successfully
+2021-01-29 -- 13:17:14:1714 -- info: commit
+2021-01-29 -- 13:17:14:1714 -- http: POST -- /user/validate/1/5XI5xN4u7aXcnrX3YUapPDwdrl53XcJLjRdXJffD -- eef96e39-f07c-4a85-91b4-e7cd1a0530cd -- 200 -- 39 - 187.961 ms
+2021-01-29 -- 13:17:42:1742 -- debug: Login OK
+2021-01-29 -- 13:17:42:1742 -- http: POST -- /login -- 1 -- 200 -- 211 - 85.188 ms
+2021-01-29 -- 13:25:27:2527 -- error: Table 'portal_hack.admin' doesn't exist
+2021-01-29 -- 13:25:27:2527 -- error: Table 'portal_hack.admin' doesn't exist
+2021-01-29 -- 13:25:27:2527 -- http: POST -- /createhackathon -- 38772a09-b676-4c06-a6bd-7f00bdcf3448 -- 401 -- 50 - 5.591 ms

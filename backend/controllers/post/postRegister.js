@@ -17,9 +17,12 @@ const newUser = async(req, res) => {
     let params = [];
 
     // 1. Get params
-    const { email, name, surname, professional_profile, rol, password, profile_picture } = req.body;
+    let { email, name, surname, professional_profile, rol, password, profile_picture } = req.body;
 
     try {
+
+        //control default value
+        profile_picture = profile_picture ? profile_picture : '/local'
 
         // 3. Post new admin
         // Encrypt password
