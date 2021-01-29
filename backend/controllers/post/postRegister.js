@@ -21,12 +21,8 @@ const newUser = async(req, res) => {
 
     try {
 
-<<<<<<< HEAD
         //control default value
         profile_picture = profile_picture ? profile_picture : '/local'
-=======
-        profile_picture = (profile_picture) ? profile_picture : 'local';
->>>>>>> 689ab2c3521853f15fc1adf0681d29b914795c7d
 
         // 3. Post new admin
         // Encrypt password

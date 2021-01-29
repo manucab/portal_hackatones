@@ -1,4 +1,4 @@
-const performQuery = require("../performQuery");
+const {performQuery} = require("../performQuery");
 
 const getUserById = async (id) => {
   const query = "select * from competitor where id=?";

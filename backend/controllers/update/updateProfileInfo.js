@@ -22,7 +22,7 @@ const updateProfileInfo = async (req, res) => {
     const checked = check.length === 1
 
     if(!checked) {
-      res.status(401).send("User not found");
+      res.status(500).send("User not found");
       return;
     }
 
@@ -51,9 +51,9 @@ const updateProfileInfo = async (req, res) => {
       id,
       name,
       surname,
-      email.toLowerCase(),
-      professional_profile.toLowerCase(),
-      rol.toLowerCase(),
+      email,
+      professional_profile,
+      rol,
       newPassword
     );
   } catch (e) {

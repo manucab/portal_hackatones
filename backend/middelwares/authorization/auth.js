@@ -157,10 +157,41 @@ const isUser = async(req, res, next) => {
 
 }
 
+
+
+// Check if you are an organizer
+const isRightUser = async(req, res, next) => {
+
+    const { id } = req.auth || req.body;
+    const {idUser} = req.params
+
+    try {
+        //Check if token user is the same as url user
+
+        const rigthUser = id === parseInt(idUser)
+
+        if (!rigthUser) {
+
+            msgInfo = `Wrong user`;
+            logger.info(msgInfo);
+            return res.json(msgInfo);
+        }
+
+        next()
+        
+    } catch (e) {
+
+        let msgError = ('Error in auth user:', e.message);
+        logger.error(msgError);
+        return res.status(401).send(msgError);
+    }
+}
+
 module.exports = {
 
     isAdmin,
     isAuthenticated,
     isOrganizer,
-    isUser
+    isUser,
+    isRightUser
 };

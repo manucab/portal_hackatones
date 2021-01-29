@@ -1,4 +1,4 @@
-const performQuery = require("../performQuery");
+const {performQuery} = require("../performQuery");
 
 
 const rateHackathon = async (idUser, idHackathon, rate) => {

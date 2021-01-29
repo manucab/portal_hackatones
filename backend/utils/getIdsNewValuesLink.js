@@ -1,4 +1,4 @@
-const performQuery = require("../db/performQuery")
+const {performQuery} = require("../db/performQuery")
 
 const getIdsNewValuesLink = async (values) => {
     //Get the current list of values

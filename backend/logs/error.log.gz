@@ -208,3 +208,24 @@
 2021-01-29 -- 13:11:56:1156 -- error: Column 'profile_picture' cannot be null
 2021-01-29 -- 13:25:27:2527 -- error: Table 'portal_hack.admin' doesn't exist
 2021-01-29 -- 13:25:27:2527 -- error: Table 'portal_hack.admin' doesn't exist
+2021-01-29 -- 13:36:58:3658 -- error: Error login
+2021-01-29 -- 13:37:08:378 -- error: Error login
+2021-01-29 -- 13:37:12:3712 -- error: Error login
+2021-01-29 -- 13:37:20:3720 -- error: Error login
+2021-01-29 -- 13:37:30:3730 -- error: Error login
+2021-01-29 -- 13:37:41:3741 -- error: Error login
+2021-01-29 -- 13:37:48:3748 -- error: Error login
+2021-01-29 -- 13:37:51:3751 -- error: Incorrect date value: '01/02/2021' for column 'start_date' at row 1
+2021-01-29 -- 13:37:51:3751 -- error: Error login
+2021-01-29 -- 13:43:17:4317 -- error: Column 'city' cannot be null
+2021-01-29 -- 13:43:17:4317 -- error: Error login
+2021-01-29 -- 13:53:06:536 -- error: Column 'city' cannot be null
+2021-01-29 -- 13:53:06:536 -- error: Error login
+2021-01-29 -- 13:53:23:5323 -- error: Column 'city' cannot be null
+2021-01-29 -- 13:53:23:5323 -- error: Error login
+2021-01-29 -- 13:54:06:546 -- error: Error login
+2021-01-29 -- 13:54:55:5455 -- error: Error login
+2021-01-29 -- 13:56:03:563 -- error: Error login
+2021-01-29 -- 15:44:07:447 -- error: rollback
+2021-01-29 -- 15:44:07:447 -- error: The tech of hackathon is not valid
+2021-01-29 -- 16:20:01:201 -- error: performQuery is not a function

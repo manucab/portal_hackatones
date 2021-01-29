@@ -1,4 +1,4 @@
-const performQuery = require("../performQuery")
+const {performQuery} = require("../performQuery")
 
 const deleteComment = async (idComment) => {
   const queryIds = 'select id from comment'

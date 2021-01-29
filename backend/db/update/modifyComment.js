@@ -1,4 +1,4 @@
-const performQuery = require("../performQuery");
+const {performQuery} = require("../performQuery");
 
 const modifyComment = async (idComment,newContent) => {
   const queryOriginalContent = `select content from comment where id = ?`;

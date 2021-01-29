@@ -1,4 +1,4 @@
-const performQuery = require("../performQuery")
+const {performQuery} = require("../performQuery")
 
 const deletePost = async (idPost) => {
   const query = `delete from post

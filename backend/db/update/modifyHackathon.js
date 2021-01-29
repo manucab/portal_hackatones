@@ -2,7 +2,7 @@ const getIdsNewValuesTech = require("../../utils/getIdsNewValuesTech")
 const getIdsNewValuesLink = require("../../utils/getIdsNewValuesLink")
 
 const formatDate = require("../../utils/formatDate");
-const performQuery = require("../performQuery");
+const {performQuery} = require("../performQuery");
 
 const modifyHackathon = async (
   idUser,
