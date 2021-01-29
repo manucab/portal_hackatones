@@ -35,7 +35,7 @@ const getHackathonByFilters = async(req, res) => {
         //  2. Search parameters -> {hackathon_place, city,start_date, end_date, technologies,thematic }
         const listHackathons = await getHackathonInfoDB(id, hackathon_place, city, start_date, end_date, thematic);
 
-        console.log('listHackathons :>> ', listHackathons);
+        // TODO -- add comments
 
         // Format data hackathon...
         hackathon.forEach(item => {
