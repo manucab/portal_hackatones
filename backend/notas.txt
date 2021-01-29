@@ -1,9 +1,16 @@
+<<<<<<< HEAD
+// TODO -- lowerCase insert y selelct
+=======
 TODO
 isRightUser middleware (req.auth already decodified)
 // TODO -- lowerCase insert y selelct 
+>>>>>>> 75a98159ffd2f140a42db5fc123e009f1711c553
 
 // SELECT * FROM `table` WHERE LOWER(`Value`) = LOWER("IAreSavage")
 
 1. welcom email
 2. rotate files
+<<<<<<< HEAD
+=======
 3. Inscribirse a hackathon
+>>>>>>> 75a98159ffd2f140a42db5fc123e009f1711c553

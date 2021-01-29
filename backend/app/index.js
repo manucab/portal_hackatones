@@ -45,8 +45,6 @@ app.use('/register', registerRouter);
 // Hackathon
 app.use('/hackathon', hackathonRouter);
 
-// Hackathon Page
-// app.post('/hackathon/id/enroll', isAuthenticated, enrollHackathon); // Inscribirse a un hackathon
 // app.post('/hackathon/id/comments', isAuthenticated, postComment); // Publicar comentario
 // app.post('/hackathon/id/comments/id', isAuthenticated, isRightUser, modifyComment); // Modificar comentario
 

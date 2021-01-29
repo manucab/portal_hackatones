@@ -208,6 +208,60 @@
 2021-01-29 -- 13:11:56:1156 -- error: Column 'profile_picture' cannot be null
 2021-01-29 -- 13:25:27:2527 -- error: Table 'portal_hack.admin' doesn't exist
 2021-01-29 -- 13:25:27:2527 -- error: Table 'portal_hack.admin' doesn't exist
+<<<<<<< HEAD
+2021-01-29 -- 20:34:34:3434 -- error: The surname entered is not valid
+2021-01-29 -- 20:35:00:350 -- error: jwt expired
+2021-01-29 -- 20:35:25:3525 -- error: Access denied for user 'demo'@'localhost' (using password: YES)
+2021-01-29 -- 20:35:25:3525 -- error: undefined
+2021-01-29 -- 20:35:25:3525 -- error: 
+2021-01-29 -- 20:35:41:3541 -- error: Access denied for user 'demo'@'localhost' (using password: YES)
+2021-01-29 -- 20:35:41:3541 -- error: undefined
+2021-01-29 -- 20:35:41:3541 -- error: 
+2021-01-29 -- 20:37:57:3757 -- error: Unknown database 'portal_hackathon'
+2021-01-29 -- 20:37:57:3757 -- error: undefined
+2021-01-29 -- 20:37:57:3757 -- error: 
+2021-01-29 -- 20:43:07:437 -- error:  Error in create new a hackathon: The name of hackathon is not valid 
+2021-01-29 -- 20:43:32:4332 -- error:  Error in create new a hackathon: The valid values of place are: online, presencial, semipresencial 
+2021-01-29 -- 20:43:46:4346 -- error:  Error in create new a hackathon: The status of hackathon is not valid, that has the following format: pendicente, realziado o cancelado 
+2021-01-29 -- 20:44:02:442 -- error:  Error in create new a hackathon: The info of hackathon is not valid 
+2021-01-29 -- 20:44:17:4417 -- error: Column 'cover_picture' cannot be null
+2021-01-29 -- 20:44:17:4417 -- error:  Error in create new a hackathon: Column 'cover_picture' cannot be null 
+2021-01-29 -- 21:12:03:123 -- error:  Error in enrroll a hackathon: The  inscription status entered is not valid 
+2021-01-29 -- 21:12:48:1248 -- error:  Error in enrroll a hackathon: The  inscription status entered is not valid 
+2021-01-29 -- 21:13:16:1316 -- error:  Error in enrroll a hackathon: The  inscription status entered is not valid 
+2021-01-29 -- 21:14:05:145 -- error: Unknown column 'BOOKING_CODE_LEN' in 'field list'
+2021-01-29 -- 21:14:05:145 -- error:  Error in enrroll a hackathon: Unknown column 'BOOKING_CODE_LEN' in 'field list' 
+2021-01-29 -- 21:15:12:1512 -- error: Column 'inscription_status' cannot be null
+2021-01-29 -- 21:15:12:1512 -- error:  Error in enrroll a hackathon: Column 'inscription_status' cannot be null 
+2021-01-29 -- 21:17:04:174 -- error:  Error in enrroll a hackathon: The  inscription status entered is not valid 
+2021-01-29 -- 21:19:44:1944 -- error: Duplicate entry '1-1' for key 'PRIMARY'
+2021-01-29 -- 21:19:44:1944 -- error:  Error in enrroll a hackathon: Duplicate entry '1-1' for key 'PRIMARY' 
+2021-01-29 -- 21:20:12:2012 -- error: The surname entered is not valid
+2021-01-29 -- 23:06:18:618 -- error: utils is not defined
+2021-01-29 -- 23:07:04:74 -- error: Cannot read property 'code' of undefined
+2021-01-29 -- 23:07:53:753 -- error: Cannot read property 'code' of undefined
+2021-01-29 -- 23:10:56:1056 -- error: Cannot add or update a child row: a foreign key constraint fails (`portal_hack`.`hackathon`, CONSTRAINT `hackaton_fk1` FOREIGN KEY (`id_organizer`) REFERENCES `competitor` (`id`) ON DELETE CASCADE)
+2021-01-29 -- 23:10:56:1056 -- error:  Error in create new a hackathon: Cannot add or update a child row: a foreign key constraint fails (`portal_hack`.`hackathon`, CONSTRAINT `hackaton_fk1` FOREIGN KEY (`id_organizer`) REFERENCES `competitor` (`id`) ON DELETE CASCADE) 
+2021-01-29 -- 23:12:59:1259 -- error:  Error in enrroll a hackathon: The  inscription status entered is not valid 
+2021-01-29 -- 23:20:10:2010 -- error: Cannot add or update a child row: a foreign key constraint fails (`portal_hack`.`competitor_hackathon`, CONSTRAINT `competitor_hackathon_fk2` FOREIGN KEY (`id_hackathon`) REFERENCES `hackathon` (`id`) ON DELETE CASCADE)
+2021-01-29 -- 23:20:10:2010 -- error:  Error in enrroll a hackathon: Cannot add or update a child row: a foreign key constraint fails (`portal_hack`.`competitor_hackathon`, CONSTRAINT `competitor_hackathon_fk2` FOREIGN KEY (`id_hackathon`) REFERENCES `hackathon` (`id`) ON DELETE CASCADE) 
+2021-01-29 -- 23:20:16:2016 -- error: Cannot add or update a child row: a foreign key constraint fails (`portal_hack`.`competitor_hackathon`, CONSTRAINT `competitor_hackathon_fk2` FOREIGN KEY (`id_hackathon`) REFERENCES `hackathon` (`id`) ON DELETE CASCADE)
+2021-01-29 -- 23:20:16:2016 -- error:  Error in enrroll a hackathon: Cannot add or update a child row: a foreign key constraint fails (`portal_hack`.`competitor_hackathon`, CONSTRAINT `competitor_hackathon_fk2` FOREIGN KEY (`id_hackathon`) REFERENCES `hackathon` (`id`) ON DELETE CASCADE) 
+2021-01-29 -- 23:20:19:2019 -- error: Cannot add or update a child row: a foreign key constraint fails (`portal_hack`.`competitor_hackathon`, CONSTRAINT `competitor_hackathon_fk2` FOREIGN KEY (`id_hackathon`) REFERENCES `hackathon` (`id`) ON DELETE CASCADE)
+2021-01-29 -- 23:20:19:2019 -- error:  Error in enrroll a hackathon: Cannot add or update a child row: a foreign key constraint fails (`portal_hack`.`competitor_hackathon`, CONSTRAINT `competitor_hackathon_fk2` FOREIGN KEY (`id_hackathon`) REFERENCES `hackathon` (`id`) ON DELETE CASCADE) 
+2021-01-29 -- 23:20:22:2022 -- error: Duplicate entry '5-5' for key 'PRIMARY'
+2021-01-29 -- 23:20:22:2022 -- error:  Error in enrroll a hackathon: Duplicate entry '5-5' for key 'PRIMARY' 
+2021-01-29 -- 23:20:25:2025 -- error: Cannot add or update a child row: a foreign key constraint fails (`portal_hack`.`competitor_hackathon`, CONSTRAINT `competitor_hackathon_fk2` FOREIGN KEY (`id_hackathon`) REFERENCES `hackathon` (`id`) ON DELETE CASCADE)
+2021-01-29 -- 23:20:25:2025 -- error:  Error in enrroll a hackathon: Cannot add or update a child row: a foreign key constraint fails (`portal_hack`.`competitor_hackathon`, CONSTRAINT `competitor_hackathon_fk2` FOREIGN KEY (`id_hackathon`) REFERENCES `hackathon` (`id`) ON DELETE CASCADE) 
+2021-01-29 -- 23:21:02:212 -- error: Cannot add or update a child row: a foreign key constraint fails (`portal_hack`.`competitor_hackathon`, CONSTRAINT `competitor_hackathon_fk2` FOREIGN KEY (`id_hackathon`) REFERENCES `hackathon` (`id`) ON DELETE CASCADE)
+2021-01-29 -- 23:21:02:212 -- error:  Error in enrroll a hackathon: Cannot add or update a child row: a foreign key constraint fails (`portal_hack`.`competitor_hackathon`, CONSTRAINT `competitor_hackathon_fk2` FOREIGN KEY (`id_hackathon`) REFERENCES `hackathon` (`id`) ON DELETE CASCADE) 
+2021-01-29 -- 23:21:06:216 -- error: Cannot add or update a child row: a foreign key constraint fails (`portal_hack`.`competitor_hackathon`, CONSTRAINT `competitor_hackathon_fk2` FOREIGN KEY (`id_hackathon`) REFERENCES `hackathon` (`id`) ON DELETE CASCADE)
+2021-01-29 -- 23:21:06:216 -- error:  Error in enrroll a hackathon: Cannot add or update a child row: a foreign key constraint fails (`portal_hack`.`competitor_hackathon`, CONSTRAINT `competitor_hackathon_fk2` FOREIGN KEY (`id_hackathon`) REFERENCES `hackathon` (`id`) ON DELETE CASCADE) 
+2021-01-29 -- 23:21:09:219 -- error: Duplicate entry '5-1' for key 'PRIMARY'
+2021-01-29 -- 23:21:09:219 -- error:  Error in enrroll a hackathon: Duplicate entry '5-1' for key 'PRIMARY' 
+2021-01-29 -- 23:21:11:2111 -- error: Duplicate entry '5-5' for key 'PRIMARY'
+2021-01-29 -- 23:21:11:2111 -- error:  Error in enrroll a hackathon: Duplicate entry '5-5' for key 'PRIMARY' 
+=======
 2021-01-29 -- 13:36:58:3658 -- error: Error login
 2021-01-29 -- 13:37:08:378 -- error: Error login
 2021-01-29 -- 13:37:12:3712 -- error: Error login
@@ -229,3 +283,4 @@
 2021-01-29 -- 15:44:07:447 -- error: rollback
 2021-01-29 -- 15:44:07:447 -- error: The tech of hackathon is not valid
 2021-01-29 -- 16:20:01:201 -- error: performQuery is not a function
+>>>>>>> 75a98159ffd2f140a42db5fc123e009f1711c553

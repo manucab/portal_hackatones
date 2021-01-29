@@ -127,7 +127,7 @@ const isUser = async(req, res, next) => {
     let msgInfo = '';
 
     // 1. Get params
-    const { email, password } = req.body || req.body;
+    const { email, password } = req.body;
 
     try {
 
@@ -192,6 +192,11 @@ module.exports = {
     isAdmin,
     isAuthenticated,
     isOrganizer,
+<<<<<<< HEAD
+    isUser
+};
+=======
     isUser,
     isRightUser
 };
+>>>>>>> 75a98159ffd2f140a42db5fc123e009f1711c553
