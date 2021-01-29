@@ -2165,3 +2165,14 @@
 =======
 >>>>>>> 36ed08d3d3937c1a8caaa5a059d2efcdea3f6439
 >>>>>>> 8320f0b551462cb049fb629ec74f2246f49beb77
+2021-01-29 -- 19:59:42:5942 -- info: listening on port 3000
+2021-01-29 -- 20:00:15:015 -- http: PUT -- /user/14/update -- 4e9e6c61-4010-49d5-92b1-19df820d3c94 -- 401 -- 31 - 31.187 ms
+2021-01-29 -- 20:01:14:114 -- info: listening on port 3000
+2021-01-29 -- 20:01:18:118 -- http: PUT -- /user/14/update -- aa7addb0-93d4-4198-bc24-5a7493f92469 -- 401 -- 31 - 31.578 ms
+2021-01-29 -- 20:01:29:129 -- http: PUT -- /user/1/update -- b1d2b0ae-63b1-412d-87c6-a16dbf11e1a5 -- 401 -- 31 - 2.359 ms
+2021-01-29 -- 20:01:47:147 -- http: PUT -- /user/2/update -- c2b85976-b311-4a58-acb3-a763bf47dc62 -- 401 -- 31 - 2.580 ms
+2021-01-29 -- 20:02:59:259 -- info: listening on port 3000
+2021-01-29 -- 20:03:01:31 -- http: PUT -- /user/2/update -- 6f582de9-0eac-4f06-a0fc-b61c73186dad -- 401 -- 31 - 33.450 ms
+2021-01-29 -- 20:05:43:543 -- info: Wrong user
+2021-01-29 -- 20:05:43:543 -- http: PUT -- /user/2/update -- e6c63904-6740-4f92-bffa-d6ab145d7318 -- 200 -- 12 - 3.909 ms
+2021-01-29 -- 20:05:53:553 -- http: PUT -- /user/1/update -- 869b6278-e770-4b6d-927a-adfdbb7c37d5 -- 200 -- 29 - 212.015 ms

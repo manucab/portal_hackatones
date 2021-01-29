@@ -13,12 +13,12 @@ const updateProfileInfo = async (req, res) => {
     newPassword,
     passwordConfirmation,
   } = req.body;
-  const { id } = req.params;
+  const { idUser } = req.params;
 
   try {
     //Check if user want to change password
     //Check that the new password and the password confimation are equals
-    const check = await getUserById(id)
+    const check = await getUserById(idUser)
     const checked = check.length === 1
 
     if(!checked) {
@@ -36,7 +36,7 @@ const updateProfileInfo = async (req, res) => {
           );
         return;
       }
-      const userDB = await getUserById(id);
+      const userDB = await getUserById(idUser);
       const passwordDB = userDB.user_password;
 
       if (currentPassword != passwordDB) {
@@ -48,7 +48,7 @@ const updateProfileInfo = async (req, res) => {
     await profileInfoValidator.validateAsync(req.body);
 
     result = await dbUpdateProfileInfo(
-      id,
+      idUser,
       name,
       surname,
       email,
