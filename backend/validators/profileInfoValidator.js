@@ -27,6 +27,11 @@ const profileInfoValidator = Joi.object({
     .error(new Error("Password must have 8 caracters min.")),
   currentPassword: Joi.string()
     ,
+  profile_picture: Joi.string()
+  .min(1)
+  .error(
+      new Error('profile picture must be an url')
+  )
 });
 
 module.exports = profileInfoValidator;

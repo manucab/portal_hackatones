@@ -47,6 +47,11 @@ const hackathonValidator = Joi.object({
         .error(
             new Error('Links must be an array')
         ),
+    cover_picture: Joi.string()
+    .min(1)
+    .error(
+        new Error('Picture must be an url')
+    )
 })
 
 module.exports = {
