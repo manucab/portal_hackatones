@@ -21,6 +21,8 @@ const newUser = async(req, res) => {
 
     try {
 
+        profile_picture = (profile_picture) ? profile_picture : 'local';
+
         // 3. Post new admin
         // Encrypt password
         const passwordEncrypt = await bcrypt.hash(password, parseInt(process.env.PASSWORD_LEN));
