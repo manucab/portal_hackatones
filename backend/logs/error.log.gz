@@ -208,3 +208,31 @@
 2021-01-29 -- 13:11:56:1156 -- error: Column 'profile_picture' cannot be null
 2021-01-29 -- 13:25:27:2527 -- error: Table 'portal_hack.admin' doesn't exist
 2021-01-29 -- 13:25:27:2527 -- error: Table 'portal_hack.admin' doesn't exist
+2021-01-29 -- 20:34:34:3434 -- error: The surname entered is not valid
+2021-01-29 -- 20:35:00:350 -- error: jwt expired
+2021-01-29 -- 20:35:25:3525 -- error: Access denied for user 'demo'@'localhost' (using password: YES)
+2021-01-29 -- 20:35:25:3525 -- error: undefined
+2021-01-29 -- 20:35:25:3525 -- error: 
+2021-01-29 -- 20:35:41:3541 -- error: Access denied for user 'demo'@'localhost' (using password: YES)
+2021-01-29 -- 20:35:41:3541 -- error: undefined
+2021-01-29 -- 20:35:41:3541 -- error: 
+2021-01-29 -- 20:37:57:3757 -- error: Unknown database 'portal_hackathon'
+2021-01-29 -- 20:37:57:3757 -- error: undefined
+2021-01-29 -- 20:37:57:3757 -- error: 
+2021-01-29 -- 20:43:07:437 -- error:  Error in create new a hackathon: The name of hackathon is not valid 
+2021-01-29 -- 20:43:32:4332 -- error:  Error in create new a hackathon: The valid values of place are: online, presencial, semipresencial 
+2021-01-29 -- 20:43:46:4346 -- error:  Error in create new a hackathon: The status of hackathon is not valid, that has the following format: pendicente, realziado o cancelado 
+2021-01-29 -- 20:44:02:442 -- error:  Error in create new a hackathon: The info of hackathon is not valid 
+2021-01-29 -- 20:44:17:4417 -- error: Column 'cover_picture' cannot be null
+2021-01-29 -- 20:44:17:4417 -- error:  Error in create new a hackathon: Column 'cover_picture' cannot be null 
+2021-01-29 -- 21:12:03:123 -- error:  Error in enrroll a hackathon: The  inscription status entered is not valid 
+2021-01-29 -- 21:12:48:1248 -- error:  Error in enrroll a hackathon: The  inscription status entered is not valid 
+2021-01-29 -- 21:13:16:1316 -- error:  Error in enrroll a hackathon: The  inscription status entered is not valid 
+2021-01-29 -- 21:14:05:145 -- error: Unknown column 'BOOKING_CODE_LEN' in 'field list'
+2021-01-29 -- 21:14:05:145 -- error:  Error in enrroll a hackathon: Unknown column 'BOOKING_CODE_LEN' in 'field list' 
+2021-01-29 -- 21:15:12:1512 -- error: Column 'inscription_status' cannot be null
+2021-01-29 -- 21:15:12:1512 -- error:  Error in enrroll a hackathon: Column 'inscription_status' cannot be null 
+2021-01-29 -- 21:17:04:174 -- error:  Error in enrroll a hackathon: The  inscription status entered is not valid 
+2021-01-29 -- 21:19:44:1944 -- error: Duplicate entry '1-1' for key 'PRIMARY'
+2021-01-29 -- 21:19:44:1944 -- error:  Error in enrroll a hackathon: Duplicate entry '1-1' for key 'PRIMARY' 
+2021-01-29 -- 21:20:12:2012 -- error: The surname entered is not valid

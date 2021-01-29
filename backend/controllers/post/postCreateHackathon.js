@@ -21,7 +21,7 @@ const createHackathon = async(req, res) => {
     try {
 
         // 2. Check if the parameters are valid
-        await fieldsHackathons.validateAsync({ hackathon_name, hackathon_place, city, start_date, end_date, hackathon_status, hackathon_info, cover_picture, tech, thematic, links });
+          await fieldsHackathons.validateAsync({ hackathon_name, hackathon_place, city, start_date, end_date, hackathon_status, hackathon_info, cover_picture, tech, thematic, links });
 
         logger.debug('Validate fields ok!!');
 
@@ -30,7 +30,7 @@ const createHackathon = async(req, res) => {
         await performQuery(query, params);
         logger.info('Init transaction query');
 
-        // 3. Insert in table hackathon 
+        // 3. Insert in table hackathon
         const res_insertNewHackathon = await createHackathonDB(
             hackathon_name,
             hackathon_place,
@@ -58,21 +58,23 @@ const createHackathon = async(req, res) => {
         // Commit mysql
         query = 'commit';
         await performQuery(query, params);
-        logger.info('Commit');
+        logger.info(query);
 
-        logger.debug('Create new hackathon successfully');
-        res.send('Create new hackathon successfully');
+let msgInfo ='Create new hackathon successfully';
+
+        logger.debug(msgInfo);
+        res.send(msgInfo);
 
     } catch (e) {
 
         // Something wrong --> Rollback
         query = 'rollback';
         await performQuery(query, params);
-        logger.info('Rollback query');
+        logger.info(query);
 
-        let msgError = e.message || 'Error in create a new hackathon';
-        logger.error('Error login', msgError);
-        res.status(500).send(msgError);
+        let msgError = ` Error in create new a hackathon: ${e.message} `;
+        logger.error( msgError);
+        res.status(500).json({info: msgError});
     }
 }
 

@@ -1,5 +1,5 @@
-CREATE DATABASE IF NOT EXISTS portal_hackathones CHARACTER SET="utf8mb4" COLLATE="utf8mb4_unicode_ci";
-use portal_hackathones;
+CREATE DATABASE IF NOT EXISTS portal_hack CHARACTER SET="utf8mb4" COLLATE="utf8mb4_unicode_ci";
+use portal_hack;
 
 CREATE TABLE IF NOT EXISTS competitor (
     id INTEGER AUTO_INCREMENT PRIMARY KEY,
@@ -12,7 +12,7 @@ CREATE TABLE IF NOT EXISTS competitor (
     rol ENUM ('user','organizer') not null,
     code varchar(100) not null default 'empty-code',
     deleted_user ENUM ('true','false')  default 'false',
-    profile_picture varchar(500) not null default 'urlpordefecto', 
+    profile_picture varchar(500) not null default 'urlpordefecto',
     user_password varchar(100) not null,
     creation_date timestamp not null default current_timestamp,
     last_update timestamp not null default current_timestamp on update current_timestamp
@@ -48,8 +48,8 @@ create table if not exists hackathon (
     thematic varchar(100) not null,
     creation_date timestamp not null default current_timestamp,
     last_update timestamp not null default current_timestamp on update current_timestamp,
-    
-    constraint hackaton_fk1 
+
+    constraint hackaton_fk1
 		FOREIGN KEY(id_organizer) REFERENCES competitor(id) ON DELETE CASCADE
 );
 
@@ -74,11 +74,11 @@ create table if not exists comment (
     primary key (id, id_hackathon, id_competitor),
     creation_date timestamp not null default current_timestamp,
     last_update timestamp not null default current_timestamp on update current_timestamp,
-    
-    constraint comment_fk1 
+
+    constraint comment_fk1
 		FOREIGN KEY(id_hackathon) REFERENCES hackathon(id) ON DELETE CASCADE,
-	 constraint comment_fk2 
-		FOREIGN KEY(id_competitor) REFERENCES competitor(id) ON DELETE CASCADE    
+	 constraint comment_fk2
+		FOREIGN KEY(id_competitor) REFERENCES competitor(id) ON DELETE CASCADE
 );
 
 
@@ -86,17 +86,17 @@ create table if not exists comment (
 create table if not exists competitor_hackathon (
 	id_competitor int not null,
 	id_hackathon int not null,
-    inscription_status enum ('inscrito','cancelado','asistente') not null default 'inscrito',
+  inscription_status enum ('inscrito','cancelado','asistente') not null default 'inscrito',
     ranking int not null default 0,
     id_booking varchar(20) not null,
     rate integer,
     primary key (id_competitor,id_hackathon),
     creation_date timestamp not null default current_timestamp,
     last_update timestamp not null default current_timestamp on update current_timestamp,
-    
-    constraint competitor_hackathon_fk1 
+
+    constraint competitor_hackathon_fk1
 		FOREIGN KEY(id_competitor) REFERENCES competitor(id) ON DELETE CASCADE,
-	 constraint competitor_hackathon_fk2 
+	 constraint competitor_hackathon_fk2
 		FOREIGN KEY(id_hackathon) REFERENCES hackathon(id) ON DELETE CASCADE
 );
 
@@ -106,11 +106,11 @@ create table if not exists hackathon_link (
     primary key (id_hackathon, id_link),
     creation_date timestamp not null default current_timestamp,
     last_update timestamp not null default current_timestamp on update current_timestamp,
-    
-    constraint hackathon_link_fk1 
+
+    constraint hackathon_link_fk1
 		FOREIGN KEY(id_hackathon) REFERENCES hackathon(id) ON DELETE CASCADE,
-	 constraint hackathon_link_fk2 
-		FOREIGN KEY(id_link) REFERENCES link(id) ON DELETE CASCADE    
+	 constraint hackathon_link_fk2
+		FOREIGN KEY(id_link) REFERENCES link(id) ON DELETE CASCADE
 );
 
 create table if not exists hackathon_tech (
@@ -119,11 +119,11 @@ create table if not exists hackathon_tech (
     primary key (id_hackathon, id_tech),
     creation_date timestamp not null default current_timestamp,
     last_update timestamp not null default current_timestamp on update current_timestamp,
-    
-    constraint hackathon_tech_fk1 
+
+    constraint hackathon_tech_fk1
 		FOREIGN KEY(id_hackathon) REFERENCES hackathon(id) ON DELETE CASCADE,
-	 constraint hackathon_tech_fk2 
-		FOREIGN KEY(id_tech) REFERENCES tech(id) ON DELETE CASCADE    
+	 constraint hackathon_tech_fk2
+		FOREIGN KEY(id_tech) REFERENCES tech(id) ON DELETE CASCADE
 );
 
 
@@ -139,4 +139,3 @@ create table if not exists admin (
     creationDate timestamp default current_timestamp,
     updateDate timestamp default current_timestamp on update current_timestamp
 );
-

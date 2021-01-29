@@ -19,6 +19,27 @@ const sendConfirmationMail = async(email, link) => {
     await sendgrid.send(message);
 }
 
+
+const sendCodeBooking = async(email, code) => {
+    // Api_key sendgrip
+    sendgrid.setApiKey(process.env.EMAIL_API_KEY);
+
+    // TODO -- Change from email, and change schema
+
+    const message = {
+        to: email,
+        from: 'furboenvena10@gmail.com',
+        subject: 'Te has inscrito en un hackathon!',
+        text: `El código de reseva es:: ${code}`,
+        html: schemaValidateAccount(email, code),
+    };
+
+    // Send message
+    await sendgrid.send(message);
+}
+
+
 module.exports = {
-    sendConfirmationMail
+    sendConfirmationMail,
+    sendCodeBooking
 }

@@ -21,12 +21,8 @@ const newUser = async(req, res) => {
 
     try {
 
-<<<<<<< HEAD
         //control default value
         profile_picture = profile_picture ? profile_picture : '/local'
-=======
-        profile_picture = (profile_picture) ? profile_picture : 'local';
->>>>>>> 689ab2c3521853f15fc1adf0681d29b914795c7d
 
         // 3. Post new admin
         // Encrypt password
@@ -41,7 +37,7 @@ const newUser = async(req, res) => {
         logger.info('Init transaction query');
 
         // Insert into db new user
-        // TODO -- Check format date 
+        // TODO -- Check format date
         let { insertId } = await registerNewUser(email.toLowerCase(), name.toLowerCase(), surname.toLowerCase(), professional_profile.toLowerCase(), rol.toLowerCase(), passwordEncrypt, validationCode, profile_picture);
 
         let link = `http://${process.env.PUBLIC_DOMAIN}/user/validate/${insertId}/${validationCode}`;

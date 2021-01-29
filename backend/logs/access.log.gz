@@ -1949,3 +1949,163 @@
 2021-01-29 -- 13:25:27:2527 -- error: Table 'portal_hack.admin' doesn't exist
 2021-01-29 -- 13:25:27:2527 -- http: POST -- /createhackathon -- 38772a09-b676-4c06-a6bd-7f00bdcf3448 -- 401 -- 50 - 5.591 ms
 >>>>>>> 36ed08d3d3937c1a8caaa5a059d2efcdea3f6439
+2021-01-29 -- 19:55:42:5542 -- info: listening on port 3000
+2021-01-29 -- 20:34:05:345 -- info: listening on port 3000
+2021-01-29 -- 20:34:34:3434 -- error: The surname entered is not valid
+2021-01-29 -- 20:34:34:3434 -- http: POST -- /register -- 021f3929-c4e7-497d-a657-f02641df9bc9 -- 500 -- 32 - 15.557 ms
+2021-01-29 -- 20:35:00:350 -- error: jwt expired
+2021-01-29 -- 20:35:00:350 -- http: POST -- /admin/newUser?= -- a3763a73-37ff-499c-94eb-bd9bd11f7a94 -- 401 -- 22 - 6.546 ms
+2021-01-29 -- 20:35:17:3517 -- warn: 404 Router not found
+2021-01-29 -- 20:35:17:3517 -- http: POST -- /resgister -- 43801d2c-6606-4982-ae47-4813980cc740 -- 404 -- 30 - 1.976 ms
+2021-01-29 -- 20:35:25:3525 -- error: Access denied for user 'demo'@'localhost' (using password: YES)
+2021-01-29 -- 20:35:25:3525 -- error: undefined
+2021-01-29 -- 20:35:25:3525 -- error: 
+2021-01-29 -- 20:35:25:3525 -- http: POST -- /register -- 72b60cd7-6b9a-454e-9cf0-2e4b8a729cc4 -- 401 -- 0 - 92.394 ms
+2021-01-29 -- 20:35:41:3541 -- error: Access denied for user 'demo'@'localhost' (using password: YES)
+2021-01-29 -- 20:35:41:3541 -- error: undefined
+2021-01-29 -- 20:35:41:3541 -- error: 
+2021-01-29 -- 20:35:41:3541 -- http: POST -- /register -- 2f45be3f-f5fc-4066-9470-9aac45edad9d -- 401 -- 0 - 7.974 ms
+2021-01-29 -- 20:37:55:3755 -- info: listening on port 3000
+2021-01-29 -- 20:37:57:3757 -- error: Unknown database 'portal_hackathon'
+2021-01-29 -- 20:37:57:3757 -- error: undefined
+2021-01-29 -- 20:37:57:3757 -- error: 
+2021-01-29 -- 20:37:57:3757 -- http: POST -- /register -- 03c64c29-a53d-46f8-814f-1ceb76a2f2f9 -- 401 -- 0 - 63.470 ms
+2021-01-29 -- 20:38:34:3834 -- info: listening on port 3000
+2021-01-29 -- 20:38:37:3837 -- debug: The user not exist in db, he can register now
+2021-01-29 -- 20:38:38:3838 -- info: Init transaction query
+2021-01-29 -- 20:38:39:3839 -- info: Commit
+2021-01-29 -- 20:38:39:3839 -- debug: Register new user sucessfull
+2021-01-29 -- 20:38:39:3839 -- http: POST -- /register -- a6235abe-e55f-4a18-a001-b52f73a04d73 -- 200 -- 30 - 1780.529 ms
+2021-01-29 -- 20:39:39:3939 -- info: start transaction
+2021-01-29 -- 20:39:39:3939 -- debug: Code exist in database, ok
+2021-01-29 -- 20:39:39:3939 -- info: commit
+2021-01-29 -- 20:39:39:3939 -- info: start transaction
+2021-01-29 -- 20:39:39:3939 -- debug: Update state is successfully
+2021-01-29 -- 20:39:39:3939 -- info: commit
+2021-01-29 -- 20:39:39:3939 -- http: POST -- /user/validate/1/sdWt4OFPeMleunrmLapLBYAsnexEPJrqwgC23hQa -- fd75fd62-a758-4b3c-ba99-4231577594dd -- 200 -- 39 - 45.281 ms
+2021-01-29 -- 20:39:51:3951 -- debug: Login OK
+2021-01-29 -- 20:39:51:3951 -- http: POST -- /login -- 1 -- 200 -- 208 - 107.923 ms
+2021-01-29 -- 20:43:07:437 -- info: Is organizer and state ACTIVE
+2021-01-29 -- 20:43:07:437 -- info: rollback
+2021-01-29 -- 20:43:07:437 -- error:  Error in create new a hackathon: The name of hackathon is not valid 
+2021-01-29 -- 20:43:07:437 -- http: POST -- /createhackathon -- 1 -- 500 -- 80 - 19.378 ms
+2021-01-29 -- 20:43:32:4332 -- info: Is organizer and state ACTIVE
+2021-01-29 -- 20:43:32:4332 -- info: rollback
+2021-01-29 -- 20:43:32:4332 -- error:  Error in create new a hackathon: The valid values of place are: online, presencial, semipresencial 
+2021-01-29 -- 20:43:32:4332 -- http: POST -- /createhackathon -- 1 -- 500 -- 111 - 21.288 ms
+2021-01-29 -- 20:43:46:4346 -- info: Is organizer and state ACTIVE
+2021-01-29 -- 20:43:46:4346 -- info: rollback
+2021-01-29 -- 20:43:46:4346 -- error:  Error in create new a hackathon: The status of hackathon is not valid, that has the following format: pendicente, realziado o cancelado 
+2021-01-29 -- 20:43:46:4346 -- http: POST -- /createhackathon -- 1 -- 500 -- 148 - 12.431 ms
+2021-01-29 -- 20:44:02:442 -- info: Is organizer and state ACTIVE
+2021-01-29 -- 20:44:02:442 -- info: rollback
+2021-01-29 -- 20:44:02:442 -- error:  Error in create new a hackathon: The info of hackathon is not valid 
+2021-01-29 -- 20:44:02:442 -- http: POST -- /createhackathon -- 1 -- 500 -- 80 - 15.166 ms
+2021-01-29 -- 20:44:17:4417 -- info: Is organizer and state ACTIVE
+2021-01-29 -- 20:44:17:4417 -- debug: Validate fields ok!!
+2021-01-29 -- 20:44:17:4417 -- info: Init transaction query
+2021-01-29 -- 20:44:17:4417 -- error: Column 'cover_picture' cannot be null
+2021-01-29 -- 20:44:17:4417 -- info: rollback
+2021-01-29 -- 20:44:17:4417 -- error:  Error in create new a hackathon: Column 'cover_picture' cannot be null 
+2021-01-29 -- 20:44:17:4417 -- http: POST -- /createhackathon -- 1 -- 500 -- 83 - 26.717 ms
+2021-01-29 -- 20:44:31:4431 -- info: Is organizer and state ACTIVE
+2021-01-29 -- 20:44:31:4431 -- debug: Validate fields ok!!
+2021-01-29 -- 20:44:31:4431 -- info: Init transaction query
+2021-01-29 -- 20:44:32:4432 -- debug: Insert into tables tech and hackathon_tech OK!!
+2021-01-29 -- 20:44:32:4432 -- debug: Insert into tables lin and hackathon_link OK!!
+2021-01-29 -- 20:44:32:4432 -- info: commit
+2021-01-29 -- 20:44:32:4432 -- debug: Create new hackathon successfully
+2021-01-29 -- 20:44:32:4432 -- http: POST -- /createhackathon -- 1 -- 200 -- 33 - 50.401 ms
+2021-01-29 -- 21:04:00:40 -- warn: 404 Router not found
+2021-01-29 -- 21:04:00:40 -- http: GET -- /validate/ -- 61a851a8-eb6d-4ec3-a77e-d6c748a0fa66 -- 404 -- 30 - 10.190 ms
+2021-01-29 -- 21:09:35:935 -- info: listening on port 3000
+2021-01-29 -- 21:10:05:105 -- warn: 404 Router not found
+2021-01-29 -- 21:10:05:105 -- http: POST -- //hackathon/1/enroll -- 6cface3a-34b2-4257-9e43-c100475c318b -- 404 -- 30 - 9.761 ms
+2021-01-29 -- 21:10:42:1042 -- warn: 404 Router not found
+2021-01-29 -- 21:10:42:1042 -- http: POST -- //hackathon/1/enroll -- b715fdc4-fca8-47a9-aab9-ee93c28cb506 -- 404 -- 30 - 1.485 ms
+2021-01-29 -- 21:11:03:113 -- info: listening on port 3000
+2021-01-29 -- 21:11:10:1110 -- warn: 404 Router not found
+2021-01-29 -- 21:11:10:1110 -- http: POST -- //hackathon/1/enroll -- 22337409-24f9-4209-bc22-6c715911fe33 -- 404 -- 30 - 7.451 ms
+2021-01-29 -- 21:11:59:1159 -- info: listening on port 3000
+2021-01-29 -- 21:12:03:123 -- info: Rollback query
+2021-01-29 -- 21:12:03:123 -- error:  Error in enrroll a hackathon: The  inscription status entered is not valid 
+2021-01-29 -- 21:12:03:123 -- http: POST -- /hackathon/1/enroll -- 0dcdcb6d-1f02-4e05-9ee2-22bf82fbabf6 -- 500 -- 87 - 69.629 ms
+2021-01-29 -- 21:12:48:1248 -- info: Rollback query
+2021-01-29 -- 21:12:48:1248 -- error:  Error in enrroll a hackathon: The  inscription status entered is not valid 
+2021-01-29 -- 21:12:48:1248 -- http: POST -- /hackathon/1/enroll -- ea98e3f4-e96a-41b7-94f7-104b34712dd4 -- 500 -- 87 - 10.079 ms
+2021-01-29 -- 21:13:16:1316 -- info: Rollback query
+2021-01-29 -- 21:13:16:1316 -- error:  Error in enrroll a hackathon: The  inscription status entered is not valid 
+2021-01-29 -- 21:13:16:1316 -- http: POST -- /hackathon/1/enroll -- ec1fdf79-ef33-4603-9a0a-3bcb04346ebe -- 500 -- 87 - 7.122 ms
+2021-01-29 -- 21:14:02:142 -- info: listening on port 3000
+2021-01-29 -- 21:14:05:145 -- debug: Validate fields ok!!
+2021-01-29 -- 21:14:05:145 -- info: Init transaction query
+2021-01-29 -- 21:14:05:145 -- error: Unknown column 'BOOKING_CODE_LEN' in 'field list'
+2021-01-29 -- 21:14:05:145 -- info: Rollback query
+2021-01-29 -- 21:14:05:145 -- error:  Error in enrroll a hackathon: Unknown column 'BOOKING_CODE_LEN' in 'field list' 
+2021-01-29 -- 21:14:05:145 -- http: POST -- /hackathon/1/enroll -- 8114d745-25e0-4c6e-a195-e92f11afe2f1 -- 500 -- 92 - 72.255 ms
+2021-01-29 -- 21:15:09:159 -- info: listening on port 3000
+2021-01-29 -- 21:15:12:1512 -- debug: Validate fields ok!!
+2021-01-29 -- 21:15:12:1512 -- info: Init transaction query
+2021-01-29 -- 21:15:12:1512 -- error: Column 'inscription_status' cannot be null
+2021-01-29 -- 21:15:12:1512 -- info: Rollback query
+2021-01-29 -- 21:15:12:1512 -- error:  Error in enrroll a hackathon: Column 'inscription_status' cannot be null 
+2021-01-29 -- 21:15:12:1512 -- http: POST -- /hackathon/1/enroll -- 55b92733-cf27-41ed-86a9-13af098db63d -- 500 -- 85 - 134.982 ms
+2021-01-29 -- 21:17:01:171 -- info: listening on port 3000
+2021-01-29 -- 21:17:04:174 -- info: Rollback query
+2021-01-29 -- 21:17:04:174 -- error:  Error in enrroll a hackathon: The  inscription status entered is not valid 
+2021-01-29 -- 21:17:04:174 -- http: POST -- /hackathon/1/enroll -- 2da97ac1-3921-4246-b61c-2ced2844b30e -- 500 -- 87 - 63.600 ms
+2021-01-29 -- 21:17:41:1741 -- info: listening on port 3000
+2021-01-29 -- 21:17:45:1745 -- debug: Validate fields ok!!
+2021-01-29 -- 21:17:45:1745 -- info: Init transaction query
+2021-01-29 -- 21:17:46:1746 -- info: commit
+2021-01-29 -- 21:17:57:1757 -- http: POST -- /hackathon/1/enroll -- 258a3950-2e28-4a13-95ce-add7ef12b09e -- - -- - - - ms
+2021-01-29 -- 21:19:41:1941 -- info: listening on port 3000
+2021-01-29 -- 21:19:44:1944 -- debug: Validate fields ok!!
+2021-01-29 -- 21:19:44:1944 -- info: Init transaction query
+2021-01-29 -- 21:19:44:1944 -- error: Duplicate entry '1-1' for key 'PRIMARY'
+2021-01-29 -- 21:19:44:1944 -- info: Rollback query
+2021-01-29 -- 21:19:44:1944 -- error:  Error in enrroll a hackathon: Duplicate entry '1-1' for key 'PRIMARY' 
+2021-01-29 -- 21:19:44:1944 -- http: POST -- /hackathon/1/enroll -- 9a2bbe0a-5c3a-4a5e-9c28-d998c7c58dba -- 500 -- 82 - 112.659 ms
+2021-01-29 -- 21:20:12:2012 -- error: The surname entered is not valid
+2021-01-29 -- 21:20:12:2012 -- http: POST -- /register -- d1f3b7f2-fac1-4a52-b2c1-0cdfb1a2efb7 -- 500 -- 32 - 8.317 ms
+2021-01-29 -- 21:20:35:2035 -- info: User does not exist in the db
+2021-01-29 -- 21:20:35:2035 -- http: POST -- /login -- c36fcc74-81e2-4368-ad6d-3f05d1a46480 -- 401 -- 40 - 13.337 ms
+2021-01-29 -- 21:20:43:2043 -- debug: The user not exist in db, he can register now
+2021-01-29 -- 21:20:43:2043 -- info: Init transaction query
+2021-01-29 -- 21:20:43:2043 -- info: Commit
+2021-01-29 -- 21:20:43:2043 -- debug: Register new user sucessfull
+2021-01-29 -- 21:20:43:2043 -- http: POST -- /register -- 00079bb5-c370-40f2-afeb-6f1c1f7f11c4 -- 200 -- 30 - 641.032 ms
+2021-01-29 -- 21:21:16:2116 -- warn: 404 Router not found
+2021-01-29 -- 21:21:16:2116 -- http: GET -- /user/validate/2/CwW7AogD9FWg15yxYoHtOpm7tlxPpjocCWCsdGOC -- 064cc89a-0fa9-4383-ad6d-2989009c094f -- 404 -- 30 - 6.394 ms
+2021-01-29 -- 21:21:39:2139 -- info: start transaction
+2021-01-29 -- 21:21:39:2139 -- debug: Code exist in database, ok
+2021-01-29 -- 21:21:39:2139 -- info: commit
+2021-01-29 -- 21:21:39:2139 -- info: start transaction
+2021-01-29 -- 21:21:39:2139 -- debug: Update state is successfully
+2021-01-29 -- 21:21:39:2139 -- info: commit
+2021-01-29 -- 21:21:39:2139 -- http: POST -- /user/validate/2/CwW7AogD9FWg15yxYoHtOpm7tlxPpjocCWCsdGOC -- 8a0892b3-c8ce-479e-9b85-55219a3dea9b -- 200 -- 39 - 28.381 ms
+2021-01-29 -- 21:23:19:2319 -- debug: Login OK
+2021-01-29 -- 21:23:19:2319 -- http: POST -- /login -- 2 -- 200 -- 213 - 123.552 ms
+2021-01-29 -- 21:23:41:2341 -- debug: Validate fields ok!!
+2021-01-29 -- 21:23:41:2341 -- info: Init transaction query
+2021-01-29 -- 21:23:41:2341 -- info: commit
+2021-01-29 -- 21:23:41:2341 -- debug: Register in hackathon sucessfull
+2021-01-29 -- 21:23:41:2341 -- http: POST -- /hackathon/1/enroll -- f5654c73-3e1c-44f5-a8a2-80f050e57fa1 -- 200 -- 34 - 490.766 ms
+2021-01-29 -- 21:24:25:2425 -- warn: 404 Router not found
+2021-01-29 -- 21:24:25:2425 -- http: GET -- /user/validate/2/CwW7AogD9FWg15yxYoHtOpm7tlxPpjocCWCsdGOC -- 46f6db4a-0c43-4969-8984-a1233221fbf6 -- 404 -- 30 - 1.568 ms
+2021-01-29 -- 21:27:03:273 -- info: Is organizer and state ACTIVE
+2021-01-29 -- 21:27:03:273 -- debug: Validate fields ok!!
+2021-01-29 -- 21:27:03:273 -- info: Init transaction query
+2021-01-29 -- 21:27:03:273 -- debug: Insert into tables tech and hackathon_tech OK!!
+2021-01-29 -- 21:27:03:273 -- debug: Insert into tables lin and hackathon_link OK!!
+2021-01-29 -- 21:27:03:273 -- info: commit
+2021-01-29 -- 21:27:03:273 -- debug: Create new hackathon successfully
+2021-01-29 -- 21:27:03:273 -- http: POST -- /createhackathon -- 2 -- 200 -- 33 - 134.849 ms
+2021-01-29 -- 21:27:09:279 -- info: Is organizer and state ACTIVE
+2021-01-29 -- 21:27:09:279 -- debug: Validate fields ok!!
+2021-01-29 -- 21:27:09:279 -- info: Init transaction query
+2021-01-29 -- 21:27:09:279 -- debug: Insert into tables tech and hackathon_tech OK!!
+2021-01-29 -- 21:27:09:279 -- debug: Insert into tables lin and hackathon_link OK!!
+2021-01-29 -- 21:27:09:279 -- info: commit
+2021-01-29 -- 21:27:09:279 -- debug: Create new hackathon successfully
+2021-01-29 -- 21:27:09:279 -- http: POST -- /createhackathon -- 2 -- 200 -- 33 - 55.202 ms
