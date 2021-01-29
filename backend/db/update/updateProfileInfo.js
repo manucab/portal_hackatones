@@ -44,8 +44,8 @@ const updateProfileInfo = async (
       professional_profile,
       rol,
       newPassword,
-      id,
-      profile_picture
+      profile_picture,
+      id
     ];
   
     result = await performQuery(query, params);
