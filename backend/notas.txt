@@ -2,7 +2,5 @@
 
 // SELECT * FROM `table` WHERE LOWER(`Value`) = LOWER("IAreSavage")
 
-0. Email con reserva del code inscripcion al hackathon
 1. welcom email
 2. rotate files
-3. Inscribirse a hackathon

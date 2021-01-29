@@ -236,3 +236,27 @@
 2021-01-29 -- 21:19:44:1944 -- error: Duplicate entry '1-1' for key 'PRIMARY'
 2021-01-29 -- 21:19:44:1944 -- error:  Error in enrroll a hackathon: Duplicate entry '1-1' for key 'PRIMARY' 
 2021-01-29 -- 21:20:12:2012 -- error: The surname entered is not valid
+2021-01-29 -- 23:06:18:618 -- error: utils is not defined
+2021-01-29 -- 23:07:04:74 -- error: Cannot read property 'code' of undefined
+2021-01-29 -- 23:07:53:753 -- error: Cannot read property 'code' of undefined
+2021-01-29 -- 23:10:56:1056 -- error: Cannot add or update a child row: a foreign key constraint fails (`portal_hack`.`hackathon`, CONSTRAINT `hackaton_fk1` FOREIGN KEY (`id_organizer`) REFERENCES `competitor` (`id`) ON DELETE CASCADE)
+2021-01-29 -- 23:10:56:1056 -- error:  Error in create new a hackathon: Cannot add or update a child row: a foreign key constraint fails (`portal_hack`.`hackathon`, CONSTRAINT `hackaton_fk1` FOREIGN KEY (`id_organizer`) REFERENCES `competitor` (`id`) ON DELETE CASCADE) 
+2021-01-29 -- 23:12:59:1259 -- error:  Error in enrroll a hackathon: The  inscription status entered is not valid 
+2021-01-29 -- 23:20:10:2010 -- error: Cannot add or update a child row: a foreign key constraint fails (`portal_hack`.`competitor_hackathon`, CONSTRAINT `competitor_hackathon_fk2` FOREIGN KEY (`id_hackathon`) REFERENCES `hackathon` (`id`) ON DELETE CASCADE)
+2021-01-29 -- 23:20:10:2010 -- error:  Error in enrroll a hackathon: Cannot add or update a child row: a foreign key constraint fails (`portal_hack`.`competitor_hackathon`, CONSTRAINT `competitor_hackathon_fk2` FOREIGN KEY (`id_hackathon`) REFERENCES `hackathon` (`id`) ON DELETE CASCADE) 
+2021-01-29 -- 23:20:16:2016 -- error: Cannot add or update a child row: a foreign key constraint fails (`portal_hack`.`competitor_hackathon`, CONSTRAINT `competitor_hackathon_fk2` FOREIGN KEY (`id_hackathon`) REFERENCES `hackathon` (`id`) ON DELETE CASCADE)
+2021-01-29 -- 23:20:16:2016 -- error:  Error in enrroll a hackathon: Cannot add or update a child row: a foreign key constraint fails (`portal_hack`.`competitor_hackathon`, CONSTRAINT `competitor_hackathon_fk2` FOREIGN KEY (`id_hackathon`) REFERENCES `hackathon` (`id`) ON DELETE CASCADE) 
+2021-01-29 -- 23:20:19:2019 -- error: Cannot add or update a child row: a foreign key constraint fails (`portal_hack`.`competitor_hackathon`, CONSTRAINT `competitor_hackathon_fk2` FOREIGN KEY (`id_hackathon`) REFERENCES `hackathon` (`id`) ON DELETE CASCADE)
+2021-01-29 -- 23:20:19:2019 -- error:  Error in enrroll a hackathon: Cannot add or update a child row: a foreign key constraint fails (`portal_hack`.`competitor_hackathon`, CONSTRAINT `competitor_hackathon_fk2` FOREIGN KEY (`id_hackathon`) REFERENCES `hackathon` (`id`) ON DELETE CASCADE) 
+2021-01-29 -- 23:20:22:2022 -- error: Duplicate entry '5-5' for key 'PRIMARY'
+2021-01-29 -- 23:20:22:2022 -- error:  Error in enrroll a hackathon: Duplicate entry '5-5' for key 'PRIMARY' 
+2021-01-29 -- 23:20:25:2025 -- error: Cannot add or update a child row: a foreign key constraint fails (`portal_hack`.`competitor_hackathon`, CONSTRAINT `competitor_hackathon_fk2` FOREIGN KEY (`id_hackathon`) REFERENCES `hackathon` (`id`) ON DELETE CASCADE)
+2021-01-29 -- 23:20:25:2025 -- error:  Error in enrroll a hackathon: Cannot add or update a child row: a foreign key constraint fails (`portal_hack`.`competitor_hackathon`, CONSTRAINT `competitor_hackathon_fk2` FOREIGN KEY (`id_hackathon`) REFERENCES `hackathon` (`id`) ON DELETE CASCADE) 
+2021-01-29 -- 23:21:02:212 -- error: Cannot add or update a child row: a foreign key constraint fails (`portal_hack`.`competitor_hackathon`, CONSTRAINT `competitor_hackathon_fk2` FOREIGN KEY (`id_hackathon`) REFERENCES `hackathon` (`id`) ON DELETE CASCADE)
+2021-01-29 -- 23:21:02:212 -- error:  Error in enrroll a hackathon: Cannot add or update a child row: a foreign key constraint fails (`portal_hack`.`competitor_hackathon`, CONSTRAINT `competitor_hackathon_fk2` FOREIGN KEY (`id_hackathon`) REFERENCES `hackathon` (`id`) ON DELETE CASCADE) 
+2021-01-29 -- 23:21:06:216 -- error: Cannot add or update a child row: a foreign key constraint fails (`portal_hack`.`competitor_hackathon`, CONSTRAINT `competitor_hackathon_fk2` FOREIGN KEY (`id_hackathon`) REFERENCES `hackathon` (`id`) ON DELETE CASCADE)
+2021-01-29 -- 23:21:06:216 -- error:  Error in enrroll a hackathon: Cannot add or update a child row: a foreign key constraint fails (`portal_hack`.`competitor_hackathon`, CONSTRAINT `competitor_hackathon_fk2` FOREIGN KEY (`id_hackathon`) REFERENCES `hackathon` (`id`) ON DELETE CASCADE) 
+2021-01-29 -- 23:21:09:219 -- error: Duplicate entry '5-1' for key 'PRIMARY'
+2021-01-29 -- 23:21:09:219 -- error:  Error in enrroll a hackathon: Duplicate entry '5-1' for key 'PRIMARY' 
+2021-01-29 -- 23:21:11:2111 -- error: Duplicate entry '5-5' for key 'PRIMARY'
+2021-01-29 -- 23:21:11:2111 -- error:  Error in enrroll a hackathon: Duplicate entry '5-5' for key 'PRIMARY' 

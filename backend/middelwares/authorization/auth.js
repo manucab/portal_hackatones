@@ -127,7 +127,7 @@ const isUser = async(req, res, next) => {
     let msgInfo = '';
 
     // 1. Get params
-    const { email, password } = req.body || req.body;
+    const { email, password } = req.body;
 
     try {
 

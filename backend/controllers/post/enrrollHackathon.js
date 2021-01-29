@@ -47,7 +47,6 @@ console.log(id_competitor, id_hackathon, inscription_status, id_booking);
 await insertNewParticipation(id_competitor, id_hackathon, inscription_status, id_booking);
 
     // 5. Send email with boooking code and other info of hackathon
-    // 4. Send email to confirm count
     await utils.sendCodeBooking(email, id_booking);
 
     // Commit mysql

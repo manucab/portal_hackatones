@@ -2,6 +2,7 @@
 const { updateStateUser } = require('../../db/adminRoot/db_update');
 const { performQuery } = require('../../db/performQuery');
 const { logger } = require("../../app/config/logger");
+const utils = require('../../utils/utils');
 
 const activeUser = async(req, res) => {
 
@@ -11,6 +12,11 @@ const activeUser = async(req, res) => {
 
     // 1. Get code params
     const { id } = req.params;
+
+    const {email} = req.body;
+
+
+    console.log(email)
 
     try {
 
@@ -26,17 +32,22 @@ const activeUser = async(req, res) => {
 
         logger.debug(msgInfo);
 
+        // TODO -- send email welcome
+        // 5. Send emaiL welcome
+     await utils.sendWelcome(email, '');
+
         // Commit mysql
         query = 'commit';
         await performQuery(query, params);
         logger.info(query);
 
-        // TODO -- send email welcome
+
 
         res.json({ info: msgInfo });
 
     } catch (e) {
 
+console.log(e)
         // Rollback mysql
         query = 'rollback';
         await performQuery(query, params);

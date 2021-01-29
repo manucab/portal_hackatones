@@ -2109,3 +2109,170 @@
 2021-01-29 -- 21:27:09:279 -- info: commit
 2021-01-29 -- 21:27:09:279 -- debug: Create new hackathon successfully
 2021-01-29 -- 21:27:09:279 -- http: POST -- /createhackathon -- 2 -- 200 -- 33 - 55.202 ms
+2021-01-29 -- 22:59:27:5927 -- info: listening on port 3000
+2021-01-29 -- 23:03:12:312 -- debug: The user not exist in db, he can register now
+2021-01-29 -- 23:03:12:312 -- info: Init transaction query
+2021-01-29 -- 23:03:13:313 -- info: Commit
+2021-01-29 -- 23:03:13:313 -- debug: Register new user sucessfull
+2021-01-29 -- 23:03:13:313 -- http: POST -- /register -- 1608b5a6-f667-44c4-9a64-8b5236f6e73a -- 200 -- 30 - 1323.273 ms
+2021-01-29 -- 23:03:39:339 -- warn: 404 Router not found
+2021-01-29 -- 23:03:39:339 -- http: GET -- /validate/ -- 41685b0c-018a-43e8-894a-db1c3e535925 -- 404 -- 30 - 2.258 ms
+2021-01-29 -- 23:05:26:526 -- info: listening on port 3000
+2021-01-29 -- 23:05:35:535 -- debug: The user not exist in db, he can register now
+2021-01-29 -- 23:05:35:535 -- info: Init transaction query
+2021-01-29 -- 23:05:36:536 -- info: Commit
+2021-01-29 -- 23:05:36:536 -- debug: Register new user sucessfull
+2021-01-29 -- 23:05:36:536 -- http: POST -- /register -- 33a84e87-a494-4966-8bc4-39caf1f3418b -- 200 -- 30 - 795.090 ms
+2021-01-29 -- 23:05:50:550 -- warn: 404 Router not found
+2021-01-29 -- 23:05:50:550 -- http: GET -- /user/validate/4/wJrG3wd5vuZv24veDUXbgFJtFYr4eDwEu2yOCnmE -- 88e7148e-e412-4a4d-9c52-44dbdd2ce787 -- 404 -- 30 - 3.085 ms
+2021-01-29 -- 23:06:04:64 -- warn: 404 Router not found
+2021-01-29 -- 23:06:04:64 -- http: GET -- /user/validate/4/wJrG3wd5vuZv24veDUXbgFJtFYr4eDwEu2yOCnmE -- ff33bceb-7b1a-4bab-8fb6-bef07b336392 -- 404 -- 30 - 1.457 ms
+2021-01-29 -- 23:06:18:618 -- info: start transaction
+2021-01-29 -- 23:06:18:618 -- debug: Code exist in database, ok
+2021-01-29 -- 23:06:18:618 -- info: commit
+2021-01-29 -- 23:06:18:618 -- info: start transaction
+2021-01-29 -- 23:06:18:618 -- debug: Update state is successfully
+2021-01-29 -- 23:06:18:618 -- info: commit
+2021-01-29 -- 23:06:18:618 -- info: rollback
+2021-01-29 -- 23:06:18:618 -- error: utils is not defined
+2021-01-29 -- 23:06:18:618 -- http: POST -- /user/validate/4/wJrG3wd5vuZv24veDUXbgFJtFYr4eDwEu2yOCnmE -- e22899d2-a5c7-483b-98f8-c201fdb743d9 -- 401 -- 20 - 28.253 ms
+2021-01-29 -- 23:06:58:658 -- info: listening on port 3000
+2021-01-29 -- 23:07:04:74 -- info: start transaction
+2021-01-29 -- 23:07:04:74 -- info: rollback
+2021-01-29 -- 23:07:04:74 -- error: Cannot read property 'code' of undefined
+2021-01-29 -- 23:07:04:74 -- http: POST -- /user/validate/4/wJrG3wd5vuZv24veDUXbgFJtFYr4eDwEu2yOCnmE -- 11fcc05e-11e7-46a4-b847-15e9c564a292 -- 401 -- 40 - 56.299 ms
+2021-01-29 -- 23:07:43:743 -- info: listening on port 3000
+2021-01-29 -- 23:07:53:753 -- info: start transaction
+2021-01-29 -- 23:07:53:753 -- info: rollback
+2021-01-29 -- 23:07:53:753 -- error: Cannot read property 'code' of undefined
+2021-01-29 -- 23:07:53:753 -- http: POST -- /user/validate/4/wJrG3wd5vuZv24veDUXbgFJtFYr4eDwEu2yOCnmE -- fd6e9347-5f72-40d6-9906-c96e23e79d4a -- 401 -- 40 - 69.996 ms
+2021-01-29 -- 23:09:22:922 -- info: listening on port 3000
+2021-01-29 -- 23:09:41:941 -- debug: The user not exist in db, he can register now
+2021-01-29 -- 23:09:42:942 -- info: Init transaction query
+2021-01-29 -- 23:09:42:942 -- info: Commit
+2021-01-29 -- 23:09:42:942 -- debug: Register new user sucessfull
+2021-01-29 -- 23:09:42:942 -- http: POST -- /register -- f45dc986-62ad-4416-a874-b65d0056490d -- 200 -- 30 - 872.055 ms
+2021-01-29 -- 23:10:01:101 -- warn: 404 Router not found
+2021-01-29 -- 23:10:01:101 -- http: GET -- /user/validate/5/O7HdQd0nGOzhdaIWwNSXpAxDT0ZEp7i18JiLtnzQ -- 63e04c71-3181-4c7b-8d11-868eca09d4a6 -- 404 -- 30 - 5.182 ms
+2021-01-29 -- 23:10:21:1021 -- info: start transaction
+2021-01-29 -- 23:10:21:1021 -- debug: Code exist in database, ok
+2021-01-29 -- 23:10:21:1021 -- info: commit
+2021-01-29 -- 23:10:21:1021 -- info: start transaction
+2021-01-29 -- 23:10:21:1021 -- debug: Update state is successfully
+2021-01-29 -- 23:10:22:1022 -- info: commit
+2021-01-29 -- 23:10:22:1022 -- http: POST -- /user/validate/5/O7HdQd0nGOzhdaIWwNSXpAxDT0ZEp7i18JiLtnzQ -- b51a723e-4fb8-442a-bf71-34c02a6407c6 -- 200 -- 39 - 391.967 ms
+2021-01-29 -- 23:10:56:1056 -- info: Is organizer and state ACTIVE
+2021-01-29 -- 23:10:56:1056 -- debug: Validate fields ok!!
+2021-01-29 -- 23:10:56:1056 -- info: Init transaction query
+2021-01-29 -- 23:10:56:1056 -- error: Cannot add or update a child row: a foreign key constraint fails (`portal_hack`.`hackathon`, CONSTRAINT `hackaton_fk1` FOREIGN KEY (`id_organizer`) REFERENCES `competitor` (`id`) ON DELETE CASCADE)
+2021-01-29 -- 23:10:56:1056 -- info: rollback
+2021-01-29 -- 23:10:56:1056 -- error:  Error in create new a hackathon: Cannot add or update a child row: a foreign key constraint fails (`portal_hack`.`hackathon`, CONSTRAINT `hackaton_fk1` FOREIGN KEY (`id_organizer`) REFERENCES `competitor` (`id`) ON DELETE CASCADE) 
+2021-01-29 -- 23:10:56:1056 -- http: POST -- /createhackathon -- 5 -- 500 -- 243 - 46.360 ms
+2021-01-29 -- 23:11:40:1140 -- debug: Login OK
+2021-01-29 -- 23:11:40:1140 -- http: POST -- /login -- 5 -- 200 -- 213 - 114.779 ms
+2021-01-29 -- 23:11:58:1158 -- info: Is organizer and state ACTIVE
+2021-01-29 -- 23:11:58:1158 -- debug: Validate fields ok!!
+2021-01-29 -- 23:11:58:1158 -- info: Init transaction query
+2021-01-29 -- 23:11:58:1158 -- debug: Insert into tables tech and hackathon_tech OK!!
+2021-01-29 -- 23:11:58:1158 -- debug: Insert into tables lin and hackathon_link OK!!
+2021-01-29 -- 23:11:58:1158 -- info: commit
+2021-01-29 -- 23:11:58:1158 -- debug: Create new hackathon successfully
+2021-01-29 -- 23:11:58:1158 -- http: POST -- /createhackathon -- 5 -- 200 -- 33 - 36.453 ms
+2021-01-29 -- 23:12:59:1259 -- info: Rollback query
+2021-01-29 -- 23:12:59:1259 -- error:  Error in enrroll a hackathon: The  inscription status entered is not valid 
+2021-01-29 -- 23:12:59:1259 -- http: POST -- /hackathon/5/enroll -- d70f10e1-c0ca-405e-877c-9265818fd03b -- 500 -- 87 - 13.590 ms
+2021-01-29 -- 23:13:11:1311 -- debug: Validate fields ok!!
+2021-01-29 -- 23:13:11:1311 -- info: Init transaction query
+2021-01-29 -- 23:13:11:1311 -- info: commit
+2021-01-29 -- 23:13:11:1311 -- debug: Register in hackathon sucessfull
+2021-01-29 -- 23:13:11:1311 -- http: POST -- /hackathon/5/enroll -- 49e10d40-ddda-43b4-a784-836b6abdf04f -- 200 -- 34 - 580.313 ms
+2021-01-29 -- 23:18:06:186 -- info: listening on port 3000
+2021-01-29 -- 23:18:11:1811 -- debug: Validate fields ok!!
+2021-01-29 -- 23:18:11:1811 -- info: Init transaction query
+2021-01-29 -- 23:18:12:1812 -- info: commit
+2021-01-29 -- 23:18:12:1812 -- debug: Register in hackathon sucessfull
+2021-01-29 -- 23:18:12:1812 -- http: POST -- /hackathon/1/enroll -- 9abb7c85-df71-4619-9d10-fd19bb0f1470 -- 200 -- 34 - 716.028 ms
+2021-01-29 -- 23:19:59:1959 -- info: listening on port 3000
+2021-01-29 -- 23:20:10:2010 -- debug: Validate fields ok!!
+2021-01-29 -- 23:20:10:2010 -- info: Init transaction query
+2021-01-29 -- 23:20:10:2010 -- error: Cannot add or update a child row: a foreign key constraint fails (`portal_hack`.`competitor_hackathon`, CONSTRAINT `competitor_hackathon_fk2` FOREIGN KEY (`id_hackathon`) REFERENCES `hackathon` (`id`) ON DELETE CASCADE)
+2021-01-29 -- 23:20:10:2010 -- info: Rollback query
+2021-01-29 -- 23:20:10:2010 -- error:  Error in enrroll a hackathon: Cannot add or update a child row: a foreign key constraint fails (`portal_hack`.`competitor_hackathon`, CONSTRAINT `competitor_hackathon_fk2` FOREIGN KEY (`id_hackathon`) REFERENCES `hackathon` (`id`) ON DELETE CASCADE) 
+2021-01-29 -- 23:20:10:2010 -- http: POST -- /hackathon/2/enroll -- d278309c-5628-42f8-b091-ed7175967318 -- 500 -- 262 - 95.151 ms
+2021-01-29 -- 23:20:16:2016 -- debug: Validate fields ok!!
+2021-01-29 -- 23:20:16:2016 -- info: Init transaction query
+2021-01-29 -- 23:20:16:2016 -- error: Cannot add or update a child row: a foreign key constraint fails (`portal_hack`.`competitor_hackathon`, CONSTRAINT `competitor_hackathon_fk2` FOREIGN KEY (`id_hackathon`) REFERENCES `hackathon` (`id`) ON DELETE CASCADE)
+2021-01-29 -- 23:20:16:2016 -- info: Rollback query
+2021-01-29 -- 23:20:16:2016 -- error:  Error in enrroll a hackathon: Cannot add or update a child row: a foreign key constraint fails (`portal_hack`.`competitor_hackathon`, CONSTRAINT `competitor_hackathon_fk2` FOREIGN KEY (`id_hackathon`) REFERENCES `hackathon` (`id`) ON DELETE CASCADE) 
+2021-01-29 -- 23:20:16:2016 -- http: POST -- /hackathon/3/enroll -- 7ba43472-0e9f-4071-ad7f-9413bc021b09 -- 500 -- 262 - 21.301 ms
+2021-01-29 -- 23:20:19:2019 -- debug: Validate fields ok!!
+2021-01-29 -- 23:20:19:2019 -- info: Init transaction query
+2021-01-29 -- 23:20:19:2019 -- error: Cannot add or update a child row: a foreign key constraint fails (`portal_hack`.`competitor_hackathon`, CONSTRAINT `competitor_hackathon_fk2` FOREIGN KEY (`id_hackathon`) REFERENCES `hackathon` (`id`) ON DELETE CASCADE)
+2021-01-29 -- 23:20:19:2019 -- info: Rollback query
+2021-01-29 -- 23:20:19:2019 -- error:  Error in enrroll a hackathon: Cannot add or update a child row: a foreign key constraint fails (`portal_hack`.`competitor_hackathon`, CONSTRAINT `competitor_hackathon_fk2` FOREIGN KEY (`id_hackathon`) REFERENCES `hackathon` (`id`) ON DELETE CASCADE) 
+2021-01-29 -- 23:20:19:2019 -- http: POST -- /hackathon/4/enroll -- ce70d9a4-f371-48d2-8b86-98e5c9b8d2ee -- 500 -- 262 - 22.383 ms
+2021-01-29 -- 23:20:22:2022 -- debug: Validate fields ok!!
+2021-01-29 -- 23:20:22:2022 -- info: Init transaction query
+2021-01-29 -- 23:20:22:2022 -- error: Duplicate entry '5-5' for key 'PRIMARY'
+2021-01-29 -- 23:20:22:2022 -- info: Rollback query
+2021-01-29 -- 23:20:22:2022 -- error:  Error in enrroll a hackathon: Duplicate entry '5-5' for key 'PRIMARY' 
+2021-01-29 -- 23:20:22:2022 -- http: POST -- /hackathon/5/enroll -- 0c921ba4-85f9-45e3-b23e-aedfc87e4d60 -- 500 -- 82 - 18.176 ms
+2021-01-29 -- 23:20:25:2025 -- debug: Validate fields ok!!
+2021-01-29 -- 23:20:25:2025 -- info: Init transaction query
+2021-01-29 -- 23:20:25:2025 -- error: Cannot add or update a child row: a foreign key constraint fails (`portal_hack`.`competitor_hackathon`, CONSTRAINT `competitor_hackathon_fk2` FOREIGN KEY (`id_hackathon`) REFERENCES `hackathon` (`id`) ON DELETE CASCADE)
+2021-01-29 -- 23:20:25:2025 -- info: Rollback query
+2021-01-29 -- 23:20:25:2025 -- error:  Error in enrroll a hackathon: Cannot add or update a child row: a foreign key constraint fails (`portal_hack`.`competitor_hackathon`, CONSTRAINT `competitor_hackathon_fk2` FOREIGN KEY (`id_hackathon`) REFERENCES `hackathon` (`id`) ON DELETE CASCADE) 
+2021-01-29 -- 23:20:25:2025 -- http: POST -- /hackathon/6/enroll -- a225ffe7-ca41-466c-bbfc-c8e09d0ec235 -- 500 -- 262 - 22.128 ms
+2021-01-29 -- 23:20:44:2044 -- info: Is organizer and state ACTIVE
+2021-01-29 -- 23:20:44:2044 -- debug: Validate fields ok!!
+2021-01-29 -- 23:20:44:2044 -- info: Init transaction query
+2021-01-29 -- 23:20:44:2044 -- debug: Insert into tables tech and hackathon_tech OK!!
+2021-01-29 -- 23:20:44:2044 -- debug: Insert into tables lin and hackathon_link OK!!
+2021-01-29 -- 23:20:44:2044 -- info: commit
+2021-01-29 -- 23:20:44:2044 -- debug: Create new hackathon successfully
+2021-01-29 -- 23:20:44:2044 -- http: POST -- /createhackathon -- 5 -- 200 -- 33 - 109.358 ms
+2021-01-29 -- 23:20:46:2046 -- info: Is organizer and state ACTIVE
+2021-01-29 -- 23:20:46:2046 -- debug: Validate fields ok!!
+2021-01-29 -- 23:20:46:2046 -- info: Init transaction query
+2021-01-29 -- 23:20:46:2046 -- debug: Insert into tables tech and hackathon_tech OK!!
+2021-01-29 -- 23:20:46:2046 -- debug: Insert into tables lin and hackathon_link OK!!
+2021-01-29 -- 23:20:46:2046 -- info: commit
+2021-01-29 -- 23:20:46:2046 -- debug: Create new hackathon successfully
+2021-01-29 -- 23:20:46:2046 -- http: POST -- /createhackathon -- 5 -- 200 -- 33 - 29.450 ms
+2021-01-29 -- 23:20:47:2047 -- info: Is organizer and state ACTIVE
+2021-01-29 -- 23:20:47:2047 -- debug: Validate fields ok!!
+2021-01-29 -- 23:20:47:2047 -- info: Init transaction query
+2021-01-29 -- 23:20:47:2047 -- debug: Insert into tables tech and hackathon_tech OK!!
+2021-01-29 -- 23:20:48:2048 -- debug: Insert into tables lin and hackathon_link OK!!
+2021-01-29 -- 23:20:48:2048 -- info: commit
+2021-01-29 -- 23:20:48:2048 -- debug: Create new hackathon successfully
+2021-01-29 -- 23:20:48:2048 -- http: POST -- /createhackathon -- 5 -- 200 -- 33 - 39.119 ms
+2021-01-29 -- 23:21:02:212 -- debug: Validate fields ok!!
+2021-01-29 -- 23:21:02:212 -- info: Init transaction query
+2021-01-29 -- 23:21:02:212 -- error: Cannot add or update a child row: a foreign key constraint fails (`portal_hack`.`competitor_hackathon`, CONSTRAINT `competitor_hackathon_fk2` FOREIGN KEY (`id_hackathon`) REFERENCES `hackathon` (`id`) ON DELETE CASCADE)
+2021-01-29 -- 23:21:02:212 -- info: Rollback query
+2021-01-29 -- 23:21:02:212 -- error:  Error in enrroll a hackathon: Cannot add or update a child row: a foreign key constraint fails (`portal_hack`.`competitor_hackathon`, CONSTRAINT `competitor_hackathon_fk2` FOREIGN KEY (`id_hackathon`) REFERENCES `hackathon` (`id`) ON DELETE CASCADE) 
+2021-01-29 -- 23:21:02:212 -- http: POST -- /hackathon/3/enroll -- 71660c68-75cc-4aac-b6a3-8b1de6a3ba3d -- 500 -- 262 - 25.723 ms
+2021-01-29 -- 23:21:06:216 -- debug: Validate fields ok!!
+2021-01-29 -- 23:21:06:216 -- info: Init transaction query
+2021-01-29 -- 23:21:06:216 -- error: Cannot add or update a child row: a foreign key constraint fails (`portal_hack`.`competitor_hackathon`, CONSTRAINT `competitor_hackathon_fk2` FOREIGN KEY (`id_hackathon`) REFERENCES `hackathon` (`id`) ON DELETE CASCADE)
+2021-01-29 -- 23:21:06:216 -- info: Rollback query
+2021-01-29 -- 23:21:06:216 -- error:  Error in enrroll a hackathon: Cannot add or update a child row: a foreign key constraint fails (`portal_hack`.`competitor_hackathon`, CONSTRAINT `competitor_hackathon_fk2` FOREIGN KEY (`id_hackathon`) REFERENCES `hackathon` (`id`) ON DELETE CASCADE) 
+2021-01-29 -- 23:21:06:216 -- http: POST -- /hackathon/4/enroll -- 74cf11e6-17c0-4cb0-a39e-5a6620b33bc7 -- 500 -- 262 - 30.924 ms
+2021-01-29 -- 23:21:09:219 -- debug: Validate fields ok!!
+2021-01-29 -- 23:21:09:219 -- info: Init transaction query
+2021-01-29 -- 23:21:09:219 -- error: Duplicate entry '5-1' for key 'PRIMARY'
+2021-01-29 -- 23:21:09:219 -- info: Rollback query
+2021-01-29 -- 23:21:09:219 -- error:  Error in enrroll a hackathon: Duplicate entry '5-1' for key 'PRIMARY' 
+2021-01-29 -- 23:21:09:219 -- http: POST -- /hackathon/1/enroll -- 5a8269f1-594a-467e-b0c9-4b088af40924 -- 500 -- 82 - 12.486 ms
+2021-01-29 -- 23:21:11:2111 -- debug: Validate fields ok!!
+2021-01-29 -- 23:21:11:2111 -- info: Init transaction query
+2021-01-29 -- 23:21:11:2111 -- error: Duplicate entry '5-5' for key 'PRIMARY'
+2021-01-29 -- 23:21:11:2111 -- info: Rollback query
+2021-01-29 -- 23:21:11:2111 -- error:  Error in enrroll a hackathon: Duplicate entry '5-5' for key 'PRIMARY' 
+2021-01-29 -- 23:21:11:2111 -- http: POST -- /hackathon/5/enroll -- 2214bdb0-55f7-416a-8d52-db9bdfb5bb5c -- 500 -- 82 - 9.189 ms
+2021-01-29 -- 23:21:14:2114 -- debug: Validate fields ok!!
+2021-01-29 -- 23:21:14:2114 -- info: Init transaction query
+2021-01-29 -- 23:21:14:2114 -- info: commit
+2021-01-29 -- 23:21:14:2114 -- debug: Register in hackathon sucessfull
+2021-01-29 -- 23:21:14:2114 -- http: POST -- /hackathon/6/enroll -- 50433dc1-6a6d-47f9-8239-64cea7b2af6a -- 200 -- 34 - 765.424 ms
