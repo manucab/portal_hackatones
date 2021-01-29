@@ -2515,4 +2515,10 @@
 2021-01-29 -- 20:11:04:114 -- http: PUT -- /user/1/93/cancelbooking -- 77f66294-a57c-4f57-a528-8beaed048eee -- 401 -- 23 - 36.866 ms
 2021-01-29 -- 20:11:12:1112 -- http: PUT -- /user/1/1/cancelbooking -- cab4e5b4-cca8-4420-8d5b-f3831119371b -- 401 -- 23 - 5.153 ms
 2021-01-29 -- 20:11:18:1118 -- http: PUT -- /user/1/3/cancelbooking -- 71c26130-0cc7-4eec-9a2c-e92e364381fc -- 200 -- 29 - 203.713 ms
+<<<<<<< HEAD
+2021-01-29 -- 21:16:29:1629 -- info: listening on port 3000
+2021-01-29 -- 21:17:16:1716 -- info: Authorization failure, no token
+2021-01-29 -- 21:17:16:1716 -- http: PUT -- /user/1/1/rate -- 97935c16-e110-4c0d-baa8-7a5cb9b31d46 -- 401 -- 42 - 4.599 ms
+=======
 >>>>>>> 75a98159ffd2f140a42db5fc123e009f1711c553
+>>>>>>> 69d0be1ab4390feff7d553e03cb4f2b30b6694b0
