@@ -1,4 +1,4 @@
-const performQuery = require("../performQuery");
+const {performQuery} = require("../performQuery");
 
 const getCommentsByHackathon = async (idHackathon) => {
   const query = "select * from comment where id_hackathon=?";

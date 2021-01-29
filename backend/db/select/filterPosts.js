@@ -1,4 +1,4 @@
-const performQuery = require("../performQuery")
+const {performQuery} = require("../performQuery")
 
 const filterPosts = async(filter) => {
     const wordsInFilter = filter.trim().split(" ").length;

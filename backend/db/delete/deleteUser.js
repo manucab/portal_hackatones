@@ -1,4 +1,4 @@
-const performQuery = require("../performQuery")
+const {performQuery} = require("../performQuery")
 
 const deleteUser = async (id) => {
     const query = `

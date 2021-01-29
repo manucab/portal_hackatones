@@ -1,4 +1,4 @@
-const performQuery = require("../db/performQuery");
+const {performQuery} = require("../db/performQuery");
 
 
 const checkEmail = async (email) => {

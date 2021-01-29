@@ -2,7 +2,7 @@ const getIdsNewValuesTech = require("../../utils/getIdsNewValuesTech")
 const getIdsNewValuesLink = require("../../utils/getIdsNewValuesLink")
 
 const formatDate = require("../../utils/formatDate");
-const performQuery = require("../performQuery");
+const {performQuery} = require("../performQuery");
 
 const modifyHackathon = async (
   idUser,
@@ -15,7 +15,8 @@ const modifyHackathon = async (
   status,
   info,
   techs,
-  links
+  links,
+  cover_picture
 ) => {
   const queryOriginalInfo = `select * from hackathon where id = ?`;
   const paramsOriginalInfo = [idHackathon];
@@ -68,16 +69,18 @@ const modifyHackathon = async (
     start_date = ?,
     end_date = ?,
     hackathon_status =?,
-    hackathon_info = ?
+    hackathon_info = ?,
+    cover_picture = ?
     where id = ? and id_organizer = ?`;
   const params = [
-    name.toLowerCase() || originalInfo[0].hackathon_name,
-    place.toLowerCase() || originalInfo[0].hackathon_place,
-    city.toLowerCase() || originalInfo[0].city,
+    name() || originalInfo[0].hackathon_name,
+    place() || originalInfo[0].hackathon_place,
+    city() || originalInfo[0].city,
     start_date || formatDate(originalInfo[0].start_date),
     end_date || formatDate(originalInfo[0].end_date),
     status || originalInfo[0].hackathon_status,
     info || originalInfo[0].hackathon_info,
+    cover_picture || originalInfo[0].cover_picture,
     idHackathon,
     idUser,
   ];

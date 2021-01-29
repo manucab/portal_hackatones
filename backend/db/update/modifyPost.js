@@ -1,4 +1,4 @@
-const performQuery = require("../performQuery");
+const {performQuery} = require("../performQuery");
 
 const modifyPost = async (idPost, title, content, publication_date, hidden) => {
   const queryOriginalInfo = `select * from post where id = ?`;

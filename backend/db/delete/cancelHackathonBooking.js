@@ -1,4 +1,4 @@
-const performQuery = require("../performQuery")
+const {performQuery} = require("../performQuery")
 
 const cancelHackathonBooking = async (idUser, idHackathon) => {
   const query = `

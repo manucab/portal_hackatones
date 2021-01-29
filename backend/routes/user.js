@@ -15,17 +15,18 @@ const updateProfile = require('../controllers/update/updateProfileInfo')
 
 // Middelwares
 const { isCodeUser } = require('../middelwares/validateAccount/isCodeUser');
+const { isAuthenticated, isRightUser, isOrganizer } = require('../middelwares/authorization/auth');
 
 // *** GET *** 
-router.get('/:id', profileInfo)
+router.get('/:idUser',isAuthenticated,isRightUser, profileInfo)
     // *** PUT ***
-router.put('/:id/update', updateProfile)
+router.put('/:idUser/update',isAuthenticated,isRightUser , updateProfile)
 router.put('/forgotPassword', forgotPassword)
-router.put('/:id/delete', deleteUser)
-router.put('/:idUser/:idHackathon/cancelbooking', cancelHackathonBooking)
-router.put('/:idUser/:idHackathon/rate', rateHackathon)
-router.put('/:idUser/:idHackathon/modify', modifyHackathon)
-router.put('/:idUser/:idHackathon/delete', deleteHackathon)
+router.put('/:idUser/delete',isAuthenticated,isRightUser, deleteUser)
+router.put('/:idUser/:idHackathon/cancelbooking',isAuthenticated,isRightUser , cancelHackathonBooking)
+router.put('/:idUser/:idHackathon/rate',isAuthenticated,isRightUser ,isOrganizer, rateHackathon)
+router.put('/:idUser/:idHackathon/modify',isAuthenticated,isRightUser ,isOrganizer, modifyHackathon)
+router.put('/:idUser/:idHackathon/delete',isAuthenticated,isRightUser ,isOrganizer,deleteHackathon)
 
 // *** POST ***
 router.post('/validate/:id/:code', isCodeUser, activeUser);

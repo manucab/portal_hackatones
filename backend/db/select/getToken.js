@@ -1,4 +1,4 @@
-const performQuery = require("../performQuery");
+const {performQuery} = require("../performQuery");
 
 const getToken = async (email) => {
   const query = "select  reset_password_code from competitor where email=?";

@@ -3,7 +3,7 @@ const { hackathonValidator } = require("../../validators/hackathonValidator");
 const getHackathonId = require("../../db/select/getHackathonId");
 
 const modifyHackathon = async (req, res) => {
-  let { name, place, city, start_date, end_date, status, info,techs,links } = req.body;
+  let { name, place, city, start_date, end_date, status, info,techs,links, cover_picture } = req.body;
   let { idHackathon, idUser } = req.params;
 
   try {
@@ -27,7 +27,8 @@ const modifyHackathon = async (req, res) => {
       status,
       info,
       techs,
-      links
+      links,
+      cover_picture
     );
   } catch (e) {
     res.send(e.message);
