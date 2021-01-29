@@ -11,8 +11,8 @@ CREATE TABLE IF NOT EXISTS competitor (
     professional_profile ENUM ('desarrollador','diseñador','marketing','otro') not null default 'otro',
     rol ENUM ('user','organizer') not null,
     code varchar(100) not null default 'empty-code',
-    deleted_user ENUM ('true','false') default 'false',
-    profile_picture varchar(500) default 'urlpordefecto', 
+    deleted_user ENUM ('true','false')  default 'false',
+    profile_picture varchar(500) not null default 'urlpordefecto', 
     user_password varchar(100) not null,
     creation_date timestamp not null default current_timestamp,
     last_update timestamp not null default current_timestamp on update current_timestamp
@@ -42,7 +42,7 @@ create table if not exists hackathon (
     start_date date not null,
     end_date date not null,
     hackathon_status enum ('pendiente','realizado','cancelado') not null default 'pendiente',
-    hackathon_info text not null default 'no-info' ,
+    hackathon_info text not null,
     id_organizer integer not null,
     cover_picture varchar(500) not null default 'urlpordefecto',
     thematic varchar(100) not null,
@@ -89,7 +89,7 @@ create table if not exists competitor_hackathon (
     inscription_status enum ('inscrito','cancelado','asistente') not null default 'inscrito',
     ranking int not null default 0,
     id_booking varchar(20) not null,
-    rate integer not null default 'no-rate',
+    rate integer,
     primary key (id_competitor,id_hackathon),
     creation_date timestamp not null default current_timestamp,
     last_update timestamp not null default current_timestamp on update current_timestamp,
@@ -124,5 +124,19 @@ create table if not exists hackathon_tech (
 		FOREIGN KEY(id_hackathon) REFERENCES hackathon(id) ON DELETE CASCADE,
 	 constraint hackathon_tech_fk2 
 		FOREIGN KEY(id_tech) REFERENCES tech(id) ON DELETE CASCADE    
+);
+
+
+-- Create a table of admins
+create table if not exists admin (
+    id_admin int unsigned auto_increment primary key,
+    code varchar(100) unique,
+    key_admin varchar(100) not null unique,
+    name varchar(100) not null,
+    email varchar(100) not null unique,
+    state boolean not null default 0,
+    password varchar(100) not null,
+    creationDate timestamp default current_timestamp,
+    updateDate timestamp default current_timestamp on update current_timestamp
 );
 
