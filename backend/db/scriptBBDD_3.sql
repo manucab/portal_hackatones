@@ -8,9 +8,9 @@ CREATE TABLE IF NOT EXISTS competitor (
     surname VARCHAR(50) not null,
     register_date timestamp not null default current_timestamp ,
     email varchar(50) not null,
-    professional_profile ENUM ('desarrollador','diseñador','marketing','otro'),
+    professional_profile ENUM ('desarrollador','diseñador','marketing','otro') not null default 'otro',
     rol ENUM ('user','organizer') not null,
-    code varchar(100) not null,
+    code varchar(100) not null default 'empty-code',
     deleted_user ENUM ('true','false') default 'false',
     profile_picture varchar(500) default 'urlpordefecto', 
     user_password varchar(100) not null,
@@ -37,14 +37,14 @@ create table if not exists tech (
 create table if not exists hackathon (
 	id integer auto_increment primary key,
     hackathon_name varchar(100) not null,
-	hackathon_place enum ('online','presencial','semipresencial') not null ,
-    city varchar(50),
+	hackathon_place enum ('online','presencial','semipresencial') not null,
+    city varchar(50) not null default 'no-info',
     start_date date not null,
     end_date date not null,
-    hackathon_status enum ('pendiente','realizado','cancelado') default 'pendiente',
-    hackathon_info text ,
+    hackathon_status enum ('pendiente','realizado','cancelado') not null default 'pendiente',
+    hackathon_info text not null default 'no-info' ,
     id_organizer integer not null,
-    cover_picture varchar(500) default 'urlpordefecto',
+    cover_picture varchar(500) not null default 'urlpordefecto',
     thematic varchar(100) not null,
     creation_date timestamp not null default current_timestamp,
     last_update timestamp not null default current_timestamp on update current_timestamp,
@@ -54,14 +54,42 @@ create table if not exists hackathon (
 );
 
 
+CREATE TABLE IF NOT EXISTS post (
+    id INTEGER AUTO_INCREMENT PRIMARY KEY,
+	title varchar(300) not null,
+    content text not null,
+    publication_date date not null,
+    hidden enum('true','false') not null default 'true',
+    fulltext(title,content),
+    creation_date timestamp not null default current_timestamp,
+    last_update timestamp not null default current_timestamp on update current_timestamp
+) ;
+
+create table if not exists comment (
+	id integer not null auto_increment,
+    id_competitor integer not null,
+    id_hackathon integer not null,
+    content text not null,
+        hidden enum('true','false') not null default 'false',
+    primary key (id, id_hackathon, id_competitor),
+    creation_date timestamp not null default current_timestamp,
+    last_update timestamp not null default current_timestamp on update current_timestamp,
+    
+    constraint comment_fk1 
+		FOREIGN KEY(id_hackathon) REFERENCES hackathon(id) ON DELETE CASCADE,
+	 constraint comment_fk2 
+		FOREIGN KEY(id_competitor) REFERENCES competitor(id) ON DELETE CASCADE    
+);
+
+
 
 create table if not exists competitor_hackathon (
 	id_competitor int not null,
 	id_hackathon int not null,
-    inscription_status enum ('inscrito','cancelado','asistente') default 'inscrito',
+    inscription_status enum ('inscrito','cancelado','asistente') not null default 'inscrito',
     ranking int not null default 0,
     id_booking varchar(20) not null,
-    rate integer default null,
+    rate integer not null default 'no-rate',
     primary key (id_competitor,id_hackathon),
     creation_date timestamp not null default current_timestamp,
     last_update timestamp not null default current_timestamp on update current_timestamp,

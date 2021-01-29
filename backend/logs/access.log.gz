@@ -1828,3 +1828,11 @@
 2021-01-29 -- 12:02:44:244 -- info: Init transaction query
 2021-01-29 -- 12:02:45:245 -- info: Commit
 2021-01-29 -- 12:02:45:245 -- http: GET -- /hackathon/search/filters -- 91552de7-9ca9-491c-813d-f0ce47f96572 -- 200 -- 996 - 10.352 ms
+2021-01-29 -- 12:17:47:1747 -- info: Is organizer and state ACTIVE
+2021-01-29 -- 12:17:47:1747 -- debug: Validate fields ok!!
+2021-01-29 -- 12:17:47:1747 -- info: Init transaction query
+2021-01-29 -- 12:17:47:1747 -- debug: Insert into tables tech and hackathon_tech OK!!
+2021-01-29 -- 12:17:47:1747 -- debug: Insert into tables lin and hackathon_link OK!!
+2021-01-29 -- 12:17:47:1747 -- info: Commit
+2021-01-29 -- 12:17:47:1747 -- debug: Create new hackathon successfully
+2021-01-29 -- 12:17:47:1747 -- http: POST -- /createhackathon -- 2 -- 200 -- 33 - 38.619 ms
