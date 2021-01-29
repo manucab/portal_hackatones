@@ -53,6 +53,13 @@ const val_register = Joi.object({
         .required()
         .error(
             new Error('Password must have 8 caracters min.')
+        ),
+    profile_picture: Joi.string().lowercase().trim()
+        .alphanum()
+        .min(3)
+        .max(500)
+        .error(
+            new Error('The picture entered is not valid')
         )
 
 })

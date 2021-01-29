@@ -11,7 +11,7 @@ const { logger } = require("../../app/config/logger");
 const createHackathon = async(req, res) => {
 
     // 1. Get params
-    const { place, city, start_date, end_date, hackathon_status, hackathon_info, tech, thematic, links } = req.body
+    const { hackathon_name, hackathon_place, city, start_date, end_date, hackathon_status, hackathon_info, cover_picture, tech, thematic, links } = req.body
 
     const id_organizer = req.auth.id;
 
@@ -21,7 +21,7 @@ const createHackathon = async(req, res) => {
     try {
 
         // 2. Check if the parameters are valid
-        await fieldsHackathons.validateAsync({ place, city, start_date, end_date, hackathon_status, hackathon_info, tech, thematic, links /*, webName*/ });
+        await fieldsHackathons.validateAsync({ hackathon_name, hackathon_place, city, start_date, end_date, hackathon_status, hackathon_info, cover_picture, tech, thematic, links });
 
         logger.debug('Validate fields ok!!');
 
@@ -32,11 +32,13 @@ const createHackathon = async(req, res) => {
 
         // 3. Insert in table hackathon 
         const res_insertNewHackathon = await createHackathonDB(
-            place,
+            hackathon_name,
+            hackathon_place,
             city,
             start_date, end_date,
             hackathon_status,
             hackathon_info,
+            cover_picture,
             id_organizer,
             thematic,
         );
@@ -70,7 +72,6 @@ const createHackathon = async(req, res) => {
 
         let msgError = e.message || 'Error in create a new hackathon';
         logger.error('Error login', msgError);
-        console.log('msgError :>> ', msgError, e);
         res.status(500).send(msgError);
     }
 }

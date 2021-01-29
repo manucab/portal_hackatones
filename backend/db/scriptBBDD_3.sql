@@ -9,7 +9,7 @@ CREATE TABLE IF NOT EXISTS competitor (
     register_date timestamp not null default current_timestamp ,
     email varchar(50) not null,
     professional_profile ENUM ('desarrollador','diseñador','marketing','otro'),
-    rol ENUM ('user','organizer'),
+    rol ENUM ('user','organizer') not null,
     code varchar(100) not null,
     deleted_user ENUM ('true','false') default 'false',
     profile_picture varchar(500) default 'urlpordefecto', 

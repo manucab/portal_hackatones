@@ -17,7 +17,7 @@ const newUser = async(req, res) => {
     let params = [];
 
     // 1. Get params
-    const { email, name, surname, professional_profile, rol, password } = req.body;
+    const { email, name, surname, professional_profile, rol, password, profile_picture } = req.body;
 
     try {
 
@@ -35,7 +35,7 @@ const newUser = async(req, res) => {
 
         // Insert into db new user
         // TODO -- Check format date 
-        let { insertId } = await registerNewUser(email.toLowerCase(), name.toLowerCase(), surname.toLowerCase(), professional_profile.toLowerCase(), rol.toLowerCase(), passwordEncrypt, validationCode);
+        let { insertId } = await registerNewUser(email.toLowerCase(), name.toLowerCase(), surname.toLowerCase(), professional_profile.toLowerCase(), rol.toLowerCase(), passwordEncrypt, validationCode, profile_picture);
 
         let link = `http://${process.env.PUBLIC_DOMAIN}/user/validate/${insertId}/${validationCode}`;
 

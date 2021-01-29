@@ -17,7 +17,7 @@ const isUserRight = async(req, res, next) => {
     try {
 
         // 2. Check if the parameters are valid
-        const validParams = await loginValidator.validateAsync({ email, password });
+        await loginValidator.validateAsync({ email, password });
 
         // 3. If are valid, check if they are in the database
         const user = await getUserDB(email);

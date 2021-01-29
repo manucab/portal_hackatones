@@ -51,6 +51,8 @@ const getHackathonByFilters = async(req, res) => {
             // 2. Search in table hackathon_tech and get id of tech
             let resTechs = await getListTechByHackathonDB(listIdHackathons, params);
 
+            // TODO -- add comments of hackathon filter
+
             listHackathons.forEach(item => {
                 let listLinkInfo = resLinks.filter(info => info.id_hackathon === item.id).map(element => ({ url: element.url, web_name: element.web_name }));
                 let listTechInfo = resTechs.filter(info => info.id_hackathon === item.id).map(element => (element.tech_name));
@@ -73,6 +75,7 @@ const getHackathonByFilters = async(req, res) => {
             // Format data hackathon...
             hackathon.forEach(item => {
                 msgResponse.push({
+                    hackathon_name: item.hackathon_name,
                     hackathon_place: item.hackathon_place,
                     city: item.city || 'not info',
                     start_date: item.start_date,
@@ -81,7 +84,8 @@ const getHackathonByFilters = async(req, res) => {
                     hackathon_info: item.hackathon_info || 'not info',
                     thematic: item.thematic,
                     link: item.link || 'not info',
-                    tech: item.tech || 'not info'
+                    tech: item.tech || 'not info',
+                    cover_picture: item.cover_picture || 'not info'
                 });
 
 

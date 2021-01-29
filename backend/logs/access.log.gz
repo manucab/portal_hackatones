@@ -1463,3 +1463,368 @@
 2021-01-28 -- 13:32:16:3216 -- info: Commit
 2021-01-28 -- 13:32:16:3216 -- http: GET -- /hackathon/search/filters?tech[]=Rust -- 2513ac92-a4bb-42e2-86c9-3ab620e22bba -- 200 -- 1439 - 11.236 ms
 2021-01-28 -- 19:45:47:4547 -- info: listening on port 3000
+2021-01-28 -- 22:15:25:1525 -- info: listening on port 3000
+2021-01-28 -- 22:16:04:164 -- warn: 404 Router not found
+2021-01-28 -- 22:16:04:164 -- http: GET -- /register -- e4b9a318-b31d-44d3-a8e2-dd7f13e5c720 -- 404 -- 30 - 7.172 ms
+2021-01-28 -- 22:16:38:1638 -- error: Email must have the following structure: name@xxxx.[com, es, net]
+2021-01-28 -- 22:16:38:1638 -- http: POST -- /register -- ac2f469b-75d1-484c-a500-5c35c078018a -- 500 -- 65 - 3.552 ms
+2021-01-28 -- 22:17:03:173 -- error: Email must have the following structure: name@xxxx.[com, es, net]
+2021-01-28 -- 22:17:03:173 -- http: POST -- /register?email=lolo@root.com -- e34876a6-d5da-46f6-9fa2-f533d7c1d23b -- 500 -- 65 - 1.988 ms
+2021-01-28 -- 22:17:13:1713 -- error: Email must have the following structure: name@xxxx.[com, es, net]
+2021-01-28 -- 22:17:13:1713 -- http: POST -- /register?email=lolo@root.com -- 5cb68b89-7662-4cbd-8862-004d142b476c -- 500 -- 65 - 6.062 ms
+2021-01-28 -- 22:17:58:1758 -- error: Email must have the following structure: name@xxxx.[com, es, net]
+2021-01-28 -- 22:17:58:1758 -- http: POST -- /register?email=lolo@roott.com -- 1f09ff7a-7911-4b31-ada9-6ffaa58d0597 -- 500 -- 65 - 1.192 ms
+2021-01-28 -- 22:18:29:1829 -- error: Email must have the following structure: name@xxxx.[com, es, net]
+2021-01-28 -- 22:18:29:1829 -- http: POST -- /register?email=lolo@user1.com -- e6038b40-bfdd-46b2-a4c5-79424d2692b8 -- 500 -- 65 - 1.026 ms
+2021-01-28 -- 22:19:03:193 -- error: The name entered is not valid
+2021-01-28 -- 22:19:03:193 -- http: POST -- /register -- 3258b212-2186-4a45-898c-90c0da4bd1a8 -- 500 -- 29 - 1.956 ms
+2021-01-28 -- 22:19:12:1912 -- error: The surname entered is not valid
+2021-01-28 -- 22:19:12:1912 -- http: POST -- /register -- ad0a2c3f-31da-4cd2-8235-18209c221257 -- 500 -- 32 - 1.435 ms
+2021-01-28 -- 22:19:22:1922 -- error: The surname entered is not valid
+2021-01-28 -- 22:19:22:1922 -- http: POST -- /register -- 1dd1c8a0-2ed8-4451-9cd7-18e2c80cd696 -- 500 -- 32 - 1.467 ms
+2021-01-28 -- 22:19:32:1932 -- error: The professional profile entered is not valid
+2021-01-28 -- 22:19:32:1932 -- http: POST -- /register -- 8bfe466c-0340-4d3a-be90-355e62c54124 -- 500 -- 45 - 2.978 ms
+2021-01-28 -- 22:20:46:2046 -- error: The rol entered is not valid
+2021-01-28 -- 22:20:46:2046 -- http: POST -- /register -- 72223793-2e33-4d79-813c-cede19e1edd8 -- 500 -- 28 - 1.134 ms
+2021-01-28 -- 22:20:55:2055 -- error: Password must have 8 caracters min.
+2021-01-28 -- 22:20:55:2055 -- http: POST -- /register -- d5d03061-e3d9-45e8-93b5-d3ce6aff5389 -- 500 -- 35 - 0.956 ms
+2021-01-28 -- 22:21:13:2113 -- error: undefined
+2021-01-28 -- 22:21:13:2113 -- error: 
+2021-01-28 -- 22:21:13:2113 -- http: POST -- /register -- 859b3959-9a26-4776-a6b1-5f211773a3fa -- 401 -- 0 - 1.810 ms
+2021-01-28 -- 22:22:08:228 -- info: listening on port 3000
+2021-01-28 -- 22:22:10:2210 -- error: undefined
+2021-01-28 -- 22:22:10:2210 -- error: 
+2021-01-28 -- 22:22:10:2210 -- http: POST -- /register -- b2ee5be6-c12e-4030-8f3c-5ac33bc44889 -- 401 -- 0 - 15.168 ms
+2021-01-28 -- 22:22:54:2254 -- info: listening on port 3000
+2021-01-28 -- 22:22:56:2256 -- error: undefined
+2021-01-28 -- 22:22:56:2256 -- error: 
+2021-01-28 -- 22:22:56:2256 -- http: POST -- /register -- 9dfb23f4-0dc8-4d9c-a3be-b0191469dc82 -- 401 -- 0 - 8.868 ms
+2021-01-28 -- 22:23:48:2348 -- info: listening on port 3000
+2021-01-28 -- 22:23:51:2351 -- error: undefined
+2021-01-28 -- 22:23:51:2351 -- error: 
+2021-01-28 -- 22:23:51:2351 -- http: POST -- /register -- b3d87034-988f-4af2-9dfa-dd6dc38d6456 -- 401 -- 0 - 9.297 ms
+2021-01-28 -- 22:25:06:256 -- info: listening on port 3000
+2021-01-28 -- 22:25:10:2510 -- error: undefined
+2021-01-28 -- 22:25:10:2510 -- error: 
+2021-01-28 -- 22:25:10:2510 -- http: POST -- /register -- dbe38802-9f3d-46c4-a102-0c71c7cb22a6 -- 401 -- 0 - 17.863 ms
+2021-01-28 -- 22:29:50:2950 -- info: listening on port 3000
+2021-01-28 -- 22:29:53:2953 -- error: undefined
+2021-01-28 -- 22:29:53:2953 -- error: 
+2021-01-28 -- 22:29:53:2953 -- http: POST -- /register -- 0d67dd48-524a-4cbf-aed2-fcf56c7fb964 -- 401 -- 0 - 80.924 ms
+2021-01-28 -- 22:30:25:3025 -- info: listening on port 3000
+2021-01-28 -- 22:30:27:3027 -- error: undefined
+2021-01-28 -- 22:30:27:3027 -- error: 
+2021-01-28 -- 22:30:27:3027 -- http: POST -- /register -- a2ca2951-8e52-4f4e-a961-478db3963f67 -- 401 -- 0 - 33.097 ms
+2021-01-28 -- 22:34:51:3451 -- info: listening on port 3000
+2021-01-28 -- 22:35:29:3529 -- error: undefined
+2021-01-28 -- 22:35:29:3529 -- error: 
+2021-01-28 -- 22:35:29:3529 -- http: POST -- /register -- 23c320d1-259c-4f94-a575-fc8c2ce6e412 -- 401 -- 0 - 9.400 ms
+2021-01-28 -- 22:35:54:3554 -- info: listening on port 3000
+2021-01-28 -- 22:35:58:3558 -- error: undefined
+2021-01-28 -- 22:35:58:3558 -- error: 
+2021-01-28 -- 22:35:58:3558 -- http: POST -- /register -- 63b48f5a-a271-49ce-9e1c-81947521915b -- 401 -- 0 - 17.993 ms
+2021-01-28 -- 22:36:47:3647 -- info: listening on port 3000
+2021-01-28 -- 22:36:50:3650 -- error: undefined
+2021-01-28 -- 22:36:50:3650 -- error: 
+2021-01-28 -- 22:36:50:3650 -- http: POST -- /register -- 3cc47e84-44d0-4b2a-b740-6375ce9b4106 -- 401 -- 0 - 10.683 ms
+2021-01-28 -- 22:38:01:381 -- info: listening on port 3000
+2021-01-28 -- 22:38:04:384 -- error: undefined
+2021-01-28 -- 22:38:04:384 -- error: 
+2021-01-28 -- 22:38:04:384 -- http: POST -- /register -- ad824263-b7ee-42a6-803a-1185f29b4373 -- 401 -- 0 - 15.206 ms
+2021-01-28 -- 22:44:53:4453 -- info: listening on port 3000
+2021-01-28 -- 22:44:56:4456 -- error: undefined
+2021-01-28 -- 22:44:56:4456 -- error: 
+2021-01-28 -- 22:44:56:4456 -- http: POST -- /register -- 928333d3-f2d9-44e0-bc90-c608c07b7278 -- 401 -- 0 - 49.171 ms
+2021-01-28 -- 22:46:16:4616 -- info: listening on port 3000
+2021-01-28 -- 22:46:20:4620 -- error: undefined
+2021-01-28 -- 22:46:20:4620 -- error: 
+2021-01-28 -- 22:46:20:4620 -- http: POST -- /register -- 64d75dc8-8968-4709-871e-aa3a6c0ae0dd -- 401 -- 0 - 13.894 ms
+2021-01-28 -- 22:46:30:4630 -- info: listening on port 3000
+2021-01-28 -- 22:46:32:4632 -- error: undefined
+2021-01-28 -- 22:46:32:4632 -- error: 
+2021-01-28 -- 22:46:32:4632 -- http: POST -- /register -- 93ee2ae0-8ce4-4704-8275-a02f16395b7a -- 401 -- 0 - 53.134 ms
+2021-01-28 -- 22:59:09:599 -- info: listening on port 3000
+2021-01-28 -- 22:59:12:5912 -- error: undefined
+2021-01-28 -- 22:59:12:5912 -- error: 
+2021-01-28 -- 22:59:12:5912 -- http: POST -- /register -- 8f533f03-760f-49d5-9528-991440cd5fe4 -- 401 -- 0 - 13.387 ms
+2021-01-28 -- 23:00:32:032 -- info: listening on port 3000
+2021-01-28 -- 23:00:36:036 -- error: undefined
+2021-01-28 -- 23:00:36:036 -- error: 
+2021-01-28 -- 23:00:36:036 -- http: POST -- /register -- 7a9c247c-f149-4d50-a93c-20ae3d8deaa7 -- 401 -- 0 - 24.436 ms
+2021-01-28 -- 23:02:44:244 -- info: listening on port 3000
+2021-01-28 -- 23:02:49:249 -- error: undefined
+2021-01-28 -- 23:02:49:249 -- error: 
+2021-01-28 -- 23:02:49:249 -- http: POST -- /register -- 2064a1d9-2e4d-4b8e-932f-b23b430b4235 -- 401 -- 0 - 11.365 ms
+2021-01-28 -- 23:05:29:529 -- info: listening on port 3000
+2021-01-28 -- 23:05:31:531 -- error: undefined
+2021-01-28 -- 23:05:31:531 -- error: 
+2021-01-28 -- 23:05:31:531 -- http: POST -- /register -- 1a33b0c7-e891-4205-a1c1-4a8296849e79 -- 401 -- 0 - 61.318 ms
+2021-01-28 -- 23:06:24:624 -- info: listening on port 3000
+2021-01-28 -- 23:06:27:627 -- debug: The user not exist in db, he can register now
+2021-01-28 -- 23:06:27:627 -- info: Init transaction query
+2021-01-28 -- 23:06:27:627 -- info: Rollback query
+2021-01-28 -- 23:06:27:627 -- debug: Error postRegister
+2021-01-28 -- 23:06:27:627 -- http: POST -- /register -- 8f9b78c0-9c5f-4d3f-a1c2-2ee18ea475a3 -- 500 -- 30 - 266.472 ms
+2021-01-28 -- 23:07:44:744 -- info: listening on port 3000
+2021-01-28 -- 23:07:50:750 -- debug: The user not exist in db, he can register now
+2021-01-28 -- 23:07:50:750 -- info: Init transaction query
+2021-01-28 -- 23:07:50:750 -- info: Rollback query
+2021-01-28 -- 23:07:50:750 -- debug: Error postRegister
+2021-01-28 -- 23:07:50:750 -- http: POST -- /register -- b7aaf53c-0778-4ada-ab61-845ae0488969 -- 500 -- 30 - 220.000 ms
+2021-01-28 -- 23:13:18:1318 -- debug: The user not exist in db, he can register now
+2021-01-28 -- 23:13:18:1318 -- info: Init transaction query
+2021-01-28 -- 23:13:18:1318 -- info: Rollback query
+2021-01-28 -- 23:13:18:1318 -- debug: Error postRegister
+2021-01-28 -- 23:13:18:1318 -- http: POST -- /register -- 5105375a-825f-4142-a474-ee603772120f -- 500 -- 30 - 114.461 ms
+2021-01-28 -- 23:13:54:1354 -- debug: The user not exist in db, he can register now
+2021-01-28 -- 23:13:54:1354 -- info: Init transaction query
+2021-01-28 -- 23:13:54:1354 -- info: Rollback query
+2021-01-28 -- 23:13:54:1354 -- debug: Error postRegister
+2021-01-28 -- 23:13:54:1354 -- http: POST -- /register -- 71660a5f-b56a-4269-839e-19d5f44125e9 -- 500 -- 30 - 152.778 ms
+2021-01-28 -- 23:14:12:1412 -- info: listening on port 3000
+2021-01-28 -- 23:14:14:1414 -- debug: The user not exist in db, he can register now
+2021-01-28 -- 23:14:14:1414 -- info: Init transaction query
+2021-01-28 -- 23:14:14:1414 -- info: Rollback query
+2021-01-28 -- 23:14:14:1414 -- debug: Error postRegister
+2021-01-28 -- 23:14:14:1414 -- http: POST -- /register -- 051db146-f91a-4aef-9031-ac3ce65c3c9f -- 500 -- 30 - 306.969 ms
+2021-01-28 -- 23:14:32:1432 -- debug: The user not exist in db, he can register now
+2021-01-28 -- 23:14:32:1432 -- info: Init transaction query
+2021-01-28 -- 23:14:32:1432 -- info: Rollback query
+2021-01-28 -- 23:14:32:1432 -- debug: Error postRegister
+2021-01-28 -- 23:14:32:1432 -- http: POST -- /register -- 0549c164-5891-4c65-8aa9-708dd31de9b4 -- 500 -- 30 - 118.135 ms
+2021-01-28 -- 23:15:48:1548 -- info: listening on port 3000
+2021-01-28 -- 23:15:54:1554 -- debug: The user not exist in db, he can register now
+2021-01-28 -- 23:15:55:1555 -- info: Init transaction query
+2021-01-28 -- 23:15:55:1555 -- info: Rollback query
+2021-01-28 -- 23:15:55:1555 -- debug: Error postRegister
+2021-01-28 -- 23:15:55:1555 -- http: POST -- /register -- 614baf61-5bd9-4733-9988-53f8905e0109 -- 500 -- 30 - 316.211 ms
+2021-01-28 -- 23:19:31:1931 -- info: listening on port 3000
+2021-01-28 -- 23:19:34:1934 -- debug: The user not exist in db, he can register now
+2021-01-28 -- 23:19:34:1934 -- info: Init transaction query
+2021-01-28 -- 23:19:35:1935 -- info: Commit
+2021-01-28 -- 23:19:35:1935 -- debug: Register new user sucessfull
+2021-01-28 -- 23:19:35:1935 -- http: POST -- /register -- be819117-2c0a-4bdf-b3f6-ca7a971227ad -- 200 -- 30 - 1452.617 ms
+2021-01-28 -- 23:27:45:2745 -- debug: Login OK
+2021-01-28 -- 23:27:45:2745 -- http: POST -- /login -- 1 -- 200 -- 199 - 143.709 ms
+2021-01-28 -- 23:29:10:2910 -- debug: The user not exist in db, he can register now
+2021-01-28 -- 23:29:10:2910 -- info: Init transaction query
+2021-01-28 -- 23:29:11:2911 -- info: Commit
+2021-01-28 -- 23:29:11:2911 -- debug: Register new user sucessfull
+2021-01-28 -- 23:29:11:2911 -- http: POST -- /register -- a1b1ad27-a572-4119-aa9f-9a6af8ea1d63 -- 200 -- 30 - 953.173 ms
+2021-01-28 -- 23:36:08:368 -- info: listening on port 3000
+2021-01-28 -- 23:36:14:3614 -- debug: Login OK
+2021-01-28 -- 23:36:14:3614 -- http: POST -- /login -- 2 -- 200 -- 208 - 295.065 ms
+2021-01-28 -- 23:39:56:3956 -- info: listening on port 3000
+2021-01-28 -- 23:40:20:4020 -- error: Table 'hack.admin' doesn't exist
+2021-01-28 -- 23:40:20:4020 -- error: Table 'hack.admin' doesn't exist
+2021-01-28 -- 23:40:20:4020 -- http: POST -- /createhackathon/ -- 995dcfc7-ad6e-435c-abcd-a2e0d4950572 -- 401 -- 43 - 107.140 ms
+2021-01-28 -- 23:44:34:4434 -- info: listening on port 3000
+2021-01-28 -- 23:44:37:4437 -- http: POST -- /createhackathon/ -- 1c68bbdd-13ae-4030-be6c-23b082d2b395 -- 401 -- 31 - 176.216 ms
+2021-01-28 -- 23:44:58:4458 -- http: POST -- /createhackathon/ -- 1644f229-69bd-4c63-b1a4-ba9cb70d51f7 -- 401 -- 31 - 8.262 ms
+2021-01-28 -- 23:45:40:4540 -- info: listening on port 3000
+2021-01-28 -- 23:45:42:4542 -- error: looger is not defined
+2021-01-28 -- 23:45:42:4542 -- http: POST -- /createhackathon/ -- c7d5502a-40a5-4cca-9d6d-50a970e48c38 -- 401 -- 32 - 32.986 ms
+2021-01-28 -- 23:46:12:4612 -- info: listening on port 3000
+2021-01-28 -- 23:46:16:4616 -- debug: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImZ1cmJvZW52ZW5hMTBAZ21haWwuY29tIiwicm9sIjoib3JnYW5pemVyIiwiaWQiOjI3LCJpYXQiOjE2MTE4MzYyNTcsImV4cCI6MTYxMjAwOTA1N30.oB-w3A48EqtcpLMd-k__v_CY82sJu4kyqaHx5YZrXh8
+2021-01-28 -- 23:46:16:4616 -- error: looger is not defined
+2021-01-28 -- 23:46:16:4616 -- http: POST -- /createhackathon/ -- 8e92e6f2-87af-46e5-a8b2-883f460b50fe -- 401 -- 32 - 47.776 ms
+2021-01-28 -- 23:46:50:4650 -- info: listening on port 3000
+2021-01-28 -- 23:46:52:4652 -- debug: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImZ1cmJvZW52ZW5hMTBAZ21haWwuY29tIiwicm9sIjoib3JnYW5pemVyIiwiaWQiOjI3LCJpYXQiOjE2MTE4MzYyNTcsImV4cCI6MTYxMjAwOTA1N30.oB-w3A48EqtcpLMd-k__v_CY82sJu4kyqaHx5YZrXh8
+2021-01-28 -- 23:46:52:4652 -- debug: [object Object]
+2021-01-28 -- 23:46:52:4652 -- http: POST -- /createhackathon/ -- d4e9d02d-b6f9-4ce4-874e-d9ac7c488b42 -- 401 -- 31 - 179.528 ms
+2021-01-28 -- 23:47:23:4723 -- debug: Login OK
+2021-01-28 -- 23:47:23:4723 -- http: POST -- /login -- 2 -- 200 -- 208 - 151.376 ms
+2021-01-28 -- 23:47:46:4746 -- debug: Login OK
+2021-01-28 -- 23:47:46:4746 -- http: POST -- /login -- 2 -- 200 -- 208 - 120.291 ms
+2021-01-28 -- 23:50:27:5027 -- debug: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im1hbm9sb0B1c2VyLmNvbSIsInJvbCI6Im9yZ2FuaXplciIsImlkIjoyLCJpYXQiOjE2MTE4NzQwNjYsImV4cCI6MTYxMjA0Njg2Nn0.ryEYgmtBjKiNQQgRQvivvUWeWLeriHRMG2hH-Rjjyrk
+2021-01-28 -- 23:50:27:5027 -- debug: [object Object]
+2021-01-28 -- 23:50:27:5027 -- info: Is organizer and state ACTIVE
+2021-01-28 -- 23:50:27:5027 -- info: Rollback query
+2021-01-28 -- 23:50:27:5027 -- error: Error login
+2021-01-28 -- 23:50:27:5027 -- http: POST -- /createhackathon/ -- 2 -- 500 -- 34 - 54.296 ms
+2021-01-28 -- 23:51:28:5128 -- debug: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im1hbm9sb0B1c2VyLmNvbSIsInJvbCI6Im9yZ2FuaXplciIsImlkIjoyLCJpYXQiOjE2MTE4NzQwNjYsImV4cCI6MTYxMjA0Njg2Nn0.ryEYgmtBjKiNQQgRQvivvUWeWLeriHRMG2hH-Rjjyrk
+2021-01-28 -- 23:51:28:5128 -- debug: [object Object]
+2021-01-28 -- 23:51:28:5128 -- info: Is organizer and state ACTIVE
+2021-01-28 -- 23:51:28:5128 -- info: Rollback query
+2021-01-28 -- 23:51:28:5128 -- error: Error login
+2021-01-28 -- 23:51:28:5128 -- http: POST -- /createhackathon/ -- 2 -- 500 -- 34 - 37.720 ms
+2021-01-28 -- 23:51:56:5156 -- debug: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im1hbm9sb0B1c2VyLmNvbSIsInJvbCI6Im9yZ2FuaXplciIsImlkIjoyLCJpYXQiOjE2MTE4NzQwNjYsImV4cCI6MTYxMjA0Njg2Nn0.ryEYgmtBjKiNQQgRQvivvUWeWLeriHRMG2hH-Rjjyrk
+2021-01-28 -- 23:51:56:5156 -- debug: [object Object]
+2021-01-28 -- 23:51:56:5156 -- info: Is organizer and state ACTIVE
+2021-01-28 -- 23:51:56:5156 -- info: Rollback query
+2021-01-28 -- 23:51:56:5156 -- error: Error login
+2021-01-28 -- 23:51:56:5156 -- http: POST -- /createhackathon/ -- 2 -- 500 -- 65 - 26.758 ms
+2021-01-28 -- 23:52:24:5224 -- debug: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im1hbm9sb0B1c2VyLmNvbSIsInJvbCI6Im9yZ2FuaXplciIsImlkIjoyLCJpYXQiOjE2MTE4NzQwNjYsImV4cCI6MTYxMjA0Njg2Nn0.ryEYgmtBjKiNQQgRQvivvUWeWLeriHRMG2hH-Rjjyrk
+2021-01-28 -- 23:52:24:5224 -- debug: [object Object]
+2021-01-28 -- 23:52:24:5224 -- info: Is organizer and state ACTIVE
+2021-01-28 -- 23:52:24:5224 -- info: Rollback query
+2021-01-28 -- 23:52:24:5224 -- error: Error login
+2021-01-28 -- 23:52:24:5224 -- http: POST -- /createhackathon/ -- 2 -- 500 -- 35 - 85.896 ms
+2021-01-28 -- 23:52:27:5227 -- debug: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im1hbm9sb0B1c2VyLmNvbSIsInJvbCI6Im9yZ2FuaXplciIsImlkIjoyLCJpYXQiOjE2MTE4NzQwNjYsImV4cCI6MTYxMjA0Njg2Nn0.ryEYgmtBjKiNQQgRQvivvUWeWLeriHRMG2hH-Rjjyrk
+2021-01-28 -- 23:52:27:5227 -- debug: [object Object]
+2021-01-28 -- 23:52:27:5227 -- info: Is organizer and state ACTIVE
+2021-01-28 -- 23:52:27:5227 -- info: Rollback query
+2021-01-28 -- 23:52:27:5227 -- error: Error login
+2021-01-28 -- 23:52:27:5227 -- http: POST -- /createhackathon/ -- 2 -- 500 -- 65 - 49.898 ms
+2021-01-28 -- 23:52:31:5231 -- debug: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im1hbm9sb0B1c2VyLmNvbSIsInJvbCI6Im9yZ2FuaXplciIsImlkIjoyLCJpYXQiOjE2MTE4NzQwNjYsImV4cCI6MTYxMjA0Njg2Nn0.ryEYgmtBjKiNQQgRQvivvUWeWLeriHRMG2hH-Rjjyrk
+2021-01-28 -- 23:52:31:5231 -- debug: [object Object]
+2021-01-28 -- 23:52:31:5231 -- info: Is organizer and state ACTIVE
+2021-01-28 -- 23:52:31:5231 -- info: Rollback query
+2021-01-28 -- 23:52:31:5231 -- error: Error login
+2021-01-28 -- 23:52:31:5231 -- http: POST -- /createhackathon/ -- 2 -- 500 -- 35 - 21.041 ms
+2021-01-28 -- 23:52:56:5256 -- debug: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im1hbm9sb0B1c2VyLmNvbSIsInJvbCI6Im9yZ2FuaXplciIsImlkIjoyLCJpYXQiOjE2MTE4NzQwNjYsImV4cCI6MTYxMjA0Njg2Nn0.ryEYgmtBjKiNQQgRQvivvUWeWLeriHRMG2hH-Rjjyrk
+2021-01-28 -- 23:52:56:5256 -- debug: [object Object]
+2021-01-28 -- 23:52:56:5256 -- info: Is organizer and state ACTIVE
+2021-01-28 -- 23:52:56:5256 -- info: Rollback query
+2021-01-28 -- 23:52:56:5256 -- error: Error login
+2021-01-28 -- 23:52:56:5256 -- http: POST -- /createhackathon/ -- 2 -- 500 -- 33 - 26.974 ms
+2021-01-28 -- 23:53:08:538 -- debug: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im1hbm9sb0B1c2VyLmNvbSIsInJvbCI6Im9yZ2FuaXplciIsImlkIjoyLCJpYXQiOjE2MTE4NzQwNjYsImV4cCI6MTYxMjA0Njg2Nn0.ryEYgmtBjKiNQQgRQvivvUWeWLeriHRMG2hH-Rjjyrk
+2021-01-28 -- 23:53:08:538 -- debug: [object Object]
+2021-01-28 -- 23:53:08:538 -- info: Is organizer and state ACTIVE
+2021-01-28 -- 23:53:08:538 -- info: Rollback query
+2021-01-28 -- 23:53:08:538 -- error: Error login
+2021-01-28 -- 23:53:08:538 -- http: POST -- /createhackathon/ -- 2 -- 500 -- 34 - 37.746 ms
+2021-01-28 -- 23:53:36:5336 -- debug: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im1hbm9sb0B1c2VyLmNvbSIsInJvbCI6Im9yZ2FuaXplciIsImlkIjoyLCJpYXQiOjE2MTE4NzQwNjYsImV4cCI6MTYxMjA0Njg2Nn0.ryEYgmtBjKiNQQgRQvivvUWeWLeriHRMG2hH-Rjjyrk
+2021-01-28 -- 23:53:36:5336 -- debug: [object Object]
+2021-01-28 -- 23:53:36:5336 -- info: Is organizer and state ACTIVE
+2021-01-28 -- 23:53:36:5336 -- info: Rollback query
+2021-01-28 -- 23:53:36:5336 -- error: Error login
+2021-01-28 -- 23:53:36:5336 -- http: POST -- /createhackathon/ -- 2 -- 500 -- 38 - 27.572 ms
+2021-01-28 -- 23:53:47:5347 -- debug: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im1hbm9sb0B1c2VyLmNvbSIsInJvbCI6Im9yZ2FuaXplciIsImlkIjoyLCJpYXQiOjE2MTE4NzQwNjYsImV4cCI6MTYxMjA0Njg2Nn0.ryEYgmtBjKiNQQgRQvivvUWeWLeriHRMG2hH-Rjjyrk
+2021-01-28 -- 23:53:47:5347 -- debug: [object Object]
+2021-01-28 -- 23:53:47:5347 -- info: Is organizer and state ACTIVE
+2021-01-28 -- 23:53:47:5347 -- debug: Validate fields ok!!
+2021-01-28 -- 23:53:47:5347 -- info: Init transaction query
+2021-01-28 -- 23:53:47:5347 -- error: Column count doesn't match value count at row 1
+2021-01-28 -- 23:53:47:5347 -- info: Rollback query
+2021-01-28 -- 23:53:47:5347 -- error: Error login
+2021-01-28 -- 23:53:47:5347 -- http: POST -- /createhackathon/ -- 2 -- 500 -- 47 - 58.724 ms
+2021-01-28 -- 23:54:01:541 -- debug: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im1hbm9sb0B1c2VyLmNvbSIsInJvbCI6Im9yZ2FuaXplciIsImlkIjoyLCJpYXQiOjE2MTE4NzQwNjYsImV4cCI6MTYxMjA0Njg2Nn0.ryEYgmtBjKiNQQgRQvivvUWeWLeriHRMG2hH-Rjjyrk
+2021-01-28 -- 23:54:01:541 -- debug: [object Object]
+2021-01-28 -- 23:54:01:541 -- info: Is organizer and state ACTIVE
+2021-01-28 -- 23:54:01:541 -- info: Rollback query
+2021-01-28 -- 23:54:01:541 -- error: Error login
+2021-01-28 -- 23:54:01:541 -- http: POST -- /createhackathon/ -- 2 -- 500 -- 38 - 24.639 ms
+2021-01-28 -- 23:54:09:549 -- debug: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im1hbm9sb0B1c2VyLmNvbSIsInJvbCI6Im9yZ2FuaXplciIsImlkIjoyLCJpYXQiOjE2MTE4NzQwNjYsImV4cCI6MTYxMjA0Njg2Nn0.ryEYgmtBjKiNQQgRQvivvUWeWLeriHRMG2hH-Rjjyrk
+2021-01-28 -- 23:54:09:549 -- debug: [object Object]
+2021-01-28 -- 23:54:09:549 -- info: Is organizer and state ACTIVE
+2021-01-28 -- 23:54:09:549 -- info: Rollback query
+2021-01-28 -- 23:54:09:549 -- error: Error login
+2021-01-28 -- 23:54:09:549 -- http: POST -- /createhackathon/ -- 2 -- 500 -- 38 - 34.513 ms
+2021-01-28 -- 23:54:42:5442 -- debug: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im1hbm9sb0B1c2VyLmNvbSIsInJvbCI6Im9yZ2FuaXplciIsImlkIjoyLCJpYXQiOjE2MTE4NzQwNjYsImV4cCI6MTYxMjA0Njg2Nn0.ryEYgmtBjKiNQQgRQvivvUWeWLeriHRMG2hH-Rjjyrk
+2021-01-28 -- 23:54:42:5442 -- debug: [object Object]
+2021-01-28 -- 23:54:42:5442 -- info: Is organizer and state ACTIVE
+2021-01-28 -- 23:54:42:5442 -- debug: Validate fields ok!!
+2021-01-28 -- 23:54:42:5442 -- info: Init transaction query
+2021-01-28 -- 23:54:42:5442 -- error: Column count doesn't match value count at row 1
+2021-01-28 -- 23:54:42:5442 -- info: Rollback query
+2021-01-28 -- 23:54:42:5442 -- error: Error login
+2021-01-28 -- 23:54:42:5442 -- http: POST -- /createhackathon/ -- 2 -- 500 -- 47 - 63.194 ms
+2021-01-28 -- 23:55:55:5555 -- debug: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im1hbm9sb0B1c2VyLmNvbSIsInJvbCI6Im9yZ2FuaXplciIsImlkIjoyLCJpYXQiOjE2MTE4NzQwNjYsImV4cCI6MTYxMjA0Njg2Nn0.ryEYgmtBjKiNQQgRQvivvUWeWLeriHRMG2hH-Rjjyrk
+2021-01-28 -- 23:55:55:5555 -- debug: [object Object]
+2021-01-28 -- 23:55:55:5555 -- info: Is organizer and state ACTIVE
+2021-01-28 -- 23:55:55:5555 -- debug: Validate fields ok!!
+2021-01-28 -- 23:55:55:5555 -- info: Init transaction query
+2021-01-28 -- 23:55:55:5555 -- error: Column count doesn't match value count at row 1
+2021-01-28 -- 23:55:55:5555 -- info: Rollback query
+2021-01-28 -- 23:55:55:5555 -- error: Error login
+2021-01-28 -- 23:55:55:5555 -- http: POST -- /createhackathon/ -- 2 -- 500 -- 47 - 20.617 ms
+2021-01-28 -- 23:56:10:5610 -- debug: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im1hbm9sb0B1c2VyLmNvbSIsInJvbCI6Im9yZ2FuaXplciIsImlkIjoyLCJpYXQiOjE2MTE4NzQwNjYsImV4cCI6MTYxMjA0Njg2Nn0.ryEYgmtBjKiNQQgRQvivvUWeWLeriHRMG2hH-Rjjyrk
+2021-01-28 -- 23:56:10:5610 -- debug: [object Object]
+2021-01-28 -- 23:56:10:5610 -- info: Is organizer and state ACTIVE
+2021-01-28 -- 23:56:10:5610 -- info: Rollback query
+2021-01-28 -- 23:56:10:5610 -- error: Error login
+2021-01-28 -- 23:56:10:5610 -- http: POST -- /createhackathon/ -- 2 -- 500 -- 38 - 10.466 ms
+2021-01-28 -- 23:56:18:5618 -- debug: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im1hbm9sb0B1c2VyLmNvbSIsInJvbCI6Im9yZ2FuaXplciIsImlkIjoyLCJpYXQiOjE2MTE4NzQwNjYsImV4cCI6MTYxMjA0Njg2Nn0.ryEYgmtBjKiNQQgRQvivvUWeWLeriHRMG2hH-Rjjyrk
+2021-01-28 -- 23:56:18:5618 -- debug: [object Object]
+2021-01-28 -- 23:56:18:5618 -- info: Is organizer and state ACTIVE
+2021-01-28 -- 23:56:18:5618 -- debug: Validate fields ok!!
+2021-01-28 -- 23:56:18:5618 -- info: Init transaction query
+2021-01-28 -- 23:56:18:5618 -- error: Column count doesn't match value count at row 1
+2021-01-28 -- 23:56:18:5618 -- info: Rollback query
+2021-01-28 -- 23:56:18:5618 -- error: Error login
+2021-01-28 -- 23:56:18:5618 -- http: POST -- /createhackathon/ -- 2 -- 500 -- 47 - 34.619 ms
+2021-01-28 -- 23:56:34:5634 -- info: listening on port 3000
+2021-01-28 -- 23:57:54:5754 -- info: listening on port 3000
+2021-01-28 -- 23:57:58:5758 -- info: Is organizer and state ACTIVE
+2021-01-28 -- 23:57:58:5758 -- debug: Validate fields ok!!
+2021-01-28 -- 23:57:58:5758 -- info: Init transaction query
+2021-01-28 -- 23:57:58:5758 -- debug: Insert into tables tech and hackathon_tech OK!!
+2021-01-28 -- 23:57:58:5758 -- debug: Insert into tables lin and hackathon_link OK!!
+2021-01-28 -- 23:57:58:5758 -- info: Commit
+2021-01-28 -- 23:57:58:5758 -- debug: Create new hackathon successfully
+2021-01-28 -- 23:57:58:5758 -- http: POST -- /createhackathon/ -- 2 -- 200 -- 33 - 297.932 ms
+2021-01-29 -- 00:00:24:024 -- info: Is organizer and state ACTIVE
+2021-01-29 -- 00:00:24:024 -- debug: Validate fields ok!!
+2021-01-29 -- 00:00:24:024 -- info: Init transaction query
+2021-01-29 -- 00:00:24:024 -- debug: Insert into tables tech and hackathon_tech OK!!
+2021-01-29 -- 00:00:24:024 -- debug: Insert into tables lin and hackathon_link OK!!
+2021-01-29 -- 00:00:24:024 -- info: Commit
+2021-01-29 -- 00:00:24:024 -- debug: Create new hackathon successfully
+2021-01-29 -- 00:00:24:024 -- http: POST -- /createhackathon/ -- 2 -- 200 -- 33 - 84.063 ms
+2021-01-29 -- 00:03:17:317 -- info: Is organizer and state ACTIVE
+2021-01-29 -- 00:03:17:317 -- debug: Validate fields ok!!
+2021-01-29 -- 00:03:17:317 -- info: Init transaction query
+2021-01-29 -- 00:03:17:317 -- debug: Insert into tables tech and hackathon_tech OK!!
+2021-01-29 -- 00:03:17:317 -- debug: Insert into tables lin and hackathon_link OK!!
+2021-01-29 -- 00:03:17:317 -- info: Commit
+2021-01-29 -- 00:03:17:317 -- debug: Create new hackathon successfully
+2021-01-29 -- 00:03:17:317 -- http: POST -- /createhackathon/ -- 2 -- 200 -- 33 - 58.108 ms
+2021-01-29 -- 00:03:44:344 -- info: Is organizer and state ACTIVE
+2021-01-29 -- 00:03:44:344 -- info: Rollback query
+2021-01-29 -- 00:03:44:344 -- error: Error login
+2021-01-29 -- 00:03:44:344 -- http: POST -- /createhackathon/ -- 2 -- 500 -- 34 - 82.126 ms
+2021-01-29 -- 00:13:45:1345 -- info: listening on port 3000
+2021-01-29 -- 00:14:12:1412 -- warn: 404 Router not found
+2021-01-29 -- 00:14:12:1412 -- http: POST -- /hackathon/search/1 -- 8241fab0-bc67-49b1-a113-2b9ce593151a -- 404 -- 30 - 30.634 ms
+2021-01-29 -- 00:14:18:1418 -- info: Init transaction query
+2021-01-29 -- 00:14:18:1418 -- info: Commit
+2021-01-29 -- 00:14:18:1418 -- http: GET -- /hackathon/search/1 -- 042c3ed0-ad6b-4954-938c-5bb1e5816648 -- 200 -- 292 - 64.881 ms
+2021-01-29 -- 00:14:54:1454 -- info: listening on port 3000
+2021-01-29 -- 00:15:34:1534 -- info: listening on port 3000
+2021-01-29 -- 00:15:38:1538 -- info: Init transaction query
+2021-01-29 -- 00:15:38:1538 -- info: Commit
+2021-01-29 -- 00:15:38:1538 -- http: GET -- /hackathon/search/2 -- c08dedf3-48ad-4308-a02c-d539d5bd8e57 -- 200 -- 353 - 54.136 ms
+2021-01-29 -- 00:15:56:1556 -- info: Init transaction query
+2021-01-29 -- 00:15:56:1556 -- info: Commit
+2021-01-29 -- 00:15:56:1556 -- http: GET -- /hackathon/search/5 -- 598a4e60-8518-44b5-ba7e-aeac8e9b0f6b -- 200 -- 26 - 4.377 ms
+2021-01-29 -- 00:15:58:1558 -- info: Init transaction query
+2021-01-29 -- 00:15:58:1558 -- info: Commit
+2021-01-29 -- 00:15:58:1558 -- http: GET -- /hackathon/search/3 -- 4d84f630-3989-49fd-bf9e-6b14d20071c7 -- 200 -- 347 - 9.068 ms
+2021-01-29 -- 00:16:35:1635 -- info: Init transaction query
+2021-01-29 -- 00:16:35:1635 -- info: Commit
+2021-01-29 -- 00:16:35:1635 -- http: GET -- /hackathon/search/filters?hackathon_place=presencial -- 09659b32-bd93-41b2-bad9-ffe68ea8fed4 -- 200 -- 699 - 12.529 ms
+2021-01-29 -- 00:16:44:1644 -- info: Init transaction query
+2021-01-29 -- 00:16:44:1644 -- info: Commit
+2021-01-29 -- 00:16:44:1644 -- http: GET -- /hackathon/search/filters -- 720321ab-941e-43e8-81b9-ae0a3f493caf -- 200 -- 996 - 4.492 ms
+2021-01-29 -- 02:26:14:2614 -- info: Init transaction query
+2021-01-29 -- 02:26:14:2614 -- info: Commit
+2021-01-29 -- 02:26:14:2614 -- http: GET -- /hackathon/search/filters -- 0d04abf2-b8de-4bec-b80a-05eb606d575f -- 200 -- 996 - 73.669 ms
+2021-01-29 -- 02:26:16:2616 -- info: Init transaction query
+2021-01-29 -- 02:26:16:2616 -- info: Commit
+2021-01-29 -- 02:26:16:2616 -- http: GET -- /hackathon/search/filters -- d4d8cd23-854e-43da-8a3b-60dbe0b9455a -- 200 -- 996 - 16.428 ms
+2021-01-29 -- 02:26:21:2621 -- info: Init transaction query
+2021-01-29 -- 02:26:21:2621 -- info: Commit
+2021-01-29 -- 02:26:21:2621 -- http: GET -- /hackathon/search/filters -- 37eeb058-1ef0-4120-80a6-f05960925938 -- 200 -- 996 - 7.842 ms
+2021-01-29 -- 02:26:22:2622 -- info: Init transaction query
+2021-01-29 -- 02:26:22:2622 -- info: Commit
+2021-01-29 -- 02:26:22:2622 -- http: GET -- /hackathon/search/filters -- f1664ebf-dd63-4bbf-9658-2d0562cff218 -- 200 -- 996 - 35.277 ms
+2021-01-29 -- 02:26:23:2623 -- info: Init transaction query
+2021-01-29 -- 02:26:23:2623 -- info: Commit
+2021-01-29 -- 02:26:23:2623 -- http: GET -- /hackathon/search/filters -- c7293174-7c93-4a29-bc24-5fc27bf23e92 -- 200 -- 996 - 9.151 ms
+2021-01-29 -- 02:26:24:2624 -- info: Init transaction query
+2021-01-29 -- 02:26:24:2624 -- info: Commit
+2021-01-29 -- 02:26:24:2624 -- http: GET -- /hackathon/search/filters -- 22408859-e13c-4ee8-8e3b-590bf91373b2 -- 200 -- 996 - 9.455 ms
+2021-01-29 -- 02:26:26:2626 -- info: Init transaction query
+2021-01-29 -- 02:26:26:2626 -- info: Commit
+2021-01-29 -- 02:26:26:2626 -- http: GET -- /hackathon/search/filters -- 6d4d6334-e18c-4319-8b59-496607acd61c -- 200 -- 996 - 14.754 ms
+2021-01-29 -- 02:26:27:2627 -- info: Init transaction query
+2021-01-29 -- 02:26:27:2627 -- info: Commit
+2021-01-29 -- 02:26:27:2627 -- http: GET -- /hackathon/search/filters -- 1ab257f9-3581-422c-9079-5021e1fb6791 -- 200 -- 996 - 4.597 ms
+2021-01-29 -- 12:01:47:147 -- info: listening on port 3000
+2021-01-29 -- 12:02:04:24 -- info: Init transaction query
+2021-01-29 -- 12:02:04:24 -- info: Commit
+2021-01-29 -- 12:02:04:24 -- http: GET -- /hackathon/search/filters?hackathon_place=presencial -- d9ec9436-4135-488b-a81b-a1de9c35c561 -- 200 -- 699 - 59.219 ms
+2021-01-29 -- 12:02:44:244 -- info: Init transaction query
+2021-01-29 -- 12:02:45:245 -- info: Commit
+2021-01-29 -- 12:02:45:245 -- http: GET -- /hackathon/search/filters -- 91552de7-9ca9-491c-813d-f0ce47f96572 -- 200 -- 996 - 10.352 ms

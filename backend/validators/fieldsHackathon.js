@@ -3,8 +3,15 @@ const Joi = require('joi');
 const fieldsHackathons = Joi.object({
 
     // TODO -- check data format, change value in js front? timestamp sql?
+    hackathon_name: Joi.string().lowercase().trim()
+        .required()
+        .min(2)
+        .max(100)
+        .error(
+            new Error('The name of hackathon is not valid')
+        ),
 
-    place: Joi.string().lowercase().trim()
+    hackathon_place: Joi.string().lowercase().trim()
         .valid('online', 'presencial', 'semipresencial')
         .required()
         .error(
@@ -38,6 +45,12 @@ const fieldsHackathons = Joi.object({
         .min(3)
         .error(
             new Error('The info of hackathon is not valid')
+        ),
+    cover_picture: Joi.string().lowercase().trim()
+        .min(2)
+        .max(500)
+        .error(
+            new Error('The cover picture of hackathon is not valid')
         ),
     tech: Joi.array()
         .items(Joi.string(), Joi.number())
