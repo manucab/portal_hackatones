@@ -56,29 +56,28 @@ const getHackathonByFilters = async(req, res) => {
 
         })
 
+
+
+        // Commit mysql
+        query = 'commit';
+        await performQuery(query, params);
+        logger.info('Commit');
+
+        // 2. send result json
+        res.json(msgResponse);
+
+    } catch (e) {
+
+        // Something wrong --> Rollback
+        query = 'rollback';
+        await performQuery(query, params);
+        logger.error(query);
+
+        let msgError = ('Error get hackathon info:', e.message);
+        logger.error(msgError);
+        return res.status(500).json({ info: msgError });
     }
-
-    // Commit mysql
-    query = 'commit';
-    await performQuery(query, params);
-    logger.info('Commit');
-
-    // 2. send result json
-    res.json(msgResponse);
-
-} catch (e) {
-
-    // Something wrong --> Rollback
-    query = 'rollback';
-    await performQuery(query, params);
-    logger.error(query);
-
-    let msgError = ('Error get hackathon info:', e.message);
-    logger.error(msgError);
-    return res.status(500).json({ info: msgError });
 }
-
-
 module.exports = {
     getHackathonByFilters
 }

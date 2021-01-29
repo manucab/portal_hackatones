@@ -1836,6 +1836,19 @@
 2021-01-29 -- 12:17:47:1747 -- info: Commit
 2021-01-29 -- 12:17:47:1747 -- debug: Create new hackathon successfully
 2021-01-29 -- 12:17:47:1747 -- http: POST -- /createhackathon -- 2 -- 200 -- 33 - 38.619 ms
+<<<<<<< HEAD
+2021-01-29 -- 15:37:32:3732 -- info: listening on port 3000
+2021-01-29 -- 15:38:26:3826 -- warn: 404 Router not found
+2021-01-29 -- 15:38:26:3826 -- http: POST -- /search/filters?start_date=2021-01-28 -- 117f5b53-3287-407a-bd88-be8be47e9f58 -- 404 -- 30 - 6.107 ms
+2021-01-29 -- 15:38:31:3831 -- warn: 404 Router not found
+2021-01-29 -- 15:38:31:3831 -- http: GET -- /search/filters?start_date=2021-01-28 -- ca265f95-7a7f-46a2-b532-a80925976511 -- 404 -- 30 - 1.944 ms
+2021-01-29 -- 15:38:41:3841 -- info: Init transaction query
+2021-01-29 -- 15:38:41:3841 -- info: Commit
+2021-01-29 -- 15:38:41:3841 -- http: GET -- /hackathon/search/filters?start_date=2021-01-28 -- 2c467139-f3da-4f7c-8aaa-0457ca70c112 -- 200 -- 26 - 54.099 ms
+2021-01-29 -- 15:39:35:3935 -- info: Init transaction query
+2021-01-29 -- 15:39:35:3935 -- info: Commit
+2021-01-29 -- 15:39:35:3935 -- http: GET -- /hackathon/search/filters?start_date=2021-03-11 -- cdc252fd-53a0-4fb8-948a-1c479c2504d5 -- 200 -- 1331 - 20.557 ms
+=======
 2021-01-29 -- 12:36:19:3619 -- info: listening on port 3000
 2021-01-29 -- 12:38:24:3824 -- info: Home page
 2021-01-29 -- 12:38:24:3824 -- http: GET -- / -- fe363545-e42b-4199-9356-e0ac4510e316 -- 200 -- 20 - 5.506 ms
@@ -1935,6 +1948,7 @@
 2021-01-29 -- 13:25:27:2527 -- error: Table 'portal_hack.admin' doesn't exist
 2021-01-29 -- 13:25:27:2527 -- error: Table 'portal_hack.admin' doesn't exist
 2021-01-29 -- 13:25:27:2527 -- http: POST -- /createhackathon -- 38772a09-b676-4c06-a6bd-7f00bdcf3448 -- 401 -- 50 - 5.591 ms
+<<<<<<< HEAD
 2021-01-29 -- 13:36:44:3644 -- info: listening on port 3000
 2021-01-29 -- 13:36:58:3658 -- info: Is organizer and state ACTIVE
 2021-01-29 -- 13:36:58:3658 -- info: Rollback query
@@ -2148,3 +2162,6 @@
 2021-01-29 -- 19:47:49:4749 -- http: GET -- /user/1 -- b9b31879-af85-4ab9-a5d6-1436fa4350c1 -- 500 -- 14 - 78.565 ms
 2021-01-29 -- 19:48:52:4852 -- info: listening on port 3000
 2021-01-29 -- 19:48:54:4854 -- http: GET -- /user/1 -- e223468a-2f39-46ed-a416-d1dece72777e -- 200 -- 1158 - 43.356 ms
+=======
+>>>>>>> 36ed08d3d3937c1a8caaa5a059d2efcdea3f6439
+>>>>>>> 8320f0b551462cb049fb629ec74f2246f49beb77
