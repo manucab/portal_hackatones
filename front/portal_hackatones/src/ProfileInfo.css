@@ -1,0 +1,32 @@
+.acordeon {
+    margin: 30px;
+}
+
+.acordeon img {
+    height: 25px;
+    width: 25px;
+}
+
+h1{
+    font-size: 75%;
+}
+
+.personal-info {
+    margin: 5px;
+    border: 1px solid skyblue;
+}
+
+.participaciones {
+    margin: 5px;
+    border: 1px solid orange;
+}
+
+.creados {
+    margin: 5px;
+    border: 1px solid black;
+}
+
+.estadisticas {
+    margin: 5px;
+    border: 1px solid red;
+}
