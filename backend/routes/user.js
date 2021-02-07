@@ -18,7 +18,7 @@ const { isCodeUser } = require('../middelwares/validateAccount/isCodeUser');
 const { isAuthenticated, isRightUser, isOrganizer } = require('../middelwares/authorization/auth');
 
 // *** GET *** 
-router.get('/:idUser',isAuthenticated,isRightUser, profileInfo)
+router.get('/:idUser',isAuthenticated,isRightUser,profileInfo)
     // *** PUT ***
 router.put('/:idUser/update',isAuthenticated,isRightUser , updateProfile)
 router.put('/forgotPassword', forgotPassword)

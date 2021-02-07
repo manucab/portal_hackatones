@@ -284,3 +284,109 @@
 2021-01-29 -- 15:44:07:447 -- error: The tech of hackathon is not valid
 2021-01-29 -- 16:20:01:201 -- error: performQuery is not a function
 >>>>>>> 75a98159ffd2f140a42db5fc123e009f1711c553
+2021-02-02 -- 16:22:53:2253 -- error: connect ECONNREFUSED 127.0.0.1:3306
+2021-02-02 -- 16:22:53:2253 -- error: undefined
+2021-02-02 -- 16:22:53:2253 -- error: connect ECONNREFUSED 127.0.0.1:3306
+2021-02-02 -- 16:22:53:2253 -- error: undefined
+2021-02-02 -- 16:23:48:2348 -- error: connect ECONNREFUSED 127.0.0.1:3306
+2021-02-02 -- 16:23:48:2348 -- error: undefined
+2021-02-02 -- 16:23:48:2348 -- error: connect ECONNREFUSED 127.0.0.1:3306
+2021-02-02 -- 16:23:48:2348 -- error: undefined
+2021-02-02 -- 16:26:20:2620 -- error: Access denied for user 'fgjcarlos'@'localhost' (using password: YES)
+2021-02-02 -- 16:26:20:2620 -- error: undefined
+2021-02-02 -- 16:28:06:286 -- error: Access denied for user 'fgjcarlos'@'localhost' (using password: YES)
+2021-02-02 -- 16:28:06:286 -- error: undefined
+2021-02-02 -- 16:29:52:2952 -- error: Access denied for user 'fgjcarlos'@'localhost' (using password: YES)
+2021-02-02 -- 16:29:52:2952 -- error: undefined
+2021-02-02 -- 16:30:59:3059 -- error: Access denied for user 'fgjcarlos'@'localhost' (using password: YES)
+2021-02-02 -- 16:30:59:3059 -- error: undefined
+2021-02-02 -- 16:31:06:316 -- error: Access denied for user 'fgjcarlos'@'localhost' (using password: YES)
+2021-02-02 -- 16:31:06:316 -- error: undefined
+2021-02-02 -- 16:32:14:3214 -- error: Access denied for user 'fgjcarlos'@'localhost' (using password: YES)
+2021-02-02 -- 16:32:14:3214 -- error: undefined
+2021-02-02 -- 16:32:28:3228 -- error: Access denied for user 'fgjcarlos'@'localhost' (using password: YES)
+2021-02-02 -- 16:32:28:3228 -- error: undefined
+2021-02-02 -- 16:32:28:3228 -- error: 
+2021-02-02 -- 16:35:29:3529 -- error: Access denied for user 'fgjcarlos'@'localhost' (using password: YES)
+2021-02-02 -- 16:35:29:3529 -- error: undefined
+2021-02-04 -- 20:33:49:3349 -- error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '.inscription_status, b.ranking,b.id_competitor,b.rate,group_concat(d.tech_name s' at line 2
+2021-02-04 -- 20:34:03:343 -- error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '.inscription_status, b.ranking,b.id_competitor,b.rate,group_concat(d.tech_name s' at line 2
+2021-02-06 -- 10:28:37:2837 -- error: Email must have the following structure: name@xxxx.[com, es, net]
+2021-02-06 -- 10:28:59:2859 -- error: Email must have the following structure: name@xxxx.[com, es, net]
+2021-02-06 -- 10:29:03:293 -- error: Email must have the following structure: name@xxxx.[com, es, net]
+2021-02-06 -- 10:29:04:294 -- error: Email must have the following structure: name@xxxx.[com, es, net]
+2021-02-06 -- 10:38:59:3859 -- error: Email must have the following structure: name@xxxx.[com, es, net]
+2021-02-06 -- 10:39:02:392 -- error: Email must have the following structure: name@xxxx.[com, es, net]
+2021-02-06 -- 10:39:02:392 -- error: Email must have the following structure: name@xxxx.[com, es, net]
+2021-02-06 -- 10:39:02:392 -- error: Email must have the following structure: name@xxxx.[com, es, net]
+2021-02-06 -- 10:39:02:392 -- error: Email must have the following structure: name@xxxx.[com, es, net]
+2021-02-06 -- 10:39:03:393 -- error: Email must have the following structure: name@xxxx.[com, es, net]
+2021-02-06 -- 10:39:03:393 -- error: Email must have the following structure: name@xxxx.[com, es, net]
+2021-02-06 -- 10:39:03:393 -- error: Email must have the following structure: name@xxxx.[com, es, net]
+2021-02-06 -- 10:39:03:393 -- error: Email must have the following structure: name@xxxx.[com, es, net]
+2021-02-06 -- 10:39:03:393 -- error: Email must have the following structure: name@xxxx.[com, es, net]
+2021-02-06 -- 10:39:04:394 -- error: Email must have the following structure: name@xxxx.[com, es, net]
+2021-02-06 -- 10:39:04:394 -- error: Email must have the following structure: name@xxxx.[com, es, net]
+2021-02-06 -- 10:39:04:394 -- error: Email must have the following structure: name@xxxx.[com, es, net]
+2021-02-06 -- 10:39:04:394 -- error: Email must have the following structure: name@xxxx.[com, es, net]
+2021-02-06 -- 10:39:05:395 -- error: Email must have the following structure: name@xxxx.[com, es, net]
+2021-02-06 -- 10:39:05:395 -- error: Email must have the following structure: name@xxxx.[com, es, net]
+2021-02-06 -- 10:39:17:3917 -- error: Email must have the following structure: name@xxxx.[com, es, net]
+2021-02-06 -- 10:39:17:3917 -- error: Email must have the following structure: name@xxxx.[com, es, net]
+2021-02-06 -- 10:39:17:3917 -- error: Email must have the following structure: name@xxxx.[com, es, net]
+2021-02-06 -- 10:39:20:3920 -- error: Email must have the following structure: name@xxxx.[com, es, net]
+2021-02-06 -- 10:39:21:3921 -- error: Email must have the following structure: name@xxxx.[com, es, net]
+2021-02-06 -- 10:41:23:4123 -- error: Email must have the following structure: name@xxxx.[com, es, net]
+2021-02-06 -- 10:41:45:4145 -- error: Email must have the following structure: name@xxxx.[com, es, net]
+2021-02-06 -- 10:42:39:4239 -- error: Email must have the following structure: name@xxxx.[com, es, net]
+2021-02-06 -- 10:44:40:4440 -- error: Email must have the following structure: name@xxxx.[com, es, net]
+2021-02-06 -- 10:44:41:4441 -- error: Email must have the following structure: name@xxxx.[com, es, net]
+2021-02-06 -- 10:44:41:4441 -- error: Email must have the following structure: name@xxxx.[com, es, net]
+2021-02-06 -- 10:44:42:4442 -- error: Email must have the following structure: name@xxxx.[com, es, net]
+2021-02-06 -- 10:44:42:4442 -- error: Email must have the following structure: name@xxxx.[com, es, net]
+2021-02-06 -- 10:44:43:4443 -- error: Email must have the following structure: name@xxxx.[com, es, net]
+2021-02-06 -- 10:44:43:4443 -- error: Email must have the following structure: name@xxxx.[com, es, net]
+2021-02-06 -- 10:44:44:4444 -- error: Email must have the following structure: name@xxxx.[com, es, net]
+2021-02-06 -- 10:45:02:452 -- error: Email must have the following structure: name@xxxx.[com, es, net]
+2021-02-06 -- 10:45:36:4536 -- error: Email must have the following structure: name@xxxx.[com, es, net]
+2021-02-06 -- 10:47:33:4733 -- error: Email must have the following structure: name@xxxx.[com, es, net]
+2021-02-06 -- 10:47:33:4733 -- error: Email must have the following structure: name@xxxx.[com, es, net]
+2021-02-06 -- 10:47:34:4734 -- error: Email must have the following structure: name@xxxx.[com, es, net]
+2021-02-06 -- 10:47:34:4734 -- error: Email must have the following structure: name@xxxx.[com, es, net]
+2021-02-06 -- 10:47:34:4734 -- error: Email must have the following structure: name@xxxx.[com, es, net]
+2021-02-06 -- 10:47:35:4735 -- error: Email must have the following structure: name@xxxx.[com, es, net]
+2021-02-06 -- 10:47:35:4735 -- error: Email must have the following structure: name@xxxx.[com, es, net]
+2021-02-06 -- 10:48:01:481 -- error: Email must have the following structure: name@xxxx.[com, es, net]
+2021-02-06 -- 10:48:48:4848 -- error: Email must have the following structure: name@xxxx.[com, es, net]
+2021-02-06 -- 10:49:01:491 -- error: Email must have the following structure: name@xxxx.[com, es, net]
+2021-02-06 -- 10:50:12:5012 -- error: Email must have the following structure: name@xxxx.[com, es, net]
+2021-02-06 -- 10:52:35:5235 -- error: Email must have the following structure: name@xxxx.[com, es, net]
+2021-02-06 -- 10:54:33:5433 -- error: Email must have the following structure: name@xxxx.[com, es, net]
+2021-02-06 -- 10:56:57:5657 -- error: Email must have the following structure: name@xxxx.[com, es, net]
+2021-02-06 -- 10:57:00:570 -- error: Email must have the following structure: name@xxxx.[com, es, net]
+2021-02-06 -- 10:57:01:571 -- error: Email must have the following structure: name@xxxx.[com, es, net]
+2021-02-06 -- 10:57:09:579 -- error: Email must have the following structure: name@xxxx.[com, es, net]
+2021-02-06 -- 10:57:10:5710 -- error: Email must have the following structure: name@xxxx.[com, es, net]
+2021-02-06 -- 10:57:27:5727 -- error: Email must have the following structure: name@xxxx.[com, es, net]
+2021-02-06 -- 10:57:28:5728 -- error: Email must have the following structure: name@xxxx.[com, es, net]
+2021-02-06 -- 10:57:36:5736 -- error: Email must have the following structure: name@xxxx.[com, es, net]
+2021-02-06 -- 10:57:38:5738 -- error: Email must have the following structure: name@xxxx.[com, es, net]
+2021-02-06 -- 10:57:39:5739 -- error: Email must have the following structure: name@xxxx.[com, es, net]
+2021-02-06 -- 10:57:48:5748 -- error: Email must have the following structure: name@xxxx.[com, es, net]
+2021-02-06 -- 10:58:23:5823 -- error: Email must have the following structure: name@xxxx.[com, es, net]
+2021-02-06 -- 10:59:17:5917 -- error: Email must have the following structure: name@xxxx.[com, es, net]
+2021-02-06 -- 10:59:24:5924 -- error: Email must have the following structure: name@xxxx.[com, es, net]
+2021-02-06 -- 10:59:52:5952 -- error: Email must have the following structure: name@xxxx.[com, es, net]
+2021-02-06 -- 11:00:08:08 -- error: Email must have the following structure: name@xxxx.[com, es, net]
+2021-02-06 -- 11:04:07:47 -- error: Email must have the following structure: name@xxxx.[com, es, net]
+2021-02-06 -- 11:04:25:425 -- error: Email must have the following structure: name@xxxx.[com, es, net]
+2021-02-06 -- 11:04:44:444 -- error: Email must have the following structure: name@xxxx.[com, es, net]
+2021-02-06 -- 11:04:46:446 -- error: Email must have the following structure: name@xxxx.[com, es, net]
+2021-02-06 -- 11:05:44:544 -- error: Email must have the following structure: name@xxxx.[com, es, net]
+2021-02-06 -- 11:07:44:744 -- error: Email must have the following structure: name@xxxx.[com, es, net]
+2021-02-06 -- 11:07:45:745 -- error: Email must have the following structure: name@xxxx.[com, es, net]
+2021-02-06 -- 11:46:14:4614 -- error: invalid token
+2021-02-06 -- 11:46:40:4640 -- error: jwt expired
+2021-02-06 -- 11:47:25:4725 -- error: invalid token
+2021-02-06 -- 11:49:23:4923 -- error: Unexpected token � in JSON at position 9
+2021-02-06 -- 17:13:57:1357 -- error: The rol entered is not valid

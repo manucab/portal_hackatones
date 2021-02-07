@@ -2522,3 +2522,392 @@
 =======
 >>>>>>> 75a98159ffd2f140a42db5fc123e009f1711c553
 >>>>>>> 69d0be1ab4390feff7d553e03cb4f2b30b6694b0
+2021-02-02 -- 16:22:46:2246 -- info: listening on port 3001
+2021-02-02 -- 16:22:53:2253 -- error: connect ECONNREFUSED 127.0.0.1:3306
+2021-02-02 -- 16:22:53:2253 -- error: undefined
+2021-02-02 -- 16:22:53:2253 -- error: connect ECONNREFUSED 127.0.0.1:3306
+2021-02-02 -- 16:22:53:2253 -- error: undefined
+2021-02-02 -- 16:23:48:2348 -- error: connect ECONNREFUSED 127.0.0.1:3306
+2021-02-02 -- 16:23:48:2348 -- error: undefined
+2021-02-02 -- 16:23:48:2348 -- error: connect ECONNREFUSED 127.0.0.1:3306
+2021-02-02 -- 16:23:48:2348 -- error: undefined
+2021-02-02 -- 16:24:53:2453 -- http: GET -- /hackathon/search/filters -- 738804fa-f3b3-44c8-8246-428185e455af -- - -- - - - ms
+2021-02-02 -- 16:25:48:2548 -- http: GET -- /hackathon/search/filters -- c304a321-df49-48a4-9fb8-7d827080b545 -- - -- - - - ms
+2021-02-02 -- 16:26:15:2615 -- info: listening on port 3001
+2021-02-02 -- 16:26:20:2620 -- error: Access denied for user 'fgjcarlos'@'localhost' (using password: YES)
+2021-02-02 -- 16:26:20:2620 -- error: undefined
+2021-02-02 -- 16:26:20:2620 -- http: GET -- /user/profileInfo -- 0456f7ce-6300-45c6-b215-6496203901c8 -- 200 -- 0 - 76.262 ms
+2021-02-02 -- 16:28:06:286 -- error: Access denied for user 'fgjcarlos'@'localhost' (using password: YES)
+2021-02-02 -- 16:28:06:286 -- error: undefined
+2021-02-02 -- 16:28:06:286 -- http: GET -- /user/1 -- 260e1236-ca28-40bf-807e-01b60045d0ce -- 200 -- 0 - 7.069 ms
+2021-02-02 -- 16:29:52:2952 -- error: Access denied for user 'fgjcarlos'@'localhost' (using password: YES)
+2021-02-02 -- 16:29:52:2952 -- error: undefined
+2021-02-02 -- 16:29:52:2952 -- http: GET -- /user/1 -- 371d13c1-1fa1-43a2-905c-bd5ed6e1bd44 -- 304 -- - - 7.373 ms
+2021-02-02 -- 16:30:59:3059 -- error: Access denied for user 'fgjcarlos'@'localhost' (using password: YES)
+2021-02-02 -- 16:30:59:3059 -- error: undefined
+2021-02-02 -- 16:30:59:3059 -- http: GET -- /user/1 -- 5a0d2301-5b12-4a13-a480-920eac961e42 -- 200 -- 0 - 4.483 ms
+2021-02-02 -- 16:31:06:316 -- error: Access denied for user 'fgjcarlos'@'localhost' (using password: YES)
+2021-02-02 -- 16:31:06:316 -- error: undefined
+2021-02-02 -- 16:31:06:316 -- http: GET -- /user/2 -- dae2df49-367d-492e-a26e-1dec06b20f71 -- 200 -- 0 - 3.874 ms
+2021-02-02 -- 16:32:14:3214 -- error: Access denied for user 'fgjcarlos'@'localhost' (using password: YES)
+2021-02-02 -- 16:32:14:3214 -- error: undefined
+2021-02-02 -- 16:32:14:3214 -- http: GET -- /user/1 -- b8a854a6-28c0-4937-be3f-4f740de03ad4 -- 200 -- 0 - 3.454 ms
+2021-02-02 -- 16:32:28:3228 -- error: Access denied for user 'fgjcarlos'@'localhost' (using password: YES)
+2021-02-02 -- 16:32:28:3228 -- error: undefined
+2021-02-02 -- 16:32:28:3228 -- error: 
+2021-02-02 -- 16:32:28:3228 -- http: POST -- /login -- 83755b96-228c-44c7-b3f0-fe548147705e -- 401 -- 0 - 7.990 ms
+2021-02-02 -- 16:35:29:3529 -- error: Access denied for user 'fgjcarlos'@'localhost' (using password: YES)
+2021-02-02 -- 16:35:29:3529 -- error: undefined
+2021-02-02 -- 16:35:29:3529 -- http: GET -- /user/1 -- 11494b66-0d9e-4597-b88b-7b381034c39a -- 200 -- 0 - 3.942 ms
+2021-02-02 -- 16:35:35:3535 -- info: listening on port 3001
+2021-02-02 -- 16:35:39:3539 -- http: GET -- /user/1 -- 3c2b8826-46b5-4855-8f1c-6cddd3b9dfac -- 200 -- 1173 - 427.614 ms
+2021-02-02 -- 16:35:55:3555 -- http: GET -- /user/1 -- b3fa31bd-ef10-4e22-bd81-a82d69ceadc5 -- 200 -- 1173 - 8.969 ms
+2021-02-02 -- 16:37:27:3727 -- http: GET -- /user/1 -- 605336b3-59d8-42c5-8956-97ad109e58fb -- 304 -- - - 4.893 ms
+2021-02-02 -- 16:39:22:3922 -- http: GET -- /user/1 -- b57db660-7b36-4ea6-aea5-23d2044cfc11 -- 304 -- - - 4.212 ms
+2021-02-02 -- 16:39:45:3945 -- http: GET -- /user/1 -- 795b0103-c78b-4e08-81a5-180394ee5eb4 -- 304 -- - - 6.283 ms
+2021-02-02 -- 16:39:59:3959 -- http: GET -- /user/1 -- 80f35164-f0f9-4ef2-9501-dc08a284ed2e -- 304 -- - - 6.413 ms
+2021-02-02 -- 16:48:32:4832 -- http: GET -- /user/1 -- 9929ce80-e776-4546-a554-5a9100a873c9 -- 304 -- - - 5.871 ms
+2021-02-02 -- 16:49:40:4940 -- http: GET -- /user/1 -- 1b85e227-8d39-4f89-97e6-05d8b70e80f6 -- 304 -- - - 4.710 ms
+2021-02-02 -- 16:50:03:503 -- http: GET -- /user/1 -- 9a9c555d-5e58-4493-adfd-021a0f90e5ad -- 304 -- - - 5.410 ms
+2021-02-02 -- 17:00:23:023 -- http: GET -- /user/1 -- 2a123213-2a02-44cd-9795-0baec8f1132f -- 304 -- - - 4.746 ms
+2021-02-02 -- 17:00:59:059 -- http: GET -- /user/1 -- b65446f5-fecc-4c06-8d7b-24645d5b019c -- 304 -- - - 3.797 ms
+2021-02-02 -- 17:02:15:215 -- http: GET -- /user/1 -- 46a2a8ca-6d7a-4252-9a52-946952606af3 -- 304 -- - - 4.490 ms
+2021-02-02 -- 17:02:41:241 -- http: GET -- /user/1 -- 9a5dd9bb-4d37-4d0a-983e-0f7975e3340b -- 304 -- - - 4.278 ms
+2021-02-02 -- 17:04:02:42 -- http: GET -- /user/1 -- 0a2d981d-ad5a-44da-a588-625c4a30af09 -- 304 -- - - 3.577 ms
+2021-02-02 -- 17:04:20:420 -- http: GET -- /user/1 -- e9fe4b46-ebf4-4bcd-80a4-9a02bdf6c9ae -- 304 -- - - 5.272 ms
+2021-02-02 -- 17:07:52:752 -- http: GET -- /user/1 -- 526e50a3-00b2-4984-aa0d-1d3f5b868018 -- 304 -- - - 5.218 ms
+2021-02-02 -- 17:08:08:88 -- http: GET -- /user/1 -- 4525c796-d322-419e-b318-1746fa466759 -- 304 -- - - 5.839 ms
+2021-02-02 -- 17:09:51:951 -- http: GET -- /user/1 -- f8f441b1-0b26-44e4-919f-1330ce5fe66a -- 304 -- - - 3.644 ms
+2021-02-02 -- 17:10:11:1011 -- http: GET -- /user/1 -- ab40a8ca-9351-4632-ab44-b815aa66863f -- 304 -- - - 4.549 ms
+2021-02-02 -- 17:10:46:1046 -- http: GET -- /user/1 -- cf2ed7e4-5116-4520-b7ae-d6b777aea41d -- 304 -- - - 4.772 ms
+2021-02-02 -- 17:13:59:1359 -- http: GET -- /user/1 -- 3d8bf1d9-14a8-4696-b982-703428e9139b -- 304 -- - - 3.691 ms
+2021-02-02 -- 17:15:13:1513 -- http: GET -- /user/1 -- d2ffe561-cbf8-48cb-b59f-9ecd035021d5 -- 304 -- - - 5.313 ms
+2021-02-02 -- 17:16:37:1637 -- http: GET -- /user/1 -- 7f4b893f-484c-410d-9d22-5d208943c2c2 -- 304 -- - - 5.092 ms
+2021-02-02 -- 17:16:48:1648 -- http: GET -- /user/1 -- bd78888d-68e0-4861-bfaa-5bebf5481aac -- 304 -- - - 4.508 ms
+2021-02-02 -- 17:23:08:238 -- http: GET -- /user/1 -- 1c57d94d-6da8-48a6-a787-e7461c6f3736 -- 304 -- - - 5.372 ms
+2021-02-02 -- 17:23:26:2326 -- http: GET -- /user/1 -- a596fa3f-acd2-479d-b658-f9176d2286ca -- 304 -- - - 5.535 ms
+2021-02-02 -- 17:24:13:2413 -- http: GET -- /user/1 -- d15fb784-8442-416a-b94b-4d1167075331 -- 304 -- - - 3.893 ms
+2021-02-02 -- 17:24:40:2440 -- http: GET -- /user/1 -- f9baad16-3651-41e7-a751-0219beb1e62b -- 304 -- - - 5.207 ms
+2021-02-02 -- 17:26:47:2647 -- http: GET -- /user/1 -- df283eea-4895-444a-a291-88a5a3225f15 -- 304 -- - - 4.562 ms
+2021-02-02 -- 17:36:14:3614 -- http: GET -- /user/1 -- 5bd23399-0436-4920-adc9-47c30dbb0925 -- 304 -- - - 5.456 ms
+2021-02-02 -- 17:36:42:3642 -- http: GET -- /user/1 -- bf16fbfa-c7d4-4422-a872-1fe5fd12c7b9 -- 304 -- - - 5.843 ms
+2021-02-02 -- 17:36:53:3653 -- http: GET -- /user/1 -- aafec323-6a61-44cd-a7e3-8717a5acc3b0 -- 304 -- - - 4.627 ms
+2021-02-04 -- 18:38:53:3853 -- info: listening on port 3001
+2021-02-04 -- 18:40:31:4031 -- http: GET -- /user/1 -- d61984c9-6ed9-46dd-9070-1328d88a42e7 -- 304 -- - - 41.436 ms
+2021-02-04 -- 19:01:24:124 -- http: GET -- /user/1 -- e0c3ab4d-18cb-4cb9-818e-c3182d79e013 -- 304 -- - - 6.661 ms
+2021-02-04 -- 19:01:44:144 -- http: GET -- /user/1 -- 225cb2de-e52a-4760-893f-a9d30a92911d -- 304 -- - - 6.947 ms
+2021-02-04 -- 19:03:15:315 -- http: GET -- /user/1 -- b2413148-545d-4c2f-b5cc-636dfb76ad69 -- 304 -- - - 6.218 ms
+2021-02-04 -- 19:12:55:1255 -- http: GET -- /user/1 -- bd3de70b-5e20-4909-978a-72547cc81496 -- 304 -- - - 6.533 ms
+2021-02-04 -- 19:14:24:1424 -- http: GET -- /user/1 -- 81db77db-10f3-4e90-85b1-6b799071e535 -- 304 -- - - 5.118 ms
+2021-02-04 -- 19:15:14:1514 -- http: GET -- /user/1 -- 65a4ad24-4fbb-424d-9fae-b7dd450915e7 -- 304 -- - - 5.045 ms
+2021-02-04 -- 19:15:50:1550 -- http: GET -- /user/1 -- 1ad51dae-35a8-44da-a7dd-38a24a372793 -- 304 -- - - 7.266 ms
+2021-02-04 -- 19:15:56:1556 -- http: GET -- /user/1 -- a71d34be-8d20-4821-bce5-48661c623860 -- 304 -- - - 7.155 ms
+2021-02-04 -- 19:17:16:1716 -- http: GET -- /user/1 -- 2b6edc1b-5643-4e3d-a970-5f00e9a91827 -- 304 -- - - 6.952 ms
+2021-02-04 -- 19:17:40:1740 -- http: GET -- /user/1 -- 9b94408f-3838-46d3-9fe1-d2a269c3919b -- 304 -- - - 4.629 ms
+2021-02-04 -- 19:18:15:1815 -- http: GET -- /user/1 -- 9c0499ea-783e-4fa8-a838-66c7ba1a4214 -- 304 -- - - 5.186 ms
+2021-02-04 -- 19:18:59:1859 -- http: GET -- /user/1 -- 53e02ad9-2719-445b-8b0e-98f93681632c -- 304 -- - - 3.710 ms
+2021-02-04 -- 19:19:35:1935 -- http: GET -- /user/1 -- 62849480-3a53-45ff-91a3-b29ce978d310 -- 304 -- - - 5.013 ms
+2021-02-04 -- 19:20:16:2016 -- http: GET -- /user/1 -- 7b1abe9f-8cfc-435c-8c82-6e11da80e442 -- 304 -- - - 7.117 ms
+2021-02-04 -- 19:20:39:2039 -- http: GET -- /user/1 -- 1942a031-aeff-445c-8150-6390ada9248a -- 304 -- - - 5.191 ms
+2021-02-04 -- 19:25:28:2528 -- http: GET -- /user/1 -- c2977b52-c660-4431-a3cc-32b2ab01d3e0 -- 304 -- - - 4.742 ms
+2021-02-04 -- 19:26:48:2648 -- http: GET -- /user/1 -- ca931994-59db-44b5-ac08-24decf042801 -- 304 -- - - 4.784 ms
+2021-02-04 -- 19:26:49:2649 -- http: GET -- /user/1 -- ab70863c-4108-4a6b-8e42-8c2f6f27ea8e -- 304 -- - - 4.734 ms
+2021-02-04 -- 19:26:59:2659 -- http: GET -- /user/1 -- b79fac2c-3289-48d7-8404-d7539df857de -- 304 -- - - 6.563 ms
+2021-02-04 -- 19:27:01:271 -- http: GET -- /user/1 -- fe072c1c-a45e-40e3-a29d-9aee2a9ab87a -- 304 -- - - 5.779 ms
+2021-02-04 -- 19:27:03:273 -- http: GET -- /user/1 -- a87982dc-7bcc-4a89-9fe3-f8761ea00bed -- 304 -- - - 6.229 ms
+2021-02-04 -- 19:27:39:2739 -- http: GET -- /user/1 -- 5eb20bd9-4cea-4d3f-80d0-c51ae69e8e48 -- 304 -- - - 5.097 ms
+2021-02-04 -- 19:28:12:2812 -- http: GET -- /user/1 -- 964ea210-a4cd-4436-b233-e651914ebf2c -- 304 -- - - 5.850 ms
+2021-02-04 -- 19:28:14:2814 -- http: GET -- /user/1 -- b7d45125-7ad5-4069-8eba-b85ed079d3ed -- 304 -- - - 6.794 ms
+2021-02-04 -- 19:28:48:2848 -- http: GET -- /user/1 -- 87031264-68e9-4dfc-9948-1a21e0454d05 -- 304 -- - - 5.060 ms
+2021-02-04 -- 19:28:59:2859 -- http: GET -- /user/1 -- be6bd603-eac8-40aa-bcb0-797cedd91974 -- 304 -- - - 4.948 ms
+2021-02-04 -- 19:29:11:2911 -- http: GET -- /user/1 -- fbaff721-d37e-4267-87ab-6e118c72471b -- 304 -- - - 4.158 ms
+2021-02-04 -- 19:29:30:2930 -- http: GET -- /user/1 -- 51a0ff7d-bae1-4482-84a2-3eb0f8d846b8 -- 304 -- - - 5.592 ms
+2021-02-04 -- 19:30:12:3012 -- http: GET -- /user/1 -- 4f7f6fd1-9799-4437-9e80-1f6623495a4e -- 304 -- - - 3.640 ms
+2021-02-04 -- 19:30:40:3040 -- http: GET -- /user/1 -- a53b0545-917e-4ee2-8bab-67dfbbfd69db -- 304 -- - - 8.332 ms
+2021-02-04 -- 19:32:42:3242 -- http: GET -- /user/1 -- 08e87ffe-2ca0-42ae-a75c-f0cb0f2f6375 -- 200 -- 1454 - 8.179 ms
+2021-02-04 -- 19:34:38:3438 -- http: GET -- /user/1 -- cfee222e-2892-4ffb-8cfb-9642dfd4e770 -- 304 -- - - 7.616 ms
+2021-02-04 -- 19:35:03:353 -- http: GET -- /user/1 -- 1d5b05fc-f3e8-4a16-a657-e15b15b16314 -- 304 -- - - 4.980 ms
+2021-02-04 -- 19:41:21:4121 -- http: GET -- /user/1 -- 37984a04-06e1-48c8-bbe9-40b4a7df3a18 -- 304 -- - - 4.267 ms
+2021-02-04 -- 19:43:33:4333 -- http: GET -- /user/1 -- ba292fb2-4b97-4e49-9ace-5d24ec2906f5 -- 304 -- - - 6.083 ms
+2021-02-04 -- 19:43:46:4346 -- http: GET -- /user/1 -- 92209abb-703b-446b-999e-0ee024201f1d -- 304 -- - - 5.170 ms
+2021-02-04 -- 19:43:54:4354 -- http: GET -- /user/1 -- 2d806547-37da-4c36-8810-711dfce6d430 -- 304 -- - - 10.234 ms
+2021-02-04 -- 19:46:19:4619 -- http: GET -- /user/1 -- b38898cd-398b-4d7b-b0ac-04a23074784a -- 304 -- - - 5.171 ms
+2021-02-04 -- 19:47:18:4718 -- http: GET -- /user/1 -- 70f0c12f-5b58-478c-9af7-15d7e04600b4 -- 304 -- - - 4.820 ms
+2021-02-04 -- 19:47:45:4745 -- http: GET -- /user/1 -- 2bba5de0-7022-4d6a-b73c-ecd7d77d488f -- 304 -- - - 4.255 ms
+2021-02-04 -- 19:48:18:4818 -- http: GET -- /user/1 -- a6e299c6-cd53-4a26-b000-adb51aec38a3 -- 304 -- - - 4.740 ms
+2021-02-04 -- 19:50:51:5051 -- http: GET -- /user/1 -- a95e681f-7a2d-45b1-9110-e3bfb4ebf39b -- 304 -- - - 5.970 ms
+2021-02-04 -- 19:51:36:5136 -- http: GET -- /user/1 -- e5d59de4-b46b-4e84-87a7-3168acad5ddb -- 304 -- - - 4.948 ms
+2021-02-04 -- 19:51:46:5146 -- http: GET -- /user/1 -- 89bfa202-20a8-494d-be98-d3693afc44df -- 304 -- - - 6.535 ms
+2021-02-04 -- 19:51:55:5155 -- http: GET -- /user/1 -- 03ab4dd6-09b2-4192-ad6e-8e23884110f8 -- 304 -- - - 4.260 ms
+2021-02-04 -- 19:52:25:5225 -- http: GET -- /user/1 -- 80f7ea82-3411-401d-8559-49bc544f526d -- 304 -- - - 3.608 ms
+2021-02-04 -- 20:33:41:3341 -- info: listening on port 3001
+2021-02-04 -- 20:33:49:3349 -- error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '.inscription_status, b.ranking,b.id_competitor,b.rate,group_concat(d.tech_name s' at line 2
+2021-02-04 -- 20:33:49:3349 -- http: GET -- /user/1 -- 70dac121-6c62-4132-82d1-3a00dbb1d1d2 -- 200 -- 226 - 88.644 ms
+2021-02-04 -- 20:34:03:343 -- error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '.inscription_status, b.ranking,b.id_competitor,b.rate,group_concat(d.tech_name s' at line 2
+2021-02-04 -- 20:34:03:343 -- http: GET -- /user/1 -- c70c3eb2-3cc0-47c5-af3f-9ceb85990032 -- 304 -- - - 4.071 ms
+2021-02-04 -- 20:34:35:3435 -- info: listening on port 3001
+2021-02-04 -- 20:34:41:3441 -- http: GET -- /user/1 -- 9316fc24-3212-43b5-8009-6a0612cc182d -- 200 -- 1551 - 48.131 ms
+2021-02-04 -- 20:36:23:3623 -- http: GET -- /user/1 -- f1e4688a-faa2-4396-b206-d289bd205510 -- 304 -- - - 6.731 ms
+2021-02-04 -- 20:36:36:3636 -- http: GET -- /user/1 -- 3792c219-a2ca-4a01-8877-589dec58b246 -- 304 -- - - 6.022 ms
+2021-02-04 -- 20:39:42:3942 -- http: GET -- /user/1 -- e27a4ed5-20d1-4efd-80f8-8b02b56b77da -- 304 -- - - 6.650 ms
+2021-02-04 -- 20:39:57:3957 -- http: GET -- /user/1 -- 64331c35-2224-4172-9aca-299637aa59f7 -- 304 -- - - 5.668 ms
+2021-02-04 -- 20:44:38:4438 -- http: GET -- /user/1 -- 0e46bff2-57a3-4d45-ab67-1474a6e04041 -- 304 -- - - 5.777 ms
+2021-02-04 -- 20:44:50:4450 -- http: GET -- /user/1 -- 941df08f-a3dc-4ac5-87ee-074422f31cdb -- 304 -- - - 4.962 ms
+2021-02-04 -- 20:45:10:4510 -- http: GET -- /user/1 -- 3cbf6f74-5400-47ae-b9dc-1db82db1da91 -- 304 -- - - 5.212 ms
+2021-02-04 -- 20:45:31:4531 -- http: GET -- /user/1 -- d3187686-b978-49d9-8079-45ba2bbec92c -- 304 -- - - 5.970 ms
+2021-02-04 -- 20:45:48:4548 -- http: GET -- /user/1 -- 1a5aa60b-1ecc-4489-84e0-5b0c7abf9dea -- 304 -- - - 4.234 ms
+2021-02-04 -- 20:45:54:4554 -- http: GET -- /user/1 -- d315d5e0-20ae-40ff-9b59-f976f1ef2a4f -- 304 -- - - 4.721 ms
+2021-02-04 -- 20:46:17:4617 -- http: GET -- /user/1 -- 298810c8-9c87-4014-8c7d-a834a72310a9 -- 304 -- - - 5.178 ms
+2021-02-04 -- 20:49:07:497 -- http: GET -- /user/1 -- 86f2d6f8-bf3a-4932-961b-d4e5747fce8c -- 304 -- - - 4.983 ms
+2021-02-04 -- 20:49:16:4916 -- http: GET -- /user/1 -- 5bb0413e-af62-4550-95e8-d9bcddaed9c7 -- 304 -- - - 4.562 ms
+2021-02-04 -- 20:49:23:4923 -- http: GET -- /user/1 -- 2f91dce4-99c0-4692-ad93-d251f7179931 -- 304 -- - - 3.629 ms
+2021-02-04 -- 20:50:45:5045 -- http: GET -- /user/1 -- 9676d726-24e4-48d1-9645-fd506fd692e8 -- 304 -- - - 6.883 ms
+2021-02-04 -- 20:54:54:5454 -- http: GET -- /user/1 -- dabda99c-637c-4f05-99a0-60f556b3f9ee -- 304 -- - - 4.921 ms
+2021-02-04 -- 20:55:26:5526 -- http: GET -- /user/1 -- e8eb1af6-7c93-4086-828f-972b349017fc -- 304 -- - - 6.409 ms
+2021-02-04 -- 20:55:35:5535 -- http: GET -- /user/1 -- 21b5e3f3-6846-42ff-ae2d-33ee4dddb4b8 -- 304 -- - - 5.028 ms
+2021-02-04 -- 20:55:44:5544 -- http: GET -- /user/1 -- a17c7319-cc4c-473c-af74-2266f45402a8 -- 304 -- - - 4.844 ms
+2021-02-04 -- 20:56:03:563 -- http: GET -- /user/1 -- d9c88a64-415a-44aa-b955-24f8556d150e -- 304 -- - - 3.998 ms
+2021-02-04 -- 20:56:09:569 -- http: GET -- /user/1 -- f982ba9b-3ec8-42f3-ac62-c22c444bb31f -- 304 -- - - 5.226 ms
+2021-02-04 -- 20:56:14:5614 -- http: GET -- /user/1 -- 86c3b6e2-0acf-4a23-a9e0-d71c5ede9e77 -- 304 -- - - 5.122 ms
+2021-02-04 -- 20:59:38:5938 -- http: GET -- /user/1 -- 9f5c2cfb-9390-4bf3-a94a-2005ccfe4a0a -- 304 -- - - 4.765 ms
+2021-02-04 -- 21:00:02:02 -- http: GET -- /user/1 -- c153b82d-34f2-4c88-9709-b9243e9c8eea -- 304 -- - - 6.008 ms
+2021-02-04 -- 21:00:07:07 -- http: GET -- /user/1 -- aa2331e4-94ac-4506-a0b9-bbdfc3be4166 -- 304 -- - - 5.252 ms
+2021-02-04 -- 21:00:10:010 -- http: GET -- /user/1 -- 555a003c-f11f-48f3-914a-02a3f86f57e4 -- 304 -- - - 6.358 ms
+2021-02-04 -- 21:00:39:039 -- http: GET -- /user/1 -- 8eab6061-06a3-4d1a-ad82-10481710f4d9 -- 304 -- - - 5.971 ms
+2021-02-04 -- 21:00:43:043 -- http: GET -- /user/1 -- 3ae321ae-ea14-4cf7-81e2-fa85d580cf00 -- 304 -- - - 6.633 ms
+2021-02-04 -- 21:00:46:046 -- http: GET -- /user/1 -- 693dacb0-df2e-4df3-a745-69966c73ec40 -- 304 -- - - 4.721 ms
+2021-02-04 -- 21:01:06:16 -- http: GET -- /user/1 -- 5833164c-6f5a-4bc2-afdb-5570685024dd -- 304 -- - - 4.306 ms
+2021-02-04 -- 21:02:23:223 -- http: GET -- /user/1 -- 52699d60-e1d4-4561-bc19-750299d58636 -- 304 -- - - 4.673 ms
+2021-02-04 -- 21:03:10:310 -- http: GET -- /user/1 -- 29ee7355-1abe-4abf-930d-fd62ab6ba459 -- 304 -- - - 4.488 ms
+2021-02-04 -- 21:03:18:318 -- http: GET -- /user/1 -- 5e5ee45e-40b4-4a96-b42d-7700deb054f5 -- 304 -- - - 3.966 ms
+2021-02-04 -- 21:04:06:46 -- http: GET -- /user/1 -- a5020181-a114-4e64-aeab-d20bc8ba689a -- 304 -- - - 4.465 ms
+2021-02-04 -- 21:04:27:427 -- http: GET -- /user/1 -- 5a02d5ce-5ed5-468e-82b5-2ff95c6c09a6 -- 304 -- - - 9.034 ms
+2021-02-04 -- 21:05:05:55 -- http: GET -- /user/1 -- 8c8217d6-ce63-4c87-8b68-52bfa3eb1fa1 -- 304 -- - - 5.978 ms
+2021-02-04 -- 21:05:18:518 -- http: GET -- /user/1 -- 3e2c950b-ed97-4e1a-ab59-20fe66fda8bf -- 304 -- - - 3.574 ms
+2021-02-04 -- 21:05:36:536 -- http: GET -- /user/1 -- 1a00b1a9-9e21-45d4-9a37-25fdc6f4eb44 -- 304 -- - - 3.924 ms
+2021-02-04 -- 21:09:47:947 -- http: GET -- /user/1 -- 151ea4d4-f1ad-40a7-9404-922071e727b8 -- 304 -- - - 5.214 ms
+2021-02-04 -- 21:11:30:1130 -- http: GET -- /user/1 -- c73cb85c-34ff-4afe-9520-c1f6f248dcae -- 304 -- - - 4.255 ms
+2021-02-04 -- 21:11:37:1137 -- http: GET -- /user/1 -- ceb9b0ec-6e83-485c-90cd-c16f179bd8b4 -- 304 -- - - 6.078 ms
+2021-02-04 -- 21:11:45:1145 -- http: GET -- /user/1 -- ae6f718f-6583-42fc-ac28-847894a0db38 -- 304 -- - - 5.097 ms
+2021-02-04 -- 21:14:08:148 -- http: GET -- /user/1 -- ee3bb0a7-dd8a-4390-a4f2-2ecfff6b6ce4 -- 304 -- - - 5.934 ms
+2021-02-04 -- 21:14:22:1422 -- http: GET -- /user/1 -- dd6fea98-e10d-4cb0-afb0-9f420c7ad384 -- 304 -- - - 3.905 ms
+2021-02-04 -- 21:14:36:1436 -- http: GET -- /user/1 -- 60f0cc85-a7b0-4d76-be72-9bbd6b245500 -- 304 -- - - 3.238 ms
+2021-02-04 -- 21:19:07:197 -- http: GET -- /user/1 -- 6553acfb-f022-4761-a01f-afc6c4bb0652 -- 304 -- - - 5.670 ms
+2021-02-04 -- 21:19:36:1936 -- http: GET -- /user/1 -- 69b5ac7d-3459-416a-b2e1-f40734ad32c7 -- 304 -- - - 5.460 ms
+2021-02-04 -- 21:21:46:2146 -- http: GET -- /user/1 -- 66ffe13c-0a7e-48c4-b457-59fb1cd6fe96 -- 304 -- - - 3.909 ms
+2021-02-04 -- 21:24:35:2435 -- http: GET -- /user/1 -- d28bcda4-6c06-4bf7-a6ac-065182761327 -- 304 -- - - 4.810 ms
+2021-02-04 -- 21:24:58:2458 -- http: GET -- /user/1 -- fab2c0de-90df-415e-89ba-0b3d28b9c562 -- 304 -- - - 3.187 ms
+2021-02-04 -- 21:25:03:253 -- http: GET -- /user/1 -- 24c18819-0423-4185-9b67-ef50fc267675 -- 304 -- - - 4.782 ms
+2021-02-04 -- 21:25:12:2512 -- http: GET -- /user/1 -- aa267e31-0562-420d-99c8-69d37008adcc -- 304 -- - - 5.993 ms
+2021-02-04 -- 21:27:03:273 -- http: GET -- /user/1 -- 84b2d944-8017-41bc-8d90-5eb6f6b89b8f -- 304 -- - - 3.211 ms
+2021-02-04 -- 21:27:32:2732 -- http: GET -- /user/1 -- 071edc88-8507-4b89-bf54-540babf5c04b -- 304 -- - - 4.345 ms
+2021-02-04 -- 21:29:11:2911 -- http: GET -- /user/1 -- f6730db4-82cd-42ce-a14c-cd0744167480 -- 304 -- - - 4.704 ms
+2021-02-04 -- 21:29:20:2920 -- http: GET -- /user/1 -- f9ec12f2-1c7a-47c7-8ae6-0563add6d56e -- 304 -- - - 4.718 ms
+2021-02-04 -- 21:30:43:3043 -- http: GET -- /user/1 -- ef779280-4d58-4a67-b44b-3b7fd265c2b4 -- 304 -- - - 5.296 ms
+2021-02-04 -- 21:30:46:3046 -- http: GET -- /user/1 -- 2fd6b6d1-67e6-4720-92ed-403d2eaced90 -- 304 -- - - 5.575 ms
+2021-02-06 -- 09:49:36:4936 -- info: listening on port 3001
+2021-02-06 -- 09:51:43:5143 -- http: GET -- /user/1 -- 69fd2de8-e920-4ff5-9d46-682e361bb09f -- 304 -- - - 70.316 ms
+2021-02-06 -- 09:51:45:5145 -- http: GET -- /user/1 -- 2516885a-0bfc-4ef4-9dea-08b5fe17b848 -- 304 -- - - 4.846 ms
+2021-02-06 -- 09:52:33:5233 -- http: GET -- /user/1 -- 00fce7fa-e6ba-47cd-909d-5e738d202d62 -- 304 -- - - 5.765 ms
+2021-02-06 -- 09:52:35:5235 -- http: GET -- /user/1 -- 16aa8473-f28a-430f-afa4-2c88403c0ed9 -- 304 -- - - 6.390 ms
+2021-02-06 -- 09:54:33:5433 -- http: GET -- /user/1 -- 6d19915f-4fd2-4b5e-9308-170fa1284baa -- 304 -- - - 6.527 ms
+2021-02-06 -- 10:08:48:848 -- http: GET -- /user/1 -- e1f23b3b-8c0e-46ec-81c9-80376e3d79e4 -- 304 -- - - 5.391 ms
+2021-02-06 -- 10:23:35:2335 -- http: GET -- /user/1 -- 7657ad8e-0d6e-4c6a-bd74-495d3be38b6a -- 304 -- - - 6.674 ms
+2021-02-06 -- 10:23:37:2337 -- http: GET -- /user/1 -- 367167bc-fc76-4518-a0b0-dda2ae683b9e -- 304 -- - - 4.249 ms
+2021-02-06 -- 10:23:39:2339 -- http: GET -- /user/1 -- be20bcfa-0706-49c4-b175-589a57a6e8e7 -- 304 -- - - 7.930 ms
+2021-02-06 -- 10:24:38:2438 -- http: GET -- /user/1 -- 26a0c94e-0e11-4714-9ace-656185941251 -- 304 -- - - 5.909 ms
+2021-02-06 -- 10:24:41:2441 -- http: GET -- /user/1 -- afc3231a-882d-4a0e-8b13-227965653272 -- 304 -- - - 7.347 ms
+2021-02-06 -- 10:28:37:2837 -- error: Email must have the following structure: name@xxxx.[com, es, net]
+2021-02-06 -- 10:28:37:2837 -- http: POST -- /login -- 3a1cd803-20fa-4531-bdf4-0a71b805707c -- 401 -- 65 - 4.984 ms
+2021-02-06 -- 10:28:59:2859 -- error: Email must have the following structure: name@xxxx.[com, es, net]
+2021-02-06 -- 10:28:59:2859 -- http: POST -- /login -- b54eb62d-96e2-404f-97fb-dd8ec662d96f -- 401 -- 65 - 2.591 ms
+2021-02-06 -- 10:29:03:293 -- error: Email must have the following structure: name@xxxx.[com, es, net]
+2021-02-06 -- 10:29:03:293 -- http: POST -- /login -- 29a3fbcc-7305-45c0-8491-53a8d7ca2608 -- 401 -- 65 - 1.362 ms
+2021-02-06 -- 10:29:04:294 -- error: Email must have the following structure: name@xxxx.[com, es, net]
+2021-02-06 -- 10:29:04:294 -- http: POST -- /login -- 849bfe0d-1141-46dd-9944-d9ec51fb6eb8 -- 401 -- 65 - 2.499 ms
+2021-02-06 -- 10:30:48:3048 -- debug: Login OK
+2021-02-06 -- 10:30:48:3048 -- http: POST -- /login -- 2 -- 200 -- 209 - 232.060 ms
+2021-02-06 -- 10:32:39:3239 -- debug: Login OK
+2021-02-06 -- 10:32:39:3239 -- http: POST -- /login -- 2 -- 200 -- 209 - 82.800 ms
+2021-02-06 -- 10:32:55:3255 -- debug: Login OK
+2021-02-06 -- 10:32:55:3255 -- http: POST -- /login -- 2 -- 200 -- 209 - 84.697 ms
+2021-02-06 -- 10:38:59:3859 -- error: Email must have the following structure: name@xxxx.[com, es, net]
+2021-02-06 -- 10:38:59:3859 -- http: POST -- /login -- b9985053-25af-4063-9642-c033bc25f22c -- 401 -- 65 - 1.983 ms
+2021-02-06 -- 10:39:02:392 -- error: Email must have the following structure: name@xxxx.[com, es, net]
+2021-02-06 -- 10:39:02:392 -- http: POST -- /login -- d494a43b-b76d-4649-ad47-6c6e30da7882 -- 401 -- 65 - 2.460 ms
+2021-02-06 -- 10:39:02:392 -- error: Email must have the following structure: name@xxxx.[com, es, net]
+2021-02-06 -- 10:39:02:392 -- http: POST -- /login -- cee7aa2c-a152-4e9b-af93-25fd412d6e6c -- 401 -- 65 - 2.744 ms
+2021-02-06 -- 10:39:02:392 -- error: Email must have the following structure: name@xxxx.[com, es, net]
+2021-02-06 -- 10:39:02:392 -- http: POST -- /login -- e4b5207a-0de2-4bdb-ad28-1e2a1439f9a2 -- 401 -- 65 - 2.055 ms
+2021-02-06 -- 10:39:02:392 -- error: Email must have the following structure: name@xxxx.[com, es, net]
+2021-02-06 -- 10:39:02:392 -- http: POST -- /login -- 6578194f-20ce-440d-b994-efaab77fcdbc -- 401 -- 65 - 2.200 ms
+2021-02-06 -- 10:39:03:393 -- error: Email must have the following structure: name@xxxx.[com, es, net]
+2021-02-06 -- 10:39:03:393 -- http: POST -- /login -- 3530e548-8ddf-4a08-9bb7-589943c64786 -- 401 -- 65 - 2.995 ms
+2021-02-06 -- 10:39:03:393 -- error: Email must have the following structure: name@xxxx.[com, es, net]
+2021-02-06 -- 10:39:03:393 -- http: POST -- /login -- ff2bc6e7-64f1-4676-9254-5e236f50a8c5 -- 401 -- 65 - 2.307 ms
+2021-02-06 -- 10:39:03:393 -- error: Email must have the following structure: name@xxxx.[com, es, net]
+2021-02-06 -- 10:39:03:393 -- http: POST -- /login -- 64e165a8-75f6-4ab9-9523-cbea8c0214a0 -- 401 -- 65 - 1.998 ms
+2021-02-06 -- 10:39:03:393 -- error: Email must have the following structure: name@xxxx.[com, es, net]
+2021-02-06 -- 10:39:03:393 -- http: POST -- /login -- 43ccea34-8c7a-4fb4-bb45-3fe9efe17f7c -- 401 -- 65 - 1.171 ms
+2021-02-06 -- 10:39:03:393 -- error: Email must have the following structure: name@xxxx.[com, es, net]
+2021-02-06 -- 10:39:03:393 -- http: POST -- /login -- 266cb034-84a5-4d97-870e-5cd12f3bd2de -- 401 -- 65 - 2.084 ms
+2021-02-06 -- 10:39:04:394 -- error: Email must have the following structure: name@xxxx.[com, es, net]
+2021-02-06 -- 10:39:04:394 -- http: POST -- /login -- 73619931-a6f2-4542-b188-588eb8701aaa -- 401 -- 65 - 1.672 ms
+2021-02-06 -- 10:39:04:394 -- error: Email must have the following structure: name@xxxx.[com, es, net]
+2021-02-06 -- 10:39:04:394 -- http: POST -- /login -- b1564fbc-203b-48ed-9dea-f0c0c92c4799 -- 401 -- 65 - 1.896 ms
+2021-02-06 -- 10:39:04:394 -- error: Email must have the following structure: name@xxxx.[com, es, net]
+2021-02-06 -- 10:39:04:394 -- http: POST -- /login -- fb0dd95f-b8c9-4866-8b94-f86c94ef833d -- 401 -- 65 - 3.270 ms
+2021-02-06 -- 10:39:04:394 -- error: Email must have the following structure: name@xxxx.[com, es, net]
+2021-02-06 -- 10:39:04:394 -- http: POST -- /login -- 53895341-32e1-4271-8502-80b53d4879f1 -- 401 -- 65 - 1.394 ms
+2021-02-06 -- 10:39:05:395 -- error: Email must have the following structure: name@xxxx.[com, es, net]
+2021-02-06 -- 10:39:05:395 -- http: POST -- /login -- f4f43a48-a689-44c6-a094-9d0532578bf8 -- 401 -- 65 - 1.735 ms
+2021-02-06 -- 10:39:05:395 -- error: Email must have the following structure: name@xxxx.[com, es, net]
+2021-02-06 -- 10:39:05:395 -- http: POST -- /login -- 77ea717f-4151-4db5-922b-65613eefcce3 -- 401 -- 65 - 2.241 ms
+2021-02-06 -- 10:39:17:3917 -- error: Email must have the following structure: name@xxxx.[com, es, net]
+2021-02-06 -- 10:39:17:3917 -- http: POST -- /login -- af762c29-6f27-433c-a5d1-5237caa6861a -- 401 -- 65 - 1.273 ms
+2021-02-06 -- 10:39:17:3917 -- error: Email must have the following structure: name@xxxx.[com, es, net]
+2021-02-06 -- 10:39:17:3917 -- http: POST -- /login -- c887cece-7a4b-45d0-8340-650434bfe27f -- 401 -- 65 - 1.449 ms
+2021-02-06 -- 10:39:17:3917 -- error: Email must have the following structure: name@xxxx.[com, es, net]
+2021-02-06 -- 10:39:17:3917 -- http: POST -- /login -- fd35af8d-cafb-4131-aa3e-df629f321bff -- 401 -- 65 - 2.350 ms
+2021-02-06 -- 10:39:20:3920 -- error: Email must have the following structure: name@xxxx.[com, es, net]
+2021-02-06 -- 10:39:20:3920 -- http: POST -- /login -- 85dae310-1331-482d-8117-00e7555fecda -- 401 -- 65 - 2.883 ms
+2021-02-06 -- 10:39:21:3921 -- error: Email must have the following structure: name@xxxx.[com, es, net]
+2021-02-06 -- 10:39:21:3921 -- http: POST -- /login -- 1b386b78-8d7b-4700-b298-d8f74405463b -- 401 -- 65 - 1.997 ms
+2021-02-06 -- 10:39:28:3928 -- debug: Login OK
+2021-02-06 -- 10:39:28:3928 -- http: POST -- /login -- 2 -- 200 -- 209 - 88.636 ms
+2021-02-06 -- 10:39:32:3932 -- http: GET -- /user/1 -- 2e20f23c-997b-4755-95fb-7dbe34b6e3a3 -- 304 -- - - 5.938 ms
+2021-02-06 -- 10:41:23:4123 -- error: Email must have the following structure: name@xxxx.[com, es, net]
+2021-02-06 -- 10:41:23:4123 -- http: POST -- /login -- 148699e3-0802-4638-89f8-73c6c700fa84 -- 401 -- 65 - 1.812 ms
+2021-02-06 -- 10:41:45:4145 -- error: Email must have the following structure: name@xxxx.[com, es, net]
+2021-02-06 -- 10:41:45:4145 -- http: POST -- /login -- b025bf9f-c52a-4547-8b47-98046f01f19b -- 401 -- 65 - 1.978 ms
+2021-02-06 -- 10:42:39:4239 -- error: Email must have the following structure: name@xxxx.[com, es, net]
+2021-02-06 -- 10:42:39:4239 -- http: POST -- /login -- 6f62af17-a2ce-4b9c-a799-801002290fb2 -- 401 -- 65 - 1.611 ms
+2021-02-06 -- 10:44:40:4440 -- error: Email must have the following structure: name@xxxx.[com, es, net]
+2021-02-06 -- 10:44:40:4440 -- http: POST -- /login -- 1dc74271-9834-44a9-9b64-4a9d31187be2 -- 401 -- 65 - 1.586 ms
+2021-02-06 -- 10:44:41:4441 -- error: Email must have the following structure: name@xxxx.[com, es, net]
+2021-02-06 -- 10:44:41:4441 -- http: POST -- /login -- 697c9e05-4fb9-4ff0-9c8f-109d49a3dd61 -- 401 -- 65 - 1.362 ms
+2021-02-06 -- 10:44:41:4441 -- error: Email must have the following structure: name@xxxx.[com, es, net]
+2021-02-06 -- 10:44:41:4441 -- http: POST -- /login -- 1f8ffcab-db69-4280-84c6-ca2a6096f745 -- 401 -- 65 - 2.174 ms
+2021-02-06 -- 10:44:42:4442 -- error: Email must have the following structure: name@xxxx.[com, es, net]
+2021-02-06 -- 10:44:42:4442 -- http: POST -- /login -- e67eef84-502e-40b2-9c7d-97c2705e12a7 -- 401 -- 65 - 1.688 ms
+2021-02-06 -- 10:44:42:4442 -- error: Email must have the following structure: name@xxxx.[com, es, net]
+2021-02-06 -- 10:44:42:4442 -- http: POST -- /login -- d8c31a5d-46e0-47be-b2b5-936708025a2c -- 401 -- 65 - 2.028 ms
+2021-02-06 -- 10:44:43:4443 -- error: Email must have the following structure: name@xxxx.[com, es, net]
+2021-02-06 -- 10:44:43:4443 -- http: POST -- /login -- 3141a93c-6bc4-48a3-b08e-d928c7fa9113 -- 401 -- 65 - 2.282 ms
+2021-02-06 -- 10:44:43:4443 -- error: Email must have the following structure: name@xxxx.[com, es, net]
+2021-02-06 -- 10:44:43:4443 -- http: POST -- /login -- 679e080e-0827-45ea-8be5-da0f5d55f643 -- 401 -- 65 - 1.974 ms
+2021-02-06 -- 10:44:44:4444 -- error: Email must have the following structure: name@xxxx.[com, es, net]
+2021-02-06 -- 10:44:44:4444 -- http: POST -- /login -- 5b68fa64-b147-40b7-ab89-a86f6ee6d6de -- 401 -- 65 - 1.400 ms
+2021-02-06 -- 10:45:02:452 -- error: Email must have the following structure: name@xxxx.[com, es, net]
+2021-02-06 -- 10:45:02:452 -- http: POST -- /login -- 0da83e1c-d2d2-4828-9589-2d11bfc281dc -- 401 -- 65 - 1.743 ms
+2021-02-06 -- 10:45:36:4536 -- error: Email must have the following structure: name@xxxx.[com, es, net]
+2021-02-06 -- 10:45:36:4536 -- http: POST -- /login -- 64d8ab7c-f25d-4f7d-8b51-1944284cc63a -- 401 -- 65 - 1.194 ms
+2021-02-06 -- 10:47:33:4733 -- error: Email must have the following structure: name@xxxx.[com, es, net]
+2021-02-06 -- 10:47:33:4733 -- http: POST -- /login -- f1f41157-8545-4b4c-a69b-feee0d4a31c0 -- 401 -- 65 - 1.465 ms
+2021-02-06 -- 10:47:33:4733 -- error: Email must have the following structure: name@xxxx.[com, es, net]
+2021-02-06 -- 10:47:33:4733 -- http: POST -- /login -- a29b5514-1917-4a44-8b8b-22ae8093b1f5 -- 401 -- 65 - 1.786 ms
+2021-02-06 -- 10:47:34:4734 -- error: Email must have the following structure: name@xxxx.[com, es, net]
+2021-02-06 -- 10:47:34:4734 -- http: POST -- /login -- 182bbc30-d982-4fde-9f76-9e9abb9884d3 -- 401 -- 65 - 2.823 ms
+2021-02-06 -- 10:47:34:4734 -- error: Email must have the following structure: name@xxxx.[com, es, net]
+2021-02-06 -- 10:47:34:4734 -- http: POST -- /login -- 682d45a1-7ff1-43c6-b75c-22e96db830ba -- 401 -- 65 - 1.629 ms
+2021-02-06 -- 10:47:34:4734 -- error: Email must have the following structure: name@xxxx.[com, es, net]
+2021-02-06 -- 10:47:34:4734 -- http: POST -- /login -- ed819faf-f4f2-4927-bde0-6cd3982b821a -- 401 -- 65 - 1.961 ms
+2021-02-06 -- 10:47:35:4735 -- error: Email must have the following structure: name@xxxx.[com, es, net]
+2021-02-06 -- 10:47:35:4735 -- http: POST -- /login -- 3764b197-e8ae-448f-9bff-4cb4ce8be858 -- 401 -- 65 - 1.816 ms
+2021-02-06 -- 10:47:35:4735 -- error: Email must have the following structure: name@xxxx.[com, es, net]
+2021-02-06 -- 10:47:35:4735 -- http: POST -- /login -- 3a2c1677-6b3f-4017-8a8d-80fe8b163c25 -- 401 -- 65 - 1.639 ms
+2021-02-06 -- 10:48:01:481 -- error: Email must have the following structure: name@xxxx.[com, es, net]
+2021-02-06 -- 10:48:01:481 -- http: POST -- /login -- e8fb8bf8-b4dd-4053-be8c-4074c0fc2298 -- 401 -- 65 - 1.114 ms
+2021-02-06 -- 10:48:48:4848 -- error: Email must have the following structure: name@xxxx.[com, es, net]
+2021-02-06 -- 10:48:48:4848 -- http: POST -- /login -- 478a330a-2062-495d-ae5e-4f2d31428fef -- 401 -- 65 - 1.393 ms
+2021-02-06 -- 10:49:01:491 -- error: Email must have the following structure: name@xxxx.[com, es, net]
+2021-02-06 -- 10:49:01:491 -- http: POST -- /login -- af16a140-b771-43b3-a29e-c14447d3e31b -- 401 -- 65 - 1.735 ms
+2021-02-06 -- 10:50:12:5012 -- error: Email must have the following structure: name@xxxx.[com, es, net]
+2021-02-06 -- 10:50:12:5012 -- http: POST -- /login -- 554824f8-6941-439b-a337-a17d266523da -- 401 -- 65 - 1.351 ms
+2021-02-06 -- 10:52:35:5235 -- error: Email must have the following structure: name@xxxx.[com, es, net]
+2021-02-06 -- 10:52:35:5235 -- http: POST -- /login -- 8ea71ac3-cac3-48ed-8dfb-667d0712d865 -- 401 -- 65 - 1.574 ms
+2021-02-06 -- 10:54:33:5433 -- error: Email must have the following structure: name@xxxx.[com, es, net]
+2021-02-06 -- 10:54:33:5433 -- http: POST -- /login -- b974546a-54e7-4588-bc2f-a452c23f4073 -- 401 -- 65 - 1.036 ms
+2021-02-06 -- 10:56:57:5657 -- error: Email must have the following structure: name@xxxx.[com, es, net]
+2021-02-06 -- 10:56:57:5657 -- http: POST -- /login -- 90c2dfad-62c9-4753-9685-1231a2da5eb9 -- 401 -- 65 - 1.281 ms
+2021-02-06 -- 10:57:00:570 -- error: Email must have the following structure: name@xxxx.[com, es, net]
+2021-02-06 -- 10:57:00:570 -- http: POST -- /login -- efaf46dc-0bc6-433a-857b-6c6f01d7382a -- 401 -- 65 - 1.348 ms
+2021-02-06 -- 10:57:01:571 -- error: Email must have the following structure: name@xxxx.[com, es, net]
+2021-02-06 -- 10:57:01:571 -- http: POST -- /login -- 904f1088-0a28-4b09-929a-b87d1e2a79a2 -- 401 -- 65 - 1.864 ms
+2021-02-06 -- 10:57:09:579 -- error: Email must have the following structure: name@xxxx.[com, es, net]
+2021-02-06 -- 10:57:09:579 -- http: POST -- /login -- 06795e69-56e4-423c-bb52-f6d6c7bcc9f0 -- 401 -- 65 - 1.531 ms
+2021-02-06 -- 10:57:10:5710 -- error: Email must have the following structure: name@xxxx.[com, es, net]
+2021-02-06 -- 10:57:10:5710 -- http: POST -- /login -- c251029c-510a-43e0-93af-23405b37250c -- 401 -- 65 - 1.916 ms
+2021-02-06 -- 10:57:27:5727 -- error: Email must have the following structure: name@xxxx.[com, es, net]
+2021-02-06 -- 10:57:27:5727 -- http: POST -- /login -- 6dbdeda9-9042-44f7-96ee-2775d5abe9dd -- 401 -- 65 - 1.353 ms
+2021-02-06 -- 10:57:28:5728 -- error: Email must have the following structure: name@xxxx.[com, es, net]
+2021-02-06 -- 10:57:28:5728 -- http: POST -- /login -- be80774c-3a6b-4962-a2da-cddb4adbe358 -- 401 -- 65 - 1.684 ms
+2021-02-06 -- 10:57:36:5736 -- error: Email must have the following structure: name@xxxx.[com, es, net]
+2021-02-06 -- 10:57:36:5736 -- http: POST -- /login -- 53e04dce-bfc2-4481-9621-203afb621df2 -- 401 -- 65 - 1.992 ms
+2021-02-06 -- 10:57:38:5738 -- error: Email must have the following structure: name@xxxx.[com, es, net]
+2021-02-06 -- 10:57:38:5738 -- http: POST -- /login -- fb11f6a9-3fcd-4963-a251-ca796e4b2108 -- 401 -- 65 - 2.064 ms
+2021-02-06 -- 10:57:39:5739 -- error: Email must have the following structure: name@xxxx.[com, es, net]
+2021-02-06 -- 10:57:39:5739 -- http: POST -- /login -- 06416417-fe2a-4140-b1d6-e9b9dbafb3d7 -- 401 -- 65 - 2.031 ms
+2021-02-06 -- 10:57:48:5748 -- error: Email must have the following structure: name@xxxx.[com, es, net]
+2021-02-06 -- 10:57:48:5748 -- http: POST -- /login -- 34c6dcd9-15d5-4ec4-8846-7efdcdd1978c -- 401 -- 65 - 1.061 ms
+2021-02-06 -- 10:58:23:5823 -- error: Email must have the following structure: name@xxxx.[com, es, net]
+2021-02-06 -- 10:58:23:5823 -- http: POST -- /login -- 7d16f2ab-72ba-4b82-ae5f-fee3202c4cce -- 401 -- 65 - 1.505 ms
+2021-02-06 -- 10:59:17:5917 -- error: Email must have the following structure: name@xxxx.[com, es, net]
+2021-02-06 -- 10:59:17:5917 -- http: POST -- /login -- 7a3967f2-0219-4ed8-bf54-2a3b09673a07 -- 401 -- 65 - 1.346 ms
+2021-02-06 -- 10:59:24:5924 -- error: Email must have the following structure: name@xxxx.[com, es, net]
+2021-02-06 -- 10:59:24:5924 -- http: POST -- /login -- 2aa8e7cd-c80b-4458-ac3a-75442b231ef9 -- 401 -- 65 - 1.396 ms
+2021-02-06 -- 10:59:52:5952 -- error: Email must have the following structure: name@xxxx.[com, es, net]
+2021-02-06 -- 10:59:52:5952 -- http: POST -- /login -- b142ded3-d1f0-47c3-90d2-d588e8207181 -- 401 -- 65 - 1.131 ms
+2021-02-06 -- 11:00:08:08 -- error: Email must have the following structure: name@xxxx.[com, es, net]
+2021-02-06 -- 11:00:08:08 -- http: POST -- /login -- 6b807d7f-06fc-4635-bb0c-3a0080311e22 -- 401 -- 65 - 1.288 ms
+2021-02-06 -- 11:04:07:47 -- error: Email must have the following structure: name@xxxx.[com, es, net]
+2021-02-06 -- 11:04:07:47 -- http: POST -- /login -- 0908596e-eab1-4813-bef6-a65b815741ca -- 401 -- 65 - 2.867 ms
+2021-02-06 -- 11:04:25:425 -- error: Email must have the following structure: name@xxxx.[com, es, net]
+2021-02-06 -- 11:04:25:425 -- http: POST -- /login -- c14ea3ae-c657-4ede-88f4-298051a87eec -- 401 -- 65 - 1.193 ms
+2021-02-06 -- 11:04:44:444 -- error: Email must have the following structure: name@xxxx.[com, es, net]
+2021-02-06 -- 11:04:44:444 -- http: POST -- /login -- eb4d95e3-b405-4028-9ac6-7475bdc18862 -- 401 -- 65 - 1.785 ms
+2021-02-06 -- 11:04:46:446 -- error: Email must have the following structure: name@xxxx.[com, es, net]
+2021-02-06 -- 11:04:46:446 -- http: POST -- /login -- f0e6e1a8-9c64-4251-906f-deb5f20f19a7 -- 401 -- 65 - 1.617 ms
+2021-02-06 -- 11:05:44:544 -- error: Email must have the following structure: name@xxxx.[com, es, net]
+2021-02-06 -- 11:05:44:544 -- http: POST -- /login -- 87e62c5f-d837-461f-af48-0a0f957af62f -- 401 -- 65 - 1.296 ms
+2021-02-06 -- 11:07:44:744 -- error: Email must have the following structure: name@xxxx.[com, es, net]
+2021-02-06 -- 11:07:44:744 -- http: POST -- /login -- 29bb9c34-96b4-4229-a2f1-78ef3e2dae3e -- 401 -- 65 - 1.561 ms
+2021-02-06 -- 11:07:45:745 -- error: Email must have the following structure: name@xxxx.[com, es, net]
+2021-02-06 -- 11:07:45:745 -- http: POST -- /login -- fe460630-7140-4b71-9a2b-4f9f2b734329 -- 401 -- 65 - 2.289 ms
+2021-02-06 -- 11:07:51:751 -- debug: Login OK
+2021-02-06 -- 11:07:51:751 -- http: POST -- /login -- 2 -- 200 -- 209 - 87.170 ms
+2021-02-06 -- 11:43:31:4331 -- debug: Login OK
+2021-02-06 -- 11:43:31:4331 -- http: POST -- /login -- 2 -- 200 -- 209 - 82.454 ms
+2021-02-06 -- 11:43:35:4335 -- http: GET -- /user/1 -- fb24177f-375c-49da-8c45-e5b4294cdaa7 -- 304 -- - - 5.244 ms
+2021-02-06 -- 11:43:37:4337 -- http: GET -- /user/1 -- ef443ec8-8980-4b5f-b06e-34a66165ba9e -- 304 -- - - 5.363 ms
+2021-02-06 -- 11:45:12:4512 -- info: listening on port 3001
+2021-02-06 -- 11:45:44:4544 -- info: Authorization failure, no token
+2021-02-06 -- 11:45:44:4544 -- http: GET -- /user/1 -- d7ad1d1f-d02f-4c4f-887e-d1f8ab497edb -- 401 -- 42 - 4.620 ms
+2021-02-06 -- 11:46:10:4610 -- debug: Login OK
+2021-02-06 -- 11:46:10:4610 -- http: POST -- /login -- 2 -- 200 -- 209 - 173.882 ms
+2021-02-06 -- 11:46:14:4614 -- error: invalid token
+2021-02-06 -- 11:46:14:4614 -- http: GET -- /user/1 -- 69df6132-6b97-41bf-be70-43b60422fef0 -- 401 -- 24 - 3.767 ms
+2021-02-06 -- 11:46:40:4640 -- error: jwt expired
+2021-02-06 -- 11:46:40:4640 -- http: GET -- /user/2 -- fd3aca27-d911-43b2-84d7-f7b1f467f718 -- 401 -- 22 - 2.121 ms
+2021-02-06 -- 11:47:25:4725 -- error: invalid token
+2021-02-06 -- 11:47:25:4725 -- http: GET -- /user/1 -- 7359766e-d17d-4ab2-ad38-f3859ec6b694 -- 401 -- 24 - 1.695 ms
+2021-02-06 -- 11:48:15:4815 -- debug: Login OK
+2021-02-06 -- 11:48:15:4815 -- http: POST -- /login -- 2 -- 200 -- 209 - 78.229 ms
+2021-02-06 -- 11:49:23:4923 -- error: Unexpected token � in JSON at position 9
+2021-02-06 -- 11:49:23:4923 -- http: GET -- /user/2 -- 2f5f82d3-7812-4e7c-b1c3-494f5cdb55e2 -- 401 -- 53 - 1.293 ms
+2021-02-06 -- 11:50:17:5017 -- debug: Login OK
+2021-02-06 -- 11:50:17:5017 -- http: POST -- /login -- 2 -- 200 -- 209 - 80.943 ms
+2021-02-06 -- 11:50:32:5032 -- http: GET -- /user/2 -- c1c925cd-5c53-44cc-8931-b7b46b7e78bc -- 200 -- 232 - 1548.693 ms
+2021-02-06 -- 17:13:10:1310 -- info: listening on port 3001
+2021-02-06 -- 17:13:57:1357 -- error: The rol entered is not valid
+2021-02-06 -- 17:13:57:1357 -- http: POST -- /register -- 1cf1773a-34f2-409e-959d-5cfdafd30992 -- 500 -- 28 - 256.887 ms
+2021-02-06 -- 17:14:07:147 -- debug: The user not exist in db, he can register now
+2021-02-06 -- 17:14:07:147 -- info: Init transaction query
+2021-02-06 -- 17:14:09:149 -- info: Commit
+2021-02-06 -- 17:14:09:149 -- debug: Register new user sucessfull
+2021-02-06 -- 17:14:09:149 -- http: POST -- /register -- 5534085d-53ba-47f9-b28b-70b43902d97b -- 200 -- 30 - 5024.651 ms
+2021-02-06 -- 17:14:37:1437 -- debug: The user not exist in db, he can register now
+2021-02-06 -- 17:14:37:1437 -- info: Init transaction query
+2021-02-06 -- 17:14:38:1438 -- info: Commit
+2021-02-06 -- 17:14:38:1438 -- debug: Register new user sucessfull
+2021-02-06 -- 17:14:38:1438 -- http: POST -- /register -- 2e44b805-a83f-403d-b786-fb998d7bee91 -- 200 -- 30 - 1007.174 ms

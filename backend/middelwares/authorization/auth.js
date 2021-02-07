@@ -192,11 +192,6 @@ module.exports = {
     isAdmin,
     isAuthenticated,
     isOrganizer,
-<<<<<<< HEAD
-    isUser
-};
-=======
     isUser,
     isRightUser
 };
->>>>>>> 75a98159ffd2f140a42db5fc123e009f1711c553
