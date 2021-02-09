@@ -13,10 +13,7 @@ const activeUser = async(req, res) => {
     // 1. Get code params
     const { id } = req.params;
 
-    const {email} = req.body;
-
-
-    console.log(email)
+    const { email } = req.body;
 
     try {
 
@@ -34,7 +31,7 @@ const activeUser = async(req, res) => {
 
         // TODO -- send email welcome
         // 5. Send emaiL welcome
-     await utils.sendWelcome(email, '');
+        await utils.sendWelcome(email, '');
 
         // Commit mysql
         query = 'commit';
@@ -47,7 +44,6 @@ const activeUser = async(req, res) => {
 
     } catch (e) {
 
-console.log(e)
         // Rollback mysql
         query = 'rollback';
         await performQuery(query, params);
