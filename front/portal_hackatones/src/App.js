@@ -1,9 +1,9 @@
 import { Route, Switch } from 'react-router-dom';
 import './App.css';
 // import Footer from './Footer';
-import Header from './Header';
-import Login from './Login';
-import ProfileInfo from './ProfileInfo';
+import Header from './Components/Header/Header.js';
+import Login from './Components/Login/Login.js';
+import ProfileInfo from './Components/ProfileInfo/ProfileInfo.js';
 
 function App() {
   return (
@@ -19,8 +19,6 @@ function App() {
             <h1>Bienvenido a tu perfil</h1>
             <ProfileInfo/>
           </Route>
-
-
       </Switch>
     </div>
   );

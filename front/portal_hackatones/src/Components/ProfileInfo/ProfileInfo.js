@@ -1,9 +1,9 @@
 import { useState } from "react";
 import { Redirect, useParams } from "react-router-dom";
 import { useDispatch, useSelector } from 'react-redux';
-import logo from './logo.jpg'
+import logo from '../../Media/Images/logo.jpg'
 import './ProfileInfo.css'
-import useFetch from "./useFetch";
+import useFetch from "../../Hooks/useFetch";
 
 
 function showInfo (data) {
