@@ -390,3 +390,29 @@
 2021-02-06 -- 11:47:25:4725 -- error: invalid token
 2021-02-06 -- 11:49:23:4923 -- error: Unexpected token � in JSON at position 9
 2021-02-06 -- 17:13:57:1357 -- error: The rol entered is not valid
+2021-02-07 -- 20:58:09:589 -- error: Password must have 8 caracters min.
+2021-02-07 -- 20:58:16:5816 -- error: Password must have 8 caracters min.
+2021-02-07 -- 20:58:17:5817 -- error: Password must have 8 caracters min.
+2021-02-07 -- 21:15:49:1549 -- error: Password must have 8 caracters min.
+2021-02-07 -- 21:18:42:1842 -- error: Email must have the following structure: name@xxxx.[com, es, net]
+2021-02-07 -- 21:18:59:1859 -- error: Password must have 8 caracters min.
+2021-02-07 -- 21:20:32:2032 -- error: Password must have 8 caracters min.
+2021-02-07 -- 21:20:33:2033 -- error: Password must have 8 caracters min.
+2021-02-07 -- 21:21:53:2153 -- error: Password must have 8 caracters min.
+2021-02-07 -- 21:22:44:2244 -- error: Password must have 8 caracters min.
+2021-02-07 -- 21:23:28:2328 -- error: Password must have 8 caracters min.
+2021-02-07 -- 21:23:54:2354 -- error: Password must have 8 caracters min.
+2021-02-07 -- 21:23:55:2355 -- error: Password must have 8 caracters min.
+2021-02-07 -- 21:23:55:2355 -- error: Password must have 8 caracters min.
+2021-02-07 -- 21:23:55:2355 -- error: Password must have 8 caracters min.
+2021-02-07 -- 21:23:55:2355 -- error: Password must have 8 caracters min.
+2021-02-07 -- 21:23:55:2355 -- error: Password must have 8 caracters min.
+2021-02-07 -- 21:54:25:5425 -- error: invalid token
+2021-02-07 -- 21:56:20:5620 -- error: invalid token
+2021-02-07 -- 22:04:45:445 -- error: invalid token
+2021-02-07 -- 22:05:30:530 -- error: invalid token
+2021-02-07 -- 22:06:33:633 -- error: invalid token
+2021-02-07 -- 22:07:05:75 -- error: invalid token
+2021-02-07 -- 22:08:24:824 -- error: invalid token
+2021-02-07 -- 22:09:01:91 -- error: invalid token
+2021-02-07 -- 22:27:56:2756 -- error: jwt malformed
