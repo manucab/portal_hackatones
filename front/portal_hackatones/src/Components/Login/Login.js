@@ -13,6 +13,7 @@ function Login() {
 
   const handleSubmit = async e => {
     e.preventDefault()
+    
     const res = await fetch('http://localhost:3001/login', {
       headers: { 
         'Content-Type': 'application/json'},
@@ -20,12 +21,14 @@ function Login() {
       method: 'POST'
     })
     
+    console.log(res)
     const data = await res.json()
+    console.log(data)
 
     if (res.status === 200){
       dispatch({ type: 'login', data })}
     else {
-      setProcess(`${data.info}`)
+      setProcess('Usuario o contraseña incorrectos')
       setEmail('')
       setPassword('')
     }
@@ -41,7 +44,7 @@ function Login() {
             <input placeholder="email ..." type="email" required value={email} onChange={e => setEmail(e.target.value)} />
         </div>
         <div>
-            <input placeholder="password ..." type="password" required value={password} onChange={e => setPassword(e.target.value)} />
+            <input placeholder="password ..." type="password" minLength="8" required value={password} onChange={e => setPassword(e.target.value)} />
         </div>
         <button>Iniciar sesión</button>
         <div className='errorMessage'>{process}</div>
