@@ -3,6 +3,7 @@ import './App.css';
 // import Footer from './Footer';
 import Header from './Components/Header/Header.js';
 import Login from './Components/Login/Login.js';
+import Logout from './Components/Logout/Logout';
 import ProfileInfo from './Components/ProfileInfo/ProfileInfo.js';
 
 function App() {
@@ -20,6 +21,8 @@ function App() {
             <ProfileInfo/>
           </Route>
       </Switch>
+
+      <Logout/>
     </div>
   );
 }
