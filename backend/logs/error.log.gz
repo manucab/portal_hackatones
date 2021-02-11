@@ -470,3 +470,7 @@
 2021-02-10 -- 11:44:26:4426 -- error: Password must have 8 caracters min.
 2021-02-10 -- 11:44:27:4427 -- error: Password must have 8 caracters min.
 2021-02-10 -- 11:44:27:4427 -- error: Password must have 8 caracters min.
+2021-02-11 -- 16:37:25:3725 -- error: jwt expired
+2021-02-11 -- 16:44:19:4419 -- error: jwt expired
+2021-02-11 -- 17:05:20:520 -- error: jwt expired
+2021-02-11 -- 18:06:43:643 -- error: jwt expired
