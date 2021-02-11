@@ -1,5 +1,5 @@
 import { Redirect, useParams } from "react-router-dom";
-import { useDispatch, useSelector } from 'react-redux';
+import { useSelector } from 'react-redux';
 import './ProfileInfo.css'
 import useFetch from "../../Hooks/useFetch";
 import capitalize from "../../Utils/capitalize"
@@ -25,29 +25,22 @@ function showInfo (data) {
 function ProfileInfo () {
     
     const login = useSelector(s => s.login)
-    const dispatch = useDispatch()
     const {id} = useParams()
     const data = useFetch(`http://localhost:3001/user/${id}`)
-    
-
-    const handleLogout = () => {
-        dispatch({ type: 'logout' })
-    }
-
+        
+    if(!data) return 'Loading...' 
     if (!login) return <Redirect to="/" />
 
 
     return (
        
         <div className="profile" >
-
             <Avatar/>
-            { showInfo(data)}
+            {showInfo(data)}
             <button className="edit-profile">⚙ Editar</button>
           
         </div>
         
-            
     )
 
 }

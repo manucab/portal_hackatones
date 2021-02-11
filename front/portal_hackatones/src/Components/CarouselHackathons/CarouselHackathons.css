@@ -1,0 +1,36 @@
+
+.carousel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hackathon {
+    width: 200px;
+    border: solid 1px black;
+    margin: 15px;
+}
+
+#previous {
+
+    max-width: 50px;
+    max-height: 50px;
+    transform: rotate(90deg);
+}
+
+#next {
+    max-width: 50px;
+    max-height: 50px;
+    transform: rotate(-90deg);
+}
+
+.off {
+    width: 0px;
+    height: 0px;
+}
+
+.on {
+    
+    cursor: pointer;
+
+}

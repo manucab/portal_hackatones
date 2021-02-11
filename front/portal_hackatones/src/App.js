@@ -14,32 +14,27 @@ function App() {
             <Header/>
 
             <Switch>
-                <Route path='/login' exact>
-                    <Login/>
-                </Route>
+              <Route path='/login' exact>
+                  <Login/>
+              </Route>
+              <Route path="/register" exact>
+                  <PanelSingInUp/>
+              </Route>
+              <Route path='/user/:id' >
+                <h1>Bienvenido a tu perfil</h1>
+                <ProfileInfo/>
+                <h1>Te has inscrito en estos hackatones</h1>
+                <HackathonsJoined/>
+              </Route>
 
-<<<<<<< HEAD
-                <Route path="/register" exact>
-                    <PanelSingInUp/>
-                </Route>
-=======
-          <Route path='/user/:id' >
-            <h1>Bienvenido a tu perfil</h1>
-            <ProfileInfo/>
-            <h1>Te has inscrito en estos hackatones</h1>
-            <HackathonsJoined/>
-          </Route>
-      </Switch>
->>>>>>> f7bdee956426fc9bd4ba616af2c8563a4f4b188a
-
-                <Route path='/user/:id'>
-                    <h1>Bienvenido a tu perfil</h1>
-                    <ProfileInfo/>
-                </Route>
+              <Route path='/user/:id'>
+                  <h1>Bienvenido a tu perfil</h1>
+                  <ProfileInfo/>
+              </Route>
             </Switch>
 
             {/* login && <Logout/> */}
-            {/* <Logout/> */}
+            <Logout/>
         </div>
     );
 }
