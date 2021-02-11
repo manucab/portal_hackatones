@@ -1,0 +1,13 @@
+.signup div{
+    text-align: left;
+    font-size: 12px;
+    
+}
+
+.completeName {
+
+}
+
+.completeName > div, .fieldEmail > *, .fieldPassword, .button  {
+margin: 5px;
+}
