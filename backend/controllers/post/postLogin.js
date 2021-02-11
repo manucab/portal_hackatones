@@ -29,10 +29,15 @@ const login = async(req, res) => {
                 id: id
             }
 
+            //Get user info
+            const userQuery = `select * from competitor where id = ?`
+            const userParam = [id]
+            const user = await performQuery(userQuery,userParam)
+
             // 5. Generate token, expire in 2 day
             const token = jwt.sign(tokenPayload, process.env.SECRET, { expiresIn: '2d' });
 
-            res.json({ token,email,id});
+            res.json({ token,user:user[0]});
             logger.debug('Login OK');
         } else {
 

@@ -26,7 +26,7 @@ header a {
 .logo {
     height: 35px;
     width: 35px;
-    background-image: url("../../Media/Images/logo.jpg");
+    background-image: url("../../Media/Images/General/logo.jpg");
     background-size: contain;
     border-radius: 50%;
 }

@@ -3037,3 +3037,261 @@
 2021-02-09 -- 15:40:55:4055 -- http: GET -- /user/2 -- 3a2ac304-3ff7-43c7-94e6-99b37d9ffda1 -- 304 -- - - 16.036 ms
 2021-02-09 -- 16:10:20:1020 -- info: User does not exist in the db
 2021-02-09 -- 16:10:20:1020 -- http: POST -- /login -- 444dc8b5-1052-4026-a184-05c4a8beb42b -- 401 -- 40 - 3.073 ms
+2021-02-10 -- 10:17:29:1729 -- info: listening on port 3001
+2021-02-10 -- 10:26:39:2639 -- error: Email must have the following structure: name@xxxx.[com, es, net]
+2021-02-10 -- 10:26:39:2639 -- http: POST -- /login -- 88afae6f-cbdd-45af-a7ec-bfff04135c2d -- 401 -- 65 - 8.339 ms
+2021-02-10 -- 10:26:43:2643 -- error: Email must have the following structure: name@xxxx.[com, es, net]
+2021-02-10 -- 10:26:43:2643 -- http: POST -- /login -- 00fda90c-1e1e-46b3-8340-dd4148c2bbea -- 401 -- 65 - 2.352 ms
+2021-02-10 -- 10:27:07:277 -- error: Email must have the following structure: name@xxxx.[com, es, net]
+2021-02-10 -- 10:27:07:277 -- http: POST -- /login -- 60961f71-b126-49d9-899a-e016d7d38826 -- 401 -- 65 - 2.626 ms
+2021-02-10 -- 10:27:41:2741 -- error: Email must have the following structure: name@xxxx.[com, es, net]
+2021-02-10 -- 10:27:41:2741 -- http: POST -- /login -- bc87f2fe-285a-43e1-aec6-b4a239ad4260 -- 401 -- 65 - 2.499 ms
+2021-02-10 -- 10:28:05:285 -- error: Email must have the following structure: name@xxxx.[com, es, net]
+2021-02-10 -- 10:28:05:285 -- http: POST -- /login -- f146d790-435e-41ca-b76a-63f1fb058630 -- 401 -- 65 - 1.757 ms
+2021-02-10 -- 10:33:28:3328 -- info: User does not exist in the db
+2021-02-10 -- 10:33:28:3328 -- http: POST -- /login -- 66939b83-4331-4bca-8a69-f130a21b8aca -- 401 -- 40 - 99.795 ms
+2021-02-10 -- 10:34:36:3436 -- info: User does not exist in the db
+2021-02-10 -- 10:34:36:3436 -- http: POST -- /login -- c01220a1-cc29-4442-9c48-3dfd8bc7fc99 -- 401 -- 40 - 2.742 ms
+2021-02-10 -- 10:35:27:3527 -- error: Email must have the following structure: name@xxxx.[com, es, net]
+2021-02-10 -- 10:35:27:3527 -- http: POST -- /login -- 5a2faae2-2c97-4e6f-ac06-fd25fa131040 -- 401 -- 65 - 1.500 ms
+2021-02-10 -- 10:35:33:3533 -- info: User does not exist in the db
+2021-02-10 -- 10:35:33:3533 -- http: POST -- /login -- 5f37f204-c119-4a8f-bb41-e38291f52390 -- 401 -- 40 - 2.638 ms
+2021-02-10 -- 10:36:13:3613 -- info: User does not exist in the db
+2021-02-10 -- 10:36:13:3613 -- http: POST -- /login -- 6d711ee5-23ed-4acb-b6cb-4bd46e82e724 -- 401 -- 40 - 2.540 ms
+2021-02-10 -- 10:36:32:3632 -- info: User does not exist in the db
+2021-02-10 -- 10:36:32:3632 -- http: POST -- /login -- d76000a1-a00b-4c08-bd32-45027cac281c -- 401 -- 40 - 2.328 ms
+2021-02-10 -- 10:38:13:3813 -- info: User does not exist in the db
+2021-02-10 -- 10:38:13:3813 -- http: POST -- /login -- 3d7e2839-592e-43d7-a319-271a9138998c -- 401 -- 40 - 2.370 ms
+2021-02-10 -- 10:41:10:4110 -- info: User does not exist in the db
+2021-02-10 -- 10:41:10:4110 -- http: POST -- /login -- d8c1eea0-4788-4495-a3f7-ca1817a4e4ae -- 401 -- 40 - 2.366 ms
+2021-02-10 -- 10:42:04:424 -- info: User does not exist in the db
+2021-02-10 -- 10:42:04:424 -- http: POST -- /login -- 364a759b-0164-4f4e-b624-726d49aa0dcb -- 401 -- 40 - 3.031 ms
+2021-02-10 -- 10:42:07:427 -- info: User does not exist in the db
+2021-02-10 -- 10:42:07:427 -- http: POST -- /login -- 41bf0b34-9bd0-429a-86f1-85334b05b198 -- 401 -- 40 - 3.193 ms
+2021-02-10 -- 10:42:12:4212 -- info: User does not exist in the db
+2021-02-10 -- 10:42:12:4212 -- http: POST -- /login -- c4bac8cc-b03a-42bf-a495-73e3a6ab0684 -- 401 -- 40 - 2.804 ms
+2021-02-10 -- 10:42:29:4229 -- info: User does not exist in the db
+2021-02-10 -- 10:42:29:4229 -- http: POST -- /login -- 9ee7ad6f-b2fc-4f8c-b88a-d62bd31e74e4 -- 401 -- 40 - 2.332 ms
+2021-02-10 -- 10:42:30:4230 -- info: User does not exist in the db
+2021-02-10 -- 10:42:30:4230 -- http: POST -- /login -- 1f3c4464-26e4-4448-8c68-227bc15fdae9 -- 401 -- 40 - 2.182 ms
+2021-02-10 -- 10:42:53:4253 -- info: User does not exist in the db
+2021-02-10 -- 10:42:53:4253 -- http: POST -- /login -- 76d65690-4858-4889-b6e6-841cf38a5fa3 -- 401 -- 40 - 2.933 ms
+2021-02-10 -- 10:42:54:4254 -- info: User does not exist in the db
+2021-02-10 -- 10:42:54:4254 -- http: POST -- /login -- c79a0c21-0db4-41cb-9716-72663aac91bc -- 401 -- 40 - 2.179 ms
+2021-02-10 -- 10:43:08:438 -- info: User does not exist in the db
+2021-02-10 -- 10:43:08:438 -- http: POST -- /login -- 43e9b05a-193f-4fa3-b841-f2d3630aabc8 -- 401 -- 40 - 2.659 ms
+2021-02-10 -- 10:43:37:4337 -- debug: Login OK
+2021-02-10 -- 10:43:37:4337 -- http: POST -- /login -- 2 -- 200 -- 243 - 110.875 ms
+2021-02-10 -- 10:44:44:4444 -- error: Password must have 8 caracters min.
+2021-02-10 -- 10:44:44:4444 -- http: POST -- /login -- ed724229-133c-4ec0-b7f0-d2b77b394f0b -- 401 -- 35 - 1.331 ms
+2021-02-10 -- 10:44:56:4456 -- info: User does not exist in the db
+2021-02-10 -- 10:44:56:4456 -- http: POST -- /login -- 71fbea60-3d37-495d-8cb8-67872c64c8ad -- 401 -- 40 - 2.651 ms
+2021-02-10 -- 10:45:00:450 -- info: User does not exist in the db
+2021-02-10 -- 10:45:00:450 -- http: POST -- /login -- 79623080-dd36-456c-a2b1-7c974d53c3fc -- 401 -- 40 - 2.755 ms
+2021-02-10 -- 10:45:01:451 -- info: User does not exist in the db
+2021-02-10 -- 10:45:01:451 -- http: POST -- /login -- c616109d-cfb6-462c-95c6-2b8232877bc7 -- 401 -- 40 - 3.033 ms
+2021-02-10 -- 10:45:01:451 -- info: User does not exist in the db
+2021-02-10 -- 10:45:01:451 -- http: POST -- /login -- bef535e5-2930-486b-b1a9-dcf2fb01d968 -- 401 -- 40 - 2.714 ms
+2021-02-10 -- 10:57:30:5730 -- info: User does not exist in the db
+2021-02-10 -- 10:57:30:5730 -- http: POST -- /login -- 4150b032-728b-423c-a6df-54bdd0c6fa1d -- 401 -- 40 - 2.576 ms
+2021-02-10 -- 11:01:48:148 -- info: User does not exist in the db
+2021-02-10 -- 11:01:48:148 -- http: POST -- /login -- bb18ff4c-e5b5-4f71-bc0e-0c42e7d67d93 -- 401 -- 40 - 3.133 ms
+2021-02-10 -- 11:02:28:228 -- info: User does not exist in the db
+2021-02-10 -- 11:02:28:228 -- http: POST -- /login -- dc1d218f-c5e1-4106-9345-e6102e4d97f1 -- 401 -- 40 - 2.596 ms
+2021-02-10 -- 11:04:17:417 -- info: User does not exist in the db
+2021-02-10 -- 11:04:17:417 -- http: POST -- /login -- 9da5b3be-5296-48f1-b929-35327db6e493 -- 401 -- 40 - 2.537 ms
+2021-02-10 -- 11:04:18:418 -- info: User does not exist in the db
+2021-02-10 -- 11:04:18:418 -- http: POST -- /login -- 762da706-db99-425e-aa36-9ef52fd1f844 -- 401 -- 40 - 3.221 ms
+2021-02-10 -- 11:04:19:419 -- info: User does not exist in the db
+2021-02-10 -- 11:04:19:419 -- http: POST -- /login -- b23d91b6-6781-4ca5-9dfd-acdd54bc7fe0 -- 401 -- 40 - 3.629 ms
+2021-02-10 -- 11:04:30:430 -- info: User does not exist in the db
+2021-02-10 -- 11:04:30:430 -- http: POST -- /login -- a47e1707-f746-4100-8266-e24ff9ac911b -- 401 -- 40 - 2.438 ms
+2021-02-10 -- 11:09:58:958 -- info: User does not exist in the db
+2021-02-10 -- 11:09:58:958 -- http: POST -- /login -- d26a9dbb-b4cf-41e0-9429-c9bf29481d2a -- 401 -- 40 - 2.790 ms
+2021-02-10 -- 11:10:10:1010 -- debug: Login OK
+2021-02-10 -- 11:10:10:1010 -- http: POST -- /login -- 2 -- 200 -- 243 - 87.242 ms
+2021-02-10 -- 11:14:20:1420 -- info: User does not exist in the db
+2021-02-10 -- 11:14:20:1420 -- http: POST -- /login -- 3225323a-694d-4c4c-a9bb-c1dbe7cc8143 -- 401 -- 40 - 2.639 ms
+2021-02-10 -- 11:14:28:1428 -- info: User does not exist in the db
+2021-02-10 -- 11:14:28:1428 -- http: POST -- /login -- 34de7017-2c60-44de-864d-1ee192c9a715 -- 401 -- 40 - 2.897 ms
+2021-02-10 -- 11:15:27:1527 -- info: User does not exist in the db
+2021-02-10 -- 11:15:27:1527 -- http: POST -- /login -- 8808fcb5-8dfe-49c7-9d8d-2eff19c7690a -- 401 -- 40 - 1.989 ms
+2021-02-10 -- 11:20:20:2020 -- info: User does not exist in the db
+2021-02-10 -- 11:20:20:2020 -- http: POST -- /login -- 384f5408-b32e-4854-b64e-6cc3ab8d906c -- 401 -- 40 - 2.330 ms
+2021-02-10 -- 11:22:30:2230 -- info: User does not exist in the db
+2021-02-10 -- 11:22:30:2230 -- http: POST -- /login -- fa3c5e3a-ba03-44f0-b587-78947deaf50a -- 401 -- 40 - 2.797 ms
+2021-02-10 -- 11:23:53:2353 -- debug: Login OK
+2021-02-10 -- 11:23:53:2353 -- http: POST -- /login -- 2 -- 200 -- 243 - 89.160 ms
+2021-02-10 -- 11:24:52:2452 -- debug: Login OK
+2021-02-10 -- 11:24:52:2452 -- http: POST -- /login -- 2 -- 200 -- 243 - 85.909 ms
+2021-02-10 -- 11:28:09:289 -- debug: Login OK
+2021-02-10 -- 11:28:09:289 -- http: POST -- /login -- 2 -- 200 -- 243 - 82.625 ms
+2021-02-10 -- 11:31:59:3159 -- error: Password must have 8 caracters min.
+2021-02-10 -- 11:31:59:3159 -- http: POST -- /login -- 1bd13e70-7673-4289-bfdf-cc6d210cc135 -- 401 -- 35 - 1.643 ms
+2021-02-10 -- 11:32:05:325 -- error: Password must have 8 caracters min.
+2021-02-10 -- 11:32:05:325 -- http: POST -- /login -- a1aab71a-232d-41ad-a2ca-e3376d7d7441 -- 401 -- 35 - 1.158 ms
+2021-02-10 -- 11:32:12:3212 -- error: Password must have 8 caracters min.
+2021-02-10 -- 11:32:12:3212 -- http: POST -- /login -- a9f17030-0388-42ec-a0bf-bfe3cac17939 -- 401 -- 35 - 1.475 ms
+2021-02-10 -- 11:32:15:3215 -- info: User does not exist in the db
+2021-02-10 -- 11:32:15:3215 -- http: POST -- /login -- 8e2e719b-3af6-4470-8838-02a449328f89 -- 401 -- 40 - 4.873 ms
+2021-02-10 -- 11:32:28:3228 -- error: Password must have 8 caracters min.
+2021-02-10 -- 11:32:28:3228 -- http: POST -- /login -- cbd075b9-b158-42e6-8dea-d2f013af34ae -- 401 -- 35 - 1.716 ms
+2021-02-10 -- 11:32:57:3257 -- error: Password must have 8 caracters min.
+2021-02-10 -- 11:32:57:3257 -- http: POST -- /login -- 9cdb9b81-df73-4938-9913-589f47f512f7 -- 401 -- 35 - 1.877 ms
+2021-02-10 -- 11:32:58:3258 -- error: Password must have 8 caracters min.
+2021-02-10 -- 11:32:58:3258 -- http: POST -- /login -- 8d59b177-9914-4c29-9816-77954748d625 -- 401 -- 35 - 3.019 ms
+2021-02-10 -- 11:33:26:3326 -- error: Password must have 8 caracters min.
+2021-02-10 -- 11:33:26:3326 -- http: POST -- /login -- b3a18b5b-b147-4999-b475-34addc766d3d -- 401 -- 35 - 1.727 ms
+2021-02-10 -- 11:34:03:343 -- error: Password must have 8 caracters min.
+2021-02-10 -- 11:34:03:343 -- http: POST -- /login -- 855b449f-4051-4732-9642-043456c34543 -- 401 -- 35 - 1.416 ms
+2021-02-10 -- 11:35:18:3518 -- error: Password must have 8 caracters min.
+2021-02-10 -- 11:35:18:3518 -- http: POST -- /login -- eaf0b1b0-f1f7-4e0a-81a8-996f1282242d -- 401 -- 35 - 1.986 ms
+2021-02-10 -- 11:35:20:3520 -- error: Password must have 8 caracters min.
+2021-02-10 -- 11:35:20:3520 -- http: POST -- /login -- 60d7dcae-9991-4e68-a6da-7e4ed896580b -- 401 -- 35 - 2.105 ms
+2021-02-10 -- 11:35:20:3520 -- error: Password must have 8 caracters min.
+2021-02-10 -- 11:35:20:3520 -- http: POST -- /login -- 4e9e80d2-04ab-4370-94b6-914a5d892ba8 -- 401 -- 35 - 2.516 ms
+2021-02-10 -- 11:35:21:3521 -- error: Password must have 8 caracters min.
+2021-02-10 -- 11:35:21:3521 -- http: POST -- /login -- b08df15f-7221-4198-8c67-e6380f37f23d -- 401 -- 35 - 1.620 ms
+2021-02-10 -- 11:35:21:3521 -- error: Password must have 8 caracters min.
+2021-02-10 -- 11:35:21:3521 -- http: POST -- /login -- 3a930153-5c79-43be-b11e-c2f699de153b -- 401 -- 35 - 1.039 ms
+2021-02-10 -- 11:35:22:3522 -- error: Password must have 8 caracters min.
+2021-02-10 -- 11:35:22:3522 -- http: POST -- /login -- 2f487fd6-2fb7-404e-ab4a-b8b9a97fb1df -- 401 -- 35 - 1.617 ms
+2021-02-10 -- 11:35:22:3522 -- error: Password must have 8 caracters min.
+2021-02-10 -- 11:35:22:3522 -- http: POST -- /login -- 41bb030a-12db-48ce-b3d9-eecb6bce0116 -- 401 -- 35 - 2.007 ms
+2021-02-10 -- 11:35:46:3546 -- error: Password must have 8 caracters min.
+2021-02-10 -- 11:35:46:3546 -- http: POST -- /login -- 593a0519-e059-4a3d-ad84-e4db49fbb846 -- 401 -- 35 - 1.245 ms
+2021-02-10 -- 11:35:46:3546 -- error: Password must have 8 caracters min.
+2021-02-10 -- 11:35:46:3546 -- http: POST -- /login -- a7fbf1ed-d1a8-4ffa-996b-92c6a778a375 -- 401 -- 35 - 1.821 ms
+2021-02-10 -- 11:35:46:3546 -- error: Password must have 8 caracters min.
+2021-02-10 -- 11:35:46:3546 -- http: POST -- /login -- 3f115221-54f4-484f-a3b2-a7d1020f24b6 -- 401 -- 35 - 1.678 ms
+2021-02-10 -- 11:35:47:3547 -- error: Password must have 8 caracters min.
+2021-02-10 -- 11:35:47:3547 -- http: POST -- /login -- 23f95df5-867c-4180-bddd-38a620b13537 -- 401 -- 35 - 1.581 ms
+2021-02-10 -- 11:36:47:3647 -- error: Password must have 8 caracters min.
+2021-02-10 -- 11:36:47:3647 -- http: POST -- /login -- 7eb3750f-2d57-4d44-a383-af68a3ea4b63 -- 401 -- 35 - 1.397 ms
+2021-02-10 -- 11:36:48:3648 -- error: Password must have 8 caracters min.
+2021-02-10 -- 11:36:48:3648 -- http: POST -- /login -- 76737d89-b48c-46a6-a251-15ece246f4f4 -- 401 -- 35 - 1.428 ms
+2021-02-10 -- 11:37:42:3742 -- error: Password must have 8 caracters min.
+2021-02-10 -- 11:37:42:3742 -- http: POST -- /login -- 0d10e45c-26e0-4e9f-85da-c583ab646807 -- 401 -- 35 - 1.237 ms
+2021-02-10 -- 11:37:43:3743 -- error: Password must have 8 caracters min.
+2021-02-10 -- 11:37:43:3743 -- http: POST -- /login -- 15853b34-3e0f-48b1-8fc5-f50be6d36995 -- 401 -- 35 - 1.118 ms
+2021-02-10 -- 11:37:48:3748 -- error: Password must have 8 caracters min.
+2021-02-10 -- 11:37:48:3748 -- http: POST -- /login -- c4404838-d96b-434e-a5da-15ed68d95474 -- 401 -- 35 - 1.891 ms
+2021-02-10 -- 11:37:48:3748 -- error: Password must have 8 caracters min.
+2021-02-10 -- 11:37:48:3748 -- http: POST -- /login -- 390ecabb-f1bc-4715-85ef-1ae03e1d4e91 -- 401 -- 35 - 1.993 ms
+2021-02-10 -- 11:37:49:3749 -- error: Password must have 8 caracters min.
+2021-02-10 -- 11:37:49:3749 -- http: POST -- /login -- cca78425-a490-4701-8f6b-902ccc50851b -- 401 -- 35 - 1.759 ms
+2021-02-10 -- 11:37:49:3749 -- error: Password must have 8 caracters min.
+2021-02-10 -- 11:37:49:3749 -- http: POST -- /login -- 8b5adb35-2964-4b53-b3c9-bee067fc5ea7 -- 401 -- 35 - 1.437 ms
+2021-02-10 -- 11:37:49:3749 -- error: Password must have 8 caracters min.
+2021-02-10 -- 11:37:49:3749 -- http: POST -- /login -- 34c502b0-6a9d-43f0-94b0-7db9ed80ad9c -- 401 -- 35 - 2.482 ms
+2021-02-10 -- 11:37:49:3749 -- error: Password must have 8 caracters min.
+2021-02-10 -- 11:37:49:3749 -- http: POST -- /login -- 5f7e8da7-cb29-4bd6-a3de-f32dfbbe746f -- 401 -- 35 - 2.187 ms
+2021-02-10 -- 11:37:49:3749 -- error: Password must have 8 caracters min.
+2021-02-10 -- 11:37:49:3749 -- http: POST -- /login -- acd71016-ccd0-4198-a6e3-d5c799b0060a -- 401 -- 35 - 1.121 ms
+2021-02-10 -- 11:38:28:3828 -- error: Password must have 8 caracters min.
+2021-02-10 -- 11:38:28:3828 -- http: POST -- /login -- 10cbc1e2-3407-4b42-b160-455177a565dc -- 401 -- 35 - 1.805 ms
+2021-02-10 -- 11:38:29:3829 -- error: Password must have 8 caracters min.
+2021-02-10 -- 11:38:29:3829 -- http: POST -- /login -- acd89d4a-e4c8-4b1e-97ab-bc399e958a79 -- 401 -- 35 - 1.284 ms
+2021-02-10 -- 11:38:29:3829 -- error: Password must have 8 caracters min.
+2021-02-10 -- 11:38:29:3829 -- http: POST -- /login -- 0906f670-1d12-4542-b3c7-f2ac45af78f2 -- 401 -- 35 - 1.410 ms
+2021-02-10 -- 11:38:29:3829 -- error: Password must have 8 caracters min.
+2021-02-10 -- 11:38:29:3829 -- http: POST -- /login -- 3f5202d7-ec67-4ca1-9389-1a8d17560ce2 -- 401 -- 35 - 1.391 ms
+2021-02-10 -- 11:39:25:3925 -- error: Password must have 8 caracters min.
+2021-02-10 -- 11:39:25:3925 -- http: POST -- /login -- b986750d-1ad1-4914-bf06-3829320c6dcf -- 401 -- 35 - 1.260 ms
+2021-02-10 -- 11:39:25:3925 -- error: Password must have 8 caracters min.
+2021-02-10 -- 11:39:25:3925 -- http: POST -- /login -- ee49c87f-a40b-4ad4-9d63-f3755c4fee5f -- 401 -- 35 - 1.226 ms
+2021-02-10 -- 11:39:26:3926 -- error: Password must have 8 caracters min.
+2021-02-10 -- 11:39:26:3926 -- http: POST -- /login -- 7e28a563-52f6-4f2c-91f3-76381e1dbc1f -- 401 -- 35 - 1.148 ms
+2021-02-10 -- 11:39:26:3926 -- error: Password must have 8 caracters min.
+2021-02-10 -- 11:39:26:3926 -- http: POST -- /login -- e30b0ed7-8f28-46af-87c1-c151bcddeb07 -- 401 -- 35 - 1.396 ms
+2021-02-10 -- 11:39:27:3927 -- info: User does not exist in the db
+2021-02-10 -- 11:39:27:3927 -- http: POST -- /login -- 44b0a575-cdad-482f-a245-db345ccd9595 -- 401 -- 40 - 2.649 ms
+2021-02-10 -- 11:39:59:3959 -- info: User does not exist in the db
+2021-02-10 -- 11:39:59:3959 -- http: POST -- /login -- c29041d0-49ea-4e9a-93ac-f11cc9885781 -- 401 -- 40 - 3.101 ms
+2021-02-10 -- 11:42:37:4237 -- error: Password must have 8 caracters min.
+2021-02-10 -- 11:42:37:4237 -- http: POST -- /login -- 5248a806-4c89-45d0-9142-952c9fc33d08 -- 401 -- 35 - 1.594 ms
+2021-02-10 -- 11:42:40:4240 -- error: Password must have 8 caracters min.
+2021-02-10 -- 11:42:40:4240 -- http: POST -- /login -- 41f00d0c-6c28-465e-92a2-febf6f542f37 -- 401 -- 35 - 2.001 ms
+2021-02-10 -- 11:43:04:434 -- error: Password must have 8 caracters min.
+2021-02-10 -- 11:43:04:434 -- http: POST -- /login -- 6cb43698-f25f-45c2-94e4-d75c85c54a97 -- 401 -- 35 - 1.310 ms
+2021-02-10 -- 11:43:11:4311 -- info: User does not exist in the db
+2021-02-10 -- 11:43:11:4311 -- http: POST -- /login -- 0b951df6-447f-4998-91fc-c34cc4cf929c -- 401 -- 40 - 3.915 ms
+2021-02-10 -- 11:44:24:4424 -- error: Password must have 8 caracters min.
+2021-02-10 -- 11:44:24:4424 -- http: POST -- /login -- 34ccea93-9757-4f76-b49f-e74909fa93b0 -- 401 -- 35 - 1.415 ms
+2021-02-10 -- 11:44:25:4425 -- error: Password must have 8 caracters min.
+2021-02-10 -- 11:44:25:4425 -- http: POST -- /login -- 60895f92-014d-4db9-9ff5-e647074a0966 -- 401 -- 35 - 1.773 ms
+2021-02-10 -- 11:44:26:4426 -- error: Password must have 8 caracters min.
+2021-02-10 -- 11:44:26:4426 -- http: POST -- /login -- b39bce3a-fa55-433f-b63b-0c1d070c0c6a -- 401 -- 35 - 1.395 ms
+2021-02-10 -- 11:44:26:4426 -- error: Password must have 8 caracters min.
+2021-02-10 -- 11:44:26:4426 -- http: POST -- /login -- 479edbb4-bfd2-45ec-8956-2f77493ee2c6 -- 401 -- 35 - 1.996 ms
+2021-02-10 -- 11:44:27:4427 -- error: Password must have 8 caracters min.
+2021-02-10 -- 11:44:27:4427 -- http: POST -- /login -- 5f1251a5-3bb9-42d6-b40c-664134477693 -- 401 -- 35 - 1.851 ms
+2021-02-10 -- 11:44:27:4427 -- error: Password must have 8 caracters min.
+2021-02-10 -- 11:44:27:4427 -- http: POST -- /login -- 56e68974-9a66-4c4d-a145-94eac70de1fb -- 401 -- 35 - 1.844 ms
+2021-02-10 -- 18:34:06:346 -- info: listening on port 3001
+2021-02-10 -- 18:34:09:349 -- debug: Login OK
+2021-02-10 -- 18:34:09:349 -- http: POST -- /login -- 2 -- 200 -- 243 - 151.399 ms
+2021-02-10 -- 18:38:50:3850 -- info: listening on port 3001
+2021-02-10 -- 18:38:59:3859 -- debug: Login OK
+2021-02-10 -- 18:38:59:3859 -- http: POST -- /login -- 2 -- 200 -- 683 - 131.249 ms
+2021-02-10 -- 18:42:02:422 -- debug: Login OK
+2021-02-10 -- 18:42:02:422 -- http: POST -- /login -- 2 -- 200 -- 683 - 89.777 ms
+2021-02-10 -- 18:42:26:4226 -- debug: Login OK
+2021-02-10 -- 18:42:26:4226 -- http: POST -- /login -- 2 -- 200 -- 683 - 88.309 ms
+2021-02-10 -- 18:43:35:4335 -- debug: Login OK
+2021-02-10 -- 18:43:35:4335 -- http: POST -- /login -- 2 -- 200 -- 683 - 93.994 ms
+2021-02-10 -- 18:44:12:4412 -- debug: Login OK
+2021-02-10 -- 18:44:12:4412 -- http: POST -- /login -- 2 -- 200 -- 683 - 90.468 ms
+2021-02-10 -- 18:46:06:466 -- info: listening on port 3001
+2021-02-10 -- 18:46:09:469 -- debug: Login OK
+2021-02-10 -- 18:46:09:469 -- http: POST -- /login -- 2 -- 200 -- 681 - 126.337 ms
+2021-02-10 -- 18:47:19:4719 -- debug: Login OK
+2021-02-10 -- 18:47:19:4719 -- http: POST -- /login -- 2 -- 200 -- 681 - 87.660 ms
+2021-02-10 -- 18:47:22:4722 -- http: GET -- /user/2 -- 56d4f65f-de24-4088-aa83-f0917eeb6138 -- 304 -- - - 44.468 ms
+2021-02-10 -- 19:16:17:1617 -- debug: Login OK
+2021-02-10 -- 19:16:17:1617 -- http: POST -- /login -- 2 -- 200 -- 681 - 91.888 ms
+2021-02-11 -- 11:06:23:623 -- info: listening on port 3001
+2021-02-11 -- 11:14:16:1416 -- http: GET -- /user/2 -- d091b8ba-f90e-4271-8da9-c01b7c56f765 -- 200 -- 544 - 455.896 ms
+2021-02-11 -- 11:18:05:185 -- http: GET -- /user/2 -- ec58978e-ad38-41d7-9859-71564640d056 -- 304 -- - - 6.791 ms
+2021-02-11 -- 11:18:14:1814 -- http: GET -- /user/2 -- 5e32431c-0d26-457d-bd3e-27748fd7303e -- 304 -- - - 7.230 ms
+2021-02-11 -- 11:18:14:1814 -- http: GET -- /user/2 -- 4332330a-aee6-49ba-911e-93137c88be1f -- 304 -- - - 7.036 ms
+2021-02-11 -- 11:18:31:1831 -- http: GET -- /user/2 -- 1538066f-5dac-45bf-a46e-217113972c4d -- 304 -- - - 8.011 ms
+2021-02-11 -- 11:18:49:1849 -- debug: Login OK
+2021-02-11 -- 11:18:49:1849 -- http: POST -- /login -- 2 -- 200 -- 681 - 173.980 ms
+2021-02-11 -- 11:18:53:1853 -- http: GET -- /user/2 -- cf047659-ac6c-43db-87e1-5c08c1f269e4 -- 304 -- - - 5.750 ms
+2021-02-11 -- 11:19:16:1916 -- http: GET -- /user/2 -- 4959faf3-6181-4675-989c-4693317fc0c8 -- 304 -- - - 6.554 ms
+2021-02-11 -- 11:19:35:1935 -- http: GET -- /user/2 -- 6a21173b-3f67-4407-a66f-f461b1240b5b -- 304 -- - - 5.936 ms
+2021-02-11 -- 11:20:04:204 -- http: GET -- /user/2 -- aefa2355-cd44-4573-9362-76a2ed7748ea -- 304 -- - - 6.439 ms
+2021-02-11 -- 11:21:09:219 -- http: GET -- /user/2 -- bd1642eb-dbf2-4b6d-a397-dc009d6c22da -- 304 -- - - 6.151 ms
+2021-02-11 -- 11:21:46:2146 -- http: GET -- /user/2 -- cd5c4bdf-09db-4596-a036-26437acb29bf -- 304 -- - - 5.593 ms
+2021-02-11 -- 11:21:53:2153 -- http: GET -- /user/2 -- 4031ab80-3048-4be1-9a4a-cf6b38e692a0 -- 304 -- - - 5.453 ms
+2021-02-11 -- 11:23:21:2321 -- info: listening on port 3001
+2021-02-11 -- 11:23:35:2335 -- http: GET -- /user/2 -- 69bc4d04-f22b-451c-b071-b47975a7fcea -- 200 -- 888 - 68.768 ms
+2021-02-11 -- 11:25:13:2513 -- http: GET -- /user/2 -- 65c8769b-f474-4762-8726-1df3887d0b55 -- 304 -- - - 7.840 ms
+2021-02-11 -- 11:25:48:2548 -- http: GET -- /user/2 -- ea04405a-efaf-479a-b492-87a65ac10e39 -- 304 -- - - 6.766 ms
+2021-02-11 -- 11:26:26:2626 -- http: GET -- /user/2 -- 7a8d9dc9-27ec-4e85-8350-e9f1f3eed61a -- 304 -- - - 7.637 ms
+2021-02-11 -- 11:27:13:2713 -- http: GET -- /user/2 -- cd7379fe-7fe9-44c6-a693-5845a253792a -- 304 -- - - 7.551 ms
+2021-02-11 -- 11:30:41:3041 -- http: GET -- /user/2 -- 57140f69-b893-43b6-ba38-58c8d7336a81 -- 304 -- - - 5.662 ms
+2021-02-11 -- 11:31:11:3111 -- http: GET -- /user/2 -- 7ec67177-dd4b-4668-ac65-765359bbf443 -- 304 -- - - 4.302 ms
+2021-02-11 -- 11:31:30:3130 -- http: GET -- /user/2 -- bafc1d50-a513-4bff-9cfb-2d79ac075f92 -- 304 -- - - 7.732 ms
+2021-02-11 -- 11:31:56:3156 -- http: GET -- /user/2 -- 896cb6f4-3544-4518-94dd-7c0fea707725 -- 304 -- - - 4.548 ms
+2021-02-11 -- 11:33:05:335 -- debug: Login OK
+2021-02-11 -- 11:33:05:335 -- http: POST -- /login -- 2 -- 200 -- 681 - 91.126 ms
+2021-02-11 -- 11:36:01:361 -- http: GET -- /user/2 -- e9c62980-2058-4226-add6-d4ebc0cefccb -- 304 -- - - 7.082 ms
+2021-02-11 -- 11:37:51:3751 -- http: GET -- /user/2 -- cd03d32d-c6ef-4eb1-8ed4-08447ea57d85 -- 304 -- - - 5.662 ms
+2021-02-11 -- 11:38:08:388 -- http: GET -- /user/2 -- 501e67de-d0d5-4ae6-b9b7-35415edc5dae -- 304 -- - - 4.645 ms
+2021-02-11 -- 11:38:29:3829 -- http: GET -- /user/2 -- eda4cacf-4f71-4dae-afe8-21093097b6d4 -- 304 -- - - 4.283 ms
+2021-02-11 -- 11:38:49:3849 -- http: GET -- /user/2 -- d1a4bbe5-714f-4e08-af8b-76ff12d4d340 -- 304 -- - - 5.567 ms
+2021-02-11 -- 11:39:07:397 -- http: GET -- /user/2 -- 4017bda7-764a-47e5-9c12-0abe691c2f83 -- 304 -- - - 5.921 ms
+2021-02-11 -- 11:40:13:4013 -- http: GET -- /user/2 -- 5a0ee15d-9f18-4a25-b06c-d6f17f7d9757 -- 304 -- - - 5.400 ms
+2021-02-11 -- 11:41:18:4118 -- http: GET -- /user/2 -- cfb5052c-6169-43dc-bb7a-a034fb6987b1 -- 304 -- - - 4.654 ms
+2021-02-11 -- 11:41:40:4140 -- http: GET -- /user/2 -- a13293a6-e592-4f2e-bae0-0b378ab6b3b2 -- 304 -- - - 4.689 ms
+2021-02-11 -- 11:42:02:422 -- http: GET -- /user/2 -- 17b1924e-b3a5-4a4e-9712-d1569a9dfdde -- 304 -- - - 7.089 ms
+2021-02-11 -- 11:43:54:4354 -- http: GET -- /user/2 -- fb4a3ec8-d908-4b78-8025-02bc8d0076e1 -- 304 -- - - 6.728 ms
+2021-02-11 -- 11:48:20:4820 -- http: GET -- /user/2 -- 42ad90bf-eeba-41b4-a0e7-5225e1345737 -- 304 -- - - 4.409 ms
+2021-02-11 -- 11:48:27:4827 -- http: GET -- /user/2 -- 160ffdaf-ff58-435f-a77a-343ed92d3127 -- 304 -- - - 4.354 ms
+2021-02-11 -- 11:50:31:5031 -- http: GET -- /user/2 -- 76a61355-ce89-44bd-9718-8ac963eacc8e -- 304 -- - - 5.080 ms
+2021-02-11 -- 11:51:30:5130 -- http: GET -- /user/2 -- 7e388bce-ae8b-45bd-bd58-48053d40b5bf -- 304 -- - - 4.855 ms
+2021-02-11 -- 11:51:46:5146 -- http: GET -- /user/2 -- f8fe352e-a773-4184-b9f6-105b37d8e903 -- 304 -- - - 7.243 ms
+2021-02-11 -- 11:55:16:5516 -- http: GET -- /user/2 -- 239d5e13-53f3-40a5-afef-8cfc7f7577cd -- 304 -- - - 5.325 ms
+2021-02-11 -- 11:55:30:5530 -- http: GET -- /user/2 -- 1a3713e7-828a-4807-9872-cfdf0318e155 -- 304 -- - - 4.754 ms

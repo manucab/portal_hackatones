@@ -416,3 +416,57 @@
 2021-02-07 -- 22:08:24:824 -- error: invalid token
 2021-02-07 -- 22:09:01:91 -- error: invalid token
 2021-02-07 -- 22:27:56:2756 -- error: jwt malformed
+2021-02-10 -- 10:26:39:2639 -- error: Email must have the following structure: name@xxxx.[com, es, net]
+2021-02-10 -- 10:26:43:2643 -- error: Email must have the following structure: name@xxxx.[com, es, net]
+2021-02-10 -- 10:27:07:277 -- error: Email must have the following structure: name@xxxx.[com, es, net]
+2021-02-10 -- 10:27:41:2741 -- error: Email must have the following structure: name@xxxx.[com, es, net]
+2021-02-10 -- 10:28:05:285 -- error: Email must have the following structure: name@xxxx.[com, es, net]
+2021-02-10 -- 10:35:27:3527 -- error: Email must have the following structure: name@xxxx.[com, es, net]
+2021-02-10 -- 10:44:44:4444 -- error: Password must have 8 caracters min.
+2021-02-10 -- 11:31:59:3159 -- error: Password must have 8 caracters min.
+2021-02-10 -- 11:32:05:325 -- error: Password must have 8 caracters min.
+2021-02-10 -- 11:32:12:3212 -- error: Password must have 8 caracters min.
+2021-02-10 -- 11:32:28:3228 -- error: Password must have 8 caracters min.
+2021-02-10 -- 11:32:57:3257 -- error: Password must have 8 caracters min.
+2021-02-10 -- 11:32:58:3258 -- error: Password must have 8 caracters min.
+2021-02-10 -- 11:33:26:3326 -- error: Password must have 8 caracters min.
+2021-02-10 -- 11:34:03:343 -- error: Password must have 8 caracters min.
+2021-02-10 -- 11:35:18:3518 -- error: Password must have 8 caracters min.
+2021-02-10 -- 11:35:20:3520 -- error: Password must have 8 caracters min.
+2021-02-10 -- 11:35:20:3520 -- error: Password must have 8 caracters min.
+2021-02-10 -- 11:35:21:3521 -- error: Password must have 8 caracters min.
+2021-02-10 -- 11:35:21:3521 -- error: Password must have 8 caracters min.
+2021-02-10 -- 11:35:22:3522 -- error: Password must have 8 caracters min.
+2021-02-10 -- 11:35:22:3522 -- error: Password must have 8 caracters min.
+2021-02-10 -- 11:35:46:3546 -- error: Password must have 8 caracters min.
+2021-02-10 -- 11:35:46:3546 -- error: Password must have 8 caracters min.
+2021-02-10 -- 11:35:46:3546 -- error: Password must have 8 caracters min.
+2021-02-10 -- 11:35:47:3547 -- error: Password must have 8 caracters min.
+2021-02-10 -- 11:36:47:3647 -- error: Password must have 8 caracters min.
+2021-02-10 -- 11:36:48:3648 -- error: Password must have 8 caracters min.
+2021-02-10 -- 11:37:42:3742 -- error: Password must have 8 caracters min.
+2021-02-10 -- 11:37:43:3743 -- error: Password must have 8 caracters min.
+2021-02-10 -- 11:37:48:3748 -- error: Password must have 8 caracters min.
+2021-02-10 -- 11:37:48:3748 -- error: Password must have 8 caracters min.
+2021-02-10 -- 11:37:49:3749 -- error: Password must have 8 caracters min.
+2021-02-10 -- 11:37:49:3749 -- error: Password must have 8 caracters min.
+2021-02-10 -- 11:37:49:3749 -- error: Password must have 8 caracters min.
+2021-02-10 -- 11:37:49:3749 -- error: Password must have 8 caracters min.
+2021-02-10 -- 11:37:49:3749 -- error: Password must have 8 caracters min.
+2021-02-10 -- 11:38:28:3828 -- error: Password must have 8 caracters min.
+2021-02-10 -- 11:38:29:3829 -- error: Password must have 8 caracters min.
+2021-02-10 -- 11:38:29:3829 -- error: Password must have 8 caracters min.
+2021-02-10 -- 11:38:29:3829 -- error: Password must have 8 caracters min.
+2021-02-10 -- 11:39:25:3925 -- error: Password must have 8 caracters min.
+2021-02-10 -- 11:39:25:3925 -- error: Password must have 8 caracters min.
+2021-02-10 -- 11:39:26:3926 -- error: Password must have 8 caracters min.
+2021-02-10 -- 11:39:26:3926 -- error: Password must have 8 caracters min.
+2021-02-10 -- 11:42:37:4237 -- error: Password must have 8 caracters min.
+2021-02-10 -- 11:42:40:4240 -- error: Password must have 8 caracters min.
+2021-02-10 -- 11:43:04:434 -- error: Password must have 8 caracters min.
+2021-02-10 -- 11:44:24:4424 -- error: Password must have 8 caracters min.
+2021-02-10 -- 11:44:25:4425 -- error: Password must have 8 caracters min.
+2021-02-10 -- 11:44:26:4426 -- error: Password must have 8 caracters min.
+2021-02-10 -- 11:44:26:4426 -- error: Password must have 8 caracters min.
+2021-02-10 -- 11:44:27:4427 -- error: Password must have 8 caracters min.
+2021-02-10 -- 11:44:27:4427 -- error: Password must have 8 caracters min.
