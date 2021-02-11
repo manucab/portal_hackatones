@@ -2,7 +2,7 @@ const {performQuery} = require("../performQuery")
 
 const getProfileInfo = async (id) => {
     const queryProfile =
-      "select user_name,surname,email,professional_profile,rol from competitor where id = ?";
+      "select * from competitor where id = ?";
   
     //Other option is have previous hackathons in a different variable then future hackathons
     const queryHackathonsParticipations = `select a.id ,a.hackathon_name, a.hackathon_place,a.city,a.hackathon_status,a.start_date, a.end_date,a.thematic,
