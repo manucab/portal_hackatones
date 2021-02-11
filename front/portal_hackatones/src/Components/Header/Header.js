@@ -1,11 +1,11 @@
 import { useDispatch, useSelector } from 'react-redux';
 import { Link} from 'react-router-dom';
+import Avatar from '../Avatar/Avatar';
 import './Header.css'
 
 function Header() {
   const login = useSelector(s => s.login)
-  const dispatch = useDispatch()
-  const id = login ? login.id:0
+  const id = login ? login.user.id:null
   const profileUrl = `/user/${id}`
   
 
@@ -20,8 +20,7 @@ function Header() {
         }
         {login &&
             <div className="loginSection">
-                {login.username}
-                <Link to={profileUrl} > <div>{login.email}</div> </Link>
+                <Link to={profileUrl} > <Avatar/> </Link>
             </div>
         }
     </header>
