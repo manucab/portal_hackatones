@@ -1,4 +1,5 @@
 import {useState} from 'react';
+import { Redirect } from 'react-router-dom';
 import './Register.css';
 
 function Register() {
@@ -6,10 +7,10 @@ function Register() {
     const [email, setEmail] = useState('');
     const [name, setName] = useState('');
     const [surname, setSurname] = useState('');
-    const [professionalProfile, setProfessionalProfile] = useState('');
-    const [rol, setRol] = useState('');
+    const [professionalProfile, setProfessionalProfile] = useState('desarrollador');
+    const [rol, setRol] = useState('user');
     const [password, setPassword] = useState('');
-    const [profilePicture, setProfilePicture] = useState('');
+    const [profilePicture, setProfilePicture] = useState('default');
 
     const handleSubmit = async e => {
         e.preventDefault()
@@ -18,7 +19,8 @@ function Register() {
             'Content-Type': 'application/json'
         }
 
-        await fetch('http://localhost:3000/register', {
+
+        const ret = await fetch('http://localhost:3000/register', {
             headers,
             body: JSON.stringify(
                 {
@@ -33,6 +35,12 @@ function Register() {
             ),
             method: 'POST'
         })
+
+
+        if(ret.status === 200){
+            console.log('Insert new user ok');
+            return <Redirect  to="http://localhost:3001/" />
+        }
         // reload()
     }
 
@@ -42,7 +50,7 @@ function Register() {
         <div id="signup" className='signup'>
             <h1>Crear cuenta</h1>
 
-            <form action={handleSubmit}
+            <form onSubmit={handleSubmit}
                 method="post">
 
                 <div className="completeName">
@@ -85,42 +93,45 @@ function Register() {
                     <label>
                         Perfil profesional:
                     </label>
-                    <input type="text" list="profiles"
+                    {/* <input type="text" list="profiles"
                         onChange={
                             e => setProfessionalProfile(e.target.value)
                         }
-                        required/>
-                    <datalist id="profiles">
-                        <option value="Desarrollador"/>
-                        <option value="Marqueting"/>
-                        <option value="Diseñador"/>
-                        <option value="Otro"/>
-                    </datalist>
+                        required/> */}
+                    <select id="profiles" defaultvalue="desarrollador"
+                        onChange={e => setProfessionalProfile(e.target.value)}
+                        required>
+                        <option value="desarrollador">Desarrollador</option>
+                        <option value="marqueting">Marqueting</option>
+                        <option value="diseñador">Diseñador</option>
+                        <option value="otro">Otro</option>
+                    </select>
+
+
                 </div>
 
 
-                <div className="field fieldPassword">
+                <div className="field fielProfile">
                     <label>Tipo usuario:</label>
                     <div className="rOption">
 
                         <div id="rUser">
-                            <input type="radio" id="user" name="typeUser" value="user"
-                                onChange={
-                                    e => setRol(e.target.value)
-                                }
-                                checked/>
+                            <input type="radio" id="user" name="typeUser" value="user" onChange={e => setRol(e.target.value)}
+                                defaultChecked/>
                             <label for="user">Usuario</label>
                         </div>
 
                         <div id="rOrganizer">
                             <input type="radio" id="organizer" name="typeUser" value="organizer"
-                                onChange={
-                                    e => setRol(e.target.value)
-                                }
-                                />
+                                 onChange={
+                                     e => setRol(e.target.value)
+                                 }
+                                 />
                             <label for="organizer">Organizador</label>
                         </div>
                     </div>
+
+        
 
                 </div>
 

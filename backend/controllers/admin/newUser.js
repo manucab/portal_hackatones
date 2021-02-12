@@ -11,7 +11,7 @@ const { logger } = require('../../app/config/logger');
 const newUser = async(req, res) => {
 
     // 1. Get params
-    const { email, name, surname, register_date, professional_profile, rol, password } = req.body
+    const { email, name, surname, register_date, professionalProfile, rol, password } = req.body
 
     try {
 
@@ -33,7 +33,7 @@ const newUser = async(req, res) => {
         // Generate code for url validation
         const validationCode = cryptoRandomString({ length: parseInt(process.env.CODE_LEN), type: 'alphanumeric' });
 
-        await registerNewUser(email, name, surname, register_date, professional_profile, rol, passwordEncrypt, validationCode);
+        await registerNewUser(email, name, surname, register_date, professionalProfile, rol, passwordEncrypt, validationCode);
 
         // 4. Send email to confirm count
         await utils.sendConfirmationMail(email, `http://${process.env.PUBLIC_DOMAIN}/user/validate/${validationCode}`);

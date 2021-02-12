@@ -7,12 +7,12 @@ const updateProfileInfo = async (req, res) => {
     name,
     surname,
     email,
-    professional_profile,
+    professionalProfile,
     rol,
     currentPassword,
     newPassword,
     passwordConfirmation,
-    profile_picture
+    profilePicture
   } = req.body;
   const { idUser } = req.params;
 
@@ -53,10 +53,10 @@ const updateProfileInfo = async (req, res) => {
       name,
       surname,
       email,
-      professional_profile,
+      professionalProfile,
       rol,
       newPassword,
-      profile_picture
+      profilePicture
     );
   } catch (e) {
     res.send(e.message);

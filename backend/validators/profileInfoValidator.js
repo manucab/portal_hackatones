@@ -13,7 +13,7 @@ const profileInfoValidator = Joi.object({
 
   email: Joi.string().email().error(new Error("wrong email format")),
 
-  professional_profile: Joi.date()
+  professionalProfile: Joi.date()
     .valid("desarrollador", "diseñador", "marketing", "otro")
     .error(new Error("Personal Profile should be desarrollador, diseñador ,marketing or otro")),
   rol: Joi.date()
@@ -27,7 +27,7 @@ const profileInfoValidator = Joi.object({
     .error(new Error("Password must have 8 caracters min.")),
   currentPassword: Joi.string()
     ,
-  profile_picture: Joi.string()
+  profilePicture: Joi.string()
   .min(1)
   .error(
       new Error('profile picture must be an url')
