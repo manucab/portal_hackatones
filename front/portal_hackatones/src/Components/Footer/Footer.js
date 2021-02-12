@@ -1,33 +1,55 @@
-import { Link } from 'react-router-dom';
+import {Link} from 'react-router-dom';
 import './Footer.css'
+import logoHome from '../../Media/Images/General/logo.jpg';
+import logoBlog from '../../Media/Images/General/blogLogo.png';
+import logoHackathon from '../../Media/Images/General/codeLogo.svg';
+import logoAbout from '../../Media/Images/General/about.svg';
 
 function Footer() {
 
-  return (
-    <Footer>
-      <div >
-        <Link to="/"><div className="logoFooter"></div></Link> 
-        <span>Inicio</span>
-      </div>
+    return (
+        <footer className="footer">
+            <div>
+                <Link to="/" className="logoFooter">
 
-      <div >
-        <Link to="/hackathons"><div className="logoFooter"></div></Link> 
-        <span>Hackatones</span>
-      </div>
+                    <img id="homeButton"
+                        src={logoHome}
+                        alt="home-logo"/>
+                    <span>Inicio</span>
+                </Link>
+            </div>
 
-      <div >
-        <Link to="/blog"><div className="logoFooter"></div></Link> 
-        <span>Blog</span>
-      </div>
+            <div>
+                <Link to="/hackathons" className="logoFooter">
+                    <img id="hackathonsButton"
+                        src={logoHackathon}
+                        alt="hackathon-logo"/>
+                    <span>Hackatones</span>
 
-      <div >
-        <Link to="/about"><div className="logoFooter"></div></Link> 
-        <span>Nosotros</span>
-      </div>
-         
+                </Link>
+            </div>
 
-    </Footer>
-  );
+            <div>
+                <Link to="/blog" className="logoFooter">
+                    <img id="hackathonsButton"
+                        src={logoBlog}
+                        alt="blog-logo"/>
+                    <span>Blog</span>
+                </Link>
+            </div>
+
+            <div>
+                <Link to="/about" className="logoFooter">
+                    <img id="hackathonsButton"
+                        src={logoAbout}
+                        alt="about-logo"/>
+                    <span>Nosotros</span>
+                </Link>
+            </div>
+
+
+        </footer>
+    );
 }
 
 export default Footer;
