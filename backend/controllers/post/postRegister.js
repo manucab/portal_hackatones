@@ -19,6 +19,9 @@ const newUser = async(req, res) => {
     // 1. Get params
     let { email, name, surname, professional_profile, rol, password, profile_picture } = req.body;
 
+
+    console.log(email, name, surname, professional_profile, rol, password, profile_picture );
+
     try {
 
         //control default value

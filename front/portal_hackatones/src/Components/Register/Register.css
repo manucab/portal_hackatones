@@ -1,13 +1,29 @@
-.signup div{
+.field{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
     text-align: left;
-    font-size: 12px;
-    
+    margin: 5px;
 }
 
-.completeName {
-
+.field > * {
+    margin: 2px;
 }
 
-.completeName > div, .fieldEmail > *, .fieldPassword, .button  {
-margin: 5px;
+.signup > h1 {
+    margin: 5px;
+}
+
+.rOption {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: whitesmoke;
+}
+
+#rOrganizer, #rUser {
+    margin: 4px;
+}
+.button {
+    margin: 10px;
 }

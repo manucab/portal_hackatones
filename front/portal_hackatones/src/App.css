@@ -42,7 +42,7 @@
   color: #61dafb;
 }
 
-h1 {
+.App > h1 {
   font-size: 100%;
 }
 

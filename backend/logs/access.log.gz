@@ -3370,3 +3370,30 @@
 2021-02-11 -- 18:09:14:914 -- http: GET -- /user/3 -- a825efb8-b151-40da-b684-7e0aa138ab23 -- 200 -- 845 - 4.027 ms
 2021-02-11 -- 18:25:32:2532 -- http: GET -- /user/3 -- 8a4a3356-07b2-4f91-b6db-c9f4022dbb68 -- 200 -- 1461 - 314.067 ms
 2021-02-11 -- 18:25:32:2532 -- http: GET -- /user/3 -- 9f9c8f3c-2b3d-42b8-935b-9a7b92220d90 -- 304 -- - - 4.272 ms
+2021-02-12 -- 18:12:34:1234 -- info: listening on port 3001
+2021-02-12 -- 18:18:29:1829 -- info: listening on port 3001
+2021-02-12 -- 18:39:49:3949 -- info: listening on port 3000
+2021-02-12 -- 18:40:11:4011 -- error: Email must have the following structure: name@xxxx.[com, es, net]
+2021-02-12 -- 18:40:11:4011 -- http: POST -- /register -- 2f8edc18-9ac8-4726-98f2-406625045f01 -- 500 -- 65 - 16.038 ms
+2021-02-12 -- 18:40:23:4023 -- error: Email must have the following structure: name@xxxx.[com, es, net]
+2021-02-12 -- 18:40:23:4023 -- http: POST -- /register -- e693ccec-7b43-4d58-9c7f-3a67361b806d -- 500 -- 65 - 1.781 ms
+2021-02-12 -- 18:40:58:4058 -- warn: 404 Router not found
+2021-02-12 -- 18:40:58:4058 -- http: GET -- /register -- a9a9deb4-ed57-489b-9f11-eaf6fd5a5512 -- 404 -- 30 - 1.849 ms
+2021-02-12 -- 18:41:12:4112 -- warn: 404 Router not found
+2021-02-12 -- 18:41:12:4112 -- http: GET -- /register -- 320a0010-a5b3-4c9f-9bf0-05c848f1de77 -- 404 -- 30 - 3.517 ms
+2021-02-12 -- 18:41:48:4148 -- error: Email must have the following structure: name@xxxx.[com, es, net]
+2021-02-12 -- 18:41:48:4148 -- http: POST -- /register -- 8eb45836-acdf-4226-b0ab-14009a5f8748 -- 500 -- 65 - 2.689 ms
+2021-02-12 -- 18:44:13:4413 -- error: Email must have the following structure: name@xxxx.[com, es, net]
+2021-02-12 -- 18:44:13:4413 -- http: POST -- /register -- c6b56b00-c7f5-4b77-abaa-7fc7d1a26325 -- 500 -- 65 - 1.397 ms
+2021-02-12 -- 18:44:24:4424 -- warn: 404 Router not found
+2021-02-12 -- 18:44:24:4424 -- http: GET -- /register -- 11cf76b9-fa5d-4942-bb27-b04a5c8446a1 -- 404 -- 30 - 1.309 ms
+2021-02-12 -- 18:44:35:4435 -- warn: 404 Router not found
+2021-02-12 -- 18:44:35:4435 -- http: GET -- /register/ -- 92cde47c-b6bb-4632-aa3f-5a664a4dcab5 -- 404 -- 30 - 1.199 ms
+2021-02-12 -- 18:44:40:4440 -- info: Home page
+2021-02-12 -- 18:44:40:4440 -- http: GET -- / -- e5ae1aec-2d4b-46fd-b065-e8a2b805a066 -- 200 -- 20 - 1.453 ms
+2021-02-12 -- 18:45:26:4526 -- warn: 404 Router not found
+2021-02-12 -- 18:45:26:4526 -- http: GET -- /register -- d96310b2-d2a7-466a-b76c-e9d419ee3ba8 -- 404 -- 30 - 1.107 ms
+2021-02-12 -- 18:49:49:4949 -- warn: 404 Router not found
+2021-02-12 -- 18:49:49:4949 -- http: GET -- /register -- fd514e42-c297-4273-8c0f-e32b9dfa09ff -- 404 -- 30 - 1.080 ms
+2021-02-12 -- 19:05:23:523 -- warn: 404 Router not found
+2021-02-12 -- 19:05:23:523 -- http: GET -- /register -- 1df1aea4-eb63-4ecf-a09c-daf8824c5de3 -- 404 -- 30 - 1.357 ms
