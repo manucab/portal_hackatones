@@ -1,0 +1,842 @@
+[33mcommit 58658566fd324e6cb5680460783d243f2346c43c[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m)[m
+Author: Manu <manuelcabezas.a@gmail.com>
+Date:   Fri Feb 12 18:36:53 2021 +0100
+
+    Add opacity to carousel arrows
+
+[33mcommit d1ff041a683526b0f1d37a06ff3e2e035a6d2472[m[33m ([m[1;31morigin/master[m[33m)[m
+Author: Carlos Fontán <fgjcarlos@gmail.com>
+Date:   Fri Feb 12 16:27:41 2021 +0100
+
+    Change in footer
+
+[33mcommit 971670d9739afc4c6218db122ddf3d2735ec41bf[m
+Author: Manu <manuelcabezas.a@gmail.com>
+Date:   Thu Feb 11 18:31:46 2021 +0100
+
+    carouselHackathons added to profilePage
+
+[33mcommit e211301fb0a00823fa7121509d600837248932a8[m
+Author: Manu <manuelcabezas.a@gmail.com>
+Date:   Thu Feb 11 18:31:04 2021 +0100
+
+    get profileInfo modified
+
+[33mcommit 067768a27da871adb244fcc81c13b32b9aad9af8[m
+Merge: 6ef4fc4 f7bdee9
+Author: Carlos Fontán <fgjcarlos@gmail.com>
+Date:   Thu Feb 11 16:01:03 2021 +0100
+
+    Add PanelSignInUp
+
+[33mcommit 6ef4fc42a8a213b4d40b1a687efafb77357b801b[m
+Author: Carlos Fontán <fgjcarlos@gmail.com>
+Date:   Thu Feb 11 15:59:55 2021 +0100
+
+    Add PanelSignInUp
+
+[33mcommit f7bdee956426fc9bd4ba616af2c8563a4f4b188a[m
+Author: Manu <manuelcabezas.a@gmail.com>
+Date:   Thu Feb 11 12:06:14 2021 +0100
+
+    Added ProfileInfo component to the profile page and starting HackathonsJoined
+
+[33mcommit 9770d7a91d04661291df8787b18a895f50e52421[m
+Author: Manu <manuelcabezas.a@gmail.com>
+Date:   Thu Feb 11 12:05:19 2021 +0100
+
+    Changes in getProfileInfo to have all info from each user
+
+[33mcommit f4c5b6be239f1ad7371ad0015222936be0ebed03[m
+Author: Manu <manuelcabezas.a@gmail.com>
+Date:   Wed Feb 10 11:44:50 2021 +0100
+
+    Password control added
+
+[33mcommit da4f434cf99cee16f86cf4036149f9c5c8713dfb[m
+Author: Manu <manuelcabezas.a@gmail.com>
+Date:   Wed Feb 10 11:29:13 2021 +0100
+
+    error message added to loging when process failed
+
+[33mcommit c132e643e1afbab3188c9efe8906014d2c15c0c6[m
+Author: Manu <manuelcabezas.a@gmail.com>
+Date:   Tue Feb 9 16:55:03 2021 +0100
+
+    Stopped tracking env
+
+[33mcommit 2cfe51256c6ea14390da4bae4d533c6ea199bf57[m
+Merge: 5525a42 dc71f49
+Author: Manu <manuelcabezas.a@gmail.com>
+Date:   Tue Feb 9 16:51:14 2021 +0100
+
+    Merge branch 'master' of https://github.com/manucab/portal_hackatones
+
+[33mcommit 5525a42fba066ae9551f4be3ce3725dadbf3aab1[m
+Author: Manu <manuelcabezas.a@gmail.com>
+Date:   Tue Feb 9 16:50:47 2021 +0100
+
+    gitignore added
+
+[33mcommit dc71f494f88f042b7824f911a05912069acbe266[m
+Author: manucab <71634075+manucab@users.noreply.github.com>
+Date:   Tue Feb 9 16:48:52 2021 +0100
+
+    Delete .gitignore
+
+[33mcommit 8f6b9db15743f2d95fe2c51fb7fe775772ac33fe[m
+Author: manucab <71634075+manucab@users.noreply.github.com>
+Date:   Tue Feb 9 16:48:15 2021 +0100
+
+    Create .gitignore
+
+[33mcommit f22e14d5503e0a219e96381eae82968ec4c28710[m
+Merge: de26ea5 2ddde9b
+Author: Manu <manuelcabezas.a@gmail.com>
+Date:   Tue Feb 9 16:45:44 2021 +0100
+
+    Merge branch 'master' of https://github.com/manucab/portal_hackatones
+
+[33mcommit de26ea508a87db2b0e83144a52a6ee4ab8da5b06[m
+Author: Manu <manuelcabezas.a@gmail.com>
+Date:   Tue Feb 9 16:45:05 2021 +0100
+
+    First update login
+
+[33mcommit 49820c27a97175adacbdc3ff3555bbc6c6b83a9e[m
+Author: Manu <manuelcabezas.a@gmail.com>
+Date:   Tue Feb 9 16:43:30 2021 +0100
+
+    front folder added
+
+[33mcommit 8c1dae3130467e047d51270e849a54a05bf578f3[m
+Author: Manu <manuelcabezas.a@gmail.com>
+Date:   Sun Feb 7 22:33:54 2021 +0100
+
+    Profile Info added no style
+
+[33mcommit 0d04917dd8986ed52a9a9d513b6f54b93f5a0bb4[m
+Author: Manu <manuelcabezas.a@gmail.com>
+Date:   Sun Feb 7 20:00:15 2021 +0100
+
+    Update for front
+
+[33mcommit a47a351cd9f4a7e747b35b2692017eeb3d48845c[m
+Author: Manu <manuelcabezas.a@gmail.com>
+Date:   Sun Feb 7 19:59:08 2021 +0100
+
+    front folder added
+
+[33mcommit 73985a4e94d214acaa42e00e15d2c962f94ee2cf[m
+Author: Manu <manuelcabezas.a@gmail.com>
+Date:   Thu Feb 4 21:35:24 2021 +0100
+
+    thematic added to profileInfo
+
+[33mcommit 2ddde9b8ad86375cafbe104d85e722032026a163[m
+Merge: 010e81c 7c9138a
+Author: Carlos Fontán <fgjcarlos@gmail.com>
+Date:   Fri Jan 29 23:37:05 2021 +0100
+
+    Merge branch 'master' of github.com:manucab/portal_hackatones
+
+[33mcommit 010e81c99bcc93d17d83bd83adef777aa0507b9d[m
+Author: Carlos Fontán <fgjcarlos@gmail.com>
+Date:   Fri Jan 29 23:36:33 2021 +0100
+
+    Add TODO, and eliminate clg
+
+[33mcommit 7c9138a841d8e5421c14b64b11a299b49f6e7057[m
+Merge: ea8fc14 69d0be1
+Author: Manu <manuelcabezas.a@gmail.com>
+Date:   Fri Jan 29 23:33:17 2021 +0100
+
+    Merge branch 'master' of https://github.com/manucab/portal_hackatones
+
+[33mcommit ea8fc1454e4a17f6422164354cd796e9cfef6a53[m
+Author: Manu <manuelcabezas.a@gmail.com>
+Date:   Fri Jan 29 23:31:55 2021 +0100
+
+    edited hackathon validator and profileInfoValidator
+
+[33mcommit 69d0be1ab4390feff7d553e03cb4f2b30b6694b0[m
+Merge: 2a3c71b 75a9815
+Author: carlos_fontan <fgjcarlos@gmail.com>
+Date:   Fri Jan 29 23:24:33 2021 +0100
+
+     Add schema emails
+
+[33mcommit 2a3c71b5d11ff95c06f1c7499986e6bee0211aa0[m
+Author: carlos_fontan <fgjcarlos@gmail.com>
+Date:   Fri Jan 29 23:23:17 2021 +0100
+
+    Add email confirm account, welcome and register in a hackathon
+
+[33mcommit 4314360348919810be56cd517a8f0e91ac5d6116[m
+Author: carlos_fontan <fgjcarlos@gmail.com>
+Date:   Fri Jan 29 21:28:42 2021 +0100
+
+    Add register in a hackathon, and send email booking code
+
+[33mcommit 75a98159ffd2f140a42db5fc123e009f1711c553[m
+Author: Manu <manuelcabezas.a@gmail.com>
+Date:   Fri Jan 29 20:45:15 2021 +0100
+
+    cover_picture added to modifyHackathon
+
+[33mcommit faa2321fdee13b1592f67a3eb13a734fc9c1a78b[m
+Author: Manu <manuelcabezas.a@gmail.com>
+Date:   Fri Jan 29 20:38:50 2021 +0100
+
+    added profile_picture to updateProfile controller
+
+[33mcommit 66a4da7b6bc8101b1cbeabd9457fe0c6008b5451[m
+Author: Manu <manuelcabezas.a@gmail.com>
+Date:   Fri Jan 29 20:06:22 2021 +0100
+
+    changed routes id for idUser to make isRightUser middleware work in all the endpoints needed
+
+[33mcommit e3cc6b2690fb66fe89a99e7dc6b30cb1ad3009fa[m
+Merge: cbd4c0f 8320f0b
+Author: Manu <manuelcabezas.a@gmail.com>
+Date:   Fri Jan 29 19:57:42 2021 +0100
+
+    Merge branch 'master' of https://github.com/manucab/portal_hackatones
+
+[33mcommit cbd4c0fd13ab8337a9d4f57be782bd9148e25f1d[m
+Author: Manu <manuelcabezas.a@gmail.com>
+Date:   Fri Jan 29 19:51:54 2021 +0100
+
+    IsRightUser Middleware added
+
+[33mcommit 8320f0b551462cb049fb629ec74f2246f49beb77[m
+Merge: b5d108c 36ed08d
+Author: Carlos Fontán <fgjcarlos@gmail.com>
+Date:   Fri Jan 29 18:39:19 2021 +0100
+
+    Changes 'notes'
+    ;
+
+[33mcommit b5d108c7447f039ac7a2a8b77cb802282e32132d[m
+Author: Carlos Fontán <fgjcarlos@gmail.com>
+Date:   Fri Jan 29 18:37:57 2021 +0100
+
+    Update changes 'notes'
+
+[33mcommit 36ed08d3d3937c1a8caaa5a059d2efcdea3f6439[m
+Author: Manu <manuelcabezas.a@gmail.com>
+Date:   Fri Jan 29 16:29:47 2021 +0100
+
+    isAuthenticated added as middleware to endpoints that needed
+
+[33mcommit 48a484eb13a5519f0281df65663640d23e6e0165[m
+Merge: a141f1f 689ab2c
+Author: Manu <manuelcabezas.a@gmail.com>
+Date:   Fri Jan 29 13:34:28 2021 +0100
+
+    Merge branch 'master' of https://github.com/manucab/portal_hackatones
+
+[33mcommit a141f1faf8551fb25c6d10aeea267ade572a2db5[m
+Author: Manu <manuelcabezas.a@gmail.com>
+Date:   Fri Jan 29 13:33:11 2021 +0100
+
+    changes in register and login
+
+[33mcommit 689ab2c3521853f15fc1adf0681d29b914795c7d[m
+Author: Carlos Fontán <fgjcarlos@gmail.com>
+Date:   Fri Jan 29 13:30:06 2021 +0100
+
+    Upload sql
+
+[33mcommit 8654f052dffa6735648efc31067e9417f20bf370[m
+Author: Carlos Fontán <fgjcarlos@gmail.com>
+Date:   Fri Jan 29 13:28:29 2021 +0100
+
+    Change sql
+
+[33mcommit 7bdcc9d0a3cbb11f242d43381de589c98f0d9760[m
+Author: Carlos Fontán <fgjcarlos@gmail.com>
+Date:   Fri Jan 29 12:32:33 2021 +0100
+
+    Update scripts bbdd final xD
+
+[33mcommit cbae708d474493ca976b9f8413463a59b9a13012[m
+Author: Carlos Fontán <fgjcarlos@gmail.com>
+Date:   Fri Jan 29 12:13:03 2021 +0100
+
+    Login, Register, home, OK
+
+[33mcommit 63a7a37630cb9301c7d20563fccdd3b1da2d2a04[m
+Author: Carlos Fontán <fgjcarlos@gmail.com>
+Date:   Thu Jan 28 19:46:40 2021 +0100
+
+    Fixed changes
+
+[33mcommit 2515c6d22ba2eeb71b0cf38f3993221ef1d1f4c0[m
+Merge: dcd9e5a 24aa97d
+Author: Manu <manuelcabezas.a@gmail.com>
+Date:   Thu Jan 28 17:54:17 2021 +0100
+
+    Merge branch 'master' of https://github.com/manucab/portal_hackatones
+
+[33mcommit 24aa97d05ce9b694816e4dc53b11ee67711dd25d[m[33m ([m[1;31morigin/fgjcarlos[m[33m)[m
+Author: Carlos Fontán <fgjcarlos@gmail.com>
+Date:   Thu Jan 28 17:31:02 2021 +0100
+
+    last update 17.30
+
+[33mcommit dcd9e5aa06c0008656c5b0b71b903028d8792c2a[m[33m ([m[1;31morigin/manu[m[33m, [m[1;32mmanu[m[33m)[m
+Author: Manu <manuelcabezas.a@gmail.com>
+Date:   Thu Jan 28 17:24:14 2021 +0100
+
+    getCommentsByHackathon
+
+[33mcommit fe5ca4ba9e1e351bb583fb09bdb6503cdead5247[m
+Author: Carlos Fontán <fgjcarlos@gmail.com>
+Date:   Thu Jan 28 13:47:05 2021 +0100
+
+    Delete not important files
+
+[33mcommit eff4aac6bc305410c9c908dbe1401dd1b6c5255e[m
+Author: Manu <manuelcabezas.a@gmail.com>
+Date:   Thu Jan 28 13:42:02 2021 +0100
+
+    deleteComment added
+
+[33mcommit 64f7727980b1db3a72046e284f3795c4b4af4e72[m
+Author: Carlos Fontán <fgjcarlos@gmail.com>
+Date:   Thu Jan 28 13:37:38 2021 +0100
+
+    Add logger all files and check funcionality ok
+
+[33mcommit 4fef8c07c8a7932c8a27ba174f47ee5199269c31[m
+Author: Manu <manuelcabezas.a@gmail.com>
+Date:   Thu Jan 28 13:20:06 2021 +0100
+
+    modifyComment added
+
+[33mcommit 030ead9050ef56bf0dca64dd58b390030e0567dd[m
+Author: Manu <manuelcabezas.a@gmail.com>
+Date:   Thu Jan 28 12:13:00 2021 +0100
+
+    Modification in getProfile to show all technologies as an array
+
+[33mcommit 31caae62b6490ec006263cd72fe87f0c8825c72a[m
+Author: Carlos Fontán <fgjcarlos@gmail.com>
+Date:   Thu Jan 28 11:28:11 2021 +0100
+
+    Add validator filter hackathon and fixed bug of search of some tech
+
+[33mcommit ceafe08a74c781fae64e54143dec96319f4cf8ef[m
+Author: Carlos Fontán <fgjcarlos@gmail.com>
+Date:   Thu Jan 28 02:14:56 2021 +0100
+
+    Add filter hackathon with techs and links ok, check valid params
+
+[33mcommit 06dc879566379998d353473d74c7e9f9da9282d9[m
+Author: Manu <manuelcabezas.a@gmail.com>
+Date:   Wed Jan 27 16:58:02 2021 +0100
+
+    resetPassword added
+
+[33mcommit da64895a008008ee6973c5a24d11a8806345ef61[m
+Author: Carlos Fontán <fgjcarlos@gmail.com>
+Date:   Wed Jan 27 00:09:46 2021 +0100
+
+    Add postCreateHackathon with insert tech, link, hackathon_tech and hackathon_link
+
+[33mcommit 891e77def828dde01229cc1d3dff12af920a1442[m
+Author: Manu <manuelcabezas.a@gmail.com>
+Date:   Tue Jan 26 21:43:39 2021 +0100
+
+    .ENV changed
+
+[33mcommit 7e1741df8fab04b113720293654a85151e3b3c3b[m
+Author: Manu <manuelcabezas.a@gmail.com>
+Date:   Tue Jan 26 21:31:18 2021 +0100
+
+    modifyHackathon edited to let change technology and links
+
+[33mcommit 62699bd7043451f71d71facc9f1e1d50980c6b1d[m
+Author: Carlos Fontán <fgjcarlos@gmail.com>
+Date:   Tue Jan 26 18:19:42 2021 +0100
+
+    Init auxInsetNewLink
+
+[33mcommit 3df2471d3909dd6a3880977021ac1d6fe1de874d[m
+Author: Carlos Fontán <fgjcarlos@gmail.com>
+Date:   Tue Jan 26 13:47:37 2021 +0100
+
+    auxInsertTech improved
+
+[33mcommit d088f03aa84863929dc63808004d98c0d868d4e0[m
+Author: Manu <manuelcabezas.a@gmail.com>
+Date:   Tue Jan 26 11:21:10 2021 +0100
+
+    error control added to deleteHackathon and modifyHackathon
+
+[33mcommit cc9894cd2bd432fa7f94226b6a9ce8479c351844[m
+Author: Manu <manuelcabezas.a@gmail.com>
+Date:   Tue Jan 26 11:08:57 2021 +0100
+
+    folder structure modification
+
+[33mcommit 554aa206969360d820c1f31864af7430c533ae86[m
+Author: Manu <manuelcabezas.a@gmail.com>
+Date:   Tue Jan 26 10:12:19 2021 +0100
+
+    improved error control
+
+[33mcommit 0f54f424c8aad3cae28ba27ace4a24c72fd5cbdc[m
+Author: Carlos Fontán <fgjcarlos@gmail.com>
+Date:   Tue Jan 26 05:18:37 2021 +0100
+
+    Add auxInsertTech.js insert in table hackathon_tech ok
+
+[33mcommit 0d8e7276eb064705728a9a254d2b9a7517f8b225[m
+Author: Carlos Fontán <fgjcarlos@gmail.com>
+Date:   Tue Jan 26 01:46:37 2021 +0100
+
+    Insert hackathon with techs
+
+[33mcommit 105be60c7480555204a92576c8234d34685c2ef8[m
+Author: Carlos Fontán <fgjcarlos@gmail.com>
+Date:   Mon Jan 25 17:52:50 2021 +0100
+
+    Last update 18.00H hackaboss
+
+[33mcommit dba09b98b44214b78c9bfd5887ea64d3e3f52754[m
+Author: Carlos Fontán <fgjcarlos@gmail.com>
+Date:   Mon Jan 25 15:29:17 2021 +0100
+
+    Validate fields of create hackathons OK
+
+[33mcommit 5b784a9d13ed2d13a91b916a6f159bdbeed23cd9[m
+Author: Manu <manuelcabezas.a@gmail.com>
+Date:   Mon Jan 25 13:26:48 2021 +0100
+
+    Control of errors added to updateProfileInfo, profileInfo and deleteUser
+
+[33mcommit 438aaca7acfba14c40ec8556c0dc7bb16cdd78fd[m
+Author: Carlos Fontán <fgjcarlos@gmail.com>
+Date:   Mon Jan 25 12:28:26 2021 +0100
+
+    Create nwe tables sql hackaton_tech1/link1
+
+[33mcommit 8d8ceb41eca3a296f353ec12bb46d4fa63c40c52[m
+Author: Manu <manuelcabezas.a@gmail.com>
+Date:   Mon Jan 25 11:18:41 2021 +0100
+
+    changePassword added inside updateProfileInfo
+
+[33mcommit 023d186d478b52ad937593a65700b86bf8087cd6[m
+Author: Carlos Fontán <fgjcarlos@gmail.com>
+Date:   Sun Jan 24 22:39:58 2021 +0100
+
+    Init with validate field of create hackathons
+
+[33mcommit 54e9d38ca937effb8b41630368c579e7f48055ea[m
+Author: Carlos Fontán <fgjcarlos@gmail.com>
+Date:   Sun Jan 24 21:00:42 2021 +0100
+
+    Validate Account OK
+
+[33mcommit 9c17e0249426031b9581384599316c0699f20867[m
+Author: Carlos Fontán <fgjcarlos@gmail.com>
+Date:   Sun Jan 24 20:49:03 2021 +0100
+
+    Add validate account with id in url confirm account
+
+[33mcommit 13c04c2cc4b61f15247d11e5329edbdb6d2a63b2[m
+Author: Carlos Fontán <fgjcarlos@gmail.com>
+Date:   Sun Jan 24 20:48:21 2021 +0100
+
+    Register add id in url
+
+[33mcommit 95493cd1250b348431da239b4204366fcdd64b5b[m
+Author: Carlos Fontán <fgjcarlos@gmail.com>
+Date:   Sun Jan 24 19:00:52 2021 +0100
+
+    No router found apply
+
+[33mcommit 1483b2fd77daca505506cbe0394625179d305ecd[m
+Author: Carlos Fontán <fgjcarlos@gmail.com>
+Date:   Sun Jan 24 14:32:24 2021 +0100
+
+    Add morgan and config
+
+[33mcommit 2f1637754043a3f9cb6fce7e39f6d93be1f7185c[m
+Author: Carlos Fontán <fgjcarlos@gmail.com>
+Date:   Sun Jan 24 14:06:00 2021 +0100
+
+    Add config winston logger
+
+[33mcommit 0a9cf924ac966ce4205bf2c77ee4eb72ac437510[m
+Author: Carlos Fontán <fgjcarlos@gmail.com>
+Date:   Sun Jan 24 13:26:11 2021 +0100
+
+    Fixed the bug in validator (register and login), and middelware in register
+
+[33mcommit 439ed042ee01b53fcbd5a17186cb63fde7048d30[m
+Author: Carlos Fontán <fgjcarlos@gmail.com>
+Date:   Sat Jan 23 22:01:11 2021 +0100
+
+    Add register ok
+
+[33mcommit 3aaa557f9596f26dccac2848a13e045b812a8ab5[m
+Author: Carlos Fontán <fgjcarlos@gmail.com>
+Date:   Sat Jan 23 21:26:54 2021 +0100
+
+    Add update codeValidator in login
+
+[33mcommit 8d5d107a8dddb12b6c3574d2ddcbfb778e18f930[m
+Author: Carlos Fontán <fgjcarlos@gmail.com>
+Date:   Sat Jan 23 18:18:33 2021 +0100
+
+    Login OK
+
+[33mcommit a93c4a8510dc4a3fd1a5dd46236d07cd263f1ac5[m
+Author: Carlos Fontán <fgjcarlos@gmail.com>
+Date:   Fri Jan 22 15:36:44 2021 +0100
+
+    Last update 22.01.2021
+
+[33mcommit f9c9ebd53bd93484a863f06d557159ee8d9289b8[m
+Author: Carlos Fontán <fgjcarlos@gmail.com>
+Date:   Fri Jan 22 12:52:31 2021 +0100
+
+    Fixed seach in db user and admin in authenticated
+
+[33mcommit b17c7d4eafbc0f3c655ea9c93d80d11a8b6fa56a[m
+Author: Carlos Fontán <fgjcarlos@gmail.com>
+Date:   Fri Jan 22 11:58:50 2021 +0100
+
+    add register new user, endpoint ('/register)
+
+[33mcommit c885a92c3c3846a0044d7229095359c882204e5b[m
+Author: Carlos Fontán <fgjcarlos@gmail.com>
+Date:   Fri Jan 22 11:46:36 2021 +0100
+
+    Separate controllers for directories GET/POST/UPDATE/DELETE
+
+[33mcommit 7370812993ff664f6200b477dae185f80bcb93ba[m
+Author: carlos_fontan <fgjcarlos@gmail.com>
+Date:   Thu Jan 21 15:45:58 2021 +0100
+
+    Add schema for confirm account
+
+[33mcommit da920cc95d86d18a76595b1d285083e90c32e3c2[m
+Author: carlos_fontan <fgjcarlos@gmail.com>
+Date:   Thu Jan 21 11:57:47 2021 +0100
+
+    Add router hackathon/:id, search page that hackathon bu id
+
+[33mcommit 22936b99c1f1fdb3d49fcb4fd8248bfe2cfc824a[m
+Author: carlos_fontan <fgjcarlos@gmail.com>
+Date:   Thu Jan 21 11:35:21 2021 +0100
+
+    Get hackathon info by filters ok, we need change in create hackathon add technologies, and add this filter
+
+[33mcommit 2802e307d8eee23bbbf0c0f326bcc0053218898f[m
+Author: carlos_fontan <fgjcarlos@gmail.com>
+Date:   Wed Jan 20 12:27:58 2021 +0100
+
+    Register new user OK
+
+[33mcommit 12cd3780b86d502ed1eab9638a8df6ce366882c0[m
+Author: Manu <manuelcabezas.a@gmail.com>
+Date:   Wed Jan 20 12:21:34 2021 +0100
+
+    Validators added
+
+[33mcommit 325f5d1c12b48c4e710ac1c829c5fc99f7093c37[m
+Author: carlos_fontan <fgjcarlos@gmail.com>
+Date:   Wed Jan 20 00:13:39 2021 +0100
+
+    Init register
+
+[33mcommit da9a7f7c880c23277b1a51d84295236688f9234d[m
+Author: carlos_fontan <fgjcarlos@gmail.com>
+Date:   Tue Jan 19 23:51:47 2021 +0100
+
+    Validate account oksignificant changes: mysql-> add column at competitor code change default value of competitor column active_user and use transactions for the validate account function
+
+[33mcommit 3d2a1f3520f7a3c7e041e35be0e2992ec9427448[m
+Author: Manu <manuelcabezas.a@gmail.com>
+Date:   Tue Jan 19 19:42:41 2021 +0100
+
+    deletePost added
+
+[33mcommit 4ba10186bdbc5cbb7927cfe5bb286de337a00673[m
+Author: Manu <manuelcabezas.a@gmail.com>
+Date:   Tue Jan 19 19:27:56 2021 +0100
+
+    modifyPost added
+
+[33mcommit 96125b5053822c31f2965feca444f625891708a9[m
+Author: Manu <manuelcabezas.a@gmail.com>
+Date:   Tue Jan 19 19:01:00 2021 +0100
+
+    addPost added
+
+[33mcommit 451c7a88b4585925d2771158364fa44c68ee80b0[m
+Author: carlos_fontan <fgjcarlos@gmail.com>
+Date:   Tue Jan 19 18:19:47 2021 +0100
+
+    Home page ok
+
+[33mcommit 9073ca236ec5b4976e8cd6063f0036bb36258d25[m
+Author: Manu <manuelcabezas.a@gmail.com>
+Date:   Tue Jan 19 17:05:55 2021 +0100
+
+    re-added filterPosts
+
+[33mcommit 2189b3f3c12db57adc3707d60c6407025c456e56[m
+Author: Manu <manuelcabezas.a@gmail.com>
+Date:   Tue Jan 19 17:02:12 2021 +0100
+
+    filterPosts added as a function to search post by word or words.
+
+[33mcommit 1c979bdf6047d7a085dd81720bea11eee783d1cc[m
+Author: carlos_fontan <fgjcarlos@gmail.com>
+Date:   Mon Jan 18 23:07:15 2021 +0100
+
+    Successfully check parameters of a hackathon and create new
+
+[33mcommit 88b667fb3d10d1be7e3137e5fc7b2fa7ff491b07[m
+Author: carlos_fontan <fgjcarlos@gmail.com>
+Date:   Mon Jan 18 20:57:50 2021 +0100
+
+    Create new hackathon ok, but init the validate fiels of hackathon
+
+[33mcommit 6513501f39b86a2f5128837b37356233049d338c[m
+Author: Carlos Fontán <fgjcarlos@gmail.com>
+Date:   Mon Jan 18 18:04:53 2021 +0100
+
+    Init createHackathon
+
+[33mcommit 690de00e74d69dc004e7bfd5e6869980b3a69596[m
+Author: Manu <manuelcabezas.a@gmail.com>
+Date:   Mon Jan 18 12:45:14 2021 +0100
+
+    deleteHckathon added and modification in profileInfo to not show canceled hackathons
+
+[33mcommit bb45b289dc5d4205509c11b3532ea34fa22f3d8e[m
+Author: Carlos Fontán <fgjcarlos@gmail.com>
+Date:   Mon Jan 18 12:32:57 2021 +0100
+
+    Upload newUser OK
+
+[33mcommit 6aea2497dce1a9bb1c89876e399b33a37d57aac6[m
+Author: Manu <manuelcabezas.a@gmail.com>
+Date:   Mon Jan 18 12:29:29 2021 +0100
+
+    Update hackathon added with hackathonValidator.
+
+[33mcommit 716c341c9f3fd0a22ad7dbc27374d82eb2d5fd45[m
+Author: Carlos Fontán <74905493+fgjcarlos@users.noreply.github.com>
+Date:   Sun Jan 17 22:15:33 2021 +0100
+
+    Delete .env
+    
+    Delete env
+
+[33mcommit 186e81a807289068e5a63fac4cb3a405cadc0c09[m
+Author: Carlos Fontán <fgjcarlos@gmail.com>
+Date:   Sun Jan 17 22:14:48 2021 +0100
+
+    Test .env,  wrong 'gitingnore'
+
+[33mcommit 0b245ad40331c80bbd43e8ed266106df2ab1018b[m
+Author: Carlos Fontán <fgjcarlos@gmail.com>
+Date:   Sun Jan 17 22:12:44 2021 +0100
+
+    test .env
+
+[33mcommit b95a9d83d9f0015de209882e429e6267bc3dd1cc[m
+Author: Carlos Fontán <74905493+fgjcarlos@users.noreply.github.com>
+Date:   Sun Jan 17 22:04:58 2021 +0100
+
+    Delete .env
+    
+    Delete .env
+
+[33mcommit e8e66cf7fd2246599bc4666b40cf4f8e503f6f57[m
+Author: Carlos Fontán <fgjcarlos@gmail.com>
+Date:   Sun Jan 17 22:04:06 2021 +0100
+
+    Test .env gitignore
+
+[33mcommit ce7268b58bf365a97c8cef4818dd10417ecae143[m
+Author: Carlos Fontán <74905493+fgjcarlos@users.noreply.github.com>
+Date:   Sun Jan 17 21:59:06 2021 +0100
+
+    Delete .env
+    
+    Delete .env
+
+[33mcommit 4e8e80e731be052cdb31e3b63fdcaa2c0bcf1347[m
+Author: Carlos Fontán <fgjcarlos@gmail.com>
+Date:   Sun Jan 17 21:57:59 2021 +0100
+
+    .gitignore is now working
+
+[33mcommit a5ccf52d1c4fc222ce448fc5e03a550522b7a696[m
+Author: Carlos Fontán <fgjcarlos@gmail.com>
+Date:   Sun Jan 17 21:53:02 2021 +0100
+
+    Upload without .env
+
+[33mcommit de2387f33f602e1b72864dcde8ab230b8531a392[m
+Author: Carlos Fontán <74905493+fgjcarlos@users.noreply.github.com>
+Date:   Sun Jan 17 21:51:40 2021 +0100
+
+    Delete .env
+
+[33mcommit d575ab397dcf039be3441da7e963f672323feccb[m
+Author: Carlos Fontán <fgjcarlos@gmail.com>
+Date:   Sun Jan 17 21:50:26 2021 +0100
+
+    Test gitignore .env
+
+[33mcommit 936c4a8c7d6d1e2eaee12507313ba910dc197ce7[m
+Author: Carlos Fontán <fgjcarlos@gmail.com>
+Date:   Sun Jan 17 21:45:16 2021 +0100
+
+    test gitignore .env
+
+[33mcommit cb14e2861e56a452c71f7f28a6581f0bc6bd4e2c[m
+Merge: a33a843 38c96f3
+Author: Carlos Fontán <fgjcarlos@gmail.com>
+Date:   Sun Jan 17 21:38:59 2021 +0100
+
+    Merge branch 'fgjcarlos' of github.com:manucab/portal_hackatones into fgjcarlos
+
+[33mcommit a33a843e68875266de7d1bb9e6531cf7f782538d[m
+Author: Carlos Fontán <fgjcarlos@gmail.com>
+Date:   Sun Jan 17 21:37:05 2021 +0100
+
+    Create router login user , crete router admin -> login, initDefautlRootAdmin, newAdmin
+
+[33mcommit 3e4e9d9127537eb390d467611f0ac824e2aac31b[m
+Author: Manu <manuelcabezas.a@gmail.com>
+Date:   Fri Jan 15 12:06:08 2021 +0100
+
+    Added rateHackathon endpoint with basic funcionality
+
+[33mcommit 1e0deebf893eaa9c0e0f59f2a08c78b139b1e098[m
+Author: Manu <manuelcabezas.a@gmail.com>
+Date:   Fri Jan 15 11:43:17 2021 +0100
+
+    Added rate info in profileInfo controller.
+    Added cancelHackathon endpoint with basic funcionality
+
+[33mcommit 58f0dbae776fae5e31760e296c5f560276870d83[m
+Author: Manu <manuelcabezas.a@gmail.com>
+Date:   Thu Jan 14 19:52:55 2021 +0100
+
+    deleteUser endpoint added as a put to update active_user
+
+[33mcommit 52872d5139273273dd3e944d7695e54fabe3e3ee[m
+Author: Manu <manuelcabezas.a@gmail.com>
+Date:   Thu Jan 14 19:38:53 2021 +0100
+
+    Ajuste query profileInfo para que no muestre nulls y updaeProfileInfo funcionando
+
+[33mcommit 38c96f30b09826c0907201521a25dff30549081b[m
+Author: Carlos Fontán <74905493+fgjcarlos@users.noreply.github.com>
+Date:   Thu Jan 14 13:21:00 2021 +0100
+
+    Delete .env
+
+[33mcommit 1e069dac4f7039a695f653220421800aa07f38da[m
+Author: Carlos Fontán <fgjcarlos@gmail.com>
+Date:   Thu Jan 14 13:11:45 2021 +0100
+
+    ·Connection with db OK
+
+[33mcommit 5b01efe72b73b2f1a6f414264475c5f84c875c66[m
+Author: carlos_fontan <fgjcarlos@gmail.com>
+Date:   Thu Jan 14 11:53:01 2021 +0100
+
+    Estructure dir and files
+
+[33mcommit c21b79269ed7b1c11a814a86c5ef794313c79ecd[m
+Author: carlos_fontan <fgjcarlos@gmail.com>
+Date:   Thu Jan 14 11:15:21 2021 +0100
+
+    Directory creation
+
+[33mcommit 8fd05c807ea8da3e6c731f4ad2c4f4634ddd6960[m
+Author: Manu <manuelcabezas.a@gmail.com>
+Date:   Wed Jan 13 18:20:19 2021 +0100
+
+    Endpoint de Informacion de usuario funcionando.
+    Pendiente de revisar condicionales para casos en los que no hay participaciones y como obtener total participantes
+
+[33mcommit b0a42a9d9616c3ff3937162c8890cb61b2ea4209[m
+Author: carlos_fontan <fgjcarlos@gmail.com>
+Date:   Wed Jan 13 17:55:33 2021 +0100
+
+    Test branch
+
+[33mcommit 0cf563bed1c8d2d47388cef6f65802d91f3b1264[m
+Author: Manu <manuelcabezas.a@gmail.com>
+Date:   Tue Jan 12 18:07:21 2021 +0100
+
+    Creacion de estructura de carpetas y prueba de conexion a BBDD con un select
+
+[33mcommit 3274ad04ee478414cb49a6b87f27523a7dc96d90[m
+Author: Manu <manuelcabezas.a@gmail.com>
+Date:   Mon Jan 11 17:08:36 2021 +0100
+
+    probando nueva rama
+
+[33mcommit 169d1524db479e49b94f5bdae1c867d527b5464c[m
+Author: Carlos Fontán <fgjcarlos@gmail.com>
+Date:   Mon Jan 11 17:06:41 2021 +0100
+
+    init branch
+
+[33mcommit 96b753eb0c75e24d9a967deb58467d7c37f90407[m
+Author: Carlos Fontán <fgjcarlos@gmail.com>
+Date:   Mon Jan 11 17:02:57 2021 +0100
+
+    Upload dir backend
+
+[33mcommit 06d2dcbf26269a3618e02e1bcbacb21e0da56276[m
+Author: Manu <manuelcabezas.a@gmail.com>
+Date:   Fri Jan 8 13:08:13 2021 +0100
+
+    Cambio BBDD según recomendación y traducción a inglés
+
+[33mcommit 732fdcebdc8c66e58724ad2935cf7c2fa38ab403[m
+Merge: c1ba487 b0eb52b
+Author: Manu <manuelcabezas.a@gmail.com>
+Date:   Wed Dec 30 18:45:11 2020 +0100
+
+    Merge branch 'master' of https://github.com/manucab/portal_hackatones
+
+[33mcommit c1ba487c03846aaea7e6673eae5efd22d15dd9e1[m
+Author: Manu <manuelcabezas.a@gmail.com>
+Date:   Wed Dec 30 18:41:02 2020 +0100
+
+    Upload wireframes and functional analysis
+
+[33mcommit b0eb52b329e07f2132d843c8ca6dc3a06c04b114[m
+Author: Carlos Fontán <74905493+fgjcarlos@users.noreply.github.com>
+Date:   Sun Dec 20 19:47:43 2020 +0100
+
+    Add files via upload
+
+[33mcommit 7a6822a0cedf19056eb3acce1571821010899173[m
+Author: Manu <manuelcabezas.a@gmail.com>
+Date:   Sun Dec 20 18:50:30 2020 +0100
+
+    Create BBDD folder and adding 'enitdad-relacio'
+
+[33mcommit e9abe695c3d0db14781856c5181e112ebc8afa98[m
+Author: Manu <manuelcabezas.a@gmail.com>
+Date:   Sun Dec 20 18:28:00 2020 +0100
+
+    First commit
