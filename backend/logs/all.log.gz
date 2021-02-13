@@ -1882,7 +1882,7 @@
 2021-01-29 -- 13:00:34:034 -- info: listening on port 3000
 2021-01-29 -- 13:01:18:118 -- debug: The user not exist in db, he can register now
 2021-01-29 -- 13:01:18:118 -- info: Init transaction query
-2021-01-29 -- 13:01:18:118 -- error: Column 'profile_picture' cannot be null
+2021-01-29 -- 13:01:18:118 -- error: Column 'profilePicture' cannot be null
 2021-01-29 -- 13:01:18:118 -- info: Rollback query
 2021-01-29 -- 13:01:18:118 -- debug: Error postRegister
 2021-01-29 -- 13:01:18:118 -- http: POST -- /register -- d62e3d07-5d6d-4759-a210-d1128cfaece8 -- 500 -- 39 - 130.124 ms
@@ -1901,21 +1901,21 @@
 2021-01-29 -- 13:08:28:828 -- info: listening on port 3000
 2021-01-29 -- 13:09:18:918 -- debug: The user not exist in db, he can register now
 2021-01-29 -- 13:09:18:918 -- info: Init transaction query
-2021-01-29 -- 13:09:18:918 -- error: Column 'profile_picture' cannot be null
+2021-01-29 -- 13:09:18:918 -- error: Column 'profilePicture' cannot be null
 2021-01-29 -- 13:09:18:918 -- info: Rollback query
 2021-01-29 -- 13:09:18:918 -- debug: Error postRegister
 2021-01-29 -- 13:09:18:918 -- http: POST -- /register -- 9da581fa-05d2-4adf-885c-73dd13486120 -- 500 -- 39 - 134.436 ms
 2021-01-29 -- 13:09:58:958 -- info: listening on port 3000
 2021-01-29 -- 13:10:02:102 -- debug: The user not exist in db, he can register now
 2021-01-29 -- 13:10:02:102 -- info: Init transaction query
-2021-01-29 -- 13:10:02:102 -- error: Column 'profile_picture' cannot be null
+2021-01-29 -- 13:10:02:102 -- error: Column 'profilePicture' cannot be null
 2021-01-29 -- 13:10:02:102 -- info: Rollback query
 2021-01-29 -- 13:10:02:102 -- debug: Error postRegister
 2021-01-29 -- 13:10:02:102 -- http: POST -- /register -- 79c7f7d7-4456-403f-bfe7-186b0cff4468 -- 500 -- 39 - 130.881 ms
 2021-01-29 -- 13:11:52:1152 -- info: listening on port 3000
 2021-01-29 -- 13:11:55:1155 -- debug: The user not exist in db, he can register now
 2021-01-29 -- 13:11:55:1155 -- info: Init transaction query
-2021-01-29 -- 13:11:56:1156 -- error: Column 'profile_picture' cannot be null
+2021-01-29 -- 13:11:56:1156 -- error: Column 'profilePicture' cannot be null
 2021-01-29 -- 13:11:56:1156 -- info: Rollback query
 2021-01-29 -- 13:11:56:1156 -- debug: Error postRegister
 2021-01-29 -- 13:11:56:1156 -- http: POST -- /register -- 9fdfdbf6-01e9-4916-9cb9-26e623b4f722 -- 500 -- 39 - 129.012 ms
@@ -3370,6 +3370,35 @@
 2021-02-11 -- 18:09:14:914 -- http: GET -- /user/3 -- a825efb8-b151-40da-b684-7e0aa138ab23 -- 200 -- 845 - 4.027 ms
 2021-02-11 -- 18:25:32:2532 -- http: GET -- /user/3 -- 8a4a3356-07b2-4f91-b6db-c9f4022dbb68 -- 200 -- 1461 - 314.067 ms
 2021-02-11 -- 18:25:32:2532 -- http: GET -- /user/3 -- 9f9c8f3c-2b3d-42b8-935b-9a7b92220d90 -- 304 -- - - 4.272 ms
+<<<<<<< HEAD
+2021-02-12 -- 18:12:34:1234 -- info: listening on port 3001
+2021-02-12 -- 18:18:29:1829 -- info: listening on port 3001
+2021-02-12 -- 18:39:49:3949 -- info: listening on port 3000
+2021-02-12 -- 18:40:11:4011 -- error: Email must have the following structure: name@xxxx.[com, es, net]
+2021-02-12 -- 18:40:11:4011 -- http: POST -- /register -- 2f8edc18-9ac8-4726-98f2-406625045f01 -- 500 -- 65 - 16.038 ms
+2021-02-12 -- 18:40:23:4023 -- error: Email must have the following structure: name@xxxx.[com, es, net]
+2021-02-12 -- 18:40:23:4023 -- http: POST -- /register -- e693ccec-7b43-4d58-9c7f-3a67361b806d -- 500 -- 65 - 1.781 ms
+2021-02-12 -- 18:40:58:4058 -- warn: 404 Router not found
+2021-02-12 -- 18:40:58:4058 -- http: GET -- /register -- a9a9deb4-ed57-489b-9f11-eaf6fd5a5512 -- 404 -- 30 - 1.849 ms
+2021-02-12 -- 18:41:12:4112 -- warn: 404 Router not found
+2021-02-12 -- 18:41:12:4112 -- http: GET -- /register -- 320a0010-a5b3-4c9f-9bf0-05c848f1de77 -- 404 -- 30 - 3.517 ms
+2021-02-12 -- 18:41:48:4148 -- error: Email must have the following structure: name@xxxx.[com, es, net]
+2021-02-12 -- 18:41:48:4148 -- http: POST -- /register -- 8eb45836-acdf-4226-b0ab-14009a5f8748 -- 500 -- 65 - 2.689 ms
+2021-02-12 -- 18:44:13:4413 -- error: Email must have the following structure: name@xxxx.[com, es, net]
+2021-02-12 -- 18:44:13:4413 -- http: POST -- /register -- c6b56b00-c7f5-4b77-abaa-7fc7d1a26325 -- 500 -- 65 - 1.397 ms
+2021-02-12 -- 18:44:24:4424 -- warn: 404 Router not found
+2021-02-12 -- 18:44:24:4424 -- http: GET -- /register -- 11cf76b9-fa5d-4942-bb27-b04a5c8446a1 -- 404 -- 30 - 1.309 ms
+2021-02-12 -- 18:44:35:4435 -- warn: 404 Router not found
+2021-02-12 -- 18:44:35:4435 -- http: GET -- /register/ -- 92cde47c-b6bb-4632-aa3f-5a664a4dcab5 -- 404 -- 30 - 1.199 ms
+2021-02-12 -- 18:44:40:4440 -- info: Home page
+2021-02-12 -- 18:44:40:4440 -- http: GET -- / -- e5ae1aec-2d4b-46fd-b065-e8a2b805a066 -- 200 -- 20 - 1.453 ms
+2021-02-12 -- 18:45:26:4526 -- warn: 404 Router not found
+2021-02-12 -- 18:45:26:4526 -- http: GET -- /register -- d96310b2-d2a7-466a-b76c-e9d419ee3ba8 -- 404 -- 30 - 1.107 ms
+2021-02-12 -- 18:49:49:4949 -- warn: 404 Router not found
+2021-02-12 -- 18:49:49:4949 -- http: GET -- /register -- fd514e42-c297-4273-8c0f-e32b9dfa09ff -- 404 -- 30 - 1.080 ms
+2021-02-12 -- 19:05:23:523 -- warn: 404 Router not found
+2021-02-12 -- 19:05:23:523 -- http: GET -- /register -- 1df1aea4-eb63-4ecf-a09c-daf8824c5de3 -- 404 -- 30 - 1.357 ms
+=======
 2021-02-12 -- 16:54:48:5448 -- info: listening on port 3001
 2021-02-12 -- 17:47:54:4754 -- debug: Login OK
 2021-02-12 -- 17:47:54:4754 -- http: POST -- /login -- 2 -- 200 -- 681 - 1091.942 ms
@@ -3398,6 +3427,7 @@
 2021-02-12 -- 18:34:23:3423 -- info: listening on port 3001
 2021-02-12 -- 18:35:43:3543 -- http: GET -- /user/3 -- dbe06c75-a6b0-485b-9c61-e95298a386e0 -- 200 -- 1533 - 160.210 ms
 2021-02-12 -- 18:35:43:3543 -- http: GET -- /user/3 -- b9e6b519-24da-4c61-ae9c-9687ecb39577 -- 304 -- - - 19.195 ms
+<<<<<<< HEAD
 2021-02-13 -- 10:54:01:541 -- info: listening on port 3001
 2021-02-13 -- 10:55:50:5550 -- debug: Login OK
 2021-02-13 -- 10:55:50:5550 -- http: POST -- /login -- 2 -- 200 -- 753 - 173.350 ms
@@ -3423,3 +3453,287 @@
 2021-02-13 -- 11:13:26:1326 -- http: GET -- /user/3 -- 300bdda5-3b6e-40c6-bdbc-c57f26629821 -- 304 -- - - 4.460 ms
 2021-02-13 -- 11:16:19:1619 -- http: GET -- /user/3 -- eb6af310-df45-4aec-ba2c-4b37475a0102 -- 304 -- - - 6.838 ms
 2021-02-13 -- 11:18:45:1845 -- http: GET -- /user/3 -- a90235bc-6633-466a-9859-418fcda34345 -- 304 -- - - 4.148 ms
+=======
+>>>>>>> 335de5d6a63d42fe885f12bac250cdd35b2f4d39
+2021-02-12 -- 19:30:18:3018 -- info: listening on port 3001
+2021-02-12 -- 19:39:00:390 -- info: Home page
+2021-02-12 -- 19:39:00:390 -- http: GET -- / -- 1ee4ca3d-c72e-41d0-af5d-39c6c1fa435b -- 200 -- 20 - 5.586 ms
+2021-02-12 -- 19:52:03:523 -- warn: 404 Router not found
+2021-02-12 -- 19:52:03:523 -- http: GET -- /register -- 9961e08a-5772-4132-9b0c-8dab590d09d4 -- 404 -- 30 - 2.540 ms
+2021-02-12 -- 19:59:25:5925 -- error: The professional profile entered is not valid
+2021-02-12 -- 19:59:25:5925 -- http: POST -- /register -- 5f73ead5-3cff-483e-8d1d-c53a210bf377 -- 500 -- 45 - 4.025 ms
+2021-02-12 -- 19:59:28:5928 -- error: The professional profile entered is not valid
+2021-02-12 -- 19:59:28:5928 -- http: POST -- /register -- a91acf38-c85d-4ee0-922c-d5538cdd2f5e -- 500 -- 45 - 12.848 ms
+2021-02-12 -- 19:59:29:5929 -- error: The professional profile entered is not valid
+2021-02-12 -- 19:59:29:5929 -- http: POST -- /register -- 685f1737-f304-42c8-8107-e328b6b789b3 -- 500 -- 45 - 7.934 ms
+2021-02-12 -- 19:59:31:5931 -- error: The professional profile entered is not valid
+2021-02-12 -- 19:59:31:5931 -- http: POST -- /register -- 68dd0290-9a27-4bec-8965-f5af2c8a82ac -- 500 -- 45 - 1.929 ms
+2021-02-12 -- 19:59:49:5949 -- error: The professional profile entered is not valid
+2021-02-12 -- 19:59:49:5949 -- http: POST -- /register -- 1b657eaa-f1da-4959-9655-9a0966c9ca6a -- 500 -- 45 - 2.482 ms
+2021-02-12 -- 19:59:50:5950 -- error: The professional profile entered is not valid
+2021-02-12 -- 19:59:50:5950 -- http: POST -- /register -- a876f3e6-4dff-4e0f-b988-cbd51915327a -- 500 -- 45 - 4.192 ms
+2021-02-12 -- 20:01:00:10 -- error: The professional profile entered is not valid
+2021-02-12 -- 20:01:00:10 -- http: POST -- /register -- 5698d2fa-7ab0-4f76-b7b0-59caca30d99a -- 500 -- 45 - 6.067 ms
+2021-02-12 -- 20:01:02:12 -- error: The professional profile entered is not valid
+2021-02-12 -- 20:01:02:12 -- http: POST -- /register -- 785ecfa9-c0a9-4e50-a12f-87ca71453342 -- 500 -- 45 - 1.784 ms
+2021-02-12 -- 20:01:12:112 -- error: The professional profile entered is not valid
+2021-02-12 -- 20:01:12:112 -- http: POST -- /register -- c69c961d-fc94-4a06-a787-273a76853307 -- 500 -- 45 - 1.780 ms
+2021-02-12 -- 20:01:13:113 -- error: The professional profile entered is not valid
+2021-02-12 -- 20:01:13:113 -- http: POST -- /register -- 2b72089f-8ad1-4235-b6a6-7c21910de7f2 -- 500 -- 45 - 3.909 ms
+2021-02-12 -- 20:02:25:225 -- error: The professional profile entered is not valid
+2021-02-12 -- 20:02:25:225 -- http: POST -- /register -- 5de7cd00-79ae-4f92-bf78-5fa08723072b -- 500 -- 45 - 5.082 ms
+2021-02-12 -- 20:04:00:40 -- error: The professional profile entered is not valid
+2021-02-12 -- 20:04:00:40 -- http: POST -- /register -- 0a7b58b8-53f1-4f4d-9a99-9b6a2fcdfbcc -- 500 -- 45 - 6.024 ms
+2021-02-12 -- 20:04:17:417 -- error: The professional profile entered is not valid
+2021-02-12 -- 20:04:17:417 -- http: POST -- /register -- 2e4fcbb4-6925-431e-971f-23c99fa1a6c8 -- 500 -- 45 - 4.964 ms
+2021-02-12 -- 20:04:38:438 -- error: The professional profile entered is not valid
+2021-02-12 -- 20:04:38:438 -- http: POST -- /register -- cc2b5f53-ec3e-47bb-80d7-b4c8239a94c9 -- 500 -- 45 - 5.043 ms
+2021-02-12 -- 20:06:22:622 -- error: The professional profile entered is not valid
+2021-02-12 -- 20:06:22:622 -- http: POST -- /register -- 3c0a2202-c373-46a4-98cb-cc3b5e058806 -- 500 -- 45 - 6.420 ms
+2021-02-12 -- 20:06:25:625 -- error: The professional profile entered is not valid
+2021-02-12 -- 20:06:25:625 -- http: POST -- /register -- ef72f159-1554-424e-9001-dc86d0d52c5f -- 500 -- 45 - 5.856 ms
+2021-02-12 -- 20:06:33:633 -- error: The professional profile entered is not valid
+2021-02-12 -- 20:06:33:633 -- http: POST -- /register -- 7e2ab435-d48d-424a-bfd9-6e11db932344 -- 500 -- 45 - 3.730 ms
+2021-02-12 -- 20:06:37:637 -- error: The professional profile entered is not valid
+2021-02-12 -- 20:06:37:637 -- http: POST -- /register -- 041b1196-0bcf-4a03-a41f-8b10d73f5f1a -- 500 -- 45 - 6.658 ms
+2021-02-12 -- 20:06:41:641 -- error: The professional profile entered is not valid
+2021-02-12 -- 20:06:41:641 -- http: POST -- /register -- 582cb7d1-71a9-438f-a4eb-6ff72daf0add -- 500 -- 45 - 1.784 ms
+2021-02-12 -- 20:06:44:644 -- error: The professional profile entered is not valid
+2021-02-12 -- 20:06:44:644 -- http: POST -- /register -- 7b9e441a-b3a3-4550-8363-8693bb140680 -- 500 -- 45 - 6.129 ms
+2021-02-12 -- 20:06:47:647 -- error: The professional profile entered is not valid
+2021-02-12 -- 20:06:47:647 -- http: POST -- /register -- 36b5d5cb-d210-4f23-b042-48b3d09c1a84 -- 500 -- 45 - 3.991 ms
+2021-02-12 -- 20:07:51:751 -- error: The professional profile entered is not valid
+2021-02-12 -- 20:07:51:751 -- http: POST -- /register -- 28c24f2f-0ca6-4366-a196-877f6a13e8a9 -- 500 -- 45 - 6.308 ms
+2021-02-12 -- 20:07:56:756 -- error: The professional profile entered is not valid
+2021-02-12 -- 20:07:56:756 -- http: POST -- /register -- 7a9bd8b7-9718-40cf-a741-f66cae3ba616 -- 500 -- 45 - 5.073 ms
+2021-02-12 -- 20:08:00:80 -- error: The professional profile entered is not valid
+2021-02-12 -- 20:08:00:80 -- http: POST -- /register -- 857481b3-5dd6-485c-9d8b-4ecb2b6ec617 -- 500 -- 45 - 6.510 ms
+2021-02-12 -- 20:08:04:84 -- error: The professional profile entered is not valid
+2021-02-12 -- 20:08:04:84 -- http: POST -- /register -- dc8ea3f0-8e84-495d-8fe8-5257d07c76c3 -- 500 -- 45 - 5.186 ms
+2021-02-12 -- 20:20:22:2022 -- error: The professional profile entered is not valid
+2021-02-12 -- 20:20:22:2022 -- http: POST -- /register -- 5af4f0ba-9c56-42f3-8866-6a49d5d0cef0 -- 500 -- 45 - 1.747 ms
+2021-02-12 -- 20:20:26:2026 -- error: The professional profile entered is not valid
+2021-02-12 -- 20:20:26:2026 -- http: POST -- /register -- 207abaaf-d41c-4a4a-81e0-cdd4862493d9 -- 500 -- 45 - 6.061 ms
+2021-02-12 -- 20:20:33:2033 -- error: The professional profile entered is not valid
+2021-02-12 -- 20:20:33:2033 -- http: POST -- /register -- 81e0b46f-5d33-414a-a8ac-5ae0de2deedf -- 500 -- 45 - 1.912 ms
+2021-02-12 -- 20:20:39:2039 -- error: The professional profile entered is not valid
+2021-02-12 -- 20:20:39:2039 -- http: POST -- /register -- 5a6ad0f7-4671-4f2a-91f1-ed9905987bf5 -- 500 -- 45 - 3.060 ms
+2021-02-12 -- 20:24:45:2445 -- error: The professional profile entered is not valid
+2021-02-12 -- 20:24:45:2445 -- http: POST -- /register -- 914a6514-ba6b-4396-afd4-7ab2c7531e2e -- 500 -- 45 - 4.331 ms
+2021-02-12 -- 20:25:02:252 -- error: The professional profile entered is not valid
+2021-02-12 -- 20:25:02:252 -- http: POST -- /register -- 6e1e9691-f872-4f38-81fb-96bfd7cc95dd -- 500 -- 45 - 1.356 ms
+2021-02-12 -- 20:25:05:255 -- error: The professional profile entered is not valid
+2021-02-12 -- 20:25:05:255 -- http: POST -- /register -- 99435745-5b05-488d-86e7-e969b1c00dba -- 500 -- 45 - 5.582 ms
+2021-02-12 -- 20:25:08:258 -- error: The professional profile entered is not valid
+2021-02-12 -- 20:25:08:258 -- http: POST -- /register -- 15f73f16-c29b-4e0d-9834-aa2fbcb220fb -- 500 -- 45 - 6.230 ms
+2021-02-12 -- 20:27:03:273 -- error: The professional profile entered is not valid
+2021-02-12 -- 20:27:03:273 -- http: POST -- /register -- a49b79d3-df53-45e0-b3d9-45c433ab63db -- 500 -- 45 - 2.422 ms
+2021-02-12 -- 20:27:36:2736 -- error: The professional profile entered is not valid
+2021-02-12 -- 20:27:36:2736 -- http: POST -- /register -- fc72f1e8-aec7-4fd7-aa61-de50ad4a8cad -- 500 -- 45 - 6.448 ms
+2021-02-12 -- 20:27:43:2743 -- error: The professional profile entered is not valid
+2021-02-12 -- 20:27:43:2743 -- http: POST -- /register -- 4fb360ae-2156-46d4-acaf-060295328a4d -- 500 -- 45 - 1.455 ms
+2021-02-12 -- 20:27:47:2747 -- error: The professional profile entered is not valid
+2021-02-12 -- 20:27:47:2747 -- http: POST -- /register -- a0e42768-9b68-40a0-b30f-4f757af547c0 -- 500 -- 45 - 8.845 ms
+2021-02-12 -- 20:27:53:2753 -- error: The professional profile entered is not valid
+2021-02-12 -- 20:27:53:2753 -- http: POST -- /register -- 798f51b4-d062-4afa-84ab-8dccda0dc8de -- 500 -- 45 - 10.104 ms
+2021-02-12 -- 20:27:56:2756 -- error: The professional profile entered is not valid
+2021-02-12 -- 20:27:56:2756 -- http: POST -- /register -- 6d8b5ca4-5222-41f9-8998-b0518cb1592d -- 500 -- 45 - 8.419 ms
+2021-02-12 -- 20:28:24:2824 -- error: The professional profile entered is not valid
+2021-02-12 -- 20:28:24:2824 -- http: POST -- /register -- 4f025f9b-2af8-411b-aaf4-a892c10d5331 -- 500 -- 45 - 1.512 ms
+2021-02-12 -- 20:41:27:4127 -- error: The professional profile entered is not valid
+2021-02-12 -- 20:41:27:4127 -- http: POST -- /register -- a0720f3f-e130-4f41-8acf-5cb0224abe46 -- 500 -- 45 - 6.874 ms
+2021-02-12 -- 20:41:30:4130 -- error: The professional profile entered is not valid
+2021-02-12 -- 20:41:30:4130 -- http: POST -- /register -- d5a12ef5-9fcc-4b2a-a1f2-4c4f744e8d5d -- 500 -- 45 - 4.833 ms
+2021-02-12 -- 20:41:34:4134 -- error: The professional profile entered is not valid
+2021-02-12 -- 20:41:34:4134 -- http: POST -- /register -- cfd934b8-a55a-4a90-b30d-dd051b3f80e4 -- 500 -- 45 - 3.379 ms
+2021-02-12 -- 20:41:36:4136 -- error: The professional profile entered is not valid
+2021-02-12 -- 20:41:36:4136 -- http: POST -- /register -- 33eea9ba-324c-4bed-9eea-8d8e869b3054 -- 500 -- 45 - 6.750 ms
+2021-02-12 -- 20:43:13:4313 -- error: The professional profile entered is not valid
+2021-02-12 -- 20:43:13:4313 -- http: POST -- /register -- ff4e2157-1146-4738-80a1-802e4c0644ab -- 500 -- 45 - 10.870 ms
+2021-02-12 -- 20:43:16:4316 -- error: The professional profile entered is not valid
+2021-02-12 -- 20:43:16:4316 -- http: POST -- /register -- ddc8ba77-a4f6-465a-beac-65eb665c9855 -- 500 -- 45 - 14.460 ms
+2021-02-12 -- 20:43:18:4318 -- error: The professional profile entered is not valid
+2021-02-12 -- 20:43:18:4318 -- http: POST -- /register -- 4cc60e69-76c0-4d54-80b5-623e53c0b592 -- 500 -- 45 - 17.565 ms
+2021-02-12 -- 20:43:21:4321 -- error: The professional profile entered is not valid
+2021-02-12 -- 20:43:21:4321 -- http: POST -- /register -- 80e589db-cc7b-46e3-b149-aa17141697c4 -- 500 -- 45 - 9.175 ms
+2021-02-12 -- 20:44:30:4430 -- error: The professional profile entered is not valid
+2021-02-12 -- 20:44:30:4430 -- http: POST -- /register -- 2aa0c3b1-46ee-48e3-83d2-64a6b66a74f5 -- 500 -- 45 - 5.024 ms
+2021-02-12 -- 20:44:34:4434 -- error: The professional profile entered is not valid
+2021-02-12 -- 20:44:34:4434 -- http: POST -- /register -- 1da142d7-9769-4084-9fbd-ce3935e7d777 -- 500 -- 45 - 8.000 ms
+2021-02-12 -- 20:44:46:4446 -- error: The professional profile entered is not valid
+2021-02-12 -- 20:44:46:4446 -- http: POST -- /register -- a75f77b5-db0d-4f7e-9fb5-9d0b8d4a679e -- 500 -- 45 - 6.874 ms
+2021-02-12 -- 20:50:45:5045 -- error: The professional profile entered is not valid
+2021-02-12 -- 20:50:45:5045 -- http: POST -- /register -- ce44a13b-d18f-4e97-964b-801a087b05a2 -- 500 -- 45 - 1.603 ms
+2021-02-12 -- 20:50:48:5048 -- error: The professional profile entered is not valid
+2021-02-12 -- 20:50:48:5048 -- http: POST -- /register -- 9075589c-043c-4aca-ae39-c36c4a276d9d -- 500 -- 45 - 2.471 ms
+2021-02-12 -- 20:50:50:5050 -- error: The professional profile entered is not valid
+2021-02-12 -- 20:50:50:5050 -- http: POST -- /register -- 0601ec66-fadd-435c-af77-fa1bf41ca597 -- 500 -- 45 - 2.935 ms
+2021-02-12 -- 20:51:03:513 -- error: The professional profile entered is not valid
+2021-02-12 -- 20:51:03:513 -- http: POST -- /register -- 86efe682-698a-437c-a9ab-4d107380487f -- 500 -- 45 - 3.209 ms
+2021-02-12 -- 20:51:10:5110 -- error: The professional profile entered is not valid
+2021-02-12 -- 20:51:10:5110 -- http: POST -- /register -- 65b40fc0-7094-48f5-b215-1880bfe2a117 -- 500 -- 45 - 4.734 ms
+2021-02-12 -- 20:54:53:5453 -- error: The professional profile entered is not valid
+2021-02-12 -- 20:54:53:5453 -- http: POST -- /register -- ccafb5f5-cb9e-4285-8d20-6a1bc6c61f53 -- 500 -- 45 - 1.305 ms
+2021-02-12 -- 20:54:58:5458 -- error: The professional profile entered is not valid
+2021-02-12 -- 20:54:58:5458 -- http: POST -- /register -- 85a15c7b-28ff-41e6-98c2-db0f75b78041 -- 500 -- 45 - 10.952 ms
+2021-02-12 -- 20:55:00:550 -- error: The professional profile entered is not valid
+2021-02-12 -- 20:55:00:550 -- http: POST -- /register -- 8dbc3212-7d94-4c00-a380-170b39c9d1ce -- 500 -- 45 - 3.414 ms
+2021-02-12 -- 20:55:37:5537 -- error: The professional profile entered is not valid
+2021-02-12 -- 20:55:37:5537 -- http: POST -- /register -- 05a6551f-754c-431b-845c-61f15dd94eb8 -- 500 -- 45 - 5.126 ms
+2021-02-12 -- 20:55:39:5539 -- error: The professional profile entered is not valid
+2021-02-12 -- 20:55:39:5539 -- http: POST -- /register -- da76f0f1-58ba-4450-b96b-81d0bc820ed4 -- 500 -- 45 - 8.903 ms
+2021-02-12 -- 21:00:09:09 -- error: The professional profile entered is not valid
+2021-02-12 -- 21:00:09:09 -- http: POST -- /register -- 6cd30706-c017-452e-a388-9931274f81d0 -- 500 -- 45 - 5.887 ms
+2021-02-12 -- 21:00:12:012 -- error: The professional profile entered is not valid
+2021-02-12 -- 21:00:12:012 -- http: POST -- /register -- b4d48a8d-eb30-4abe-8508-df4e42207e7d -- 500 -- 45 - 6.639 ms
+2021-02-12 -- 21:00:15:015 -- error: The professional profile entered is not valid
+2021-02-12 -- 21:00:15:015 -- http: POST -- /register -- 144497d8-6fc4-4887-bccb-6593d6db6336 -- 500 -- 45 - 5.540 ms
+2021-02-12 -- 21:00:20:020 -- error: The professional profile entered is not valid
+2021-02-12 -- 21:00:20:020 -- http: POST -- /register -- b22c7766-cad0-4ed3-9c26-f01776574b21 -- 500 -- 45 - 4.646 ms
+2021-02-12 -- 21:00:24:024 -- error: The professional profile entered is not valid
+2021-02-12 -- 21:00:24:024 -- http: POST -- /register -- 80261df0-c962-4f3a-a624-32bfe30def02 -- 500 -- 45 - 15.005 ms
+2021-02-12 -- 21:01:07:17 -- error: The professional profile entered is not valid
+2021-02-12 -- 21:01:07:17 -- http: POST -- /register -- 857f7fa3-5ec5-4def-88dc-fac067ad1b39 -- 500 -- 45 - 1.776 ms
+2021-02-12 -- 21:01:11:111 -- error: The professional profile entered is not valid
+2021-02-12 -- 21:01:11:111 -- http: POST -- /register -- 29e2a0af-1305-4020-8047-2aa384778069 -- 500 -- 45 - 5.556 ms
+2021-02-12 -- 21:01:15:115 -- error: The professional profile entered is not valid
+2021-02-12 -- 21:01:15:115 -- http: POST -- /register -- 0f48deed-fc8c-48c4-ba2d-618d8a09b01f -- 500 -- 45 - 2.404 ms
+2021-02-12 -- 21:02:01:21 -- error: The professional profile entered is not valid
+2021-02-12 -- 21:02:01:21 -- http: POST -- /register -- 43c1f9c9-0606-4f38-93b6-3335be39420f -- 500 -- 45 - 7.042 ms
+2021-02-12 -- 21:02:03:23 -- error: The professional profile entered is not valid
+2021-02-12 -- 21:02:03:23 -- http: POST -- /register -- 94c90d50-613e-4f12-997c-e89e7fda7fde -- 500 -- 45 - 2.423 ms
+2021-02-12 -- 21:02:07:27 -- error: The professional profile entered is not valid
+2021-02-12 -- 21:02:07:27 -- http: POST -- /register -- 1f89a07a-64b2-43c7-bbe7-60428f48a570 -- 500 -- 45 - 2.141 ms
+2021-02-12 -- 21:02:10:210 -- error: The professional profile entered is not valid
+2021-02-12 -- 21:02:10:210 -- http: POST -- /register -- 1522dd5a-3452-4101-9fab-ccb353e08ee0 -- 500 -- 45 - 4.709 ms
+2021-02-12 -- 21:03:33:333 -- error: The professional profile entered is not valid
+2021-02-12 -- 21:03:33:333 -- http: POST -- /register -- f5aeec26-588c-4b7d-98d0-fc4d5041917d -- 500 -- 45 - 3.388 ms
+2021-02-12 -- 21:03:37:337 -- error: The professional profile entered is not valid
+2021-02-12 -- 21:03:37:337 -- http: POST -- /register -- f1555330-a348-4a9a-91b5-c2f4b93c09f5 -- 500 -- 45 - 2.507 ms
+2021-02-12 -- 21:04:08:48 -- error: The professional profile entered is not valid
+2021-02-12 -- 21:04:08:48 -- http: POST -- /register -- d0c573fe-ee60-45ac-85f4-0df6fabc1f2d -- 500 -- 45 - 1.735 ms
+2021-02-12 -- 21:06:02:62 -- info: listening on port 3000
+2021-02-12 -- 21:07:06:76 -- error: The professional profile entered is not valid
+2021-02-12 -- 21:07:06:76 -- http: POST -- /register -- d46abe2d-5655-49b4-9c15-f05b3cbd80d2 -- 500 -- 45 - 12.937 ms
+2021-02-12 -- 21:10:57:1057 -- info: listening on port 3000
+2021-02-12 -- 21:12:17:1217 -- info: listening on port 3000
+2021-02-12 -- 21:12:20:1220 -- error: The picture entered is not valid
+2021-02-12 -- 21:12:20:1220 -- http: POST -- /register -- 0e0e269b-f622-4493-8fa7-4fea9804fe42 -- 500 -- 32 - 14.785 ms
+2021-02-12 -- 21:14:18:1418 -- debug: The user not exist in db, he can register now
+2021-02-12 -- 21:14:18:1418 -- info: Init transaction query
+2021-02-12 -- 21:14:18:1418 -- error: Unknown column 'professionalProfile' in 'field list'
+2021-02-12 -- 21:14:18:1418 -- info: Rollback query
+2021-02-12 -- 21:14:18:1418 -- debug: Error postRegister
+2021-02-12 -- 21:14:18:1418 -- http: POST -- /register -- 89f08508-d1b7-4178-a774-9429576372d8 -- 500 -- 52 - 437.981 ms
+2021-02-12 -- 21:16:03:163 -- info: listening on port 3000
+2021-02-12 -- 21:16:09:169 -- debug: The user not exist in db, he can register now
+2021-02-12 -- 21:16:09:169 -- info: Init transaction query
+2021-02-12 -- 21:16:09:169 -- error: Unknown column 'profilePicture' in 'field list'
+2021-02-12 -- 21:16:09:169 -- info: Rollback query
+2021-02-12 -- 21:16:09:169 -- debug: Error postRegister
+2021-02-12 -- 21:16:09:169 -- http: POST -- /register -- fa361f74-5ce6-4a7c-b9a1-dbd5e31465b2 -- 500 -- 47 - 159.635 ms
+2021-02-12 -- 21:16:28:1628 -- info: listening on port 3000
+2021-02-12 -- 21:16:30:1630 -- debug: The user not exist in db, he can register now
+2021-02-12 -- 21:16:30:1630 -- info: Init transaction query
+2021-02-12 -- 21:16:32:1632 -- info: Commit
+2021-02-12 -- 21:16:32:1632 -- debug: Register new user sucessfull
+2021-02-12 -- 21:16:32:1632 -- http: POST -- /register -- 1de97619-b425-49b6-b5de-39fdfad46f79 -- 200 -- 30 - 2508.523 ms
+2021-02-12 -- 21:17:31:1731 -- info: Home page
+2021-02-12 -- 21:17:31:1731 -- http: GET -- / -- d9579241-8fe6-43e4-8a8f-33c609242fd9 -- 200 -- 20 - 1.916 ms
+2021-02-12 -- 21:18:44:1844 -- info: The user with email user@user.es already exists
+2021-02-12 -- 21:18:44:1844 -- http: POST -- /register -- 59200ee0-cfd0-45f0-9519-8e4840380e28 -- 200 -- 49 - 10.442 ms
+2021-02-12 -- 21:18:48:1848 -- info: The user with email user@user.es already exists
+2021-02-12 -- 21:18:48:1848 -- http: POST -- /register -- 2010f5dc-1830-4c10-afd5-5fd42982e76c -- 200 -- 49 - 4.226 ms
+2021-02-12 -- 21:18:49:1849 -- info: The user with email user@user.es already exists
+2021-02-12 -- 21:18:49:1849 -- http: POST -- /register -- feaeb619-57f0-48b6-a971-af4143900156 -- 200 -- 49 - 4.027 ms
+2021-02-12 -- 21:19:07:197 -- debug: The user not exist in db, he can register now
+2021-02-12 -- 21:19:07:197 -- info: Init transaction query
+2021-02-12 -- 21:19:07:197 -- info: Commit
+2021-02-12 -- 21:19:07:197 -- debug: Register new user sucessfull
+2021-02-12 -- 21:19:07:197 -- http: POST -- /register -- e66ead4e-725e-4128-a8e7-b02dbcb52668 -- 200 -- 30 - 727.578 ms
+2021-02-12 -- 21:19:59:1959 -- debug: The user not exist in db, he can register now
+2021-02-12 -- 21:19:59:1959 -- info: Init transaction query
+2021-02-12 -- 21:20:00:200 -- info: Commit
+2021-02-12 -- 21:20:00:200 -- debug: Register new user sucessfull
+2021-02-12 -- 21:20:00:200 -- http: POST -- /register -- cd907587-e986-4432-8e78-d94d5852f621 -- 200 -- 30 - 428.036 ms
+2021-02-12 -- 21:20:37:2037 -- debug: The user not exist in db, he can register now
+2021-02-12 -- 21:20:37:2037 -- info: Init transaction query
+2021-02-12 -- 21:20:37:2037 -- info: Commit
+2021-02-12 -- 21:20:37:2037 -- debug: Register new user sucessfull
+2021-02-12 -- 21:20:37:2037 -- http: POST -- /register -- 5391e74f-20fc-423a-ac6a-c1fecd1b04ca -- 200 -- 30 - 548.067 ms
+2021-02-12 -- 21:21:02:212 -- info: The user with email usdferd@usqweer.es already exists
+2021-02-12 -- 21:21:02:212 -- http: POST -- /register -- 445012d6-b164-45a0-a52b-405c585c81a0 -- 200 -- 55 - 13.212 ms
+2021-02-12 -- 21:21:18:2118 -- debug: The user not exist in db, he can register now
+2021-02-12 -- 21:21:18:2118 -- info: Init transaction query
+2021-02-12 -- 21:21:21:2121 -- info: Commit
+2021-02-12 -- 21:21:21:2121 -- debug: Register new user sucessfull
+2021-02-12 -- 21:21:21:2121 -- http: POST -- /register -- 8e0124c1-c7f2-4388-8d9a-dfb003972be4 -- 200 -- 30 - 3382.642 ms
+2021-02-12 -- 21:22:53:2253 -- error: Password must have 8 caracters min.
+2021-02-12 -- 21:22:53:2253 -- http: POST -- /register -- b4e34abc-d5f4-493a-9169-44b4ee7515ef -- 500 -- 35 - 17.084 ms
+2021-02-12 -- 21:22:54:2254 -- error: Password must have 8 caracters min.
+2021-02-12 -- 21:22:54:2254 -- http: POST -- /register -- 961e7a8b-44b1-431f-8f71-512fca482427 -- 500 -- 35 - 2.316 ms
+2021-02-12 -- 21:23:07:237 -- debug: The user not exist in db, he can register now
+2021-02-12 -- 21:23:07:237 -- info: Init transaction query
+2021-02-12 -- 21:23:07:237 -- info: Commit
+2021-02-12 -- 21:23:07:237 -- debug: Register new user sucessfull
+2021-02-12 -- 21:23:07:237 -- http: POST -- /register -- 49243d7a-6848-4d39-93a2-e388d1a4f379 -- 200 -- 30 - 416.795 ms
+2021-02-12 -- 21:25:05:255 -- debug: The user not exist in db, he can register now
+2021-02-12 -- 21:25:05:255 -- info: Init transaction query
+2021-02-12 -- 21:25:05:255 -- info: Commit
+2021-02-12 -- 21:25:05:255 -- debug: Register new user sucessfull
+2021-02-12 -- 21:25:05:255 -- http: POST -- /register -- ff922f24-b4c6-4bc9-a904-696be06902b8 -- 200 -- 30 - 559.338 ms
+2021-02-12 -- 21:25:26:2526 -- info: The user with email asdfasdf@adfsdasf.es already exists
+2021-02-12 -- 21:25:27:2527 -- http: POST -- /register -- ec9de4b0-41e6-4fd2-ba72-b7eb6e3be6d0 -- 200 -- 57 - 11.064 ms
+2021-02-12 -- 21:25:38:2538 -- debug: The user not exist in db, he can register now
+2021-02-12 -- 21:25:38:2538 -- info: Init transaction query
+2021-02-12 -- 21:25:41:2541 -- info: Commit
+2021-02-12 -- 21:25:41:2541 -- debug: Register new user sucessfull
+2021-02-12 -- 21:25:41:2541 -- http: POST -- /register -- 599b02c3-e4d0-4a75-872f-37de048ffb38 -- 200 -- 30 - 2996.711 ms
+2021-02-12 -- 21:26:33:2633 -- debug: The user not exist in db, he can register now
+2021-02-12 -- 21:26:34:2634 -- info: Init transaction query
+2021-02-12 -- 21:26:34:2634 -- info: Commit
+2021-02-12 -- 21:26:34:2634 -- debug: Register new user sucessfull
+2021-02-12 -- 21:26:34:2634 -- http: POST -- /register -- 8bad3cae-c404-49cc-a9e9-eb08d5b6371a -- 200 -- 30 - 553.955 ms
+2021-02-12 -- 21:26:43:2643 -- info: The user with email asdfasdf@fdadfsdasf.es already exists
+2021-02-12 -- 21:26:43:2643 -- http: POST -- /register -- 94b44a86-d3da-4906-9705-5e7a429dbaac -- 200 -- 59 - 10.243 ms
+2021-02-12 -- 21:27:04:274 -- debug: The user not exist in db, he can register now
+2021-02-12 -- 21:27:04:274 -- info: Init transaction query
+2021-02-12 -- 21:27:05:275 -- info: Commit
+2021-02-12 -- 21:27:05:275 -- debug: Register new user sucessfull
+2021-02-12 -- 21:27:05:275 -- http: POST -- /register -- 55218284-ce3e-4023-b0d3-824fc82f28d7 -- 200 -- 30 - 484.027 ms
+2021-02-12 -- 21:31:17:3117 -- debug: The user not exist in db, he can register now
+2021-02-12 -- 21:31:17:3117 -- info: Init transaction query
+2021-02-12 -- 21:31:18:3118 -- info: Commit
+2021-02-12 -- 21:31:18:3118 -- debug: Register new user sucessfull
+2021-02-12 -- 21:31:18:3118 -- http: POST -- /register -- d56315ac-fd57-4d2a-9ebe-0f692594ebfa -- 200 -- 30 - 522.820 ms
+2021-02-12 -- 21:32:05:325 -- debug: The user not exist in db, he can register now
+2021-02-12 -- 21:32:05:325 -- info: Init transaction query
+2021-02-12 -- 21:32:07:327 -- info: Commit
+2021-02-12 -- 21:32:07:327 -- debug: Register new user sucessfull
+2021-02-12 -- 21:32:07:327 -- http: POST -- /register -- 9c8a022b-f21d-4bb7-8aa7-afb17fda4fd8 -- 200 -- 30 - 2415.797 ms
+2021-02-12 -- 21:32:50:3250 -- debug: The user not exist in db, he can register now
+2021-02-12 -- 21:32:50:3250 -- info: Init transaction query
+2021-02-12 -- 21:32:51:3251 -- info: Commit
+2021-02-12 -- 21:32:51:3251 -- debug: Register new user sucessfull
+2021-02-12 -- 21:32:51:3251 -- http: POST -- /register -- 54e450c3-899e-4cd8-b6fb-c6a21394d5a2 -- 200 -- 30 - 483.744 ms
+2021-02-12 -- 21:33:10:3310 -- debug: The user not exist in db, he can register now
+2021-02-12 -- 21:33:10:3310 -- info: Init transaction query
+2021-02-12 -- 21:33:14:3314 -- info: The user with email loltddo@lolo.com already exists
+2021-02-12 -- 21:33:14:3314 -- http: POST -- /register -- 30b5fd88-8e48-44ad-9c8c-4e3f041ad335 -- 200 -- 53 - 11.008 ms
+2021-02-12 -- 21:33:14:3314 -- info: Commit
+2021-02-12 -- 21:33:14:3314 -- debug: Register new user sucessfull
+2021-02-12 -- 21:33:14:3314 -- http: POST -- /register -- 8a6ead38-66aa-4c32-9ad1-42dd9251ac31 -- 200 -- 30 - 4528.247 ms
+2021-02-12 -- 21:33:17:3317 -- info: The user with email loltddo@lolo.com already exists
+2021-02-12 -- 21:33:17:3317 -- http: POST -- /register -- 6b2d4b62-531e-489a-a620-83d3a8ffd940 -- 200 -- 53 - 9.805 ms
+2021-02-12 -- 21:33:19:3319 -- info: The user with email loltddo@lolo.com already exists
+2021-02-12 -- 21:33:19:3319 -- http: POST -- /register -- 4329d165-bd5b-405f-a8ed-f2dd303d4033 -- 200 -- 53 - 8.149 ms
+2021-02-12 -- 21:33:19:3319 -- info: The user with email loltddo@lolo.com already exists
+2021-02-12 -- 21:33:19:3319 -- http: POST -- /register -- ee71d62e-3fdd-463d-9bda-b1d68ede938f -- 200 -- 53 - 8.901 ms
+2021-02-12 -- 21:33:20:3320 -- info: The user with email loltddo@lolo.com already exists
+2021-02-12 -- 21:33:20:3320 -- http: POST -- /register -- 4dd80b22-1ccc-469e-9b75-7e9496520483 -- 200 -- 53 - 6.753 ms
+2021-02-12 -- 21:34:52:3452 -- debug: The user not exist in db, he can register now
+2021-02-12 -- 21:34:52:3452 -- info: Init transaction query
+2021-02-12 -- 21:34:53:3453 -- info: Commit
+2021-02-12 -- 21:34:53:3453 -- debug: Register new user sucessfull
+2021-02-12 -- 21:34:53:3453 -- http: POST -- /register -- 71bc2c37-7818-4f0b-b923-c65e101abc8a -- 200 -- 30 - 659.064 ms
+>>>>>>> ed9586d0d936dd9e85a85e5a9655f250c24d0c0a

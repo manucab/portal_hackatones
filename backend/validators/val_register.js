@@ -27,7 +27,7 @@ const val_register = Joi.object({
         ),
 
 
-    professional_profile: Joi.string().lowercase().trim()
+    professionalProfile: Joi.string().lowercase().trim()
         .alphanum()
         .min(3)
         .max(30)
@@ -54,7 +54,7 @@ const val_register = Joi.object({
         .error(
             new Error('Password must have 8 caracters min.')
         ),
-    profile_picture: Joi.string().lowercase().trim()
+    profilePicture: Joi.string().lowercase().trim()
         .alphanum()
         .min(3)
         .max(500)

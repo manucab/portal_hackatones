@@ -8,11 +8,11 @@ CREATE TABLE IF NOT EXISTS competitor (
     surname VARCHAR(50) not null,
     register_date timestamp not null default current_timestamp ,
     email varchar(50) not null,
-    professional_profile ENUM ('desarrollador','diseñador','marketing','otro') not null default 'otro',
+    professionalProfile ENUM ('desarrollador','diseñador','marketing','otro') not null default 'otro',
     rol ENUM ('user','organizer') not null,
     code varchar(100) not null default 'empty-code',
     deleted_user ENUM ('true','false')  default 'false',
-    profile_picture varchar(500) not null default 'urlpordefecto',
+    profilePicture varchar(500) not null default 'urlpordefecto',
     user_password varchar(100) not null,
     creation_date timestamp not null default current_timestamp,
     last_update timestamp not null default current_timestamp on update current_timestamp
