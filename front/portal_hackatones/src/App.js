@@ -1,6 +1,7 @@
 import {Route, Switch} from 'react-router-dom';
 import './App.css';
 import Footer from './Components/Footer/Footer';
+import HackathonsCreated from './Components/HackathonsCreated/HackathonsCreated';
 import HackathonsJoined from './Components/HackathonsJoined/HackathonsJoined';
 // import Footer from './Footer';
 import Header from './Components/Header/Header.js';
@@ -29,6 +30,8 @@ function App() {
                 <UserStats/>
                 <h1>Te has inscrito en estos hackatones</h1>
                 <HackathonsJoined/>
+                <h1>Tus hackatones creados</h1>
+                <HackathonsCreated/>
               </Route>
 
               <Route path='/user/:id'>

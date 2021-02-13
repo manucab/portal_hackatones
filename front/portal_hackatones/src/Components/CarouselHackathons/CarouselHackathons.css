@@ -8,7 +8,15 @@
 .hackathon {
     width: 200px;
     border: solid 1px black;
+    border-radius: 10%;
+    padding: 10px;
     margin: 15px;
+}
+
+.hackathon h1 {
+    font-size: 120%;
+    padding: 0%;
+    margin-bottom: 5px;
 }
 
 #previous {
