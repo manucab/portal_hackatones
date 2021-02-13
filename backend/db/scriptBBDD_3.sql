@@ -11,6 +11,7 @@ CREATE TABLE IF NOT EXISTS competitor (
     professionalProfile ENUM ('desarrollador','diseñador','marketing','otro') not null default 'otro',
     rol ENUM ('user','organizer') not null,
     code varchar(100) not null default 'empty-code',
+    reset_password_code varchar(500) default null,
     deleted_user ENUM ('true','false')  default 'false',
     profilePicture varchar(500) not null default 'urlpordefecto',
     user_password varchar(100) not null,
