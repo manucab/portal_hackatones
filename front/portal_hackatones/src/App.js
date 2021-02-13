@@ -2,7 +2,7 @@ import {Route, Switch} from 'react-router-dom';
 import './App.css';
 import Footer from './Components/Footer/Footer';
 import HackathonsJoined from './Components/HackathonsJoined/HackathonsJoined';
-// import Footer from './Footer';
+import Home from './Components/Home/Home';
 import Header from './Components/Header/Header.js';
 import Login from './Components/Login/Login.js';
 import Logout from './Components/Logout/Logout';
@@ -15,6 +15,9 @@ function App() {
             <Header/>
 
             <Switch>
+            <Route path='/' exact>
+                  <Home/>
+              </Route>
               <Route path='/login' exact>
                   <Login/>
               </Route>
@@ -35,7 +38,7 @@ function App() {
             </Switch>
 
             {/* login && <Logout/> */}
-            <Logout/>
+            {/* <Logout/> */}
             <Footer />
         </div>
     );

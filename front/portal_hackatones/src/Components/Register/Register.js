@@ -1,5 +1,5 @@
 import {useState} from 'react';
-import { Redirect } from 'react-router-dom';
+import { Redirect, useHistory } from 'react-router-dom';
 import './Register.css';
 
 function Register() {
@@ -12,6 +12,8 @@ function Register() {
     const [password, setPassword] = useState('');
     const [profilePicture, setProfilePicture] = useState('default');
 
+    const history = useHistory();
+    
     const handleSubmit = async e => {
         e.preventDefault()
 
@@ -38,10 +40,10 @@ function Register() {
 
 
         if(ret.status === 200){
-            console.log('Insert new user ok');
-            return <Redirect  to="http://localhost:3001/" />
+
+            alert('¡Felicidades, te has registrado!');
+            return history.push('/');
         }
-        // reload()
     }
 
 
