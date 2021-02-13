@@ -8,6 +8,7 @@ import Login from './Components/Login/Login.js';
 import Logout from './Components/Logout/Logout';
 import PanelSingInUp from './Components/PanelSingInUp/PanelSingInUp';
 import ProfileInfo from './Components/ProfileInfo/ProfileInfo.js';
+import UserStats from './Components/UserStats/UserStats';
 
 function App() {
     return (
@@ -24,6 +25,8 @@ function App() {
               <Route path='/user/:id' >
                 <h1>Bienvenido a tu perfil</h1>
                 <ProfileInfo/>
+                <h1>Consulta tus estadísticas</h1>
+                <UserStats/>
                 <h1>Te has inscrito en estos hackatones</h1>
                 <HackathonsJoined/>
               </Route>
