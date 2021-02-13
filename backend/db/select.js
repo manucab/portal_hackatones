@@ -20,8 +20,8 @@ const getHackathonInfoDB = async(id, hackathon_place, city, start_date, end_date
     const query = `select * from hackathon where (id = ? or ? is null)
      and (hackathon_place = ? or ? is null )
      and (city = ? or ? is null)
-     and (start_date = ? or ?  is null)
-     and (end_date =? or ? is null)
+     and (start_date >= ? or ?  is null)
+     and (end_date <=? or ? is null)
       and (thematic = ? or ? is null)`;
 
     const params = [
