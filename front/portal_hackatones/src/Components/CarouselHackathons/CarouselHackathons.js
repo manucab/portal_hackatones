@@ -7,7 +7,7 @@ function showHackathon (h) {
     return (
     
     <div className="hackathon">
-        <div>Nombre: {h.hackathon_name}</div>
+        <h1>{h.hackathon_name}</h1>
         <div>Formato: {h.hackathon_place}</div>
         <div>Ciudad: {h.city}</div>
         <div>Fecha Inicio: {h.start_date.split('T')[0]}</div>

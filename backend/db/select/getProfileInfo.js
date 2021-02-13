@@ -25,8 +25,8 @@ const getProfileInfo = async (id) => {
           
   
     const queryStats = `select count(*) participaciones,
-          coalesce(round (avg(ranking),0),'Sin registros previos') puesto_medio,
-          coalesce(min(ranking),'Sin registros previos') mejor_puesto  
+          coalesce(round (avg(ranking),0),'-') puesto_medio,
+          coalesce(min(ranking),'-') mejor_puesto  
           from competitor_hackathon a where a.id_competitor=? and a.inscription_status = 'asistente'`;
     const params = [id];
   

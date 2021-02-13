@@ -3427,6 +3427,33 @@
 2021-02-12 -- 18:34:23:3423 -- info: listening on port 3001
 2021-02-12 -- 18:35:43:3543 -- http: GET -- /user/3 -- dbe06c75-a6b0-485b-9c61-e95298a386e0 -- 200 -- 1533 - 160.210 ms
 2021-02-12 -- 18:35:43:3543 -- http: GET -- /user/3 -- b9e6b519-24da-4c61-ae9c-9687ecb39577 -- 304 -- - - 19.195 ms
+<<<<<<< HEAD
+2021-02-13 -- 10:54:01:541 -- info: listening on port 3001
+2021-02-13 -- 10:55:50:5550 -- debug: Login OK
+2021-02-13 -- 10:55:50:5550 -- http: POST -- /login -- 2 -- 200 -- 753 - 173.350 ms
+2021-02-13 -- 10:55:52:5552 -- http: GET -- /user/2 -- f7fe9bb4-4e38-431e-9e79-cc07185f92cd -- 200 -- 1193 - 33.529 ms
+2021-02-13 -- 10:55:52:5552 -- http: GET -- /user/2 -- 05bd81a7-dd39-4e19-a29c-424dd442d460 -- 304 -- - - 8.117 ms
+2021-02-13 -- 10:59:36:5936 -- debug: Login OK
+2021-02-13 -- 10:59:36:5936 -- http: POST -- /login -- 3 -- 200 -- 745 - 80.405 ms
+2021-02-13 -- 10:59:38:5938 -- http: GET -- /user/3 -- 86b10191-5b7c-484c-ab99-2c32c2e7980f -- 304 -- - - 7.333 ms
+2021-02-13 -- 10:59:38:5938 -- http: GET -- /user/3 -- 2c3a9315-c544-4870-b6ab-e2be1572a370 -- 304 -- - - 6.856 ms
+2021-02-13 -- 11:08:15:815 -- http: GET -- /user/3 -- 3dc77c14-c5c6-4b47-a0b9-25a7cf0e886f -- 304 -- - - 4.800 ms
+2021-02-13 -- 11:08:15:815 -- http: GET -- /user/3 -- bc55c6ff-5889-48d5-93ce-1de773eb8127 -- 304 -- - - 5.291 ms
+2021-02-13 -- 11:08:38:838 -- http: GET -- /user/3 -- 8e80e21d-0d6a-4709-98a1-22c10e013ec0 -- 304 -- - - 5.837 ms
+2021-02-13 -- 11:08:38:838 -- http: GET -- /user/3 -- 03e925ef-9e04-49a0-b11f-97376e5276d9 -- 304 -- - - 5.910 ms
+2021-02-13 -- 11:08:38:838 -- http: GET -- /user/3 -- c22b5957-53ae-4cd5-b759-69926b753d62 -- 304 -- - - 7.594 ms
+2021-02-13 -- 11:08:51:851 -- http: GET -- /user/3 -- de117d31-6762-47c6-8899-db87bb629bad -- 304 -- - - 6.007 ms
+2021-02-13 -- 11:08:51:851 -- http: GET -- /user/3 -- f79b2791-0b42-4c02-adfe-596291764b6c -- 304 -- - - 7.959 ms
+2021-02-13 -- 11:08:51:851 -- http: GET -- /user/3 -- 2c1075f8-22e8-4283-a276-6f37d59a650f -- 304 -- - - 6.298 ms
+2021-02-13 -- 11:09:03:93 -- http: GET -- /user/3 -- 47b5c405-8235-4f9b-80d4-5a78b1bb4449 -- 304 -- - - 4.321 ms
+2021-02-13 -- 11:09:47:947 -- http: GET -- /user/3 -- d599527c-678d-4d6a-acc7-7b07001d3335 -- 304 -- - - 5.192 ms
+2021-02-13 -- 11:09:52:952 -- http: GET -- /user/3 -- 3f281a2d-46b7-4c97-815b-0f314ef6f1ce -- 304 -- - - 7.235 ms
+2021-02-13 -- 11:11:26:1126 -- http: GET -- /user/3 -- dc2fb301-bd18-49a5-a276-45b15cf550fe -- 304 -- - - 6.249 ms
+2021-02-13 -- 11:12:15:1215 -- http: GET -- /user/3 -- 3d4a1308-45ff-4057-b163-95a27a86cf53 -- 304 -- - - 6.249 ms
+2021-02-13 -- 11:13:26:1326 -- http: GET -- /user/3 -- 300bdda5-3b6e-40c6-bdbc-c57f26629821 -- 304 -- - - 4.460 ms
+2021-02-13 -- 11:16:19:1619 -- http: GET -- /user/3 -- eb6af310-df45-4aec-ba2c-4b37475a0102 -- 304 -- - - 6.838 ms
+2021-02-13 -- 11:18:45:1845 -- http: GET -- /user/3 -- a90235bc-6633-466a-9859-418fcda34345 -- 304 -- - - 4.148 ms
+=======
 >>>>>>> 335de5d6a63d42fe885f12bac250cdd35b2f4d39
 2021-02-12 -- 19:30:18:3018 -- info: listening on port 3001
 2021-02-12 -- 19:39:00:390 -- info: Home page
@@ -3709,3 +3736,69 @@
 2021-02-12 -- 21:34:53:3453 -- info: Commit
 2021-02-12 -- 21:34:53:3453 -- debug: Register new user sucessfull
 2021-02-12 -- 21:34:53:3453 -- http: POST -- /register -- 71bc2c37-7818-4f0b-b923-c65e101abc8a -- 200 -- 30 - 659.064 ms
+>>>>>>> ed9586d0d936dd9e85a85e5a9655f250c24d0c0a
+2021-02-13 -- 11:45:36:4536 -- info: listening on port 3001
+2021-02-13 -- 11:47:18:4718 -- http: GET -- /user/3 -- aa3fd2f8-2aa3-4741-8fa4-4f83ca77ce97 -- 304 -- - - 98.441 ms
+2021-02-13 -- 11:47:18:4718 -- http: GET -- /user/3 -- f9c85b0f-df3a-480c-862b-d248440ee68a -- 304 -- - - 19.677 ms
+2021-02-13 -- 11:47:18:4718 -- http: GET -- /user/3 -- 3c736839-fd98-4805-b8d4-0af693537f4f -- 304 -- - - 7.343 ms
+2021-02-13 -- 11:49:10:4910 -- http: GET -- /user/3 -- 3f3cd9a0-e48a-45a2-8481-ef6cb13d7bf1 -- 304 -- - - 5.167 ms
+2021-02-13 -- 11:49:10:4910 -- http: GET -- /user/3 -- 488e3998-50ca-4497-a644-e9d61761f336 -- 304 -- - - 6.124 ms
+2021-02-13 -- 11:49:10:4910 -- http: GET -- /user/3 -- 3645e900-af95-459c-96dd-a28974f0c0b3 -- 304 -- - - 8.238 ms
+2021-02-13 -- 11:49:10:4910 -- http: GET -- /user/3 -- 5a081bef-3a2d-40ff-acb6-b497d517f4b4 -- 304 -- - - 5.838 ms
+2021-02-13 -- 11:49:19:4919 -- http: GET -- /user/3 -- 15fa67ad-968c-4444-9575-9d5638b92127 -- 304 -- - - 7.450 ms
+2021-02-13 -- 11:49:19:4919 -- http: GET -- /user/3 -- 70c32f89-998d-4169-ab1f-eee95eadb87c -- 304 -- - - 6.744 ms
+2021-02-13 -- 11:49:20:4920 -- http: GET -- /user/3 -- 47b88b48-5de1-4935-8f97-16de10ade8be -- 304 -- - - 615.040 ms
+2021-02-13 -- 11:49:20:4920 -- http: GET -- /user/3 -- c2d2170b-e29f-4c4b-b424-e87cbef71694 -- 304 -- - - 5.485 ms
+2021-02-13 -- 11:49:39:4939 -- debug: Login OK
+2021-02-13 -- 11:49:39:4939 -- http: POST -- /login -- 3 -- 200 -- 745 - 86.056 ms
+2021-02-13 -- 11:49:42:4942 -- http: GET -- /user/3 -- 8ff4031d-624e-4da6-b32c-9b305d8f6def -- 304 -- - - 5.842 ms
+2021-02-13 -- 11:49:42:4942 -- http: GET -- /user/3 -- 7cac6ae0-a34c-4125-a445-03d06ecc0b82 -- 304 -- - - 5.911 ms
+2021-02-13 -- 11:49:42:4942 -- http: GET -- /user/3 -- b989cf64-a7cc-4554-a70e-af5e50a8f58a -- 304 -- - - 6.583 ms
+2021-02-13 -- 11:49:42:4942 -- http: GET -- /user/3 -- d06f8791-c71b-496f-84da-8d557d9512df -- 304 -- - - 6.559 ms
+2021-02-13 -- 11:50:02:502 -- info: Wrong user
+2021-02-13 -- 11:50:02:502 -- http: GET -- /user/2 -- 5d36a775-fec0-46fc-831a-c2039cff735d -- 200 -- 12 - 3.439 ms
+2021-02-13 -- 11:50:05:505 -- info: Wrong user
+2021-02-13 -- 11:50:05:505 -- http: GET -- /user/1 -- 802bd838-5cb6-4fa9-85c8-6a4bb6effa16 -- 200 -- 12 - 2.040 ms
+2021-02-13 -- 11:50:11:5011 -- info: Wrong user
+2021-02-13 -- 11:50:11:5011 -- http: GET -- /user/1 -- 15abb6dd-a387-489f-b144-59e1e0d46a82 -- 200 -- 12 - 2.712 ms
+2021-02-13 -- 11:52:19:5219 -- info: User does not exist in the db
+2021-02-13 -- 11:52:19:5219 -- http: POST -- /login -- 5a221b65-7a5f-4135-9acc-b6e5bb4c0915 -- 401 -- 40 - 2.532 ms
+2021-02-13 -- 11:59:55:5955 -- info: listening on port 3001
+2021-02-13 -- 12:00:14:014 -- info: User does not exist in the db
+2021-02-13 -- 12:00:14:014 -- http: POST -- /login -- f5b52513-10d9-462d-9d02-70fede61409f -- 401 -- 40 - 131.785 ms
+2021-02-13 -- 12:00:48:048 -- error: saltRounds is not defined
+2021-02-13 -- 12:00:48:048 -- http: POST -- /login -- 232c1d66-4052-495b-b18f-0a9c84c2080f -- 401 -- 25 - 5.799 ms
+2021-02-13 -- 12:01:04:14 -- info: listening on port 3001
+2021-02-13 -- 12:01:06:16 -- error: data and salt arguments required
+2021-02-13 -- 12:01:06:16 -- http: POST -- /login -- 6866ca7a-99e8-47e7-9ca3-f946189f2adb -- 401 -- 32 - 119.124 ms
+2021-02-13 -- 12:02:23:223 -- info: listening on port 3001
+2021-02-13 -- 12:03:46:346 -- error: Unknown column 'reset_password_code' in 'field list'
+2021-02-13 -- 12:11:45:1145 -- info: listening on port 3001
+2021-02-13 -- 12:11:49:1149 -- error: Data too long for column 'reset_password_code' at row 1
+2021-02-13 -- 12:13:41:1341 -- info: listening on port 3001
+2021-02-13 -- 12:13:50:1350 -- http: PUT -- /forgot-password -- 548c0879-3835-40f6-94a5-9db32948b0e3 -- 200 -- 205 - 3678.085 ms
+2021-02-13 -- 12:18:08:188 -- http: PUT -- /forgot-password/reset-password/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im1hbnVlbHBAbWFpbDMuY29tIiwiaWF0IjoxNjEzMjE0ODI4LCJleHAiOjE2MTMyMTU3Mjh9.wCXC2Ze30wUxNTLBZPocKcTeolErF7WG9XlKfTjiA88 -- ed6dd014-21b7-414b-9cb1-fb8a39bdf6b0 -- 200 -- 148 - 1075.513 ms
+2021-02-13 -- 12:18:26:1826 -- info: Wrong password
+2021-02-13 -- 12:18:26:1826 -- http: POST -- /login -- b2955c55-8e73-4d2a-8184-5abccd816bb2 -- 401 -- 25 - 4.432 ms
+2021-02-13 -- 12:19:13:1913 -- info: Wrong password
+2021-02-13 -- 12:19:13:1913 -- http: POST -- /login -- 9db44f36-9b20-47a8-a405-87cb27e0a547 -- 401 -- 25 - 3.481 ms
+2021-02-13 -- 12:19:35:1935 -- info: Wrong password
+2021-02-13 -- 12:19:35:1935 -- http: POST -- /login -- f9aa0e6b-43ba-45e1-8013-a0cd08557e14 -- 401 -- 25 - 3.360 ms
+2021-02-13 -- 12:19:48:1948 -- http: PUT -- /forgot-password -- 40bc3106-569c-445d-8e16-04973b110dc8 -- 200 -- 205 - 1425.440 ms
+2021-02-13 -- 12:20:20:2020 -- http: PUT -- /forgot-password/reset-password/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im1hbnVlbHBAbWFpbDMuY29tIiwiaWF0IjoxNjEzMjE1MTg3LCJleHAiOjE2MTMyMTYwODd9.NLIwFZyyu7XzCAdoS2kBXJTsc_ZyVrLiLdt-hIBZJAw -- 549d6262-6ff9-4ec4-b0b6-d7752aa6e16e -- 200 -- 148 - 626.099 ms
+2021-02-13 -- 12:20:31:2031 -- info: listening on port 3001
+2021-02-13 -- 12:20:45:2045 -- info: Wrong password
+2021-02-13 -- 12:20:45:2045 -- http: POST -- /login -- 692ad064-c502-49df-b306-938a714f3691 -- 401 -- 25 - 319.483 ms
+2021-02-13 -- 12:23:39:2339 -- info: listening on port 3001
+2021-02-13 -- 12:23:49:2349 -- http: PUT -- /forgot-password -- 6aed6479-2dcc-4d82-878e-f688739fa600 -- 200 -- 205 - 1872.360 ms
+2021-02-13 -- 12:24:06:246 -- http: PUT -- /forgot-password/reset-password/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im1hbnVlbHBAbWFpbDMuY29tIiwiaWF0IjoxNjEzMjE1NDI3LCJleHAiOjE2MTMyMTYzMjd9.s_BVUJ3fnekwRRcRv4JZpF5QVS8HCRSu6lbJvXZ9UZM -- 680652d7-4f63-4c9d-a69c-4c0d4cb6b612 -- 200 -- 21 - 5.345 ms
+2021-02-13 -- 12:24:30:2430 -- info: listening on port 3001
+2021-02-13 -- 12:24:34:2434 -- http: PUT -- /forgot-password/reset-password/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im1hbnVlbHBAbWFpbDMuY29tIiwiaWF0IjoxNjEzMjE1NDI3LCJleHAiOjE2MTMyMTYzMjd9.s_BVUJ3fnekwRRcRv4JZpF5QVS8HCRSu6lbJvXZ9UZM -- 5f5b28f4-1d70-466e-bbf9-82c07b32f3e9 -- 200 -- 148 - 2393.971 ms
+2021-02-13 -- 12:24:54:2454 -- info: User does not exist in the db
+2021-02-13 -- 12:24:54:2454 -- http: POST -- /login -- 82ab9260-f7ad-4770-80b3-9e40d1f9a8d7 -- 401 -- 40 - 7.679 ms
+2021-02-13 -- 12:25:10:2510 -- debug: Login OK
+2021-02-13 -- 12:25:10:2510 -- http: POST -- /login -- 1 -- 200 -- 757 - 89.498 ms
+2021-02-13 -- 12:25:14:2514 -- http: GET -- /user/1 -- 29f6bd73-ea4d-4f30-9711-10bcfb827766 -- 200 -- 2010 - 244.544 ms
+2021-02-13 -- 12:25:14:2514 -- http: GET -- /user/1 -- 7d4fa281-3b31-47e2-919e-b388c84124ce -- 304 -- - - 8.066 ms
+2021-02-13 -- 12:25:14:2514 -- http: GET -- /user/1 -- 3b6e9da0-89ea-4f5b-a3b0-83040440923c -- 304 -- - - 6.184 ms
+2021-02-13 -- 12:25:14:2514 -- http: GET -- /user/1 -- c0e0d162-b3a6-4f65-801c-4686643c4481 -- 304 -- - - 9.074 ms
