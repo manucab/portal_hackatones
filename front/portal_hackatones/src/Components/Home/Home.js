@@ -3,10 +3,12 @@ import CarouselHackathons from '../CarouselHackathons/CarouselHackathons';
 import {useEffect} from 'react';
 import schedule from 'node-schedule';
 import {DateTime} from "luxon";
+import useFetch from '../../Hooks/useFetch';
 
 function Home() {
 
     let hackathons = [];
+    let start_date
 
     // This function runs at 24h 0min and 1sec -> Refresh date for search hackathons
     schedule.scheduleJob('15 * * * * *', async function () {
@@ -20,14 +22,17 @@ function Home() {
         }
 
 
-        const ret = await fetch('http://localhost:3000/hackathon/search/filters' + `?start_date=${start_date}`, {headers, method: 'GET'})
+        // const ret = await fetch('http://localhost:3000/hackathon/search/filters' + `?start_date=${start_date}`, {headers, method: 'GET'})
 
-        hackathons = await ret.json();
 
-        console.log('hackathons :>> ', hackathons);
+        // console.log('hackathons :>> ', hackathons);
 
     });
 
+    //Esto es lo que fallaba con el carrusel. Te dejé lo tuyo comentado arriba para no borrarlo
+    
+    hackathons = useFetch('http://localhost:3000/hackathon/search/filters' + `?start_date=${start_date}`)
+    console.log(hackathons)
 
     const getHachathonByDate = async () => {}
 

@@ -25,13 +25,16 @@ function CarouselHackathons ({hackathons}) {
 
     const [index,setIndex] = useState(0)
 
+    if(!hackathons) return 'Loading...'
+
     const handleNext = () => setIndex(index < (hackathons.length -1)? index + 1: index + 0)
     const handlePrevious = () => setIndex(index > 0 ? index - 1: index + 0)
 
     let isFirst = index === 0
     let isLast = index === hackathons.length - 1
     console.log(hackathons)
-    if(!hackathons) return 'Loading...'
+
+   
 
     return(
         <div className="carousel">
