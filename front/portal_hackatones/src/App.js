@@ -33,8 +33,8 @@ function App() {
                 <UserStats/>
                 <h1>Te has inscrito en estos hackatones</h1>
                 <HackathonsJoined/>
-                <h1>Tus hackatones creados</h1>
                 <HackathonsCreated/>
+                <Logout/>
               </Route>
 
               <Route path='/user/:id'>
