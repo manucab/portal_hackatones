@@ -1,46 +1,34 @@
 import './Home.css';
 import CarouselHackathons from '../CarouselHackathons2/CarouselHackathons';
-import {useEffect} from 'react';
+import {useEffect, useState} from 'react';
 import {DateTime} from "luxon";
 import useFetch from '../../Hooks/useFetch';
+import { useHistory } from 'react-router-dom';
 
 function Home() {
-
-    let hackathons = [];
-
-        const start_date = DateTime.local().setLocale('es').toISODate();
-
+    const history = useHistory();
+    const start_date = DateTime.local().setLocale('es').toISODate();
     
-    hackathons =  useFetch('http://localhost:3000/hackathon/search/filters' + `?start_date=${start_date}`)
 
-    console.log('hackathons',hackathons);
+    const hackathons =  useFetch('http://localhost:3000/hackathon/search/filters' + `?start_date=${start_date}`);
 
-    useEffect(() => {}, [])
-
-
-    const handleSubmit = async e => {
-        e.preventDefault()
-
-        // if(ret.status === 200){
-
-        //     alert('¡Felicidades, te has registrado!');
-        //     return history.push('/');
-        // }
-    }
+     const hasHackathon = (hackathons && !hackathons.Info) ? true : false ;
 
     return (
         <div className="home">
             {/* Header landing page */}
             <div className="header">
-                <p>¿Quieres participar en un hackathon? Regístrate y empieza una avetura sin fin</p>
-                <button id="btnRegister">Regístrate</button>
-                <button id="btnSearch">Buscar hackathones</button>
-                <button id="btnOrganizer">Organizar hackathones</button>
+                <p>¿Quieres participar en un hackathon? Regístrate y empieza una aventura sin fin</p>
+                <button id="btnRegister" value="/register" onClick={e => history.push(e.target.value)}>Regístrate</button>
+                <button id="btnSearch" value="/hackathon//search/filters" onClick={e => history.push(e.target.value)}>Buscar hackathones</button>
+                <button id="btnOrganizer" value="/createhackathon" onClick={e => history.push(e.target.value)}>Organizar hackathones</button>
             </div>
             {/* Next hackathons */}
             <div className="nextHackathons">
 
-                <CarouselHackathons hackathons={hackathons}/>
+            {hasHackathon &&  <CarouselHackathons hackathons={hackathons} />}
+            {/* TODO --> format style */}
+            {!hasHackathon && <div className="noInfo">No hay hackathones para las próximas fechas ...</div>}
 
             </div>
             {/* Last post of blog */}

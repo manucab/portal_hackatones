@@ -11,7 +11,7 @@ const { logger } = require("../../app/config/logger");
 const createHackathon = async(req, res) => {
 
     // 1. Get params
-    const { hackathon_name, hackathon_place, city, start_date, end_date, hackathon_status, hackathon_info, cover_picture, tech, thematic, links } = req.body
+    let { hackathon_name, hackathon_place, city, start_date, end_date, hackathon_status, hackathon_info, cover_picture, tech, thematic, links } = req.body
 
     const id_organizer = req.auth.id;
 
@@ -24,6 +24,9 @@ const createHackathon = async(req, res) => {
           await fieldsHackathons.validateAsync({ hackathon_name, hackathon_place, city, start_date, end_date, hackathon_status, hackathon_info, cover_picture, tech, thematic, links });
 
         logger.debug('Validate fields ok!!');
+
+        // TODO --> cover_picture url
+        cover_picture = '/media/hackathonPictures/default.jpg'
 
         //Start transaction mysql
         query = 'start transaction';
@@ -66,6 +69,8 @@ let msgInfo ='Create new hackathon successfully';
         res.send(msgInfo);
 
     } catch (e) {
+
+        console.log(e);
 
         // Something wrong --> Rollback
         query = 'rollback';

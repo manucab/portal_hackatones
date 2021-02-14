@@ -32,6 +32,11 @@ margin: 0px;
     text-align: center;
 }
 
+.hackathon > div > span {
+    color: black;
+    font-weight: bold;
+}
+
 #previous {
 
     max-width: 50px;
@@ -55,4 +60,19 @@ margin: 0px;
     
     cursor: pointer;
 
+}
+
+#logoHackathon {
+    text-align: center;
+    margin: 4px;
+}
+
+#logoHackathon > img{
+    height: 70px;
+    width: 100px;
+}
+
+.noInfo{
+    margin: 30px auto;
+    text-align: center;
 }

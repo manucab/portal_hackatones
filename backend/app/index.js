@@ -57,6 +57,8 @@ app.use('/user', userRouter);
 app.use('/blog', blogRouter)
 app.use('/forgot-password', forgotPasswordRouter)
 
+app.use('/static', express.static('media'));
+
 
 // **** Router not found ****
 // No router found handler
