@@ -1,0 +1,19 @@
+.home{
+    font-size: 12px;
+}
+
+.header {
+    border: 1px solid black;
+    /* height: 75px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.header > button{
+    height: 22px;
+
+    font-size: 12px;
+}
