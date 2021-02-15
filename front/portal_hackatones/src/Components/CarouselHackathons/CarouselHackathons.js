@@ -50,8 +50,6 @@ function CarouselHackathons ({hackathons}) {
 
     let isFirst = index === 0
     let isLast = index === hackathons.length - 1
-    console.log(hackathons)
-
    
 
     return(

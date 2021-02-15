@@ -14,20 +14,20 @@ function EditProfile() {
     const [professional_profile, setProfessionalProfile] = useState(login.user.professional_profile);
     const [rol, setRol] = useState(login.user.rol);
     const [password, setPassword] = useState('');
-    const [profilePicture, setProfilePicture] = useState('default');
+    const [profile_picture, setProfilePicture] = useState('default');
 
 
 
-    
     const handleSubmit = async e => {
         e.preventDefault()
-
+    
         const headers = {
-            'Content-Type': 'application/json'
+            'Content-Type': 'application/json',
+            'Authorization':login.token
         }
-
-
-        const ret = await fetch(`http://localhost:3001/${id}/update`, {
+    
+    
+        const ret = await fetch(`http://localhost:3001/user/${id}/update`, {
             headers,
             body: JSON.stringify(
                 {
@@ -36,29 +36,31 @@ function EditProfile() {
                     surname,
                     professional_profile,
                     rol,
-                    password,
-                    profilePicture
+                    profile_picture
                 }
             ),
-            method: 'POST'
+            method: 'PUT'
         })
-
-
+    
+        console.log(ret.body)
+    
         if(ret.status === 200){
-
+    
             alert('¡Se ha actualizado tu perfil!');
             return <Redirect to={`/user/${id}`}/>;
         }
     }
+    
 
+   
 
     return (
 
         <div id="signup" className='signup'>
-            <h1>Actualiza tu perfil</h1>
 
             <form onSubmit={handleSubmit}
-                method="post">
+                method="put">
+                    {console.log(login.token)}
 
                 <div className="completeName">
                     <div className="field fieldName">
@@ -146,7 +148,7 @@ function EditProfile() {
 
                 </div>
 
-                <button type="submit" className="button">Crea tu cuenta</button>
+                <button type="submit" className="button">Actualizar Perfil</button>
 
             </form>
 

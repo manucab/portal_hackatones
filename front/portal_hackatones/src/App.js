@@ -35,7 +35,6 @@ function App() {
                 <h1>Te has inscrito en estos hackatones</h1>
                 <HackathonsJoined/>
                 <HackathonsCreated/>
-                <EditProfile/>
                 <Logout/>
               </Route>
 

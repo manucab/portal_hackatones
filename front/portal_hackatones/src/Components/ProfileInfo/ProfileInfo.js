@@ -4,6 +4,9 @@ import './ProfileInfo.css'
 import useFetch from "../../Hooks/useFetch";
 import capitalize from "../../Utils/capitalize"
 import Avatar from "../Avatar/Avatar";
+import { useEffect, useState } from "react";
+import Modal from "../Modal/Modal";
+import EditProfile from "../EditProfile/EditProfile";
 
 function showInfo (data) {
 
@@ -22,14 +25,25 @@ function showInfo (data) {
 
 
 
+
+
 function ProfileInfo () {
     
     const login = useSelector(s => s.login)
     const {id} = useParams()
     const data = useFetch(`http://localhost:3001/user/${id}`)
+    const [show,setShow] = useState(false)
         
     if(!data) return 'Loading...' 
     if (!login) return <Redirect to="/" />
+
+    const handleClick = async e => {
+        
+        e.preventDefault()        
+        setShow(false)
+    
+    }
+    
 
 
     return (
@@ -37,7 +51,8 @@ function ProfileInfo () {
         <div className="profile" >
             <Avatar/>
             {showInfo(data)}
-            <button className="edit-profile">⚙ Editar</button>
+            <button className="edit-profile" onClick={()=>setShow(true) }>⚙ Editar</button>
+            <Modal title="Actualiza tu perfil" onClose={()=>setShow(false)} show={show}><EditProfile handleClick={handleClick}/></Modal>
           
         </div>
         
