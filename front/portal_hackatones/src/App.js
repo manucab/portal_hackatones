@@ -10,6 +10,7 @@ import Logout from './Components/Logout/Logout';
 import PanelSingInUp from './Components/PanelSingInUp/PanelSingInUp';
 import ProfileInfo from './Components/ProfileInfo/ProfileInfo.js';
 import UserStats from './Components/UserStats/UserStats';
+import EditProfile from './Components/EditProfile/EditProfile';
 
 function App() {
     return (
@@ -34,6 +35,7 @@ function App() {
                 <h1>Te has inscrito en estos hackatones</h1>
                 <HackathonsJoined/>
                 <HackathonsCreated/>
+                <EditProfile/>
                 <Logout/>
               </Route>
 
