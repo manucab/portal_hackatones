@@ -1,8 +1,21 @@
 import { useState } from "react"
 import './CarouselHackathons.css'
 import arrow from '../../Media/Images/General/Arrow-down.svg'
+import {DateTime} from "luxon";
+
 
 function showHackathon (h) {
+
+    
+    const startYear = h.start_date.split('-')[0]
+    const startMonth = h.start_date.split('-')[1]
+    const startDay = h.start_date.split('-')[2].split('T')[0]
+    const startDateFormated = DateTime.fromISO(`${startYear}-${startMonth}-${startDay}`)
+    const daysTo = (parseInt(startDateFormated.diffNow('days').toObject().days))
+    const hasEnded = h.hackathon_status === 'realizado'
+    const isRated = hasEnded && h.rate!== null
+    const ableToRate = hasEnded && !isRated
+    const isRanked = h.ranking !== 0
 
     return (
     
@@ -12,8 +25,13 @@ function showHackathon (h) {
         <div>Ciudad: {h.city}</div>
         <div>Fecha Inicio: {h.start_date.split('T')[0]}</div>
         <div>Fecha Final: {h.end_date.split('T')[0]}</div>
-        <div>Estado Hackathon: {h.hackathon_status}</div>
         <div>Tecnologías: {h.techs}</div>
+        <div>Estado Hackathon: {h.hackathon_status}</div>
+        <div > {!hasEnded && <div className="timeTo">Quedan {daysTo} días!!!</div>} </div>
+        <div className='hackathonResults'>
+            {isRanked && <div className='ranking'>{h.ranking}º </div>}
+            <div className='rate'>{isRated ? <div> {h.rate} ⭐</div> : ableToRate && <button>Valorar</button> }</div>
+        </div>
 
     </div>
 
