@@ -1,5 +1,4 @@
 import './Modal.css'
-import {useState} from 'react'
 
 
 function Modal (props) {

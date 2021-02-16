@@ -3,18 +3,19 @@ import { useSelector } from 'react-redux';
 import { Redirect} from 'react-router-dom';
 import './EditProfile.css';
 
-function EditProfile() {
+function EditProfile(props) {
     const login = useSelector(s => s.login)
-    const id = login.user.id
-    console.log(login.user)
+    const id = login.user.id 
 
-    const [email, setEmail] = useState(login.user.email);
-    const [user_name, setName] = useState(login.user.user_name);
-    const [surname, setSurname] = useState(login.user.surname);
-    const [professional_profile, setProfessionalProfile] = useState(login.user.professional_profile);
-    const [rol, setRol] = useState(login.user.rol);
+    const [email, setEmail] = useState(props.email);
+    const [user_name, setName] = useState(props.user_name);
+    const [surname, setSurname] = useState(props.surname);
+    const [professional_profile, setProfessionalProfile] = useState(props.professional_profile);
+    const [rol, setRol] = useState(props.rol);
     const [password, setPassword] = useState('');
     const [profile_picture, setProfilePicture] = useState('default');
+
+    const handleClose = props.handleClose
 
 
 
@@ -41,13 +42,12 @@ function EditProfile() {
             ),
             method: 'PUT'
         })
-    
-        console.log(ret.body)
-    
+        
         if(ret.status === 200){
     
             alert('¡Se ha actualizado tu perfil!');
-            return <Redirect to={`/user/${id}`}/>;
+            handleClose()
+            window.location.reload();
         }
     }
     
@@ -60,7 +60,6 @@ function EditProfile() {
 
             <form onSubmit={handleSubmit}
                 method="put">
-                    {console.log(login.token)}
 
                 <div className="completeName">
                     <div className="field fieldName">
@@ -148,7 +147,7 @@ function EditProfile() {
 
                 </div>
 
-                <button type="submit" className="button">Actualizar Perfil</button>
+                <button type="submit" className="button" >Actualizar Perfil</button>
 
             </form>
 

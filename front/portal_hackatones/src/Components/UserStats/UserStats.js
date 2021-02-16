@@ -37,9 +37,6 @@ function UserStats() {
     if(!data) return 'Loading...' 
     if (!login) return <Redirect to="/" />
 
-    console.log(data)
-
-
     return(
 
         <div className="profile" >
