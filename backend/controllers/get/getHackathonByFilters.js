@@ -35,7 +35,6 @@ const getHackathonByFilters = async (req, res) => {
     tech
   } = req.query;
 
-console.log('******',start_date);
 
   const {
     id

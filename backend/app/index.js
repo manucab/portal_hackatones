@@ -1,10 +1,13 @@
 // Instances & variables
 require('dotenv').config();
+const express = require("express");
 const bodyParser = require("body-parser");
 const multer = require('multer');
-const upload = multer();
+
 const cors = require("cors");
-const express = require("express");
+
+const{hackathonStore, upload} = require('../middelwares/storageMulter/changeUpload');
+
 const requestId = require('express-request-id')();
 const { logger } = require('./config/logger');
 
@@ -21,6 +24,7 @@ const registerRouter = require('../routes/register');
 const hackathonRouter = require('../routes/hackathon');
 const blogRouter = require('../routes/blog')
 const forgotPasswordRouter = require('../routes/forgotPassword')
+const infoRouter = require('../routes/info');
 
 // Middlewares
 app.use(cors());
@@ -29,7 +33,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.raw({ type: 'application/vnd.custom-type' }));
 app.use(bodyParser.text({ type: 'text/html' }));
 // for parsing multipart/form-data
-app.use(upload.array());
+// app.use(upload.array());
 app.use(requestId);
 app.use(logger.requests);
 
@@ -38,6 +42,8 @@ app.use(logger.requests);
 app.use('/', homeRouter);
 // Admin
 app.use('/admin', adminRouter);
+// Info
+app.use('/info', infoRouter);
 // Login
 app.use('/login', loginRouter);
 // Register
@@ -49,7 +55,7 @@ app.use('/hackathon', hackathonRouter);
 // app.post('/hackathon/id/comments/id', isAuthenticated, isRightUser, modifyComment); // Modificar comentario
 
 // Create Hackathon Page
-app.use('/createhackathon', createHackathonRouter);
+app.use('/createhackathon', hackathonStore,  upload.single('cover_picture'),createHackathonRouter);
 
 //// ********************************
 //User -> validate account
@@ -57,7 +63,7 @@ app.use('/user', userRouter);
 app.use('/blog', blogRouter)
 app.use('/forgot-password', forgotPasswordRouter)
 
-app.use('/static', express.static('media'));
+app.use('/static', express.static('../media'));
 
 
 // **** Router not found ****

@@ -4,7 +4,11 @@ import arrow from '../../Media/Images/General/Arrow-down.svg'
 
 function showHackathon (h) {
 
-    let url = `http://localhost:3000/static/hackathonPictures/default.jpg`;
+
+    let url = `http://localhost:3000/static` + h.cover_picture;
+
+
+    console.log('url :>> ', h);
 
     return (
     

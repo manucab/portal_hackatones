@@ -9,7 +9,6 @@ const isValidParamsRegister = async(req, res, next) => {
     // 1. Get params
     const { email, name, surname, professionalProfile, rol, password, profilePicture } = req.body
 
-    console.log(email, name, surname, professionalProfile, rol, password, profilePicture );
 
     try {
 

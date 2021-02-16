@@ -26,7 +26,10 @@ function Home() {
             {/* Next hackathons */}
             <div className="nextHackathons">
 
-            {hasHackathon &&  <CarouselHackathons hackathons={hackathons} />}
+            {hasHackathon 
+             && <CarouselHackathons hackathons={hackathons} /> 
+            //  && <button id="btnMoreHackathons" onClick={""} >Ver todos</button>
+             }
             {/* TODO --> format style */}
             {!hasHackathon && <div className="noInfo">No hay hackathones para las próximas fechas ...</div>}
 

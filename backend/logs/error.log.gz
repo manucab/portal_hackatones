@@ -596,3 +596,232 @@
 2021-02-14 -- 20:14:49:1449 -- error:  Error in create new a hackathon: Assignment to constant variable. 
 2021-02-14 -- 20:15:50:1550 -- error: Duplicate entry 'Java' for key 'tech.tech_name'
 2021-02-14 -- 20:15:50:1550 -- error:  Error in create new a hackathon: Duplicate entry 'Java' for key 'tech.tech_name' 
+2021-02-15 -- 10:55:23:5523 -- error: 500 Unexpected field
+2021-02-15 -- 11:25:43:2543 -- error: 500 Unexpected field
+2021-02-15 -- 11:27:26:2726 -- error: 500 Unexpected field
+2021-02-15 -- 11:28:51:2851 -- error: 500 Unexpected field
+2021-02-15 -- 11:32:24:3224 -- error: 500 Unexpected field
+2021-02-15 -- 11:38:56:3856 -- error: 500 Unexpected field
+2021-02-15 -- 11:52:44:5244 -- error: 500 Cannot read property 'originalname' of undefined
+2021-02-15 -- 11:52:46:5246 -- error: 500 Cannot read property 'originalname' of undefined
+2021-02-15 -- 11:52:47:5247 -- error: 500 Cannot read property 'originalname' of undefined
+2021-02-15 -- 11:52:47:5247 -- error: 500 Cannot read property 'originalname' of undefined
+2021-02-15 -- 11:52:47:5247 -- error: 500 Cannot read property 'originalname' of undefined
+2021-02-15 -- 11:52:48:5248 -- error: 500 Cannot read property 'originalname' of undefined
+2021-02-15 -- 11:53:32:5332 -- error: 500 Cannot read property 'originalname' of undefined
+2021-02-15 -- 11:53:34:5334 -- error: 500 Cannot read property 'originalname' of undefined
+2021-02-15 -- 11:53:34:5334 -- error: 500 Cannot read property 'originalname' of undefined
+2021-02-15 -- 11:53:34:5334 -- error: 500 Cannot read property 'originalname' of undefined
+2021-02-15 -- 11:53:35:5335 -- error: 500 Cannot read property 'originalname' of undefined
+2021-02-15 -- 11:54:25:5425 -- error: 500 Cannot read property 'originalname' of undefined
+2021-02-15 -- 11:54:26:5426 -- error: 500 Cannot read property 'originalname' of undefined
+2021-02-15 -- 11:54:26:5426 -- error: 500 Cannot read property 'originalname' of undefined
+2021-02-15 -- 11:54:26:5426 -- error: 500 Cannot read property 'originalname' of undefined
+2021-02-15 -- 11:54:26:5426 -- error: 500 Cannot read property 'originalname' of undefined
+2021-02-15 -- 11:54:51:5451 -- error: 500 Cannot read property 'originalname' of undefined
+2021-02-15 -- 11:54:52:5452 -- error: 500 Cannot read property 'originalname' of undefined
+2021-02-15 -- 11:54:52:5452 -- error: 500 Cannot read property 'originalname' of undefined
+2021-02-15 -- 11:54:53:5453 -- error: 500 Cannot read property 'originalname' of undefined
+2021-02-15 -- 11:54:53:5453 -- error: 500 Cannot read property 'originalname' of undefined
+2021-02-15 -- 11:54:53:5453 -- error: 500 Cannot read property 'originalname' of undefined
+2021-02-15 -- 11:54:53:5453 -- error: 500 Cannot read property 'originalname' of undefined
+2021-02-15 -- 11:55:21:5521 -- error: 500 Cannot read property 'originalname' of undefined
+2021-02-15 -- 11:55:26:5526 -- error: 500 Cannot read property 'originalname' of undefined
+2021-02-15 -- 11:56:18:5618 -- error: 400 Unexpected token - in JSON at position 0
+2021-02-15 -- 11:56:20:5620 -- error: 400 Unexpected token - in JSON at position 0
+2021-02-15 -- 11:56:21:5621 -- error: 400 Unexpected token - in JSON at position 0
+2021-02-15 -- 11:56:22:5622 -- error: 400 Unexpected token - in JSON at position 0
+2021-02-15 -- 11:56:34:5634 -- error: 400 Unexpected token - in JSON at position 0
+2021-02-15 -- 11:57:04:574 -- error: 500 Cannot read property 'originalname' of undefined
+2021-02-15 -- 11:57:06:576 -- error: 500 Cannot read property 'originalname' of undefined
+2021-02-15 -- 11:57:06:576 -- error: 500 Cannot read property 'originalname' of undefined
+2021-02-15 -- 11:57:06:576 -- error: 500 Cannot read property 'originalname' of undefined
+2021-02-15 -- 11:57:08:578 -- error: 500 Cannot read property 'originalname' of undefined
+2021-02-15 -- 11:57:08:578 -- error: 500 Cannot read property 'originalname' of undefined
+2021-02-15 -- 11:57:08:578 -- error: 500 Cannot read property 'originalname' of undefined
+2021-02-15 -- 11:57:08:578 -- error: 500 Cannot read property 'originalname' of undefined
+2021-02-15 -- 11:57:09:579 -- error: 500 Cannot read property 'originalname' of undefined
+2021-02-15 -- 11:57:09:579 -- error: 500 Cannot read property 'originalname' of undefined
+2021-02-15 -- 11:57:09:579 -- error: 500 Cannot read property 'originalname' of undefined
+2021-02-15 -- 11:57:09:579 -- error: 500 Cannot read property 'originalname' of undefined
+2021-02-15 -- 11:57:09:579 -- error: 500 Cannot read property 'originalname' of undefined
+2021-02-15 -- 11:57:09:579 -- error: 500 Cannot read property 'originalname' of undefined
+2021-02-15 -- 11:57:13:5713 -- error: 400 Unexpected token - in JSON at position 0
+2021-02-15 -- 11:57:14:5714 -- error: 400 Unexpected token - in JSON at position 0
+2021-02-15 -- 11:57:15:5715 -- error: 400 Unexpected token - in JSON at position 0
+2021-02-15 -- 11:57:16:5716 -- error: 400 Unexpected token - in JSON at position 0
+2021-02-15 -- 11:57:17:5717 -- error: 400 Unexpected token - in JSON at position 0
+2021-02-15 -- 11:59:48:5948 -- error: 500 Cannot read property 'originalname' of undefined
+2021-02-15 -- 11:59:51:5951 -- error: 500 Cannot read property 'originalname' of undefined
+2021-02-15 -- 11:59:53:5953 -- error: 500 Cannot read property 'originalname' of undefined
+2021-02-15 -- 11:59:53:5953 -- error: 500 Cannot read property 'originalname' of undefined
+2021-02-15 -- 11:59:54:5954 -- error: 500 Cannot read property 'originalname' of undefined
+2021-02-15 -- 11:59:54:5954 -- error: 500 Cannot read property 'originalname' of undefined
+2021-02-15 -- 11:59:59:5959 -- error: 500 Unexpected field
+2021-02-15 -- 12:00:01:01 -- error: 500 Unexpected field
+2021-02-15 -- 12:00:34:034 -- error: 500 Unexpected field
+2021-02-15 -- 12:00:42:042 -- error: 500 Unexpected field
+2021-02-15 -- 12:01:34:134 -- error: 500 Unexpected field
+2021-02-15 -- 12:02:11:211 -- error: 500 Unexpected field
+2021-02-15 -- 12:07:19:719 -- error: 500 Unexpected field
+2021-02-15 -- 12:08:05:85 -- error: 500 Unexpected field
+2021-02-15 -- 12:08:37:837 -- error: 500 Unexpected field
+2021-02-15 -- 12:08:38:838 -- error: 500 Unexpected field
+2021-02-15 -- 12:10:06:106 -- error: 500 Unexpected field
+2021-02-15 -- 12:10:35:1035 -- error: 500 Unexpected field
+2021-02-15 -- 12:10:36:1036 -- error: 500 Unexpected field
+2021-02-15 -- 12:10:37:1037 -- error: 500 Unexpected field
+2021-02-15 -- 12:10:38:1038 -- error: 500 Unexpected field
+2021-02-15 -- 12:12:38:1238 -- error: 500 Unexpected field
+2021-02-15 -- 12:12:39:1239 -- error: 500 Unexpected field
+2021-02-15 -- 12:13:20:1320 -- error: 500 Unexpected field
+2021-02-15 -- 12:13:21:1321 -- error: 500 Unexpected field
+2021-02-15 -- 12:13:22:1322 -- error: 500 Unexpected field
+2021-02-15 -- 12:14:05:145 -- error: 500 Unexpected field
+2021-02-15 -- 12:14:06:146 -- error: 500 Unexpected field
+2021-02-15 -- 12:14:09:149 -- error: 500 Unexpected field
+2021-02-15 -- 12:30:27:3027 -- error: 500 Unexpected field
+2021-02-15 -- 12:30:35:3035 -- error: 500 Unexpected field
+2021-02-15 -- 12:30:58:3058 -- error: 500 Unexpected field
+2021-02-15 -- 12:30:59:3059 -- error: 500 Unexpected field
+2021-02-15 -- 12:31:00:310 -- error: 500 Unexpected field
+2021-02-15 -- 12:31:00:310 -- error: 500 Unexpected field
+2021-02-15 -- 12:31:01:311 -- error: 500 Unexpected field
+2021-02-15 -- 12:31:01:311 -- error: 500 Unexpected field
+2021-02-15 -- 12:31:02:312 -- error: 500 Unexpected field
+2021-02-15 -- 12:36:59:3659 -- error: 500 Unexpected field
+2021-02-15 -- 12:37:44:3744 -- error: 500 Unexpected field
+2021-02-15 -- 12:37:53:3753 -- error: 500 Unexpected field
+2021-02-15 -- 12:39:18:3918 -- error: 500 Unexpected field
+2021-02-15 -- 13:38:34:3834 -- error: 500 Unexpected field
+2021-02-15 -- 13:38:56:3856 -- error: 500 Unexpected field
+2021-02-15 -- 13:48:09:489 -- error: 500 Unexpected field
+2021-02-15 -- 21:36:16:3616 -- error: The professional profile entered is not valid
+2021-02-15 -- 21:36:39:3639 -- error: The rol entered is not valid
+2021-02-15 -- 21:41:55:4155 -- error:  Error in create new a hackathon: The tech of hackathon is not valid 
+2021-02-15 -- 21:43:18:4318 -- error:  Error in create new a hackathon: The tech of hackathon is not valid 
+2021-02-15 -- 21:44:07:447 -- error:  Error in create new a hackathon: The tech of hackathon is not valid 
+2021-02-15 -- 21:47:22:4722 -- error:  Error in create new a hackathon: The tech of hackathon is not valid 
+2021-02-15 -- 21:50:14:5014 -- error:  Error in create new a hackathon: The tech of hackathon is not valid 
+2021-02-15 -- 21:51:15:5115 -- error:  Error in create new a hackathon: The tech of hackathon is not valid 
+2021-02-15 -- 21:52:05:525 -- error:  Error in create new a hackathon: The tech of hackathon is not valid 
+2021-02-15 -- 21:53:55:5355 -- error:  Error in create new a hackathon: The tech of hackathon is not valid 
+2021-02-15 -- 21:53:58:5358 -- error:  Error in create new a hackathon: The tech of hackathon is not valid 
+2021-02-15 -- 21:56:55:5655 -- error:  Error in create new a hackathon: The tech of hackathon is not valid 
+2021-02-15 -- 21:57:05:575 -- error:  Error in create new a hackathon: The tech of hackathon is not valid 
+2021-02-15 -- 21:59:25:5925 -- error:  Error in create new a hackathon: The tech of hackathon is not valid 
+2021-02-15 -- 21:59:40:5940 -- error:  Error in create new a hackathon: The tech of hackathon is not valid 
+2021-02-15 -- 22:09:29:929 -- error:  Error in create new a hackathon: The tech of hackathon is not valid 
+2021-02-15 -- 22:09:35:935 -- error:  Error in create new a hackathon: The tech of hackathon is not valid 
+2021-02-15 -- 22:11:43:1143 -- error:  Error in create new a hackathon: The tech of hackathon is not valid 
+2021-02-15 -- 22:15:08:158 -- error:  Error in create new a hackathon: The link of hackathon is not valid 
+2021-02-15 -- 22:16:01:161 -- error:  Error in create new a hackathon: The link of hackathon is not valid 
+2021-02-15 -- 22:19:50:1950 -- error:  Error in create new a hackathon: The link of hackathon is not valid 
+2021-02-15 -- 22:21:26:2126 -- error:  Error in create new a hackathon: The tech of hackathon is not valid 
+2021-02-15 -- 22:22:13:2213 -- error:  Error in create new a hackathon: The tech of hackathon is not valid 
+2021-02-15 -- 22:22:18:2218 -- error:  Error in create new a hackathon: The tech of hackathon is not valid 
+2021-02-15 -- 22:37:09:379 -- error:  Error in create new a hackathon: The tech of hackathon is not valid 
+2021-02-15 -- 22:42:03:423 -- error:  Error in create new a hackathon: The tech of hackathon is not valid 
+2021-02-15 -- 22:43:58:4358 -- error:  Error in create new a hackathon: The link of hackathon is not valid 
+2021-02-15 -- 22:46:13:4613 -- error:  Error in create new a hackathon: The link of hackathon is not valid 
+2021-02-15 -- 22:47:20:4720 -- error:  Error in create new a hackathon: The link of hackathon is not valid 
+2021-02-15 -- 22:50:33:5033 -- error:  Error in create new a hackathon: The webName of hackathon is not valid 
+2021-02-15 -- 22:51:38:5138 -- error:  Error in create new a hackathon: The webName of hackathon is not valid 
+2021-02-15 -- 22:52:22:5222 -- error: Column 'cover_picture' cannot be null
+2021-02-15 -- 22:52:22:5222 -- error:  Error in create new a hackathon: Column 'cover_picture' cannot be null 
+2021-02-15 -- 23:57:08:578 -- error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+2021-02-15 -- 23:57:09:579 -- error:  Error in create new a hackathon: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1 
+2021-02-16 -- 00:25:11:2511 -- error: rollback
+2021-02-16 -- 00:25:11:2511 -- error: listTechs is not defined
+2021-02-16 -- 00:26:30:2630 -- error: rollback
+2021-02-16 -- 00:26:30:2630 -- error: listTechs is not defined
+2021-02-16 -- 00:37:41:3741 -- error:  Error in create new a hackathon: The thematic of hackathon is not valid 
+2021-02-16 -- 00:37:48:3748 -- error:  Error in create new a hackathon: The thematic of hackathon is not valid 
+2021-02-16 -- 00:40:29:4029 -- error:  Error in create new a hackathon: The thematic of hackathon is not valid 
+2021-02-16 -- 00:42:29:4229 -- error:  Error in create new a hackathon: The thematic of hackathon is not valid 
+2021-02-16 -- 01:27:16:2716 -- error:  Error in create new a hackathon: The link of hackathon is not valid 
+2021-02-16 -- 01:35:27:3527 -- error: 400 Unexpected token - in JSON at position 0
+2021-02-16 -- 01:35:42:3542 -- error: 413 request entity too large
+2021-02-16 -- 01:38:59:3859 -- error: 400 Unexpected token - in JSON at position 0
+2021-02-16 -- 01:41:06:416 -- error:  Error in create new a hackathon: The name of hackathon is not valid 
+2021-02-16 -- 01:50:52:5052 -- error:  Error in create new a hackathon: The tech of hackathon is not valid 
+2021-02-16 -- 01:51:30:5130 -- error:  Error in create new a hackathon: The tech of hackathon is not valid 
+2021-02-16 -- 01:56:39:5639 -- error:  Error in create new a hackathon: The tech of hackathon is not valid 
+2021-02-16 -- 01:58:28:5828 -- error:  Error in create new a hackathon: The tech of hackathon is not valid 
+2021-02-16 -- 01:58:44:5844 -- error:  Error in create new a hackathon: The tech of hackathon is not valid 
+2021-02-16 -- 01:59:49:5949 -- error:  Error in create new a hackathon: The tech of hackathon is not valid 
+2021-02-16 -- 02:01:30:130 -- error:  Error in create new a hackathon: The tech of hackathon is not valid 
+2021-02-16 -- 02:01:40:140 -- error:  Error in create new a hackathon: The tech of hackathon is not valid 
+2021-02-16 -- 02:02:08:28 -- error: 500 Cannot read property 'cover_picture' of undefined
+2021-02-16 -- 02:02:35:235 -- error:  Error in create new a hackathon: The tech of hackathon is not valid 
+2021-02-16 -- 02:03:01:31 -- error:  Error in create new a hackathon: The tech of hackathon is not valid 
+2021-02-16 -- 02:04:02:42 -- error:  Error in create new a hackathon: The tech of hackathon is not valid 
+2021-02-16 -- 02:06:18:618 -- error:  Error in create new a hackathon: The tech of hackathon is not valid 
+2021-02-16 -- 02:07:10:710 -- error:  Error in create new a hackathon: The tech of hackathon is not valid 
+2021-02-16 -- 02:08:00:80 -- error:  Error in create new a hackathon: The tech of hackathon is not valid 
+2021-02-16 -- 02:09:45:945 -- error:  Error in create new a hackathon: The tech of hackathon is not valid 
+2021-02-16 -- 02:10:40:1040 -- error:  Error in create new a hackathon: The tech of hackathon is not valid 
+2021-02-16 -- 02:12:03:123 -- error:  Error in create new a hackathon: The tech of hackathon is not valid 
+2021-02-16 -- 02:13:40:1340 -- error:  Error in create new a hackathon: The tech of hackathon is not valid 
+2021-02-16 -- 02:14:47:1447 -- error:  Error in create new a hackathon: The tech of hackathon is not valid 
+2021-02-16 -- 02:18:38:1838 -- error:  Error in create new a hackathon: The tech of hackathon is not valid 
+2021-02-16 -- 02:19:01:191 -- error:  Error in create new a hackathon: The tech of hackathon is not valid 
+2021-02-16 -- 02:20:34:2034 -- error:  Error in create new a hackathon: The tech of hackathon is not valid 
+2021-02-16 -- 02:21:05:215 -- error:  Error in create new a hackathon: The tech of hackathon is not valid 
+2021-02-16 -- 02:23:20:2320 -- error:  Error in create new a hackathon: The tech of hackathon is not valid 
+2021-02-16 -- 02:24:12:2412 -- error:  Error in create new a hackathon: The tech of hackathon is not valid 
+2021-02-16 -- 02:25:06:256 -- error:  Error in create new a hackathon: The tech of hackathon is not valid 
+2021-02-16 -- 02:25:13:2513 -- error:  Error in create new a hackathon: The tech of hackathon is not valid 
+2021-02-16 -- 02:26:20:2620 -- error:  Error in create new a hackathon: The tech of hackathon is not valid 
+2021-02-16 -- 02:26:25:2625 -- error:  Error in create new a hackathon: The tech of hackathon is not valid 
+2021-02-16 -- 02:28:11:2811 -- error:  Error in create new a hackathon: The tech of hackathon is not valid 
+2021-02-16 -- 02:29:57:2957 -- error:  Error in create new a hackathon: The tech of hackathon is not valid 
+2021-02-16 -- 02:30:54:3054 -- error:  Error in create new a hackathon: The tech of hackathon is not valid 
+2021-02-16 -- 02:32:24:3224 -- error:  Error in create new a hackathon: The valid values of place are: online, presencial, semipresencial 
+2021-02-16 -- 02:39:16:3916 -- error:  Error in create new a hackathon: The valid values of place are: online, presencial, semipresencial 
+2021-02-16 -- 02:43:01:431 -- error:  Error in create new a hackathon: The tech of hackathon is not valid 
+2021-02-16 -- 02:43:38:4338 -- error:  Error in create new a hackathon: The tech of hackathon is not valid 
+2021-02-16 -- 02:45:18:4518 -- error: 413 request entity too large
+2021-02-16 -- 02:46:58:4658 -- error:  Error in create new a hackathon: The tech of hackathon is not valid 
+2021-02-16 -- 02:47:56:4756 -- error:  Error in create new a hackathon: The tech of hackathon is not valid 
+2021-02-16 -- 03:00:28:028 -- error:  Error in create new a hackathon: The tech of hackathon is not valid 
+2021-02-16 -- 03:05:07:57 -- error:  Error in create new a hackathon: The name of hackathon is not valid 
+2021-02-16 -- 03:05:41:541 -- error: 400 Unexpected token , in JSON at position 282
+2021-02-16 -- 03:06:53:653 -- error: 400 Unexpected token , in JSON at position 285
+2021-02-16 -- 03:10:50:1050 -- error: 400 Unexpected token , in JSON at position 285
+2021-02-16 -- 03:11:25:1125 -- error: 400 Unexpected token - in JSON at position 0
+2021-02-16 -- 03:12:04:124 -- error: 400 Unexpected token - in JSON at position 0
+2021-02-16 -- 03:12:13:1213 -- error: 400 Unexpected token - in JSON at position 0
+2021-02-16 -- 03:12:37:1237 -- error:  Error in create new a hackathon: The cover picture of hackathon is not valid 
+2021-02-16 -- 03:14:14:1414 -- error:  Error in create new a hackathon: The cover picture of hackathon is not valid 
+2021-02-16 -- 03:22:18:2218 -- error:  Error in create new a hackathon: The cover picture of hackathon is not valid 
+2021-02-16 -- 03:22:50:2250 -- error:  Error in create new a hackathon: The cover picture of hackathon is not valid 
+2021-02-16 -- 03:23:17:2317 -- error:  Error in create new a hackathon: The cover picture of hackathon is not valid 
+2021-02-16 -- 03:24:29:2429 -- error:  Error in create new a hackathon: The cover picture of hackathon is not valid 
+2021-02-16 -- 03:26:45:2645 -- error: 500 Unexpected field
+2021-02-16 -- 03:32:46:3246 -- error:  Error in create new a hackathon: The cover picture of hackathon is not valid 
+2021-02-16 -- 03:33:47:3347 -- error:  Error in create new a hackathon: The cover picture of hackathon is not valid 
+2021-02-16 -- 03:34:18:3418 -- error:  Error in create new a hackathon: The cover picture of hackathon is not valid 
+2021-02-16 -- 03:39:54:3954 -- error:  Error in create new a hackathon: The cover picture of hackathon is not valid 
+2021-02-16 -- 03:41:19:4119 -- error:  Error in create new a hackathon: The cover picture of hackathon is not valid 
+2021-02-16 -- 03:41:52:4152 -- error:  Error in create new a hackathon: The tech of hackathon is not valid 
+2021-02-16 -- 03:43:30:4330 -- error:  Error in create new a hackathon: The tech of hackathon is not valid 
+2021-02-16 -- 03:44:25:4425 -- error:  Error in create new a hackathon: The tech of hackathon is not valid 
+2021-02-16 -- 03:45:07:457 -- error: Duplicate entry 'asdfas' for key 'link.url'
+2021-02-16 -- 03:45:07:457 -- error:  Error in create new a hackathon: Duplicate entry 'asdfas' for key 'link.url' 
+2021-02-16 -- 03:47:26:4726 -- error:  Error in create new a hackathon: Cannot access 'cover_picture' before initialization 
+2021-02-16 -- 04:03:18:318 -- error: 500 ENOENT: no such file or directory, mkdir '../media/archivos/mkdir'
+2021-02-16 -- 11:06:10:610 -- error: Column count doesn't match value count at row 1
+2021-02-16 -- 11:06:10:610 -- error:  Error in create new a hackathon: Column count doesn't match value count at row 1 
+2021-02-16 -- 11:40:27:4027 -- error: 500 ENOENT: no such file or directory, open '../media/hackathons/9eb222ba-db43-4e1b-89c0-c6e0912c27fb/hackathons/9eb222ba-db43-4e1b-89c0-c6e0912c27fbdae2e07cb3indice.png'
+2021-02-16 -- 11:40:35:4035 -- error: 500 ENOENT: no such file or directory, open '../media/hackathons/353ee3d1-1c06-410a-9801-ef126330181f/hackathons/353ee3d1-1c06-410a-9801-ef126330181f61606f0224indice.png'
+2021-02-16 -- 18:24:37:2437 -- error: Column count doesn't match value count at row 1
+2021-02-16 -- 18:24:37:2437 -- error:  Error in create new a hackathon: Column count doesn't match value count at row 1 
+2021-02-16 -- 18:24:49:2449 -- error: Column count doesn't match value count at row 1
+2021-02-16 -- 18:24:49:2449 -- error:  Error in create new a hackathon: Column count doesn't match value count at row 1 
+2021-02-16 -- 18:26:15:2615 -- error: Column count doesn't match value count at row 1
+2021-02-16 -- 18:26:15:2615 -- error:  Error in create new a hackathon: Column count doesn't match value count at row 1 
+2021-02-16 -- 18:26:29:2629 -- error: Column count doesn't match value count at row 1
+2021-02-16 -- 18:26:29:2629 -- error:  Error in create new a hackathon: Column count doesn't match value count at row 1 
+2021-02-16 -- 18:26:32:2632 -- error: Column count doesn't match value count at row 1
+2021-02-16 -- 18:26:32:2632 -- error:  Error in create new a hackathon: Column count doesn't match value count at row 1 

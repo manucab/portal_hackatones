@@ -59,9 +59,9 @@ const fieldsHackathons = Joi.object({
         .error(
             new Error('The tech of hackathon is not valid')
         ),
-    thematic: Joi.string().lowercase().trim()
+    thematic: Joi.array()
+    .items(Joi.string(), Joi.number())
         .required()
-        .min(2)
         .max(50)
         .error(
             new Error('The thematic of hackathon is not valid')

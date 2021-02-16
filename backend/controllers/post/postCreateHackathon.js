@@ -11,27 +11,53 @@ const { logger } = require("../../app/config/logger");
 const createHackathon = async(req, res) => {
 
     // 1. Get params
-    let { hackathon_name, hackathon_place, city, start_date, end_date, hackathon_status, hackathon_info, cover_picture, tech, thematic, links } = req.body
+    let { hackathon_name, hackathon_place, city, start_date, end_date, hackathon_status, hackathon_info, techs, thematic, links } = req.body
 
     const id_organizer = req.auth.id;
+
+    thematic = JSON.parse(thematic);
+    tech = JSON.parse(techs);
+    links = JSON.parse(links)
+
+
+    // let cover_picture= '';
+
+    let cover_picture= req.pathFile || '';
+
+    console.log('cover_picture :>> ', cover_picture);
+
 
     let query = '';
     let params = [];
 
-    try {
+    console.log('hackathon_name :>> ', hackathon_name);
+console.log('hackathon_place :>> ', hackathon_place);
+console.log('city :>> ', city);
+console.log('start_date :>> ', start_date);
+console.log('end_date :>> ', end_date);
+console.log('hackathon_status :>> ', hackathon_status);
+console.log('hackathon_info :>> ', hackathon_info);
+// console.log('cover_picture :>> ', cover_picture);
+console.log('thematic :>> ', thematic);
+console.log('techs :>> ', techs);
+console.log('links :>> ', links);
 
+
+
+    try {
+        // TODO --> change techs
+        // tech = techs;
         // 2. Check if the parameters are valid
           await fieldsHackathons.validateAsync({ hackathon_name, hackathon_place, city, start_date, end_date, hackathon_status, hackathon_info, cover_picture, tech, thematic, links });
 
         logger.debug('Validate fields ok!!');
 
-        // TODO --> cover_picture url
-        cover_picture = '/media/hackathonPictures/default.jpg'
 
         //Start transaction mysql
         query = 'start transaction';
         await performQuery(query, params);
         logger.info('Init transaction query');
+
 
         // 3. Insert in table hackathon
         const res_insertNewHackathon = await createHackathonDB(
