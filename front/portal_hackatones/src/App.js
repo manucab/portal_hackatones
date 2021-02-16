@@ -11,6 +11,7 @@ import PanelSingInUp from './Components/PanelSingInUp/PanelSingInUp';
 import ProfileInfo from './Components/ProfileInfo/ProfileInfo.js';
 import UserStats from './Components/UserStats/UserStats';
 import EditProfile from './Components/EditProfile/EditProfile';
+import StarRating from './Components/StarRating/StarRating';
 
 function App() {
     return (
