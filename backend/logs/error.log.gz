@@ -596,6 +596,7 @@
 2021-02-14 -- 20:14:49:1449 -- error:  Error in create new a hackathon: Assignment to constant variable. 
 2021-02-14 -- 20:15:50:1550 -- error: Duplicate entry 'Java' for key 'tech.tech_name'
 2021-02-14 -- 20:15:50:1550 -- error:  Error in create new a hackathon: Duplicate entry 'Java' for key 'tech.tech_name' 
+<<<<<<< HEAD
 2021-02-15 -- 10:55:23:5523 -- error: 500 Unexpected field
 2021-02-15 -- 11:25:43:2543 -- error: 500 Unexpected field
 2021-02-15 -- 11:27:26:2726 -- error: 500 Unexpected field
@@ -825,3 +826,10 @@
 2021-02-16 -- 18:26:29:2629 -- error:  Error in create new a hackathon: Column count doesn't match value count at row 1 
 2021-02-16 -- 18:26:32:2632 -- error: Column count doesn't match value count at row 1
 2021-02-16 -- 18:26:32:2632 -- error:  Error in create new a hackathon: Column count doesn't match value count at row 1 
+=======
+2021-02-15 -- 19:14:09:149 -- error: jwt expired
+2021-02-15 -- 19:27:10:2710 -- error: Unknown column 'professionalProfile' in 'field list'
+2021-02-15 -- 19:29:10:2910 -- error: Unknown column 'professional_profilerofile' in 'field list'
+2021-02-15 -- 19:30:00:300 -- error: Unknown column 'profilePicture' in 'field list'
+2021-02-15 -- 19:30:53:3053 -- error: Column 'professional_profile' cannot be null
+>>>>>>> f9e2e7159f5f2faf5ea4ed1db80a89fd6907dde4

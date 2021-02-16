@@ -5,10 +5,10 @@ const updateProfileInfo = async (
     name,
     surname,
     email,
-    professionalProfile,
+    professional_profile,
     rol,
     newPassword,
-    profilePicture
+    profile_picture
   ) => {
 
     //Get currentInfo 
@@ -22,29 +22,29 @@ const updateProfileInfo = async (
     name = name || originalInfo[0].user_name;
     surname = surname || originalInfo[0].surname;
     email = email || originalInfo[0].email;
-    professionalProfile = professionalProfile || originalInfo[0].professionalProfile;
+    professional_profile = professional_profile || originalInfo[0].professional_profile;
     rol = rol || originalInfo[0].rol;
     newPassword = newPassword || originalInfo[0].user_password;
-    profilePicture = profilePicture || originalInfo[0].profilePicture
+    profile_picture = profile_picture || originalInfo[0].profile_picture
   
     const query = `
       update competitor
       set user_name = ?,
       surname = ?,
       email = ?,
-      professionalProfile = ?,
+      professional_profile= ?,
       rol = ?,
       user_password = ? ,
-      profilePicture = ?
+      profile_picture = ?
       where id = ?`;
     const params = [
       name,
       surname,
       email,
-      professionalProfile,
+      professional_profile,
       rol,
       newPassword,
-      profilePicture,
+      profile_picture,
       id
     ];
   

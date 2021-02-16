@@ -4,15 +4,15 @@ const profileInfoValidator = require("../../validators/profileInfoValidator");
 
 const updateProfileInfo = async (req, res) => {
   const {
-    name,
+    user_name,
     surname,
     email,
-    professionalProfile,
+    professional_profile,
     rol,
     currentPassword,
     newPassword,
     passwordConfirmation,
-    profilePicture
+    profile_picture
   } = req.body;
   const { idUser } = req.params;
 
@@ -50,18 +50,21 @@ const updateProfileInfo = async (req, res) => {
 
     result = await dbUpdateProfileInfo(
       idUser,
-      name,
+      user_name,
       surname,
       email,
-      professionalProfile,
+      professional_profile,
       rol,
       newPassword,
-      profilePicture
+      profile_picture
     );
+   
   } catch (e) {
     res.send(e.message);
+    console.log(e.message)
     return;
   }
+ 
   res.send(result);
 };
 
