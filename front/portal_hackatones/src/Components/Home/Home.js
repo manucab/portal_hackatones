@@ -1,5 +1,5 @@
 import './Home.css';
-import CarouselHackathons from '../CarouselHackathons2/CarouselHackathons';
+import CarouselHackathons from '../CarouselHackathons3/CarouselHackathons';
 import {useEffect, useState} from 'react';
 import {DateTime} from "luxon";
 import useFetch from '../../Hooks/useFetch';
@@ -10,7 +10,7 @@ function Home() {
     const start_date = DateTime.local().setLocale('es').toISODate();
     
 
-    const hackathons =  useFetch('http://localhost:3000/hackathon/search/filters' + `?start_date=${start_date}`);
+    const hackathons =  useFetch('http://localhost:3001/hackathon/search/filters' + `?start_date=${start_date}`);
 
      const hasHackathon = (hackathons && !hackathons.Info) ? true : false ;
 
@@ -26,8 +26,7 @@ function Home() {
             {/* Next hackathons */}
             <div className="nextHackathons">
 
-            {hasHackathon 
-             && <CarouselHackathons hackathons={hackathons} /> 
+            {hasHackathon && <CarouselHackathons hackathons={hackathons} /> 
             //  && <button id="btnMoreHackathons" onClick={""} >Ver todos</button>
              }
             {/* TODO --> format style */}

@@ -7,10 +7,10 @@ function Register() {
     const [email, setEmail] = useState('');
     const [name, setName] = useState('');
     const [surname, setSurname] = useState('');
-    const [professionalProfile, setProfessionalProfile] = useState('desarrollador');
+    const [professional_profile, setprofessional_profile] = useState('desarrollador');
     const [rol, setRol] = useState('user');
     const [password, setPassword] = useState('');
-    const [profilePicture, setProfilePicture] = useState('default');
+    const [profile_picture, setProfilePicture] = useState('default');
 
     const history = useHistory();
     
@@ -22,17 +22,17 @@ function Register() {
         }
 
 
-        const ret = await fetch('http://localhost:3000/register', {
+        const ret = await fetch('http://localhost:3001/register', {
             headers,
             body: JSON.stringify(
                 {
                     email,
                     name,
                     surname,
-                    professionalProfile,
+                    professional_profile,
                     rol,
                     password,
-                    profilePicture
+                    profile_picture
                 }
             ),
             method: 'POST'
@@ -95,24 +95,15 @@ function Register() {
                     <label>
                         Perfil profesional:
                     </label>
-                    {/* <input type="text" list="profiles"
-                        onChange={
-                            e => setProfessionalProfile(e.target.value)
-                        }
-                        required/> */}
                     <select id="profiles" defaultvalue="desarrollador"
-                        onChange={e => setProfessionalProfile(e.target.value)}
+                        onChange={e => setprofessional_profile(e.target.value)}
                         required>
                         <option value="desarrollador">Desarrollador</option>
                         <option value="marqueting">Marqueting</option>
                         <option value="diseñador">Diseñador</option>
                         <option value="otro">Otro</option>
                     </select>
-
-
                 </div>
-
-
                 <div className="field fielProfile">
                     <label>Tipo usuario:</label>
                     <div className="rOption">

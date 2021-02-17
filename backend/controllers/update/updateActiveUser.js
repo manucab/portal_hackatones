@@ -38,8 +38,6 @@ const activeUser = async(req, res) => {
         await performQuery(query, params);
         logger.info(query);
 
-
-
         res.json({ info: msgInfo });
 
     } catch (e) {

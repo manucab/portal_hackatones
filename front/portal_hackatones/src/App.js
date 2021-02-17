@@ -10,12 +10,9 @@ import Logout from './Components/Logout/Logout';
 import PanelSingInUp from './Components/PanelSingInUp/PanelSingInUp';
 import ProfileInfo from './Components/ProfileInfo/ProfileInfo.js';
 import UserStats from './Components/UserStats/UserStats';
-<<<<<<< HEAD
 import CreateHackathon from './Components/CreateHackathon/CreateHackathon';
-=======
 import EditProfile from './Components/EditProfile/EditProfile';
 import StarRating from './Components/StarRating/StarRating';
->>>>>>> f9e2e7159f5f2faf5ea4ed1db80a89fd6907dde4
 
 function App() {
 
@@ -40,7 +37,7 @@ console.log(avatar);
 
 
 
-        const ret = await fetch('http://localhost:3000/upload', {
+        const ret = await fetch('http://localhost:3001/upload', {
         
             body: fd,
             method: 'POST'

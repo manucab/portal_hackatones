@@ -25,13 +25,9 @@ const hackathonStore = async(req, res, next) => {
         fs.mkdirSync(dir,{recursive:true});
     }
 
-    console.log('entro en changepload');
     let   storage1 = multer.diskStorage({
 
-
            destination: function (req, file, cb) {
-
-
                cb(null, dir)
            },
            filename: function (req, file, cb) {
@@ -39,17 +35,15 @@ const hackathonStore = async(req, res, next) => {
         let nameFile = `${stringID}_${file.originalname}`;
 
         req.pathFile = `/hackathons/${uniqueID}/${nameFile}`;
+        req.nameDirHackathon = dir;
 
                cb(null, nameFile);
 
-               console.log('file :>> ', file);
            }
        })
    
     upload.storage = storage1;
 
-    //    console.log(req);
-       
        next();
    }
 

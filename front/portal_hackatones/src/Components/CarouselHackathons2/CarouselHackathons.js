@@ -1,22 +1,23 @@
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import './CarouselHackathons.css'
 import arrow from '../../Media/Images/General/Arrow-down.svg'
+import useFetch from "../../Hooks/useFetch";
 
-function showHackathon (h) {
-
-
-    let url = `http://localhost:3000/static` + h.cover_picture;
+ function showHackathon (h, socialMedia) {
 
 
-    console.log('url :>> ', h);
+    if(socialMedia){
+socialMedia.forEach(i => console.log(i.urlSm));
+    }
+   
+
+    let url = `http://localhost:3001/static` + h.cover_picture || 'default.png';
 
     return (
     
     <div className="hackathon">
         <h1>{h.hackathon_name}</h1>
         <div id="logoHackathon"> 
-            {/* {h.cover_picture} */}
-        
         <img src={url} alt='logo'></img>
         </div>
         <div><span>Formato: </span> {h.hackathon_place}</div>
@@ -28,11 +29,25 @@ function showHackathon (h) {
         <div><span>Temática: </span>{h.thematic}</div>
         <div><span>Tecnologías: </span>{h.tech.join(', ')}</div>
         <div><span>Links: </span> 
-            <ul>{h.link.map(l => 
+            <ul>{h.link.map(l =>
                 <li key={l.url}>
                     <a href={l.url} target="_blank">{l.web_name}</a> 
                 </li> )}
             </ul>
+        </div>
+        <div className="socialMedia">
+            
+
+            {
+                socialMedia.map(item =>{
+                    // <img src={item.urlSm} alt={item.sm} key={item.urlSm}/>
+                    <div key={item.urlSm}>
+                    <p>{item.urlSm}</p>
+            </div>
+
+                })
+            }
+
         </div>
     </div>
 
@@ -40,27 +55,94 @@ function showHackathon (h) {
     
 }
 
+const searchSocialLinks = async(hack, socialMedia) =>{
+
+
+
+    let linksSm =[];
+
+    let objLink = {};
+    let sm = '';
+    let urlSm = 'http://localhost:3001/static/SocialMedia/';
+
+
+    hack.link.forEach(link =>{
+
+        for (const social of socialMedia) {
+
+            if(link.url.includes(social)){
+
+                linksSm.push({'sm': `${social}`, 'urlSm': `${urlSm}${social}.png`});
+
+                break;
+            }
+        
+        }
+    })
+
+    return linksSm;
+
+}
+
 function CarouselHackathons ({hackathons}) {
 
     const [index,setIndex] = useState(0)
+    const [socialLink, setSocialLink] = useState([]);
+    const [state, setState] = useState(0);
+    const [currentHack, setCurrentHack] = useState(hackathons[0]);
 
-    if(!hackathons) return 'Loading...'
+
+    let socialMedia =  useFetch('http://localhost:3001/info/listSocialMedia');
+    if(!socialMedia) socialMedia =[];
+
+    let slink = [];
+
+
+    useEffect(async() => {
+        slink = await searchSocialLinks(hackathons[index],socialMedia );
+
+        console.log('slink :>> ', slink);
+
+        if(slink.length > 0){setSocialLink([...slink]);}
+
+        setState(state + 1);
+        setCurrentHack(hackathons[index]);
+
+        }, [index])
+
+    if(!hackathons) return 'Loading...';
+
+ 
+const hand = () =>{
+
+    console.log('load');
+   
+}
+
+
+
 
     const handleNext = e => {
         setIndex(index < (hackathons.length -1)? index + 1: index + 0)
+
     }
+
     const handlePrevious = e => {
         setIndex(index > 0 ? index - 1: index + 0)
+
     }
 
     let isFirst = index === 0
     let isLast = index === hackathons.length - 1
 
     return(
-        <div className="carousel">
+        <div className="carousel"  onLoad={hand}>
             <img id="previous" src={arrow} className={ isFirst ? 'off':'on'} onClick={handlePrevious}/>
-            {showHackathon(hackathons[index])} 
-            <img id="next" src={arrow} className={ isLast ? 'off':'on'} onClick={handleNext}/>       
+      
+           { state && showHackathon(currentHack, socialLink)} 
+   
+           
+            <img id="next" onLoad={hand} src={arrow} className={ isLast ? 'off':'on'} onClick={handleNext}/>       
         </div>
     )
 

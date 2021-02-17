@@ -7,13 +7,13 @@ const { logger } = require("../../app/config/logger");
 const isValidParamsRegister = async(req, res, next) => {
 
     // 1. Get params
-    const { email, name, surname, professionalProfile, rol, password, profilePicture } = req.body
+    const { email, name, surname, professional_profile, rol, password, profile_picture } = req.body
 
 
     try {
 
         // 2. Check if the parameters are valid
-        await val_register.validateAsync({ email, name, surname, professionalProfile, rol, password, profilePicture });
+        await val_register.validateAsync({ email, name, surname, professional_profile, rol, password, profile_picture });
         next();
     } catch (e) {
 

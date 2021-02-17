@@ -45,7 +45,6 @@ const sendWelcome = async(email, code) => {
     sendgrid.setApiKey(process.env.EMAIL_API_KEY);
 
     // TODO -- Change from email, and change schema
-
     const message = {
         to: email,
         from: 'furboenvena10@gmail.com',
