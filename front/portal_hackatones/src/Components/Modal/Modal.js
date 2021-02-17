@@ -13,7 +13,7 @@ function Modal (props) {
                     <h3 className="modalTitle">{props.title}</h3>
                 </div>
                 <div className="modalBody">{props.children}</div>
-                <button onClick={props.onClose}>Cerrar</button>
+                <button className="close-modal-button" onClick={props.onClose}>Cerrar</button>
             </div>
         </div>
 

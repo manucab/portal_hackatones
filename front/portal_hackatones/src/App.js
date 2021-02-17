@@ -1,4 +1,4 @@
-import {Route, Switch} from 'react-router-dom';
+import {Redirect, Route, Switch} from 'react-router-dom';
 import './App.css';
 import Footer from './Components/Footer/Footer';
 import HackathonsCreated from './Components/HackathonsCreated/HackathonsCreated';
@@ -13,6 +13,9 @@ import UserStats from './Components/UserStats/UserStats';
 import CreateHackathon from './Components/CreateHackathon/CreateHackathon';
 import EditProfile from './Components/EditProfile/EditProfile';
 import StarRating from './Components/StarRating/StarRating';
+import ForgotPassword from './Components/ForgotPassword/ForgotPassword';
+import ResetPassword from './Components/ResetPassword/ResetPassword';
+
 
 function App() {
 
@@ -56,11 +59,11 @@ console.log(avatar);
 
 
         return (<div className="App">
-            <Header/>
+        <Header/>
 
-            <Switch>
+        <Switch>
 
-                <Route path='/upload' exact>
+            <Route path='/upload' exact>
                 <form onSubmit={handleSubmit} method="post">
                     <input type="file" name="img" accept="image/*"/>
                     <button type="submit">Enviar</button>
@@ -71,19 +74,32 @@ console.log(avatar);
             <Route path='/' exact>
                 <Home/>
             </Route>
+
             <Route path='/login' exact>
-                <Login/>
+                <Redirect to="/register"/>
             </Route>
+
+            <Route path='/forgot-password' exact>
+                <ForgotPassword/>
+            </Route>
+
+
+            <Route path='/forgot-password/reset-password/:token'>
+                <ResetPassword/>
+            </Route>
+
             <Route path="/register" exact>
                 <PanelSingInUp/>
             </Route>
+
             <Route path='/user/:id'>
                 <h1>Bienvenido a tu perfil</h1>
                 <ProfileInfo/>
                 <h1>Consulta tus estadísticas</h1>
                 <UserStats/>
-                <h1>Te has inscrito en estos hackatones</h1>
+                <h1>Participaciones en hackathones</h1>
                 <HackathonsJoined/>
+                <h1>Hackathones Creados</h1>
                 <HackathonsCreated/>
                 <Logout/>
             </Route>
@@ -104,7 +120,7 @@ console.log(avatar);
 
     { /* login && <Logout/> */
         } { /* <Logout/> */
-        } < Footer /> </div>);
+        }< Footer /> </div>);
 }
 
 export default App;

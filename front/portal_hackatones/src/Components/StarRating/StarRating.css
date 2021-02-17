@@ -1,10 +1,23 @@
 .star-rating {
     box-sizing: border-box;
+    
     border: 1px solid #A3A4A6;
     border-radius: 5%;
-    width: 300px;
+    width: 250px;
     padding: 15px;
+    background-color: white;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     
+}
+
+.star-rating-buttons {
+    display: flex;
+    justify-content: center;
+    margin: px;
 }
 
 button span {
@@ -32,13 +45,20 @@ button span {
     margin: 5px;
     font-size: 150%;
     border-radius: 50%;
+    text-align: center;
 
+}
+
+.rate-text {
+    max-width: 200px;
 }
 
 #send-rate  {
     border: 1px solid #A3A4A6;
     border-radius: 5%;
-    background-color: #F6E561;
+    background-color: #A3A4A6;
+    color: white;
+    font-weight: bold;
 }
 
 .star-on {

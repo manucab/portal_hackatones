@@ -49,7 +49,7 @@ function Login() {
         <button>Iniciar sesión</button>
         <div className='errorMessage'>{process}</div>
         <p>
-            <Link to="/recovery">No recuerdas tu contraseña?</Link>
+            <Link to="/forgot-password">No recuerdas tu contraseña?</Link>
         </p>
     </form>
   );

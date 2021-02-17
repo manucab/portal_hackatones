@@ -32,7 +32,11 @@ text-decoration: none;
 }
 
 .logoFooter > img {
-        height: 25px; 
-        width: 25px; 
+    height: 25px; 
+    width: 25px; 
+}
+
+#homeButton {
+    border-radius: 50%;
 }
 

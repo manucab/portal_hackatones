@@ -3,6 +3,9 @@ require('dotenv').config();
 const express = require("express");
 const bodyParser = require("body-parser");
 const multer = require('multer');
+const schedule = require('node-schedule')
+
+const {automaticUpdate} = require('../db/automaticUpdate')
 
 const cors = require("cors");
 
@@ -25,6 +28,14 @@ const hackathonRouter = require('../routes/hackathon');
 const blogRouter = require('../routes/blog')
 const forgotPasswordRouter = require('../routes/forgotPassword')
 const infoRouter = require('../routes/info');
+
+//Automatic Update of Database
+//Update when running the app
+ automaticUpdate()
+
+//Update everyday at 03:00
+schedule.scheduleJob('* 01 01 * * *', ()=> automaticUpdate())
+
 
 // Middlewares
 app.use(cors());
