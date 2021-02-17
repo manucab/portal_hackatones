@@ -11,6 +11,7 @@ import PanelSingInUp from './Components/PanelSingInUp/PanelSingInUp';
 import ProfileInfo from './Components/ProfileInfo/ProfileInfo.js';
 import UserStats from './Components/UserStats/UserStats';
 import CreateHackathon from './Components/CreateHackathon/CreateHackathon';
+import ForgotPassword from './Components/ForgotPassword/ForgotPassword';
 
 function App() {
 
@@ -71,6 +72,9 @@ console.log(avatar);
             </Route>
             <Route path='/login' exact>
                 <Redirect to="/register"/>
+            </Route>
+            <Route path='/forgot-password' exact>
+                <ForgotPassword/>
             </Route>
             <Route path="/register" exact>
                 <PanelSingInUp/>

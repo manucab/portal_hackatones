@@ -22,7 +22,7 @@ function Register() {
         }
 
 
-        const ret = await fetch('http://localhost:3000/register', {
+        const ret = await fetch('http://localhost:3001/register', {
             headers,
             body: JSON.stringify(
                 {

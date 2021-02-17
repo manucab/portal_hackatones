@@ -44,10 +44,11 @@ function ShowHackathon (h) {
                 ableToRate && 
                 <div className="rate-modal">
                     <button onClick = {() => setShow(true)}>Valorar</button>
-                    <Modal title="Valorar evento" show={show} onClose={() => setShow(false)}>
-                        <StarRating handleClose={handleClose} idHackathon={h.id}/>
-                    </Modal>
-                </div>}</div>
+                </div>}
+                </div>
+                <Modal title="Valorar evento" show={show} onClose={() => setShow(false)}>
+                    <StarRating handleClose={handleClose} idHackathon={h.id}/>
+                </Modal>
         </div>
 
     </div>
