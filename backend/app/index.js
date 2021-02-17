@@ -31,7 +31,7 @@ const infoRouter = require('../routes/info');
 
 //Automatic Update of Database
 //Update when running the app
- automaticUpdate()
+automaticUpdate()
 
 //Update everyday at 03:00
 schedule.scheduleJob('* 01 01 * * *', ()=> automaticUpdate())
