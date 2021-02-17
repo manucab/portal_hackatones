@@ -1,4 +1,4 @@
-import {Route, Switch} from 'react-router-dom';
+import {Redirect, Route, Switch} from 'react-router-dom';
 import './App.css';
 import Footer from './Components/Footer/Footer';
 import HackathonsCreated from './Components/HackathonsCreated/HackathonsCreated';
@@ -10,12 +10,7 @@ import Logout from './Components/Logout/Logout';
 import PanelSingInUp from './Components/PanelSingInUp/PanelSingInUp';
 import ProfileInfo from './Components/ProfileInfo/ProfileInfo.js';
 import UserStats from './Components/UserStats/UserStats';
-<<<<<<< HEAD
 import CreateHackathon from './Components/CreateHackathon/CreateHackathon';
-=======
-import EditProfile from './Components/EditProfile/EditProfile';
-import StarRating from './Components/StarRating/StarRating';
->>>>>>> f9e2e7159f5f2faf5ea4ed1db80a89fd6907dde4
 
 function App() {
 
@@ -75,7 +70,7 @@ console.log(avatar);
                 <Home/>
             </Route>
             <Route path='/login' exact>
-                <Login/>
+                <Redirect to="/register"/>
             </Route>
             <Route path="/register" exact>
                 <PanelSingInUp/>

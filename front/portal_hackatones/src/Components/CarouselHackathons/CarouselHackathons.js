@@ -15,7 +15,8 @@ function showHackathon (h) {
     const hasEnded = h.hackathon_status === 'realizado'
     const isRated = hasEnded && h.rate!== null
     const ableToRate = hasEnded && !isRated
-    const isRanked = h.ranking !== 0
+    const isRanked = h.ranking !== null && h.ranking !== undefined
+    
 
     return (
     
