@@ -88,7 +88,7 @@ create table if not exists competitor_hackathon (
 	id_competitor int not null,
 	id_hackathon int not null,
   inscription_status enum ('inscrito','cancelado','asistente') not null default 'inscrito',
-    ranking int not null default 0,
+    ranking int default null,
     id_booking varchar(20) not null,
     rate integer,
     primary key (id_competitor,id_hackathon),
