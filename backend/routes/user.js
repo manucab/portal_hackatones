@@ -24,7 +24,7 @@ router.put('/:idUser/update',isAuthenticated,isRightUser , updateProfile)
 router.put('/forgotPassword', forgotPassword)
 router.put('/:idUser/delete',isAuthenticated,isRightUser, deleteUser)
 router.put('/:idUser/:idHackathon/cancelbooking',isAuthenticated,isRightUser , cancelHackathonBooking)
-router.put('/:idUser/:idHackathon/rate',isAuthenticated,isRightUser ,isOrganizer, rateHackathon)
+router.put('/:idUser/:idHackathon/rate',isAuthenticated,isRightUser , rateHackathon)
 router.put('/:idUser/:idHackathon/modify',isAuthenticated,isRightUser ,isOrganizer, modifyHackathon)
 router.put('/:idUser/:idHackathon/delete',isAuthenticated,isRightUser ,isOrganizer,deleteHackathon)
 

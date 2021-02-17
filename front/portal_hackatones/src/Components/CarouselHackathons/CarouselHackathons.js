@@ -2,11 +2,14 @@ import { useState } from "react"
 import './CarouselHackathons.css'
 import arrow from '../../Media/Images/General/Arrow-down.svg'
 import {DateTime} from "luxon";
+import Modal from "../Modal/Modal";
+import StarRating from "../StarRating/StarRating";
 
 
-function showHackathon (h) {
+function ShowHackathon (h) {
 
-    
+    const [show,setShow] = useState(false)
+
     const startYear = h.start_date.split('-')[0]
     const startMonth = h.start_date.split('-')[1]
     const startDay = h.start_date.split('-')[2].split('T')[0]
@@ -16,7 +19,12 @@ function showHackathon (h) {
     const isRated = hasEnded && h.rate!== null
     const ableToRate = hasEnded && !isRated
     const isRanked = h.ranking !== null && h.ranking !== undefined
-    
+
+    const handleClose = (e) => {
+        
+        setShow(false)
+    }
+
 
     return (
     
@@ -31,7 +39,15 @@ function showHackathon (h) {
         <div > {!hasEnded && <div className="timeTo">Quedan {daysTo} días!!!</div>} </div>
         <div className='hackathonResults'>
             {isRanked && <div className='ranking'>{h.ranking}º </div>}
-            <div className='rate'>{isRated ? <div> {h.rate} ⭐</div> : ableToRate && <button>Valorar</button> }</div>
+            <div className='rate'>{isRated ? 
+                <div className='rate-box'> {h.rate} ⭐</div> : 
+                ableToRate && 
+                <div className="rate-modal">
+                    <button onClick = {() => setShow(true)}>Valorar</button>
+                    <Modal title="Valorar evento" show={show} onClose={() => setShow(false)}>
+                        <StarRating handleClose={handleClose} idHackathon={h.id}/>
+                    </Modal>
+                </div>}</div>
         </div>
 
     </div>
@@ -43,6 +59,8 @@ function showHackathon (h) {
 function CarouselHackathons ({hackathons}) {
 
     const [index,setIndex] = useState(0)
+ 
+
 
     if(!hackathons) return 'Loading...'
 
@@ -56,7 +74,7 @@ function CarouselHackathons ({hackathons}) {
     return(
         <div className="carousel">
             <img id="previous" src={arrow} className={ isFirst ? 'off':'on'} onClick={handlePrevious}/>
-            {showHackathon(hackathons[index])} 
+            {ShowHackathon(hackathons[index])} 
             <img id="next" src={arrow} className={ isLast ? 'off':'on'} onClick={handleNext}/>       
         </div>
     )
