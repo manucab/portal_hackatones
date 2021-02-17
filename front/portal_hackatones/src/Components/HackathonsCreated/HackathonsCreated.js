@@ -24,7 +24,9 @@ function HackathonsCreated () {
         <div className="hackathonsCreated">
 
             <h1>Tus hackatones creados</h1>
-            <CarouselHackathons hackathons={hackathonsCreated} />
+            {hackathonsCreated.lenght !== 0 ?
+                <CarouselHackathons hackathons={hackathonsCreated} />:
+                <p>No has reado ningún hackathon</p>}
 
         </div>
 

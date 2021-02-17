@@ -5220,3 +5220,69 @@
 2021-02-17 -- 16:28:52:2852 -- info: Authorization failure, no token
 2021-02-17 -- 16:28:52:2852 -- http: GET -- /user/validate -- a50df457-129c-4768-b163-be7d2a160a7b -- 401 -- 42 - 1.690 ms
 2021-02-17 -- 16:31:00:310 -- http: PUT -- /forgot-password -- fca29e74-1808-4d5a-9bbd-235748aeb355 -- 200 -- 216 - 6777.123 ms
+2021-02-17 -- 17:07:34:734 -- http: PUT -- /forgot-password/reset-password/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im1hbnVlbHBAbWFpbDMuY29tIiwiaWF0IjoxNjEzMjE1NDI3LCJleHAiOjE2MTMyMTYzMjd9.s_BVUJ3fnekwRRcRv4JZpF5QVS8HCRSu6lbJvXZ9UZM -- 4e08342e-7b00-4293-927b-aeb6b78d49e7 -- 400 -- 24 - 2.085 ms
+2021-02-17 -- 17:09:58:958 -- http: PUT -- /forgot-password/reset-password/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im1hbnVlbGNhYmV6YXMuYUBnbWFpbC5jb20iLCJpYXQiOjE2MTM1NzU4NTMsImV4cCI6MTYxMzU3Njc1M30.vizfVFaqQt-HAPXrHxBZczcUs3TpVp1qVoEvhItvRAQ -- ace31183-bc4c-46c9-89e8-ae11d27d3835 -- 400 -- 24 - 0.608 ms
+2021-02-17 -- 17:10:00:100 -- http: PUT -- /forgot-password/reset-password/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im1hbnVlbGNhYmV6YXMuYUBnbWFpbC5jb20iLCJpYXQiOjE2MTM1NzU4NTMsImV4cCI6MTYxMzU3Njc1M30.vizfVFaqQt-HAPXrHxBZczcUs3TpVp1qVoEvhItvRAQ -- 367d2b04-b6a4-4976-8708-f5952955169b -- 400 -- 24 - 0.601 ms
+2021-02-17 -- 17:10:16:1016 -- http: PUT -- /forgot-password/reset-password/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im1hbnVlbGNhYmV6YXMuYUBnbWFpbC5jb20iLCJpYXQiOjE2MTM1NzU4NTMsImV4cCI6MTYxMzU3Njc1M30.vizfVFaqQt-HAPXrHxBZczcUs3TpVp1qVoEvhItvRAQ -- 3b47e264-601f-49e8-9215-0bd43d4d3ff6 -- 400 -- 24 - 0.892 ms
+2021-02-17 -- 17:11:26:1126 -- info: listening on port 3001
+2021-02-17 -- 17:11:48:1148 -- http: PUT -- /forgot-password -- 236872b4-9841-4764-9676-ce8391102b6c -- 200 -- 216 - 2224.512 ms
+2021-02-17 -- 17:12:09:129 -- warn: 404 Router not found
+2021-02-17 -- 17:12:09:129 -- http: GET -- /forgot-password/reset-password/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im1hbnVlbGNhYmV6YXMuYUBnbWFpbC5jb20iLCJpYXQiOjE2MTM1NzgzMDYsImV4cCI6MTYxMzU3OTIwNn0.iVokEXqvM4jQtiSGQc7kwQfLXeNja_Ho4wdTRIt-5q4 -- 7e3ca4cd-a215-49c3-b8e5-a6ab7f0740ea -- 404 -- 30 - 4.424 ms
+2021-02-17 -- 17:12:09:129 -- warn: 404 Router not found
+2021-02-17 -- 17:12:09:129 -- http: GET -- /favicon.ico -- ce07f2a9-b8c5-4c0e-9bc8-d1e2aefcc063 -- 404 -- 30 - 1.497 ms
+2021-02-17 -- 17:12:27:1227 -- http: PUT -- /forgot-password/reset-password/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im1hbnVlbGNhYmV6YXMuYUBnbWFpbC5jb20iLCJpYXQiOjE2MTM1NzgzMDYsImV4cCI6MTYxMzU3OTIwNn0.iVokEXqvM4jQtiSGQc7kwQfLXeNja_Ho4wdTRIt-5q4 -- 6707d134-354c-4096-ad1d-ce8287cbd9a0 -- 200 -- 148 - 451.370 ms
+2021-02-17 -- 17:12:49:1249 -- http: PUT -- /forgot-password/reset-password/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im1hbnVlbGNhYmV6YXMuYUBnbWFpbC5jb20iLCJpYXQiOjE2MTM1NzgzMDYsImV4cCI6MTYxMzU3OTIwNn0.iVokEXqvM4jQtiSGQc7kwQfLXeNja_Ho4wdTRIt-5q4 -- 0266eb0c-d3b6-4058-b999-5b57dc469b30 -- 200 -- 32 - 2.793 ms
+2021-02-17 -- 17:17:36:1736 -- info: listening on port 3001
+2021-02-17 -- 17:17:41:1741 -- http: PUT -- /forgot-password/reset-password/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im1hbnVlbGNhYmV6YXMuYUBnbWFpbC5jb20iLCJpYXQiOjE2MTM1NzgzMDYsImV4cCI6MTYxMzU3OTIwNn0.iVokEXqvM4jQtiSGQc7kwQfLXeNja_Ho4wdTRIt-5q4 -- 0ce6c7b9-0f93-4b51-9279-d8722866ef6d -- 200 -- 148 - 680.563 ms
+2021-02-17 -- 17:17:49:1749 -- http: PUT -- /forgot-password/reset-password/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im1hbnVlbGNhYmV6YXMuYUBnbWFpbC5jb20iLCJpYXQiOjE2MTM1NzgzMDYsImV4cCI6MTYxMzU3OTIwNn0.iVokEXqvM4jQtiSGQc7kwQfLXeNja_Ho4wdTRIt-5q4 -- b9b661a1-e28c-4659-8b8b-83d5b8849b2b -- 409 -- 29 - 1.531 ms
+2021-02-17 -- 17:18:50:1850 -- info: listening on port 3001
+2021-02-17 -- 17:28:02:282 -- warn: 404 Router not found
+2021-02-17 -- 17:28:02:282 -- http: GET -- /forgot-password/reset-password/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im1hbnVlbGNhYmV6YXMuYUBnbWFpbC5jb20iLCJpYXQiOjE2MTM1NzgzMDYsImV4cCI6MTYxMzU3OTIwNn0.iVokEXqvM4jQtiSGQc7kwQfLXeNja_Ho4wdTRIt-5q4 -- 1b8fdf0e-3b42-4d6e-a4d1-6d84fda2c4ec -- 404 -- 30 - 7.462 ms
+2021-02-17 -- 17:29:46:2946 -- warn: 404 Router not found
+2021-02-17 -- 17:29:46:2946 -- http: PUT -- /forgot-password/reset-password -- fe797098-2202-454b-b25a-3930fca84d8d -- 404 -- 30 - 1.502 ms
+2021-02-17 -- 17:30:01:301 -- warn: 404 Router not found
+2021-02-17 -- 17:30:01:301 -- http: PUT -- /forgot-password/reset-password -- fc287c36-3e00-4875-a907-851124add381 -- 404 -- 30 - 1.575 ms
+2021-02-17 -- 17:30:03:303 -- warn: 404 Router not found
+2021-02-17 -- 17:30:03:303 -- http: PUT -- /forgot-password/reset-password -- 9379d3ad-5971-4663-b215-a58633b71a5d -- 404 -- 30 - 1.867 ms
+2021-02-17 -- 17:30:08:308 -- warn: 404 Router not found
+2021-02-17 -- 17:30:08:308 -- http: PUT -- /forgot-password/reset-password -- 2922bce5-e0c9-4f34-b2b6-f9b2b90c38db -- 404 -- 30 - 0.936 ms
+2021-02-17 -- 17:35:04:354 -- warn: 404 Router not found
+2021-02-17 -- 17:35:04:354 -- http: PUT -- /forgot-password/reset-password -- 5d43ebaf-338a-4857-829f-c9e9cdfeb028 -- 404 -- 30 - 1.252 ms
+2021-02-17 -- 17:36:15:3615 -- http: PUT -- /forgot-password/reset-password/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im1hbnVlbGNhYmV6YXMuYUBnbWFpbC5jb20iLCJpYXQiOjE2MTM1NzgzMDYsImV4cCI6MTYxMzU3OTIwNn0.iVokEXqvM4jQtiSGQc7kwQfLXeNja_Ho4wdTRIt-5q4 -- 2c723f40-8855-456d-82ea-f9c5aedab2d5 -- 400 -- 24 - 6.178 ms
+2021-02-17 -- 17:36:41:3641 -- http: PUT -- /forgot-password/reset-password/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im1hbnVlbGNhYmV6YXMuYUBnbWFpbC5jb20iLCJpYXQiOjE2MTM1NzgzMDYsImV4cCI6MTYxMzU3OTIwNn0.iVokEXqvM4jQtiSGQc7kwQfLXeNja_Ho4wdTRIt-5q4 -- 4446a929-9fb3-4f81-b88e-6794e0738867 -- 400 -- 24 - 0.972 ms
+2021-02-17 -- 17:37:25:3725 -- http: PUT -- /forgot-password -- 0fe26644-cd59-4780-b4d5-3d2967c56368 -- 200 -- 216 - 1346.240 ms
+2021-02-17 -- 17:37:44:3744 -- warn: 404 Router not found
+2021-02-17 -- 17:37:44:3744 -- http: GET -- /forgot-password/reset-password/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im1hbnVlbGNhYmV6YXMuYUBnbWFpbC5jb20iLCJpYXQiOjE2MTM1Nzk4NDMsImV4cCI6MTYxMzU4MDc0M30.X7aPcb6eKYmqDpHOhcdNqJDXN6x-Oq9JtPGsOdP-pEA -- 57db9eef-5928-44b0-aed7-b8cfd2e25215 -- 404 -- 30 - 1.554 ms
+2021-02-17 -- 17:38:12:3812 -- http: PUT -- /forgot-password/reset-password/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im1hbnVlbGNhYmV6YXMuYUBnbWFpbC5jb20iLCJpYXQiOjE2MTM1Nzk4NDMsImV4cCI6MTYxMzU4MDc0M30.X7aPcb6eKYmqDpHOhcdNqJDXN6x-Oq9JtPGsOdP-pEA -- e0f48678-925b-4d33-b5b4-4cafabfbfe52 -- 200 -- 148 - 331.310 ms
+2021-02-17 -- 17:38:37:3837 -- debug: Login OK
+2021-02-17 -- 17:38:37:3837 -- http: POST -- /login -- 5 -- 200 -- 724 - 87.489 ms
+2021-02-17 -- 17:38:39:3839 -- http: GET -- /user/5 -- 30f783e1-771a-4bf8-ad6f-20115d04f67a -- 200 -- 567 - 43.572 ms
+2021-02-17 -- 17:38:39:3839 -- http: GET -- /user/5 -- 85d6df4a-6e0b-4ea5-af81-6456f2efc9ac -- 304 -- - - 7.376 ms
+2021-02-17 -- 17:38:39:3839 -- http: GET -- /user/5 -- 7ef2190e-1ff7-4d3e-909a-b0f9d20c270d -- 304 -- - - 6.193 ms
+2021-02-17 -- 17:38:39:3839 -- http: GET -- /user/5 -- 3c17f19f-2473-4736-9e59-ede920990be3 -- 304 -- - - 7.387 ms
+2021-02-17 -- 17:38:46:3846 -- http: GET -- /user/5 -- 6a13c275-c444-4ea5-8ec4-a40de1bcef49 -- 304 -- - - 7.173 ms
+2021-02-17 -- 17:38:46:3846 -- http: GET -- /user/5 -- 0e614390-a83e-41d3-9392-d5ee97a9d573 -- 304 -- - - 7.605 ms
+2021-02-17 -- 17:38:46:3846 -- http: GET -- /user/5 -- 6098f3ec-a8ae-4cc1-bba7-ac9b37c5f9b1 -- 304 -- - - 6.111 ms
+2021-02-17 -- 17:38:46:3846 -- http: GET -- /user/5 -- d9ba200e-7fc3-4fec-be37-2200ec88d0fa -- 304 -- - - 12.096 ms
+2021-02-17 -- 17:38:48:3848 -- http: GET -- /user/5 -- cb626fe6-efde-4ed4-9723-a1170284d817 -- 304 -- - - 5.995 ms
+2021-02-17 -- 17:38:48:3848 -- http: GET -- /user/5 -- c0138f87-c023-49fb-ae0f-cbc141fa5921 -- 304 -- - - 6.764 ms
+2021-02-17 -- 17:38:48:3848 -- http: GET -- /user/5 -- fdd72271-e6ac-4495-926f-a0db447b42d8 -- 304 -- - - 8.662 ms
+2021-02-17 -- 17:38:48:3848 -- http: GET -- /user/5 -- 2c67f158-2d18-4649-913c-268c0902c589 -- 304 -- - - 6.994 ms
+2021-02-17 -- 17:39:10:3910 -- http: GET -- /user/5 -- bbdeea73-9e82-4d89-8b84-21285d96c920 -- 304 -- - - 4.712 ms
+2021-02-17 -- 17:39:10:3910 -- http: GET -- /user/5 -- febe98fb-ea3a-442a-b33a-330d132e0698 -- 304 -- - - 6.377 ms
+2021-02-17 -- 17:39:10:3910 -- http: GET -- /user/5 -- 20578b7a-93cc-4c3e-b47a-7cfb4ec27c0e -- 304 -- - - 6.583 ms
+2021-02-17 -- 17:39:10:3910 -- http: GET -- /user/5 -- fd45a62c-21e5-424b-9097-0cc3a07d2423 -- 304 -- - - 6.871 ms
+2021-02-17 -- 17:39:33:3933 -- http: GET -- /user/5 -- dd76efb3-d113-4122-91a8-1d5628e41b02 -- 304 -- - - 4.622 ms
+2021-02-17 -- 17:39:33:3933 -- http: GET -- /user/5 -- 2d842316-31fe-42db-84ac-1b014567a0fa -- 304 -- - - 5.672 ms
+2021-02-17 -- 17:39:33:3933 -- http: GET -- /user/5 -- ae76c327-ead1-4d5e-a940-38b50e6f248f -- 304 -- - - 5.585 ms
+2021-02-17 -- 17:39:33:3933 -- http: GET -- /user/5 -- 8cc3b466-0d1b-4de1-b4b2-add418984b41 -- 304 -- - - 6.221 ms
+2021-02-17 -- 17:42:47:4247 -- http: GET -- /user/5 -- 2b9bf29b-5091-4fdd-9926-8c1930dc7f26 -- 304 -- - - 5.416 ms
+2021-02-17 -- 17:42:47:4247 -- http: GET -- /user/5 -- 3e68098e-ea1a-4802-a1c8-7456078ec5f2 -- 304 -- - - 7.403 ms
+2021-02-17 -- 17:42:47:4247 -- http: GET -- /user/5 -- ac1b3275-59a0-401d-9cb2-b40213d27207 -- 304 -- - - 7.383 ms
+2021-02-17 -- 17:42:47:4247 -- http: GET -- /user/5 -- cb8bd05a-b7c5-49f7-b69e-61b076b432af -- 304 -- - - 9.793 ms
+2021-02-17 -- 17:43:44:4344 -- http: GET -- /user/5 -- 25de3cf5-241a-42cf-904c-baf2c635b80f -- 304 -- - - 4.570 ms
+2021-02-17 -- 17:43:44:4344 -- http: GET -- /user/5 -- 5678eb86-9fa3-42f2-9d53-11365c73b672 -- 304 -- - - 6.183 ms
+2021-02-17 -- 17:43:44:4344 -- http: GET -- /user/5 -- 119b4b36-5bfb-4317-8c76-d30d4dbdfbea -- 304 -- - - 5.647 ms
+2021-02-17 -- 17:43:44:4344 -- http: GET -- /user/5 -- 677d59ff-0d9a-4202-9d6a-32a74c9e458a -- 304 -- - - 7.106 ms
+2021-02-17 -- 17:44:05:445 -- http: GET -- /user/5 -- aa37067c-3132-4a35-b53b-20c7614cecfb -- 304 -- - - 5.124 ms
+2021-02-17 -- 17:45:04:454 -- http: GET -- /user/5 -- 2d076e15-b001-4f5c-9943-6571c3b7be17 -- 304 -- - - 5.466 ms

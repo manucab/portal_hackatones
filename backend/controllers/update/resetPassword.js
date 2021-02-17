@@ -9,7 +9,7 @@ const removeToken = require('../../db/update/removeToken')
 const resetPassword = async (req,res) => {
 
     const {token} = req.params
-    const {newPassword} = req.body
+    const {newPassword, confirmPassword} = req.body
 
     try {
 
@@ -21,6 +21,10 @@ const resetPassword = async (req,res) => {
     
     if(!email){
         res.status(400).send('Token error')
+    }
+
+    if(newPassword !== confirmPassword){
+        res.status(409).send('Password confirmation failed')
     }
 
     result = await dbResetPassword(newPassword,email)
