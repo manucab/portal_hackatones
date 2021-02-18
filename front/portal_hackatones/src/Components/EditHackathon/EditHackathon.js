@@ -1,8 +1,8 @@
 import {createRef, useState} from 'react';
 import useFetch from '../../Hooks/useFetch';
-import './CreateHackathon.css';
+import './EditHackathon.css';
 import Select, {components} from 'react-select';
-import {Redirect, useHistory} from 'react-router-dom';
+import {Redirect, useHistory, useParams} from 'react-router-dom';
 import CreatableSelect from "react-select/creatable";
 import {styleSelectPlace} from './stylesSelect';
 import {DateTime} from "luxon";
@@ -10,15 +10,15 @@ import chroma from 'chroma-js';
 import {Helmet} from "react-helmet";
 import { useSelector } from 'react-redux';
 
-function CreateHackathon() {
+function EditHackathon() {
 
     const login = useSelector(s => s.login)
-
+    const {idHackathon} = useParams()  
 
     const history = useHistory();
     const today = DateTime.local().setLocale('es').toISODate();
 
-    const [hackathon_place, sethackathon_place] = useState('online');
+    const [hackathon_place, sethackathon_place] = useState('');
     const [hackathon_name, setHackathon_name] = useState('');
     const [city, setCity] = useState('');
     const [start_date, setStart_date] = useState('today');
@@ -31,6 +31,7 @@ function CreateHackathon() {
     const [links, setLinks] = useState([]);
     const [hasWeb, setHasWeb] = useState(false);
     const [techs, setTechs] = useState([]);
+
 
     let tech = [];
 
@@ -80,16 +81,17 @@ function CreateHackathon() {
 
         }
 
-        const ret = await fetch('http://localhost:3001/createhackathon', {
-            headers,
-            body: fd,
-            method: 'POST'
-        })
+        // const ret = await fetch('http://localhost:3001/createhackathon', {
+        //     headers,
+        //     body: fd,
+        //     method: 'POST'
+        // })
 
-        if (ret.ok) {
-            alert('¡Felicidades, te has registrado!');
-            return history.push('/profile');
-        }
+        // if (ret.ok) {
+        //     alert('¡Felicidades, te has registrado!');
+        //     return history.push('/profile');
+        // }
+
     }
 
     const handleWebName = e => {
@@ -164,6 +166,25 @@ function CreateHackathon() {
             "label": 'Semipresencial'
         }
     ]
+
+
+    //get current data of this hackathon
+    // const hData = useFetch(`http://localhost:3001/get?id=${idHackathon}`)
+    // if(!hData) return 'Loading ...'
+    
+    // sethackathon_place(hData[0].hackathon_place)
+    // setHackathon_name(hData[0].hackathon_name)
+    // setCity(hData[0].city)
+    // setStart_date(hData[0].start_date)
+    // setEnd_date(hData[0].end_date)
+    // sethackathon_status(hData[0].hackathon_status)
+    // sethackathon_info(hData[0].hackathon_info)
+    // setThematic(hData[0].thematic)
+    // setWebName(hData[0])
+    // setWebUrl(hData[0])
+    // setLinks(hData[0])
+    // setHasWeb(hData[0])
+    // setTechs(hData[0].tech)
 
 
     return (
@@ -342,4 +363,4 @@ function CreateHackathon() {
 
 }
 
-export default CreateHackathon;
+export default EditHackathon;

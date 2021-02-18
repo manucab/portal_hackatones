@@ -16,6 +16,8 @@ import StarRating from './Components/StarRating/StarRating';
 import ForgotPassword from './Components/ForgotPassword/ForgotPassword';
 import ResetPassword from './Components/ResetPassword/ResetPassword';
 import {Helmet} from "react-helmet";
+import EditHackathon from './Components/EditHackathon/EditHackathon';
+import Posts from './Components/Posts/Posts';
 
 function App() {
 
@@ -52,7 +54,7 @@ function App() {
                     <PanelSingInUp/>
                 </Route>
 
-                <Route path='/user/:id'>
+                <Route path='/user/:id' exact>
                     <h1>Bienvenido a tu perfil</h1>
                     <ProfileInfo/>
                     <h1>Consulta tus estadísticas</h1>
@@ -64,14 +66,19 @@ function App() {
                     <Logout/>
                 </Route>
 
-                <Route path='/user/:id'>
-                    <h1>Bienvenido a tu perfil</h1>
-                    <ProfileInfo/>
+                <Route path='/user/:id/:idHackathon/modify'>
+                    <h1>Edita tu hackathon</h1>
+                    <EditHackathon/>
                 </Route>
 
                 <Route path='/createhackathon'>
                     <h1>Organiza tú hackathon</h1>
                     <CreateHackathon/>
+                </Route>
+
+                <Route path='/blog' exact>
+                    <h1>Bienvenido a nuestro blog</h1>
+                    <Posts/>
                 </Route>
 
 

@@ -5558,3 +5558,503 @@
 2021-02-18 -- 18:39:09:399 -- http: GET -- /user/2 -- 5acb0bff-09d8-4272-a5fe-1337fcc68491 -- 304 -- - - 5.596 ms
 2021-02-18 -- 18:39:09:399 -- http: GET -- /user/2 -- 068cdbdc-21af-4648-9397-2a1f8d76dcc7 -- 304 -- - - 6.212 ms
 2021-02-18 -- 18:39:09:399 -- http: GET -- /user/2 -- 35fce4ed-22a0-4849-89d5-021ea36acb01 -- 304 -- - - 7.538 ms
+2021-02-18 -- 18:46:22:4622 -- http: GET -- /info/listSocialMedia -- 0727d4cc-e07e-46cc-aab0-91477d6ff364 -- 304 -- - - 0.447 ms
+2021-02-18 -- 18:46:23:4623 -- http: GET -- /user/2 -- 9b35e695-fe1c-4c52-a6bc-e5a27dd8725c -- 304 -- - - 6.269 ms
+2021-02-18 -- 18:46:23:4623 -- http: GET -- /user/2 -- 9c15ae41-6003-41f9-8639-49f975799d0e -- 304 -- - - 5.083 ms
+2021-02-18 -- 18:46:23:4623 -- http: GET -- /user/2 -- 4de4a49d-bb54-42a1-8acb-bc30afed5b63 -- 304 -- - - 5.192 ms
+2021-02-18 -- 18:46:23:4623 -- http: GET -- /user/2 -- 4c551184-863b-4264-9273-9358f2815d39 -- 304 -- - - 9.530 ms
+2021-02-18 -- 18:46:31:4631 -- http: GET -- /info/listSocialMedia -- ab8d707f-fc77-4504-922c-6a2a5dc48125 -- 304 -- - - 0.427 ms
+2021-02-18 -- 18:46:31:4631 -- http: GET -- /user/2 -- ed9cfa1c-e537-4a64-a79d-99a8f0a62e13 -- 304 -- - - 6.562 ms
+2021-02-18 -- 18:46:31:4631 -- http: GET -- /user/2 -- 3f2308b1-87a2-44ec-8621-afdd6b1d9cd4 -- 304 -- - - 6.714 ms
+2021-02-18 -- 18:46:31:4631 -- http: GET -- /user/2 -- a9731dfe-24a1-4d46-887b-7f86adaf53c3 -- 304 -- - - 5.723 ms
+2021-02-18 -- 18:46:31:4631 -- http: GET -- /user/2 -- c4f2332e-a5cf-49ec-a618-3e42c5c9469c -- 304 -- - - 7.864 ms
+2021-02-18 -- 18:46:36:4636 -- http: GET -- /info/listSocialMedia -- e0545fe0-75ce-4c25-8fdd-5214e3f37196 -- 304 -- - - 0.417 ms
+2021-02-18 -- 18:46:36:4636 -- http: GET -- /user/2 -- 92d2e7fd-f3a9-416e-9e59-e1f4ee6a5d0e -- 304 -- - - 7.310 ms
+2021-02-18 -- 18:46:36:4636 -- http: GET -- /user/2 -- f4990405-6ef0-4ed4-9d1d-623c42a59f92 -- 304 -- - - 6.751 ms
+2021-02-18 -- 18:46:36:4636 -- http: GET -- /user/2 -- a5575bff-261c-41ef-9737-2e8efe4c60ea -- 304 -- - - 4.936 ms
+2021-02-18 -- 18:46:36:4636 -- http: GET -- /user/2 -- d3ae1c88-882b-470e-8c6c-872d6f5a1341 -- 304 -- - - 8.349 ms
+2021-02-18 -- 18:46:39:4639 -- http: GET -- /info/listSocialMedia -- 62cd22ec-1218-4816-a095-08d0e47036c7 -- 304 -- - - 0.451 ms
+2021-02-18 -- 18:46:39:4639 -- http: GET -- /user/2 -- a703bc72-51a0-4c9a-8cab-7f6c6bacc0ce -- 304 -- - - 6.708 ms
+2021-02-18 -- 18:46:39:4639 -- http: GET -- /user/2 -- 847b5fa9-eaad-4ae8-aeb3-5eda902d99b4 -- 304 -- - - 5.661 ms
+2021-02-18 -- 18:46:39:4639 -- http: GET -- /user/2 -- aa1e816b-18e3-46d2-b2dd-5f13505365db -- 304 -- - - 8.102 ms
+2021-02-18 -- 18:46:39:4639 -- http: GET -- /user/2 -- f7b570dc-821c-4156-95a2-e1987f054a0b -- 304 -- - - 7.047 ms
+2021-02-18 -- 18:47:16:4716 -- http: GET -- /info/listSocialMedia -- 42aadc6a-db6d-4693-bcaa-b72f4a9df883 -- 304 -- - - 0.544 ms
+2021-02-18 -- 18:47:16:4716 -- http: GET -- /user/2 -- 58051d3b-2c4a-44a6-acb4-dc18b1a9cd74 -- 304 -- - - 5.203 ms
+2021-02-18 -- 18:47:16:4716 -- http: GET -- /user/2 -- 945e87b2-1c03-4bf9-a00c-31300a1f4ea4 -- 304 -- - - 6.301 ms
+2021-02-18 -- 18:47:16:4716 -- http: GET -- /user/2 -- 47cbe13d-a918-4aef-ade5-2476e1163315 -- 304 -- - - 6.260 ms
+2021-02-18 -- 18:47:16:4716 -- http: GET -- /user/2 -- 939bb456-7421-45e0-9f09-4895624b650c -- 304 -- - - 9.118 ms
+2021-02-18 -- 18:47:20:4720 -- http: GET -- /info/listSocialMedia -- a522e08e-ab2e-41d6-a9ad-336d8d0efdb1 -- 304 -- - - 1.013 ms
+2021-02-18 -- 18:47:20:4720 -- http: GET -- /user/2 -- ff9b6d30-1015-44f1-87e2-2ee4c8cc3499 -- 304 -- - - 6.347 ms
+2021-02-18 -- 18:47:20:4720 -- http: GET -- /user/2 -- a0c146bc-e0f6-4a11-9212-ac22f6da2f06 -- 304 -- - - 6.920 ms
+2021-02-18 -- 18:47:20:4720 -- http: GET -- /user/2 -- 4c1cd708-116e-4902-82d4-2635b7e32642 -- 304 -- - - 11.621 ms
+2021-02-18 -- 18:47:20:4720 -- http: GET -- /user/2 -- 16097f69-ca2f-4d80-95f2-8147fee3a622 -- 304 -- - - 5.463 ms
+2021-02-18 -- 18:48:14:4814 -- http: GET -- /info/listSocialMedia -- 7d785f92-eb7e-40a7-9705-57e5ec405387 -- 304 -- - - 0.445 ms
+2021-02-18 -- 18:48:14:4814 -- info: Wrong user
+2021-02-18 -- 18:48:14:4814 -- http: GET -- /user/modify -- acb7e491-2877-4ff8-ab8d-73ebf75d9e9b -- 200 -- 12 - 3.228 ms
+2021-02-18 -- 18:48:14:4814 -- info: Wrong user
+2021-02-18 -- 18:48:14:4814 -- http: GET -- /user/modify -- b5e08ac6-af5b-4819-ac1f-cdcd03ea239f -- 304 -- - - 2.593 ms
+2021-02-18 -- 18:48:14:4814 -- info: Wrong user
+2021-02-18 -- 18:48:14:4814 -- http: GET -- /user/modify -- df817e80-59ea-4f81-b726-a156962f4215 -- 304 -- - - 2.749 ms
+2021-02-18 -- 18:48:14:4814 -- info: Wrong user
+2021-02-18 -- 18:48:14:4814 -- http: GET -- /user/modify -- 43e4f818-dfe8-4ef7-acff-6b1e66c61c27 -- 304 -- - - 2.978 ms
+2021-02-18 -- 18:48:23:4823 -- http: GET -- /info/listSocialMedia -- 16e9ca43-21cf-45bc-ab1b-9f4ef4c65ad0 -- 304 -- - - 0.635 ms
+2021-02-18 -- 18:48:23:4823 -- info: Wrong user
+2021-02-18 -- 18:48:23:4823 -- http: GET -- /user/modify -- c8328905-7cc5-41df-9226-372c2405ad6a -- 304 -- - - 2.707 ms
+2021-02-18 -- 18:48:23:4823 -- info: Wrong user
+2021-02-18 -- 18:48:23:4823 -- http: GET -- /user/modify -- 014986ff-d600-444d-8ac0-9c08a33cc56f -- 304 -- - - 2.164 ms
+2021-02-18 -- 18:48:23:4823 -- info: Wrong user
+2021-02-18 -- 18:48:23:4823 -- http: GET -- /user/modify -- b3113736-a6c7-4172-b1ab-deb1b499950b -- 304 -- - - 2.511 ms
+2021-02-18 -- 18:48:23:4823 -- info: Wrong user
+2021-02-18 -- 18:48:23:4823 -- http: GET -- /user/modify -- 7e4f98f5-5f94-443a-98f5-7385de865f4e -- 304 -- - - 2.248 ms
+2021-02-18 -- 18:48:41:4841 -- info: Wrong user
+2021-02-18 -- 18:48:41:4841 -- http: GET -- /user/modify -- 5a4eaf33-cdf5-4a72-904b-1e9d064fb4c0 -- 304 -- - - 2.560 ms
+2021-02-18 -- 18:48:41:4841 -- info: Wrong user
+2021-02-18 -- 18:48:41:4841 -- http: GET -- /user/modify -- 29e669dd-4bf0-4321-9b9a-b7a02b26f37d -- 304 -- - - 1.988 ms
+2021-02-18 -- 18:48:41:4841 -- info: Wrong user
+2021-02-18 -- 18:48:41:4841 -- http: GET -- /user/modify -- afa7047a-bfb4-489f-a571-f4d1fec19d43 -- 304 -- - - 2.531 ms
+2021-02-18 -- 18:48:41:4841 -- info: Wrong user
+2021-02-18 -- 18:48:41:4841 -- http: GET -- /user/modify -- 96fb0530-c94f-411a-a461-5fa013c38e70 -- 304 -- - - 2.104 ms
+2021-02-18 -- 18:48:45:4845 -- http: GET -- /info/listSocialMedia -- 8d9bb88a-c4f7-4458-872c-c401f12b8b8b -- 304 -- - - 0.450 ms
+2021-02-18 -- 18:48:45:4845 -- info: Wrong user
+2021-02-18 -- 18:48:45:4845 -- http: GET -- /user/modify -- 26b2a688-ea7d-47f8-a0fd-f749eda6df4e -- 304 -- - - 3.379 ms
+2021-02-18 -- 18:48:45:4845 -- info: Wrong user
+2021-02-18 -- 18:48:45:4845 -- http: GET -- /user/modify -- 130ebf70-b1bb-479f-9c4e-4d955811195b -- 304 -- - - 2.505 ms
+2021-02-18 -- 18:48:45:4845 -- info: Wrong user
+2021-02-18 -- 18:48:45:4845 -- http: GET -- /user/modify -- 6812878e-19fa-49bf-9cc8-aaf103311ff7 -- 304 -- - - 3.193 ms
+2021-02-18 -- 18:48:45:4845 -- info: Wrong user
+2021-02-18 -- 18:48:45:4845 -- http: GET -- /user/modify -- 80a3310a-98c5-4ce7-ae5f-c2c134922f95 -- 304 -- - - 2.493 ms
+2021-02-18 -- 18:50:05:505 -- http: GET -- /info/listSocialMedia -- 22aff059-ca5d-4d94-80a1-6788b8cee6ff -- 304 -- - - 0.413 ms
+2021-02-18 -- 18:50:05:505 -- http: GET -- /user/2 -- 2213a514-5bc8-4d34-bb26-d7cdbea31ad7 -- 304 -- - - 8.009 ms
+2021-02-18 -- 18:50:05:505 -- http: GET -- /user/2 -- fd57ca0e-460f-4a9a-ab43-ac59b25faa49 -- 304 -- - - 7.905 ms
+2021-02-18 -- 18:50:05:505 -- http: GET -- /user/2 -- bf11c0a1-d5b3-46f5-84f2-9330f7acd408 -- 304 -- - - 6.346 ms
+2021-02-18 -- 18:50:05:505 -- http: GET -- /user/2 -- bb7e80bb-fa5c-4529-8605-c95981eef4b2 -- 304 -- - - 7.764 ms
+2021-02-18 -- 18:50:10:5010 -- http: GET -- /info/listSocialMedia -- 4b7b84b6-b8a3-4445-8fc9-633b62da3b4e -- 304 -- - - 0.414 ms
+2021-02-18 -- 18:50:10:5010 -- info: Wrong user
+2021-02-18 -- 18:50:10:5010 -- http: GET -- /user/1 -- ed490d21-56e5-4903-921a-4648a2155a99 -- 200 -- 12 - 2.220 ms
+2021-02-18 -- 18:50:10:5010 -- info: Wrong user
+2021-02-18 -- 18:50:10:5010 -- http: GET -- /user/1 -- 68006f34-1f91-4328-b09b-8902e919a5a7 -- 304 -- - - 2.685 ms
+2021-02-18 -- 18:50:10:5010 -- info: Wrong user
+2021-02-18 -- 18:50:10:5010 -- http: GET -- /user/1 -- a43a1f10-3e38-4530-b3c0-6498f8d93705 -- 304 -- - - 7.391 ms
+2021-02-18 -- 18:50:10:5010 -- info: Wrong user
+2021-02-18 -- 18:50:10:5010 -- http: GET -- /user/1 -- 593a1de2-9735-4d17-bc74-36f6eb9e9e0d -- 304 -- - - 4.639 ms
+2021-02-18 -- 18:50:17:5017 -- http: GET -- /info/listSocialMedia -- 431afdb0-3600-43c8-bebd-e3c7746c0c17 -- 304 -- - - 0.427 ms
+2021-02-18 -- 18:50:18:5018 -- http: GET -- /user/2 -- 60c10d1f-04bd-43f7-be1d-f72760d1ac51 -- 304 -- - - 5.467 ms
+2021-02-18 -- 18:50:18:5018 -- http: GET -- /user/2 -- dcbfe248-921a-40a2-b997-6bba4a20e170 -- 304 -- - - 6.693 ms
+2021-02-18 -- 18:50:18:5018 -- http: GET -- /user/2 -- 57ec1709-5bff-454b-a0f1-2ccc9fc12d2d -- 304 -- - - 4.332 ms
+2021-02-18 -- 18:50:18:5018 -- http: GET -- /user/2 -- b43e06ff-80eb-43ff-bcae-0f90c4669f6f -- 304 -- - - 8.832 ms
+2021-02-18 -- 18:51:04:514 -- http: GET -- /info/listSocialMedia -- edf9e23b-154a-439d-b19d-22fd6fe4de5c -- 304 -- - - 0.406 ms
+2021-02-18 -- 18:51:14:5114 -- info: Init transaction query
+2021-02-18 -- 18:51:14:5114 -- info: commit
+2021-02-18 -- 18:51:14:5114 -- debug: [object Object],[object Object],[object Object],[object Object]
+2021-02-18 -- 18:51:14:5114 -- http: GET -- /info/listTech -- 078889f3-abfc-4ad0-a786-d767b5ae9dcb -- 200 -- 93 - 36.936 ms
+2021-02-18 -- 18:51:17:5117 -- info: Init transaction query
+2021-02-18 -- 18:51:17:5117 -- info: commit
+2021-02-18 -- 18:51:17:5117 -- debug: [object Object],[object Object],[object Object],[object Object]
+2021-02-18 -- 18:51:17:5117 -- http: GET -- /info/listThematics -- 059dde9b-dead-41b4-b780-36c06b76b51c -- 200 -- 91 - 3702.503 ms
+2021-02-18 -- 18:52:03:523 -- http: GET -- /info/listSocialMedia -- d06be027-aa2e-4b87-8ee9-dc9f218a8317 -- 304 -- - - 0.411 ms
+2021-02-18 -- 18:52:04:524 -- info: Init transaction query
+2021-02-18 -- 18:52:04:524 -- info: Init transaction query
+2021-02-18 -- 18:52:04:524 -- info: commit
+2021-02-18 -- 18:52:04:524 -- debug: [object Object],[object Object],[object Object],[object Object]
+2021-02-18 -- 18:52:04:524 -- http: GET -- /info/listTech -- 9bb1a9c8-f40d-4750-916f-eafb5586934e -- 304 -- - - 5.883 ms
+2021-02-18 -- 18:52:04:524 -- info: commit
+2021-02-18 -- 18:52:04:524 -- debug: [object Object],[object Object],[object Object],[object Object]
+2021-02-18 -- 18:52:04:524 -- http: GET -- /info/listThematics -- c1f5c286-a7f0-47fb-919f-d37e58dad6db -- 304 -- - - 11.150 ms
+2021-02-18 -- 19:00:49:049 -- info: Init transaction query
+2021-02-18 -- 19:00:49:049 -- info: commit
+2021-02-18 -- 19:00:49:049 -- debug: [object Object],[object Object],[object Object],[object Object]
+2021-02-18 -- 19:00:49:049 -- http: GET -- /info/listTech -- fb009a16-6587-4c94-92b5-6f961a315983 -- 304 -- - - 7.242 ms
+2021-02-18 -- 19:00:49:049 -- info: Init transaction query
+2021-02-18 -- 19:00:49:049 -- info: commit
+2021-02-18 -- 19:00:49:049 -- debug: [object Object],[object Object],[object Object],[object Object]
+2021-02-18 -- 19:00:49:049 -- http: GET -- /info/listThematics -- f487bba9-eef4-485b-8e8a-95939150ee80 -- 304 -- - - 61.257 ms
+2021-02-18 -- 19:00:49:049 -- error: Table 'portal_hack.comment' doesn't exist
+2021-02-18 -- 19:02:49:249 -- http: GET -- /get -- 9f80d94c-7794-4309-841e-d607ff4afa1a -- - -- - - - ms
+2021-02-18 -- 19:02:49:249 -- error: Table 'portal_hack.comment' doesn't exist
+2021-02-18 -- 19:04:49:449 -- http: GET -- /get -- 3e88075b-e61e-455f-9b46-8459848278f1 -- - -- - - - ms
+2021-02-18 -- 19:37:57:3757 -- info: listening on port 3001
+2021-02-18 -- 19:38:02:382 -- http: GET -- /info/listSocialMedia -- ecb28a38-bd1c-4145-89b2-935f1ca7c992 -- 304 -- - - 4.084 ms
+2021-02-18 -- 19:38:02:382 -- http: GET -- /get -- 618ee091-b8a6-46ab-8b94-82f514935af8 -- 200 -- 2592 - 14.128 ms
+2021-02-18 -- 19:38:02:382 -- info: Init transaction query
+2021-02-18 -- 19:38:02:382 -- info: commit
+2021-02-18 -- 19:38:02:382 -- debug: [object Object],[object Object],[object Object],[object Object]
+2021-02-18 -- 19:38:02:382 -- http: GET -- /info/listThematics -- 72a05e40-828d-4929-9a8f-50447678c62b -- 304 -- - - 10.921 ms
+2021-02-18 -- 19:38:02:382 -- info: Init transaction query
+2021-02-18 -- 19:38:02:382 -- info: commit
+2021-02-18 -- 19:38:02:382 -- debug: [object Object],[object Object],[object Object],[object Object]
+2021-02-18 -- 19:38:02:382 -- http: GET -- /info/listTech -- a4bba0e1-111a-4562-86ae-537fa5298999 -- 304 -- - - 33.681 ms
+2021-02-18 -- 19:39:29:3929 -- warn: 404 Router not found
+2021-02-18 -- 19:39:29:3929 -- http: GET -- /get&id=undefined -- 01a0cf0d-bf53-4c49-9aff-4cc5f963ea32 -- 404 -- 30 - 2.679 ms
+2021-02-18 -- 19:39:29:3929 -- info: Init transaction query
+2021-02-18 -- 19:39:29:3929 -- info: Init transaction query
+2021-02-18 -- 19:39:29:3929 -- info: commit
+2021-02-18 -- 19:39:29:3929 -- debug: [object Object],[object Object],[object Object],[object Object]
+2021-02-18 -- 19:39:29:3929 -- http: GET -- /info/listTech -- 880f649a-1bf1-45f1-ad14-7e56b769c5f0 -- 304 -- - - 8.510 ms
+2021-02-18 -- 19:39:29:3929 -- info: commit
+2021-02-18 -- 19:39:29:3929 -- debug: [object Object],[object Object],[object Object],[object Object]
+2021-02-18 -- 19:39:29:3929 -- http: GET -- /info/listThematics -- d32a0721-aaa4-435c-b1a3-22248c59f724 -- 304 -- - - 10.019 ms
+2021-02-18 -- 19:39:49:3949 -- http: GET -- /get?id=undefined -- d1cafc47-ee7f-4fcb-bb00-f290b157b907 -- 200 -- 2 - 4.675 ms
+2021-02-18 -- 19:39:49:3949 -- info: Init transaction query
+2021-02-18 -- 19:39:49:3949 -- info: commit
+2021-02-18 -- 19:39:49:3949 -- debug: [object Object],[object Object],[object Object],[object Object]
+2021-02-18 -- 19:39:49:3949 -- http: GET -- /info/listTech -- c944246b-bae8-4f36-b65e-fa4684f49e40 -- 304 -- - - 12.759 ms
+2021-02-18 -- 19:39:49:3949 -- info: Init transaction query
+2021-02-18 -- 19:39:49:3949 -- info: commit
+2021-02-18 -- 19:39:49:3949 -- debug: [object Object],[object Object],[object Object],[object Object]
+2021-02-18 -- 19:39:49:3949 -- http: GET -- /info/listThematics -- 0e81a9c7-f4f7-4b1f-826f-dd644dbc2682 -- 304 -- - - 6.321 ms
+2021-02-18 -- 19:40:50:4050 -- info: Init transaction query
+2021-02-18 -- 19:40:50:4050 -- http: GET -- /get?id=4 -- bc6d4444-7cfc-46cb-b55d-1619c2617f6a -- 200 -- 436 - 6.592 ms
+2021-02-18 -- 19:40:50:4050 -- info: commit
+2021-02-18 -- 19:40:50:4050 -- debug: [object Object],[object Object],[object Object],[object Object]
+2021-02-18 -- 19:40:50:4050 -- http: GET -- /info/listTech -- 0d7162ac-7468-4f05-8f17-823267f696a7 -- 304 -- - - 11.241 ms
+2021-02-18 -- 19:40:50:4050 -- info: Init transaction query
+2021-02-18 -- 19:40:50:4050 -- info: commit
+2021-02-18 -- 19:40:50:4050 -- debug: [object Object],[object Object],[object Object],[object Object]
+2021-02-18 -- 19:40:50:4050 -- http: GET -- /info/listThematics -- d0622bed-3386-460a-949d-8bdc2e89484b -- 304 -- - - 17.549 ms
+2021-02-18 -- 19:41:15:4115 -- http: GET -- /get?id=4 -- 235718a8-8d7b-444d-b860-8267a3a9dec8 -- 304 -- - - 3.284 ms
+2021-02-18 -- 19:41:15:4115 -- info: Init transaction query
+2021-02-18 -- 19:41:15:4115 -- info: Init transaction query
+2021-02-18 -- 19:41:15:4115 -- info: commit
+2021-02-18 -- 19:41:15:4115 -- debug: [object Object],[object Object],[object Object],[object Object]
+2021-02-18 -- 19:41:15:4115 -- http: GET -- /info/listThematics -- 3a2d2c7e-0676-4b64-8bbd-bd4be812cf04 -- 304 -- - - 6.375 ms
+2021-02-18 -- 19:41:15:4115 -- info: commit
+2021-02-18 -- 19:41:15:4115 -- debug: [object Object],[object Object],[object Object],[object Object]
+2021-02-18 -- 19:41:15:4115 -- http: GET -- /info/listTech -- 5beed4d2-8ec4-49b7-a314-d95c90349a70 -- 304 -- - - 8.211 ms
+2021-02-18 -- 19:41:58:4158 -- http: GET -- /info/listSocialMedia -- 47198133-9014-4659-9923-65f6f9234b52 -- 304 -- - - 0.626 ms
+2021-02-18 -- 19:42:08:428 -- http: GET -- /info/listSocialMedia -- ace6532e-8f49-4b2d-b221-9ec3432a063e -- 304 -- - - 0.622 ms
+2021-02-18 -- 19:42:24:4224 -- info: Init transaction query
+2021-02-18 -- 19:42:24:4224 -- http: GET -- /get?id=4 -- 0f9cd7ed-ac95-452c-8d20-0935fc9bf324 -- 304 -- - - 3.719 ms
+2021-02-18 -- 19:42:24:4224 -- info: Init transaction query
+2021-02-18 -- 19:42:24:4224 -- info: commit
+2021-02-18 -- 19:42:24:4224 -- debug: [object Object],[object Object],[object Object],[object Object]
+2021-02-18 -- 19:42:24:4224 -- http: GET -- /info/listTech -- 850e814d-8e64-4576-bc95-24df5d7809b4 -- 304 -- - - 6.775 ms
+2021-02-18 -- 19:42:24:4224 -- info: commit
+2021-02-18 -- 19:42:24:4224 -- debug: [object Object],[object Object],[object Object],[object Object]
+2021-02-18 -- 19:42:24:4224 -- http: GET -- /info/listThematics -- c1badc0d-5f57-4045-90c3-b94926e1847c -- 304 -- - - 10.149 ms
+2021-02-18 -- 19:43:03:433 -- http: GET -- /info/listSocialMedia -- 3d5f84e5-3af4-4f85-84af-c19dc5431328 -- 304 -- - - 0.657 ms
+2021-02-18 -- 19:43:03:433 -- http: GET -- /get?id=4 -- 52828695-78c4-49e2-b7fc-4a3ffa4fe9c8 -- 304 -- - - 3.377 ms
+2021-02-18 -- 19:43:25:4325 -- info: Init transaction query
+2021-02-18 -- 19:43:25:4325 -- http: GET -- /get?id=4 -- b8987f8d-b7a5-4092-9e5d-4bcca8a9d5a7 -- 304 -- - - 4.071 ms
+2021-02-18 -- 19:43:25:4325 -- info: Init transaction query
+2021-02-18 -- 19:43:25:4325 -- info: commit
+2021-02-18 -- 19:43:25:4325 -- debug: [object Object],[object Object],[object Object],[object Object]
+2021-02-18 -- 19:43:25:4325 -- http: GET -- /info/listTech -- 31e5f437-f9ed-4e80-9f5c-7311994aa897 -- 304 -- - - 7.954 ms
+2021-02-18 -- 19:43:25:4325 -- info: commit
+2021-02-18 -- 19:43:25:4325 -- debug: [object Object],[object Object],[object Object],[object Object]
+2021-02-18 -- 19:43:25:4325 -- http: GET -- /info/listThematics -- 5a480eee-7927-4af7-a776-68aadd28e460 -- 304 -- - - 12.534 ms
+2021-02-18 -- 19:45:13:4513 -- http: GET -- /info/listSocialMedia -- 8b135759-fba6-4d50-808f-cb674d4dcd27 -- 304 -- - - 0.629 ms
+2021-02-18 -- 19:45:13:4513 -- http: GET -- /get?id=4 -- 5e53be6e-8c72-4032-a91f-aacc03bf2691 -- 304 -- - - 4.236 ms
+2021-02-18 -- 19:45:13:4513 -- info: Init transaction query
+2021-02-18 -- 19:45:13:4513 -- info: Init transaction query
+2021-02-18 -- 19:45:13:4513 -- info: commit
+2021-02-18 -- 19:45:13:4513 -- debug: [object Object],[object Object],[object Object],[object Object]
+2021-02-18 -- 19:45:13:4513 -- http: GET -- /info/listThematics -- 828068e7-4f20-4c3a-b753-e59c051b3b04 -- 304 -- - - 14.711 ms
+2021-02-18 -- 19:45:13:4513 -- info: commit
+2021-02-18 -- 19:45:13:4513 -- debug: [object Object],[object Object],[object Object],[object Object]
+2021-02-18 -- 19:45:13:4513 -- http: GET -- /info/listTech -- 7601df99-3735-4107-8731-141522fc7497 -- 304 -- - - 17.101 ms
+2021-02-18 -- 19:45:22:4522 -- http: GET -- /get?id=4 -- c1b499d5-dbe3-4b84-8c1d-8d3dfd45417b -- 304 -- - - 4.667 ms
+2021-02-18 -- 19:45:22:4522 -- info: Init transaction query
+2021-02-18 -- 19:45:22:4522 -- info: Init transaction query
+2021-02-18 -- 19:45:22:4522 -- info: commit
+2021-02-18 -- 19:45:22:4522 -- debug: [object Object],[object Object],[object Object],[object Object]
+2021-02-18 -- 19:45:22:4522 -- http: GET -- /info/listTech -- 852b7d2e-7053-46e5-bef6-4963fc424ca9 -- 304 -- - - 13.058 ms
+2021-02-18 -- 19:45:22:4522 -- info: commit
+2021-02-18 -- 19:45:22:4522 -- debug: [object Object],[object Object],[object Object],[object Object]
+2021-02-18 -- 19:45:22:4522 -- http: GET -- /info/listThematics -- 15f188bf-c043-44c6-85b3-30e26455389f -- 304 -- - - 17.936 ms
+2021-02-18 -- 19:51:48:5148 -- http: GET -- /info/listSocialMedia -- 95fefc26-1626-4554-9fb1-54cd16606c02 -- 304 -- - - 0.600 ms
+2021-02-18 -- 19:51:48:5148 -- http: GET -- /get?id=4 -- 34fcbef2-a33d-401a-8e85-a818ea8cd0c6 -- 304 -- - - 3.372 ms
+2021-02-18 -- 19:55:37:5537 -- http: GET -- /get?id=4 -- 93969295-7690-49f3-9aa3-dc70ff40279b -- 304 -- - - 2.349 ms
+2021-02-18 -- 19:55:37:5537 -- info: Init transaction query
+2021-02-18 -- 19:55:37:5537 -- info: Init transaction query
+2021-02-18 -- 19:55:37:5537 -- info: commit
+2021-02-18 -- 19:55:37:5537 -- debug: [object Object],[object Object],[object Object],[object Object]
+2021-02-18 -- 19:55:37:5537 -- http: GET -- /info/listTech -- 3af6e401-b945-4520-b281-c91cd6bc04bb -- 304 -- - - 8.378 ms
+2021-02-18 -- 19:55:37:5537 -- info: commit
+2021-02-18 -- 19:55:37:5537 -- debug: [object Object],[object Object],[object Object],[object Object]
+2021-02-18 -- 19:55:37:5537 -- http: GET -- /info/listThematics -- 1ac84b53-061e-48ea-b66c-f009aef9fd45 -- 304 -- - - 9.600 ms
+2021-02-18 -- 20:01:29:129 -- http: GET -- /get?id=4 -- b6c1233c-7363-4865-8e93-808b81d228f0 -- 304 -- - - 3.080 ms
+2021-02-18 -- 20:01:29:129 -- info: Init transaction query
+2021-02-18 -- 20:01:29:129 -- info: Init transaction query
+2021-02-18 -- 20:01:29:129 -- http: GET -- /get?id=4 -- 2ba1683a-6c7d-4643-8723-b92f58b034cf -- 304 -- - - 2.304 ms
+2021-02-18 -- 20:01:29:129 -- info: commit
+2021-02-18 -- 20:01:29:129 -- debug: [object Object],[object Object],[object Object],[object Object]
+2021-02-18 -- 20:01:29:129 -- http: GET -- /info/listTech -- a67592b9-0041-4e30-a54d-f66b0b3131f4 -- 304 -- - - 13.123 ms
+2021-02-18 -- 20:01:29:129 -- info: commit
+2021-02-18 -- 20:01:29:129 -- debug: [object Object],[object Object],[object Object],[object Object]
+2021-02-18 -- 20:01:29:129 -- http: GET -- /info/listThematics -- 26c9d786-6c06-4c73-9203-c5c920018dcf -- 304 -- - - 15.400 ms
+2021-02-18 -- 20:01:30:130 -- http: GET -- /get?id=4 -- a7cea7f1-79f5-40cf-a4d9-b6d35b0e3d79 -- 304 -- - - 2.475 ms
+2021-02-18 -- 20:01:30:130 -- http: GET -- /get?id=4 -- 571b7dd0-8d54-44a6-ae63-6cc2e6e7e658 -- 304 -- - - 2.632 ms
+2021-02-18 -- 20:01:30:130 -- http: GET -- /get?id=4 -- af7e171a-865f-474a-b0a3-86d31b3288ae -- 304 -- - - 3.040 ms
+2021-02-18 -- 20:01:30:130 -- info: Init transaction query
+2021-02-18 -- 20:01:30:130 -- info: Init transaction query
+2021-02-18 -- 20:01:30:130 -- info: commit
+2021-02-18 -- 20:01:30:130 -- debug: [object Object],[object Object],[object Object],[object Object]
+2021-02-18 -- 20:01:30:130 -- http: GET -- /info/listTech -- 5a7094ab-1a06-40a2-8990-942e3172346a -- 304 -- - - 7.245 ms
+2021-02-18 -- 20:01:30:130 -- info: commit
+2021-02-18 -- 20:01:30:130 -- debug: [object Object],[object Object],[object Object],[object Object]
+2021-02-18 -- 20:01:30:130 -- http: GET -- /info/listThematics -- 183c7922-6827-449e-a661-97a9ec9c221f -- 304 -- - - 9.362 ms
+2021-02-18 -- 20:03:14:314 -- info: Init transaction query
+2021-02-18 -- 20:03:14:314 -- info: Init transaction query
+2021-02-18 -- 20:03:14:314 -- http: GET -- /get?id=4 -- b6d5b75a-8f00-4cf6-bc98-684f60d097c9 -- 304 -- - - 5.765 ms
+2021-02-18 -- 20:03:14:314 -- info: commit
+2021-02-18 -- 20:03:14:314 -- debug: [object Object],[object Object],[object Object],[object Object]
+2021-02-18 -- 20:03:14:314 -- http: GET -- /info/listThematics -- 1253942c-e4e9-485f-b268-a243bc552098 -- 304 -- - - 9.594 ms
+2021-02-18 -- 20:03:14:314 -- info: commit
+2021-02-18 -- 20:03:14:314 -- debug: [object Object],[object Object],[object Object],[object Object]
+2021-02-18 -- 20:03:14:314 -- http: GET -- /info/listTech -- 3f797a86-e3a2-410f-826f-60f03f38f733 -- 304 -- - - 14.938 ms
+2021-02-18 -- 20:08:13:813 -- info: Init transaction query
+2021-02-18 -- 20:08:13:813 -- info: Init transaction query
+2021-02-18 -- 20:08:13:813 -- http: GET -- /get?id=4 -- 510a679d-b91f-448c-bc67-1dfde6acece9 -- 304 -- - - 3.693 ms
+2021-02-18 -- 20:08:13:813 -- info: commit
+2021-02-18 -- 20:08:13:813 -- debug: [object Object],[object Object],[object Object],[object Object]
+2021-02-18 -- 20:08:13:813 -- http: GET -- /info/listTech -- bb24bb6c-8dcf-486a-8bbe-3806cb2b59c7 -- 304 -- - - 7.911 ms
+2021-02-18 -- 20:08:13:813 -- info: commit
+2021-02-18 -- 20:08:13:813 -- debug: [object Object],[object Object],[object Object],[object Object]
+2021-02-18 -- 20:08:13:813 -- http: GET -- /info/listThematics -- f6e2e405-582a-46b8-a641-a3ece964a31e -- 304 -- - - 12.161 ms
+2021-02-18 -- 20:09:23:923 -- http: GET -- /info/listSocialMedia -- 3ec7f8aa-43c9-4a7f-8038-8fe801c58bdc -- 304 -- - - 0.719 ms
+2021-02-18 -- 20:09:40:940 -- info: Init transaction query
+2021-02-18 -- 20:09:40:940 -- info: Init transaction query
+2021-02-18 -- 20:09:40:940 -- http: GET -- /get?id=4 -- eacbba24-da0e-4f11-9af8-256b1dd55a8a -- 304 -- - - 4.418 ms
+2021-02-18 -- 20:09:40:940 -- info: commit
+2021-02-18 -- 20:09:40:940 -- debug: [object Object],[object Object],[object Object],[object Object]
+2021-02-18 -- 20:09:40:940 -- http: GET -- /info/listTech -- 223f7910-d899-44df-97c3-05d11fa10b92 -- 304 -- - - 8.787 ms
+2021-02-18 -- 20:09:40:940 -- info: commit
+2021-02-18 -- 20:09:40:940 -- debug: [object Object],[object Object],[object Object],[object Object]
+2021-02-18 -- 20:09:40:940 -- http: GET -- /info/listThematics -- 304ca196-ce83-4b15-aab3-61d9c07b4131 -- 304 -- - - 12.070 ms
+2021-02-18 -- 20:11:38:1138 -- info: Init transaction query
+2021-02-18 -- 20:11:38:1138 -- info: Init transaction query
+2021-02-18 -- 20:11:38:1138 -- info: commit
+2021-02-18 -- 20:11:38:1138 -- debug: [object Object],[object Object],[object Object],[object Object]
+2021-02-18 -- 20:11:38:1138 -- http: GET -- /info/listTech -- dab15fda-8dca-4010-b857-6b87d88a772f -- 304 -- - - 6.793 ms
+2021-02-18 -- 20:11:38:1138 -- info: commit
+2021-02-18 -- 20:11:38:1138 -- debug: [object Object],[object Object],[object Object],[object Object]
+2021-02-18 -- 20:11:38:1138 -- http: GET -- /info/listThematics -- 6b59e2e9-5573-406f-a937-77bfe5d571dc -- 304 -- - - 7.229 ms
+2021-02-18 -- 20:11:56:1156 -- http: GET -- /user/2 -- 0cfcae8b-ccc9-4e44-ac65-a6f6ed453950 -- 304 -- - - 11.430 ms
+2021-02-18 -- 20:11:56:1156 -- http: GET -- /user/2 -- 651dd4f7-3fa4-4fc5-b4dd-9d68f52008d0 -- 304 -- - - 7.169 ms
+2021-02-18 -- 20:11:56:1156 -- http: GET -- /user/2 -- 88f6bc40-3a72-4895-b55b-8adb0bc048b1 -- 304 -- - - 6.951 ms
+2021-02-18 -- 20:11:56:1156 -- http: GET -- /user/2 -- ca7a8939-7307-4196-a656-21d067b1e2ac -- 304 -- - - 6.679 ms
+2021-02-18 -- 20:11:58:1158 -- info: Init transaction query
+2021-02-18 -- 20:11:58:1158 -- info: Commit
+2021-02-18 -- 20:11:58:1158 -- http: GET -- /hackathon/search/filters?start_date=2021-02-18 -- d9c19802-d61b-4fc1-a8dc-dba4cb545793 -- 304 -- - - 11.512 ms
+2021-02-18 -- 20:11:58:1158 -- warn: 404 Router not found
+2021-02-18 -- 20:11:58:1158 -- http: GET -- /staticpordefecto -- ec43c2b9-5945-476e-a82f-84097091c913 -- 404 -- 30 - 1.169 ms
+2021-02-18 -- 20:11:59:1159 -- info: Init transaction query
+2021-02-18 -- 20:11:59:1159 -- info: Init transaction query
+2021-02-18 -- 20:11:59:1159 -- info: commit
+2021-02-18 -- 20:11:59:1159 -- debug: [object Object],[object Object],[object Object],[object Object]
+2021-02-18 -- 20:11:59:1159 -- http: GET -- /info/listTech -- 08cc5ab9-5aac-4f28-8a48-e1cd54aea495 -- 304 -- - - 6.088 ms
+2021-02-18 -- 20:11:59:1159 -- info: commit
+2021-02-18 -- 20:11:59:1159 -- debug: [object Object],[object Object],[object Object],[object Object]
+2021-02-18 -- 20:11:59:1159 -- http: GET -- /info/listThematics -- b76c73e0-8825-478b-aa15-3ad67277f6b1 -- 304 -- - - 7.981 ms
+2021-02-18 -- 20:14:22:1422 -- info: Is organizer and state ACTIVE
+2021-02-18 -- 20:14:22:1422 -- debug: Validate fields ok!!
+2021-02-18 -- 20:14:22:1422 -- info: Init transaction query
+2021-02-18 -- 20:14:22:1422 -- error: Duplicate entry 'python' for key 'tech.tech_name'
+2021-02-18 -- 20:14:22:1422 -- info: rollback
+2021-02-18 -- 20:14:22:1422 -- error:  Error in create new a hackathon: Duplicate entry 'python' for key 'tech.tech_name' 
+2021-02-18 -- 20:14:22:1422 -- http: POST -- /createhackathon -- 2 -- 500 -- 95 - 399.946 ms
+2021-02-18 -- 20:14:56:1456 -- info: Is organizer and state ACTIVE
+2021-02-18 -- 20:14:56:1456 -- debug: Validate fields ok!!
+2021-02-18 -- 20:14:56:1456 -- info: Init transaction query
+2021-02-18 -- 20:15:47:1547 -- error: Lock wait timeout exceeded; try restarting transaction
+2021-02-18 -- 20:15:47:1547 -- info: rollback
+2021-02-18 -- 20:15:47:1547 -- error:  Error in create new a hackathon: Lock wait timeout exceeded; try restarting transaction 
+2021-02-18 -- 20:15:47:1547 -- http: POST -- /createhackathon -- 2 -- 500 -- 100 - 51317.431 ms
+2021-02-18 -- 20:15:53:1553 -- info: Init transaction query
+2021-02-18 -- 20:15:53:1553 -- info: Commit
+2021-02-18 -- 20:15:53:1553 -- http: GET -- /hackathon/search/filters?start_date=2021-02-18 -- 72b11124-6c07-45c2-84e4-e1910bcf8d98 -- 200 -- 687 - 75.022 ms
+2021-02-18 -- 20:15:53:1553 -- warn: 404 Router not found
+2021-02-18 -- 20:15:53:1553 -- http: GET -- /staticpordefecto -- 06d1a0bb-c475-4d19-9d1d-1bac8a732079 -- 404 -- 30 - 1.200 ms
+2021-02-18 -- 20:15:54:1554 -- http: GET -- /user/2 -- 86397b8c-b418-436e-8806-387c8f67b226 -- 304 -- - - 7.498 ms
+2021-02-18 -- 20:15:54:1554 -- http: GET -- /user/2 -- c5e63594-e274-4c67-8672-a105d5831c36 -- 304 -- - - 6.871 ms
+2021-02-18 -- 20:15:54:1554 -- http: GET -- /user/2 -- b31648e4-2721-4c49-a8f8-d3d330d81db7 -- 304 -- - - 7.045 ms
+2021-02-18 -- 20:15:54:1554 -- http: GET -- /user/2 -- dbe3aa88-3c6f-4e33-99bd-71f29291cd87 -- 304 -- - - 9.258 ms
+2021-02-18 -- 20:15:55:1555 -- info: Init transaction query
+2021-02-18 -- 20:15:55:1555 -- info: Init transaction query
+2021-02-18 -- 20:15:55:1555 -- info: commit
+2021-02-18 -- 20:15:55:1555 -- debug: [object Object],[object Object],[object Object],[object Object]
+2021-02-18 -- 20:15:55:1555 -- http: GET -- /info/listTech -- c72e80b8-ca70-491a-9224-c0e12ce51f96 -- 304 -- - - 6.238 ms
+2021-02-18 -- 20:15:55:1555 -- info: commit
+2021-02-18 -- 20:15:55:1555 -- debug: [object Object],[object Object],[object Object],[object Object],[object Object]
+2021-02-18 -- 20:15:55:1555 -- http: GET -- /info/listThematics -- d9e4bd8c-30b8-4b97-bc20-0b4d0f4a741e -- 200 -- 112 - 11.056 ms
+2021-02-18 -- 20:16:01:161 -- http: GET -- /info/listSocialMedia -- 6fd88740-3d70-441c-872c-cc507500a6c1 -- 304 -- - - 1.202 ms
+2021-02-18 -- 20:16:01:161 -- info: Init transaction query
+2021-02-18 -- 20:16:01:161 -- info: Init transaction query
+2021-02-18 -- 20:16:01:161 -- info: commit
+2021-02-18 -- 20:16:01:161 -- debug: [object Object],[object Object],[object Object],[object Object]
+2021-02-18 -- 20:16:01:161 -- http: GET -- /info/listTech -- 9800b757-55cd-4802-a0f9-bc8f1d24fa3d -- 304 -- - - 4.613 ms
+2021-02-18 -- 20:16:01:161 -- info: commit
+2021-02-18 -- 20:16:01:161 -- debug: [object Object],[object Object],[object Object],[object Object],[object Object]
+2021-02-18 -- 20:16:01:161 -- http: GET -- /info/listThematics -- 843c51d1-c249-4bc3-b5b7-37cacdc09a49 -- 304 -- - - 6.845 ms
+2021-02-18 -- 20:16:12:1612 -- http: GET -- /get?id=9 -- cc0e1fa2-6a73-4bfe-934a-93122106c960 -- 200 -- 503 - 2.092 ms
+2021-02-18 -- 20:16:12:1612 -- info: Init transaction query
+2021-02-18 -- 20:16:12:1612 -- info: Init transaction query
+2021-02-18 -- 20:16:12:1612 -- info: commit
+2021-02-18 -- 20:16:12:1612 -- debug: [object Object],[object Object],[object Object],[object Object],[object Object]
+2021-02-18 -- 20:16:12:1612 -- http: GET -- /info/listThematics -- 03092e5f-b985-4750-98a2-f773e13b2b50 -- 304 -- - - 8.138 ms
+2021-02-18 -- 20:16:12:1612 -- info: commit
+2021-02-18 -- 20:16:12:1612 -- debug: [object Object],[object Object],[object Object],[object Object]
+2021-02-18 -- 20:16:12:1612 -- http: GET -- /info/listTech -- b13d9710-03b0-4a6f-be7e-b046dd82bae7 -- 304 -- - - 14.218 ms
+2021-02-18 -- 20:16:29:1629 -- info: Init transaction query
+2021-02-18 -- 20:16:29:1629 -- info: Init transaction query
+2021-02-18 -- 20:16:29:1629 -- info: commit
+2021-02-18 -- 20:16:29:1629 -- debug: [object Object],[object Object],[object Object],[object Object],[object Object]
+2021-02-18 -- 20:16:29:1629 -- http: GET -- /info/listThematics -- 42a6d442-15e6-4bbc-958f-a51993c78815 -- 304 -- - - 6.403 ms
+2021-02-18 -- 20:16:29:1629 -- http: GET -- /get?id=9 -- 8800a4a4-02ca-4a2d-8f3b-6e7a00859a91 -- 304 -- - - 5.717 ms
+2021-02-18 -- 20:16:29:1629 -- info: commit
+2021-02-18 -- 20:16:29:1629 -- debug: [object Object],[object Object],[object Object],[object Object]
+2021-02-18 -- 20:16:29:1629 -- http: GET -- /info/listTech -- f378e8bd-5efd-4bf9-84aa-9d97377d415c -- 304 -- - - 12.578 ms
+2021-02-18 -- 20:16:34:1634 -- http: GET -- /info/listSocialMedia -- b4813a80-92d9-4cee-bfb7-5e2799a9daae -- 304 -- - - 0.572 ms
+2021-02-18 -- 20:16:34:1634 -- info: Init transaction query
+2021-02-18 -- 20:16:34:1634 -- info: Init transaction query
+2021-02-18 -- 20:16:34:1634 -- http: GET -- /get?id=9 -- f0133b6f-06aa-494f-832b-d6b0ed64f81c -- 304 -- - - 3.103 ms
+2021-02-18 -- 20:16:34:1634 -- info: commit
+2021-02-18 -- 20:16:34:1634 -- debug: [object Object],[object Object],[object Object],[object Object],[object Object]
+2021-02-18 -- 20:16:34:1634 -- http: GET -- /info/listThematics -- b1e5d5a0-eff4-491e-9637-17a5cc8d8996 -- 304 -- - - 12.523 ms
+2021-02-18 -- 20:16:34:1634 -- info: commit
+2021-02-18 -- 20:16:34:1634 -- debug: [object Object],[object Object],[object Object],[object Object]
+2021-02-18 -- 20:16:34:1634 -- http: GET -- /info/listTech -- 34068725-2577-44cd-8f4a-89391f132c64 -- 304 -- - - 17.905 ms
+2021-02-18 -- 20:16:44:1644 -- http: GET -- /info/listSocialMedia -- a4bd27e8-6229-43f1-afdf-9c5e1c6f5e4a -- 304 -- - - 0.483 ms
+2021-02-18 -- 20:16:44:1644 -- info: Init transaction query
+2021-02-18 -- 20:16:44:1644 -- info: Init transaction query
+2021-02-18 -- 20:16:44:1644 -- http: GET -- /get?id=9 -- 4c7ca8b9-9ab9-4b5b-b8ff-c93c2e62be8a -- 304 -- - - 3.992 ms
+2021-02-18 -- 20:16:44:1644 -- info: commit
+2021-02-18 -- 20:16:44:1644 -- debug: [object Object],[object Object],[object Object],[object Object]
+2021-02-18 -- 20:16:44:1644 -- http: GET -- /info/listTech -- 934c2e79-efbb-432e-a066-bb4abe8c933f -- 304 -- - - 9.667 ms
+2021-02-18 -- 20:16:44:1644 -- info: commit
+2021-02-18 -- 20:16:44:1644 -- debug: [object Object],[object Object],[object Object],[object Object],[object Object]
+2021-02-18 -- 20:16:44:1644 -- http: GET -- /info/listThematics -- 8c030ef6-4636-4bcd-9a19-4c97baa7965f -- 304 -- - - 12.614 ms
+2021-02-18 -- 20:17:06:176 -- http: GET -- /info/listSocialMedia -- 67b703cf-626b-4566-91a3-c923e7650ba0 -- 304 -- - - 0.548 ms
+2021-02-18 -- 20:17:06:176 -- info: Init transaction query
+2021-02-18 -- 20:17:06:176 -- info: Init transaction query
+2021-02-18 -- 20:17:06:176 -- info: commit
+2021-02-18 -- 20:17:06:176 -- debug: [object Object],[object Object],[object Object],[object Object]
+2021-02-18 -- 20:17:06:176 -- http: GET -- /info/listTech -- c6673f99-2816-412b-9030-d2b37cf45491 -- 304 -- - - 5.643 ms
+2021-02-18 -- 20:17:06:176 -- info: commit
+2021-02-18 -- 20:17:06:176 -- debug: [object Object],[object Object],[object Object],[object Object],[object Object]
+2021-02-18 -- 20:17:06:176 -- http: GET -- /info/listThematics -- 073b9615-4660-47a2-85e5-71ac533c81a3 -- 304 -- - - 7.433 ms
+2021-02-18 -- 20:17:06:176 -- http: GET -- /get?id=9 -- e5ef0748-b124-491b-bd1d-ed8749219964 -- 304 -- - - 2.901 ms
+2021-02-18 -- 20:17:37:1737 -- info: Init transaction query
+2021-02-18 -- 20:17:37:1737 -- info: Init transaction query
+2021-02-18 -- 20:17:37:1737 -- info: commit
+2021-02-18 -- 20:17:37:1737 -- debug: [object Object],[object Object],[object Object],[object Object]
+2021-02-18 -- 20:17:37:1737 -- http: GET -- /info/listTech -- 352cec98-b8e3-4dc5-bc44-c539d53d0007 -- 304 -- - - 9.167 ms
+2021-02-18 -- 20:17:37:1737 -- http: GET -- /get?id=9 -- 69eea4b6-b76b-4f90-8020-839a272a4e2f -- 304 -- - - 6.094 ms
+2021-02-18 -- 20:17:37:1737 -- info: commit
+2021-02-18 -- 20:17:37:1737 -- debug: [object Object],[object Object],[object Object],[object Object],[object Object]
+2021-02-18 -- 20:17:37:1737 -- http: GET -- /info/listThematics -- 2f285b71-183f-4ab9-8e67-f6af62a90306 -- 304 -- - - 11.726 ms
+2021-02-18 -- 20:18:03:183 -- info: Init transaction query
+2021-02-18 -- 20:18:03:183 -- info: Init transaction query
+2021-02-18 -- 20:18:03:183 -- http: GET -- /get?id=9 -- 05e9b07b-ca78-4d25-a0fa-61ca0e97bce8 -- 304 -- - - 3.976 ms
+2021-02-18 -- 20:18:03:183 -- info: commit
+2021-02-18 -- 20:18:03:183 -- debug: [object Object],[object Object],[object Object],[object Object],[object Object]
+2021-02-18 -- 20:18:03:183 -- http: GET -- /info/listThematics -- 4f8e60e4-d33f-4401-884d-5f4572477c34 -- 304 -- - - 9.906 ms
+2021-02-18 -- 20:18:03:183 -- info: commit
+2021-02-18 -- 20:18:03:183 -- debug: [object Object],[object Object],[object Object],[object Object]
+2021-02-18 -- 20:18:03:183 -- http: GET -- /info/listTech -- 7c7a5f6e-157a-4e0b-86bd-e181abb36847 -- 304 -- - - 13.897 ms
+2021-02-18 -- 20:18:09:189 -- info: Init transaction query
+2021-02-18 -- 20:18:09:189 -- info: Init transaction query
+2021-02-18 -- 20:18:09:189 -- http: GET -- /get?id=9 -- 17059d8c-9c08-495b-9e50-9be7a140ff6e -- 304 -- - - 3.096 ms
+2021-02-18 -- 20:18:09:189 -- info: commit
+2021-02-18 -- 20:18:09:189 -- debug: [object Object],[object Object],[object Object],[object Object],[object Object]
+2021-02-18 -- 20:18:09:189 -- http: GET -- /info/listThematics -- 89beb31d-3e8c-4221-a00e-bfa10a11f26e -- 304 -- - - 7.763 ms
+2021-02-18 -- 20:18:09:189 -- info: commit
+2021-02-18 -- 20:18:09:189 -- debug: [object Object],[object Object],[object Object],[object Object]
+2021-02-18 -- 20:18:09:189 -- http: GET -- /info/listTech -- 1dab8967-d31e-4efb-9b68-e6410d3740d3 -- 304 -- - - 11.542 ms
+2021-02-18 -- 20:18:25:1825 -- http: GET -- /info/listSocialMedia -- 739b877a-9195-4f71-9119-d9c87a91eda7 -- 304 -- - - 0.469 ms
+2021-02-18 -- 20:18:26:1826 -- info: Init transaction query
+2021-02-18 -- 20:18:26:1826 -- info: Init transaction query
+2021-02-18 -- 20:18:26:1826 -- info: commit
+2021-02-18 -- 20:18:26:1826 -- debug: [object Object],[object Object],[object Object],[object Object],[object Object]
+2021-02-18 -- 20:18:26:1826 -- http: GET -- /info/listThematics -- 9fda3f93-ceab-4378-a165-ab328a07ee57 -- 304 -- - - 6.375 ms
+2021-02-18 -- 20:18:26:1826 -- http: GET -- /get?id=9 -- 8cf18792-f795-4583-87de-96523d388e63 -- 304 -- - - 5.058 ms
+2021-02-18 -- 20:18:26:1826 -- info: commit
+2021-02-18 -- 20:18:26:1826 -- debug: [object Object],[object Object],[object Object],[object Object]
+2021-02-18 -- 20:18:26:1826 -- http: GET -- /info/listTech -- 20998255-b44a-48bd-8229-27588c5cc5fa -- 304 -- - - 14.048 ms
+2021-02-18 -- 20:19:37:1937 -- info: Init transaction query
+2021-02-18 -- 20:19:37:1937 -- info: Init transaction query
+2021-02-18 -- 20:19:37:1937 -- http: GET -- /get?id=9 -- 58bba66d-90b9-480e-bf2c-e1d53809c563 -- 304 -- - - 3.009 ms
+2021-02-18 -- 20:19:37:1937 -- info: commit
+2021-02-18 -- 20:19:37:1937 -- debug: [object Object],[object Object],[object Object],[object Object],[object Object]
+2021-02-18 -- 20:19:37:1937 -- http: GET -- /info/listThematics -- e37a6c4d-9d95-4980-ad9e-4beb28e90ca4 -- 304 -- - - 8.577 ms
+2021-02-18 -- 20:19:37:1937 -- info: commit
+2021-02-18 -- 20:19:37:1937 -- debug: [object Object],[object Object],[object Object],[object Object]
+2021-02-18 -- 20:19:37:1937 -- http: GET -- /info/listTech -- 544e9c43-2c6d-41c6-9d22-fc6866a8c55e -- 304 -- - - 12.447 ms
+2021-02-18 -- 20:19:47:1947 -- info: Init transaction query
+2021-02-18 -- 20:19:47:1947 -- info: Init transaction query
+2021-02-18 -- 20:19:47:1947 -- info: commit
+2021-02-18 -- 20:19:47:1947 -- debug: [object Object],[object Object],[object Object],[object Object]
+2021-02-18 -- 20:19:47:1947 -- http: GET -- /info/listTech -- 68733bcd-805d-4e02-9e3a-ed5ef8af8551 -- 304 -- - - 5.949 ms
+2021-02-18 -- 20:19:47:1947 -- info: commit
+2021-02-18 -- 20:19:47:1947 -- debug: [object Object],[object Object],[object Object],[object Object],[object Object]
+2021-02-18 -- 20:19:47:1947 -- http: GET -- /info/listThematics -- f4960532-eb1a-4b6b-a979-eb0d561a0a10 -- 304 -- - - 8.183 ms
+2021-02-18 -- 20:21:18:2118 -- http: GET -- /info/listSocialMedia -- 12fca95d-cc20-4a35-8107-b3236439f538 -- 304 -- - - 0.650 ms
+2021-02-18 -- 20:21:18:2118 -- info: Init transaction query
+2021-02-18 -- 20:21:18:2118 -- info: Commit
+2021-02-18 -- 20:21:18:2118 -- http: GET -- /hackathon/search/filters?start_date=2021-02-18 -- 9578460c-93a6-49ab-8383-3e2a2e5a8e18 -- 304 -- - - 8.783 ms
+2021-02-18 -- 20:21:18:2118 -- warn: 404 Router not found
+2021-02-18 -- 20:21:18:2118 -- http: GET -- /staticpordefecto -- c3889a4d-c5a7-43dd-a89c-d4b9382ea87d -- 404 -- 30 - 1.298 ms
+2021-02-18 -- 20:24:21:2421 -- http: GET -- /info/listSocialMedia -- 14e09f96-8eff-4583-b90a-b2d0391876ef -- 304 -- - - 0.481 ms
+2021-02-18 -- 20:29:56:2956 -- http: GET -- /blog/prepararse%20para -- 0eab6e18-6741-4222-894b-3008f4c73e2f -- 200 -- 2 - 1267.925 ms
+2021-02-18 -- 20:30:05:305 -- warn: 404 Router not found
+2021-02-18 -- 20:30:05:305 -- http: GET -- /blog/ -- 6a50998d-dcf2-45b6-b21b-ee6418ddceca -- 404 -- 30 - 1.053 ms
+2021-02-18 -- 20:32:28:3228 -- warn: 404 Router not found
+2021-02-18 -- 20:32:28:3228 -- http: GET -- /blog/ -- f14b0195-d4ea-47cd-9e7c-dd574d0acfbf -- 404 -- 30 - 0.850 ms
+2021-02-18 -- 20:32:33:3233 -- http: GET -- /blog/axax -- f9d3644f-c0a0-4060-996b-07ad9f8a45b7 -- 200 -- 2 - 2.232 ms
+2021-02-18 -- 20:32:44:3244 -- http: GET -- /blog/preparars -- 6a8f5262-3064-4d10-b496-7232c1c5a11c -- 200 -- 659 - 1.891 ms
+2021-02-18 -- 20:34:40:3440 -- http: GET -- /blog/* -- d7645b10-3efa-4e93-9d4e-90039a4b8ed4 -- 200 -- 2 - 1.300 ms
+2021-02-18 -- 20:34:50:3450 -- http: GET -- /blog/a -- 5d4ede44-3c1e-40a5-8c00-c4f83604f64b -- 200 -- 2 - 1.123 ms
+2021-02-18 -- 20:35:00:350 -- http: GET -- /blog/hac -- 27abf346-b41e-483f-aa5d-6c78634640fe -- 200 -- 659 - 1.264 ms
+2021-02-18 -- 20:35:11:3511 -- http: GET -- /blog/pro -- fa1fe8f1-4cd7-47f9-836e-9d48fbc3c9d4 -- 200 -- 1340 - 1.793 ms
+2021-02-18 -- 20:39:54:3954 -- info: listening on port 3001
+2021-02-18 -- 20:40:01:401 -- warn: 404 Router not found
+2021-02-18 -- 20:40:01:401 -- http: GET -- /blog/ -- d0f52996-e50d-44c7-a68e-7098ec59bdea -- 404 -- 30 - 5.686 ms
+2021-02-18 -- 20:40:03:403 -- warn: 404 Router not found
+2021-02-18 -- 20:40:03:403 -- http: GET -- /blog/ -- ee9ab4ba-d143-4842-99e4-cb65d746a705 -- 404 -- 30 - 2.060 ms
+2021-02-18 -- 20:40:04:404 -- warn: 404 Router not found
+2021-02-18 -- 20:40:04:404 -- http: GET -- /blog/ -- afe58ad9-2fe2-4af6-8179-9cb3e1450dfe -- 404 -- 30 - 1.533 ms
+2021-02-18 -- 20:40:05:405 -- warn: 404 Router not found
+2021-02-18 -- 20:40:05:405 -- http: GET -- /blog/ -- 44adb6e0-4f21-472e-802f-d48c957eb7a9 -- 404 -- 30 - 1.219 ms
+2021-02-18 -- 20:40:05:405 -- warn: 404 Router not found
+2021-02-18 -- 20:40:05:405 -- http: GET -- /blog/ -- 40bf775f-5168-4ade-a36e-3dca05612172 -- 404 -- 30 - 1.306 ms
+2021-02-18 -- 20:40:07:407 -- warn: 404 Router not found
+2021-02-18 -- 20:40:07:407 -- http: GET -- /blog/ -- 37d02511-2043-4c10-a74e-cbb387e775ce -- 404 -- 30 - 1.072 ms
+2021-02-18 -- 20:40:07:407 -- warn: 404 Router not found
+2021-02-18 -- 20:40:07:407 -- http: GET -- /blog/ -- 7a7d2f10-6bdd-40af-b00a-4406956d93ec -- 404 -- 30 - 1.293 ms
+2021-02-18 -- 20:40:08:408 -- warn: 404 Router not found
+2021-02-18 -- 20:40:08:408 -- http: GET -- /blog/ -- 3097baf0-4163-40e7-a7b7-029771415af4 -- 404 -- 30 - 1.646 ms
+2021-02-18 -- 20:40:08:408 -- warn: 404 Router not found
+2021-02-18 -- 20:40:08:408 -- http: GET -- /blog/ -- f5dce639-a6fa-4df4-bbe6-661937dfcf18 -- 404 -- 30 - 1.312 ms
+2021-02-18 -- 20:40:08:408 -- warn: 404 Router not found
+2021-02-18 -- 20:40:08:408 -- http: GET -- /blog/ -- 03131c42-cff6-4aa0-be5b-4300f1368231 -- 404 -- 30 - 1.053 ms
+2021-02-18 -- 20:40:39:4039 -- warn: 404 Router not found
+2021-02-18 -- 20:40:39:4039 -- http: GET -- /blog/?filter=a -- 38238bff-26f0-439e-87b7-54ef21fdf789 -- 404 -- 30 - 1.211 ms
+2021-02-18 -- 20:40:51:4051 -- warn: 404 Router not found
+2021-02-18 -- 20:40:51:4051 -- http: GET -- /blog/ -- 3d309101-4062-4603-8270-cfde3d582bbc -- 404 -- 30 - 1.094 ms
+2021-02-18 -- 20:40:53:4053 -- http: GET -- /blog/k -- 73fec570-2552-4192-8886-e3e1a1e27bfe -- 200 -- 659 - 6.408 ms
+2021-02-18 -- 20:42:55:4255 -- http: GET -- /blog/a -- ede09e15-336c-4822-8eaf-f90a72db9b54 -- 200 -- 1340 - 3.169 ms
+2021-02-18 -- 20:43:03:433 -- http: GET -- /blog/'' -- 8343f0dd-d5ed-42c1-8250-abb6947853d8 -- 200 -- 2 - 1.476 ms
+2021-02-18 -- 20:43:06:436 -- http: GET -- /blog/' -- e3eb316c-133b-49f5-a539-59bceb6507a5 -- 200 -- 2 - 1.884 ms
+2021-02-18 -- 20:43:08:438 -- warn: 404 Router not found
+2021-02-18 -- 20:43:08:438 -- http: GET -- /blog/ -- b540d982-5cf4-4d7a-8d6d-69ef40cdf1eb -- 404 -- 30 - 1.629 ms
+2021-02-18 -- 20:48:24:4824 -- info: listening on port 3001
+2021-02-18 -- 20:48:28:4828 -- http: GET -- /blog/ -- 31a28733-87d4-4390-80da-f5bf013b1502 -- 200 -- 1340 - 9.166 ms
+2021-02-18 -- 20:50:59:5059 -- http: GET -- /blog/ -- d8106df6-fc03-4c9a-ab7f-ba0784234501 -- 200 -- 2006 - 3.029 ms
+2021-02-18 -- 20:51:50:5150 -- info: listening on port 3001
+2021-02-18 -- 20:51:53:5153 -- http: GET -- /blog/ -- a3cd3287-5fe3-4620-8779-5a7ec9b36102 -- 200 -- 2006 - 8.382 ms
+2021-02-18 -- 20:52:02:522 -- info: listening on port 3001
+2021-02-18 -- 20:54:03:543 -- http: GET -- /blog -- 044c03ae-31f3-412c-9330-a25f84548257 -- 200 -- 2006 - 7.770 ms
+2021-02-18 -- 20:54:21:5421 -- http: GET -- /blog -- 647827f4-4f6f-4782-8f49-3bfcadd58559 -- 304 -- - - 2.505 ms
+2021-02-18 -- 20:59:49:5949 -- http: GET -- /blog -- 1613d611-1171-4bce-8afa-0d884f4c4d48 -- 304 -- - - 2.111 ms
+2021-02-18 -- 20:59:58:5958 -- http: GET -- /blog -- 734523cc-006e-4e23-8088-202e7fa6f46f -- 304 -- - - 1.563 ms
+2021-02-18 -- 20:59:58:5958 -- http: GET -- /info/listSocialMedia -- 2b7ad035-abd1-4c4e-9190-138cc99faa49 -- 304 -- - - 1.063 ms
+2021-02-18 -- 21:00:42:042 -- http: GET -- /blog -- f07cafe4-4f7d-4911-bdd5-0f8e5605f06b -- 304 -- - - 1.790 ms
+2021-02-18 -- 21:01:03:13 -- http: GET -- /blog -- 4cd0ac5c-f8fc-46ef-9fe9-d8971e1f67f9 -- 304 -- - - 1.962 ms
+2021-02-18 -- 21:19:59:1959 -- info: listening on port 3001
+2021-02-18 -- 21:20:18:2018 -- error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where id = '1'' at line 1
+2021-02-18 -- 21:20:18:2018 -- http: GET -- /blog/post/1 -- 81963189-bf75-484f-83a8-c85a948335eb -- 200 -- 160 - 8.369 ms
+2021-02-18 -- 21:20:38:2038 -- info: listening on port 3001
+2021-02-18 -- 21:20:42:2042 -- http: GET -- /blog/post/1 -- 75330220-251a-4258-8787-71585f17389a -- 200 -- 682 - 40.855 ms
+2021-02-18 -- 21:34:37:3437 -- http: GET -- /blog -- d8cb366f-2767-4c29-9303-4a416e33f528 -- 304 -- - - 3.942 ms
+2021-02-18 -- 21:34:46:3446 -- http: GET -- /blog -- 137b0acf-79ce-4834-a40c-44233dd6f49d -- 304 -- - - 2.480 ms
+2021-02-18 -- 21:38:10:3810 -- http: GET -- /blog -- e42c23f2-b242-4d71-8f8b-5bc2a2afa50e -- 304 -- - - 1.831 ms
