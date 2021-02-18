@@ -5420,3 +5420,22 @@
 2021-02-18 -- 12:08:10:810 -- http: GET -- /hackathon/search/filters?start_date=2021-02-18 -- 09e9fbdc-b38b-4c53-9f1f-dc0376a33407 -- 304 -- - - 7.299 ms
 2021-02-18 -- 12:08:10:810 -- warn: 404 Router not found
 2021-02-18 -- 12:08:10:810 -- http: GET -- /staticpordefecto -- b19fad81-d44f-4811-b340-5b499bb4c612 -- 404 -- 30 - 0.995 ms
+2021-02-18 -- 12:13:45:1345 -- info: User does not exist in the db
+2021-02-18 -- 12:13:45:1345 -- http: POST -- /login -- eb08bf31-34c4-4ae7-9de3-3169cfba019a -- 401 -- 40 - 3.448 ms
+2021-02-18 -- 12:14:06:146 -- debug: Login OK
+2021-02-18 -- 12:14:06:146 -- http: POST -- /login -- 2 -- 200 -- 780 - 82.830 ms
+2021-02-18 -- 12:14:06:146 -- info: Init transaction query
+2021-02-18 -- 12:14:06:146 -- info: Commit
+2021-02-18 -- 12:14:06:146 -- http: GET -- /hackathon/search/filters?start_date=2021-02-18 -- 1700480f-77bb-4e07-ae4f-f89e456cc280 -- 304 -- - - 7.275 ms
+2021-02-18 -- 12:14:06:146 -- warn: 404 Router not found
+2021-02-18 -- 12:14:06:146 -- http: GET -- /staticpordefecto -- 8fb3979d-727a-4f07-bcee-31f138f34234 -- 404 -- 30 - 1.379 ms
+2021-02-18 -- 12:14:19:1419 -- http: GET -- /user/2 -- 22b9fcc3-01fc-4023-9cba-486c205f432c -- 304 -- - - 5.379 ms
+2021-02-18 -- 12:14:19:1419 -- http: GET -- /user/2 -- 4578305b-e339-43d7-aaee-fbc69f4de1a2 -- 304 -- - - 8.001 ms
+2021-02-18 -- 12:14:19:1419 -- http: GET -- /user/2 -- 7a5c93c3-1c05-44db-b032-f69cfe845c69 -- 304 -- - - 5.315 ms
+2021-02-18 -- 12:14:19:1419 -- http: GET -- /user/2 -- 0a3bde87-b493-4c71-aa7c-2ff0664ea23b -- 304 -- - - 8.040 ms
+2021-02-18 -- 12:14:21:1421 -- info: Init transaction query
+2021-02-18 -- 12:14:21:1421 -- info: Commit
+2021-02-18 -- 12:14:21:1421 -- http: GET -- /hackathon/search/filters?start_date=2021-02-18 -- a5e41faa-8f5a-4096-9658-995663af9b37 -- 304 -- - - 7.745 ms
+2021-02-18 -- 12:14:21:1421 -- warn: 404 Router not found
+2021-02-18 -- 12:14:21:1421 -- http: GET -- /staticpordefecto -- a60723c2-5aeb-4deb-baea-8b75e14c9eb6 -- 404 -- 30 - 0.800 ms
+2021-02-18 -- 12:22:12:2212 -- http: GET -- /info/listSocialMedia -- f4fc4ba1-16c8-4bce-b5db-f469f0801e8b -- 304 -- - - 0.453 ms

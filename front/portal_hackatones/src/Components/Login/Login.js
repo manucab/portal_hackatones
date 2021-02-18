@@ -1,12 +1,14 @@
 import { useState } from "react";
 import { Link, Redirect } from "react-router-dom";
 import { useDispatch, useSelector } from 'react-redux';
-// import Popup from 'reactjs-popup'
+import './Login.css'
 
 function Login() {
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
   const [process, setProcess] = useState('')
+  const [showPassword, setShowPassword] = useState(false)
+
 
   const login = useSelector(s => s.login)
   const dispatch = useDispatch()
@@ -39,14 +41,18 @@ function Login() {
   return (
 
     
-    <form className="page login" onSubmit={handleSubmit}>
+    <form className="page-login" onSubmit={handleSubmit}>
         <div>
             <input placeholder="email ..." type="email" required value={email} onChange={e => setEmail(e.target.value)} />
         </div>
         <div>
-            <input placeholder="password ..." type="password" minLength="8" required value={password} onChange={e => setPassword(e.target.value)} />
+            <input placeholder="password ..." type={showPassword? 'text' : 'password'} minLength="8" required value={password} onChange={e => setPassword(e.target.value)} />
+            <button className="show-password" type="button" onClick={() => setShowPassword(!showPassword)}>👁</button>
         </div>
-        <button>Iniciar sesión</button>
+        <div className="login-buttons">
+          <button>Iniciar sesión</button>
+        </div>
+        
         <div className='errorMessage'>{process}</div>
         <p>
             <Link to="/forgot-password">No recuerdas tu contraseña?</Link>
