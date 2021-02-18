@@ -19,7 +19,7 @@ function HackathonsJoined () {
         <div className="hackathonsJoined">
 
             {hackathonsJoined.length !== 0 ?
-                <CarouselHackathons hackathons={hackathonsJoined} />:
+                <CarouselHackathons hackathons={hackathonsJoined} organizer={false} />:
                 <p>No te has inscrito en ningún hackathon</p>}
 
         </div>

@@ -8,7 +8,6 @@
 .hackathon {
     box-sizing: border-box;
     width: 200px;
-    height: 180px;
     border: solid 1px black;
     border-radius: 10%;
     padding: 10px;
@@ -21,9 +20,17 @@
     margin-bottom: 5px;
 }
 
-.hackathonResults {
+.hackathon-results {
     display: flex;
     justify-content: center;
+}
+
+.hackathon-stats {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 }
 
 .ranking{
@@ -69,7 +76,41 @@
     background-color: #A3A4A6;
     border: solid 0.5px #F6E561;
     border-radius: 10%;
-    color: aliceblue;
+    color: white;
+    font-weight: bold;
+
+}
+
+.avg-rate {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    text-align: center;
+
+}
+
+.participants {
+
+    display: flex;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+
+}
+
+.modify-hack {
+
+    height: 30px;
+    cursor: pointer;
+    background-color: #A3A4A6;
+    border: solid 0.5px #F6E561;
+    border-radius: 10%;
+    color: white;
     font-weight: bold;
 
 }

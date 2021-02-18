@@ -15,10 +15,13 @@ const getProfileInfo = async (id) => {
       group by a.id`;
     
     const queryHackathonsCreated = `select a.id ,a.hackathon_name, a.hackathon_place,a.city,a.hackathon_status,a.start_date, a.end_date,a.thematic,
-      group_concat(d.tech_name separator ',') as techs
+      group_concat(d.tech_name separator ',') as techs,
+      round(avg(distinct e.rate),1) as avg_rate,
+      count(distinct e.id_competitor) as participants
       from hackathon a 
       join hackathon_tech b on b.id_hackathon = a.id
       join tech d on d.id = b.id_tech
+      join competitor_hackathon e on e.id_hackathon = a.id
       where a.id_organizer=? and not a.hackathon_status = 'cancelado'
       group by a.id`;
   

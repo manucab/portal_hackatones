@@ -835,3 +835,15 @@
 >>>>>>> f9e2e7159f5f2faf5ea4ed1db80a89fd6907dde4
 2021-02-17 -- 10:12:53:1253 -- error: jwt expired
 2021-02-17 -- 10:14:26:1426 -- error: jwt malformed
+2021-02-18 -- 12:06:11:611 -- error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'distinct e.id_competitor) as participants
+      from hackathon a 
+      join hac' at line 4
+2021-02-18 -- 12:06:11:611 -- error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'distinct e.id_competitor) as participants
+      from hackathon a 
+      join hac' at line 4
+2021-02-18 -- 12:06:11:611 -- error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'distinct e.id_competitor) as participants
+      from hackathon a 
+      join hac' at line 4
+2021-02-18 -- 12:06:11:611 -- error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'distinct e.id_competitor) as participants
+      from hackathon a 
+      join hac' at line 4

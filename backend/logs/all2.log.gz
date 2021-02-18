@@ -5309,3 +5309,114 @@
 2021-02-17 -- 19:09:24:924 -- info: listening on port 3001
 2021-02-17 -- 19:11:14:1114 -- info: listening on port 3001
 2021-02-17 -- 19:11:55:1155 -- info: listening on port 3001
+2021-02-18 -- 10:28:23:2823 -- info: listening on port 3001
+2021-02-18 -- 10:30:38:3038 -- warn: 404 Router not found
+2021-02-18 -- 10:30:38:3038 -- http: GET -- /info/listSocialMedia -- f5a847bf-60fb-4387-860f-1d03d0714752 -- 404 -- 30 - 4.713 ms
+2021-02-18 -- 10:31:04:314 -- warn: 404 Router not found
+2021-02-18 -- 10:31:04:314 -- http: GET -- /info/listSocialMedia -- 4f45ccc4-c194-484e-8b62-6fcb73c5e4f8 -- 404 -- 30 - 1.809 ms
+2021-02-18 -- 10:31:08:318 -- warn: 404 Router not found
+2021-02-18 -- 10:31:08:318 -- http: GET -- /info/listSocialMedia -- f39f16f4-94e4-443f-812a-0fd827fa1243 -- 404 -- 30 - 1.128 ms
+2021-02-18 -- 10:31:09:319 -- warn: 404 Router not found
+2021-02-18 -- 10:31:09:319 -- http: GET -- /info/listSocialMedia -- 775313cd-ca70-4c50-84dc-46328baabd15 -- 404 -- 30 - 1.191 ms
+2021-02-18 -- 10:31:30:3130 -- warn: 404 Router not found
+2021-02-18 -- 10:31:30:3130 -- http: GET -- /info/listSocialMedia -- c68a43c4-2966-414e-9078-2b2326319d40 -- 404 -- 30 - 1.178 ms
+2021-02-18 -- 10:31:30:3130 -- info: Init transaction query
+2021-02-18 -- 10:31:30:3130 -- info: Commit
+2021-02-18 -- 10:31:30:3130 -- http: GET -- /hackathon/search/filters?start_date=2021-02-18 -- 8d9e5afe-48df-4c75-ae79-2863b072b26f -- 200 -- 306 - 65.051 ms
+2021-02-18 -- 10:31:30:3130 -- warn: 404 Router not found
+2021-02-18 -- 10:31:30:3130 -- http: GET -- /staticpordefecto -- 731f2999-1f8f-4cfc-9b27-5da2c88795b4 -- 404 -- 30 - 1.258 ms
+2021-02-18 -- 10:31:46:3146 -- http: GET -- /user/1 -- d151128a-8631-481a-add8-1d817100a82b -- 200 -- 2013 - 116.957 ms
+2021-02-18 -- 10:31:46:3146 -- http: GET -- /user/1 -- 1295a73e-4b2d-47e7-add8-fa349851ac74 -- 304 -- - - 9.900 ms
+2021-02-18 -- 10:31:46:3146 -- http: GET -- /user/1 -- 706ab418-8665-4306-9d8f-cee74f3d81e2 -- 304 -- - - 8.209 ms
+2021-02-18 -- 10:31:46:3146 -- http: GET -- /user/1 -- c559c0ca-354e-440b-b2b8-c8984d7c4302 -- 304 -- - - 6.172 ms
+2021-02-18 -- 10:35:11:3511 -- warn: 404 Router not found
+2021-02-18 -- 10:35:11:3511 -- http: GET -- /info/listSocialMedia -- 7f0cc080-f66d-4ac7-840b-7fd06e7f9c52 -- 404 -- 30 - 1.030 ms
+2021-02-18 -- 10:35:11:3511 -- http: GET -- /user/1 -- 49374f75-2db9-4c86-9c2f-8f99555b31f7 -- 200 -- 2013 - 8.592 ms
+2021-02-18 -- 10:35:11:3511 -- http: GET -- /user/1 -- 295cab7a-fe96-4fb2-a908-166b464613c4 -- 304 -- - - 8.553 ms
+2021-02-18 -- 10:35:11:3511 -- http: GET -- /user/1 -- ab1fa8d8-c684-4c80-b8af-e5ee5c1301b7 -- 304 -- - - 8.935 ms
+2021-02-18 -- 10:35:11:3511 -- http: GET -- /user/1 -- 901eaa17-16d8-4577-9c2b-d98d97e31ce7 -- 304 -- - - 9.420 ms
+2021-02-18 -- 10:35:52:3552 -- http: GET -- /user/1 -- 68f05ee7-a62b-42ef-bc42-73e24e182879 -- 304 -- - - 5.131 ms
+2021-02-18 -- 10:50:51:5051 -- info: listening on port 3001
+2021-02-18 -- 10:50:55:5055 -- http: GET -- /info/listSocialMedia -- 213bcf14-c2ef-4afc-b55e-9488c7da6be0 -- 200 -- 215 - 3.598 ms
+2021-02-18 -- 10:50:55:5055 -- http: GET -- /user/1 -- dd906128-4bac-47b2-83d9-34203579d641 -- 200 -- 2111 - 22.390 ms
+2021-02-18 -- 10:50:55:5055 -- http: GET -- /user/1 -- aac1f80b-0e9b-463e-b3c6-14864b44f8fd -- 304 -- - - 8.017 ms
+2021-02-18 -- 10:50:55:5055 -- http: GET -- /user/1 -- abb9a3bb-999b-4068-8262-176de0b70583 -- 304 -- - - 8.168 ms
+2021-02-18 -- 10:50:55:5055 -- http: GET -- /user/1 -- 3e87bb36-48cb-4cf1-89b8-859e58e40779 -- 304 -- - - 10.016 ms
+2021-02-18 -- 11:03:23:323 -- http: GET -- /user/1 -- 607baa89-525a-4385-acbd-b3b3d95411ee -- 304 -- - - 311.032 ms
+2021-02-18 -- 11:03:23:323 -- http: GET -- /user/1 -- 16adf6ed-f125-418a-ad89-8768dc66dc11 -- 304 -- - - 5.461 ms
+2021-02-18 -- 11:03:23:323 -- http: GET -- /user/1 -- 0a20c642-54c8-4c4e-818c-981343246e65 -- 304 -- - - 4.692 ms
+2021-02-18 -- 11:03:23:323 -- http: GET -- /user/1 -- 1e7cc4de-6bf3-48ba-8592-84225881c355 -- 304 -- - - 4.989 ms
+2021-02-18 -- 11:09:25:925 -- info: listening on port 3001
+2021-02-18 -- 11:11:53:1153 -- http: GET -- /info/listSocialMedia -- 810d7040-79b0-4e95-93b5-0bebc9bba740 -- 304 -- - - 5.536 ms
+2021-02-18 -- 11:11:53:1153 -- http: GET -- /user/1 -- 22d3f8f5-da15-497a-b2bb-591f4505ca4b -- 200 -- 2093 - 22.530 ms
+2021-02-18 -- 11:11:53:1153 -- http: GET -- /user/1 -- 0d096a27-82f3-4db4-bf73-3e23ddb11028 -- 304 -- - - 10.151 ms
+2021-02-18 -- 11:11:53:1153 -- http: GET -- /user/1 -- d134d156-507e-4fef-b180-87b09314197e -- 304 -- - - 6.729 ms
+2021-02-18 -- 11:11:53:1153 -- http: GET -- /user/1 -- d4349fd3-5da6-4997-a6a1-a3af832c0cbf -- 304 -- - - 9.448 ms
+2021-02-18 -- 11:18:07:187 -- http: GET -- /info/listSocialMedia -- 11fba4ce-af9d-4726-a9f5-c872eb4595a4 -- 304 -- - - 0.557 ms
+2021-02-18 -- 11:18:07:187 -- http: GET -- /user/1 -- f65785c6-456e-4f98-88f2-23e2f16c2843 -- 304 -- - - 7.955 ms
+2021-02-18 -- 11:18:07:187 -- http: GET -- /user/1 -- f14d470c-5dcf-4d5c-a8d3-35b3d034c5b1 -- 304 -- - - 8.131 ms
+2021-02-18 -- 11:18:07:187 -- http: GET -- /user/1 -- 1ba55f99-5852-431f-b6a4-92ad19739dc9 -- 304 -- - - 9.073 ms
+2021-02-18 -- 11:18:07:187 -- http: GET -- /user/1 -- 2fd9fa88-1ee7-4f25-a7fb-f224668f2b20 -- 304 -- - - 6.658 ms
+2021-02-18 -- 11:19:05:195 -- http: GET -- /info/listSocialMedia -- 52d52fdc-2fa9-4557-a40e-0c0114338b11 -- 304 -- - - 0.532 ms
+2021-02-18 -- 11:19:05:195 -- http: GET -- /user/1 -- c728b19b-6da2-4f84-b926-010814ac2e8e -- 304 -- - - 8.887 ms
+2021-02-18 -- 11:19:05:195 -- http: GET -- /user/1 -- ea716acf-dfc6-423c-a403-e9e8e68f390b -- 304 -- - - 8.422 ms
+2021-02-18 -- 11:19:05:195 -- http: GET -- /user/1 -- 87193c4e-3473-401f-9dba-2471efaa211b -- 304 -- - - 9.337 ms
+2021-02-18 -- 11:19:05:195 -- http: GET -- /user/1 -- 66e3c011-ab23-48a4-9489-7e825e0b2ff5 -- 304 -- - - 7.840 ms
+2021-02-18 -- 11:26:10:2610 -- http: GET -- /user/1 -- d7781591-13da-48b4-8f8d-ce24d0fa764e -- 304 -- - - 6.241 ms
+2021-02-18 -- 11:45:08:458 -- info: listening on port 3001
+2021-02-18 -- 11:45:12:4512 -- http: GET -- /info/listSocialMedia -- f42a9597-3e65-478d-af83-771833fbb370 -- 304 -- - - 3.661 ms
+2021-02-18 -- 11:45:13:4513 -- http: GET -- /user/1 -- 79197408-c483-4532-ab7e-f7737b80f787 -- 200 -- 1823 - 22.947 ms
+2021-02-18 -- 11:45:13:4513 -- http: GET -- /user/1 -- 936f7406-ae0e-470d-ae38-3ecf363c58f8 -- 304 -- - - 7.857 ms
+2021-02-18 -- 11:45:13:4513 -- http: GET -- /user/1 -- ebbd6522-0836-486d-b754-63db42bbdb52 -- 304 -- - - 6.695 ms
+2021-02-18 -- 11:45:13:4513 -- http: GET -- /user/1 -- 306451ee-08dd-46b9-aedc-4708773b11d3 -- 304 -- - - 7.292 ms
+2021-02-18 -- 11:46:11:4611 -- info: listening on port 3001
+2021-02-18 -- 11:46:13:4613 -- http: GET -- /info/listSocialMedia -- 7bc1d43d-4a2d-4eeb-8b6c-01eb0eceae16 -- 304 -- - - 4.350 ms
+2021-02-18 -- 11:46:13:4613 -- http: GET -- /user/1 -- 2be27dd7-9da7-4cb4-91ac-0905e818ffc8 -- 200 -- 2093 - 22.998 ms
+2021-02-18 -- 11:46:13:4613 -- http: GET -- /user/1 -- 8fcc78e2-9d63-47b4-a4ce-42d416f72770 -- 304 -- - - 7.060 ms
+2021-02-18 -- 11:46:13:4613 -- http: GET -- /user/1 -- 92809c3a-67f3-446b-acc7-0ea37e8639e7 -- 304 -- - - 7.895 ms
+2021-02-18 -- 11:46:13:4613 -- http: GET -- /user/1 -- 33a90aba-2312-4559-bb12-9408a8540fda -- 304 -- - - 8.248 ms
+2021-02-18 -- 12:06:04:64 -- info: listening on port 3001
+2021-02-18 -- 12:06:11:611 -- http: GET -- /info/listSocialMedia -- accdfe36-ffad-47fc-b557-2a30f8e9641a -- 304 -- - - 4.851 ms
+2021-02-18 -- 12:06:11:611 -- error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'distinct e.id_competitor) as participants
+      from hackathon a 
+      join hac' at line 4
+2021-02-18 -- 12:06:11:611 -- http: GET -- /user/1 -- 954b47f2-6e1a-4bc0-9b93-c4edb807fd1a -- 200 -- 226 - 22.660 ms
+2021-02-18 -- 12:06:11:611 -- error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'distinct e.id_competitor) as participants
+      from hackathon a 
+      join hac' at line 4
+2021-02-18 -- 12:06:11:611 -- http: GET -- /user/1 -- bbca4eed-5066-431b-9a04-738b30b18f60 -- 304 -- - - 9.387 ms
+2021-02-18 -- 12:06:11:611 -- error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'distinct e.id_competitor) as participants
+      from hackathon a 
+      join hac' at line 4
+2021-02-18 -- 12:06:11:611 -- http: GET -- /user/1 -- ba86d6ea-6400-418a-9b21-cbf4d89feba4 -- 304 -- - - 5.176 ms
+2021-02-18 -- 12:06:11:611 -- error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'distinct e.id_competitor) as participants
+      from hackathon a 
+      join hac' at line 4
+2021-02-18 -- 12:06:11:611 -- http: GET -- /user/1 -- 4a43f8e6-86a9-4280-a8ed-b844f2d22a33 -- 304 -- - - 9.097 ms
+2021-02-18 -- 12:07:04:74 -- info: listening on port 3001
+2021-02-18 -- 12:07:08:78 -- http: GET -- /info/listSocialMedia -- c4eb4976-e236-41f0-bb00-751fbcacc0ac -- 304 -- - - 4.054 ms
+2021-02-18 -- 12:07:09:79 -- http: GET -- /user/1 -- 37a9e2dc-a24a-4916-b76a-1fe769ffdb98 -- 200 -- 2093 - 24.775 ms
+2021-02-18 -- 12:07:09:79 -- http: GET -- /user/1 -- ca7f1eb0-d117-4f98-836c-44e5dd5c5d4c -- 304 -- - - 8.912 ms
+2021-02-18 -- 12:07:09:79 -- http: GET -- /user/1 -- daa7d614-684f-4132-b88d-dd82b0f076f2 -- 304 -- - - 5.476 ms
+2021-02-18 -- 12:07:09:79 -- http: GET -- /user/1 -- 3c3d4b56-49f9-4755-b665-dcae91a48c49 -- 304 -- - - 8.782 ms
+2021-02-18 -- 12:07:39:739 -- info: Init transaction query
+2021-02-18 -- 12:07:39:739 -- info: Commit
+2021-02-18 -- 12:07:39:739 -- http: GET -- /hackathon/search/filters?start_date=2021-02-18 -- 922a289e-087f-473f-828d-c65f124b4c55 -- 304 -- - - 14.030 ms
+2021-02-18 -- 12:07:39:739 -- warn: 404 Router not found
+2021-02-18 -- 12:07:39:739 -- http: GET -- /staticpordefecto -- 388338e2-a93e-4064-a822-acd81a921df8 -- 404 -- 30 - 1.761 ms
+2021-02-18 -- 12:07:54:754 -- debug: Login OK
+2021-02-18 -- 12:07:54:754 -- http: POST -- /login -- 2 -- 200 -- 780 - 157.020 ms
+2021-02-18 -- 12:07:54:754 -- info: Init transaction query
+2021-02-18 -- 12:07:54:754 -- info: Commit
+2021-02-18 -- 12:07:54:754 -- http: GET -- /hackathon/search/filters?start_date=2021-02-18 -- 11427ec8-da35-457f-b643-cf2b291a3205 -- 304 -- - - 9.354 ms
+2021-02-18 -- 12:07:54:754 -- warn: 404 Router not found
+2021-02-18 -- 12:07:54:754 -- http: GET -- /staticpordefecto -- 7ad6e032-5b73-4d42-a6cd-866a74bba41f -- 404 -- 30 - 1.106 ms
+2021-02-18 -- 12:07:56:756 -- http: GET -- /user/2 -- ab4e431b-a3ef-45a1-87d5-70658ddee68a -- 200 -- 1501 - 10.529 ms
+2021-02-18 -- 12:07:56:756 -- http: GET -- /user/2 -- c5e67201-90e5-42de-a199-2a8fc17ad139 -- 304 -- - - 5.986 ms
+2021-02-18 -- 12:07:56:756 -- http: GET -- /user/2 -- 3b4ce3ce-b7ab-4fe9-bd92-69ed98084f9a -- 304 -- - - 6.127 ms
+2021-02-18 -- 12:07:56:756 -- http: GET -- /user/2 -- 3e223087-a6a1-40e9-9a8b-dc3e7d04e910 -- 304 -- - - 6.406 ms
+2021-02-18 -- 12:08:10:810 -- info: Init transaction query
+2021-02-18 -- 12:08:10:810 -- info: Commit
+2021-02-18 -- 12:08:10:810 -- http: GET -- /hackathon/search/filters?start_date=2021-02-18 -- 09e9fbdc-b38b-4c53-9f1f-dc0376a33407 -- 304 -- - - 7.299 ms
+2021-02-18 -- 12:08:10:810 -- warn: 404 Router not found
+2021-02-18 -- 12:08:10:810 -- http: GET -- /staticpordefecto -- b19fad81-d44f-4811-b340-5b499bb4c612 -- 404 -- 30 - 0.995 ms

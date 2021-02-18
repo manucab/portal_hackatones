@@ -6,9 +6,11 @@ import Modal from "../Modal/Modal";
 import StarRating from "../StarRating/StarRating";
 
 
-function ShowHackathon (h) {
+function ShowHackathon (h,organizer) {
 
     const [show,setShow] = useState(false)
+
+    console.log(organizer)
 
     const startYear = h.start_date.split('-')[0]
     const startMonth = h.start_date.split('-')[1]
@@ -37,9 +39,10 @@ function ShowHackathon (h) {
         <div>Tecnologías: {h.techs}</div>
         <div>Estado Hackathon: {h.hackathon_status}</div>
         <div > {!hasEnded && <div className="timeTo">Quedan {daysTo} días!!!</div>} </div>
-        <div className='hackathonResults'>
+        <div className='hackathon-results'>
             {isRanked && <div className='ranking'>{h.ranking}º </div>}
-            <div className='rate'>{isRated ? 
+            <div className='rate'>
+                {isRated && !organizer ? 
                 <div className='rate-box'> {h.rate} ⭐</div> : 
                 ableToRate && 
                 <div className="rate-modal">
@@ -51,13 +54,35 @@ function ShowHackathon (h) {
                 </Modal>
         </div>
 
+        <div className='hackathon-stats'>
+         
+            {organizer ?
+                <div className="participants">
+                    <div>{h.participants || '-'}</div>
+                    <div>Inscritos</div>
+                </div>:
+                null}
+
+            {(h.hackathon_status === 'realizado' && organizer) ? 
+                <div className="avg-rate">
+                    <div>{h.avg_rate || '-'}</div>
+                    <div>Valoración</div>
+                </div> :
+                    organizer ?
+                    <button className="modify-hack">Modificar</button> :
+                    null
+            }
+        </div>
+
+
+
     </div>
 
     )
     
 }
 
-function CarouselHackathons ({hackathons}) {
+function CarouselHackathons ({hackathons,organizer}) {
 
     const [index,setIndex] = useState(0)
  
@@ -75,7 +100,7 @@ function CarouselHackathons ({hackathons}) {
     return(
         <div className="carousel">
             <img id="previous" src={arrow} className={ isFirst ? 'off':'on'} onClick={handlePrevious}/>
-            {ShowHackathon(hackathons[index])} 
+            {ShowHackathon(hackathons[index], organizer)} 
             <img id="next" src={arrow} className={ isLast ? 'off':'on'} onClick={handleNext}/>       
         </div>
     )
