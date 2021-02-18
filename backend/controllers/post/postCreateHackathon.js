@@ -22,9 +22,6 @@ const createHackathon = async(req, res) => {
     tech = JSON.parse(techs);
     links = JSON.parse(links)
 
-    console.log('start_date :>> ', start_date);
-
-
     let cover_picture= req.pathFile || '';
     let query = '';
     let params = [];

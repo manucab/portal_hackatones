@@ -17,7 +17,6 @@ import ForgotPassword from './Components/ForgotPassword/ForgotPassword';
 import ResetPassword from './Components/ResetPassword/ResetPassword';
 import {Helmet} from "react-helmet";
 
-
 function App() {
 
     return (

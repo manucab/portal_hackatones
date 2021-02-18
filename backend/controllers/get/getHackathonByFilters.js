@@ -1,17 +1,10 @@
 // Variables && instances
 require('dotenv').config();
-const {
-  logger
-} = require("../../app/config/logger");
-const {
-  getHackathonInfoDB
-} = require('../../db/select');
-const {
-  getListLinkByHackathonDB
-} = require('../../db/select/getListLinkByHackathon');
-const {
-  getListTechByHackathonDB
-} = require('../../db/select/getListTechByHackathon');
+const {logger} = require("../../app/config/logger");
+const {getHackathonInfoDB} = require('../../db/select');
+const {getListLinkByHackathonDB} = require('../../db/select/getListLinkByHackathon');
+const { getListTechByHackathonDB} = require('../../db/select/getListTechByHackathon');
+const {  getListCommentByHackathonDB} = require('../../db/select/getCommentByHackathon');
 const {
   performQuery
 } = require('../../db/performQuery');
@@ -83,6 +76,11 @@ const getHackathonByFilters = async (req, res) => {
       let resTechs = await getListTechByHackathonDB(listIdHackathons, params);
 
       // TODO -- add comments of hackathon filter
+      // let resComment = await getListCommentByHackathonDB(listIdHackathons, params);
+
+console.log('resLinks :>> ', resLinks);
+      // console.log('resComment :>> ', resComment);
+
 
       listHackathons.forEach(item => {
         let listLinkInfo = resLinks.filter(info => info.id_hackathon === item.id).map(element => ({

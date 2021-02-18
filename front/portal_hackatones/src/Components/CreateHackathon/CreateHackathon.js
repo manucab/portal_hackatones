@@ -8,8 +8,12 @@ import {styleSelectPlace} from './stylesSelect';
 import {DateTime} from "luxon";
 import chroma from 'chroma-js';
 import {Helmet} from "react-helmet";
+import { useSelector } from 'react-redux';
 
 function CreateHackathon() {
+
+    const login = useSelector(s => s.login)
+
 
     const history = useHistory();
     const today = DateTime.local().setLocale('es').toISODate();
@@ -72,7 +76,8 @@ function CreateHackathon() {
         fd.append('links', JSON.stringify(links));
 
         const headers = { // 'Content-Type': 'application/json',
-            'Authorization': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImZnamNhcmxvc0BnbWFpbC5jb20iLCJyb2wiOiJvcmdhbml6ZXIiLCJpZCI6MSwiaWF0IjoxNjEzNDIxNTM1LCJleHAiOjE2MTM1OTQzMzV9.5B6j7XI3Hy6Qt4KL9Cx5jpGs-L2txndTEe4-aqiCM-A'
+        'Authorization':login.token
+
         }
 
         const ret = await fetch('http://localhost:3001/createhackathon', {
