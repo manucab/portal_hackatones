@@ -59,7 +59,7 @@ function ShowHackathon (h,organizer) {
             {organizer ?
                 <div className="participants">
                     <div>{h.participants || '-'}</div>
-                    <div>Inscritos</div>
+                    <div>{h.hackathon_status === 'realizado' ? 'Participantes' : 'Inscritos'}</div>
                 </div>:
                 null}
 
