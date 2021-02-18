@@ -55,6 +55,8 @@ const isCodeUser = async(req, res, next) => {
         logger.info(query);
 
         // 4.
+        req.body.email = codeDB.email;
+
         next(); // 5. Change status to true
 
     } catch (e) {
@@ -62,7 +64,6 @@ const isCodeUser = async(req, res, next) => {
         query = 'rollback';
         await performQuery(query, params);
         logger.info(query);
-
 
         let msgError = ('Error in  isCodeUser:', e.message);
         logger.error(msgError);

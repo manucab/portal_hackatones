@@ -68,7 +68,7 @@ const fieldsHackathons = Joi.object({
         ),
 
     links: Joi.array().items(Joi.object({
-        link: Joi.string().hostname().lowercase().trim()
+        link: Joi.string().lowercase().trim()
             .required()
             .error(
                 new Error('The link of hackathon is not valid')
