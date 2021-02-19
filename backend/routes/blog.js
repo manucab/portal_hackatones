@@ -10,7 +10,7 @@ const getPostById = require('../controllers/get/getPostById')
 
 router.get('/',getAllPosts)
 router.get('/post/:id',getPostById)
-router.get('/:filter',filterPosts)
+router.get('/filter',filterPosts)
 router.post('/add', addPost)
 router.put('/:id/modify',modifyPost)
 router.delete('/:id/delete',deletePost)

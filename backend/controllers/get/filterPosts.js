@@ -2,7 +2,7 @@ const dbFilterPosts = require('../../db/select/filterPosts')
 
 const filterPosts = async (req,res) => {
 
-    const {filter} = req.params
+    const {filter} = req.query
 
     try {
         result = await dbFilterPosts(filter)
