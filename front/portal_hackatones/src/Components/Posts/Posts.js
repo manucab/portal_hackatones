@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { Helmet } from 'react-helmet'
+import { useHistory } from 'react-router-dom'
 import useFetch from '../../Hooks/useFetch'
 import './Posts.css'
 
@@ -7,6 +8,8 @@ function Posts () {
 
     const [search, setSearch] = useState()
     const [result, setResult] = useState()
+    const history = useHistory()
+
 
     const posts = useFetch('http://localhost:3001/blog')
     if(!posts) return 'Loading ...'
@@ -45,7 +48,7 @@ function Posts () {
                     posts.map(p => {
 
                     return(
-                        <div className="post" key={p.id}>
+                        <div className="post" key={p.id} onClick={() => {return history.push(`/blog/post/${p.id}`)} }>
                             <div className="post-title"><h1>{p.title}</h1></div>
                             <div className="post-date"><h6>{p.publication_date.split('T')[0]}</h6></div>
                             {/* <div className="post-title"><h1>{p.title}</h1></div> */}

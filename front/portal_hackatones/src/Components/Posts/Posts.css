@@ -41,6 +41,7 @@
 .post-title {
     background-color: #A3A4A6;
     font-size: 60%;
+    padding: 5px;
     
 }
 
@@ -64,6 +65,7 @@
 
 .post-content p {
     padding: 0px 10px 0px 10px;
+    text-align: justify;
 }
 
 .see-more {

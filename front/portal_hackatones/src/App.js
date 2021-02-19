@@ -19,6 +19,7 @@ import {Helmet} from "react-helmet";
 import ValidateAccount from './Components/ValidateAccount/ValidateAccount';
 import EditHackathon from './Components/EditHackathon/EditHackathon';
 import Posts from './Components/Posts/Posts';
+import Post from './Components/Post/Post';
 
 function App() {
 
@@ -84,6 +85,11 @@ function App() {
                 <Route path='/blog' exact>
                     <h1>Bienvenido a nuestro blog</h1>
                     <Posts/>
+                </Route>
+
+                <Route path='/blog/post/:id' exact>
+                    <h1>Disfruta del articulo</h1>
+                    <Post/>
                 </Route>
 
 
