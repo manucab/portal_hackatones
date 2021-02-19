@@ -13,7 +13,7 @@ const {enrollHackathon} = require('../controllers/post/enrrollHackathon');
 const {  isAuthenticated,  isOrganizer} = require('../middelwares/authorization/auth');
 
 // Sign up for a hackathon
- router.post('/:id_hackathon/enroll', isAuthenticated, enrollHackathon);
+router.post('/:id_hackathon/enroll', isAuthenticated, enrollHackathon);
 
 router.post('/:idHackathon/add-comment', addComment)
 router.put('/:idHackathon/:idComment/modify-comment', modifyComment)

@@ -19,15 +19,10 @@ app.post('/hackathon/id/enroll',isAuthenticated,enrollHackathon)
 app.post('/hackathon/id/comments',isAuthenticated,postComment)
 app.post('/hackathon/id/comments/id',isAuthenticated,isRightUser,modifyComment)
 
-
 //Create Hackathon Page
 app.post('/createhackathon',isAuthenticated,isOrganizer,createHackathon)
 
-
-
 //Hasta aquí Carlos
-
-
 
 //User profile page
 //getProfileInfo icluiría todo lo necesario para rellenar la página de profile (info,hackathones,foto,...)

@@ -39,7 +39,6 @@ const getHackathonByFilters = async (req, res) => {
         await performQuery(query, params);
         logger.info('Init transaction query');
 
-
         // 2. Search parameters -> {hackathon_place, city,start_date, end_date, technologies,thematic }
         const listHackathons = await getHackathonInfoDB(id, hackathon_place, city, start_date, end_date, thematic);
 
