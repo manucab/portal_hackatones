@@ -2,9 +2,9 @@ import {useEffect, useState} from "react"
 import './CarouselHackathons.css'
 import arrow from '../../Media/Images/General/Arrow-down.svg'
 import useFetch from "../../Hooks/useFetch";
+import {DateTime} from "luxon";
 
 let socialMedia = [];
-
 
 (async () => {
     socialMedia = await fetch('http://localhost:3001/info/listSocialMedia');
@@ -14,10 +14,15 @@ let socialMedia = [];
     if (! socialMedia) 
         socialMedia = [];
     
-
 })()
 
 function showHackathon(h) {
+
+    console.log('h.link :>> ', h.link);
+
+    console.log('h.start_date :>> ', DateTime.fromISO(h.start_date).toISODate());
+    // DateTime.fromISO("2016-05-25");
+
 
     let socialLink = searchSocialLinks(h, socialMedia);
 
@@ -51,13 +56,13 @@ function showHackathon(h) {
                 <span>Fecha Inicio:
                 </span>
                 {
-                h.start_date.split('T')[0]
+                DateTime.fromISO(h.start_date).toISODate()
             }</div>
             <div>
                 <span>Fecha Final:
                 </span>
                 {
-                h.end_date.split('T')[0]
+                DateTime.fromISO(h.end_date).toISODate()
             }</div>
             <div>
                 <span>Estado Hackathon:
@@ -81,7 +86,7 @@ function showHackathon(h) {
                 <span>Tecnologías:
                 </span>
                 {
-                h.tech.join(', ')
+                h.techs.map(t => t.tech).join(', ')
             }</div>
             <div>
                 <span>Links:
@@ -141,20 +146,23 @@ const searchSocialLinks = (hack, socialMedia) => {
 
     let urlSm = 'http://localhost:3001/static/SocialMedia/';
 
+    if (socialMedia) {
 
-    hack.link.forEach(link => {
+        hack.link.forEach(link => {
 
-        for (const social of socialMedia) {
+            for (const social of socialMedia) {
 
-            if (link.url.includes(social)) {
+                if (link.url.includes(social)) {
 
-                linksSm.push({'sm': `${social}`, 'urlSm': `${urlSm}${social}.png`, 'url': link.url});
+                    linksSm.push({'sm': `${social}`, 'urlSm': `${urlSm}${social}.png`, 'url': link.url});
 
-                break;
+                    break;
+                }
             }
-
-        }
-    })
+        })
+    } else {
+        linksSm = []
+    }
 
     return linksSm;
 
@@ -164,10 +172,10 @@ function CarouselHackathons({hackathons}) {
 
     const [index, setIndex] = useState(0)
 
-
     if (!hackathons) 
         return 'Loading...';
     
+
 
     const handleNext = e => {
         setIndex(index < (hackathons.length - 1) ? index + 1 : index + 0)

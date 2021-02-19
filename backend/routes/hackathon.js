@@ -10,7 +10,6 @@ const modifyComment = require('../controllers/update/modifyComment')
 const {enrollHackathon} = require('../controllers/post/enrrollHackathon');
 
 // Middelware
-// Middelware
 const {  isAuthenticated,  isOrganizer} = require('../middelwares/authorization/auth');
 
 // Sign up for a hackathon

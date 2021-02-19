@@ -22,10 +22,10 @@ const activeUser = async(req, res) => {
         const resInitTransaction = await performQuery(query, params);
         logger.info(query);
 
-        msgInfo = 'Update state is successfully';
-
         // 2.1 change state to true and reset code
         await updateStateUser(parseInt(id));
+
+        msgInfo = 'Update state is successfully';
 
         logger.debug(msgInfo);
 

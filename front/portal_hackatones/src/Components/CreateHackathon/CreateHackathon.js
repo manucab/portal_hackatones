@@ -14,7 +14,6 @@ function CreateHackathon() {
 
     const login = useSelector(s => s.login)
 
-
     const history = useHistory();
     const today = DateTime.local().setLocale('es').toISODate();
 
@@ -41,7 +40,6 @@ function CreateHackathon() {
     }
 
     const handlePlaceSelected = (newValue) => {
-        console.log('newValue :>> ', newValue.value);
         sethackathon_place(newValue.value);
     }
 
@@ -61,23 +59,22 @@ function CreateHackathon() {
         const fd = new FormData();
         const logo = e.target.cover_picture.files[0];
 
-        console.log(logo);
-
         fd.append('cover_picture', logo);
         fd.append('hackathon_place', hackathon_place);
         fd.append('hackathon_name', hackathon_name);
         fd.append('city', city);
-        fd.append('start_date', start_date);
-        fd.append('end_date', end_date);
+        fd.append('start_date', DateTime.fromISO(start_date).plus({hour:1}).toFormat('yyyy-MM-dd  HH:mm:ss.000'));
+        fd.append('end_date',DateTime.fromISO(end_date).toFormat('yyyy-MM-dd  HH:mm:ss.000'));
         fd.append('hackathon_status', hackathon_status);
         fd.append('hackathon_info', hackathon_info);
         fd.append('thematic', JSON.stringify(thematic));
         fd.append('techs', JSON.stringify(techs));
         fd.append('links', JSON.stringify(links));
 
+        console.log('start_date :>> ', DateTime.fromISO(start_date).plus({hour:1}).toFormat('yyyy-MM-dd  HH:mm:ss.000'));
+
         const headers = { // 'Content-Type': 'application/json',
         'Authorization':login.token
-
         }
 
         const ret = await fetch('http://localhost:3001/createhackathon', {
@@ -101,7 +98,7 @@ function CreateHackathon() {
     }
 
     const handleRemoveLink = e => {
-
+        console.log('start_date :>> ', DateTime.fromISO(start_date).plus({hour:1}).toFormat('yyyy-MM-dd  HH:mm:ss.000'));
         setLinks(links.filter(link => link.link !== e))
 
     }
@@ -131,13 +128,9 @@ function CreateHackathon() {
     if (! listTechs) 
         listTechs = [];
     
-
-
     if (! listThematics) 
         listThematics = [];
     
-
-
     let optionsTech = listTechs.map(tech => ({"value": tech.tech_name, "label": tech.tech_name}));
     let optionsThematics = listThematics.map(thematic => ({"value": thematic.thematic, "label": thematic.thematic}));
     let optionStatus = [
@@ -164,7 +157,6 @@ function CreateHackathon() {
             "label": 'Semipresencial'
         }
     ]
-
 
     return (
 

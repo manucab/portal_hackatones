@@ -16,6 +16,7 @@ import StarRating from './Components/StarRating/StarRating';
 import ForgotPassword from './Components/ForgotPassword/ForgotPassword';
 import ResetPassword from './Components/ResetPassword/ResetPassword';
 import {Helmet} from "react-helmet";
+import ValidateAccount from './Components/ValidateAccount/ValidateAccount';
 
 function App() {
 
@@ -33,7 +34,7 @@ function App() {
             <Switch>
 
                 <Route path='/' exact>
-                    
+
                     <Home/>
                 </Route>
 
@@ -51,6 +52,11 @@ function App() {
                 <Route path="/register" exact>
                     <PanelSingInUp/>
                 </Route>
+
+                <Route path='/user/validate/:id/:code' exact>
+                    <ValidateAccount />
+                </Route>
+
 
                 <Route path='/user/:id'>
                     <h1>Bienvenido a tu perfil</h1>
@@ -76,9 +82,7 @@ function App() {
 
 
             </Switch>
-
-            {/* login && <Logout/> */}
-            {/* <Logout/> */}<Footer/>
+            <Footer/>
         </div>
     );
 }
