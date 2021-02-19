@@ -2,7 +2,7 @@ const {performQuery} = require("../performQuery")
 
 const filterPosts = async(filter) => {
     const wordsInFilter = filter.trim().split(" ").length;
-
+    
     if (wordsInFilter === 1) {
         const query = `select * from post where hidden = 'false'
       and title like ? 

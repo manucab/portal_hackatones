@@ -7,6 +7,7 @@ import Avatar from "../Avatar/Avatar";
 import { useEffect, useState } from "react";
 import Modal from "../Modal/Modal";
 import EditProfile from "../EditProfile/EditProfile";
+import { Helmet } from "react-helmet";
 
 function showInfo (user_name, surname,email,professional_profile,rol) {
 
@@ -56,6 +57,11 @@ function ProfileInfo () {
     return (
        
         <div className="profile" >
+            <Helmet>
+                <meta charSet="utf-8"/>
+                <title>Bienvenido a tu perfil</title>
+            </Helmet>
+
             <Avatar/>
             {showInfo(user_name,surname,email,professional_profile,rol)}
             <button className="edit-profile" onClick={()=>setShow(true) }>⚙ Editar</button>

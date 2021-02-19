@@ -2,6 +2,8 @@ import { useState } from "react";
 import { Link, Redirect } from "react-router-dom";
 import { useDispatch, useSelector } from 'react-redux';
 import './Login.css'
+import eyeOpen from '../../Media/Images/General/eye-solid.png'
+import eyeClose from '../../Media/Images/General/eye-closed.png'
 
 function Login() {
   const [email, setEmail] = useState('')
@@ -47,7 +49,7 @@ function Login() {
         </div>
         <div>
             <input placeholder="password ..." type={showPassword? 'text' : 'password'} minLength="8" required value={password} onChange={e => setPassword(e.target.value)} />
-            <button className="show-password" type="button" onClick={() => setShowPassword(!showPassword)}>👁</button>
+            <img className="show-password" src={showPassword ? eyeClose : eyeOpen} alt='show password' onClick={() => setShowPassword(!showPassword)}/>
         </div>
         <div className="login-buttons">
           <button>Iniciar sesión</button>

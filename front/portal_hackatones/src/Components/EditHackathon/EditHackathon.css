@@ -1,0 +1,155 @@
+.createHackathon {
+    font-size: 12px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+}
+
+.createHackathon, input{
+    /* border-radius: 10px; */
+    font-size: 12px;
+    padding: 2px;
+}
+
+
+#logo {
+    border: 1px solid black;
+    text-align: center;
+    height: 100px;
+    padding: 10px;
+    box-sizing: border-box;
+    background-color: #dfda94;
+    margin: 10px 0px 10px 0px;
+}
+
+#logo > input {
+    width: 300px;
+    font-size: 12px;
+vertical-align: middle;
+margin: 10px;
+}
+
+.fieldName{
+    display: flex;
+    flex-direction: column;
+}
+
+.fieldName > *, .fieldName > * > * {
+    margin: 2px;
+}
+
+.fieldDates {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+}
+
+.fieldDates > label,.fieldDates > label > *{
+    margin: 2px;
+}
+
+.fieldState > * {
+    margin: 2px;
+}
+
+
+#fieldLinks{
+display: flex;
+flex-direction: column;
+}
+
+#lblWebName {
+    grid-area: name;
+  }
+  #lblUrl {
+    grid-area: url;
+  }
+ #btnLink {
+    grid-area: btn;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    vertical-align: middle;
+    text-align: center;
+    background-color: burlywood;
+    border: 1px solid black;
+    border-radius: 5px;
+  }
+
+  #btnLink > p {
+    margin: 25%;
+}
+  
+  .divLink {
+    display: grid;
+    grid-template-columns: 50px 50px 50px 50px;
+    grid-template-rows: auto;
+    grid-template-areas: 
+      "name name name name name ."
+      "name name name name name btn"
+      " url url url url url btn"
+      "url url url url url ."
+  }
+
+.links > span {
+    color: #636363;
+    background-color: #d48181;
+}
+
+
+#listLinks ul{
+    border: 1px solid #bbbbbb;
+    border-radius: 5px;
+    padding: 5px;
+    background-color: #f0ebe5;
+}
+
+.noLinks{
+margin: 2px;
+}
+
+#listLinks  span{
+    color: darkblue;
+    margin: 0px 2px 0px 2px;
+}
+
+
+#listLinks li{
+display: flex;
+justify-content: space-between;
+padding: 2px;
+align-items: center;
+margin: 2px 0px 2px 0px;
+}
+
+ #btnDeleteLink{
+    cursor: pointer;
+}
+
+#btnDeleteLink > p{
+margin: 0px;
+}
+
+
+#fieldDescription {
+    display: flex;
+    flex-direction: column;
+}
+
+#fieldDescription > * {
+    margin: 2px;
+}
+
+ #btnSubmit{
+    margin: 20px 10px 0px 0px;
+    font-size: 14px;
+    font-weight: bold;
+    width: 200px;
+    align-self: center;
+}
+
+.formCreate{
+    display: flex;
+    flex-direction: column;
+}

@@ -1,10 +1,12 @@
 import { useState } from 'react'
-import { Redirect } from 'react-router-dom'
+import { Helmet } from 'react-helmet'
+import { Redirect, useHistory } from 'react-router-dom'
 import './ForgotPassword.css'
 
 function ForgotPassword () {
 
     const [email, setEmail] = useState('')
+    const history = useHistory()
 
     const handleSubmit = async e => {
 
@@ -28,9 +30,11 @@ function ForgotPassword () {
         if(ret.status === 200){
 
             alert('Te hemos enviado un email a tu correo. Revisa tu bandeja de entrada');
-            return <Redirect to="/"/>
+            return history.push('/')
          
-        }
+        } else{
+            alert('No encontramos ese email en nuestro registro. Prueba a registrarte o revisa tu correo para activar tu cuenta')
+        } 
 
     }
 
@@ -39,6 +43,11 @@ function ForgotPassword () {
 
             <form className='forgot-password-form' onSubmit={handleSubmit}
                 method="put">
+                
+                <Helmet>
+                <meta charSet="utf-8"/>
+                <title>Recupera tu contraseña</title>
+                </Helmet>
 
                 <div className="email">
                     <div className="field email">
