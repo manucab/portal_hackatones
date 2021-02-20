@@ -20,6 +20,7 @@ import ValidateAccount from './Components/ValidateAccount/ValidateAccount';
 import EditHackathon from './Components/EditHackathon/EditHackathon';
 import Posts from './Components/Posts/Posts';
 import Post from './Components/Post/Post';
+import Hackathon from './Components/Hackathon/Hackathon';
 
 function App() {
 
@@ -37,7 +38,6 @@ function App() {
             <Switch>
 
                 <Route path='/' exact>
-
                     <Home/>
                 </Route>
 
@@ -57,7 +57,7 @@ function App() {
                 </Route>
 
                 <Route path='/user/validate/:id/:code' exact>
-                    <ValidateAccount />
+                    <ValidateAccount/>
                 </Route>
 
                 <Route path='/user/:id'>
@@ -77,7 +77,11 @@ function App() {
                     <EditHackathon/>
                 </Route>
 
-                <Route path='/createhackathon'>
+                <Route path='/hackathon' exact>
+                    <Hackathon/>
+                </Route>
+
+                <Route path='/createhackathon' exact>
                     <h1>Organiza tú hackathon</h1>
                     <CreateHackathon/>
                 </Route>

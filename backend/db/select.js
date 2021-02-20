@@ -17,16 +17,30 @@ const getUserDB = async(email) => {
 // Get hackaton info by some filters
 const getHackathonInfoDB = async(id, hackathon_place, city, start_date, end_date, thematic) => {
 
+
+    const user=`JSON_OBJECT('name', c.user_name, 'surname', c.surname, 'id', c.id, 'isActive', c.active_user, 'register-date',c.register_date, 'email', c.email, 'profeesional-profile', c.professional_profile,
+    'rol', c.rol, 'idDeleted', c.deleted_user, 'avatar',c.profile_picture, 'creation-date', c.creation_date, 'last-update', c.last_update)`;
+
+    const organizer = `JSON_OBJECT('name', cc.user_name, 'surname', cc.surname, 'id', cc.id, 'isActive', cc.active_user, 'register-date',cc.register_date, 'email', cc.email, 'profeesional-profile', cc.professional_profile,
+    'rol', cc.rol, 'idDeleted', cc.deleted_user, 'avatar',cc.profile_picture, 'creation-date', cc.creation_date, 'last-update', cc.last_update)`;
+
     const query = `select hackathon.*,
 
-    CAST( CONCAT('[', GROUP_CONCAT(DISTINCT JSON_OBJECT('comment', t.content,'user', c.user_name)),']') AS JSON ) as comment,
+    CAST( CONCAT('[',  GROUP_CONCAT(DISTINCT  IF(c.id is not null,JSON_OBJECT('comment', t.content,'user',${user}), null)),']') AS JSON ) as comment,
 
     CAST( CONCAT('[', GROUP_CONCAT(DISTINCT JSON_OBJECT('tech', d.tech_name)),']') AS JSON ) as techs,
     
-    CAST( CONCAT('[', GROUP_CONCAT(DISTINCT JSON_OBJECT('url', l.url,'web_name', l.web_name)),']') AS JSON ) as link
+    CAST( CONCAT('[', GROUP_CONCAT(DISTINCT JSON_OBJECT('url', l.url,'web_name', l.web_name)),']') AS JSON ) as link,
+
+    CAST( CONCAT('[', GROUP_CONCAT(DISTINCT JSON_OBJECT('organizer', ${organizer})),']') AS JSON ) as organizer
+
+
+    
 
 
     from hackathon
+
+    left join competitor cc on cc.id = hackathon.id_organizer
 
     LEFT join comment t on t.id_hackathon = hackathon.id
     LEFT join competitor c on c.id = t.id_competitor

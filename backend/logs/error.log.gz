@@ -854,3 +854,158 @@
 2021-02-18 -- 20:15:47:1547 -- error: Lock wait timeout exceeded; try restarting transaction
 2021-02-18 -- 20:15:47:1547 -- error:  Error in create new a hackathon: Lock wait timeout exceeded; try restarting transaction 
 2021-02-18 -- 21:20:18:2018 -- error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where id = '1'' at line 1
+2021-02-19 -- 22:35:56:3556 -- error: Access denied for user ''@'localhost' (using password: YES)
+2021-02-19 -- 22:37:14:3714 -- error: Access denied for user ''@'localhost' (using password: YES)
+2021-02-19 -- 23:52:00:520 -- error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') as user
+
+    from hackathon
+
+    LEFT join comment t on t.id_hackathon = hacka' at line 8
+2021-02-19 -- 23:52:00:520 -- error: start transaction
+2021-02-19 -- 23:52:00:520 -- error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') as user
+
+    from hackathon
+
+    LEFT join comment t on t.id_hackathon = hacka' at line 8
+2021-02-19 -- 23:54:47:5447 -- error: Unknown column 'c' in 'field list'
+2021-02-19 -- 23:54:47:5447 -- error: start transaction
+2021-02-19 -- 23:54:47:5447 -- error: Unknown column 'c' in 'field list'
+2021-02-19 -- 23:55:15:5515 -- error: Unknown column 'competitor' in 'field list'
+2021-02-19 -- 23:55:15:5515 -- error: start transaction
+2021-02-19 -- 23:55:15:5515 -- error: Unknown column 'competitor' in 'field list'
+2021-02-19 -- 23:55:44:5544 -- error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '*) as user
+
+    from hackathon
+
+    LEFT join comment t on t.id_hackathon = hack' at line 8
+2021-02-19 -- 23:55:44:5544 -- error: start transaction
+2021-02-19 -- 23:55:44:5544 -- error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '*) as user
+
+    from hackathon
+
+    LEFT join comment t on t.id_hackathon = hack' at line 8
+2021-02-19 -- 23:56:35:5635 -- error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '*) as user
+
+    from hackathon
+
+    LEFT join comment t on t.id_hackathon = hack' at line 8
+2021-02-19 -- 23:56:35:5635 -- error: start transaction
+2021-02-19 -- 23:56:35:5635 -- error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '*) as user
+
+    from hackathon
+
+    LEFT join comment t on t.id_hackathon = hack' at line 8
+2021-02-19 -- 23:56:55:5655 -- error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'join competitor c on c.id = t.id_competitor--
+    LEFT join hackathon_tech b on ' at line 13
+2021-02-19 -- 23:56:55:5655 -- error: start transaction
+2021-02-19 -- 23:56:55:5655 -- error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'join competitor c on c.id = t.id_competitor--
+    LEFT join hackathon_tech b on ' at line 13
+2021-02-19 -- 23:57:07:577 -- error: Unknown column 'c.user_name' in 'field list'
+2021-02-19 -- 23:57:07:577 -- error: start transaction
+2021-02-19 -- 23:57:07:577 -- error: Unknown column 'c.user_name' in 'field list'
+2021-02-19 -- 23:57:42:5742 -- error: Unknown column 'competitor.user_name' in 'field list'
+2021-02-19 -- 23:57:42:5742 -- error: start transaction
+2021-02-19 -- 23:57:42:5742 -- error: Unknown column 'competitor.user_name' in 'field list'
+2021-02-19 -- 23:58:03:583 -- error: Incorrect parameter count in the call to native function 'JSON_OBJECT'
+2021-02-19 -- 23:58:03:583 -- error: start transaction
+2021-02-19 -- 23:58:03:583 -- error: Incorrect parameter count in the call to native function 'JSON_OBJECT'
+2021-02-19 -- 23:58:27:5827 -- error: Unknown column 'competitor' in 'field list'
+2021-02-19 -- 23:58:27:5827 -- error: start transaction
+2021-02-19 -- 23:58:27:5827 -- error: Unknown column 'competitor' in 'field list'
+2021-02-20 -- 00:07:32:732 -- error: Unknown column 'competitor' in 'field list'
+2021-02-20 -- 00:07:32:732 -- error: start transaction
+2021-02-20 -- 00:07:32:732 -- error: Unknown column 'competitor' in 'field list'
+2021-02-20 -- 00:16:36:1636 -- error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'left join competitor cc on cc.id = a.id_organizer
+
+    where 
+    
+    (hackatho' at line 26
+2021-02-20 -- 00:16:36:1636 -- error: start transaction
+2021-02-20 -- 00:16:36:1636 -- error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'left join competitor cc on cc.id = a.id_organizer
+
+    where 
+    
+    (hackatho' at line 26
+2021-02-20 -- 00:17:24:1724 -- error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'left join competitor c on c.id = a.id_organizer
+
+    where 
+    
+    (hackathon.' at line 26
+2021-02-20 -- 00:17:24:1724 -- error: start transaction
+2021-02-20 -- 00:17:24:1724 -- error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'left join competitor c on c.id = a.id_organizer
+
+    where 
+    
+    (hackathon.' at line 26
+2021-02-20 -- 00:20:22:2022 -- error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where 
+    
+    (hackathon.id = NULL or NULL is null)
+    and (hackathon_place =' at line 28
+2021-02-20 -- 00:20:22:2022 -- error: start transaction
+2021-02-20 -- 00:20:22:2022 -- error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where 
+    
+    (hackathon.id = NULL or NULL is null)
+    and (hackathon_place =' at line 28
+2021-02-20 -- 00:21:01:211 -- error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where 
+    
+    (hackathon.id = NULL or NULL is null)
+    and (hackathon_place =' at line 28
+2021-02-20 -- 00:21:01:211 -- error: start transaction
+2021-02-20 -- 00:21:01:211 -- error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where 
+    
+    (hackathon.id = NULL or NULL is null)
+    and (hackathon_place =' at line 28
+2021-02-20 -- 00:24:10:2410 -- error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where 
+    
+    (hackathon.id = NULL or NULL is null)
+    and (hackathon_place =' at line 23
+2021-02-20 -- 00:24:10:2410 -- error: start transaction
+2021-02-20 -- 00:24:10:2410 -- error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where 
+    
+    (hackathon.id = NULL or NULL is null)
+    and (hackathon_place =' at line 23
+2021-02-20 -- 00:24:40:2440 -- error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where 
+    
+    (hackathon.id = NULL or NULL is null)
+    and (hackathon_place =' at line 23
+2021-02-20 -- 00:24:40:2440 -- error: start transaction
+2021-02-20 -- 00:24:40:2440 -- error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where 
+    
+    (hackathon.id = NULL or NULL is null)
+    and (hackathon_place =' at line 23
+2021-02-20 -- 00:26:05:265 -- error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where 
+    
+    (hackathon.id = NULL or NULL is null)
+    and (hackathon_place =' at line 19
+2021-02-20 -- 00:26:05:265 -- error: start transaction
+2021-02-20 -- 00:26:05:265 -- error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where 
+    
+    (hackathon.id = NULL or NULL is null)
+    and (hackathon_place =' at line 19
+2021-02-20 -- 00:55:12:5512 -- error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '.user_name', 'surname', c.surname, 'id', c.id, 'isActive', c.active_user, 'regis' at line 3
+2021-02-20 -- 00:55:12:5512 -- error: start transaction
+2021-02-20 -- 00:55:12:5512 -- error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '.user_name', 'surname', c.surname, 'id', c.id, 'isActive', c.active_user, 'regis' at line 3
+2021-02-20 -- 00:56:06:566 -- error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '.user_name', 'surname', c.surname, 'id', c.id, 'isActive', c.active_user, 'regis' at line 3
+2021-02-20 -- 00:56:06:566 -- error: start transaction
+2021-02-20 -- 00:56:06:566 -- error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '.user_name', 'surname', c.surname, 'id', c.id, 'isActive', c.active_user, 'regis' at line 3
+2021-02-20 -- 00:56:08:568 -- error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '.user_name', 'surname', c.surname, 'id', c.id, 'isActive', c.active_user, 'regis' at line 3
+2021-02-20 -- 00:56:08:568 -- error: start transaction
+2021-02-20 -- 00:56:08:568 -- error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '.user_name', 'surname', c.surname, 'id', c.id, 'isActive', c.active_user, 'regis' at line 3
+2021-02-20 -- 01:01:56:156 -- error: Not unique table/alias: 'c'
+2021-02-20 -- 01:01:56:156 -- error: start transaction
+2021-02-20 -- 01:01:56:156 -- error: Not unique table/alias: 'c'
+2021-02-20 -- 01:05:08:58 -- error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'CAST( CONCAT('[', GROUP_CONCAT(DISTINCT JSON_OBJECT('name', o.user_name,'email',' at line 10
+2021-02-20 -- 01:05:08:58 -- error: start transaction
+2021-02-20 -- 01:05:08:58 -- error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'CAST( CONCAT('[', GROUP_CONCAT(DISTINCT JSON_OBJECT('name', o.user_name,'email',' at line 10
+2021-02-20 -- 01:06:39:639 -- error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'CAST( CONCAT('[', GROUP_CONCAT(DISTINCT JSON_OBJECT('name', cc.user_name,'email'' at line 10
+2021-02-20 -- 01:06:39:639 -- error: start transaction
+2021-02-20 -- 01:06:39:639 -- error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'CAST( CONCAT('[', GROUP_CONCAT(DISTINCT JSON_OBJECT('name', cc.user_name,'email'' at line 10
+2021-02-20 -- 01:07:12:712 -- error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'CAST( CONCAT('[', GROUP_CONCAT(DISTINCT JSON_OBJECT('name', cc.user_name)),']') ' at line 10
+2021-02-20 -- 01:07:12:712 -- error: start transaction
+2021-02-20 -- 01:07:12:712 -- error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'CAST( CONCAT('[', GROUP_CONCAT(DISTINCT JSON_OBJECT('name', cc.user_name)),']') ' at line 10
+2021-02-20 -- 01:11:50:1150 -- error: Not unique table/alias: 'c'
+2021-02-20 -- 01:11:50:1150 -- error: start transaction
+2021-02-20 -- 01:11:50:1150 -- error: Not unique table/alias: 'c'
+2021-02-20 -- 01:35:12:3512 -- error: Expression #14 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'portal_hack.c.id' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+2021-02-20 -- 01:35:12:3512 -- error: start transaction
+2021-02-20 -- 01:35:12:3512 -- error: Expression #14 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'portal_hack.c.id' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
