@@ -68,7 +68,6 @@ function App() {
                     <UserStats/>
                     <h1>Participaciones en hackathones</h1>
                     <HackathonsJoined/>
-                    <h1>Hackathones Creados</h1>
                     <OrganizerStats/>
                     <HackathonsCreated/>
                     <Logout/>

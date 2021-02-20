@@ -6,8 +6,6 @@ import useFetch from '../../Hooks/useFetch'
 
 function showOrganizerStats (data) {
 
-    console.log(data)
-
     return(
 
         <div className='stats-section'>
@@ -38,9 +36,10 @@ function OrganizerStats() {
         
     if(!data) return 'Loading...' 
     if (!login) return <Redirect to="/" />
+    if(login.user.rol !== 'organizer') return null
 
     return(
-
+        
         <div className="organizer-stats-section" >
             {showOrganizerStats(data)}
         </div>
