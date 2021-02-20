@@ -21,6 +21,7 @@ import EditHackathon from './Components/EditHackathon/EditHackathon';
 import Posts from './Components/Posts/Posts';
 import Post from './Components/Post/Post';
 import Hackathon from './Components/Hackathon/Hackathon';
+import OrganizerStats from './Components/OrganizerStats/OrganizerStats';
 
 function App() {
 
@@ -68,6 +69,7 @@ function App() {
                     <h1>Participaciones en hackathones</h1>
                     <HackathonsJoined/>
                     <h1>Hackathones Creados</h1>
+                    <OrganizerStats/>
                     <HackathonsCreated/>
                     <Logout/>
                 </Route>

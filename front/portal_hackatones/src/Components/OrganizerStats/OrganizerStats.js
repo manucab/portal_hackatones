@@ -1,25 +1,27 @@
 import { useSelector } from 'react-redux'
 import { Redirect, useParams } from 'react-router-dom'
 import useFetch from '../../Hooks/useFetch'
-import './UserStats.css'
 
 
-function showStats (data) {
+
+function showOrganizerStats (data) {
+
+    console.log(data)
 
     return(
 
         <div className='stats-section'>
             <div className="stats">
-                <div className='stat'>{data[3][0].participations}</div>
-                <div>Participaciones</div> 
+                <div className='stat'>{data[4][0][0].created_hackathons}</div>
+                <div>Creados</div> 
             </div>
             <div className="stats">
-                <div className='stat' >{data[3][0].best_position+'º'}</div>
-                <div>Mejor Puesto</div> 
+                <div className='stat' >{data[4][2][0].avg_participants}</div>
+                <div>Media Asistentes</div> 
             </div>
             <div className="stats">
-                <div className='stat' >{data[3][0].avg_position+'º'}</div>
-                <div>Puesto Medio</div> 
+                <div className='stat' >{data[4][1][0].organizer_avg_rate}</div>
+                <div>Valoración Media</div> 
             </div>
             
         </div>
@@ -28,7 +30,7 @@ function showStats (data) {
 }
 
 
-function UserStats() {
+function OrganizerStats() {
 
     const login = useSelector(s => s.login)
     const {id} = useParams()
@@ -39,12 +41,12 @@ function UserStats() {
 
     return(
 
-        <div className="profile" >
-            {showStats(data)}
+        <div className="organizer-stats-section" >
+            {showOrganizerStats(data)}
         </div>
 
     )
 
 }
 
-export default UserStats
+export default OrganizerStats
