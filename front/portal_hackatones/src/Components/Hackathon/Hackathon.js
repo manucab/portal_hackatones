@@ -1,16 +1,20 @@
-import Header from '../Hackathon/Header/Header';
+import HeaderHack from './HeaderHack/HeaderHack';
 import useFetch from '../../Hooks/useFetch';
+import { useParams } from 'react-router-dom';
+import './Hackathon.css';
 function Hackathon() {
 
 
-    let hackathon = useFetch('http://localhost:3001/hackathon/search/filters/');
+const {id} = useParams();
 
-console.log('hackathon :>> ', hackathon);
+const hackathon = useFetch(`http://localhost:3001/hackathon/${id}`);
+
+if(!hackathon) return 'Loadin ...';
 
     return (
-        <div className="hackathon">
+        <div className="hackathonId">
 
-        <Header />
+       <HeaderHack h={hackathon[0]}/>
 
         </div>
     )

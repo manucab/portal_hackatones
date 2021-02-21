@@ -24,7 +24,7 @@ function CreateHackathon() {
     const [end_date, setEnd_date] = useState('');
     const [hackathon_status, sethackathon_status] = useState('pendiente');
     const [hackathon_info, sethackathon_info] = useState('');
-    const [thematic, setThematic] = useState('');
+    const [thematic, setThematic] = useState([]);
     const [webName, setWebName] = useState('');
     const [webUrl, setWebUrl] = useState('');
     const [links, setLinks] = useState([]);
@@ -50,7 +50,7 @@ function CreateHackathon() {
 
     const handleThematicSelected = (newValue, actionMeta) => {
         let valuesThematics = newValue.map(item => item.value);
-        setThematic([... valuesThematics]);
+        setThematic([...valuesThematics]);
     }
 
     const handleSubmit = async e => {

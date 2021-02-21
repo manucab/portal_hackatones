@@ -18,7 +18,7 @@ let socialMedia = [];
 
 function showHackathon(h) {
 
-    console.log('h.link :>> ', h.link);
+    console.log('h.thematic :>> ', h.thematic.split(','));
 
     console.log('h.start_date :>> ', DateTime.fromISO(h.start_date).toISODate());
     // DateTime.fromISO("2016-05-25");
@@ -80,7 +80,7 @@ function showHackathon(h) {
                 <span>Temática:
                 </span>
                 {
-                h.thematic
+                h.thematic.split(',').join(', ')
             }</div>
             <div>
                 <span>Tecnologías:

@@ -17,6 +17,9 @@ const createHackathon = async(req, res) => {
     const id_organizer = req.auth.id;
     const nameDirHackathon = req.nameDirHackathon;
 
+
+    console.log('thematic1 :>> ', thematic);
+
     thematic = JSON.parse(thematic);
     //TODO techs -> techs
     tech = JSON.parse(techs);
@@ -25,6 +28,10 @@ const createHackathon = async(req, res) => {
     let cover_picture= req.pathFile || '';
     let query = '';
     let params = [];
+
+    console.log('thematic2 :>> ', thematic);
+    // console.log('thematic ... :>> ', ...thematic);
+
 
     try {
         // 2. Check if the parameters are valid
@@ -47,8 +54,9 @@ const createHackathon = async(req, res) => {
             hackathon_info,
             cover_picture,
             id_organizer,
-            thematic,
+            thematic.join(',')
         );
+
 
         // 3.1 Get id_hackathon
         let id_hackathon = res_insertNewHackathon.insertId;
@@ -81,7 +89,6 @@ const createHackathon = async(req, res) => {
         logger.info(query);
 
         //Delete dir of media files
-
        await fs.rmdirSync(nameDirHackathon, { recursive: true });
         
         console.log(e)
