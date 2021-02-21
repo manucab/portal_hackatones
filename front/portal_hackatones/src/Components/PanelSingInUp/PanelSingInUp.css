@@ -3,9 +3,9 @@
     border-radius: 15;
     padding: 5px;
     font-size: 12px;
-/* height: 100%; */
-margin: 0px;
-position: relative;
+    height: 100%;
+    margin: 0px;
+    position: relative;
 
 }
 
@@ -21,18 +21,35 @@ position: relative;
 
 .tabs {
     list-style: none;
-border-top: 1px solid black;
-border-left: 1px solid black;
-border-right: 1px solid black;
-border-radius: 5px 5px 0px 0px;
+    border-top: 1px solid black;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    border-radius: 5px 5px 0px 0px;
     margin: 2px;
     padding: 4px;
     display: inline;
 }
 
-li.active {
-    background-color: #cecbcb;
+li {
+    background-color: #A3A4A6;
 }
+
+li a {
+    color: white;
+}
+
+
+li.active {
+    background-color: #F6E561;
+  
+}
+
+
+li.active a {
+    color: black;
+    font-weight: bold;
+}
+
 
 li.tabs a {
     text-decoration: none;
@@ -43,7 +60,7 @@ li.tabs a {
     border: 1px solid black;
     border-radius: 15px;
     padding: 10px;
-    background-color: #cecbcb;
+    background-color: #F6E561;
 }
 
 

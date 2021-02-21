@@ -15,6 +15,7 @@ function Home() {
     
     // const hackathons = useFetch('http://localhost:3001/get' + `?start_date=${start_date}`);
 
+
     console.log('hackathons :>> ', hackathons);
 
     const hasHackathon = (hackathons && ! hackathons.Info) ? true : false;
@@ -42,7 +43,7 @@ function Home() {
             <div className="nextHackathons">
 
                 
-                 { hasHackathon && <CarouselHackathons hackathons={hackathons}/>}
+                 {/* { hasHackathon && <CarouselHackathons hackathons={hackathons}/>} */}
                 {/* && <button id="btnMoreHackathons" onClick={""} >Ver todos</button> */}
             
                 {/* TODO --> format style */}

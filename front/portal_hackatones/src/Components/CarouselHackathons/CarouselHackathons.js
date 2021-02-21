@@ -16,7 +16,7 @@ function ShowHackathon (h,organizer) {
     const startMonth = h.start_date.split('-')[1]
     const startDay = h.start_date.split('-')[2].split('T')[0]
     const startDateFormated = DateTime.fromISO(`${startYear}-${startMonth}-${startDay}`)
-    const daysTo = (parseInt(startDateFormated.diffNow('days').toObject().days))
+    const daysTo = (parseInt(startDateFormated.diffNow('days').toObject().days)) + 1
     const hasEnded = h.hackathon_status === 'realizado'
     const isRated = hasEnded && h.rate!== null
     const ableToRate = hasEnded && !isRated
@@ -38,7 +38,7 @@ function ShowHackathon (h,organizer) {
         <div>Fecha Final: {h.end_date.split('T')[0]}</div>
         <div>Tecnologías: {h.techs}</div>
         <div>Estado Hackathon: {h.hackathon_status}</div>
-        <div > {!hasEnded && <div className="timeTo">Quedan {daysTo} días!!!</div>} </div>
+        <div > {!hasEnded && <div className="timeTo">{daysTo > 1? `Quedan ${daysTo} días!!!` : `Queda 1 día!!!`}</div>} </div>
         <div className='hackathon-results'>
             {isRanked && <div className='ranking'>{h.ranking}º </div>}
             <div className='rate'>
