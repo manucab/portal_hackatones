@@ -23,7 +23,7 @@ router.delete('/:idHackathon/:idComment/delete-comment', deleteComment)
 // Search hackathons by some filters
 router.get('/search/filters', getHackathonByFilters);
 // Search hackathon by id
-router.get('/search/:id', getHackathonByFilters);
+router.get('/:id', getHackathonByFilters);
 
 
 module.exports = router

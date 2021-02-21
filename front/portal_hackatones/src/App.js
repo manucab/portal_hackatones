@@ -77,7 +77,7 @@ function App() {
                     <EditHackathon/>
                 </Route>
 
-                <Route path='/hackathon' exact>
+                <Route path='/hackathon/:id' exact>
                     <Hackathon/>
                 </Route>
 
