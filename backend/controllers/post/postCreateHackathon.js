@@ -83,6 +83,8 @@ const createHackathon = async(req, res) => {
         //Delete dir of media files
 
        await fs.rmdirSync(nameDirHackathon, { recursive: true });
+        
+        console.log(e)
 
         let msgError = ` Error in create new a hackathon: ${e.message} `;
         logger.error( msgError);

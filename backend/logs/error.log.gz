@@ -1009,3 +1009,39 @@
 2021-02-20 -- 01:35:12:3512 -- error: Expression #14 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'portal_hack.c.id' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
 2021-02-20 -- 01:35:12:3512 -- error: start transaction
 2021-02-20 -- 01:35:12:3512 -- error: Expression #14 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'portal_hack.c.id' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+2021-02-20 -- 17:21:01:211 -- error:  Error in create new a hackathon: The thematic of hackathon is not valid 
+2021-02-20 -- 17:22:48:2248 -- error: Lock wait timeout exceeded; try restarting transaction
+2021-02-20 -- 17:22:48:2248 -- error:  Error in create new a hackathon: Lock wait timeout exceeded; try restarting transaction 
+2021-02-20 -- 17:24:06:246 -- error: Lock wait timeout exceeded; try restarting transaction
+2021-02-20 -- 17:24:06:246 -- error:  Error in create new a hackathon: Lock wait timeout exceeded; try restarting transaction 
+2021-02-20 -- 17:25:03:253 -- error: Lock wait timeout exceeded; try restarting transaction
+2021-02-20 -- 17:25:03:253 -- error:  Error in create new a hackathon: Lock wait timeout exceeded; try restarting transaction 
+2021-02-20 -- 17:32:07:327 -- error: Lock wait timeout exceeded; try restarting transaction
+2021-02-20 -- 17:32:07:327 -- error:  Error in create new a hackathon: Lock wait timeout exceeded; try restarting transaction 
+2021-02-21 -- 11:09:05:95 -- error: Column count doesn't match value count at row 1
+2021-02-21 -- 11:09:05:95 -- error:  Error in create new a hackathon: Column count doesn't match value count at row 1 
+2021-02-21 -- 11:09:27:927 -- error: Column count doesn't match value count at row 1
+2021-02-21 -- 11:09:27:927 -- error:  Error in create new a hackathon: Column count doesn't match value count at row 1 
+2021-02-21 -- 11:09:27:927 -- error: Column count doesn't match value count at row 1
+2021-02-21 -- 11:09:27:927 -- error:  Error in create new a hackathon: Column count doesn't match value count at row 1 
+2021-02-21 -- 11:09:29:929 -- error: Column count doesn't match value count at row 1
+2021-02-21 -- 11:09:29:929 -- error:  Error in create new a hackathon: Column count doesn't match value count at row 1 
+2021-02-21 -- 11:09:29:929 -- error: Column count doesn't match value count at row 1
+2021-02-21 -- 11:09:29:929 -- error:  Error in create new a hackathon: Column count doesn't match value count at row 1 
+2021-02-21 -- 11:09:30:930 -- error: Column count doesn't match value count at row 1
+2021-02-21 -- 11:09:30:930 -- error:  Error in create new a hackathon: Column count doesn't match value count at row 1 
+2021-02-21 -- 11:09:31:931 -- error: Column count doesn't match value count at row 1
+2021-02-21 -- 11:09:31:931 -- error:  Error in create new a hackathon: Column count doesn't match value count at row 1 
+2021-02-21 -- 11:10:26:1026 -- error: Lock wait timeout exceeded; try restarting transaction
+2021-02-21 -- 11:10:26:1026 -- error:  Error in create new a hackathon: Lock wait timeout exceeded; try restarting transaction 
+2021-02-21 -- 11:11:22:1122 -- error: Lock wait timeout exceeded; try restarting transaction
+2021-02-21 -- 11:11:22:1122 -- error:  Error in create new a hackathon: Lock wait timeout exceeded; try restarting transaction 
+2021-02-21 -- 11:12:45:1245 -- error: Column count doesn't match value count at row 1
+2021-02-21 -- 11:12:45:1245 -- error:  Error in create new a hackathon: Column count doesn't match value count at row 1 
+2021-02-21 -- 11:34:30:3430 -- error: Column count doesn't match value count at row 1
+2021-02-21 -- 11:34:30:3430 -- error:  Error in create new a hackathon: Column count doesn't match value count at row 1 
+2021-02-21 -- 11:39:43:3943 -- error: Column count doesn't match value count at row 1
+2021-02-21 -- 11:39:43:3943 -- error:  Error in create new a hackathon: Column count doesn't match value count at row 1 
+2021-02-21 -- 12:33:24:3324 -- error:  Error in create new a hackathon: The start date entered is not valid 
+2021-02-21 -- 12:33:34:3334 -- error: Column count doesn't match value count at row 1
+2021-02-21 -- 12:33:34:3334 -- error:  Error in create new a hackathon: Column count doesn't match value count at row 1 

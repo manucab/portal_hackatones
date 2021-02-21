@@ -12,7 +12,7 @@ const getProfileInfo = async (id) => {
       join hackathon_tech c on c.id_hackathon = b.id_hackathon
       join tech d on d.id = c.id_tech
       where b.id_competitor= ? and not a.hackathon_status = 'cancelado'
-      group by a.id`;
+      group by a.id order by a.start_date desc`;
     
     const queryHackathonsCreated = `select a.id ,a.hackathon_name, a.hackathon_place,a.city,a.hackathon_status,a.start_date, a.end_date,a.thematic,
       group_concat(d.tech_name separator ',') as techs,
@@ -23,7 +23,7 @@ const getProfileInfo = async (id) => {
       join tech d on d.id = b.id_tech
       left join competitor_hackathon e on e.id_hackathon = a.id
       where a.id_organizer=? and not a.hackathon_status = 'cancelado'
-      group by a.id`;
+      group by a.id order by a.start_date desc` ;
   
           
   

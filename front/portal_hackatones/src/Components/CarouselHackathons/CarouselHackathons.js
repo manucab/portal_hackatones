@@ -4,11 +4,16 @@ import arrow from '../../Media/Images/General/Arrow-down.svg'
 import {DateTime} from "luxon";
 import Modal from "../Modal/Modal";
 import StarRating from "../StarRating/StarRating";
+import { useHistory } from "react-router-dom";
+import { useSelector } from "react-redux";
 
 
 function ShowHackathon (h,organizer) {
 
     const [show,setShow] = useState(false)
+    const login = useSelector(s => s.login)
+    const history = useHistory()
+ 
 
     console.log(organizer)
 
@@ -69,7 +74,7 @@ function ShowHackathon (h,organizer) {
                     <div>Valoración</div>
                 </div> :
                     organizer ?
-                    <button className="modify-hack">Modificar</button> :
+                    <button className="modify-hack" onClick={() => history.push(`/user/${login.user.id}/${h.id}/modify`)}>Modificar</button> :
                     null
             }
         </div>
@@ -85,7 +90,7 @@ function ShowHackathon (h,organizer) {
 function CarouselHackathons ({hackathons,organizer}) {
 
     const [index,setIndex] = useState(0)
- 
+   
 
 
     if(!hackathons) return 'Loading...'
