@@ -1,0 +1,33 @@
+#edit-profile-avatar {
+    width: 100%;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.edit-profile-form div {
+    width: 270px;
+}
+
+.change-password-container {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    padding: 5px;
+}
+
+.change-password {
+
+    margin: 10px 0px 10px 0px;
+}
+
+.change-password-container div {
+
+    margin-top: 5px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+
+}

@@ -1,6 +1,8 @@
 // Variables && instances
 const express = require('express')
 const router = express.Router()
+const{userStore, upload} = require('../middelwares/storageMulter/changeUpload');
+
 
 // Controllers
 const { activeUser } = require('../controllers/update/updateActiveUser');
@@ -20,7 +22,7 @@ const { isAuthenticated, isRightUser, isOrganizer } = require('../middelwares/au
 // *** GET *** 
 router.get('/:idUser',isAuthenticated,isRightUser,profileInfo)
     // *** PUT ***
-router.put('/:idUser/update',isAuthenticated,isRightUser , updateProfile)
+router.put('/:idUser/update',isAuthenticated,isRightUser, userStore, upload.single('profile_picture'), updateProfile)
 router.put('/forgotPassword', forgotPassword)
 router.put('/:idUser/delete',isAuthenticated,isRightUser, deleteUser)
 router.put('/:idUser/:idHackathon/cancelbooking',isAuthenticated,isRightUser , cancelHackathonBooking)

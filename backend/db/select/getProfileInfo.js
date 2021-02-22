@@ -55,8 +55,6 @@ const getProfileInfo = async (id) => {
     const organizerStats = [ await performQuery(queryCreated,params),
       await performQuery(queryAvgRate,params),
       await performQuery(queryAvgParticipants,params),]
-    
-    console.log(organizerStats)
   
   
     const result = [profile, hackathonsParticipations, hackathonsCreated, stats,organizerStats];

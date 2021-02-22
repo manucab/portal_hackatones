@@ -12,7 +12,7 @@ import { useSelector } from "react-redux";
 const hackathonInfo = async (idHackathon) => {
   //get current data of this hackathon
   const hData = await fetch(
-    `http://localhost:3001/hackathon/search/${idHackathon}`
+    `http://localhost:3001/hackathon/${idHackathon}`
   ).then((res) => res.json());
   return hData;
 };
@@ -37,17 +37,21 @@ function EditHackathon() {
   const [links, setLinks] = useState([]);
   const [hasWeb, setHasWeb] = useState(false);
   const [techs, setTechs] = useState([]);
-
+  const [placeIndex, setPlaceIndex] = useState(2);
+  // const [optionsTech, setOptionsTech] = useState([]);
 
   let tech = [];
 
   const handleTechSelected = (newValue, actionMeta) => {
+    console.log("newValue :>> ", newValue)
     tech = newValue.map((item) => item.value).flat();
     setTechs(tech);
   };
 
   const handlePlaceSelected = (newValue) => {
     console.log("newValue :>> ", newValue.value);
+    findPlaceIndex = optionPlace.findIndex((x) => x.value === newValue.value);
+    setPlaceIndex(findPlaceIndex);
     sethackathon_place(newValue.value);
   };
 
@@ -126,17 +130,17 @@ function EditHackathon() {
     }
   };
 
-  let listTechs = useFetch("http://localhost:3001/info/listTech");
-  let listThematics = useFetch("http://localhost:3001/info/listThematics");
+  let listTechs = useFetch('http://localhost:3001/info/listTech');
+  let listThematics = useFetch('http://localhost:3001/info/listThematics');
 
-  if (!listTechs) listTechs = [];
+  if (! listTechs) 
+      listTechs = [];
+  
+  if (! listThematics) 
+      listThematics = [];
+  
+  let optionsTech = listTechs.map(tech => ({"value": tech.tech_name, "label": tech.tech_name}));
 
-  if (!listThematics) listThematics = [];
-
-  let optionsTech = listTechs.map((tech) => ({
-    value: tech.tech_name,
-    label: tech.tech_name,
-  }));
   let optionsThematics = listThematics.map((thematic) => ({
     value: thematic.thematic,
     label: thematic.thematic,
@@ -171,41 +175,59 @@ function EditHackathon() {
   ];
 
   //Get current info to set default values in the inputs
-
-
+  let findPlaceIndex;
+  let findTechsIndex = [];
   useEffect(() => {
-    hackathonInfo(idHackathon)
-      .then( h => {
-        // const placeIndex = optionPlace.findIndex(
-        //   (x) => x.value === h[0].hackathon_place
-        // );
-        sethackathon_place('presencial');
-        setHackathon_name(h[0].hackathon_name)
-        setCity(h[0].city);
-        setStart_date(h[0].start_date);
-        setEnd_date(h[0].end_date);
-        sethackathon_status(h[0].hackathon_status);
-        sethackathon_info(h[0].hackathon_info)
+    hackathonInfo(idHackathon).then((h) => {
+      sethackathon_place(h[0].hackathon_place);
+      findPlaceIndex = optionPlace.findIndex(
+        (x) => x.value === h[0].hackathon_place
+      );
+      setPlaceIndex(findPlaceIndex);
+      setHackathon_name(h[0].hackathon_name);
+      setCity(h[0].city);
+      setStart_date(h[0].start_date);
+      setEnd_date(h[0].end_date);
+      sethackathon_status(h[0].hackathon_status);
+      sethackathon_info(h[0].hackathon_info);
 
-        h[0].link.map(l => {
-          setLinks([...links,{"webName": l.web_name,"link":l.url}])
-        })
+      h[0].link.map((l) => {
+        setLinks([...links, { webName: l.web_name, link: l.url }]);
+      });
 
+      // let listTechs
+      // let optionsTechData 
+      // fetch("http://localhost:3001/info/listTech").then(
+      //   res =>  res.json()
+      // ).then(data => {
+      //   listTechs = data
+      //   optionsTechData = listTechs.map((tech) => ({
+      //     value: tech.tech_name,
+      //     label: tech.tech_name,
+      //   }))
+      //   setOptionsTech(optionsTechData);
+      //   for (let t of h[0].techs) {
 
-        // setThematic(h[0].thematic)
-       
-        // console.log(links)
-        // setWebName
-        // setWebUrl
-        // setLinks
-        // setHasWeb
-        // setTechs
-      }
-      )
-    
+      //     let index = optionsTechData.findIndex(
+      //       (x) => x.value === t.tech
+      //     )
+      //     findTechsIndex = [...findTechsIndex, index]
+      //   }
+      // })
+      
+
+      
+
+      // setThematic(h[0].thematic)
+
+      // console.log(links)
+      // setWebName
+      // setWebUrl
+      // setLinks
+      // setHasWeb
+      // setTechs
+    });
   }, []);
-
-
   return (
     <div className="createHackathon">
       <Helmet>
@@ -238,6 +260,7 @@ function EditHackathon() {
             Modalidad:
             <Select
               id="hackathon_place"
+              value={optionPlace[placeIndex]}
               theme={styleSelectPlace}
               options={optionPlace}
               onChange={handlePlaceSelected}
@@ -301,6 +324,7 @@ function EditHackathon() {
             <CreatableSelect
               className="selectTechs"
               isMulti
+              value = {findTechsIndex.map(i => optionsTech[i].value)}
               options={optionsTech}
               onChange={handleTechSelected}
             />

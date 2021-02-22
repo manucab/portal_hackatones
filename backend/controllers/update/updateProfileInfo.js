@@ -1,6 +1,8 @@
 const dbUpdateProfileInfo = require("../../db/update/updateProfileInfo");
 const getUserById  = require("../../db/select/getUserById");
 const profileInfoValidator = require("../../validators/profileInfoValidator");
+const bcrypt = require('bcrypt');
+
 
 const updateProfileInfo = async (req, res) => {
   const {
@@ -11,10 +13,12 @@ const updateProfileInfo = async (req, res) => {
     rol,
     currentPassword,
     newPassword,
-    passwordConfirmation,
-    profile_picture
+    passwordConfirmation
   } = req.body;
   const { idUser } = req.params;
+
+  let profile_picture = req.pathFile || ''
+  
 
   try {
     //Check if user want to change password
@@ -29,7 +33,7 @@ const updateProfileInfo = async (req, res) => {
 
     if (newPassword) {
       await profileInfoValidator.validateAsync(req.body);
-      if (newPassword != passwordConfirmation) {
+      if (newPassword !== passwordConfirmation) {
         res
           .status(400)
           .send(
@@ -37,10 +41,14 @@ const updateProfileInfo = async (req, res) => {
           );
         return;
       }
-      const userDB = await getUserById(idUser);
-      const passwordDB = userDB.user_password;
+      const userDB = await getUserById(parseInt(idUser));
+      const passwordDB = userDB[0].user_password;
+      // 4. Check password with bcrypt
+     
+      const passwordIsvalid = await bcrypt.compare(currentPassword,passwordDB);
+      console.log(passwordIsvalid)
 
-      if (currentPassword != passwordDB) {
+      if (!passwordIsvalid) {
         res.status(401).send("Incorrect current password");
         return;
       }
