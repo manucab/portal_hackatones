@@ -11,7 +11,7 @@ const getProfileInfo = async (id) => {
       join competitor_hackathon b on a.id=b.id_hackathon
       join hackathon_tech c on c.id_hackathon = b.id_hackathon
       join tech d on d.id = c.id_tech
-      where b.id_competitor= ? and not a.hackathon_status = 'cancelado'
+      where b.id_competitor= ? and not a.hackathon_status = 'cancelado' and not b.inscription_status = 'cancelado'
       group by a.id order by a.start_date desc`;
     
     const queryHackathonsCreated = `select a.id ,a.hackathon_name, a.hackathon_place,a.city,a.hackathon_status,a.start_date, a.end_date,a.thematic,

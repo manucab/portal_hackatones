@@ -1,11 +1,13 @@
 import { useState } from "react";
-import { useSelector } from "react-redux";
-import { Redirect } from "react-router-dom";
+import { useDispatch, useSelector } from "react-redux";
+import useFetch from '../../Hooks/useFetch'
 import Acordeon from "../Acordeon/Acordeon";
 import "./EditProfile.css";
 
 function EditProfile(props) {
   const login = useSelector((s) => s.login);
+  const dispath = useDispatch()
+
   const id = login.user.id;
 
   const [email, setEmail] = useState(props.email);
@@ -21,6 +23,7 @@ function EditProfile(props) {
   // const [changePassword, setChangePassword] = useState(false)
  
   const handleClose = props.handleClose;
+  
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -36,10 +39,14 @@ function EditProfile(props) {
     fd.append("surname", surname);
     fd.append("professional_profile", professional_profile);
     fd.append("rol", rol);
-    fd.append("currentPassword",currentPassword)
-    fd.append("newPassword",newPassword)
-    fd.append("passwordConfirmation",confirmationPassword)
 
+    if(currentPassword) {
+      fd.append("currentPassword",currentPassword)
+      fd.append("newPassword",newPassword)
+      fd.append("passwordConfirmation",confirmationPassword)
+
+    }
+    
     const headers = {
       //   "Content-Type": "application/json",
       Authorization: login.token,
@@ -51,7 +58,15 @@ function EditProfile(props) {
       method: "PUT",
     });
 
+    const data = Object.assign({},login)
+    data.user.email = email
+    data.user.user_name = user_name
+    data.user.professional_profile = professional_profile
+    data.user.rol=rol   
+
     if (ret.status === 200) {
+      
+      dispath({ type: "login", data })
       alert("¡Se ha actualizado tu perfil!");
       handleClose();
       window.location.reload();
@@ -60,6 +75,10 @@ function EditProfile(props) {
       alert(ret.statusText)
     }
   };
+
+  const defaultUser = props.rol === 'user' ? 'defaultChecked' : null
+  const defaultOrganizer = props.rol === 'organizer' ? 'defaultChecked' : null
+
 
 
   return (
@@ -132,8 +151,8 @@ function EditProfile(props) {
                 id="user"
                 name="typeUser"
                 value="user"
-                onChange={(e) => setRol(e.target.value)}
-                defaultChecked
+                onChange={(e)=>setRol(e.target.value)}
+                defaultChecked={defaultUser}
               />
               <label for="user">Usuario</label>
             </div>
@@ -145,6 +164,7 @@ function EditProfile(props) {
                 name="typeUser"
                 value="organizer"
                 onChange={(e) => setRol(e.target.value)}
+                defaultChecked={defaultOrganizer}
               />
               <label for="organizer">Organizador</label>
             </div>

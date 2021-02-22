@@ -45,6 +45,7 @@ function EditHackathon() {
   const handleTechSelected = (newValue, actionMeta) => {
     console.log("newValue :>> ", newValue)
     tech = newValue.map((item) => item.value).flat();
+    console.log('tech', tech)
     setTechs(tech);
   };
 
@@ -195,6 +196,8 @@ function EditHackathon() {
         setLinks([...links, { webName: l.web_name, link: l.url }]);
       });
 
+      setTechs(h[0].techs.map(t => t.tech))
+
       // let listTechs
       // let optionsTechData 
       // fetch("http://localhost:3001/info/listTech").then(
@@ -324,7 +327,7 @@ function EditHackathon() {
             <CreatableSelect
               className="selectTechs"
               isMulti
-              value = {findTechsIndex.map(i => optionsTech[i].value)}
+              value={techs.map(t => ({ label: t, value: t }))}
               options={optionsTech}
               onChange={handleTechSelected}
             />
