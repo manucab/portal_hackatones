@@ -5,7 +5,8 @@ const deleteHackathon = async (req, res) => {
   const { idUser, idHackathon } = req.params;
 
   try {
-    const check = getHackathonId(idHackathon);
+    const check = await getHackathonId(idHackathon);
+    console.log(check)
     const checked = check.length === 1;
 
     if (!checked) {

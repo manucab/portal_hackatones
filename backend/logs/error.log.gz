@@ -1045,3 +1045,4 @@
 2021-02-21 -- 12:33:24:3324 -- error:  Error in create new a hackathon: The start date entered is not valid 
 2021-02-21 -- 12:33:34:3334 -- error: Column count doesn't match value count at row 1
 2021-02-21 -- 12:33:34:3334 -- error:  Error in create new a hackathon: Column count doesn't match value count at row 1 
+2021-02-22 -- 16:11:40:1140 -- error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '17'' at line 3

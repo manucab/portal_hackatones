@@ -30,16 +30,17 @@ const getProfileInfo = async (id) => {
     const queryStats = `select count(*) participations,
           coalesce(round (avg(ranking),0),'-') avg_position,
           coalesce(min(ranking),'-') best_position  
-          from competitor_hackathon a where a.id_competitor=? and a.inscription_status = 'asistente'`;
+          from competitor_hackathon a 
+          where a.id_competitor=? and a.inscription_status = 'asistente'`;
     const params = [id];
   
     //Organizer stats
 
-    const queryCreated = `select count(distinct id) created_hackathons from hackathon where id_organizer = ?`
+    const queryCreated = `select count(distinct id) created_hackathons from hackathon where id_organizer = ? and not hackathon_status = 'cancelado'`
     const queryAvgRate = `select round(avg(avg_rate_hackathon),1) organizer_avg_rate from(
       select round(avg(rate),1) avg_rate_hackathon from competitor_hackathon a
       join hackathon b on b.id = a.id_hackathon
-      where b.id_organizer = ?
+      where b.id_organizer = ? and not b.hackathon_status = 'cancelado'
       group by a.id_hackathon) as avgs`
     const queryAvgParticipants = `select round((count(a.id_competitor)/count(distinct b.id)),0) avg_participants
       from competitor_hackathon a
