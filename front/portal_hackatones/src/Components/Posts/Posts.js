@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { Helmet } from 'react-helmet'
 import { useHistory } from 'react-router-dom'
 import useFetch from '../../Hooks/useFetch'
+
 import './Posts.css'
 
 function Posts () {

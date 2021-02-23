@@ -6,7 +6,8 @@ const createHackathonDB = async(hackathon_name, hackathon_place, city, start_dat
 
     const query = 'insert into hackathon (hackathon_name,hackathon_place, city, start_date, end_date,hackathon_status, hackathon_info,cover_picture,id_organizer,thematic) values (?,?,?,?,?,?,?,?,?,?)';
 
-    const params = [hackathon_name, hackathon_place, city, start_date, end_date, hackathon_status, hackathon_info, cover_picture, id_organizer, thematic];
+   
+    const params = [hackathon_name, hackathon_place, city, start_date, end_date, hackathon_status, hackathon_info, cover_picture, id_organizer, thematic.toString()];
 
     const result = await performQuery(query, params);
 

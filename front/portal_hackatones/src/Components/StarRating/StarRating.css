@@ -20,12 +20,12 @@
     margin: px;
 }
 
-button span {
+.star-rating-buttons button span {
     font-size: 200%;
     color: #A3A4A6;
 }
 
-.star:hover {
+.star-rating-buttons button span:hover {
     color: #F6E561;
 }
 
@@ -61,7 +61,7 @@ button span {
     font-weight: bold;
 }
 
-.star-on {
+.star-rating-buttons button span.star-on {
     color: #F6E561;
     
 }

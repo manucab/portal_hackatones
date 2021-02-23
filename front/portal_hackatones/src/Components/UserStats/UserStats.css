@@ -2,10 +2,11 @@
 .stats-section {
 
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
 
 }
+
 
 .stats {
     display: flex;

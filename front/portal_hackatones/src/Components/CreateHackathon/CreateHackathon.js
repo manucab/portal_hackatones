@@ -72,7 +72,6 @@ function CreateHackathon() {
         fd.append('links', JSON.stringify(links));
 
         console.log('start_date :>> ', DateTime.fromISO(start_date).plus({hour:1}).toFormat('yyyy-MM-dd  HH:mm:ss.000'));
-
         const headers = { // 'Content-Type': 'application/json',
         'Authorization':login.token
         }
@@ -84,7 +83,7 @@ function CreateHackathon() {
         })
 
         if (ret.ok) {
-            alert('¡Felicidades, te has registrado!');
+            alert('¡Felicidades, has creado un hackathon!');
             return history.push('/profile');
         }
     }

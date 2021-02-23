@@ -1,6 +1,8 @@
 // Variables && instances
 const express = require('express');
 const router = express.Router();
+const{hackathonStore, upload} = require('../middelwares/storageMulter/changeUpload');
+
 
 // Controller
 const {
@@ -15,7 +17,7 @@ const {
 
 // **** POST *****
 // Create a new hackathon
-router.post('/', isAuthenticated, isOrganizer, createHackathon);
+router.post('/', isAuthenticated, isOrganizer,  hackathonStore,  upload.single('cover_picture'),createHackathon);
 
 
 module.exports = router;

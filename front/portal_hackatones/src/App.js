@@ -63,7 +63,7 @@ function App() {
                     <ValidateAccount/>
                 </Route>
 
-                <Route path='/user/:id'>
+                <Route path='/user/:id'exact>
                     <h1>Bienvenido a tu perfil</h1>
                     <ProfileInfo/>
                     <h1>Consulta tus estadísticas</h1>
@@ -75,7 +75,7 @@ function App() {
                     <Logout/>
                 </Route>
 
-                <Route path='/user/:id/:idHackathon/modify'>
+                <Route path='/user/:id/:idHackathon/modify' exact>
                     <h1>Edita tu hackathon</h1>
                     <EditHackathon/>
                 </Route>

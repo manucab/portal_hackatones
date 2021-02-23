@@ -13,7 +13,7 @@ CREATE TABLE IF NOT EXISTS competitor (
     code varchar(100) not null default 'empty-code',
     reset_password_code varchar(500) default null,
     deleted_user ENUM ('true','false')  default 'false',
-    profile_picture varchar(500) not null default 'urlpordefecto',
+    profile_picture varchar(500) not null default 'default.png',
     user_password varchar(100) not null,
     creation_date timestamp not null default current_timestamp,
     last_update timestamp not null default current_timestamp on update current_timestamp

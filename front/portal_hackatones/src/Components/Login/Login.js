@@ -26,9 +26,7 @@ function Login() {
       method: "POST",
     });
 
-    console.log(res);
     const data = await res.json();
-    console.log(data);
 
     if (res.status === 200) {
       dispatch({ type: "login", data });

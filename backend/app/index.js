@@ -56,7 +56,7 @@ app.use('/register', registerRouter);
 app.use('/hackathon', hackathonRouter);
 
 // Create Hackathon Page
-app.use('/createhackathon', hackathonStore,  upload.single('cover_picture'),createHackathonRouter);
+app.use('/createhackathon',createHackathonRouter);
 
 //// ********************************
 //User -> validate account

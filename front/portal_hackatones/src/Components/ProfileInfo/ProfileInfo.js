@@ -45,6 +45,7 @@ function ProfileInfo () {
     const email = data[0][0].email
     const professional_profile = data[0][0].professional_profile
     const rol = data[0][0].rol
+    const profile_picture = data[0][0].profile_picture
 
 
     
@@ -73,6 +74,7 @@ function ProfileInfo () {
                     email = {email}
                     professional_profile = {professional_profile}
                     rol = {rol}
+                    profile_picture = {profile_picture}
 
                 />
             </Modal>

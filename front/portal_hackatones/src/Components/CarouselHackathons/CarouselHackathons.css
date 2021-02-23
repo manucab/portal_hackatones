@@ -162,3 +162,10 @@
     cursor: pointer;
 
 }
+
+.delete-hackathon-warning {
+    background-color: #A3A4A6;
+    padding: 5px;
+    border-radius: 10px;
+    margin-bottom: 5px;
+}
