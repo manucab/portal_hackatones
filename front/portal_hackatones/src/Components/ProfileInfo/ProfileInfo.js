@@ -39,7 +39,6 @@ function ProfileInfo () {
     if(!data) return 'Loading...' 
     if (!login) return <Redirect to="/" />
 
-    console.log(login.token)
     const user_name = data[0][0].user_name
     const surname = data[0][0].surname
     const email = data[0][0].email

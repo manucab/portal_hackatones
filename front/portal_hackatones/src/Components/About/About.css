@@ -1,0 +1,32 @@
+.about-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about-title {
+    padding: 5px;
+    border-radius: 5px;
+    border-right: 5px solid #F6E561;
+    border-bottom: 5px solid #F6E561;
+}
+
+.about-picture {
+
+    box-sizing: border-box;
+    width: 300px;
+    border: 1px solid #A3A4A6;
+    border-radius: 5px;
+
+}
+
+p {
+    box-sizing: border-box;
+    margin-top: 10px;
+    width: 300px;
+    padding: 5px;
+    text-align: justify;
+    border-radius: 5px;
+    border-right: 5px solid #F6E561;
+    border-bottom: 5px solid #F6E561;
+}

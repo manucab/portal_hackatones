@@ -24,6 +24,7 @@ import Hackathon from './Components/Hackathon/Hackathon';
 import OrganizerStats from './Components/OrganizerStats/OrganizerStats';
 import HackathonSearch from './Components/HackathonSearch/HackathonSearch';
 import Links2 from './Components/Links/Links';
+import About from './Components/About/About';
 
 function App() {
 
@@ -98,6 +99,11 @@ function App() {
                 <Route path='/blog' exact>
                     <h1>Bienvenido a nuestro blog</h1>
                     <Posts/>
+                </Route>
+
+
+                <Route path='/about' exact>
+                    <About/>
                 </Route>
 
                 <Route path='/blog/post/:id' exact>
