@@ -8,6 +8,7 @@ const isValidParamsRegister = async(req, res, next) => {
 
     // 1. Get params
     const { email, name, surname, professional_profile, rol, password, profile_picture } = req.body
+    console.log('professional_profile :>> ', professional_profile);
 
 
     try {
@@ -19,7 +20,7 @@ const isValidParamsRegister = async(req, res, next) => {
 
         let msgError = ('Error in params register:', e.message);
         logger.error(msgError);
-        return res.status(500).send(msgError);
+        return res.status(500).json(msgError);
     }
 }
 

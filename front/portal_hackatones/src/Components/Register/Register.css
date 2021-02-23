@@ -27,3 +27,31 @@
 .button {
     margin: 10px;
 }
+
+
+.fieldPassword{
+position: relative;
+}
+
+.inputPass{
+}
+
+.btnShowPassword{
+position: absolute;
+right: 0px;
+bottom: 6px;
+cursor: pointer;
+width: 20px;
+}
+
+.errorPass{
+position: absolute;
+    font-size: 8px;
+    color: brown;
+    bottom:-12px;
+    left: 5px;
+}
+
+.noErrorPass{
+    display: none;
+}

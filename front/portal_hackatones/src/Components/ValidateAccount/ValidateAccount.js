@@ -1,31 +1,24 @@
 import {useEffect, useState} from "react";
-import {useHistory, useParams} from "react-router";
-import {Link} from "react-router-dom";
-import UserStats from "../UserStats/UserStats";
+import {useParams} from "react-router";
+import useActiveAccount from "../../Hooks/useActiveAccount";
 
 function ValidateAccount() {
 
-
     const {id, code} = useParams();
+    let urlValidateAccount = `http://localhost:3001/user/validate/${id}/${code}`
 
-    const [state, setState] = useState(0);
+    const ret = useActiveAccount(urlValidateAccount);
 
+    if (! ret) 
+        return 'loading...';
+    
 
-    let res = false;
-
-    useEffect(async () => {
-        res = await activeAccount(id, code);
-        setState(res);
-    }, [])
-
-    if (state === 0) 
-        return 'loading...';;
-    ;
     return (
         <div className="validateAccount">
-            <ShowValideMsg state={state}/>
+            <ShowValideMsg state={
+                ret.status
+            }/>
         </div>
-
     )
 }
 
@@ -47,21 +40,6 @@ function ShowValideMsg({state}) {
         } </div>
 
     )
-}
-
-const activeAccount = async (id, code) => {
-
-    let urlValidateAccount = `http://localhost:3001/user/validate/${id}/${code}`
-
-    let ret = await fetch(urlValidateAccount, {method: 'POST'})
-
-    console.log('ret :>> ', ret);
-
-    console.log(ret.status);
-
-
-    return ret.status;
-
 }
 
 

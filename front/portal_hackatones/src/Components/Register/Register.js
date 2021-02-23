@@ -1,56 +1,111 @@
 import {useState} from 'react';
-import {Redirect, useHistory} from 'react-router-dom';
+import {useHistory} from 'react-router-dom';
 import './Register.css';
 import {Helmet} from "react-helmet";
+import useFetchPost from '../../Hooks/useFetchPost';
+import Modal from '../Modal/Modal';
+import { css } from "@emotion/react";
+import ClipLoader from "react-spinners/ClipLoader";
 
-
-function Register() {
-
+function Register() { // Can be a string as well. Need to ensure each key-value pair ends with ;
+    const override = css `
+display: block;
+margin: 0 auto;
+border-color: red;
+`;
     const [email, setEmail] = useState('');
     const [name, setName] = useState('');
     const [surname, setSurname] = useState('');
     const [professional_profile, setprofessional_profile] = useState('desarrollador');
     const [rol, setRol] = useState('user');
     const [password, setPassword] = useState('');
-    const [profile_picture, setProfilePicture] = useState('default');
+    const [registerOk, setRegisterOk] = useState(0);
+    const profile_picture = 'default';
+    const [showModal, setShowModal] = useState(false);
+    const [showPassword, setShowPassword] = useState(false);
+    const [errorPassword, setErrorPassword] = useState(false);
+    const url ='http://localhost:3001/register';
 
     const history = useHistory();
 
-    const handleSubmit = async e => {
-        e.preventDefault()
+    const params = {
+        email,
+        name,
+        surname,
+        professional_profile,
+        rol,
+        password,
+        profile_picture
+    };
 
-        const headers = {
-            'Content-Type': 'application/json'
-        }
+    const ret = useFetchPost(params, registerOk, url);
 
+console.log('ret :>> ', ret);
 
-        const ret = await fetch('http://localhost:3001/register', {
-            headers,
-            body: JSON.stringify(
-                {
-                    email,
-                    name,
-                    surname,
-                    professional_profile,
-                    rol,
-                    password,
-                    profile_picture
-                }
-            ),
-            method: 'POST'
-        })
+const clickBtnShowPassword = () =>{
+    (showPassword) ? setShowPassword(false) : setShowPassword(true);    
+}
 
+const handlePassword = (e) =>{
+  setPassword(e.target.value);
+  isLenPassword(e);
+}
 
-        if (ret.status === 200) {
+const isLenPassword = (e) =>{
 
-            alert('¡Felicidades, te has registrado!');
-            return history.push('/');
-        }
+    (e.target.value.length < 8 ) ? setErrorPassword(true) : setErrorPassword(false);
+    console.log('e.target.value.length :>> ', e.target.value.length);
+
+}
+
+    const handleSubmit = e => {
+        e.preventDefault();
+        setRegisterOk(1);
+        setShowModal(true);
+
     }
 
+    if (showModal) {
+
+            return (<div> 
+                
+                {!ret &&  <ClipLoader color={'#b2b291'} loading={showModal} css={override} size={150} />}
+                
+                {
+                (ret && ret.status === 200) &&
+                < Modal title = "¡Bienvenido a Hackathons Plays!"
+                show = {
+                    showModal
+                }
+                onClose = {
+                    () => history.push('/')
+                }
+                children = {
+                    `Te has tegistrado satisfactoriamente, revisa la bandeja de entrada y activa tu cuenta en el enlace que te hemos enviado a ${email}`
+                } >
+            </Modal>} 
+            
+
+            {
+                (ret && ret.status === 500) &&
+                < Modal title = "Oppssss ha ocurrido un problema con su registro"
+                show = {
+                    showModal
+                }
+                onClose = {
+                    () => history.push('/')
+                }
+                children = {
+                    ret.Info
+                } >
+            </Modal>} 
+            
+            
+            </div>
+        )
+    }
 
     return (
-
 
         <div id="signup" className='signup'>
 
@@ -73,6 +128,9 @@ function Register() {
                             onChange={
                                 e => setName(e.target.value)
                             }
+
+                            pattern="[a-zA-Z ]{2,30}"
+
                             required/>
                     </div>
 
@@ -84,6 +142,8 @@ function Register() {
                             onChange={
                                 e => setSurname(e.target.value)
                             }
+                            pattern="[a-zA-Z ]{2,30}"
+
                             required/>
                     </div>
                 </div>
@@ -110,7 +170,7 @@ function Register() {
                         }
                         required>
                         <option value="desarrollador">Desarrollador</option>
-                        <option value="marqueting">Marqueting</option>
+                        <option value="marketing">Marketing</option>
                         <option value="diseñador">Diseñador</option>
                         <option value="otro">Otro</option>
                     </select>
@@ -144,11 +204,19 @@ function Register() {
                     <label>
                         Contraseña:
                     </label>
-                    <input type="password"
+
+                    <label  className={ errorPassword ? 'errorPass' : 'noErrorPass'} >La contraseña debe tener al menos 8 caracteres</label>
+
+                    <input className="inputPass" type={showPassword ? 'text':"password"}
                         onChange={
-                            e => setPassword(e.target.value)
+                            handlePassword
                         }
+
+                        minlength={8}
+                    
                         required/>
+
+                    <div className="btnShowPassword" onClick={clickBtnShowPassword}>👁️</div>
                 </div>
 
                 <button type="submit" className="button">Crea tu cuenta</button>

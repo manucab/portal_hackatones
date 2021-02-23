@@ -1,6 +1,5 @@
 import './Modal.css'
 
-
 function Modal (props) {
 
     if(!props.show) {return null}

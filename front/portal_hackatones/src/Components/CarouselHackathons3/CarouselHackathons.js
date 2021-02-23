@@ -68,7 +68,7 @@ export function ShowHackathon({h}) {
                 {
                 h.techs.map(t => t.tech).join(', ')
             }</div>
-                {/* <Links h={h}/> */}
+                <Links h={h}/>
         </div>
 
     )
