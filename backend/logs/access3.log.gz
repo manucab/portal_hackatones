@@ -669,3 +669,9 @@
 2021-02-23 -- 16:43:09:439 -- http: GET -- /static/hackathons/45b19283-882b-40da-9cda-955d1570cde7/6f717b2f28_bgImageTeamWork.jpeg -- a09e897e-db70-4191-a61d-1c68f4b5b1a8 -- 304 -- - - 0.608 ms
 2021-02-23 -- 16:43:10:4310 -- http: GET -- /static/hackathons/6f81a6e3-c2cf-4dee-877e-40f1e56fcacd/7c5623baa7_blogLogo.png -- 7328ac75-58f8-469f-9ab3-c2fa3ae43a5d -- 304 -- - - 1.305 ms
 2021-02-23 -- 16:58:41:5841 -- info: listening on port 3001
+2021-02-23 -- 17:00:16:016 -- http: GET -- /static/users/57744344-5641-4d27-a7dc-7fcac21207bd/e3e4e9d2f9_codeLogo.svg -- 6f1248d9-1f3c-4ac8-bc43-1b93169e2bd2 -- 304 -- - - 4.641 ms
+2021-02-23 -- 17:00:17:017 -- info: Init transaction query
+2021-02-23 -- 17:00:17:017 -- info: Commit
+2021-02-23 -- 17:00:17:017 -- http: GET -- /hackathon/search?start_date=2021-02-23 -- be9c16f9-056d-40b4-a3af-4748a06a50e9 -- 304 -- - - 22.272 ms
+2021-02-23 -- 17:00:17:017 -- warn: 404 Router not found
+2021-02-23 -- 17:00:17:017 -- http: GET -- /staticpordefecto -- 40fe36cb-bbda-4829-b948-ddc1f3cbb74a -- 404 -- 30 - 1.665 ms

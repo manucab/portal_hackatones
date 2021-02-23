@@ -73,7 +73,7 @@ function EditHackathon() {
 
     console.log(hackathon_place);
 
-    logo ? fd.append("cover_picture", logo) : null;
+    if(logo) { fd.append("cover_picture", logo)} 
     fd.append("place", hackathon_place.trim());
     fd.append("name", hackathon_name);
     fd.append("city", city);
