@@ -6,6 +6,7 @@ const router = express.Router();
 const { getListTech } = require('../controllers/get/getListTech');
 const { getListThematics } = require('../controllers/get/getListThematics');
 const { getListSocialMedia } = require('../controllers/get/getListSocialMedia');
+const {getCities} = require('../controllers/get/getCities');
 
 
 // Middelware
@@ -17,5 +18,7 @@ router.get('/listTech', getListTech);
 router.get('/listThematics', getListThematics);
 //get List of icons social media
 router.get('/listSocialMedia', getListSocialMedia);
+// get citys
+router.get('/listCities', getCities);
 
 module.exports = router;

@@ -21,7 +21,7 @@ router.delete('/:idHackathon/:idComment/delete-comment', deleteComment)
 
 // **** GET  *****
 // Search hackathons by some filters
-router.get('/search/filters', getHackathonByFilters);
+router.get('/search', getHackathonByFilters);
 // Search hackathon by id
 router.get('/:id', getHackathonByFilters);
 

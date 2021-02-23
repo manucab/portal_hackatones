@@ -1,0 +1,7 @@
+.hackathonBody{
+    display: flex;
+}
+
+.hackathonBody span{
+    color: black;
+}

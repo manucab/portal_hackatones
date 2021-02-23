@@ -17,11 +17,10 @@ const getListThematics = async (req, res) => {
 
         let listThematics = await getListThematicsDB();
 
-        console.log('listThematics', listThematics);
+      //  console.log('listThematics', listThematics);
 
         if (!listThematics) listThematics = [];        
 
-        console.log('listThematics',listThematics);
 
         // Commit mysql
         query = 'commit';
@@ -30,7 +29,7 @@ const getListThematics = async (req, res) => {
 
    
 
-        logger.debug(listThematics);
+        //logger.debug(listThematics);
         res.json(listThematics);
 
     } catch (e) { // Something wrong --> Rollback

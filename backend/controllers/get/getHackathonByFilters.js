@@ -22,6 +22,14 @@ const getHackathonByFilters = async (req, res) => {
         tech
     } = req.query;
 
+
+    console.log('req.body :>> ',         hackathon_place,
+    city,
+    start_date,
+    end_date,
+    thematic,
+    tech);
+
     const {id} = req.params;
 
     try { // 1.0 Check the parameters are valid?
@@ -34,13 +42,17 @@ const getHackathonByFilters = async (req, res) => {
             thematic
         });
 
+
+        console.log('start_date :>> ', start_date);
+console.log('tech :>> ', tech);
+
         // Start transaction mysql
         query = 'start transaction';
         await performQuery(query, params);
         logger.info('Init transaction query');
 
         // 2. Search parameters -> {hackathon_place, city,start_date, end_date, technologies,thematic }
-        const listHackathons = await getHackathonInfoDB(id, hackathon_place, city, start_date, end_date, thematic);
+        const listHackathons = await getHackathonInfoDB(id, hackathon_place, city, start_date, end_date, thematic,tech);
 
         msgResponse = listHackathons;
 

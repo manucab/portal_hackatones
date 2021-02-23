@@ -4,7 +4,6 @@ import {DateTime} from "luxon";
 
 function HeaderHack({h}){
 
-    console.log('h :>> ', h.organizer[0]);
 
     const {cover_picture,hackathon_name, organizer, start_date, end_date
     , hackathon_place
@@ -29,6 +28,7 @@ function HeaderHack({h}){
     let url = `http://localhost:3001/static` + cover_picture || 'default.png' || '';
     let urlLgDate = 'http://localhost:3001/static/icons/clock-3.png';
     let urlLgLocation=`http://localhost:3001/static/icons/${logoLocation}.png`;
+    let urlLogoTitle =       `http://localhost:3001/static/hackathonPictures/logoTitle.gif`;
 
 
 
@@ -37,12 +37,12 @@ function HeaderHack({h}){
         <div className="headerHack">
             <div className="hTitle">
                 <div id="logoTitle">
-                    <img src={url} alt="logo-portada"/>
+                    <img src={urlLogoTitle} alt="logo-portada"/>
                 </div>
                 <div>
                     <h1>{hackathon_name}</h1>
                     <h4>{dateStartTitle}</h4>
-                    <span>Organizado por {orgz.name}</span>
+                    <span><img id="logoCompany"  src={url} alt="logo-company"/>Organizado por {orgz.name}</span>
                 </div>
 
             </div>

@@ -1,0 +1,36 @@
+.hackathonSearchHeader{
+    display: flex;
+    font-size: 12px;
+    border: 1px solid black;
+}
+
+
+.hackathonSearchHeader > img{
+
+width: 300px;
+height: 160px;
+
+}
+
+.hackathonSearchFilters{
+    display: flex;
+    border: 1px solid black;
+}
+
+.hackathonSearchHach{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    box-sizing: content-box;
+
+
+}
+
+.showHack{
+
+    flex-shrink: 1;
+
+    flex-grow: 1;
+    
+    text-align: center;
+}

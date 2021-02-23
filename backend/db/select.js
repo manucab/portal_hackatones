@@ -1,9 +1,9 @@
 // Variables & instances
 require('dotenv').config();
-const { performQuery } = require('./performQuery');
+const {performQuery} = require('./performQuery');
 
 // Get user
-const getUserDB = async(email) => {
+const getUserDB = async (email) => {
 
     const query = 'select * from competitor where email=?';
 
@@ -15,10 +15,9 @@ const getUserDB = async(email) => {
 }
 
 // Get hackaton info by some filters
-const getHackathonInfoDB = async(id, hackathon_place, city, start_date, end_date, thematic) => {
+const getHackathonInfoDB = async (id, hackathon_place, city, start_date, end_date, thematic,tech) => {
 
-
-    const user=`JSON_OBJECT('name', c.user_name, 'surname', c.surname, 'id', c.id, 'isActive', c.active_user, 'register-date',c.register_date, 'email', c.email, 'profeesional-profile', c.professional_profile,
+    const user = `JSON_OBJECT('name', c.user_name, 'surname', c.surname, 'id', c.id, 'isActive', c.active_user, 'register-date',c.register_date, 'email', c.email, 'profeesional-profile', c.professional_profile,
     'rol', c.rol, 'idDeleted', c.deleted_user, 'avatar',c.profile_picture, 'creation-date', c.creation_date, 'last-update', c.last_update)`;
 
     const organizer = `JSON_OBJECT('name', cc.user_name, 'surname', cc.surname, 'id', cc.id, 'isActive', cc.active_user, 'register-date',cc.register_date, 'email', cc.email, 'profeesional-profile', cc.professional_profile,
@@ -34,10 +33,6 @@ const getHackathonInfoDB = async(id, hackathon_place, city, start_date, end_date
 
     CAST( CONCAT('[', GROUP_CONCAT(DISTINCT JSON_OBJECT('organizer', ${organizer})),']') AS JSON ) as organizer
 
-
-    
-
-
     from hackathon
 
     left join competitor cc on cc.id = hackathon.id_organizer
@@ -52,16 +47,17 @@ const getHackathonInfoDB = async(id, hackathon_place, city, start_date, end_date
     where 
     
     (hackathon.id = ? or ? is null)
-    and (hackathon_place = ? or ? is null )
-    and (city = ? or ? is null)
-    and (start_date >= ? or ?  is null)
-    and (end_date <=? or ? is null)
-    and (thematic = ? or ? is null)
+    and (hackathon.hackathon_place = ? or ? is null )
+    and (hackathon.city = ? or ? is null)
+    and (hackathon.start_date >= ? or ?  is null)
+    and (hackathon.end_date <=? or ? is null)
+    and (hackathon.thematic = ? or ? is null)
+    and (d.tech_name = ? or ? is null)
 
     group by hackathon.id
     order by hackathon.id`;
 
-      params = [
+    params = [
         id,
         id,
         hackathon_place,
@@ -73,7 +69,9 @@ const getHackathonInfoDB = async(id, hackathon_place, city, start_date, end_date
         end_date,
         end_date,
         thematic,
-        thematic
+        thematic,
+        tech,
+        tech
     ];
 
     const result = await performQuery(query, params);

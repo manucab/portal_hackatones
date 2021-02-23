@@ -22,6 +22,8 @@ import Posts from './Components/Posts/Posts';
 import Post from './Components/Post/Post';
 import Hackathon from './Components/Hackathon/Hackathon';
 import OrganizerStats from './Components/OrganizerStats/OrganizerStats';
+import HackathonSearch from './Components/HackathonSearch/HackathonSearch';
+import Links2 from './Components/Links/Links';
 
 function App() {
 
@@ -77,6 +79,12 @@ function App() {
                     <h1>Edita tu hackathon</h1>
                     <EditHackathon/>
                 </Route>
+
+
+                <Route path='/hackathon/search' exact>
+                    <HackathonSearch />
+                </Route>
+
 
                 <Route path='/hackathon/:id' exact>
                     <Hackathon/>

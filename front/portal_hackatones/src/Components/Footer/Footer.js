@@ -20,7 +20,7 @@ function Footer() {
             </div>
 
             <div>
-                <Link to="/hackathons" className="logoFooter">
+                <Link to="/hackathon/search" className="logoFooter">
                     <img id="hackathonsButton"
                         src={logoHackathon}
                         alt="hackathon-logo"/>

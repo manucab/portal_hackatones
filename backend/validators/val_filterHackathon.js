@@ -24,8 +24,7 @@ const filterHackathons = Joi.object({
         .error(
             new Error('The end date entered is not valid')
         ),
-    tech: Joi.array()
-        .items(Joi.string(), Joi.number())
+    tech: Joi.string().lowercase().trim()
         .max(50)
         .error(
             new Error('The tech of hackathon is not valid')

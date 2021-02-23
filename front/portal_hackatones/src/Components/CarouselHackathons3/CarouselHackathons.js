@@ -3,30 +3,10 @@ import './CarouselHackathons.css'
 import arrow from '../../Media/Images/General/Arrow-down.svg'
 import useFetch from "../../Hooks/useFetch";
 import {DateTime} from "luxon";
-
-let socialMedia = [];
-
-(async () => {
-    socialMedia = await fetch('http://localhost:3001/info/listSocialMedia');
-
-    socialMedia = await socialMedia.json();
-
-    if (! socialMedia) 
-        socialMedia = [];
-    
-})()
-
-function showHackathon(h) {
-
-    console.log('h.thematic :>> ', h.thematic.split(','));
-
-    console.log('h.start_date :>> ', DateTime.fromISO(h.start_date).toISODate());
-    // DateTime.fromISO("2016-05-25");
+import Links from "../Links/Links";
 
 
-    let socialLink = searchSocialLinks(h, socialMedia);
-
-    let socialLinks = socialLink.map(l => l.url);
+export function ShowHackathon({h}) {
 
     let url = `http://localhost:3001/static` + h.cover_picture || 'default.png';
 
@@ -88,85 +68,13 @@ function showHackathon(h) {
                 {
                 h.techs.map(t => t.tech).join(', ')
             }</div>
-            <div>
-                <span>Links:
-                </span>
-                <ul className="listLinks">
-                    {
-                    h.link.map(l => (! socialLinks.includes(l.url)) && <li key={
-                        l.url
-                    }>
-                        <a href={
-                                l.url
-                            }
-                            target="_blank">
-                            {
-                            l.web_name
-                        }</a>
-                    </li>)
-                } </ul>
-            </div>
-
-
-            <div>
-                <span>Social Media</span>
-                <ul className="socialMedia">
-                    {
-                    socialLink.map(item => <li key={
-                        item.urlSm
-                    }>
-                        <a href={
-                                item.url
-                            }
-                            target="_blank">
-                            <img id="sm" className="pequeña"
-                                src={
-                                    item.urlSm
-                                }
-                                alt={
-                                    item.sm
-                                }
-                                key={
-                                    item.urlSm
-                                }/>
-                        </a>
-                    </li>)
-                } </ul>
-            </div>
+                <Links h={h}/>
         </div>
 
     )
 
 }
 
-const searchSocialLinks = (hack, socialMedia) => {
-
-
-    let linksSm = [];
-
-    let urlSm = 'http://localhost:3001/static/SocialMedia/';
-
-    if (socialMedia) {
-
-        hack.link.forEach(link => {
-
-            for (const social of socialMedia) {
-
-                if (link.url.includes(social)) {
-
-                    linksSm.push({'sm': `${social}`, 'urlSm': `${urlSm}${social}.png`, 'url': link.url});
-
-                    break;
-                }
-            }
-        })
-    } else {
-        linksSm = []
-    }
-
-    return linksSm;
-
-}
 
 function CarouselHackathons({hackathons}) {
 
@@ -175,8 +83,6 @@ function CarouselHackathons({hackathons}) {
     if (!hackathons) 
         return 'Loading...';
     
-
-
     const handleNext = e => {
         setIndex(index < (hackathons.length - 1) ? index + 1 : index + 0)
 
@@ -199,7 +105,7 @@ function CarouselHackathons({hackathons}) {
                     isFirst ? 'off' : 'on'
                 }
                 onClick={handlePrevious}/> {
-            showHackathon(hackathons[index])
+            <ShowHackathon h={hackathons[index]} />
         }
             <img id="next"
                 src={arrow}

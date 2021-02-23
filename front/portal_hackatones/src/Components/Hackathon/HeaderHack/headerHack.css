@@ -1,5 +1,6 @@
 #root, html, body{
     font-size: 12px;
+    
 }
 
 #logoTitle img {
@@ -18,11 +19,21 @@ display: flex;
 
 }
 
+.headerHack span {
+    color: black;
+}
+
 .hTitle{
-    background-color: cadetblue;
+    /* background-color: whitesmoke; */
     flex-grow: 1;
     /* margin: 0px; */
 
+}
+
+#logoCompany{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
 }
 
 .hDataHack {
@@ -38,3 +49,4 @@ display: flex;
 
 
 }
+
