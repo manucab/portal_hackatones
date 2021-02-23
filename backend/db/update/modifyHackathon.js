@@ -16,7 +16,8 @@ const modifyHackathon = async (
   info,
   techs,
   links,
-  cover_picture
+  cover_picture,
+  thematic
 ) => {
   const queryOriginalInfo = `select * from hackathon where id = ?`;
   const paramsOriginalInfo = [idHackathon];
@@ -27,8 +28,12 @@ const modifyHackathon = async (
   }
 
   //The functions bellows getIds we need and also insert new elements if there are any
-  techIds = await getIdsNewValuesTech(techs)
-  linkIds = await getIdsNewValuesLink(links)
+
+  const parsedLinks = JSON.parse(links)
+  const parsedTechs = JSON.parse(techs)
+ 
+  techIds = await getIdsNewValuesTech(parsedTechs)
+  linkIds = await getIdsNewValuesLink(parsedLinks)
 
   //Delete the previous registers of tech and links we have for that hackathon
   const deleteTechQuery = `delete from hackathon_tech 
@@ -70,17 +75,19 @@ const modifyHackathon = async (
     end_date = ?,
     hackathon_status =?,
     hackathon_info = ?,
-    cover_picture = ?
+    cover_picture = ?,
+    thematic = ?
     where id = ? and id_organizer = ?`;
   const params = [
-    name() || originalInfo[0].hackathon_name,
-    place() || originalInfo[0].hackathon_place,
-    city() || originalInfo[0].city,
+    name || originalInfo[0].hackathon_name,
+    place || originalInfo[0].hackathon_place,
+    city || originalInfo[0].city,
     start_date || formatDate(originalInfo[0].start_date),
     end_date || formatDate(originalInfo[0].end_date),
     status || originalInfo[0].hackathon_status,
     info || originalInfo[0].hackathon_info,
     cover_picture || originalInfo[0].cover_picture,
+    thematic || originalInfo[0].thematic,
     idHackathon,
     idUser,
   ];

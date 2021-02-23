@@ -1,7 +1,7 @@
 // Variables && instances
 const express = require('express')
 const router = express.Router()
-const{userStore, upload} = require('../middelwares/storageMulter/changeUpload');
+const{userStore,hackathonStore, upload} = require('../middelwares/storageMulter/changeUpload');
 
 
 // Controllers
@@ -27,7 +27,7 @@ router.put('/forgotPassword', forgotPassword)
 router.put('/:idUser/delete',isAuthenticated,isRightUser, deleteUser)
 router.put('/:idUser/:idHackathon/cancelbooking',isAuthenticated,isRightUser , cancelHackathonBooking)
 router.put('/:idUser/:idHackathon/rate',isAuthenticated,isRightUser , rateHackathon)
-router.put('/:idUser/:idHackathon/modify',isAuthenticated,isRightUser ,isOrganizer, modifyHackathon)
+router.put('/:idUser/:idHackathon/modify',isAuthenticated,isRightUser ,isOrganizer,hackathonStore,  upload.single('cover_picture'), modifyHackathon)
 router.put('/:idUser/:idHackathon/delete',isAuthenticated,isRightUser ,isOrganizer,deleteHackathon)
 
 // *** POST ***

@@ -37,15 +37,20 @@ const hackathonValidator = Joi.object({
         .error(
             new Error('description should be a string with minimun 3 characters')
         ),
-    techs: Joi.array()
+    techs: Joi.string()
         .min(1)
         .error(
-            new Error('Techs must be an array')
+            new Error('Techs must be a string')
         ),
-    links: Joi.array()
+    thematic: Joi.string()
         .min(1)
         .error(
-            new Error('Links must be an array')
+            new Error('Techs must be a string')
+        ),
+    links: Joi.string()
+        .min(1)
+        .error(
+            new Error('Links must be a string')
         ),
     cover_picture: Joi.string()
     .min(1)
