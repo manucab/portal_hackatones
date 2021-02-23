@@ -84,7 +84,7 @@ function CreateHackathon() {
 
         if (ret.ok) {
             alert('¡Felicidades, has creado un hackathon!');
-            return history.push('/profile');
+            return history.push(`/user/${login.user.id}`);
         }
     }
 

@@ -31,7 +31,7 @@ function EditHackathon() {
   const [end_date, setEnd_date] = useState("");
   const [hackathon_status, sethackathon_status] = useState("pendiente");
   const [hackathon_info, sethackathon_info] = useState("");
-  const [thematic, setThematic] = useState("");
+  const [thematic, setThematic] = useState([]);
   const [webName, setWebName] = useState("");
   const [webUrl, setWebUrl] = useState("");
   const [links, setLinks] = useState([]);
@@ -71,35 +71,37 @@ function EditHackathon() {
     const fd = new FormData();
     const logo = e.target.cover_picture.files[0];
 
-    console.log(logo);
+    console.log(hackathon_place);
 
-    fd.append("cover_picture", logo);
-    fd.append("hackathon_place", hackathon_place);
-    fd.append("hackathon_name", hackathon_name);
+    logo ? fd.append("cover_picture", logo) : null;
+    fd.append("place", hackathon_place.trim());
+    fd.append("name", hackathon_name);
     fd.append("city", city);
-    fd.append("start_date", start_date);
-    fd.append("end_date", end_date);
-    fd.append("hackathon_status", hackathon_status);
-    fd.append("hackathon_info", hackathon_info);
+    fd.append("start_date", DateTime.fromISO(start_date).plus({hour:1}).toFormat('yyyy-MM-dd  HH:mm:ss.000'));
+    fd.append("end_date", DateTime.fromISO(end_date).toFormat('yyyy-MM-dd  HH:mm:ss.000'));
+    fd.append("info", hackathon_info);
     fd.append("thematic", JSON.stringify(thematic));
     fd.append("techs", JSON.stringify(techs));
     fd.append("links", JSON.stringify(links));
+
+    console.log('techs>>',JSON.stringify(techs))
+    console.log('links>>>',JSON.stringify(links) )
 
     const headers = {
       // 'Content-Type': 'application/json',
       Authorization: login.token,
     };
 
-    // const ret = await fetch('http://localhost:3001/createhackathon', {
-    //     headers,
-    //     body: fd,
-    //     method: 'POST'
-    // })
+    const ret = await fetch(`http://localhost:3001/user/${login.user.id}/${idHackathon}/modify`, {
+        headers,
+        body: fd,
+        method: 'PUT'
+    })
 
-    // if (ret.ok) {
-    //     alert('¡Has modificado tu hackathon!');
-    //     return history.push('/profile');
-    // }
+    if (ret.ok) {
+        alert('¡Has modificado tu hackathon!');
+        return history.push(`/user/${login.user.id}`);
+    }
   };
 
   const handleWebName = (e) => {
@@ -197,38 +199,8 @@ function EditHackathon() {
       });
 
       setTechs(h[0].techs.map(t => t.tech))
+      setThematic(h[0].thematic.split(',').map(t => t))
 
-      // let listTechs
-      // let optionsTechData 
-      // fetch("http://localhost:3001/info/listTech").then(
-      //   res =>  res.json()
-      // ).then(data => {
-      //   listTechs = data
-      //   optionsTechData = listTechs.map((tech) => ({
-      //     value: tech.tech_name,
-      //     label: tech.tech_name,
-      //   }))
-      //   setOptionsTech(optionsTechData);
-      //   for (let t of h[0].techs) {
-
-      //     let index = optionsTechData.findIndex(
-      //       (x) => x.value === t.tech
-      //     )
-      //     findTechsIndex = [...findTechsIndex, index]
-      //   }
-      // })
-      
-
-      
-
-      // setThematic(h[0].thematic)
-
-      // console.log(links)
-      // setWebName
-      // setWebUrl
-      // setLinks
-      // setHasWeb
-      // setTechs
     });
   }, []);
   return (
@@ -241,8 +213,8 @@ function EditHackathon() {
       <form className="formCreate" onSubmit={handleSubmit} method="POST">
         {/* Image of header article */}
         <div id="logo">
-          Selecciona la foto principal de la portada
-          <input type="file" name="cover_picture" accept="image/*" required />
+          Selecciona una nueva foto si quieres cambiar la portada
+          <input type="file" name="cover_picture" accept="image/*"  />
         </div>
 
         <fieldset className="fieldName">
@@ -398,6 +370,7 @@ function EditHackathon() {
             className="selectThematic"
             /* components={makeAnimated()}*/
             isMulti
+            value={thematic.map(t => ({ label: t, value: t }))}
             options={optionsThematics}
             onChange={handleThematicSelected}
             required
