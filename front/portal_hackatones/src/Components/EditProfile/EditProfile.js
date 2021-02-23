@@ -1,12 +1,12 @@
 import { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import useFetch from '../../Hooks/useFetch'
+import useFetch from "../../Hooks/useFetch";
 import Acordeon from "../Acordeon/Acordeon";
 import "./EditProfile.css";
 
 function EditProfile(props) {
   const login = useSelector((s) => s.login);
-  const dispath = useDispatch()
+  const dispath = useDispatch();
 
   const id = login.user.id;
 
@@ -21,9 +21,8 @@ function EditProfile(props) {
   const [newPassword, setNewPassword] = useState(null);
   const [confirmationPassword, setConfirmationPassword] = useState(null);
   // const [changePassword, setChangePassword] = useState(false)
- 
+
   const handleClose = props.handleClose;
-  
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -40,13 +39,12 @@ function EditProfile(props) {
     fd.append("professional_profile", professional_profile);
     fd.append("rol", rol);
 
-    if(currentPassword) {
-      fd.append("currentPassword",currentPassword)
-      fd.append("newPassword",newPassword)
-      fd.append("passwordConfirmation",confirmationPassword)
-
+    if (currentPassword) {
+      fd.append("currentPassword", currentPassword);
+      fd.append("newPassword", newPassword);
+      fd.append("passwordConfirmation", confirmationPassword);
     }
-    
+
     const headers = {
       //   "Content-Type": "application/json",
       Authorization: login.token,
@@ -58,28 +56,25 @@ function EditProfile(props) {
       method: "PUT",
     });
 
-    const data = Object.assign({},login)
-    data.user.email = email
-    data.user.user_name = user_name
-    data.user.professional_profile = professional_profile
-    data.user.rol=rol   
+    const data = Object.assign({}, login);
+    data.user.email = email;
+    data.user.user_name = user_name;
+    data.user.professional_profile = professional_profile;
+    data.user.rol = rol;
 
     if (ret.status === 200) {
-      
-      dispath({ type: "login", data })
+      dispath({ type: "login", data });
       alert("¡Se ha actualizado tu perfil!");
       handleClose();
       window.location.reload();
     } else {
-      console.log(ret.body)
-      alert(ret.statusText)
+      console.log(ret.body);
+      alert(ret.statusText);
     }
   };
 
-  const defaultUser = props.rol === 'user' ? 'defaultChecked' : null
-  const defaultOrganizer = props.rol === 'organizer' ? 'defaultChecked' : null
-
-
+  const defaultUser = props.rol === "user" ? "defaultChecked" : null;
+  const defaultOrganizer = props.rol === "organizer" ? "defaultChecked" : null;
 
   return (
     <div id="signup" className="signup">
@@ -151,7 +146,7 @@ function EditProfile(props) {
                 id="user"
                 name="typeUser"
                 value="user"
-                onChange={(e)=>setRol(e.target.value)}
+                onChange={(e) => setRol(e.target.value)}
                 defaultChecked={defaultUser}
               />
               <label for="user">Usuario</label>
@@ -173,12 +168,11 @@ function EditProfile(props) {
 
         <Acordeon button_text="Cambiar Contraseña">
           <div className="change-password-container">
-
             <div className="current-password">
               <label>Contraseña actual</label>
               <input
                 type="password"
-                minLength = '8'
+                minLength="8"
                 value={currentPassword}
                 onChange={(e) => setCurrentPassword(e.target.value)}
                 required
@@ -187,7 +181,7 @@ function EditProfile(props) {
 
             <div className="new-password">
               <label>Nueva Contraseña</label>
-              <input 
+              <input
                 type="password"
                 value={newPassword}
                 onChange={(e) => setNewPassword(e.target.value)}
@@ -196,18 +190,25 @@ function EditProfile(props) {
 
             <div className="confirm-password">
               <label>Confirmar Contraseña</label>
-              <input 
+              <input
                 type="password"
                 value={confirmationPassword}
                 onChange={(e) => setConfirmationPassword(e.target.value)}
               />
-              {confirmationPassword===newPassword ? null : <div className='password-warning'>Las contraseñas no coinceden</div>}
+              {confirmationPassword === newPassword ? null : (
+                <div className="password-warning">
+                  Las contraseñas no coinceden
+                </div>
+              )}
             </div>
           </div>
-
         </Acordeon>
 
-        <button type="submit" className="button" disabled={confirmationPassword===newPassword ? false : true}>
+        <button
+          type="submit"
+          className="button"
+          disabled={confirmationPassword === newPassword ? false : true}
+        >
           Actualizar Perfil
         </button>
       </form>

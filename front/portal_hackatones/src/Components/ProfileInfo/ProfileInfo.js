@@ -14,8 +14,8 @@ function showInfo (user_name, surname,email,professional_profile,rol) {
     return(
 
         <div className='personal-info'>
-            <div>Nombre: {capitalize(user_name)}</div>
-            <div>Apellido: {capitalize(surname)}</div>
+            <div>Nombre: {user_name.split(' ').map(w => capitalize(w)).join(' ')}</div>
+            <div>Apellido: {surname.split(' ').map(w => capitalize(w)).join(' ')}</div>
             <div>Email: {email}</div>
             <div>Perfil Profesional: {capitalize(professional_profile)}</div>
             <div>Rol: {capitalize(rol)}</div>
@@ -39,7 +39,6 @@ function ProfileInfo () {
     if(!data) return 'Loading...' 
     if (!login) return <Redirect to="/" />
 
-    console.log(login.token)
     const user_name = data[0][0].user_name
     const surname = data[0][0].surname
     const email = data[0][0].email

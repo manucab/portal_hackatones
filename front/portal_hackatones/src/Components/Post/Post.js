@@ -1,3 +1,4 @@
+import { DateTime } from 'luxon'
 import { Helmet } from 'react-helmet'
 import { useHistory, useParams } from 'react-router-dom'
 import useFetch from '../../Hooks/useFetch'
@@ -21,9 +22,14 @@ function Post () {
 
     const isFirst = ids[previousId] === undefined 
     const isLast = ids[nextId] === undefined
-    console.log(isLast)
     const nextPost = `/blog/post/${ids[nextId]}`
     const previousPost = `/blog/post/${ids[previousId]}`
+
+    const date = DateTime.fromISO(p[0].publication_date)
+    .setLocale("es")
+    .toFormat("DD");
+    const url =
+    `http://localhost:3001/static` + p[0].cover_picture || "default.png";
 
 
     return(
@@ -37,8 +43,8 @@ function Post () {
                 </Helmet>
 
                 <div className="post-title"><h1>{p[0].title}</h1></div>
-                <div className="post-date"><h6>{p[0].publication_date.split('T')[0]}</h6></div>
-                {/* <div className="post-title"><h1>{p.title}</h1></div> */}
+                <div className="post-date"><h6>Publicación: {date}</h6></div>
+                <div className="post-cover" style={{backgroundImage: `url(${url})`}}></div>
                 <div className="full-post-content"><p>{p[0].content}</p></div>
             </div>
             <div className='post-buttons'>
