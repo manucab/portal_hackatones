@@ -4,10 +4,9 @@ header {
     background-color: #A3A4A6;
     align-items: center;
     justify-content: space-between;
-    width: 360px;
     height: 55px;
     margin: 0 auto ;
-    padding:10px;
+    padding:10px 20px 10px 20px;
     border-bottom: 5px solid #F6E561;
 }
 

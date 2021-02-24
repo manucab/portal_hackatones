@@ -16,9 +16,10 @@
 }
 
 .hackathon h1 {
-    font-size: 120%;
+    font-size: 150%;
     padding: 0%;
     margin-bottom: 5px;
+    margin-top: 5px;
 }
 
 .hackathon-info-section {
