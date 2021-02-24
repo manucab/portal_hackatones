@@ -972,3 +972,275 @@
 2021-02-24 -- 10:21:32:2132 -- info: Init transaction query
 2021-02-24 -- 10:21:32:2132 -- info: Commit
 2021-02-24 -- 10:21:32:2132 -- http: GET -- /hackathon/search?start_date=2021-02-24 -- 508186c4-beab-4b72-a9d8-9657dbd56548 -- 304 -- - - 7.306 ms
+2021-02-24 -- 10:45:34:4534 -- http: GET -- /user/2 -- ae5ec472-ad86-4062-9bc6-7fb52a3446cf -- 304 -- - - 80.097 ms
+2021-02-24 -- 10:45:34:4534 -- http: GET -- /user/2 -- a3f40ab6-4a90-4b3a-8040-eaa42ae3d50a -- 304 -- - - 9.703 ms
+2021-02-24 -- 10:45:34:4534 -- http: GET -- /user/2 -- 56324a38-8a82-41ac-9bb0-c853649919bf -- 304 -- - - 9.872 ms
+2021-02-24 -- 10:45:34:4534 -- http: GET -- /user/2 -- c956cd28-79fe-4a15-b4ea-8af12c75ca03 -- 304 -- - - 9.821 ms
+2021-02-24 -- 10:45:35:4535 -- http: GET -- /user/2 -- c85f09e5-f17c-4c0a-beab-a1b14c1e6a73 -- 304 -- - - 14.495 ms
+2021-02-24 -- 10:45:35:4535 -- http: GET -- /user/2 -- addaa551-8719-40b9-8dd8-56181b801477 -- 304 -- - - 12.722 ms
+2021-02-24 -- 10:45:35:4535 -- http: GET -- /static/users/494ab328-6969-4d0a-a021-aa761fb76547/ff6d84eaa7_avatar.jpg -- 0f5184c5-bcbc-4cc9-b3b0-332519d2c62b -- 304 -- - - 0.736 ms
+2021-02-24 -- 10:53:51:5351 -- http: GET -- /user/2 -- 68fbebab-a459-4c23-aba8-d5b65b906c7e -- 200 -- 1809 - 11.492 ms
+2021-02-24 -- 10:53:51:5351 -- http: GET -- /user/2 -- 568bde02-f0a5-4a6f-83c9-173161fddfc3 -- 304 -- - - 11.715 ms
+2021-02-24 -- 10:53:51:5351 -- http: GET -- /user/2 -- 5c67802c-5c5c-4a11-af8d-60a872229b59 -- 304 -- - - 10.359 ms
+2021-02-24 -- 10:53:51:5351 -- http: GET -- /user/2 -- 468cab85-9206-4622-8f24-5c0c6d4a329a -- 304 -- - - 13.121 ms
+2021-02-24 -- 10:53:51:5351 -- http: GET -- /user/2 -- 57283270-aebf-479b-a132-ee02a9c17724 -- 304 -- - - 20.399 ms
+2021-02-24 -- 10:53:51:5351 -- http: GET -- /user/2 -- 85b12ba3-a039-4a00-a162-6b6cda0d2a1f -- 304 -- - - 9.363 ms
+2021-02-24 -- 10:53:51:5351 -- http: GET -- /static/users/494ab328-6969-4d0a-a021-aa761fb76547/ff6d84eaa7_avatar.jpg -- 488dc7d6-3cb0-44bd-bcdc-c57a1d41f803 -- 304 -- - - 0.756 ms
+2021-02-24 -- 10:53:51:5351 -- http: GET -- /user/2 -- 7f7eec1a-6c59-48ef-9498-50947d85107a -- 304 -- - - 11.336 ms
+2021-02-24 -- 11:11:58:1158 -- http: GET -- /user/2 -- 5595741d-0af6-453d-a41f-72c808294ccb -- 304 -- - - 6.953 ms
+2021-02-24 -- 11:16:04:164 -- info: Init transaction query
+2021-02-24 -- 11:16:04:164 -- info: Commit
+2021-02-24 -- 11:16:04:164 -- http: GET -- /hackathon/search?start_date=2021-02-24 -- 5af53f74-42cd-4378-8717-e44c50c78a6b -- 200 -- 7713 - 12.557 ms
+2021-02-24 -- 11:16:04:164 -- http: GET -- /user/2 -- 9e019c7e-6472-4f24-a722-6b31a41bbba7 -- 304 -- - - 22.230 ms
+2021-02-24 -- 11:16:04:164 -- warn: 404 Router not found
+2021-02-24 -- 11:16:04:164 -- http: GET -- /staticpordefecto -- 0d1d9e0c-7f38-4e83-a7fe-d3ab2f73e1ea -- 404 -- 30 - 1.162 ms
+2021-02-24 -- 11:16:04:164 -- http: GET -- /static/users/494ab328-6969-4d0a-a021-aa761fb76547/ff6d84eaa7_avatar.jpg -- 3fcf8537-693d-4229-8603-ba17e02a39fa -- 304 -- - - 2.044 ms
+2021-02-24 -- 11:16:12:1612 -- info: Init transaction query
+2021-02-24 -- 11:16:12:1612 -- info: Commit
+2021-02-24 -- 11:16:12:1612 -- http: GET -- /hackathon/search?start_date=2021-02-24 -- 89cce281-d547-4beb-9690-ce18bc2a4211 -- 304 -- - - 12.553 ms
+2021-02-24 -- 11:16:12:1612 -- http: GET -- /user/2 -- 0461142b-9bdb-4b82-893e-256db46f7d02 -- 304 -- - - 19.603 ms
+2021-02-24 -- 11:16:12:1612 -- warn: 404 Router not found
+2021-02-24 -- 11:16:12:1612 -- http: GET -- /staticpordefecto -- 0bede339-96da-452e-acd5-8cb969e70ece -- 404 -- 30 - 2.350 ms
+2021-02-24 -- 11:16:12:1612 -- http: GET -- /static/users/494ab328-6969-4d0a-a021-aa761fb76547/ff6d84eaa7_avatar.jpg -- 68e4c255-6823-4a4c-ab1d-8a65e8787a20 -- 304 -- - - 0.694 ms
+2021-02-24 -- 11:16:13:1613 -- warn: 404 Router not found
+2021-02-24 -- 11:16:13:1613 -- http: GET -- /static/hackathons/9170d741-b5e0-4f2a-8727-c6a117de2d0e/d2113729d4_hack10.jpeg -- 66a8feca-f3f6-4eaa-91a9-5888bb6b0994 -- 404 -- 30 - 1.413 ms
+2021-02-24 -- 11:16:14:1614 -- http: GET -- /static/hackathons/f3019b70-685a-4c7d-8adb-f108fed0cf73/2ac0aaf7c0_hack10.jpeg -- a1991c09-5f7c-45e1-892d-c37fd8f5398b -- 304 -- - - 0.464 ms
+2021-02-24 -- 11:16:15:1615 -- warn: 404 Router not found
+2021-02-24 -- 11:16:15:1615 -- http: GET -- /static/hackathons/9170d741-b5e0-4f2a-8727-c6a117de2d0e/d2113729d4_hack10.jpeg -- d5e2aa2e-20fa-4915-9ca7-b9d366815ee5 -- 404 -- 30 - 1.858 ms
+2021-02-24 -- 11:16:16:1616 -- warn: 404 Router not found
+2021-02-24 -- 11:16:16:1616 -- http: GET -- /staticpordefecto -- 91b9ce1d-e26b-450c-8edc-109dace31979 -- 404 -- 30 - 1.604 ms
+2021-02-24 -- 11:17:07:177 -- info: listening on port 3001
+2021-02-24 -- 11:17:10:1710 -- info: Init transaction query
+2021-02-24 -- 11:17:10:1710 -- info: Commit
+2021-02-24 -- 11:17:10:1710 -- http: GET -- /hackathon/search?start_date=2021-02-24 -- a863e4c8-4be7-49fe-b497-52aad5bed328 -- 200 -- 4006 - 37.232 ms
+2021-02-24 -- 11:17:10:1710 -- http: GET -- /user/2 -- dabab620-600a-46c8-b56f-d3a12065cd56 -- 304 -- - - 49.550 ms
+2021-02-24 -- 11:17:10:1710 -- http: GET -- /static/hackathons/f3019b70-685a-4c7d-8adb-f108fed0cf73/2ac0aaf7c0_hack10.jpeg -- a54c6bda-0996-44ef-a5e2-a7c020302125 -- 304 -- - - 3.861 ms
+2021-02-24 -- 11:17:10:1710 -- http: GET -- /static/users/494ab328-6969-4d0a-a021-aa761fb76547/ff6d84eaa7_avatar.jpg -- 2c595981-f5c6-4970-aba2-3229c0e126fb -- 304 -- - - 0.804 ms
+2021-02-24 -- 11:17:14:1714 -- http: GET -- /static/hackathons/d45f59bb-d111-473e-9b66-e78c1ea75a10/46cbfd7549_codeLogo.svg -- 48241f81-b4e5-4509-8530-fe5dc51394c5 -- 304 -- - - 0.963 ms
+2021-02-24 -- 11:17:14:1714 -- http: GET -- /static/hackathons/45b19283-882b-40da-9cda-955d1570cde7/6f717b2f28_bgImageTeamWork.jpeg -- 81131967-3d61-45df-ad27-b768ea172870 -- 304 -- - - 1.010 ms
+2021-02-24 -- 11:17:15:1715 -- http: GET -- /static/hackathons/6f81a6e3-c2cf-4dee-877e-40f1e56fcacd/7c5623baa7_blogLogo.png -- 50568980-6fb8-49b8-9b5f-bbcf1ec45f58 -- 304 -- - - 0.981 ms
+2021-02-24 -- 11:18:13:1813 -- info: Init transaction query
+2021-02-24 -- 11:18:13:1813 -- info: Commit
+2021-02-24 -- 11:18:13:1813 -- http: GET -- /hackathon/search?start_date=2021-02-24 -- feae4498-4a05-4901-ac3a-80a72418c573 -- 304 -- - - 9.042 ms
+2021-02-24 -- 11:23:44:2344 -- info: Init transaction query
+2021-02-24 -- 11:23:44:2344 -- info: Commit
+2021-02-24 -- 11:23:44:2344 -- http: GET -- /hackathon/search?start_date=2021-02-24 -- 0fa2f0ea-2829-4a9e-9bc9-37fcce64ce8c -- 304 -- - - 7.336 ms
+2021-02-24 -- 11:23:44:2344 -- http: GET -- /static/hackathons/d45f59bb-d111-473e-9b66-e78c1ea75a10/46cbfd7549_codeLogo.svg -- c86200c5-a649-4302-93db-b7c765bd2d88 -- 304 -- - - 3.738 ms
+2021-02-24 -- 11:23:44:2344 -- http: GET -- /static/hackathons/45b19283-882b-40da-9cda-955d1570cde7/6f717b2f28_bgImageTeamWork.jpeg -- 7b1c36b8-f502-4eb4-9eb8-b6f9cf8189e0 -- 304 -- - - 4.615 ms
+2021-02-24 -- 11:23:44:2344 -- info: Init transaction query
+2021-02-24 -- 11:23:44:2344 -- info: commit
+2021-02-24 -- 11:23:44:2344 -- http: GET -- /info/listTech -- 8a8d22b9-a898-4593-9786-d69aad4093bc -- 304 -- - - 15.141 ms
+2021-02-24 -- 11:23:44:2344 -- http: GET -- /static/hackathons/6f81a6e3-c2cf-4dee-877e-40f1e56fcacd/7c5623baa7_blogLogo.png -- 0ef67d33-2dd0-46b5-b883-ea7b1035cb4d -- 304 -- - - 0.835 ms
+2021-02-24 -- 11:23:44:2344 -- info: Init transaction query
+2021-02-24 -- 11:23:44:2344 -- info: Init transaction query
+2021-02-24 -- 11:23:44:2344 -- info: commit
+2021-02-24 -- 11:23:44:2344 -- http: GET -- /info/listCities -- 59e086f9-7070-4746-a6a3-72565ced514d -- 304 -- - - 12.137 ms
+2021-02-24 -- 11:23:44:2344 -- info: commit
+2021-02-24 -- 11:23:44:2344 -- http: GET -- /info/listThematics -- dc57f058-5862-4b38-b2d9-25bb5f3f144c -- 304 -- - - 9.942 ms
+2021-02-24 -- 11:23:44:2344 -- http: GET -- /static/hackathonPictures/logoTitle.gif -- a73c2fd8-d268-4e68-9519-69d9613f6554 -- 200 -- 2396730 - 8.106 ms
+2021-02-24 -- 11:23:52:2352 -- info: Init transaction query
+2021-02-24 -- 11:23:52:2352 -- info: Commit
+2021-02-24 -- 11:23:52:2352 -- http: GET -- /hackathon/search?end_date=2021-02-27&start_date=2021-02-24 -- 940f047c-2965-45a8-91ca-716031907bf2 -- 200 -- 984 - 7.149 ms
+2021-02-24 -- 11:24:08:248 -- info: Init transaction query
+2021-02-24 -- 11:24:08:248 -- info: Commit
+2021-02-24 -- 11:24:08:248 -- http: GET -- /hackathon/search?end_date=2021-02-27&start_date=2021-02-25 -- 7ca6078e-2ada-4707-a5bf-614391e5f692 -- 200 -- 26 - 6.355 ms
+2021-02-24 -- 11:24:11:2411 -- info: Init transaction query
+2021-02-24 -- 11:24:11:2411 -- info: Commit
+2021-02-24 -- 11:24:11:2411 -- http: GET -- /hackathon/search?end_date=2021-03-10&start_date=2021-02-25 -- 0ad06f83-bd0c-47f6-b805-f197a60f208f -- 200 -- 2009 - 4.960 ms
+2021-02-24 -- 11:24:11:2411 -- http: GET -- /static/hackathons/f3019b70-685a-4c7d-8adb-f108fed0cf73/2ac0aaf7c0_hack10.jpeg -- 8a754c74-a0ed-4604-b6f5-c279ed0066f6 -- 304 -- - - 1.879 ms
+2021-02-24 -- 11:24:11:2411 -- http: GET -- /static/hackathons/45b19283-882b-40da-9cda-955d1570cde7/6f717b2f28_bgImageTeamWork.jpeg -- e033f953-ced7-4525-99a8-8e28f9192311 -- 304 -- - - 2.722 ms
+2021-02-24 -- 11:24:23:2423 -- info: Init transaction query
+2021-02-24 -- 11:24:23:2423 -- info: Commit
+2021-02-24 -- 11:24:23:2423 -- http: GET -- /hackathon/14 -- b7b59ba5-e799-472b-8899-72d4e9bd1b02 -- 200 -- 1040 - 9.931 ms
+2021-02-24 -- 11:24:23:2423 -- http: GET -- /info/listSocialMedia -- 2e86cce6-2657-4c8b-be46-b22be6d67373 -- 304 -- - - 0.763 ms
+2021-02-24 -- 11:24:23:2423 -- http: GET -- /static/icons/clock-3.png -- 366ee2b0-523b-4129-94d6-ac5ce26ac230 -- 200 -- 2312 - 35.217 ms
+2021-02-24 -- 11:24:23:2423 -- http: GET -- /static/icons/online-2.png -- 21044fcd-173f-425b-85c9-ed61ee367058 -- 200 -- 15571 - 43.795 ms
+2021-02-24 -- 11:24:38:2438 -- info: Init transaction query
+2021-02-24 -- 11:24:38:2438 -- info: Commit
+2021-02-24 -- 11:24:38:2438 -- http: GET -- /hackathon/search?start_date=2021-02-24 -- 51a3335c-c762-4652-998b-f62ee29d2839 -- 304 -- - - 6.976 ms
+2021-02-24 -- 11:24:40:2440 -- info: Init transaction query
+2021-02-24 -- 11:24:40:2440 -- info: Commit
+2021-02-24 -- 11:24:40:2440 -- http: GET -- /hackathon/search?start_date=2021-02-24 -- 6937672e-9229-4434-bb2f-4628047d27e0 -- 304 -- - - 7.361 ms
+2021-02-24 -- 11:24:40:2440 -- info: Init transaction query
+2021-02-24 -- 11:24:40:2440 -- info: Init transaction query
+2021-02-24 -- 11:24:40:2440 -- info: commit
+2021-02-24 -- 11:24:40:2440 -- http: GET -- /info/listTech -- f62a33d5-a9bf-4197-aadc-4e1891ca3c86 -- 304 -- - - 10.179 ms
+2021-02-24 -- 11:24:40:2440 -- info: commit
+2021-02-24 -- 11:24:40:2440 -- http: GET -- /info/listCities -- 54428296-a768-432d-a1f0-9a8c0eee36f6 -- 304 -- - - 11.671 ms
+2021-02-24 -- 11:24:40:2440 -- http: GET -- /static/hackathons/d45f59bb-d111-473e-9b66-e78c1ea75a10/46cbfd7549_codeLogo.svg -- 505283de-7b22-4638-a193-2d11dc798fdc -- 304 -- - - 3.061 ms
+2021-02-24 -- 11:24:40:2440 -- http: GET -- /static/hackathons/6f81a6e3-c2cf-4dee-877e-40f1e56fcacd/7c5623baa7_blogLogo.png -- ee8b6a02-2e16-4021-b990-9fe6efcd2135 -- 304 -- - - 3.908 ms
+2021-02-24 -- 11:24:40:2440 -- info: Init transaction query
+2021-02-24 -- 11:24:40:2440 -- info: commit
+2021-02-24 -- 11:24:40:2440 -- http: GET -- /info/listThematics -- c32fe25b-2fa1-4ea6-b243-b232eb5e6441 -- 304 -- - - 46.850 ms
+2021-02-24 -- 11:25:07:257 -- info: Init transaction query
+2021-02-24 -- 11:25:07:257 -- info: Commit
+2021-02-24 -- 11:25:07:257 -- http: GET -- /hackathon/search?start_date=2021-02-24 -- 0c1fa6fe-5aad-4d93-b91d-d9668d37b841 -- 304 -- - - 6.135 ms
+2021-02-24 -- 11:25:18:2518 -- info: Init transaction query
+2021-02-24 -- 11:25:18:2518 -- info: Commit
+2021-02-24 -- 11:25:18:2518 -- http: GET -- /hackathon/search?start_date=2021-02-24 -- c37219b3-4db6-42e1-97d1-81d295918da6 -- 304 -- - - 7.487 ms
+2021-02-24 -- 11:25:22:2522 -- info: Init transaction query
+2021-02-24 -- 11:25:22:2522 -- info: Commit
+2021-02-24 -- 11:25:22:2522 -- http: GET -- /hackathon/search?start_date=2021-02-24 -- 13eca025-2b3a-44eb-9cd0-f39e1661bc98 -- 304 -- - - 7.925 ms
+2021-02-24 -- 11:25:24:2524 -- info: Init transaction query
+2021-02-24 -- 11:25:24:2524 -- info: Commit
+2021-02-24 -- 11:25:24:2524 -- http: GET -- /hackathon/search?start_date=2021-02-24 -- 715c50d8-093f-4b96-ac99-b8387b48d2e7 -- 304 -- - - 7.935 ms
+2021-02-24 -- 11:25:29:2529 -- info: Init transaction query
+2021-02-24 -- 11:25:29:2529 -- info: Commit
+2021-02-24 -- 11:25:29:2529 -- http: GET -- /hackathon/search?start_date=2021-02-24 -- 8fdd6816-5b4d-4c05-96fe-86690a8acd6d -- 304 -- - - 9.447 ms
+2021-02-24 -- 11:25:32:2532 -- info: Init transaction query
+2021-02-24 -- 11:25:32:2532 -- info: Commit
+2021-02-24 -- 11:25:32:2532 -- http: GET -- /hackathon/search?start_date=2021-02-24 -- 640dca7a-c041-41b2-a581-73bf921df015 -- 304 -- - - 8.157 ms
+2021-02-24 -- 11:25:36:2536 -- info: Init transaction query
+2021-02-24 -- 11:25:36:2536 -- info: Commit
+2021-02-24 -- 11:25:36:2536 -- http: GET -- /hackathon/search?start_date=2021-02-24 -- c24db988-54b3-4922-bedf-df0415ebfe33 -- 304 -- - - 6.457 ms
+2021-02-24 -- 11:25:38:2538 -- info: Init transaction query
+2021-02-24 -- 11:25:38:2538 -- info: Init transaction query
+2021-02-24 -- 11:25:38:2538 -- info: commit
+2021-02-24 -- 11:25:38:2538 -- http: GET -- /info/listTech -- 4dd5b49d-e3a1-4f56-ad51-7ac4e6ae9060 -- 304 -- - - 4.870 ms
+2021-02-24 -- 11:25:38:2538 -- info: commit
+2021-02-24 -- 11:25:38:2538 -- http: GET -- /info/listThematics -- e51a15ce-c45e-4ab9-aeb7-dc0fb9808c2c -- 304 -- - - 6.602 ms
+2021-02-24 -- 11:25:40:2540 -- info: Init transaction query
+2021-02-24 -- 11:25:40:2540 -- info: Commit
+2021-02-24 -- 11:25:40:2540 -- http: GET -- /hackathon/search?start_date=2021-02-24 -- a2a90c18-a81b-4e86-ad02-8691d7e10454 -- 304 -- - - 5.859 ms
+2021-02-24 -- 11:26:32:2632 -- info: Init transaction query
+2021-02-24 -- 11:26:32:2632 -- info: Commit
+2021-02-24 -- 11:26:32:2632 -- http: GET -- /hackathon/search?start_date=2021-02-24 -- ff448721-35f1-4392-b979-b01b0eabb408 -- 304 -- - - 6.043 ms
+2021-02-24 -- 11:26:36:2636 -- info: Init transaction query
+2021-02-24 -- 11:26:36:2636 -- info: Commit
+2021-02-24 -- 11:26:36:2636 -- http: GET -- /hackathon/search?start_date=2021-02-24 -- c8195ba4-6174-4dae-bc2f-bdd6f7e309dd -- 304 -- - - 7.703 ms
+2021-02-24 -- 11:26:36:2636 -- info: Init transaction query
+2021-02-24 -- 11:26:36:2636 -- info: Init transaction query
+2021-02-24 -- 11:26:36:2636 -- info: commit
+2021-02-24 -- 11:26:36:2636 -- http: GET -- /info/listTech -- 7b6b1d98-a8ff-44a5-bc51-019d229b4f01 -- 304 -- - - 5.858 ms
+2021-02-24 -- 11:26:36:2636 -- info: Init transaction query
+2021-02-24 -- 11:26:36:2636 -- info: commit
+2021-02-24 -- 11:26:36:2636 -- http: GET -- /info/listThematics -- d79ed307-a4d2-4167-a609-a9b3fc369eca -- 304 -- - - 7.759 ms
+2021-02-24 -- 11:26:36:2636 -- info: commit
+2021-02-24 -- 11:26:36:2636 -- http: GET -- /info/listCities -- 3234aa6c-3d7f-4bf7-9141-cb62fccfd847 -- 304 -- - - 9.775 ms
+2021-02-24 -- 11:26:51:2651 -- info: Init transaction query
+2021-02-24 -- 11:26:51:2651 -- info: Commit
+2021-02-24 -- 11:26:51:2651 -- http: GET -- /hackathon/search?start_date=2021-02-24 -- 2ac249a8-65d6-4f4c-8dcb-307ea793c04c -- 304 -- - - 8.052 ms
+2021-02-24 -- 11:26:53:2653 -- info: Init transaction query
+2021-02-24 -- 11:26:53:2653 -- info: Commit
+2021-02-24 -- 11:26:53:2653 -- http: GET -- /hackathon/search?start_date=2021-02-24 -- d825ac91-4934-41e4-be0a-0c46d23ce216 -- 304 -- - - 11.027 ms
+2021-02-24 -- 11:26:53:2653 -- info: Init transaction query
+2021-02-24 -- 11:26:53:2653 -- info: Init transaction query
+2021-02-24 -- 11:26:53:2653 -- info: Init transaction query
+2021-02-24 -- 11:26:53:2653 -- info: commit
+2021-02-24 -- 11:26:53:2653 -- http: GET -- /info/listTech -- 0d292180-71c0-45ff-8bc5-8373f479c491 -- 304 -- - - 7.392 ms
+2021-02-24 -- 11:26:53:2653 -- info: commit
+2021-02-24 -- 11:26:53:2653 -- http: GET -- /info/listThematics -- 6efbf76b-ed33-40e3-88d1-147bc4c73f1c -- 304 -- - - 7.935 ms
+2021-02-24 -- 11:26:53:2653 -- info: commit
+2021-02-24 -- 11:26:53:2653 -- http: GET -- /info/listCities -- 808ac1f5-304f-43c5-8a44-e43f545045cd -- 304 -- - - 10.176 ms
+2021-02-24 -- 11:26:54:2654 -- info: Init transaction query
+2021-02-24 -- 11:26:54:2654 -- info: Commit
+2021-02-24 -- 11:26:54:2654 -- http: GET -- /hackathon/search?start_date=2021-02-24 -- 539a296d-ca51-4139-b303-1ffa396831d2 -- 304 -- - - 9.326 ms
+2021-02-24 -- 11:26:58:2658 -- info: Init transaction query
+2021-02-24 -- 11:26:58:2658 -- info: Init transaction query
+2021-02-24 -- 11:26:58:2658 -- info: commit
+2021-02-24 -- 11:26:58:2658 -- http: GET -- /info/listTech -- edcd83cd-d2eb-4e59-a3d3-e2d3501453d1 -- 304 -- - - 4.993 ms
+2021-02-24 -- 11:26:58:2658 -- info: commit
+2021-02-24 -- 11:26:58:2658 -- http: GET -- /info/listThematics -- 6a5de904-d571-4ba6-9657-d2f59144861c -- 304 -- - - 6.753 ms
+2021-02-24 -- 11:27:00:270 -- info: Init transaction query
+2021-02-24 -- 11:27:00:270 -- info: Commit
+2021-02-24 -- 11:27:00:270 -- http: GET -- /hackathon/search?start_date=2021-02-24 -- 50cbdd79-66ac-4998-ad1d-751c939e4bac -- 304 -- - - 6.105 ms
+2021-02-24 -- 11:27:04:274 -- info: Init transaction query
+2021-02-24 -- 11:27:04:274 -- info: Commit
+2021-02-24 -- 11:27:04:274 -- http: GET -- /hackathon/search?start_date=2021-02-24 -- b7baf680-b272-4821-8db4-d058997c226a -- 304 -- - - 7.430 ms
+2021-02-24 -- 11:27:49:2749 -- info: Init transaction query
+2021-02-24 -- 11:27:49:2749 -- info: Commit
+2021-02-24 -- 11:27:49:2749 -- http: GET -- /hackathon/search?start_date=2021-02-24 -- 74062946-84a9-49ff-b2d5-ddcb518d48a9 -- 304 -- - - 8.248 ms
+2021-02-24 -- 11:27:52:2752 -- http: GET -- /user/2 -- bac01190-6860-453a-97e4-19300a1009ce -- 304 -- - - 10.190 ms
+2021-02-24 -- 11:27:52:2752 -- http: GET -- /user/2 -- 5a3a0e07-25de-4b8a-9cdc-40827eccfc00 -- 304 -- - - 13.438 ms
+2021-02-24 -- 11:27:52:2752 -- http: GET -- /user/2 -- df1aaf33-c763-477c-b58e-ddb5d7831d05 -- 304 -- - - 9.719 ms
+2021-02-24 -- 11:27:52:2752 -- http: GET -- /user/2 -- d933f660-c5cf-44ca-b381-907fcf10839d -- 304 -- - - 7.214 ms
+2021-02-24 -- 11:27:52:2752 -- http: GET -- /user/2 -- ef4b53f2-7cb3-44cc-8706-486a6d4ba8f5 -- 304 -- - - 9.369 ms
+2021-02-24 -- 11:27:52:2752 -- http: GET -- /user/2 -- 3a6fe1b2-20cb-4292-9e11-5e49cba0a3bd -- 304 -- - - 11.139 ms
+2021-02-24 -- 11:27:54:2754 -- info: Init transaction query
+2021-02-24 -- 11:27:54:2754 -- info: Commit
+2021-02-24 -- 11:27:54:2754 -- http: GET -- /hackathon/search?start_date=2021-02-24 -- 01568b91-4102-4482-9c9c-95f48e66a559 -- 304 -- - - 6.892 ms
+2021-02-24 -- 11:31:58:3158 -- debug: Login OK
+2021-02-24 -- 11:31:58:3158 -- http: POST -- /login -- 2 -- 200 -- 763 - 152.793 ms
+2021-02-24 -- 11:31:58:3158 -- info: Init transaction query
+2021-02-24 -- 11:31:58:3158 -- info: Commit
+2021-02-24 -- 11:31:58:3158 -- http: GET -- /hackathon/search?start_date=2021-02-24 -- 6f3371df-def0-44f1-9961-cafd8b8baa1b -- 304 -- - - 11.561 ms
+2021-02-24 -- 11:31:58:3158 -- http: GET -- /user/2 -- 582f2a72-6cb1-46e4-9d7d-3498c3d675e3 -- 304 -- - - 24.541 ms
+2021-02-24 -- 11:31:58:3158 -- http: GET -- /static/users/494ab328-6969-4d0a-a021-aa761fb76547/ff6d84eaa7_avatar.jpg -- ac57089f-ba22-491b-bb89-33b1c457d218 -- 304 -- - - 0.785 ms
+2021-02-24 -- 11:32:00:320 -- http: GET -- /user/2 -- 356c1861-f28f-447a-8f02-030eeb14f6e5 -- 304 -- - - 9.689 ms
+2021-02-24 -- 11:32:00:320 -- http: GET -- /user/2 -- b4a987a7-8b60-47cf-bb2c-a4a327c8c766 -- 304 -- - - 12.031 ms
+2021-02-24 -- 11:32:00:320 -- http: GET -- /user/2 -- 8c33b7f3-b404-4e0c-9478-a29c016694ec -- 304 -- - - 12.919 ms
+2021-02-24 -- 11:32:00:320 -- http: GET -- /user/2 -- 8c9d7529-4c6b-40ba-88a1-61910d971f06 -- 304 -- - - 14.966 ms
+2021-02-24 -- 11:32:00:320 -- http: GET -- /user/2 -- 1d040a39-1125-4d6b-8863-e9cf5e3769ed -- 304 -- - - 15.197 ms
+2021-02-24 -- 11:32:00:320 -- http: GET -- /user/2 -- 2715eee1-7cd6-4c84-a962-a29803f7e796 -- 304 -- - - 11.371 ms
+2021-02-24 -- 11:32:17:3217 -- http: GET -- /user/2 -- 8fd8a926-ce6b-4d5f-969b-00136e75fde9 -- 304 -- - - 11.127 ms
+2021-02-24 -- 11:32:38:3238 -- http: GET -- /user/2 -- 125bc7ce-e95f-4326-981b-60cfd876b263 -- 304 -- - - 10.037 ms
+2021-02-24 -- 11:32:38:3238 -- http: GET -- /user/2 -- 4319dc86-947e-48e2-ab8e-996f868b2d8e -- 304 -- - - 9.270 ms
+2021-02-24 -- 11:32:43:3243 -- http: GET -- /user/2 -- 21c66e14-937c-4dd2-adff-d59d4064907a -- 304 -- - - 11.557 ms
+2021-02-24 -- 11:32:43:3243 -- http: GET -- /user/2 -- 7c77d428-dc1e-46ac-a9b4-cfebded89763 -- 304 -- - - 9.413 ms
+2021-02-24 -- 11:32:43:3243 -- http: GET -- /user/2 -- 1acbcd8d-899f-4050-98f0-062ef6d7ca3b -- 304 -- - - 11.530 ms
+2021-02-24 -- 11:32:43:3243 -- http: GET -- /user/2 -- 6904763d-d0d1-4be7-bebc-e93797438a3c -- 304 -- - - 15.806 ms
+2021-02-24 -- 11:32:43:3243 -- http: GET -- /user/2 -- 63bdfd64-80af-4214-8df6-2910a60e743c -- 304 -- - - 15.991 ms
+2021-02-24 -- 11:32:43:3243 -- http: GET -- /user/2 -- 8304cb73-1171-4ed2-9d27-a60a3c31b269 -- 304 -- - - 6.712 ms
+2021-02-24 -- 11:33:34:3334 -- http: GET -- /user/2 -- 11ab4de4-3188-4668-ae12-71293e3d573f -- 304 -- - - 11.298 ms
+2021-02-24 -- 11:33:41:3341 -- http: GET -- /user/2 -- b8015d34-dd39-439b-a2ee-fc83e5ae1d8f -- 304 -- - - 12.186 ms
+2021-02-24 -- 11:33:41:3341 -- http: GET -- /user/2 -- c80684af-aa36-4521-96a4-1b8f4d9a3247 -- 304 -- - - 10.406 ms
+2021-02-24 -- 11:33:41:3341 -- http: GET -- /user/2 -- 6e7808b2-f40c-4bb4-a670-36b31d5c587b -- 304 -- - - 9.346 ms
+2021-02-24 -- 11:33:41:3341 -- http: GET -- /user/2 -- 75cc767a-2df2-4c44-8a10-3091cafa6122 -- 304 -- - - 11.880 ms
+2021-02-24 -- 11:34:30:3430 -- http: GET -- /user/2 -- 240e9333-c3bf-490c-9f6a-72355a676521 -- 304 -- - - 10.167 ms
+2021-02-24 -- 11:34:35:3435 -- http: GET -- /user/2 -- 3cc8e950-7649-47ac-90bb-42ed0cfd8af7 -- 304 -- - - 10.193 ms
+2021-02-24 -- 11:34:35:3435 -- http: GET -- /user/2 -- 5da4f507-edbe-4dd4-bcdd-f70832bcff3c -- 304 -- - - 8.485 ms
+2021-02-24 -- 11:34:35:3435 -- http: GET -- /user/2 -- 6fae195b-7cc0-477e-afa3-1a9b0d365582 -- 304 -- - - 8.243 ms
+2021-02-24 -- 11:35:17:3517 -- http: GET -- /user/2 -- 232f0fd7-8fd4-4e3c-9820-85fa61748d15 -- 304 -- - - 8.088 ms
+2021-02-24 -- 11:35:26:3526 -- http: GET -- /user/2 -- 7cd4ee2e-16b6-44cd-affb-ed7fb18821bc -- 304 -- - - 11.745 ms
+2021-02-24 -- 11:36:35:3635 -- http: GET -- /user/2 -- 83096f83-76ee-48bf-bc43-d56aec6eb7b6 -- 304 -- - - 10.917 ms
+2021-02-24 -- 11:36:46:3646 -- http: GET -- /user/2 -- bedb8eae-d6ee-46a3-948b-e3ab0cd49aa8 -- 304 -- - - 7.347 ms
+2021-02-24 -- 11:39:10:3910 -- http: GET -- /user/2 -- 5095a30b-65b0-460d-8be6-9557e7463d7c -- 304 -- - - 6.238 ms
+2021-02-24 -- 11:39:14:3914 -- http: GET -- /user/2 -- ef86b579-bed6-45c5-b4cf-8b50a19908da -- 304 -- - - 11.257 ms
+2021-02-24 -- 11:39:19:3919 -- http: GET -- /user/2 -- 560fb9ea-6957-4fe0-a3cc-874504bcc67d -- 304 -- - - 7.964 ms
+2021-02-24 -- 11:41:27:4127 -- info: Init transaction query
+2021-02-24 -- 11:41:27:4127 -- info: Commit
+2021-02-24 -- 11:41:27:4127 -- http: GET -- /hackathon/search?start_date=2021-02-24 -- e2b29d2c-75c0-43f1-8dd9-96afce09a0ca -- 304 -- - - 6.062 ms
+2021-02-24 -- 11:41:27:4127 -- http: GET -- /static/hackathons/f3019b70-685a-4c7d-8adb-f108fed0cf73/2ac0aaf7c0_hack10.jpeg -- e4cd2fdf-2a80-4de0-a895-18f58b523d5d -- 304 -- - - 0.527 ms
+2021-02-24 -- 11:41:29:4129 -- http: GET -- /static/hackathons/d45f59bb-d111-473e-9b66-e78c1ea75a10/46cbfd7549_codeLogo.svg -- ad7baa5f-2dc8-48e6-845a-0ff667dfbf13 -- 304 -- - - 0.706 ms
+2021-02-24 -- 11:41:29:4129 -- http: GET -- /static/hackathons/45b19283-882b-40da-9cda-955d1570cde7/6f717b2f28_bgImageTeamWork.jpeg -- f85c76e7-e755-4acb-b425-84ffdb711cdb -- 304 -- - - 0.634 ms
+2021-02-24 -- 11:41:29:4129 -- http: GET -- /static/hackathons/6f81a6e3-c2cf-4dee-877e-40f1e56fcacd/7c5623baa7_blogLogo.png -- 546e5dc0-b72f-4bc1-a8d0-6583a4dcb0ae -- 304 -- - - 0.559 ms
+2021-02-24 -- 11:41:35:4135 -- http: GET -- /user/2 -- 3d4680f6-85ef-4c46-875b-5d9cc84416ee -- 304 -- - - 6.095 ms
+2021-02-24 -- 11:41:35:4135 -- http: GET -- /user/2 -- 9880a06a-0804-4090-a7bc-e36b8a77caca -- 304 -- - - 8.736 ms
+2021-02-24 -- 11:41:35:4135 -- http: GET -- /user/2 -- b0a9655d-5f83-4def-9a1c-11eb852de869 -- 304 -- - - 10.692 ms
+2021-02-24 -- 11:41:35:4135 -- http: GET -- /user/2 -- 0c9f4175-d246-4865-8f09-bd767c2ac04d -- 304 -- - - 13.161 ms
+2021-02-24 -- 11:41:35:4135 -- http: GET -- /user/2 -- 5dfd763a-8827-49cf-91ff-0c0248f64be8 -- 304 -- - - 9.875 ms
+2021-02-24 -- 11:41:35:4135 -- http: GET -- /user/2 -- c9f5807a-aa05-4bd2-be6f-86ee3a1c3d0b -- 304 -- - - 15.145 ms
+2021-02-24 -- 11:41:35:4135 -- http: GET -- /static/users/494ab328-6969-4d0a-a021-aa761fb76547/ff6d84eaa7_avatar.jpg -- 5a593d2d-ff9b-48fd-acf0-7b36c6cc5de1 -- 304 -- - - 0.648 ms
+2021-02-24 -- 11:46:22:4622 -- info: Init transaction query
+2021-02-24 -- 11:46:22:4622 -- info: Commit
+2021-02-24 -- 11:46:22:4622 -- http: GET -- /hackathon/search?start_date=2021-02-24 -- a3158bb8-1710-420c-a9de-75732133046f -- 304 -- - - 5.441 ms
+2021-02-24 -- 11:46:22:4622 -- http: GET -- /static/hackathons/f3019b70-685a-4c7d-8adb-f108fed0cf73/2ac0aaf7c0_hack10.jpeg -- d8fdf71a-8b06-4778-9547-eaac29cfc8e9 -- 304 -- - - 0.653 ms
+2021-02-24 -- 11:46:23:4623 -- http: GET -- /static/hackathons/d45f59bb-d111-473e-9b66-e78c1ea75a10/46cbfd7549_codeLogo.svg -- 98fbaf17-ccaa-4c4a-a68b-65f6c1164c60 -- 304 -- - - 0.723 ms
+2021-02-24 -- 11:46:24:4624 -- http: GET -- /static/hackathons/45b19283-882b-40da-9cda-955d1570cde7/6f717b2f28_bgImageTeamWork.jpeg -- 958664e1-24f3-46b3-ac76-1ea02867f9ea -- 304 -- - - 0.739 ms
+2021-02-24 -- 11:46:24:4624 -- http: GET -- /static/hackathons/6f81a6e3-c2cf-4dee-877e-40f1e56fcacd/7c5623baa7_blogLogo.png -- b8026352-b802-469a-be61-46f46bced63b -- 304 -- - - 0.815 ms
+2021-02-24 -- 11:46:39:4639 -- http: GET -- /user/2 -- c0ee2a46-0f66-4d78-bcf6-a7537baeaf8a -- 304 -- - - 10.756 ms
+2021-02-24 -- 11:46:39:4639 -- http: GET -- /user/2 -- 15d77ce9-e5ab-493a-b255-8872e1eb5257 -- 304 -- - - 7.384 ms
+2021-02-24 -- 11:46:39:4639 -- http: GET -- /user/2 -- 45350982-4761-4dd8-97f4-72ea44c99f0a -- 304 -- - - 10.971 ms
+2021-02-24 -- 11:46:39:4639 -- http: GET -- /user/2 -- d2d6c455-f602-4f9d-beb1-1268970ed27f -- 304 -- - - 15.625 ms
+2021-02-24 -- 11:46:39:4639 -- http: GET -- /user/2 -- 7a654d58-42c4-498e-bb1a-f7fea0eee7a8 -- 304 -- - - 9.703 ms
+2021-02-24 -- 11:46:39:4639 -- http: GET -- /user/2 -- 7c6df6d3-8e58-4ed7-a4fd-4624cd425bbf -- 304 -- - - 11.677 ms
+2021-02-24 -- 11:51:31:5131 -- info: Init transaction query
+2021-02-24 -- 11:51:31:5131 -- info: Commit
+2021-02-24 -- 11:51:31:5131 -- http: GET -- /hackathon/search?start_date=2021-02-24 -- 441dfbbc-832e-4d21-81c6-b840b9eccf63 -- 304 -- - - 6.718 ms
+2021-02-24 -- 11:51:31:5131 -- http: GET -- /static/hackathons/f3019b70-685a-4c7d-8adb-f108fed0cf73/2ac0aaf7c0_hack10.jpeg -- e58c3b41-ba5b-48fe-aed6-fddb3d91cf3d -- 304 -- - - 0.443 ms
+2021-02-24 -- 11:51:33:5133 -- http: GET -- /static/hackathons/d45f59bb-d111-473e-9b66-e78c1ea75a10/46cbfd7549_codeLogo.svg -- e4c2d510-441f-4572-9926-46d8c29cb72e -- 304 -- - - 0.450 ms
+2021-02-24 -- 11:51:33:5133 -- http: GET -- /static/hackathons/45b19283-882b-40da-9cda-955d1570cde7/6f717b2f28_bgImageTeamWork.jpeg -- fb29279c-060f-46fa-8032-91b73e7abcbe -- 304 -- - - 0.541 ms
+2021-02-24 -- 11:51:33:5133 -- http: GET -- /static/hackathons/6f81a6e3-c2cf-4dee-877e-40f1e56fcacd/7c5623baa7_blogLogo.png -- bb1adcf3-843d-48d7-ac96-9da1a8eb9124 -- 304 -- - - 0.737 ms
+2021-02-24 -- 11:51:46:5146 -- info: Init transaction query
+2021-02-24 -- 11:51:46:5146 -- info: Commit
+2021-02-24 -- 11:51:46:5146 -- http: GET -- /hackathon/search?start_date=2021-02-24 -- 81726efa-94f9-4725-8ef7-0042e62eaa58 -- 304 -- - - 6.952 ms
+2021-02-24 -- 11:51:46:5146 -- info: Init transaction query
+2021-02-24 -- 11:51:46:5146 -- info: Init transaction query
+2021-02-24 -- 11:51:46:5146 -- info: Init transaction query
+2021-02-24 -- 11:51:46:5146 -- info: commit
+2021-02-24 -- 11:51:46:5146 -- http: GET -- /info/listTech -- c2ff0217-4ad6-47d3-b4f1-1dedb8079730 -- 304 -- - - 6.937 ms
+2021-02-24 -- 11:51:46:5146 -- info: commit
+2021-02-24 -- 11:51:46:5146 -- http: GET -- /info/listThematics -- 3f1ff7d9-8fc1-4c3c-88e6-a3c00eaa1472 -- 304 -- - - 7.474 ms
+2021-02-24 -- 11:51:46:5146 -- info: commit
+2021-02-24 -- 11:51:46:5146 -- http: GET -- /info/listCities -- a361f5a3-43c8-4cf7-bfbe-0f3eed9a247e -- 304 -- - - 10.367 ms
+2021-02-24 -- 11:51:46:5146 -- http: GET -- /static/hackathonPictures/logoTitle.gif -- e879edfa-46f3-45f4-a390-42878c88a0a7 -- 200 -- 2396730 - 0.901 ms

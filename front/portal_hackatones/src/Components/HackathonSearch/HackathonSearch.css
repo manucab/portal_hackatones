@@ -21,8 +21,11 @@ height: 160px;
 
 .hackathonSearchHach{
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    /* flex-direction: row;
+    flex-wrap: wrap; */
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
     box-sizing: content-box;
 
 

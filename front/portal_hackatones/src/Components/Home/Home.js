@@ -37,7 +37,7 @@ function Home() {
           </button>
           <button
             id="btnSearch"
-            value="/hackathon//search/filters"
+            value="/hackathon/search/"
             onClick={(e) => history.push(e.target.value)}
           >
             Buscar hackathones

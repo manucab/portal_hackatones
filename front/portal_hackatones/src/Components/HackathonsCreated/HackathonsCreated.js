@@ -18,11 +18,9 @@ function HackathonsCreated () {
    
     return(
 
-        
-
         hackathonsCreated.length === 0 ? <div>No has creado ningún hackathon</div> :
         <div className="hackathonsCreated">
-
+            <h1>Hackathons creados</h1>
             {hackathonsCreated.lenght !== 0 ?
                 <CarouselHackathons hackathons={hackathonsCreated} organizer={true} />:
                 <p>No has reado ningún hackathon</p>}

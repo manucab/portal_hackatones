@@ -18,7 +18,7 @@ function showOrganizerStats (data) {
                 <div>Media Asistentes</div> 
             </div>
             <div className="stats">
-                <div className='stat' >{data[4][1][0].organizer_avg_rate}</div>
+                <div className='stat' >{data[4][1][0].organizer_avg_rate || '-'}</div>
                 <div>Valoración Media</div> 
             </div>
             
@@ -41,6 +41,7 @@ function OrganizerStats() {
     return(
         
         <div className="organizer-stats-section" >
+            <h1>Tus estadísticas como organizador</h1>
             {showOrganizerStats(data)}
         </div>
 
