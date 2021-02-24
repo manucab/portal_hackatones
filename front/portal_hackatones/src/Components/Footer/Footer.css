@@ -9,7 +9,7 @@
 
     border-top: 5px solid #F6E561;
     
-    position: absolute;
+    position: fixed;
     bottom:0px;
     padding:10px;
     /* border: 1px solid black; */
@@ -79,6 +79,19 @@ text-decoration: none;
 
 .footer-links-wide div span {
   color: black;
+}
+
+.social-media-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer .social-media-footer img {
+    width: 30px;
+    border: none;
+    margin: 5px;
+
 }
 
 #logoFooter-wide{

@@ -4,6 +4,9 @@ import logoHome from "../../Media/Images/General/logo.jpg";
 import logoBlog from "../../Media/Images/General/blogLogo.png";
 import logoHackathon from "../../Media/Images/General/codeLogo.svg";
 import logoAbout from "../../Media/Images/General/about.svg";
+import facebook from "./images/facebook.png";
+import instagram from "./images/instagram.png";
+import youtube from "./images/youtube.png";
 import MediaQuery from "react-responsive";
 
 function Footer() {
@@ -71,6 +74,17 @@ function Footer() {
                 reservados.
               </span>
             </div>
+          </div>
+          <div className="social-media-footer">
+            <a href="https://www.facebook.com" target="blank">
+              <img className="sm-footer-logo" src={facebook} alt="facebook" />
+            </a>
+            <a href="https://www.instagram.com" target="blank">
+              <img className="sm-footer-logo" src={instagram} alt="instagram" />
+            </a>
+            <a href="https://www.youtube.com" target="blank">
+              <img className="sm-footer-logo" src={youtube} alt="youtube" />
+            </a>
           </div>
         </div>
       </MediaQuery>
