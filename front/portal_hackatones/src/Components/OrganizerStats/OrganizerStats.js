@@ -18,7 +18,7 @@ function showOrganizerStats (data) {
                 <div>Media Asistentes</div> 
             </div>
             <div className="stats">
-                <div className='stat' >{data[4][1][0].organizer_avg_rate}</div>
+                <div className='stat' >{data[4][1][0].organizer_avg_rate || '-'}</div>
                 <div>Valoración Media</div> 
             </div>
             

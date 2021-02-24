@@ -103,6 +103,20 @@
 
 }
 
+.participants-number {
+    box-sizing: border-box;
+    background-color: #F6E561;
+    padding: 5px;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 2px;
+}
+
 .modify-hack {
 
     height: 30px;
