@@ -33,4 +33,6 @@ height: 160px;
     flex-grow: 1;
     
     text-align: center;
+
+    cursor: pointer;
 }
