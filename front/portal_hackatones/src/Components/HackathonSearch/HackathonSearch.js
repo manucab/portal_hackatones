@@ -43,23 +43,14 @@ function HackathonSearch() {
     }, {sort: false})
 
 
-    console.log('url :>> ', url);
-    console.log('params :>> ', params);
-
     let listhackathons = useFetch(url);
 
-    console.log('listhackathons :>> ', listhackathons);
 
     if (! listhackathons) 
         return 'Loading ...';
     
 
-
-    console.log('listhackathons :>> ', listhackathons.Info);
-
-
     let urlLogoTitle = `http://localhost:3001/static/hackathonPictures/logoTitle.gif`;
-
 
     const handleModality = (value) => {
         sethackathon_place(value);

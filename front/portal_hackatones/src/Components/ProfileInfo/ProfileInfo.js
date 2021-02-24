@@ -24,10 +24,6 @@ function showInfo (user_name, surname,email,professional_profile,rol) {
     )
 }
 
-
-
-
-
 function ProfileInfo () {
     
     const login = useSelector(s => s.login)

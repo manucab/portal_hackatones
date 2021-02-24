@@ -17,6 +17,8 @@ height: 160px;
     border: 1px solid black;
 }
 
+
+
 .hackathonSearchHach{
     display: flex;
     flex-direction: row;
@@ -27,10 +29,10 @@ height: 160px;
 }
 
 .showHack{
-
+/* 
     flex-shrink: 1;
 
-    flex-grow: 1;
+    flex-grow: 1; */
     
     text-align: center;
 

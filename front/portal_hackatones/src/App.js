@@ -33,7 +33,7 @@ function App() {
 
             <Helmet>
                 <meta charSet="utf-8"/>
-                <title>Hackathon Plays</title>
+                <title>Hackathon Place</title>
                 <link rel="canonical" href="http://localhost:3000/"/>
             </Helmet>
 
