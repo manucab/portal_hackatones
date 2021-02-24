@@ -3,6 +3,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding-top: 55px;
 }
 
 .posts-form {
@@ -19,7 +20,6 @@
 
 .post{
 
-    position: relative;
     box-sizing: border-box;
     padding: 0px;
     width: 300px;

@@ -39,7 +39,7 @@ function UserStats() {
 
     return(
 
-        <div className="profile" >
+        <div className="user-stats" >
              <h1>Consulta tus estadísticas</h1>
             {showStats(data)}
         </div>
