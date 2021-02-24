@@ -3,18 +3,51 @@
 }
 
 .header {
-    border-bottom: 1px solid black;
-    /* height: 75px; */
+    
+    height: 300px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding:10px;
+    background-size: cover;
 
 }
 
-.header > button{
-    height: 22px;
+.header p {
 
-    font-size: 12px;
+    color: white;
+    padding: 15px;
+    font-size: 15px;
+    background-color: rgba(0, 0, 0,0.8);
+
+}
+
+
+
+.landing-buttons {
+
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.landing-buttons button {
+
+    background-color: #F6E561;
+    border: none;
+    border-radius: 10px;
+    width: min-content;
+    margin: 10px;
+    padding: 5px;
+    transition: bac;
+    font-weight: bold;
+
+}
+
+.landing-buttons button:hover {
+
+    background-color: #dbc309;
+    transition: background-color 0.5s ease;
+
 }

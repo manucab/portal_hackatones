@@ -6,7 +6,7 @@ header {
     justify-content: space-between;
     width: 360px;
     height: 55px;
-    margin: 0 auto 30px;
+    margin: 0 auto ;
     padding:10px;
     border-bottom: 5px solid #F6E561;
 }

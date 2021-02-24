@@ -12,7 +12,7 @@ function Header() {
   return (
     <header>
         <Link to="/"><div className="logo"></div></Link> 
-        <h1>Portal Hackathones</h1> 
+        <h1>Hackathons Place</h1> 
 
 
         {!login &&

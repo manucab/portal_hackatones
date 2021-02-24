@@ -870,3 +870,105 @@
 2021-02-23 -- 21:05:39:539 -- http: GET -- /user/2 -- da65f3b7-fc0c-48c3-9520-3a41c5dd59f1 -- 304 -- - - 45.818 ms
 2021-02-23 -- 21:05:39:539 -- http: GET -- /user/2 -- b8d3d6ab-172e-45ae-a3e4-aac9ef8d0c26 -- 304 -- - - 8.359 ms
 2021-02-23 -- 21:05:39:539 -- http: GET -- /user/2 -- 5efe86dc-dc24-4522-b47b-d5f05df612f9 -- 304 -- - - 7.831 ms
+2021-02-24 -- 09:40:47:4047 -- info: listening on port 3001
+2021-02-24 -- 09:46:17:4617 -- info: Init transaction query
+2021-02-24 -- 09:46:18:4618 -- http: GET -- /user/2 -- 46a7adcf-255a-40cc-8de8-c1446a35e1b2 -- 200 -- 3219 - 488.881 ms
+2021-02-24 -- 09:46:18:4618 -- http: GET -- /static/users/494ab328-6969-4d0a-a021-aa761fb76547/ff6d84eaa7_avatar.jpg -- cf0a015f-5323-43fe-9391-46fe4dba24d3 -- 304 -- - - 2.941 ms
+2021-02-24 -- 09:46:20:4620 -- info: Commit
+2021-02-24 -- 09:46:20:4620 -- http: GET -- /hackathon/search?start_date=2021-02-24 -- dae8497c-159e-498c-993d-1843afdcb679 -- 200 -- 7713 - 2318.480 ms
+2021-02-24 -- 09:46:20:4620 -- warn: 404 Router not found
+2021-02-24 -- 09:46:20:4620 -- http: GET -- /staticpordefecto -- 6e209d77-49bc-4be0-a51f-ab6752a0287b -- 404 -- 30 - 2.988 ms
+2021-02-24 -- 09:46:20:4620 -- http: GET -- /info/listSocialMedia -- b5e11f3f-ccae-4c94-b34d-0525a13bc5f9 -- 304 -- - - 1.952 ms
+2021-02-24 -- 09:49:12:4912 -- info: Init transaction query
+2021-02-24 -- 09:49:12:4912 -- info: Commit
+2021-02-24 -- 09:49:12:4912 -- http: GET -- /hackathon/search?start_date=2021-02-24 -- c0d14dbb-6137-441e-a05e-ccd107224731 -- 200 -- 7713 - 12.911 ms
+2021-02-24 -- 09:49:12:4912 -- http: GET -- /user/2 -- ed296df4-efd0-4aff-b01b-a1a12f7a7c4a -- 200 -- 3219 - 21.973 ms
+2021-02-24 -- 09:49:12:4912 -- warn: 404 Router not found
+2021-02-24 -- 09:49:12:4912 -- http: GET -- /staticpordefecto -- df4b52b9-9602-4b84-bf17-56ea35c7751b -- 404 -- 30 - 2.283 ms
+2021-02-24 -- 09:49:12:4912 -- http: GET -- /info/listSocialMedia -- 0ddc4e70-98a0-4378-9b6d-33b14d60c263 -- 304 -- - - 0.760 ms
+2021-02-24 -- 09:49:12:4912 -- http: GET -- /static/users/494ab328-6969-4d0a-a021-aa761fb76547/ff6d84eaa7_avatar.jpg -- dcc7c251-5f36-4213-9c2e-0eb9abad0c25 -- 304 -- - - 0.893 ms
+2021-02-24 -- 09:49:14:4914 -- info: Init transaction query
+2021-02-24 -- 09:49:14:4914 -- info: Commit
+2021-02-24 -- 09:49:14:4914 -- http: GET -- /hackathon/search?start_date=2021-02-24 -- 69758e0e-b733-4699-98ab-30565a4a9d9f -- 304 -- - - 10.130 ms
+2021-02-24 -- 09:49:14:4914 -- http: GET -- /user/2 -- d1442c7a-1d58-465a-beaf-b53adfd14ed9 -- 200 -- 3218 - 19.900 ms
+2021-02-24 -- 09:49:14:4914 -- warn: 404 Router not found
+2021-02-24 -- 09:49:14:4914 -- http: GET -- /staticpordefecto -- 107c0a8f-ea9d-45be-90c1-ce61a081c0c6 -- 404 -- 30 - 1.188 ms
+2021-02-24 -- 09:49:14:4914 -- http: GET -- /info/listSocialMedia -- e32f6975-c42d-4aee-a4bd-9f8fed0d37b6 -- 304 -- - - 2.108 ms
+2021-02-24 -- 09:49:16:4916 -- info: Init transaction query
+2021-02-24 -- 09:49:16:4916 -- info: Commit
+2021-02-24 -- 09:49:16:4916 -- http: GET -- /hackathon/search?start_date=2021-02-24 -- 49e2efca-a6a7-44bd-9900-bb2f5ff26cc5 -- 304 -- - - 9.914 ms
+2021-02-24 -- 09:49:16:4916 -- http: GET -- /user/2 -- 730af9a8-60d4-48a2-93ce-f8208c429e3d -- 200 -- 1549 - 19.598 ms
+2021-02-24 -- 09:49:16:4916 -- warn: 404 Router not found
+2021-02-24 -- 09:49:16:4916 -- http: GET -- /staticpordefecto -- 64af0055-2880-4fa8-a880-4f66e2b6c7fd -- 404 -- 30 - 1.137 ms
+2021-02-24 -- 09:49:16:4916 -- http: GET -- /info/listSocialMedia -- 20cc4134-8b24-4d31-81c6-98e644b50696 -- 304 -- - - 0.618 ms
+2021-02-24 -- 09:49:16:4916 -- http: GET -- /static/users/494ab328-6969-4d0a-a021-aa761fb76547/ff6d84eaa7_avatar.jpg -- b32f102b-9fad-44d5-b8c5-54aae4b1ff39 -- 304 -- - - 0.666 ms
+2021-02-24 -- 09:49:18:4918 -- info: Init transaction query
+2021-02-24 -- 09:49:18:4918 -- info: Commit
+2021-02-24 -- 09:49:18:4918 -- http: GET -- /hackathon/search?start_date=2021-02-24 -- 17f728a0-3fbd-4549-aa62-0b62bff08a3e -- 304 -- - - 10.037 ms
+2021-02-24 -- 09:49:18:4918 -- http: GET -- /user/2 -- a26bdf36-d688-4ad8-877e-405c57f8281c -- 304 -- - - 14.591 ms
+2021-02-24 -- 09:49:18:4918 -- warn: 404 Router not found
+2021-02-24 -- 09:49:18:4918 -- http: GET -- /staticpordefecto -- 37b001f1-167b-4692-ba4d-4a40f27b1d6a -- 404 -- 30 - 0.975 ms
+2021-02-24 -- 09:49:18:4918 -- http: GET -- /info/listSocialMedia -- 0ed700a8-12bc-467a-adfb-ffc8005e87a4 -- 304 -- - - 0.566 ms
+2021-02-24 -- 09:49:18:4918 -- http: GET -- /static/users/494ab328-6969-4d0a-a021-aa761fb76547/ff6d84eaa7_avatar.jpg -- e94aa7dd-5fae-44a0-b001-e29f13e98081 -- 304 -- - - 0.918 ms
+2021-02-24 -- 09:50:53:5053 -- info: Init transaction query
+2021-02-24 -- 09:50:53:5053 -- info: Commit
+2021-02-24 -- 09:50:53:5053 -- http: GET -- /hackathon/search?start_date=2021-02-24 -- fa96170e-eb53-4a02-bfe9-3f3af0be5bcf -- 304 -- - - 7.846 ms
+2021-02-24 -- 09:50:53:5053 -- http: GET -- /user/2 -- cc6b4f10-8490-4197-a2af-f867d89e5c37 -- 304 -- - - 14.119 ms
+2021-02-24 -- 09:50:53:5053 -- warn: 404 Router not found
+2021-02-24 -- 09:50:54:5054 -- http: GET -- /staticpordefecto -- f37f6337-89c8-46b8-a4b8-47fc2e7d611b -- 404 -- 30 - 1.118 ms
+2021-02-24 -- 09:58:41:5841 -- http: GET -- /user/2 -- f15ba01f-ed2e-4581-b2de-6d66b1f2a0d4 -- 304 -- - - 7.680 ms
+2021-02-24 -- 09:58:41:5841 -- http: GET -- /user/2 -- 41e16b76-fe67-4508-9370-32685faad7e7 -- 304 -- - - 9.608 ms
+2021-02-24 -- 09:58:41:5841 -- http: GET -- /user/2 -- 27f2bbc7-2ad0-4f74-9376-ecc0eb2a0d81 -- 304 -- - - 7.273 ms
+2021-02-24 -- 09:58:41:5841 -- http: GET -- /user/2 -- f73befa3-5c27-412a-874f-a2dce3f23ecf -- 304 -- - - 7.882 ms
+2021-02-24 -- 09:58:41:5841 -- http: GET -- /user/2 -- b32b9fe5-cfde-4c96-941e-c63c3e48bf37 -- 304 -- - - 9.341 ms
+2021-02-24 -- 09:58:41:5841 -- http: GET -- /user/2 -- 0b56df01-1c5e-4810-a376-fd53b61d1f7a -- 304 -- - - 7.266 ms
+2021-02-24 -- 10:05:32:532 -- info: Init transaction query
+2021-02-24 -- 10:05:32:532 -- info: Commit
+2021-02-24 -- 10:05:32:532 -- http: GET -- /hackathon/search?start_date=2021-02-24 -- 2f27cd4d-212a-459e-9c52-263551581cf7 -- 304 -- - - 7.697 ms
+2021-02-24 -- 10:05:32:532 -- info: Init transaction query
+2021-02-24 -- 10:05:32:532 -- info: commit
+2021-02-24 -- 10:05:32:532 -- http: GET -- /info/listCities -- e1ef2af9-f88d-4cdf-92b0-26e19e7022d1 -- 200 -- 139 - 4.794 ms
+2021-02-24 -- 10:05:32:532 -- warn: 404 Router not found
+2021-02-24 -- 10:05:32:532 -- http: GET -- /staticpordefecto -- 5e14f17e-8955-416d-914b-2ae02e4d8adc -- 404 -- 30 - 1.278 ms
+2021-02-24 -- 10:05:32:532 -- warn: 404 Router not found
+2021-02-24 -- 10:05:32:532 -- http: GET -- /static/hackathons/9170d741-b5e0-4f2a-8727-c6a117de2d0e/d2113729d4_hack10.jpeg -- 9f42153e-6a9e-4eab-9b91-6d945adc8870 -- 404 -- 30 - 2.195 ms
+2021-02-24 -- 10:05:32:532 -- info: Init transaction query
+2021-02-24 -- 10:05:32:532 -- http: GET -- /static/hackathons/f3019b70-685a-4c7d-8adb-f108fed0cf73/2ac0aaf7c0_hack10.jpeg -- f53ff187-9457-448f-ba0f-dfb643afc80e -- 304 -- - - 2.613 ms
+2021-02-24 -- 10:05:32:532 -- info: commit
+2021-02-24 -- 10:05:32:532 -- http: GET -- /info/listTech -- 33c19f22-6008-4e02-ab0a-1e58cb7d9ce3 -- 304 -- - - 8.436 ms
+2021-02-24 -- 10:05:32:532 -- warn: 404 Router not found
+2021-02-24 -- 10:05:32:532 -- http: GET -- /static/hackathons/5cb21157-de83-4d1e-8070-449609968fc1/514e5a1a82_bgImageTeamWork.jpeg -- 6baa69ff-8d22-4914-9f26-11c379ec24fb -- 404 -- 30 - 1.407 ms
+2021-02-24 -- 10:05:32:532 -- info: Init transaction query
+2021-02-24 -- 10:05:32:532 -- info: commit
+2021-02-24 -- 10:05:32:532 -- http: GET -- /info/listThematics -- cdbd06a0-b33c-489f-85a2-bcff89c0df3d -- 200 -- 203 - 9.421 ms
+2021-02-24 -- 10:05:32:532 -- http: GET -- /static/hackathons/d45f59bb-d111-473e-9b66-e78c1ea75a10/46cbfd7549_codeLogo.svg -- ee9ed73e-6063-4b62-aa45-36733e846bb6 -- 304 -- - - 3.492 ms
+2021-02-24 -- 10:05:32:532 -- http: GET -- /static/hackathons/6f81a6e3-c2cf-4dee-877e-40f1e56fcacd/7c5623baa7_blogLogo.png -- 08fe7cc5-90e8-459b-aa48-5d8329821e04 -- 304 -- - - 0.564 ms
+2021-02-24 -- 10:05:32:532 -- http: GET -- /static/hackathonPictures/logoTitle.gif -- d0ac780a-1bcd-44e6-b08c-09454a774d94 -- 200 -- 2396730 - 39.356 ms
+2021-02-24 -- 10:05:32:532 -- http: GET -- /static/hackathons/45b19283-882b-40da-9cda-955d1570cde7/6f717b2f28_bgImageTeamWork.jpeg -- 8b142913-1f64-40ae-ac32-005bc3a16545 -- 200 -- 33047 - 90.741 ms
+2021-02-24 -- 10:05:32:532 -- http: GET -- /static/hackathons/8add526b-279d-490c-8096-d447dbcfd333/604627dc41_bgImageTeamWork.jpeg -- 860a3602-e8be-4078-8f6a-ab3b72904900 -- 200 -- 33047 - 121.647 ms
+2021-02-24 -- 10:05:51:551 -- http: GET -- /blog -- ac98848f-499a-47c0-b5aa-541f7d5d4dd2 -- 304 -- - - 3.247 ms
+2021-02-24 -- 10:05:51:551 -- http: GET -- /static/posts/bgImageTeamWork.jpeg -- 4500072f-2e2d-456e-892b-52c4fd829b1d -- 304 -- - - 0.446 ms
+2021-02-24 -- 10:11:23:1123 -- info: Init transaction query
+2021-02-24 -- 10:11:23:1123 -- info: Commit
+2021-02-24 -- 10:11:23:1123 -- http: GET -- /hackathon/search?start_date=2021-02-24 -- d2569474-5c69-4674-aad0-c6b12d4f938c -- 304 -- - - 9.055 ms
+2021-02-24 -- 10:11:23:1123 -- warn: 404 Router not found
+2021-02-24 -- 10:11:23:1123 -- http: GET -- /staticpordefecto -- db3d6530-b5d2-4d2b-af82-b178efbe9e79 -- 404 -- 30 - 0.922 ms
+2021-02-24 -- 10:14:15:1415 -- info: Init transaction query
+2021-02-24 -- 10:14:15:1415 -- info: Commit
+2021-02-24 -- 10:14:15:1415 -- http: GET -- /hackathon/search?start_date=2021-02-24 -- 1f01a487-c918-4656-b183-e5b229febe07 -- 304 -- - - 6.554 ms
+2021-02-24 -- 10:17:06:176 -- info: Init transaction query
+2021-02-24 -- 10:17:06:176 -- info: Commit
+2021-02-24 -- 10:17:06:176 -- http: GET -- /hackathon/search?start_date=2021-02-24 -- 0dbdb564-3d70-4ebb-b143-d4847f099f97 -- 304 -- - - 7.817 ms
+2021-02-24 -- 10:20:31:2031 -- warn: 404 Router not found
+2021-02-24 -- 10:20:31:2031 -- http: GET -- /staticpordefecto -- 3b2219bb-b460-4b89-a4c7-83c31b64a1ff -- 404 -- 30 - 2.170 ms
+2021-02-24 -- 10:20:31:2031 -- info: Init transaction query
+2021-02-24 -- 10:20:31:2031 -- info: Commit
+2021-02-24 -- 10:20:31:2031 -- http: GET -- /hackathon/search?start_date=2021-02-24 -- 4dea1a84-fc00-4ebb-9788-9cc67e0ea048 -- 304 -- - - 9.272 ms
+2021-02-24 -- 10:20:42:2042 -- warn: 404 Router not found
+2021-02-24 -- 10:20:42:2042 -- http: GET -- /staticpordefecto -- 17dc9685-70dd-4b76-9ca3-9d69da7f19e7 -- 404 -- 30 - 1.255 ms
+2021-02-24 -- 10:20:42:2042 -- info: Init transaction query
+2021-02-24 -- 10:20:42:2042 -- info: Commit
+2021-02-24 -- 10:20:42:2042 -- http: GET -- /hackathon/search?start_date=2021-02-24 -- a073593a-3ddc-4492-9a91-9e500542316b -- 304 -- - - 8.129 ms
+2021-02-24 -- 10:21:32:2132 -- info: Init transaction query
+2021-02-24 -- 10:21:32:2132 -- info: Commit
+2021-02-24 -- 10:21:32:2132 -- http: GET -- /hackathon/search?start_date=2021-02-24 -- 508186c4-beab-4b72-a9d8-9657dbd56548 -- 304 -- - - 7.306 ms

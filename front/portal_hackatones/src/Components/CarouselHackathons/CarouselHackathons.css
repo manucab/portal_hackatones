@@ -169,3 +169,17 @@
     border-radius: 10px;
     margin-bottom: 5px;
 }
+
+.delete-hack {
+
+    border-radius: 50%;
+    height: 25px;
+    width: 25px;
+    border: none;
+    background-color: rgb(145, 3, 3);
+    margin-left: 10px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+
+}
