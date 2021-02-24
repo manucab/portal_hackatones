@@ -1,0 +1,28 @@
+@media screen and (min-width: 768px) {
+    .profile-page-container{
+        height: auto;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: auto;
+        grid-template-areas:
+            "profile userStats"
+            "profile organizerStats"
+        ;
+        margin: 0;
+        height: 100%;
+        padding: 10px;
+        padding-top: 55px;
+        background: linear-gradient(60deg,#F6E561,white,white,white, #F6E561);
+    }
+
+    .profile {
+        grid-area: profile;
+    }
+
+    .user-stats {
+        grid-area: userStats;
+    }
+    .organizerStats{
+        grid-area: organizerStats;
+    }
+}

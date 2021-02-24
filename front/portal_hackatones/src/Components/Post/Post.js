@@ -35,6 +35,7 @@ function Post () {
     return(
          
         <div className="full-post-page">
+            <h1>Disfruta del articulo</h1>
             <div className="full-post">
 
                 <Helmet>

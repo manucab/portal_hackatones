@@ -14,11 +14,11 @@ function showInfo (user_name, surname,email,professional_profile,rol) {
     return(
 
         <div className='personal-info'>
-            <div>Nombre: {user_name.split(' ').map(w => capitalize(w)).join(' ')}</div>
-            <div>Apellido: {surname.split(' ').map(w => capitalize(w)).join(' ')}</div>
-            <div>Email: {email}</div>
-            <div>Perfil Profesional: {capitalize(professional_profile)}</div>
-            <div>Rol: {capitalize(rol)}</div>
+            <div><strong>Nombre: </strong>{user_name.split(' ').map(w => capitalize(w)).join(' ')}</div>
+            <div><strong>Apellido: </strong>{surname.split(' ').map(w => capitalize(w)).join(' ')}</div>
+            <div><strong>Email: </strong>{email}</div>
+            <div><strong>Perfil Profesional:</strong> {capitalize(professional_profile)}</div>
+            <div><strong>Rol: </strong>{capitalize(rol)}</div>
         </div>
 
     )

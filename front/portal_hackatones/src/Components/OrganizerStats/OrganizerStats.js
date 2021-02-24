@@ -1,6 +1,7 @@
 import { useSelector } from 'react-redux'
 import { Redirect, useParams } from 'react-router-dom'
 import useFetch from '../../Hooks/useFetch'
+import './OrganizerStats.css'
 
 
 
