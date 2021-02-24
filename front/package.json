@@ -3,6 +3,7 @@
     "chroma-js": "^2.1.0",
     "luxon": "^1.26.0",
     "node-schedule": "^2.0.0",
-    "react-select": "^4.1.0"
+    "react-select": "^4.1.0",
+    "react-spinners": "^0.10.6"
   }
 }

@@ -6,6 +6,8 @@
 
     box-sizing: border-box;
     background-color: #A3A4A6;
+
+    border-top: 5px solid #F6E561;
     
     position: absolute;
     bottom:0px;
@@ -13,7 +15,7 @@
     /* border: 1px solid black; */
     font-size: 10px;
     width: 100%;
-    height: 50px;
+    height: 55px;
 }
 
 div span {
@@ -40,3 +42,9 @@ text-decoration: none;
     border-radius: 50%;
 }
 
+.footer div img {
+    border-radius: 50%;
+    /* border-bottom: #F6E561 2px solid; */
+    border-right: #F6E561 1px solid;
+    border-bottom: #F6E561 1px solid;
+}

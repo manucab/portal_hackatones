@@ -20,7 +20,7 @@
 
 }
 
-p {
+.about-container p {
     box-sizing: border-box;
     margin-top: 10px;
     width: 300px;
