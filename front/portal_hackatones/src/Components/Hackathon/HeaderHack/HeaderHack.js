@@ -1,8 +1,11 @@
 import './headerHack.css';
 import {DateTime} from "luxon";
+import { useHistory } from 'react-router-dom';
 
 
 function HeaderHack({h}){
+
+    const history = useHistory();
 
 
     const {cover_picture,hackathon_name, organizer, start_date, end_date
@@ -56,7 +59,7 @@ function HeaderHack({h}){
                     <img className="lgHack" src={urlLgLocation} alt="logo-location"/>
                     El modo del evento será: {hackathon_place}
                     </p>
-                <button>Inicia & Registrate</button>
+                <button onClick={() =>history.push('/register')}>Inicia & Registrate</button>
             </div>
 
         </div>

@@ -45,8 +45,8 @@ const getHackathonInfoDB = async (id, hackathon_place, city, start_date, end_dat
     LEFT join link l on l.id = hl.id_link
 
     where 
-    
-    (hackathon.id = ? or ? is null)
+    (hackathon.hackathon_status != 'cancelado') 
+    and (hackathon.id = ? or ? is null)
     and (hackathon.hackathon_place = ? or ? is null )
     and (hackathon.city = ? or ? is null)
     and (hackathon.start_date >= ? or ?  is null)

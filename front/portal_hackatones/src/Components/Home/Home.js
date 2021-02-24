@@ -27,7 +27,7 @@ function Home() {
                     onClick={
                         e => history.push(e.target.value)
                 }>Regístrate</button>
-                <button id="btnSearch" value="/hackathon//search/filters"
+                <button id="btnSearch" value="/hackathon/search"
                     onClick={
                         e => history.push(e.target.value)
                 }>Buscar hackathones</button>

@@ -8,6 +8,7 @@ import './HackathonSearch.css';
 import {useEffect, useState} from 'react';
 import useFetch from '../../Hooks/useFetch';
 import {ShowHackathon} from '../CarouselHackathons3/CarouselHackathons';
+import { Link, useHistory } from 'react-router-dom';
 
 
 const queryString = require('query-string');
@@ -15,6 +16,7 @@ const queryString = require('query-string');
 
 function HackathonSearch() {
 
+    const history = useHistory();
 
     const today = DateTime.local().setLocale('es').toISODate();
 
@@ -151,8 +153,8 @@ function HackathonSearch() {
             <div className="hackathonSearchHach">
 
                 {
-                ! listhackathons.Info ? listhackathons.map(hackathon => <div className="showHack">
-                    <ShowHackathon h={hackathon}/>
+                ! listhackathons.Info ? listhackathons.map(hackathon => <div className="showHack" onClick={ () =>history.push(`/hackathon/${hackathon.id}`)}>
+                    <ShowHackathon  h={hackathon}/>
                 </div>) : <div>No se han encontrado resultados ...</div>
             } </div>
         </div>
