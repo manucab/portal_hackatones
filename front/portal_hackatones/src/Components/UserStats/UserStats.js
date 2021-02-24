@@ -40,6 +40,7 @@ function UserStats() {
     return(
 
         <div className="profile" >
+             <h1>Consulta tus estadísticas</h1>
             {showStats(data)}
         </div>
 

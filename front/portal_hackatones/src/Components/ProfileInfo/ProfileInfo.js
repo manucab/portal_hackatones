@@ -61,6 +61,7 @@ function ProfileInfo () {
                 <meta charSet="utf-8"/>
                 <title>Bienvenido a tu perfil</title>
             </Helmet>
+            <h1>Bienvenido a tu perfil</h1>
 
             <Avatar/>
             {showInfo(user_name,surname,email,professional_profile,rol)}

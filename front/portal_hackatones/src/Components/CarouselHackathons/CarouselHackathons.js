@@ -10,7 +10,7 @@ import { useSelector } from "react-redux";
 function ShowHackathon({ hackathon: h, organizer }) {
   const [show, setShow] = useState(false);
   const [deleteHackathon, setDeleteHackathon] = useState(false);
-  const [cancelBooking,setCancelBooking] = useState(false)
+  const [cancelBooking, setCancelBooking] = useState(false);
   const login = useSelector((s) => s.login);
   const history = useHistory();
 
@@ -76,12 +76,14 @@ function ShowHackathon({ hackathon: h, organizer }) {
   return (
     <div className="hackathon">
       <h1>{h.hackathon_name}</h1>
-      <div>Formato: {h.hackathon_place}</div>
-      <div>Ciudad: {h.city}</div>
-      <div>Fecha Inicio: {h.start_date.split("T")[0]}</div>
-      <div>Fecha Final: {h.end_date.split("T")[0]}</div>
-      <div>Tecnologías: {h.techs}</div>
-      <div>Estado Hackathon: {h.hackathon_status}</div>
+      <div className="hackathon-info-section">
+        <div><strong> Formato: </strong>{h.hackathon_place}</div>
+        <div><strong>Ciudad: </strong>{h.city}</div>
+        <div><strong>Fecha Inicio:</strong> {h.start_date.split("T")[0]}</div>
+        <div><strong>Fecha Final:</strong> {h.end_date.split("T")[0]}</div>
+        <div><strong>Tecnologías: </strong>{h.techs}</div>
+        <div><strong>Estado Hackathon:</strong> {h.hackathon_status}</div>
+      </div>
       <div>
         {!hasEnded && (
           <div className="timeTo">
@@ -92,7 +94,10 @@ function ShowHackathon({ hackathon: h, organizer }) {
       <div>
         {!organizer && !hasEnded ? (
           <div>
-            <button className="delete-hack" onClick={() => setCancelBooking(true)}>
+            <button
+              className="delete-hack"
+              onClick={() => setCancelBooking(true)}
+            >
               Cancelar Inscripción
             </button>
             <Modal
@@ -101,7 +106,8 @@ function ShowHackathon({ hackathon: h, organizer }) {
               onClose={() => setCancelBooking(false)}
             >
               <div className="delete-hackathon-warning">
-                Estás seguro de que quieres cancelar tu inscripción en este hackathon?
+                Estás seguro de que quieres cancelar tu inscripción en este
+                hackathon?
               </div>
               <button
                 className="delete-hackathon-button"
@@ -162,7 +168,10 @@ function ShowHackathon({ hackathon: h, organizer }) {
             >
               Modificar
             </button>
-            <button className="delete-hack" onClick={() => setDeleteHackathon(true)}>
+            <button
+              className="delete-hack"
+              onClick={() => setDeleteHackathon(true)}
+            >
               X
             </button>
             <Modal

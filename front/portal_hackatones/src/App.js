@@ -65,11 +65,9 @@ function App() {
                 </Route>
 
                 <Route path='/user/:id'exact>
-                    <h1>Bienvenido a tu perfil</h1>
+               
                     <ProfileInfo/>
-                    <h1>Consulta tus estadísticas</h1>
                     <UserStats/>
-                    <h1>Participaciones en hackathones</h1>
                     <HackathonsJoined/>
                     <OrganizerStats/>
                     <HackathonsCreated/>

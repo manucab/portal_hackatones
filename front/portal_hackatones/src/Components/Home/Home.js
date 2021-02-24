@@ -16,29 +16,8 @@ function Home() {
   if (!hackathonsRes) return "Loading...";
   const hasHackathon = hackathonsRes && !hackathonsRes.Info ? true : false;
 
-<<<<<<< HEAD
-            {/* Header landing page */}
-            <div className="header">
-                <p>¿Quieres participar en un hackathon? Regístrate y empieza una aventura sin fin</p>
-                <button id="btnRegister" value="/register"
-                    onClick={
-                        e => history.push(e.target.value)
-                }>Regístrate</button>
-                <button id="btnSearch" value="/hackathon/search"
-                    onClick={
-                        e => history.push(e.target.value)
-                }>Buscar hackathones</button>
-                <button id="btnOrganizer" value="/createhackathon"
-                    onClick={
-                        e => history.push(e.target.value)
-                }>Organizar hackathones</button>
-            </div>
-            {/* Next hackathons */}
-            <div className="nextHackathons">
-=======
   // Show only 10 next hackathons
   const hackathons = hackathonsRes.slice(0, 10);
->>>>>>> 3febf15b643405beda31ce961c3bd93c1219d0c9
 
   return (
     <div className="home">
@@ -58,7 +37,7 @@ function Home() {
           </button>
           <button
             id="btnSearch"
-            value="/hackathon//search/filters"
+            value="/hackathon/search/"
             onClick={(e) => history.push(e.target.value)}
           >
             Buscar hackathones
