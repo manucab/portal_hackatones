@@ -1224,3 +1224,23 @@
 2021-02-24 -- 11:46:39:4639 -- http: GET -- /user/2 -- d2d6c455-f602-4f9d-beb1-1268970ed27f -- 304 -- - - 15.625 ms
 2021-02-24 -- 11:46:39:4639 -- http: GET -- /user/2 -- 7a654d58-42c4-498e-bb1a-f7fea0eee7a8 -- 304 -- - - 9.703 ms
 2021-02-24 -- 11:46:39:4639 -- http: GET -- /user/2 -- 7c6df6d3-8e58-4ed7-a4fd-4624cd425bbf -- 304 -- - - 11.677 ms
+2021-02-24 -- 11:51:31:5131 -- info: Init transaction query
+2021-02-24 -- 11:51:31:5131 -- info: Commit
+2021-02-24 -- 11:51:31:5131 -- http: GET -- /hackathon/search?start_date=2021-02-24 -- 441dfbbc-832e-4d21-81c6-b840b9eccf63 -- 304 -- - - 6.718 ms
+2021-02-24 -- 11:51:31:5131 -- http: GET -- /static/hackathons/f3019b70-685a-4c7d-8adb-f108fed0cf73/2ac0aaf7c0_hack10.jpeg -- e58c3b41-ba5b-48fe-aed6-fddb3d91cf3d -- 304 -- - - 0.443 ms
+2021-02-24 -- 11:51:33:5133 -- http: GET -- /static/hackathons/d45f59bb-d111-473e-9b66-e78c1ea75a10/46cbfd7549_codeLogo.svg -- e4c2d510-441f-4572-9926-46d8c29cb72e -- 304 -- - - 0.450 ms
+2021-02-24 -- 11:51:33:5133 -- http: GET -- /static/hackathons/45b19283-882b-40da-9cda-955d1570cde7/6f717b2f28_bgImageTeamWork.jpeg -- fb29279c-060f-46fa-8032-91b73e7abcbe -- 304 -- - - 0.541 ms
+2021-02-24 -- 11:51:33:5133 -- http: GET -- /static/hackathons/6f81a6e3-c2cf-4dee-877e-40f1e56fcacd/7c5623baa7_blogLogo.png -- bb1adcf3-843d-48d7-ac96-9da1a8eb9124 -- 304 -- - - 0.737 ms
+2021-02-24 -- 11:51:46:5146 -- info: Init transaction query
+2021-02-24 -- 11:51:46:5146 -- info: Commit
+2021-02-24 -- 11:51:46:5146 -- http: GET -- /hackathon/search?start_date=2021-02-24 -- 81726efa-94f9-4725-8ef7-0042e62eaa58 -- 304 -- - - 6.952 ms
+2021-02-24 -- 11:51:46:5146 -- info: Init transaction query
+2021-02-24 -- 11:51:46:5146 -- info: Init transaction query
+2021-02-24 -- 11:51:46:5146 -- info: Init transaction query
+2021-02-24 -- 11:51:46:5146 -- info: commit
+2021-02-24 -- 11:51:46:5146 -- http: GET -- /info/listTech -- c2ff0217-4ad6-47d3-b4f1-1dedb8079730 -- 304 -- - - 6.937 ms
+2021-02-24 -- 11:51:46:5146 -- info: commit
+2021-02-24 -- 11:51:46:5146 -- http: GET -- /info/listThematics -- 3f1ff7d9-8fc1-4c3c-88e6-a3c00eaa1472 -- 304 -- - - 7.474 ms
+2021-02-24 -- 11:51:46:5146 -- info: commit
+2021-02-24 -- 11:51:46:5146 -- http: GET -- /info/listCities -- a361f5a3-43c8-4cf7-bfbe-0f3eed9a247e -- 304 -- - - 10.367 ms
+2021-02-24 -- 11:51:46:5146 -- http: GET -- /static/hackathonPictures/logoTitle.gif -- e879edfa-46f3-45f4-a390-42878c88a0a7 -- 200 -- 2396730 - 0.901 ms
