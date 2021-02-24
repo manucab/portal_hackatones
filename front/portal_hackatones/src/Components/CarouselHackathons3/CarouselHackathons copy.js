@@ -10,53 +10,66 @@ export function ShowHackathon({h}) {
 
     let url = `http://localhost:3001/static` + h.cover_picture || 'default.png';
 
-    const organizer = h.organizer[0].organizer.name;
-    const avatar = `http://localhost:3001/static` + h.organizer[0].organizer.avatar;
-
-    console.log('organizer :>> ', h.organizer[0].organizer);
-
     return (
 
-        <div className="hackathonCard">
+        <div className="hackathonHP">
 
-<div className="photoCard">
-                <img className="" src={url} alt="photo-Hackathon"/>
-            </div>
-            <div className="thematicCard">
-            {
-                h.thematic.split(',').map(them =><span key={them} className="thematicItem">{them}</span>)
-            }
-                
-            </div>
-            <div className="titleCard">
-                <h4>{
+            <h1>{
                 h.hackathon_name
-            }</h4>
+            }</h1>
+            <div id="logoHackathon">
+                <img src={url}
+                    alt='logo'></img>
             </div>
-
-            <div className="descriptionCard">
-            {
-                h.hackathon_info
-            }
-            </div>
-
-            <div className="dateCard">
-                Empieza el
+            <div>
+                <span>Formato:
+                </span>
+                {
+                h.hackathon_place
+            }</div>
+            <div>
+                <span>Ciudad:
+                </span>
+                {
+                h.city
+            }</div>
+            <div>
+                <span>Fecha Inicio:
+                </span>
                 {
                 DateTime.fromISO(h.start_date).toISODate()
-            }
-            </div>
-
-            <div className="organizerCard">
-                <h5>Organizado por:</h5>
-                <div>
-                    <img src={avatar} alt="a"/>
-                    <span>{organizer}</span>
-                </div>
-
-            </div>
-
-
+            }</div>
+            <div>
+                <span>Fecha Final:
+                </span>
+                {
+                DateTime.fromISO(h.end_date).toISODate()
+            }</div>
+            <div>
+                <span>Estado:
+                </span>
+                {
+                h.hackathon_status
+            }</div>
+            <div>
+                <span>Informacion:
+                </span>
+                {
+                h.hackathon_info
+            }</div>
+            <div>
+                <span>Temática:
+                </span>
+                {
+                h.thematic.split(',').join(', ')
+            }</div>
+            <div>
+                <span>Tecnologías:
+                </span>
+                {
+                h.techs.map(t => t.tech).join(', ')
+            }</div>
+                <Links h={h}/>
         </div>
 
     )
