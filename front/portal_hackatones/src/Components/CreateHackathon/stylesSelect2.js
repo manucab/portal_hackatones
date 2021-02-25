@@ -15,7 +15,7 @@ export const styleSelectPlace = e =>{
 }
 
 export const colourStyles = {
-  control: styles => ({ ...styles, backgroundColor: '#dddd' }),
+  control: styles => ({ ...styles, backgroundColor: '#dddd'}),
   option: (styles, { data, isDisabled, isFocused, isSelected }) => {
     const color = chroma(data.color);
     return {
@@ -63,8 +63,3 @@ export const colourStyles = {
     },
   }),
 };
-
-
-// module.exports = {
-//   styleSelectPlace
-// }
