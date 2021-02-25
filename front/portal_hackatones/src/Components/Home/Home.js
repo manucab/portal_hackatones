@@ -70,9 +70,9 @@ function Home() {
         )}{" "}
       </div>
       {/* Last post of blog */}
-      <div className="lastPostBlog"></div>
+      {/* <div className="lastPostBlog"></div> */}
       {/* About */}
-      <div className="about"></div>
+      {/* <div className="about"></div> */}
     </div>
   );
 }
