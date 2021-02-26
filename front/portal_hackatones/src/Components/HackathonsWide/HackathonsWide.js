@@ -31,19 +31,21 @@ function HackathonsWide(props) {
   if (props.index === 2 && organizer) {
     return (
       <div className="hackathonsCreated">
-        {organizer ? <h1>Hackathones Creados</h1>: null}
+        {organizer ? <h1>Hackathones Creados</h1> : null}
 
-        {hackathonsJoined.length !== 0 ? (
-          hackathonsJoined.map((h) => (
-            <ShowHackathon hackathon={h} organizer={organizer} />
-          ))
-        ) : (
-          organizer ? <p>No has creado ningún hackathon</p>:null
-        )}
+        <div className="hackSelection">
+          {hackathonsJoined.length !== 0 ? (
+            hackathonsJoined.map((h) => (
+              <ShowHackathon hackathon={h} organizer={organizer} />
+            ))
+          ) : organizer ? (
+            <p>No has creado ningún hackathon</p>
+          ) : null}
+        </div>
       </div>
     );
   } else {
-    return null
+    return null;
   }
 }
 

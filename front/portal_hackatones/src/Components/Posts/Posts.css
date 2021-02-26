@@ -54,7 +54,7 @@
 }
 
 .post-cover {
-    height: 100px;
+    height: 10px;
     background-size: contain;
     overflow: hidden;
     
@@ -86,7 +86,6 @@
 
 .see-more {
 
-    position: absolute;
     bottom: 0;
     background-color: #F6E561;
     width: 100%;
