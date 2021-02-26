@@ -97,7 +97,19 @@
     justify-content: center;
     margin: 10px;
     text-align: center;
+}
 
+.avg-rate :first-child{
+    height: 40px;
+    width: 40px;
+    /* background-color: #A3A4A6; */
+    border: 2px solid #F6E561;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
 }
 
 .participants {
@@ -123,6 +135,8 @@
     flex-direction: column;
     justify-content: center;
     margin-bottom: 2px;
+    font-size: 14px;
+    font-weight: bold;
 }
 
 .modify-hack {

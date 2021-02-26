@@ -2,19 +2,20 @@
     font-size: 12px;
 }
 
-.header {
+.landing-img {
     
-    height: 300px;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding:10px;
     background-size: cover;
+    background-position: center;
 
 }
 
-.header p {
+.landing-img p {
 
     color: white;
     padding: 15px;

@@ -6,6 +6,8 @@ import HackathonsJoined from "../HackathonsJoined/HackathonsJoined";
 import OrganizerStats from "../OrganizerStats/OrganizerStats";
 import HackathonsCreated from "../HackathonsCreated/HackathonsCreated";
 import Logout from "../Logout/Logout";
+import HackathonsWide from "../HackathonsWide/HackathonsWide";
+
 
 function ProfilePage() {
   return (
@@ -22,8 +24,9 @@ function ProfilePage() {
         <ProfileInfo />
         <UserStats />
         <OrganizerStats/>
-        <HackathonsJoined/>
-        <HackathonsCreated/>
+        <HackathonsWide index={1}/>
+        <HackathonsWide index={2}/>
+        <Logout/>
       </MediaQuery>
     </div>
   );

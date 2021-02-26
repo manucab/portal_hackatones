@@ -1,0 +1,88 @@
+
+
+@media screen and (min-width: 768px) { 
+
+    .hackathonsCreated {
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        width: 90vw;
+
+    }
+    .hackathonsCreated h1 {
+        flex-basis: 100%;
+    }
+
+    .hackathonsCreated .hackathon {
+        display: flex;
+        flex-direction: column;
+        border: 2px solid #a3a4a6;
+        border-radius: 10px;
+        margin-bottom: 10px;
+        box-sizing: border-box;
+        overflow: hidden;
+        width: 225px;
+        background-color: #a3a4a67e;
+    }
+
+
+    .hackathonsJoined {
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        width: 90vw;
+
+    }
+    .hackathonsJoined h1 {
+        flex-basis: 100%;
+    }
+
+    .hackathonsJoined .hackathon {
+        display: flex;
+        flex-direction: column;
+        border: 2px solid #a3a4a6;
+        border-radius: 10px;
+        margin-bottom: 10px;
+        box-sizing: border-box;
+        overflow: hidden;
+        width: 225px;
+        background-color: #a3a4a67e;
+    }
+
+    .cover-picture {
+        height: 120px;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .timeToContainer {
+        display: flex;
+        justify-content: center;
+    }
+
+    .timeTo {
+        margin: auto;
+    }
+
+    
+
+    .hackathon-info-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cancel-hack {
+        margin-top: 5px;
+    }
+
+
+
+
+}

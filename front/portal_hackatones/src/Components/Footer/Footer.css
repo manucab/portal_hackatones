@@ -9,7 +9,7 @@
 
     border-top: 5px solid #F6E561;
     
-    position: fixed;
+    position: relative;
     bottom:0px;
     padding:10px;
     /* border: 1px solid black; */

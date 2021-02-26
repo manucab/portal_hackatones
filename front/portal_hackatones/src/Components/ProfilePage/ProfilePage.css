@@ -1,28 +1,76 @@
 @media screen and (min-width: 768px) {
     .profile-page-container{
-        height: auto;
         display: grid;
-        grid-template-columns: 50% 50%;
-        grid-template-rows: auto;
+        grid-template-columns: 33% 33% 33%;
+        grid-template-rows: auto ;
         grid-template-areas:
-            "profile userStats"
-            "profile organizerStats"
+            "profile userStats userStats"
+            "profile organizerStats organizerStats"
+            "hackathonsJoined hackathonsJoined hackathonsJoined"
+            "hackathonsCreated hackathonsCreated hackathonsCreated"
+            "logout logout logout"
         ;
         margin: 0;
         height: 100%;
-        padding: 10px;
         padding-top: 55px;
-        background: linear-gradient(60deg,#F6E561,white,white,white, #F6E561);
+        /* background: linear-gradient(60deg,#F6E561,white,white,white, #F6E561); */
     }
 
     .profile {
         grid-area: profile;
+        border-right: solid 3px #a3a4a6;
+        border-bottom: solid 3px #a3a4a6;
     }
 
     .user-stats {
         grid-area: userStats;
+        background-color: #a3a4a6c7;
+ 
     }
-    .organizerStats{
+    .organizer-stats-section{
         grid-area: organizerStats;
+        background-color: #a3a4a6c7;
+    
+    }
+
+    .hackathonsJoined {
+        grid-area: hackathonsJoined;
+        justify-self: center;
+        background-color: #f6e56183;
+        width: 100%;
+        
+    }
+
+    .hackathonsCreated {
+        grid-area: hackathonsCreated;
+        justify-self: center;
+        width: 100%;
+       
+    }
+
+    .logout {
+        grid-area: logout;
+        align-self: center;
+        justify-self: center;
+        width: 100%;
+    }
+
+    .stats-section {
+        justify-content: space-evenly;
+    }
+
+    .stats {
+        height: 150px;
+        width: 150px;
+    }
+    .stat{
+        height: 100px;
+        width: 100px;
+        background-color: none;
+        font-size: 35px;
+    }
+
+    .stats :last-child {
+        font-size: 19px;
     }
 }

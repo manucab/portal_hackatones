@@ -62,7 +62,7 @@ function ProfileInfo () {
             <Avatar/>
             {showInfo(user_name,surname,email,professional_profile,rol)}
             <button className="edit-profile" onClick={()=>setShow(true) }>⚙ Editar</button>
-            <Modal title="Actualiza tu perfil" onClose={() => setShow(false)}  show={show}>
+            <Modal className="edit-profile-modal" title="Actualiza tu perfil" onClose={() => setShow(false)}  show={show}>
                 <EditProfile handleClose={handleClose}
                    
                     user_name = {user_name}

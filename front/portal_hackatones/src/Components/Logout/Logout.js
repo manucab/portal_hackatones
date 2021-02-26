@@ -1,13 +1,16 @@
 import { useDispatch, useSelector } from 'react-redux';
-import { Redirect } from 'react-router-dom';
+import { useHistory } from 'react-router-dom';
 import './Logout.css';
+
+
 
 function Logout () {
     const dispatch = useDispatch()
+    const history = useHistory()
 
     const handleLogout = () => {
         dispatch({ type: 'logout' })
-        return <Redirect to='/'/>
+        return history.push('/')
     }
 
     return (

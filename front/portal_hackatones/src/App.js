@@ -86,7 +86,6 @@ function App() {
         </Route>
 
         <Route path="/blog" exact>
-          <h1>Bienvenido a nuestro blog</h1>
           <Posts />
         </Route>
 

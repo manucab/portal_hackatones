@@ -10,6 +10,7 @@ header {
     border-bottom: 5px solid #F6E561;
     position: fixed;
     top: 0;
+    z-index: 10;
    
 }
 

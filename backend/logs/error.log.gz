@@ -1056,3 +1056,11 @@
 2021-02-22 -- 22:28:37:2837 -- error:  Error in create new a hackathon: Lock wait timeout exceeded; try restarting transaction 
 2021-02-23 -- 16:20:24:2024 -- error: Duplicate entry 'https://www.tuesday.es' for key 'link.url'
 2021-02-23 -- 16:37:39:3739 -- error: Incorrect date value: '2021-03-01T23:00:00.000Z' for column 'start_date' at row 1
+2021-02-25 -- 20:41:26:4126 -- error: Lock wait timeout exceeded; try restarting transaction
+2021-02-26 -- 15:55:14:5514 -- error: Lock wait timeout exceeded; try restarting transaction
+2021-02-26 -- 15:57:18:5718 -- error: Lock wait timeout exceeded; try restarting transaction
+2021-02-26 -- 19:16:20:1620 -- error: Lock wait timeout exceeded; try restarting transaction
+2021-02-26 -- 19:16:20:1620 -- error:  Error in create new a hackathon: Lock wait timeout exceeded; try restarting transaction 
+2021-02-26 -- 19:17:19:1719 -- error: Lock wait timeout exceeded; try restarting transaction
+2021-02-26 -- 19:17:19:1719 -- error:  Error in create new a hackathon: Lock wait timeout exceeded; try restarting transaction 
+2021-02-26 -- 19:26:58:2658 -- error: Lock wait timeout exceeded; try restarting transaction

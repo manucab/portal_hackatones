@@ -14,7 +14,7 @@ function HackathonsCreated () {
     if(!data) return 'Loading...'
     const hackathonsCreated = data[2]
     if(!login) return <Redirect to='/'/>
-    if(login.user.rol !== 'organizer') return <div></div>
+    if(login.user.rol !== 'organizer') return null
    
     return(
 
