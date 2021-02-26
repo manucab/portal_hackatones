@@ -1,0 +1,308 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+.createHackathonPage{
+    background-image: url(../../Media/Images/Others/book1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: linear-gradient(#2C3E50);
+    padding: 50px;
+font-family: 'Roboto', sans-serif;
+
+}
+
+.createHackathon {
+    font-size: 12px;
+    text-align: left;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px;
+    margin: 50px auto 50px auto;
+    max-width: 400px;
+    min-width: 300px;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: rgba(156, 156, 156, 0.7);  
+    backdrop-filter: blur(5px);
+}
+
+.formCreate{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.formCreate  input{
+    border-radius: 8px;
+}
+
+.formCreate label, .formCreate legend{
+font-weight: 500;
+}
+
+
+.fieldCommon {
+    border-color: #dfda94;
+}
+/* Shutter Out Horizontal */
+.hvr-shutter-out-horizontal {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    position: relative;
+    background: #e1e1e1;
+    -webkit-transition-property: color;
+    transition-property: color;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    border-radius: 10px;
+  }
+  .hvr-shutter-out-horizontal:before {
+    border-radius: 10px;
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #526269;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transform-origin: 50%;
+    transform-origin: 50%;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+  }
+  .hvr-shutter-out-horizontal:hover, .hvr-shutter-out-horizontal:focus, .hvr-shutter-out-horizontal:active {
+    color: white;
+  }
+  .hvr-shutter-out-horizontal:hover:before, .hvr-shutter-out-horizontal:focus:before, .hvr-shutter-out-horizontal:active:before {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+  }
+
+.formCreate > h2{
+    text-align: center;
+}
+
+.formCreate  .inputSelectSame{
+    background-color: whitesmoke;
+}
+
+
+#logoInputCreate {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: 1px solid #dfda94;
+    border-radius: 10px;
+    text-align: center;
+    height: 120px;
+    padding: 10px;
+    box-sizing: border-box;
+    margin: 10px 0px 10px 0px;
+    text-align: center;
+    background-color: #eee4;
+}
+
+.inputFileLogo{
+    flex-shrink: 1;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.inputFileLogo > label {
+    cursor: pointer;
+    background-color: rgba(140, 167, 197, 0.5);
+    border: 1px solid slategray;
+    border-radius: 10px;
+    padding: 5px;
+    margin: 10px;
+}
+
+.inputFileLogo > label >input {
+    font-size: 12px;
+vertical-align: middle;
+margin: 10px;
+display:none;
+}
+
+
+.inputFileLogo > p:nth-child(2) {
+    text-align: left;
+    margin: 5px;
+}
+
+
+
+.logoPreview {
+    width: 120px;
+    height: 100px;
+    border: 1px solid #636363;
+    border-radius: 5px;
+}
+
+.logoPreview > img {
+    width: 100%;
+    height: 100%;
+
+    border-radius: 5px;
+    text-align: center;
+}
+
+.fieldName{
+    display: flex;
+    flex-direction: column;
+}
+
+.fieldName > label {
+    display: inline-block;
+    width: 100px;
+    margin: 2px;
+  }
+
+.fieldDate {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto auto;
+    grid-template-areas:
+        "lblStartDate lblEndDate"
+        "inputStartDate inputEndDate";
+        gap: 5px;
+}
+
+#inputStartDate{
+    grid-area: inputStartDate;
+    margin: 0px 5px 0px 0px;
+    text-align: center;
+}
+#inputEndDate{
+    grid-area: inputEndDate;
+    margin: 0px 0px 0px 5px;
+    text-align: center;
+}
+
+#lblStartDate{
+    grid-area: lblStartDate;
+}
+
+#lblEndDate{
+    grid-area: lblEndDate;
+    margin: 0px 0px 0px 5px;
+
+}
+
+
+
+#fieldLinks{
+display: flex;
+}
+
+
+
+ #btnLinkUrl {
+    cursor: pointer;
+    width: 60px;
+    background-color: rgba(140, 167, 197, 0.5);
+    border: 1px solid slategray;
+    border-radius: 11px;
+    margin: 10px 0px 0px;
+    padding:4px;
+    align-self: center;
+    text-align: center;
+font-weight: bold;
+  }
+
+  .divLinkUrl {
+ display: flex;
+ flex-direction: column;
+  }
+
+.divLinkUrl > label {
+    display: inline-block;
+    width: 80px;
+    margin: 2px;
+}
+
+.links > span {
+    color: #636363;
+    background-color: #d48181;
+}
+
+
+#listLinks ul{
+    border: 1px solid #bbbbbb;
+    border-radius: 5px;
+    padding: 5px;
+    background-color: #f0ebe5;
+}
+
+.noLinks{
+margin: 2px;
+}
+
+#listLinks > span{
+    color: darkblue;
+    margin: 0px 2px 0px 2px;
+}
+
+
+#listLinks li{
+display: flex;
+justify-content: space-between;
+padding: 2px;
+align-items: center;
+margin: 2px 0px 2px 0px;
+}
+
+ #btnDeleteLink{
+    cursor: pointer;
+}
+
+#btnDeleteLink > p{
+margin: 0px;
+}
+
+
+#fieldDescription {
+    display: flex;
+    flex-direction: column;
+}
+
+#fieldDescription > * {
+    margin: 2px;
+}
+
+
+ textarea[name=hackathon_info] {
+    resize: none;
+    height: 200px;
+    min-height: 100px;
+
+}
+
+ #btnSubmitCreate{
+    margin: 20px 10px 0px 0px;
+    font-size: 14px;
+    font-weight: bold;
+    width: 100px;
+    align-self: center;
+    background-color: rgba(184, 201, 221, 0.5);
+    border: 1px solid slategray;
+    border-radius: 11px;
+    padding: 5px;
+}
+

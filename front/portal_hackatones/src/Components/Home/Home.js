@@ -90,8 +90,17 @@ function Home() {
               Organizar hackathones
             </button>
           </div>
+<<<<<<< HEAD
         </div>
       </MediaQuery>
+=======
+        )}{" "}
+      </div>
+      {/* Last post of blog */}
+      {/* <div className="lastPostBlog"></div> */}
+      {/* About */}
+      {/* <div className="about"></div> */}
+>>>>>>> d1a64120aefb131306d2865379ac013643812c31
     </div>
   );
 }

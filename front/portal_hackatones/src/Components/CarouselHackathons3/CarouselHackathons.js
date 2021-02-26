@@ -5,6 +5,9 @@ import useFetch from "../../Hooks/useFetch";
 import {DateTime} from "luxon";
 import Links from "../Links/Links";
 
+import arrowL from '../../Media/Images/General/arrowL.svg';
+import arrowR from '../../Media/Images/General/arrowR.svg';
+
 
 export function ShowHackathon({h}) {
 
@@ -41,10 +44,12 @@ export function ShowHackathon({h}) {
             </div>
 
             <div className="dateCard">
-                Empieza el
+                
                 {
+                    'Empieza el ' + 
                 DateTime.fromISO(h.start_date).toISODate()
             }
+            
             </div>
 
             <div className="organizerCard">
@@ -87,16 +92,16 @@ function CarouselHackathons({hackathons}) {
 
     return (
         <div className="carousel">
-            <img id="previous"
-                src={arrow}
+            <img id="arrowCard"
+                src={arrowL}
                 className={
                     isFirst ? 'off' : 'on'
                 }
                 onClick={handlePrevious}/> {
             <ShowHackathon h={hackathons[index]} />
         }
-            <img id="next"
-                src={arrow}
+            <img id="arrowCard"
+                src={arrowR}
                 className={
                     isLast ? 'off' : 'on'
                 }

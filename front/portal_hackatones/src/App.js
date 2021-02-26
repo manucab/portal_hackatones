@@ -10,7 +10,7 @@ import Logout from "./Components/Logout/Logout";
 import PanelSingInUp from "./Components/PanelSingInUp/PanelSingInUp";
 import ProfileInfo from "./Components/ProfileInfo/ProfileInfo.js";
 import UserStats from "./Components/UserStats/UserStats";
-import CreateHackathon from "./Components/CreateHackathon/CreateHackathon";
+import CreateHackathon from "./Components/CreateHackathon/CreateHackathon2";
 import EditProfile from "./Components/EditProfile/EditProfile";
 import StarRating from "./Components/StarRating/StarRating";
 import ForgotPassword from "./Components/ForgotPassword/ForgotPassword";

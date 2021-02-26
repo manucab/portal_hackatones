@@ -4,7 +4,15 @@
     justify-content: center;
     align-items: center;
     font-size: 12px;
-    margin: 20px
+    margin: 20px auto 10px auto;
+    /* border: 1px solid black; */
+    border-radius: 10px;
+    padding: 20px;
+    width: 500px;
+    /* background: #FFEFBA; 
+background: -webkit-linear-gradient(to top, #FFFFFF, #FFEFBA); 
+background: linear-gradient(to top, #FFFFFF, #FFEFBA);  */
+
 }
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
@@ -16,8 +24,8 @@
     /* margin: 50px; */
 font-family: 'Roboto', sans-serif;
 font-size: 12px;
-  min-height: 320px;
-  width: 220px;
+  min-height: 300px;
+  width: 200px;
   display: flex;
   flex-direction: column;
   border: 1px solid black;
@@ -46,6 +54,7 @@ font-size: 12px;
 .titleCard{
   font-size: 14px;
   flex-grow: 1;
+  margin: 5px 0px 0px 0px;
   padding: 5px;
 }
 
@@ -71,7 +80,7 @@ font-size: 12px;
 font-size: 10px;
 border-radius: 5px;
   margin: 10px 5px 5px 5px;
-
+    padding: 2px;
 
 }
 
@@ -92,6 +101,7 @@ border-radius: 5px;
   flex-direction: column;
   justify-content: flex-start;
   align-items: baseline;
+  align-self: flex-end;
 }
 
 .organizerCard > h5{
@@ -153,6 +163,11 @@ justify-content: space-around;
   animation-direction: normal;
 }
 
+.hackathonCard:hover .carousel{
+    transform: scale(1.05);
+}
+
+
 .hackathonCard:hover .titleCard > h4{
   flex-grow: 0;
   flex-shrink: 1;
@@ -162,29 +177,23 @@ justify-content: space-around;
 
 
 
-#previous {
-
-    max-width: 50px;
-    max-height: 50px;
-    transform: rotate(90deg);
+#arrowCard {
+    max-width: 35px;
+    max-height: 35px;
+    margin: 15px;
 }
 
-#next {
-    max-width: 50px;
-    max-height: 50px;
-    transform: rotate(-90deg);
+#arrowCard:hover{
+    transform: scale(1.20);
+
 }
 
 .off {
-    
     opacity: 0.5 ;
-
 }
 
 .on {
-    
     cursor: pointer;
-
 }
 
 
@@ -195,35 +204,7 @@ justify-content: space-around;
 }
 
 
-.listLinks > li{
-    list-style: none;
-}
 
-
-
-.socialMedia {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    flex-wrap: wrap;
-    
-}
-
-.socialMedia > li {
-    list-style: none;
-}
-
-
-
-#sm.pequeña{
-    width: 20px; height: 20px;
-  }
-#sm.mediana{
-    width: 100px; height: 100px;
-  }
-#sm.grande{
-    width: 200px; height: 200px;
-  }
 
   @keyframes descriptionEffect {
   0% {

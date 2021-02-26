@@ -1,5 +1,9 @@
 .home{
     font-size: 12px;
+    /* background: #6D6027; 
+background: -webkit-linear-gradient(to top, #D3CBB8, #6D6027);  
+background: linear-gradient(to top, #D3CBB8, #6D6027);  */
+height: 100%;
 }
 
 .landing-img {
