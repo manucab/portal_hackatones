@@ -1,13 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900 &display=swap');:root {
+    --colorY: #ffb580;
+}
 
-.createHackathonPage{
-    background-image: url(../../Media/Images/Others/book1.jpg);
+
+.createHackathonPage {
+    background-image: url('../../Media/Images/Others/book1.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     background-image: linear-gradient(#2C3E50);
     padding: 50px;
-font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto', sans-serif;
 
 }
 
@@ -18,27 +21,28 @@ font-family: 'Roboto', sans-serif;
     justify-content: center;
     flex-direction: column;
     padding: 10px;
-    margin: 50px auto 50px auto;
+    margin: 50px auto;
     max-width: 400px;
     min-width: 300px;
     border: 1px solid black;
     border-radius: 10px;
-    background-color: rgba(156, 156, 156, 0.7);  
+    background-color: rgba(156, 156, 156, 0.7);
     backdrop-filter: blur(5px);
 }
 
-.formCreate{
+.formCreate {
     display: flex;
     flex-direction: column;
     padding: 10px;
 }
 
-.formCreate  input{
+.formCreate input {
     border-radius: 8px;
 }
 
-.formCreate label, .formCreate legend{
-font-weight: 500;
+.formCreate label,
+.formCreate legend {
+    font-weight: 500;
 }
 
 
@@ -62,8 +66,8 @@ font-weight: 500;
     -webkit-transition-duration: 0.3s;
     transition-duration: 0.3s;
     border-radius: 10px;
-  }
-  .hvr-shutter-out-horizontal:before {
+}
+.hvr-shutter-out-horizontal:before {
     border-radius: 10px;
     content: "";
     position: absolute;
@@ -83,20 +87,24 @@ font-weight: 500;
     transition-duration: 0.3s;
     -webkit-transition-timing-function: ease-out;
     transition-timing-function: ease-out;
-  }
-  .hvr-shutter-out-horizontal:hover, .hvr-shutter-out-horizontal:focus, .hvr-shutter-out-horizontal:active {
+}
+.hvr-shutter-out-horizontal:hover,
+.hvr-shutter-out-horizontal:focus,
+.hvr-shutter-out-horizontal:active {
     color: white;
-  }
-  .hvr-shutter-out-horizontal:hover:before, .hvr-shutter-out-horizontal:focus:before, .hvr-shutter-out-horizontal:active:before {
+}
+.hvr-shutter-out-horizontal:hover:before,
+.hvr-shutter-out-horizontal:focus:before,
+.hvr-shutter-out-horizontal:active:before {
     -webkit-transform: scaleX(1);
     transform: scaleX(1);
-  }
+}
 
-.formCreate > h2{
+.formCreate > h2 {
     text-align: center;
 }
 
-.formCreate  .inputSelectSame{
+.formCreate .inputSelectSame {
     background-color: whitesmoke;
 }
 
@@ -111,12 +119,12 @@ font-weight: 500;
     height: 120px;
     padding: 10px;
     box-sizing: border-box;
-    margin: 10px 0px 10px 0px;
+    margin: 10px 0;
     text-align: center;
     background-color: #eee4;
 }
 
-.inputFileLogo{
+.inputFileLogo {
     flex-shrink: 1;
     text-align: center;
     display: flex;
@@ -131,13 +139,14 @@ font-weight: 500;
     border-radius: 10px;
     padding: 5px;
     margin: 10px;
+    position: relative;
 }
 
-.inputFileLogo > label >input {
+.inputFileLogo > input {
     font-size: 12px;
-vertical-align: middle;
-margin: 10px;
-display:none;
+    vertical-align: middle;
+    margin: 10px;
+    display: none;
 }
 
 
@@ -145,7 +154,6 @@ display:none;
     text-align: left;
     margin: 5px;
 }
-
 
 
 .logoPreview {
@@ -163,73 +171,113 @@ display:none;
     text-align: center;
 }
 
-.fieldName{
+.fieldName {
     display: flex;
     flex-direction: column;
+    position: relative;
 }
+
+#toolTipName{
+    position: absolute;
+top: -3px;
+}
+
+#toolTipCity{
+    position: absolute;
+top:  43px;
+}
+
+
 
 .fieldName > label {
     display: inline-block;
     width: 100px;
     margin: 2px;
-  }
+}
 
 .fieldDate {
     display: grid;
     grid-template-columns: 50% 50%;
     grid-template-rows: auto auto;
-    grid-template-areas:
-        "lblStartDate lblEndDate"
-        "inputStartDate inputEndDate";
-        gap: 5px;
+    grid-template-areas: "lblStartDate lblEndDate" "inputStartDate inputEndDate";
+    gap: 5px;
+    position: relative;
 }
 
-#inputStartDate{
+
+#toolTipStartDate{
+    position: absolute;
+    top:  -3px;
+    left: 75px;
+}
+
+#toolTipEndDate{
+    position: absolute;
+    top:  -3px;
+    right: 5px;
+}
+
+.fieldTech{
+    position: relative;
+}
+
+#toolTipTechs{
+    position: absolute;
+    top:  -24px;
+    left: 100px;
+}
+
+
+#inputStartDate {
     grid-area: inputStartDate;
-    margin: 0px 5px 0px 0px;
+    margin: 0 5px 0 0;
     text-align: center;
 }
-#inputEndDate{
+#inputEndDate {
     grid-area: inputEndDate;
-    margin: 0px 0px 0px 5px;
+    margin: 0 0 0 5px;
     text-align: center;
 }
 
-#lblStartDate{
+#lblStartDate {
     grid-area: lblStartDate;
 }
 
-#lblEndDate{
+#lblEndDate {
     grid-area: lblEndDate;
-    margin: 0px 0px 0px 5px;
+    margin: 0 0 0 5px;
 
 }
 
 
-
-#fieldLinks{
-display: flex;
+#fieldLinks {
+    display: flex;
+    position: relative;
 }
 
+#toolTipLinks{
+    position: absolute;
+    bottom:  55px;
+    left: 20px;
+}
 
-
- #btnLinkUrl {
+#btnLinkUrl {
     cursor: pointer;
     width: 60px;
     background-color: rgba(140, 167, 197, 0.5);
     border: 1px solid slategray;
     border-radius: 11px;
-    margin: 10px 0px 0px;
-    padding:4px;
+    margin: 10px 0 0;
+    padding: 4px;
     align-self: center;
     text-align: center;
-font-weight: bold;
-  }
+    font-weight: bold;
+}
 
-  .divLinkUrl {
- display: flex;
- flex-direction: column;
-  }
+.divLinkUrl {
+    display: flex;
+    flex-direction: column;
+}
 
 .divLinkUrl > label {
     display: inline-block;
@@ -243,43 +291,55 @@ font-weight: bold;
 }
 
 
-#listLinks ul{
+#listLinks ul {
     border: 1px solid #bbbbbb;
     border-radius: 5px;
     padding: 5px;
     background-color: #f0ebe5;
 }
 
-.noLinks{
-margin: 2px;
+.noLinks {
+    margin: 2px;
 }
 
-#listLinks > span{
+#listLinks > span {
     color: darkblue;
-    margin: 0px 2px 0px 2px;
+    margin: 0 2px;
 }
 
 
-#listLinks li{
-display: flex;
-justify-content: space-between;
-padding: 2px;
-align-items: center;
-margin: 2px 0px 2px 0px;
+#listLinks li {
+    display: flex;
+    justify-content: space-between;
+    padding: 2px;
+    align-items: center;
+    margin: 2px 0;
 }
 
- #btnDeleteLink{
+#btnDeleteLink {
     cursor: pointer;
 }
 
-#btnDeleteLink > p{
-margin: 0px;
+#btnDeleteLink > p {
+    margin: 0;
 }
 
 
 #fieldDescription {
     display: flex;
     flex-direction: column;
+    position: relative;
+}
+
+#toolTipThematic{
+    position: absolute;
+     top:  -5px;
+    /* left: 20px; */
+}
+
+#toolTipHackathonInfo{
+    position: absolute;
+    top:  60px;
 }
 
 #fieldDescription > * {
@@ -287,15 +347,15 @@ margin: 0px;
 }
 
 
- textarea[name=hackathon_info] {
+textarea[name=hackathon_info] {
     resize: none;
     height: 200px;
     min-height: 100px;
 
 }
 
- #btnSubmitCreate{
-    margin: 20px 10px 0px 0px;
+#btnSubmitCreate {
+    margin: 20px 10px 0 0;
     font-size: 14px;
     font-weight: bold;
     width: 100px;
@@ -304,5 +364,44 @@ margin: 0px;
     border: 1px solid slategray;
     border-radius: 11px;
     padding: 5px;
+    text-align: center;
+    cursor: pointer;
 }
 
+.tip {
+    border-radius: 5px;
+    background-color: var(--colorY);
+    padding: 4px;
+    width: max-content;
+    height: 15px;
+    font-size: 11px;
+    z-index: 1;
+    align-self: center;
+    position: relative;    
+
+}
+
+.down.tip:before {
+    content: "";
+    width: 0;
+    height: 0;
+    position: absolute;
+    margin: 19px 0 0 45px;
+    /* bottom: 0px; */
+    border-top: 10px solid var(--colorY);
+    border-right: 10px solid transparent;
+    border-left: 10px solid transparent;
+}
+
+.up.tip:before {
+    content: "";
+    width: 0;
+    height: 0;
+    top: -10px;
+    position: absolute;
+    margin: 0px 0 0 45px;
+    /* bottom: 0px; */
+    border-bottom: 10px solid var(--colorY);
+    border-right: 10px solid transparent;
+    border-left: 10px solid transparent;
+}

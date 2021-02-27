@@ -62,12 +62,12 @@ const createHackathon = async(req, res) => {
         let id_hackathon = res_insertNewHackathon.insertId;
 
         // 4. Insert new tech and table hackathon_tech
-        if (tech) await auxInsertTech(tech, id_hackathon);
+        if (tech.lenth > 0) await auxInsertTech(tech, id_hackathon);
 
         logger.debug('Insert into tables tech and hackathon_tech OK!!');
 
         // 5. Insert new links and table hackathon_link
-        if (links) await auxInsertLink(links, id_hackathon);
+        if (links.lenth > 0) await auxInsertLink(links, id_hackathon);
 
         logger.debug('Insert into tables lin and hackathon_link OK!!');
 

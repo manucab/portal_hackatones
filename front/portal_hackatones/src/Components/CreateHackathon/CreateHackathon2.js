@@ -2,7 +2,7 @@ import {createRef, useEffect, useState} from 'react';
 import useFetch from '../../Hooks/useFetch';
 import './CreateHackathon2.css';
 import Select, {components} from 'react-select';
-import {Redirect, useHistory} from 'react-router-dom';
+import {Link, Redirect, useHistory} from 'react-router-dom';
 import CreatableSelect from "react-select/creatable";
 import {styleSelectPlace} from './stylesSelect2';
 import {DateTime} from "luxon";
@@ -22,7 +22,7 @@ function CreateHackathon() {
     const [hackathon_place, sethackathon_place] = useState('online');
     const [hackathon_name, setHackathon_name] = useState('');
     const [city, setCity] = useState('');
-    const [start_date, setStart_date] = useState('today');
+    const [start_date, setStart_date] = useState(today);
     const [end_date, setEnd_date] = useState('');
     const [hackathon_status, sethackathon_status] = useState('pendiente');
     const [hackathon_info, sethackathon_info] = useState('');
@@ -33,7 +33,9 @@ function CreateHackathon() {
     const [hasWeb, setHasWeb] = useState(false);
     const [techs, setTechs] = useState([]);
     const [input, setInput] = useState(logoDefaultInput);
+    const [inputBrige, setInputBridge] = useState('');
     const [isValidUrl, setIsValidUrl] = useState(false);
+    const [isSubmit, setIsSubmit] = useState(false);
 
     let tech = [];
 
@@ -55,13 +57,11 @@ function CreateHackathon() {
         setThematic([... valuesThematics]);
     }
 
-    const handleSubmit = async e => {
-        e.preventDefault();
+    const postData =  async(e) => {
 
         const fd = new FormData();
-        const logo = e.target.cover_picture.files[0];
 
-        fd.append('cover_picture', logo);
+        fd.append('cover_picture', inputBrige);
         fd.append('hackathon_place', hackathon_place);
         fd.append('hackathon_name', hackathon_name);
         fd.append('city', city);
@@ -109,6 +109,34 @@ function CreateHackathon() {
         }
     }
 
+
+    const handleSubmit = async (e) => {
+        // e.preventDefault();
+
+        console.log('e :>> ', e);
+
+        console.log('inputBrige :>> ', inputBrige);
+
+        if(hackathon_name && city && start_date && end_date && hackathon_info && thematic && links && techs && inputBrige ){
+            console.log('Estan todos los campos rellenos');
+          await  postData(e);
+        }else{
+            console.log('No estan correctos');
+        }
+        
+        setIsSubmit(true);
+
+
+        if(!inputBrige){
+  
+      
+            
+            
+        }
+
+
+    }
+
     const handleWebName = e => {
       setWebName(e.target.value);
     }
@@ -125,7 +153,6 @@ function CreateHackathon() {
         setLinks(links.filter(link => link.link !== e))
 
     }
-
 
     const handleEnterPrevent = (e) => {
         if (e.key === "Enter") {
@@ -164,14 +191,10 @@ function CreateHackathon() {
 
     if (! listTechs) 
         listTechs = [];
-    
-
 
     if (! listThematics) 
         listThematics = [];
     
-
-
     let optionsTech = listTechs.map(tech => ({"value": tech.tech_name, "label": tech.tech_name}));
     let optionsThematics = listThematics.map(thematic => ({"value": thematic.thematic, "label": thematic.thematic}));
     let optionStatus = [
@@ -199,7 +222,6 @@ function CreateHackathon() {
         }
     ]
 
-
     const handleFiles = e => {
 
         let reader = new FileReader();
@@ -207,6 +229,7 @@ function CreateHackathon() {
 
         reader.onload = function () {
             setInput(reader.result)
+            setInputBridge(e.target.files[0])
         }
     }
 
@@ -227,7 +250,6 @@ function CreateHackathon() {
             } >
         </Modal>}
 
-
         {
         login && login.user.rol !== 'organizer' && < Modal title = "No autorizado"
         show = {
@@ -241,32 +263,32 @@ function CreateHackathon() {
         } >
     </Modal>}
 
-
     <Helmet>
         <meta charSet="utf-8"/>
         <title>Organiza un hackathon</title>
     </Helmet>
 
-    <form className="formCreate" action="#"
-        onSubmit={handleSubmit}
-        method='POST'>
+    <div className="formCreate" 
+        // onSubmit={()=>handleSubmit()}
+        >
 
         <h2>Rellena el formulario</h2>
 
         {/* Image of header article */}
-        <div id="logoInputCreate">
+        <div id="logoInputCreate" >
             <div className="logoPreview">
                 <img src={input}
                     alt='logo'/>
             </div>
             <div className="inputFileLogo">
                 <span>Seleciona imagen de portada</span>
-                <label for="imageUpload" className="hvr-shutter-out-horizontal">Examinar...
-                    <input type="file" name="cover_picture" id="imageUpload"
+                <label required htmlFor="imageUpload" className="hvr-shutter-out-horizontal">Examinar...</label>
+                <input type="file" name="cover_picture" id="imageUpload"
                         onChange={handleFiles}
                         accept="image/*"
                         required/>
-                </label>
+   {!inputBrige && isSubmit && <span class="tip up">Este campo necesario</span>}
+
             </div>
 
         </div>
@@ -274,7 +296,10 @@ function CreateHackathon() {
         <fieldset className="fieldName fieldCommon">
             <legend>Nombre y ciudad</legend>
 
-            <label for="hackathon_name">Nombre</label>
+            {!hackathon_name && isSubmit && <span id="toolTipName" class="tip down">Este campo necesario</span>}
+
+            <label htmlFor="hackathon_name">Nombre</label>
+           
             <input type='text' name="hackathon_name" id="hackathon_name" pattern="[a-zA-Z ]{2,30}" className="inputSelectSame"
 
                 onKeyPress={handleEnterPrevent}
@@ -284,7 +309,10 @@ function CreateHackathon() {
                 }
                 required/>
 
-            <label for="city">Ciudad</label>
+{!city && isSubmit && <span id="toolTipCity" class="tip down">Este campo necesario</span>}
+
+            <label htmlFor="city">Ciudad</label>
+
             <input type='text' name="city" pattern="[a-zA-Z ]{2,30}"
                   id="city"
                   onChange={
@@ -295,7 +323,6 @@ function CreateHackathon() {
                     required/>
 
         </fieldset>
-
 
         <fieldset className="fieldModality fieldCommon">
             <legend>Modalidad</legend>
@@ -310,10 +337,13 @@ function CreateHackathon() {
                     required/>
         </fieldset>
 
-
         <fieldset className="fieldDate fieldCommon">
             <legend>Fechas de realización</legend>
-            <label id="lblStartDate" for="inputStartDate">Fecha inicio</label>
+          
+{!start_date && isSubmit && <span id="toolTipStartDate" class="tip down">Este campo necesario</span>}
+
+
+            <label id="lblStartDate" htmlFor="inputStartDate">Fecha inicio</label>
             <input type='date'
             id="inputStartDate"
                     min={today}
@@ -325,7 +355,9 @@ function CreateHackathon() {
                         e => setStart_date(e.target.value)
                     }
                     required/>
-            <label id="lblEndDate" for="inputEndDate">Fecha fin</label>
+{!end_date && isSubmit && <span id="toolTipEndDate" class="tip down">Este campo necesario</span>}
+
+            <label id="lblEndDate" htmlFor="inputEndDate">Fecha fin</label>
             <input type='date'
             id="inputEndDate"
 
@@ -356,20 +388,20 @@ function CreateHackathon() {
         <div className="techs">
             <fieldset className="fieldTech fieldCommon">
                 <legend>Tecnologías</legend>
+            {techs.length<1 && isSubmit && <span id="toolTipTechs" class="tip down">Este campo necesario</span>}
+                
                 <CreatableSelect className="selectTechs" isMulti
                     options={optionsTech}
                     theme={styleSelectPlace}
-
                     onChange={handleTechSelected}/>
             </fieldset>
         </div>
-
 
         <div className="links">
             <fieldset id="fieldLinks" className="fieldLinks fieldCommon">
                 <legend>Enlaces</legend>
                 <div className="divLinkUrl">
-                    <label for="webNameInput" id="lblWebName">Nombre web</label>
+                    <label htmlFor="webNameInput" id="lblWebName">Nombre web</label>
                     <input value={webName}
                         id="webNameInput"
                             pattern="[a-zA-Z ]{2,30}"
@@ -379,7 +411,7 @@ function CreateHackathon() {
                             name="webName"
                             onChange={handleWebName}
                             placeholder="Hackathon Play"/>
-                    <label id="lblUrl" for="urlNameInput">Url</label>
+                    <label id="lblUrl" htmlFor="urlNameInput">Url</label>
                     <input type='url' pattern="[Hh][Tt][Tt][Pp][Ss]?:\/\/(?:(?:[a-zA-Z\u00a1-\uffff0-9]+-?)*[a-zA-Z\u00a1-\uffff0-9]+)(?:\.(?:[a-zA-Z\u00a1-\uffff0-9]+-?)*[a-zA-Z\u00a1-\uffff0-9]+)*(?:\.(?:[a-zA-Z\u00a1-\uffff]{2,}))(?::\d{2,5})?(?:\/[^\s]*)?"
                             id="urlNameInput"
                             value={webUrl}
@@ -396,7 +428,7 @@ function CreateHackathon() {
                 {
                 hasWeb && <span>Ya exite una url en tu lista...</span>
             }
-                <div id="listLinks">
+                <div id="listLinks" ref={links} >
                     <ul> {
                         !(links.length > 0) && <p className="noLinks">No hay enlaces agregados</p>
                     }
@@ -424,6 +456,8 @@ function CreateHackathon() {
                         </li>)
                     } </ul>
                 </div>
+            {links.length<1 && isSubmit && <span id="toolTipLinks" class="tip down">Este campo necesario</span>}
+
             </fieldset>
         </div>
 
@@ -431,6 +465,7 @@ function CreateHackathon() {
             <legend>Descripción</legend>
             <label>Temática:
             </label>
+            {thematic.length<1 && isSubmit && <span id="toolTipThematic" class="tip down">Este campo necesario</span>}
             <CreatableSelect className="selectThematic"
                 /* components={makeAnimated()}*/
                 theme={styleSelectPlace}
@@ -441,6 +476,7 @@ function CreateHackathon() {
                 required/>
             <label>Descripción:
             </label>
+            {!hackathon_info && isSubmit && <span id="toolTipHackathonInfo" class="tip down">Este campo necesario</span>}
             <textarea type='text' name="hackathon_info"
                 onChange={
                     e => sethackathon_info(e.target.value)
@@ -452,8 +488,8 @@ function CreateHackathon() {
 
         </fieldset>
 
-        <button className="hvr-shutter-out-horizontal" id="btnSubmitCreate" type="submit">Enviar</button>
-    </form>
+        <div className="hvr-shutter-out-horizontal" id="btnSubmitCreate" onClick={e=>handleSubmit(e)}>Enviar</div>
+    </div>
 
 </div></div>);
 
