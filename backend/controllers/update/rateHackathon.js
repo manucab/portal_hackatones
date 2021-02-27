@@ -15,7 +15,7 @@ const rateHackathon = async (req,res) => {
 
         result = await dbRateHackathon(idUser,idHackathon,rate)
     } catch (e) {
-        res.send(e.message)
+        res.status('304').send(e.message)
         return
     }
     res.send(result)
