@@ -27,7 +27,7 @@ const modifyHackathon = async (
     return "Hackathon not found";
   }
 
-  //The functions bellows getIds we need and also insert new elements if there are any
+  //The functions bellow getIds we need and also insert new elements if there are any
 
   const parsedLinks = JSON.parse(links)
   const parsedTechs = JSON.parse(techs)

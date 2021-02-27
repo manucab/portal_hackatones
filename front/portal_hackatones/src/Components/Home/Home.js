@@ -3,7 +3,9 @@ import CarouselHackathons from "../CarouselHackathons3/CarouselHackathons";
 import { DateTime } from "luxon";
 import useFetch from "../../Hooks/useFetch";
 import { useHistory } from "react-router-dom";
-import landing from "./images/Landing.jpeg";
+import landing from "./images/Landing.jpg";
+import landingPhone from "./images/landing-phone.jpeg"
+import MediaQuery from "react-responsive";
 
 function Home() {
   const history = useHistory();
@@ -22,57 +24,74 @@ function Home() {
   return (
     <div className="home">
       {/* Header landing page */}
-      <div className="header" style={{ backgroundImage: `url(${landing})` }}>
-        <p>
-          ¿Quieres participar en un hackathon? Regístrate y empieza una aventura
-          sin fin
-        </p>
-        <div className="landing-buttons">
-          <button
-            id="btnRegister"
-            value="/register"
-            onClick={(e) => history.push(e.target.value)}
-          >
-            Regístrate
-          </button>
-          <button
-            id="btnSearch"
-            value="/hackathon/search/"
-            onClick={(e) => history.push(e.target.value)}
-          >
-            Buscar hackathones
-          </button>
-          <button
-            id="btnOrganizer"
-            value="/createhackathon"
-            onClick={(e) => history.push(e.target.value)}
-          >
-            Organizar hackathones
-          </button>
-        </div>
-      </div>
-      {/* Next hackathons */}
-      <div className="nextHackathons">
-        {hasHackathon && <CarouselHackathons hackathons={hackathons} />}
-        {hasHackathon && (
-          <button
-            id="btnMoreHackathons"
-            onClick={() => history.push("/hackathon/search")}
-          >
-            Ver todos
-          </button>
-        )}
-        {/* TODO --> format style */}
-        {!hasHackathon && (
-          <div className="noInfo">
-            No hay hackathones para las próximas fechas ...
+      <MediaQuery maxWidth={767}>
+        <div
+          className="landing-img"
+          style={{ backgroundImage: `url(${landing})` }}
+        >
+          <p>
+            ¿Quieres participar en un hackathon? Regístrate y empieza una
+            aventura sin fin
+          </p>
+          <div className="landing-buttons">
+            <button
+              id="btnRegister"
+              value="/register"
+              onClick={(e) => history.push(e.target.value)}
+            >
+              Regístrate
+            </button>
+            <button
+              id="btnSearch"
+              value="/hackathon/search/"
+              onClick={(e) => history.push(e.target.value)}
+            >
+              Buscar hackathones
+            </button>
+            <button
+              id="btnOrganizer"
+              value="/createhackathon"
+              onClick={(e) => history.push(e.target.value)}
+            >
+              Organizar hackathones
+            </button>
           </div>
-        )}{" "}
-      </div>
-      {/* Last post of blog */}
-      {/* <div className="lastPostBlog"></div> */}
-      {/* About */}
-      {/* <div className="about"></div> */}
+        </div>
+      </MediaQuery>
+      <MediaQuery minWidth={768}>
+      <div
+          className="landing-img"
+          style={{ backgroundImage: `url(${landing})` }}
+        >
+          <p>
+            ¿Quieres participar en un hackathon? Regístrate y empieza una
+            aventura sin fin
+          </p>
+          <div className="landing-buttons">
+            <button
+              id="btnRegister"
+              value="/register"
+              onClick={(e) => history.push(e.target.value)}
+            >
+              Regístrate
+            </button>
+            <button
+              id="btnSearch"
+              value="/hackathon/search/"
+              onClick={(e) => history.push(e.target.value)}
+            >
+              Buscar hackathones
+            </button>
+            <button
+              id="btnOrganizer"
+              value="/createhackathon"
+              onClick={(e) => history.push(e.target.value)}
+            >
+              Organizar hackathones
+            </button>
+          </div>
+        </div>
+      </MediaQuery>
     </div>
   );
 }

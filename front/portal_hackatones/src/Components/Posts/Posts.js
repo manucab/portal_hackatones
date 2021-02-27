@@ -31,7 +31,7 @@ function Posts() {
         <meta charSet="utf-8" />
         <title>Blog</title>
       </Helmet>
-
+      <h1>Bienvenido a nuestro blog</h1>
       <form className="posts-form" onSubmit={handleSubmit}>
         <label>Busca un artículo</label>
         <input

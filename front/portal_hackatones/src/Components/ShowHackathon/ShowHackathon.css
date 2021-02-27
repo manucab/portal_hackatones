@@ -1,0 +1,102 @@
+
+
+@media screen and (min-width: 768px) { 
+
+
+    .hackathonsCreated {
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+
+    .hackSelection {
+
+        display: flex;
+        align-items: center;
+        /* flex-wrap: nowrap; */
+        width: 80vw;
+        overflow-x: auto;
+
+    }
+
+    .hackathonsCreated h1 {
+        flex-basis: 100%;
+    }
+
+    .hackSelection .hackathon {
+        
+        flex-shrink: 0;
+        display: flex;
+        flex-direction: column;
+        border: 2px solid #a3a4a6;
+        border-radius: 10px;
+        margin-bottom: 10px;
+        box-sizing: border-box;
+        overflow: hidden;
+        width: 225px;
+        background-color: #a3a4a67e;
+        margin: 5px 10% 5px 10%;
+        min-height: 375px;
+    }
+
+
+    .hackathonsJoined {
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        width: 90vw;
+
+    }
+    .hackathonsJoined h1 {
+        flex-basis: 100%;
+    }
+
+    .hackathonsJoined .hackathon {
+        display: flex;
+        flex-direction: column;
+        border: 2px solid #a3a4a6;
+        border-radius: 10px;
+        margin-bottom: 10px;
+        box-sizing: border-box;
+        overflow: hidden;
+        width: 225px;
+        background-color: #a3a4a67e;
+    }
+
+    .cover-picture {
+        height: 120px;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .timeToContainer {
+        display: flex;
+        justify-content: center;
+    }
+
+    .timeTo {
+        margin: auto;
+    }
+
+    
+
+    .hackathon-info-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cancel-hack {
+        margin-top: 5px;
+    }
+
+
+
+
+}
