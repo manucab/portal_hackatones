@@ -1,30 +1,10 @@
 import "./Home.css";
-import CarouselHackathons from "../CarouselHackathons3/CarouselHackathons";
-import { DateTime } from "luxon";
-import useFetch from "../../Hooks/useFetch";
 import { useHistory } from "react-router-dom";
 import landing from "./images/Landing.jpg";
-import landingPhone from "./images/landing-phone.jpeg"
 import MediaQuery from "react-responsive";
 
 function Home() {
   const history = useHistory();
-  const today = DateTime.local().setLocale("es").toISODate();
-
-  let hackathonsRes = useFetch(
-    "http://localhost:3001/hackathon/search" + `?start_date=${today}`
-  );
-
-  if (!hackathonsRes) return "Loading...";
-
-  const hasHackathon = hackathonsRes && !hackathonsRes.Info ? true : false;
-
-  let hackathons ='';
-if(hasHackathon){
-  // Show only 10 next hackathons
-   hackathons = hackathonsRes.slice(0, 10);
-}
-
 
   return (
     <div className="home">

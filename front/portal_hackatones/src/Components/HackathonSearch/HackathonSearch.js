@@ -3,12 +3,11 @@ import SelectModality from '../Selects/SelectModality';
 import SelectTechnologies from '../Selects/SelectTechnologies';
 import SelectThematic from '../Selects/SelectThematic';
 import {DateTime} from "luxon";
-
 import './HackathonSearch.css';
-import {useEffect, useState} from 'react';
+import {useState} from 'react';
 import useFetch from '../../Hooks/useFetch';
 import {ShowHackathon} from '../CarouselHackathons3/CarouselHackathons';
-import { Link, useHistory } from 'react-router-dom';
+import {useHistory } from 'react-router-dom';
 
 
 const queryString = require('query-string');

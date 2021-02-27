@@ -1,12 +1,11 @@
-import {createRef, useEffect, useState} from 'react';
+import { useState} from 'react';
 import useFetch from '../../Hooks/useFetch';
 import './CreateHackathon.css';
-import Select, {components} from 'react-select';
-import {Redirect, useHistory} from 'react-router-dom';
+import Select from 'react-select';
+import {useHistory} from 'react-router-dom';
 import CreatableSelect from "react-select/creatable";
 import {styleSelectPlace} from './stylesSelect';
 import {DateTime} from "luxon";
-import chroma from 'chroma-js';
 import {Helmet} from "react-helmet";
 import {useSelector} from 'react-redux';
 import Modal from '../Modal/Modal';
@@ -52,7 +51,7 @@ function CreateHackathon() {
 
     const handleThematicSelected = (newValue, actionMeta) => {
         let valuesThematics = newValue.map(item => item.value);
-        setThematic([... valuesThematics]);
+        setThematic([...valuesThematics]);
     }
 
     const handleSubmit = async e => {

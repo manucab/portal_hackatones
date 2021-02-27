@@ -1,8 +1,8 @@
-import {createRef, useEffect, useState} from 'react';
+import { useState} from 'react';
 import useFetch from '../../Hooks/useFetch';
 import './CreateHackathon2.css';
-import Select, {components} from 'react-select';
-import {Link, Redirect, useHistory} from 'react-router-dom';
+import Select from 'react-select';
+import {useHistory} from 'react-router-dom';
 import CreatableSelect from "react-select/creatable";
 import {styleSelectPlace} from './stylesSelect2';
 import {DateTime} from "luxon";
@@ -54,7 +54,7 @@ function CreateHackathon() {
 
     const handleThematicSelected = (newValue, actionMeta) => {
         let valuesThematics = newValue.map(item => item.value);
-        setThematic([... valuesThematics]);
+        setThematic([...valuesThematics]);
     }
 
     const postData =  async(e) => {
