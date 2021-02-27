@@ -16,10 +16,15 @@ function Home() {
   );
 
   if (!hackathonsRes) return "Loading...";
+
   const hasHackathon = hackathonsRes && !hackathonsRes.Info ? true : false;
 
+  let hackathons ='';
+if(hasHackathon){
   // Show only 10 next hackathons
-  const hackathons = hackathonsRes.slice(0, 10);
+   hackathons = hackathonsRes.slice(0, 10);
+}
+
 
   return (
     <div className="home">

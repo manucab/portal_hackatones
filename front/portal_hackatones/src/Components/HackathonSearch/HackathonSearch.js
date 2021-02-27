@@ -45,10 +45,11 @@ function HackathonSearch() {
 
     let listhackathons = useFetch(url);
 
-
     if (! listhackathons) 
         return 'Loading ...';
     
+
+        console.log('listhackathons :>> ', listhackathons);
 
     let urlLogoTitle = `http://localhost:3001/static/hackathonPictures/logoTitle.gif`;
 

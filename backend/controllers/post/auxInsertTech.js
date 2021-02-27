@@ -52,8 +52,12 @@
       // Prepare values to format of query (id_hackathon, tech) values (), (), ()
       id_tech.forEach(item => valuesTech.push(id_hackathon, item));
 
+
+
       // Insert into table new hackathon_tech
-      await insertNewHackathonTechDB(valuesTech, params);
+     const rests= await insertNewHackathonTechDB(valuesTech, params);
+
+     console.log('rests :>> ', rests);
 
   }
 

@@ -18,7 +18,6 @@ const createHackathon = async(req, res) => {
     const nameDirHackathon = req.nameDirHackathon;
 
 
-    console.log('thematic1 :>> ', thematic);
 
     thematic = JSON.parse(thematic);
     //TODO techs -> techs
@@ -30,7 +29,8 @@ const createHackathon = async(req, res) => {
     let params = [];
 
     console.log('thematic2 :>> ', thematic);
-    // console.log('thematic ... :>> ', ...thematic);
+    console.log('tech :>> ', tech);
+    console.log('links :>> ', links);
 
 
     try {
@@ -61,13 +61,20 @@ const createHackathon = async(req, res) => {
         // 3.1 Get id_hackathon
         let id_hackathon = res_insertNewHackathon.insertId;
 
+
+console.log('tech :>> ', tech);
+console.log('links :>> ', links);
+
+        console.log('tech.lenth :>> ', tech.lenth);
+        console.log('links.lenth :>> ', links.lenth);
+
         // 4. Insert new tech and table hackathon_tech
-        if (tech.lenth > 0) await auxInsertTech(tech, id_hackathon);
+        if (tech.length > 0) await auxInsertTech(tech, id_hackathon);
 
         logger.debug('Insert into tables tech and hackathon_tech OK!!');
 
         // 5. Insert new links and table hackathon_link
-        if (links.lenth > 0) await auxInsertLink(links, id_hackathon);
+        if (links.length > 0) await auxInsertLink(links, id_hackathon);
 
         logger.debug('Insert into tables lin and hackathon_link OK!!');
 

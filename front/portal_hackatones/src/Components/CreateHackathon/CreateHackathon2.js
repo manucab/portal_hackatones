@@ -111,11 +111,6 @@ function CreateHackathon() {
 
 
     const handleSubmit = async (e) => {
-        // e.preventDefault();
-
-        console.log('e :>> ', e);
-
-        console.log('inputBrige :>> ', inputBrige);
 
         if(hackathon_name && city && start_date && end_date && hackathon_info && thematic && links && techs && inputBrige ){
             console.log('Estan todos los campos rellenos');
@@ -125,16 +120,6 @@ function CreateHackathon() {
         }
         
         setIsSubmit(true);
-
-
-        if(!inputBrige){
-  
-      
-            
-            
-        }
-
-
     }
 
     const handleWebName = e => {
@@ -143,8 +128,14 @@ function CreateHackathon() {
 
     const handleWebUrl = e => {
 
- setWebUrl(e.target.value);
- (e.target.validity.valid) ? setIsValidUrl(true) : setIsValidUrl(false);
+//  (e.target.validity.valid) ? (setIsValidUrl(true)) : setIsValidUrl(false);
+setWebUrl(e.target.value);
+
+ if(e.target.validity.valid){ 
+     setIsValidUrl(true);
+    }else{
+        setIsValidUrl(false)
+     }
 
     }
 
