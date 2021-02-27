@@ -18,8 +18,7 @@
 
     .profile {
         grid-area: profile;
-        border-right: solid 3px #a3a4a6;
-        border-bottom: solid 3px #a3a4a6;
+       
     }
 
     .user-stats {
