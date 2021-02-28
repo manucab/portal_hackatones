@@ -4,7 +4,7 @@ import Avatar from "../Avatar/Avatar";
 import "./Header.css";
 import MediaQuery from "react-responsive";
 import logoHome from '../../Media/Images/General/logo.jpg';
-import logoBlog from '../../Media/Images/General/blogLogo.png';
+import logoBlog from '../../Media/Images/Others/blogger4.png';
 import logoHackathon from '../../Media/Images/General/codeLogo.svg';
 import logoAbout from '../../Media/Images/General/about.svg';
 

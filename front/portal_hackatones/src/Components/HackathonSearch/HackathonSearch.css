@@ -1,10 +1,6 @@
-
- #root , html, body{
-    height: 10px;
-  }
-
 .hackathonSearch{
     margin-top: 55px;
+    padding-bottom: 50px;
     background-color: whitesmoke;
     min-width: 320px;
 }

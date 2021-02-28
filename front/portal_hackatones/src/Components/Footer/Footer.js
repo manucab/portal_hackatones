@@ -1,12 +1,12 @@
 import { Link } from "react-router-dom";
 import "./Footer.css";
 import logoHome from "../../Media/Images/General/logo.jpg";
-import logoBlog from "../../Media/Images/General/blogLogo.png";
+import logoBlog from '../../Media/Images/Others/blogger4.png';
 import logoHackathon from "../../Media/Images/General/codeLogo.svg";
 import logoAbout from "../../Media/Images/General/about.svg";
-import facebook from "./images/facebook.png";
-import instagram from "./images/instagram.png";
-import youtube from "./images/youtube.png";
+import facebook from "../../Media/Images/Others/face1.png";
+import instagram from "../../Media/Images/Others/insta1.png";
+import youtube from "../../Media/Images/Others/you1.png";
 import MediaQuery from "react-responsive";
 
 function Footer() {
