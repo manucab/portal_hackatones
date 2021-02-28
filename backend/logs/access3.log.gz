@@ -4714,3 +4714,18 @@
 2021-02-27 -- 21:07:40:740 -- http: GET -- /static//hackathons/4c50e37e-8bc9-4bfb-ad5d-68eda25943f1/a040a3336e_pexels-soloman-soh-1492232.jpg -- bc9187e2-6ee9-4302-a48b-ab4f5df8434d -- 304 -- - - 7.726 ms
 2021-02-27 -- 21:07:40:740 -- http: GET -- /static//hackathons/e8d1cc59-1adf-4d19-b0cb-d2f51541174a/987f289272_pexels-daria-shevtsova-1560932.jpg -- 04d782f1-515d-4aa2-918e-f3da96115b75 -- 304 -- - - 8.679 ms
 2021-02-27 -- 21:07:40:740 -- http: GET -- /static//hackathons/d45f59bb-d111-473e-9b66-e78c1ea75a10/46cbfd7549_codeLogo.svg -- 84fd4e54-ceef-4cab-aba6-10578964b9ed -- 304 -- - - 0.633 ms
+2021-02-28 -- 18:31:43:3143 -- info: listening on port 3001
+2021-02-28 -- 18:32:22:3222 -- http: GET -- /user/1 -- 14347485-e919-411c-bf8f-5be2c7e3e17f -- 304 -- - - 29.727 ms
+2021-02-28 -- 18:32:22:3222 -- http: GET -- /user/1 -- 336eae0a-b906-4faa-964e-1413b9279e03 -- 304 -- - - 18.056 ms
+2021-02-28 -- 18:32:22:3222 -- http: GET -- /user/1 -- fb82bdd7-9d8d-4332-a25f-c3a2a10ac116 -- 304 -- - - 21.395 ms
+2021-02-28 -- 18:32:22:3222 -- http: GET -- /user/1 -- c559e307-a9a6-4622-ad50-711bb7a6e1d8 -- 304 -- - - 39.859 ms
+2021-02-28 -- 18:32:22:3222 -- http: GET -- /user/1 -- dab1cbc2-a08c-47bb-afd9-12dd18f13b96 -- 304 -- - - 34.049 ms
+2021-02-28 -- 18:32:22:3222 -- http: GET -- /user/1 -- 9ead7f6b-32ea-4783-bea0-a12e16179d5d -- 304 -- - - 11.342 ms
+2021-02-28 -- 18:32:22:3222 -- http: GET -- /static//hackathons/0cddd742-d84e-4ef8-85ee-76f0d6a5f558/e2090f0a7f_cave_man_emoticon_emoji_sticker_music_icon_123510.png -- 11fd4427-2dcd-4a81-8426-a0afe40ce5fa -- - -- - - - ms
+2021-02-28 -- 18:32:22:3222 -- http: GET -- /static/users/0196c64b-7c30-4988-aeaf-752c6e3f4757/1b9f0f2302_Electric_Guitar_icon-icons.com_53693.png -- c6eb3ccd-e23d-455b-a1a4-d4fbf1fd1cc6 -- 200 -- 23265 - 2.748 ms
+2021-02-28 -- 18:32:27:3227 -- http: GET -- /user/1 -- 5a33b20d-8866-4e53-ab54-42e82ac7a209 -- 304 -- - - 12.406 ms
+2021-02-28 -- 18:32:27:3227 -- http: GET -- /user/1 -- 0be59db4-a695-444f-aa39-fc499e4fecd4 -- 304 -- - - 13.559 ms
+2021-02-28 -- 18:32:27:3227 -- http: GET -- /user/1 -- 27bb1003-d3ea-4b3e-abea-222bab907201 -- 304 -- - - 54.733 ms
+2021-02-28 -- 18:32:27:3227 -- http: GET -- /user/1 -- 52e6a9c8-7233-46d1-94d4-8469c3a45ddb -- 304 -- - - 30.688 ms
+2021-02-28 -- 18:32:27:3227 -- http: GET -- /user/1 -- 8dd88d46-294c-474a-b8f8-99c2d48a9e51 -- 304 -- - - 23.229 ms
+2021-02-28 -- 18:32:27:3227 -- http: GET -- /user/1 -- 43db9dc4-d119-480d-a0e8-e34c03c9faca -- 304 -- - - 16.657 ms
