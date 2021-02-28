@@ -333,8 +333,9 @@ setWebUrl(e.target.value);
           
 {!start_date && isSubmit && <span id="toolTipStartDate" class="tip down">Este campo necesario</span>}
 
+<div className="datesDiv" >
 
-            <label id="lblStartDate" htmlFor="inputStartDate">Fecha inicio</label>
+<label id="lblStartDate" htmlFor="inputStartDate">Fecha inicio</label>
             <input type='date'
             id="inputStartDate"
                     min={today}
@@ -360,6 +361,8 @@ setWebUrl(e.target.value);
                         e => setEnd_date(e.target.value)
                     }
                     required/>
+</div>
+
         </fieldset>
 
         <fieldset className="fieldState fieldCommon">
