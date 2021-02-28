@@ -6,7 +6,7 @@ import Modal from "../Modal/Modal";
 import StarRating from "../StarRating/StarRating";
 import "./ShowHackathon.css";
 
-function ShowHackathon({ hackathon: h, organizer }) {
+function ShowHackathon({ hackathon: h, organizer, index }) {
   const [show, setShow] = useState(false);
   const [deleteHackathon, setDeleteHackathon] = useState(false);
   const [cancelBooking, setCancelBooking] = useState(false);
@@ -100,7 +100,7 @@ function ShowHackathon({ hackathon: h, organizer }) {
           <strong>Estado Hackathon:</strong> {h.hackathon_status}
         </div>
       </div>
-      <div className="tomeToContainer">
+      <div className="timeToContainer">
         {!hasEnded && (
           <div className="timeTo">
             {daysTo > 1 ? `Quedan ${daysTo} días!!!` : `Queda 1 día!!!`}
@@ -108,7 +108,7 @@ function ShowHackathon({ hackathon: h, organizer }) {
         )}
       </div>
       <div>
-        {!organizer && !hasEnded ? (
+        {index===1 && !hasEnded ? (
           <div>
             <button
               className="cancel-hack"
@@ -158,7 +158,7 @@ function ShowHackathon({ hackathon: h, organizer }) {
       </div>
 
       <div className="hackathon-stats">
-        {organizer ? (
+        {organizer && index === 2 ? (
           <div className="participants">
             <div className="participants-number">{h.participants || "-"}</div>
             <div>
@@ -174,7 +174,7 @@ function ShowHackathon({ hackathon: h, organizer }) {
             <div>{h.avg_rate || "-"}</div>
             <div>Valoración</div>
           </div>
-        ) : organizer ? (
+        ) : organizer && index === 2 ? (
           <div>
             <button
               className="modify-hack"

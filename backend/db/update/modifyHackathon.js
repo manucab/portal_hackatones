@@ -1,8 +1,9 @@
-const getIdsNewValuesTech = require("../../utils/getIdsNewValuesTech")
-const getIdsNewValuesLink = require("../../utils/getIdsNewValuesLink")
+const getIdsNewValuesTech = require("../../utils/getIdsNewValuesTech");
+const getIdsNewValuesLink = require("../../utils/getIdsNewValuesLink");
 
 const formatDate = require("../../utils/formatDate");
-const {performQuery} = require("../performQuery");
+const { performQuery } = require("../performQuery");
+const { logger } = require("../../app/config/logger");
 
 const modifyHackathon = async (
   idUser,
@@ -19,54 +20,67 @@ const modifyHackathon = async (
   cover_picture,
   thematic
 ) => {
-  const queryOriginalInfo = `select * from hackathon where id = ?`;
-  const paramsOriginalInfo = [idHackathon];
-  originalInfo = await performQuery(queryOriginalInfo, paramsOriginalInfo);
-  const checkedHackathon = originalInfo.length === 1;
-  if (!checkedHackathon) {
-    return "Hackathon not found";
-  }
+  try {
+    const queryOriginalInfo = `select * from hackathon where id = ?`;
+    const paramsOriginalInfo = [idHackathon];
+    originalInfo = await performQuery(queryOriginalInfo, paramsOriginalInfo);
+    const checkedHackathon = originalInfo.length === 1;
+    if (!checkedHackathon) {
+      return "Hackathon not found";
+    }
 
-  //The functions bellow getIds we need and also insert new elements if there are any
-
-  const parsedLinks = JSON.parse(links)
-  const parsedTechs = JSON.parse(techs)
- 
-  techIds = await getIdsNewValuesTech(parsedTechs)
-  linkIds = await getIdsNewValuesLink(parsedLinks)
-
-  //Delete the previous registers of tech and links we have for that hackathon
-  const deleteTechQuery = `delete from hackathon_tech 
-    where id_hackathon = ?`
-
-  const deleteLinkQuery = `delete from hackathon_link 
-    where id_hackathon = ?`
-  const paramsDeleteQuery = [idHackathon]
-
-  await performQuery(deleteTechQuery,paramsDeleteQuery)
-  await performQuery(deleteLinkQuery,paramsDeleteQuery)
-
-  //Update hackathon_tech and hackathon_link
-  for (const techId of techIds) {
-    const query = `insert into hackathon_tech (id_hackathon,id_tech)
-      values (?,?)`
-    const params = [idHackathon,techId]
-    await performQuery (query,params)
-
-  }
-
-  for (const linkId of linkIds) {
-    const query = `insert into hackathon_link (id_hackathon,id_link)
-      values (?,?)`
-    const params = [idHackathon,linkId]
-    await performQuery (query,params)
-
-  }
+    //The functions bellow getIds we need and also insert new elements if there are any
 
 
+    const parsedLinks = JSON.parse(links);
+    const parsedTechs = JSON.parse(techs);
+
+    techIds = await getIdsNewValuesTech(parsedTechs);
+    linkIds = await getIdsNewValuesLink(parsedLinks);
+
+    //Delete the previous registers of tech and links we have for that hackathon
+    const deleteTechQuery = `delete from hackathon_tech 
+    where id_hackathon = ?`;
+
+    const deleteLinkQuery = `delete from hackathon_link 
+    where id_hackathon = ?`;
+    const paramsDeleteQuery = [idHackathon];
+
+    const dt = await performQuery(deleteTechQuery, paramsDeleteQuery);
+    const dl = await performQuery(deleteLinkQuery, paramsDeleteQuery);
+
+    console.log(dt, dl);
+
+    logger.info("Prepare techs and links");
+
+    //Update hackathon_tech and hackathon_link
+
+    const setT = "(?,?),".repeat(techIds.length).slice(0, -1);
+    let tParams = [];
+    for (id of techIds) {
+      tParams = [...tParams, idHackathon, parseInt(id)];
+    }
+
+    const queryT = `insert into hackathon_tech (id_hackathon,id_tech)
+    values ${setT}`;
+
+    const t = await performQuery(queryT, tParams)
+
+    const setL = "(?,?),".repeat(linkIds.length).slice(0, -1);
+    let lParams = [];
+    for (id of linkIds) {
+      lParams = [...lParams, parseInt(idHackathon), parseInt(id)];
+    }
+    const queryL = `insert into hackathon_link (id_hackathon,id_link)
+    values ${setL};`;
   
-  //Update fields from table hackathon
-  const query = `
+    const l = await performQuery(queryL, lParams);
+   
+
+    logger.info("techs and links updated");
+
+    //Update fields from table hackathon
+    const query = `
     update hackathon
     set hackathon_name = ?,
     hackathon_place = ?,
@@ -78,24 +92,30 @@ const modifyHackathon = async (
     cover_picture = ?,
     thematic = ?
     where id = ? and id_organizer = ?`;
-  const params = [
-    name || originalInfo[0].hackathon_name,
-    place || originalInfo[0].hackathon_place,
-    city || originalInfo[0].city,
-    start_date || formatDate(originalInfo[0].start_date),
-    end_date || formatDate(originalInfo[0].end_date),
-    status || originalInfo[0].hackathon_status,
-    info || originalInfo[0].hackathon_info,
-    cover_picture || originalInfo[0].cover_picture,
-    thematic || originalInfo[0].thematic,
-    idHackathon,
-    idUser,
-  ];
+    const params = [
+      name || originalInfo[0].hackathon_name,
+      place || originalInfo[0].hackathon_place,
+      city || originalInfo[0].city,
+      start_date || formatDate(originalInfo[0].start_date),
+      end_date || formatDate(originalInfo[0].end_date),
+      status || originalInfo[0].hackathon_status,
+      info || originalInfo[0].hackathon_info,
+      cover_picture || originalInfo[0].cover_picture,
+      JSON.parse(thematic).join(',') || originalInfo[0].thematic,
+      idHackathon,
+      idUser,
+    ];
+    logger.info("hackathon fully updated");
 
-  result = await performQuery(query, params);
+    result = await performQuery(query, params);
 
-  return "The hackathon has been succesfully modified";
+    return "The hackathon has been succesfully modified";
+  } catch (e) {
+    
+    console.log(e);
+    logger.error(e.message);
+    throw e.message;
+  }
 };
 
-
-module.exports = modifyHackathon
+module.exports = modifyHackathon;

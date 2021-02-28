@@ -1064,3 +1064,80 @@
 2021-02-26 -- 19:17:19:1719 -- error: Lock wait timeout exceeded; try restarting transaction
 2021-02-26 -- 19:17:19:1719 -- error:  Error in create new a hackathon: Lock wait timeout exceeded; try restarting transaction 
 2021-02-26 -- 19:26:58:2658 -- error: Lock wait timeout exceeded; try restarting transaction
+2021-02-27 -- 10:39:22:3922 -- error: Lock wait timeout exceeded; try restarting transaction
+2021-02-27 -- 10:44:09:449 -- error: Cannot read property 'trim' of null
+2021-02-27 -- 10:46:06:466 -- error: Lock wait timeout exceeded; try restarting transaction
+2021-02-27 -- 10:46:06:466 -- error: Lock wait timeout exceeded; try restarting transaction
+2021-02-27 -- 10:48:02:482 -- error: Duplicate entry 'https://www.youtube.com/watch?v=sapsxrjyccy&ab_channel=ecyvalon' for key 'link.url'
+2021-02-27 -- 10:48:02:482 -- error: Duplicate entry 'https://www.youtube.com/watch?v=sapsxrjyccy&ab_channel=ecyvalon' for key 'link.url'
+2021-02-27 -- 10:53:52:5352 -- error: originalArray.idexOf is not a function
+2021-02-27 -- 11:01:07:17 -- error: Lock wait timeout exceeded; try restarting transaction
+2021-02-27 -- 11:01:07:17 -- error: Lock wait timeout exceeded; try restarting transaction
+2021-02-27 -- 11:04:59:459 -- error: Duplicate entry '25-1' for key 'hackathon_tech.PRIMARY'
+2021-02-27 -- 11:04:59:459 -- error: Duplicate entry '25-1' for key 'hackathon_tech.PRIMARY'
+2021-02-27 -- 11:05:50:550 -- error: Lock wait timeout exceeded; try restarting transaction
+2021-02-27 -- 11:05:50:550 -- error: Lock wait timeout exceeded; try restarting transaction
+2021-02-27 -- 11:09:01:91 -- error: Lock wait timeout exceeded; try restarting transaction
+2021-02-27 -- 11:09:01:91 -- error: Lock wait timeout exceeded; try restarting transaction
+2021-02-27 -- 11:12:24:1224 -- error: Lock wait timeout exceeded; try restarting transaction
+2021-02-27 -- 11:12:24:1224 -- error: Lock wait timeout exceeded; try restarting transaction
+2021-02-27 -- 11:15:59:1559 -- error: Lock wait timeout exceeded; try restarting transaction
+2021-02-27 -- 11:15:59:1559 -- error: Lock wait timeout exceeded; try restarting transaction
+2021-02-27 -- 11:19:46:1946 -- error: Lock wait timeout exceeded; try restarting transaction
+2021-02-27 -- 11:19:46:1946 -- error: Lock wait timeout exceeded; try restarting transaction
+2021-02-27 -- 11:45:11:4511 -- error: ids is not defined
+2021-02-27 -- 11:49:42:4942 -- error: Lock wait timeout exceeded; try restarting transaction
+2021-02-27 -- 11:49:42:4942 -- error: Lock wait timeout exceeded; try restarting transaction
+2021-02-27 -- 11:52:43:5243 -- error: Lock wait timeout exceeded; try restarting transaction
+2021-02-27 -- 11:52:44:5244 -- error: Lock wait timeout exceeded; try restarting transaction
+2021-02-27 -- 11:54:41:5441 -- error: Lock wait timeout exceeded; try restarting transaction
+2021-02-27 -- 11:54:41:5441 -- error: Lock wait timeout exceeded; try restarting transaction
+2021-02-27 -- 11:54:48:5448 -- error: linksIds is not defined
+2021-02-27 -- 11:55:51:5551 -- error: Lock wait timeout exceeded; try restarting transaction
+2021-02-27 -- 11:55:51:5551 -- error: Lock wait timeout exceeded; try restarting transaction
+2021-02-27 -- 11:55:59:5559 -- error: Cannot access 'queryT' before initialization
+2021-02-27 -- 11:57:08:578 -- error: Lock wait timeout exceeded; try restarting transaction
+2021-02-27 -- 11:57:08:578 -- error: Lock wait timeout exceeded; try restarting transaction
+2021-02-27 -- 11:58:23:5823 -- error: Lock wait timeout exceeded; try restarting transaction
+2021-02-27 -- 11:58:23:5823 -- error: Lock wait timeout exceeded; try restarting transaction
+2021-02-27 -- 11:59:20:5920 -- error: Lock wait timeout exceeded; try restarting transaction
+2021-02-27 -- 11:59:20:5920 -- error: Lock wait timeout exceeded; try restarting transaction
+2021-02-27 -- 12:01:14:114 -- error: Lock wait timeout exceeded; try restarting transaction
+2021-02-27 -- 12:01:14:114 -- error: Lock wait timeout exceeded; try restarting transaction
+2021-02-27 -- 12:03:15:315 -- error: Lock wait timeout exceeded; try restarting transaction
+2021-02-27 -- 12:03:15:315 -- error: Lock wait timeout exceeded; try restarting transaction
+2021-02-27 -- 12:43:49:4349 -- error: Lock wait timeout exceeded; try restarting transaction
+2021-02-27 -- 12:43:49:4349 -- error: Lock wait timeout exceeded; try restarting transaction
+2021-02-27 -- 12:48:01:481 -- error: Lock wait timeout exceeded; try restarting transaction
+2021-02-27 -- 12:48:01:481 -- error: Lock wait timeout exceeded; try restarting transaction
+2021-02-27 -- 12:54:11:5411 -- error: Lock wait timeout exceeded; try restarting transaction
+2021-02-27 -- 12:54:11:5411 -- error: Lock wait timeout exceeded; try restarting transaction
+2021-02-27 -- 12:56:52:5652 -- error: Lock wait timeout exceeded; try restarting transaction
+2021-02-27 -- 12:56:52:5652 -- error: Lock wait timeout exceeded; try restarting transaction
+2021-02-27 -- 13:01:52:152 -- error: Lock wait timeout exceeded; try restarting transaction
+2021-02-27 -- 13:01:52:152 -- error: Lock wait timeout exceeded; try restarting transaction
+2021-02-27 -- 13:13:31:1331 -- error: Lock wait timeout exceeded; try restarting transaction
+2021-02-27 -- 13:13:32:1332 -- error: Lock wait timeout exceeded; try restarting transaction
+2021-02-27 -- 13:22:13:2213 -- error: Lock wait timeout exceeded; try restarting transaction
+2021-02-27 -- 13:22:13:2213 -- error: Lock wait timeout exceeded; try restarting transaction
+2021-02-27 -- 13:26:11:2611 -- error: Lock wait timeout exceeded; try restarting transaction
+2021-02-27 -- 13:26:11:2611 -- error: Lock wait timeout exceeded; try restarting transaction
+2021-02-27 -- 13:28:26:2826 -- error: Lock wait timeout exceeded; try restarting transaction
+2021-02-27 -- 13:28:26:2826 -- error: Lock wait timeout exceeded; try restarting transaction
+2021-02-27 -- 13:32:19:3219 -- error: Lock wait timeout exceeded; try restarting transaction
+2021-02-27 -- 13:32:19:3219 -- error: Lock wait timeout exceeded; try restarting transaction
+2021-02-27 -- 13:36:20:3620 -- error: Cannot access 't' before initialization
+2021-02-27 -- 13:37:37:3737 -- error: Lock wait timeout exceeded; try restarting transaction
+2021-02-27 -- 13:37:37:3737 -- error: Lock wait timeout exceeded; try restarting transaction
+2021-02-27 -- 18:05:56:556 -- error: Lock wait timeout exceeded; try restarting transaction
+2021-02-27 -- 18:05:56:556 -- error: Lock wait timeout exceeded; try restarting transaction
+2021-02-27 -- 18:11:55:1155 -- error: Duplicate entry '32-26' for key 'hackathon_link.PRIMARY'
+2021-02-27 -- 18:11:55:1155 -- error: Duplicate entry '32-26' for key 'hackathon_link.PRIMARY'
+2021-02-27 -- 18:12:37:1237 -- error: Duplicate entry 'https://www.youtube.com/watch?v=sapsxrjyccy&ab_channel=ecyvalon' for key 'link.url'
+2021-02-27 -- 18:12:37:1237 -- error: Duplicate entry 'https://www.youtube.com/watch?v=sapsxrjyccy&ab_channel=ecyvalon' for key 'link.url'
+2021-02-27 -- 18:13:43:1343 -- error: Lock wait timeout exceeded; try restarting transaction
+2021-02-27 -- 18:13:43:1343 -- error: Lock wait timeout exceeded; try restarting transaction
+2021-02-27 -- 18:16:10:1610 -- error: Duplicate entry 'https://www.youtube.com/watch?v=sapsxrjyccy&ab_channel=ecyvalon' for key 'link.url'
+2021-02-27 -- 18:16:10:1610 -- error: Duplicate entry 'https://www.youtube.com/watch?v=sapsxrjyccy&ab_channel=ecyvalon' for key 'link.url'
+2021-02-27 -- 18:18:22:1822 -- error: Duplicate entry 'https://www.youtube.com/watch?v=sapsxrjyccy&ab_channel=ecyvalon' for key 'link.url'
+2021-02-27 -- 18:18:22:1822 -- error: Duplicate entry 'https://www.youtube.com/watch?v=sapsxrjyccy&ab_channel=ecyvalon' for key 'link.url'

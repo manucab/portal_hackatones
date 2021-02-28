@@ -144,8 +144,8 @@
     height: 30px;
     cursor: pointer;
     background-color: #A3A4A6;
-    border: solid 0.5px #F6E561;
-    border-radius: 10%;
+    border: solid 2px #F6E561;
+    border-radius: 25px;
     color: white;
     font-weight: bold;
 

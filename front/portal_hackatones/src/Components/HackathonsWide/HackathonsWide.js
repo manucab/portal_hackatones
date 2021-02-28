@@ -20,7 +20,7 @@ function HackathonsWide(props) {
 
         {hackathonsJoined.length !== 0 ? (
           hackathonsJoined.map((h) => (
-            <ShowHackathon hackathon={h} organizer={organizer} />
+            <ShowHackathon hackathon={h} organizer={organizer} index={props.index}/>
           ))
         ) : (
           <p>No te has inscrito en ningún hackathon</p>
@@ -36,7 +36,7 @@ function HackathonsWide(props) {
         <div className="hackSelection">
           {hackathonsJoined.length !== 0 ? (
             hackathonsJoined.map((h) => (
-              <ShowHackathon hackathon={h} organizer={organizer} />
+              <ShowHackathon hackathon={h} organizer={organizer} index={props.index} />
             ))
           ) : organizer ? (
             <p>No has creado ningún hackathon</p>

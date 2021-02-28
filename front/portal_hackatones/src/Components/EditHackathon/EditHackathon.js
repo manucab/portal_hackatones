@@ -199,6 +199,7 @@ function EditHackathon() {
       });
 
       setTechs(h[0].techs.map(t => t.tech))
+      console.log(h[0].thematic)
       setThematic(h[0].thematic.split(',').map(t => t))
 
     });
