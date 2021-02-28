@@ -18,7 +18,6 @@ function ProfilePage() {
         <HackathonsJoined />
         <OrganizerStats />
         <HackathonsCreated />
-        <Logout />
       </MediaQuery>
       <MediaQuery minWidth={768}>
         <ProfileInfo />
@@ -26,7 +25,6 @@ function ProfilePage() {
         <OrganizerStats/>
         <HackathonsWide index={1}/>
         <HackathonsWide index={2}/>
-        <Logout/>
       </MediaQuery>
     </div>
   );

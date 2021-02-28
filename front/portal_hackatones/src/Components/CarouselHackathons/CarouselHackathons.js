@@ -3,17 +3,17 @@ import "./CarouselHackathons.css";
 import arrow from "../../Media/Images/General/Arrow-down.svg";
 import ShowHackathon from "../ShowHackathon/ShowHackathon";
 
-function CarouselHackathons({ hackathons, organizer }) {
-  const [index, setIndex] = useState(0);
+function CarouselHackathons({ hackathons, organizer, index }) {
+  const [indexCar, setIndexCar] = useState(0);
 
   if (!hackathons) return "Loading...";
 
   const handleNext = () =>
-    setIndex(index < hackathons.length - 1 ? index + 1 : index + 0);
-  const handlePrevious = () => setIndex(index > 0 ? index - 1 : index + 0);
+    setIndexCar(indexCar < hackathons.length - 1 ? indexCar + 1 : indexCar + 0);
+  const handlePrevious = () => setIndexCar(indexCar > 0 ? indexCar - 1 : indexCar + 0);
 
-  let isFirst = index === 0;
-  let isLast = index === hackathons.length - 1;
+  let isFirst = indexCar === 0;
+  let isLast = indexCar === hackathons.length - 1;
 
   return (
     <div className="carousel">
@@ -23,7 +23,7 @@ function CarouselHackathons({ hackathons, organizer }) {
         className={isFirst ? "off" : "on"}
         onClick={handlePrevious}
       />
-      <ShowHackathon hackathon={hackathons[index]} organizer={organizer} />
+      <ShowHackathon hackathon={hackathons[indexCar]} organizer={organizer} index={index}/>
       <img
         id="next"
         src={arrow}

@@ -8,6 +8,7 @@ import { useEffect, useState } from "react";
 import Modal from "../Modal/Modal";
 import EditProfile from "../EditProfile/EditProfile";
 import { Helmet } from "react-helmet";
+import Logout from '../Logout/Logout'
 
 function showInfo (user_name, surname,email,professional_profile,rol) {
 
@@ -62,6 +63,7 @@ function ProfileInfo () {
             <Avatar/>
             {showInfo(user_name,surname,email,professional_profile,rol)}
             <button className="edit-profile" onClick={()=>setShow(true) }>⚙ Editar</button>
+            <Logout/>
             <Modal className="edit-profile-modal" title="Actualiza tu perfil" onClose={() => setShow(false)}  show={show}>
                 <EditProfile handleClose={handleClose}
                    

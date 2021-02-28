@@ -1,3 +1,7 @@
+.profile-page-container {
+    padding-top: 40px;
+}
+
 .cancel-hack {
     border-radius: 25px;
     outline: none;
@@ -10,6 +14,7 @@
 
 @media screen and (min-width: 768px) {
     .profile-page-container{
+        width: 100vw;
         display: grid;
         grid-template-columns: 33% 33% 33%;
         grid-template-rows: auto ;
@@ -28,17 +33,20 @@
 
     .profile {
         grid-area: profile;
+        border: none;
        
     }
 
     .user-stats {
         grid-area: userStats;
         background-color: #a3a4a6c7;
+        border: none;
  
     }
     .organizer-stats-section{
         grid-area: organizerStats;
         background-color: #a3a4a6c7;
+        border: none;
     
     }
 
@@ -47,6 +55,7 @@
         justify-self: center;
         background-color: #f6e56183;
         width: 100%;
+        border: none;
         
     }
 
@@ -54,14 +63,8 @@
         grid-area: hackathonsCreated;
         justify-self: center;
         width: 100%;
-       
-    }
-
-    .logout {
-        grid-area: logout;
-        align-self: center;
-        justify-self: center;
-        width: 100%;
+        border: none;
+        padding-bottom: 15px;
     }
 
     .stats-section {
