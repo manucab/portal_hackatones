@@ -90,7 +90,7 @@ function HackathonSearch() {
                     <h1>Descubre y participa</h1>
 
                     <p>
-                        Los hackathons más importantes reunidos aquí para que encuentres tu hackathon ideal.
+                        Los hackathons más importantes reunidos aquí para que encuentres tu hackathon ideals
                     </p>
                 </div>
             </div>

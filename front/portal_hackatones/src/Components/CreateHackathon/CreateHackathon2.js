@@ -338,7 +338,7 @@ setWebUrl(e.target.value);
             <input type='date'
             id="inputStartDate"
                     min={today}
-                    defaultValue={today}
+                    // defaultValue={today}
                     name="start_date"
                     onKeyPress={handleEnterPrevent}
                     className="inputSelectSame"

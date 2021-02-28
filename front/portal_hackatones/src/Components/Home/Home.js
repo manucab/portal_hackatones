@@ -14,10 +14,13 @@ function Home() {
           className="landing-img"
           style={{ backgroundImage: `url(${landing})` }}
         >
+          <div className="textHome">
           <p>
             ¿Quieres participar en un hackathon? Regístrate y empieza una
             aventura sin fin
           </p>
+          </div>
+
           <div className="landing-buttons">
             <button
               id="btnRegister"
