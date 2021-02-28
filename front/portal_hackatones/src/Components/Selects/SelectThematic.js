@@ -21,10 +21,10 @@ function SelectThematic({onChange}) {
 
     return (
         <div className="">
-            <Select className="selectTechs"
+            <Select className="selectThematic"
                 theme={styleSelectPlace}
                 options={optionsThematics}
-                defaultValue='Selecciona...'
+                placeholder={'Temática...'}
                 onChange={handleSelected}/>
         </div>
 

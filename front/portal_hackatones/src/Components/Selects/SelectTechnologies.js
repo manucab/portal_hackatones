@@ -28,7 +28,7 @@ function SelectTechnologies({onChange}) {
                 id="hackathon_place"
                 theme={styleSelectPlace}
                 options={optionsTech}
-                defaultValue='Selecciona...'
+                placeholder={'Tecnologías...'}
                 onChange={handleTechSelected}/>
         </div>
 

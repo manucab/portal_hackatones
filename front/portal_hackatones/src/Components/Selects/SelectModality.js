@@ -29,8 +29,8 @@ function SelectModality({onChange}) {
             <Select id="hackathon_place"
                 theme={styleSelectPlace}
                 options={optionPlace}
-                defaultValue={optionPlace[0]}
                 onChange={handlePlaceSelected}
+                placeholder={'Modalidad...'}
                 />
         </div>
 

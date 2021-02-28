@@ -17,8 +17,6 @@ const createHackathon = async(req, res) => {
     const id_organizer = req.auth.id;
     const nameDirHackathon = req.nameDirHackathon;
 
-
-
     thematic = JSON.parse(thematic);
     //TODO techs -> techs
     tech = JSON.parse(techs);
@@ -60,13 +58,6 @@ const createHackathon = async(req, res) => {
 
         // 3.1 Get id_hackathon
         let id_hackathon = res_insertNewHackathon.insertId;
-
-
-console.log('tech :>> ', tech);
-console.log('links :>> ', links);
-
-        console.log('tech.lenth :>> ', tech.lenth);
-        console.log('links.lenth :>> ', links.lenth);
 
         // 4. Insert new tech and table hackathon_tech
         if (tech.length > 0) await auxInsertTech(tech, id_hackathon);

@@ -1,44 +1,106 @@
-.hackathonSearchHeader{
-    display: flex;
-    font-size: 12px;
-    border: 1px solid black;
+
+ #root , html, body{
+    height: 10px;
+  }
+
+.hackathonSearch{
+    margin-top: 55px;
+    background-color: whitesmoke;
+    min-width: 320px;
 }
 
+.hackathonSearchHeader{
+    /* border: 1px solid black; */
+    position: relative;
+    text-align: left;
+    background-image: url(../../Media/Images/Others/banner7.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 15px;
 
-.hackathonSearchHeader > img{
+}
 
-width: 300px;
-height: 160px;
+#textHS{
+    text-align: center;
+    font-size: 1.2rem;
+}
 
+#imgHS{
+    background-image: url(../../Media/Images/Others/clip1.png);
+    background-position: center;
+    background-size: contain ; 
+    background-repeat: no-repeat;
+    width: 350px;
+     height: 250px;
 }
 
 .hackathonSearchFilters{
     display: flex;
-    border: 1px solid black;
+    justify-content: space-between;
+    align-items: flex-start;
+    align-content: flex-start;
+flex-wrap: wrap;
+    padding: 5px;
+    position: relative;
+    background-color: #c0c0c0;
+border: 2px solid #F6E561;
+    box-sizing: border-box;
+}
+
+
+.hackathonSearchFilters > div {
+    margin: 5px ;
+    min-width: 130px;
 }
 
 
 
-.hackathonSearchHach{
+.filterDate{
     display: flex;
-    /* flex-direction: row;
-    flex-wrap: wrap; */
+    flex-direction: column;
+    text-align: center;
+    margin-right: 15px;
+}
+
+.filterDate label {
+    margin: 2px;
+}
+.filterDate input{
+    text-align: center;
+}
+
+
+.hackathonSearchHack{
+    display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
     box-sizing: content-box;
+    padding: 20px;
 
-    
 }
 
 
 .showHack{
-/* 
-    flex-shrink: 1;
-
-    flex-grow: 1; */
-    
     text-align: center;
-
     cursor: pointer;
+    margin: 10px;
+    
+    /* transform: scale(0.85); */
 }
+
+
+  @media screen and (min-width: 568px) {
+    .hackathonSearchHack{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-content: flex-start;
+    transform: scale(0.9);
+
+    }
+      }
+
+

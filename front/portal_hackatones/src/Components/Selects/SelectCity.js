@@ -22,11 +22,10 @@ function SelectCity({onChange}) {
 
     return (
         <div className="">
-            <Select className="selectTechs"
-                
+            <Select className="selectCity"
                 theme={styleSelectPlace}
                 options={optionsCity}
-                defaultValue='Selecciona...'
+                placeholder={'Ubicación...'}
                 onChange={handleSelected}/>
         </div>
 

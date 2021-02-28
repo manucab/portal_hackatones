@@ -7,7 +7,7 @@ import './HackathonSearch.css';
 import {useState} from 'react';
 import useFetch from '../../Hooks/useFetch';
 import {ShowHackathon} from '../CarouselHackathons3/CarouselHackathons';
-import {useHistory } from 'react-router-dom';
+import {useHistory} from 'react-router-dom';
 
 
 const queryString = require('query-string');
@@ -48,9 +48,10 @@ function HackathonSearch() {
         return 'Loading ...';
     
 
-        console.log('listhackathons :>> ', listhackathons);
 
-    let urlLogoTitle = `http://localhost:3001/static/hackathonPictures/logoTitle.gif`;
+    console.log('listhackathons :>> ', listhackathons);
+
+    // let urlLogoTitle = `http://localhost:3001/static/hackathonPictures/logoTitle.gif`;
 
     const handleModality = (value) => {
         sethackathon_place(value);
@@ -82,70 +83,84 @@ function HackathonSearch() {
 
             {/* Header */}
             <div className="hackathonSearchHeader">
-                <h1>Lorenm Ipsum</h1>
+                <div id="imgHS"></div>
 
-                <p>
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                </p>
-                <img src={urlLogoTitle}
-                    alt="logoTitle"/>
 
+                <div id="textHS">
+                    <h1>Descubre y participa</h1>
+
+                    <p>
+                        Los hackathons más importantes reunidos aquí para que encuentres tu hackathon ideal.
+                    </p>
+                </div>
             </div>
 
             {/* menu filters */}
             <div className="hackathonSearchFilters">
 
-                <div>Modalidad
-                    <SelectModality onChange={handleModality}/>
-
+                <div className="divSelectModality">
+                    <SelectModality  onChange={handleModality}/>
                 </div>
 
                 <div>
-                    Tecnologias
+
                     <SelectTechnologies onChange={handleTech}/>
-
                 </div>
 
+
                 <div>
-                    Ciudad
+
                     <SelectCity onChange={handleCity}/>
-
                 </div>
 
 
                 <div>
-                    Temática
+
                     <SelectThematic onChange={handleThematic}/>
-
                 </div>
 
-                <div>
-                    <label>Fecha inicio:
-                        <input type='date'
-                            min={today}
-                            defaultValue={today}
-                            name="start_date"
-                            value={start_date}
-                            onChange={handleStartDate}
-                            required/></label>
-                    <label>Fecha fin:
-                        <input type='date'
-                            min={start_date}
-                            value={end_date}
-                            name="end_date"
-                            onChange={handleEndDate}
-                            required/></label>
+
+                <div className="filterDate">
+                    <label>Fecha inicio</label>
+                    <input type='date'
+                        min={today}
+                        // defaultValue={today}
+                        name="start_date"
+                        value={start_date}
+                        onChange={handleStartDate}
+
+                        required/>
+                </div>
+
+
+                <div className="filterDate">
+                    <label>Fecha fin</label>
+
+                    <input type='date'
+                        min={start_date}
+                        value={end_date}
+                        name="end_date"
+                        onChange={handleEndDate}
+                        required/>
                 </div>
 
 
             </div>
 
             {/* show hackathons */}
-            <div className="hackathonSearchHach">
+            <div className="hackathonSearchHack">
 
                 {
-                ! listhackathons.Info ? listhackathons.map(hackathon => <div className="showHack" onClick={ () =>history.push(`/hackathon/${hackathon.id}`)}>
-                    <ShowHackathon  h={hackathon}/>
+                ! listhackathons.Info ? listhackathons.map(hackathon => <div key={
+                        hackathon.id
+                    }
+                    className="showHack"
+                    onClick={
+                        () => history.push(`/hackathon/${
+                            hackathon.id
+                        }`)
+                }>
+                    <ShowHackathon h={hackathon}/>
                 </div>) : <div>No se han encontrado resultados ...</div>
             } </div>
         </div>

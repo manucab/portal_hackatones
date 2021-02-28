@@ -55,9 +55,8 @@
 
 
       // Insert into table new hackathon_tech
-     const rests= await insertNewHackathonTechDB(valuesTech, params);
+      await insertNewHackathonTechDB(valuesTech, params);
 
-     console.log('rests :>> ', rests);
 
   }
 

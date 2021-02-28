@@ -9,7 +9,7 @@ import {DateTime} from "luxon";
 import {Helmet} from "react-helmet";
 import {useSelector} from 'react-redux';
 import Modal from '../Modal/Modal';
-import logoDefaultInput from '../../Media/Images/Others/logo.png';
+import logoDefaultInput from '../../Media/Images/Others/avatar3.png';
 
 function CreateHackathon() {
 
