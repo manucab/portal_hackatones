@@ -25,7 +25,8 @@
 
 #textHS{
     text-align: center;
-    font-size: 1.2rem;
+    font-size: calc(1em + .6vw);
+
 }
 
 #imgHS{
@@ -91,6 +92,29 @@ border: 2px solid #F6E561;
     
     /* transform: scale(0.85); */
 }
+
+@media screen and (max-width: 850px) and (orientation: landscape){
+
+    #imgHS{
+        width: 200px;
+        height: 100px;
+    }
+    #textHS{
+    font-size: calc(1em + -.1vw);
+
+    }
+    .hackathonSearchFilters > div {
+        transform: scale(0.8);
+        margin: 2px;
+    }    
+    .hackathonSearchFilters{
+        padding: 1px;
+    }
+
+}
+
+
+
 
 
   @media screen and (min-width: 568px) {
