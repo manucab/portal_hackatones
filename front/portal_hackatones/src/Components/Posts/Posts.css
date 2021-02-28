@@ -45,26 +45,23 @@
 .post-title {
     box-sizing: border-box;
     background-color: #A3A4A6;
-    font-size: 60%;
-    padding: 5px 15px 1px 15px;
+    padding: 5px 5px 5px 15px;
     display: flex;
     justify-content: center;
     width: 100%;
+    min-height: 60px; 
     
 }
 
 .post-cover {
-    height: 10px;
-    background-size: contain;
+
+    background-size: cover;
     overflow: hidden;
+    height: 200px;
     
 
 }
 
-.post-title h1 {
-
-    margin: 10px 0px 10px 0px;
-}
 
 .post-date {
     display: flex;
@@ -82,6 +79,7 @@
 .post-content p {
     padding: 0px 10px 0px 10px;
     text-align: justify;
+    height: 40px;
 }
 
 .see-more {

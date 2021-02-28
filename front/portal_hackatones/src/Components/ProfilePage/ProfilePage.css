@@ -1,5 +1,5 @@
 .profile-page-container {
-    padding-top: 40px;
+    margin-top: 70px;
 }
 
 .cancel-hack {
@@ -25,9 +25,8 @@
             "hackathonsCreated hackathonsCreated hackathonsCreated"
             "logout logout logout"
         ;
-        margin: 0;
         height: 100%;
-        padding-top: 55px;
+   
         /* background: linear-gradient(60deg,#F6E561,white,white,white, #F6E561); */
     }
 
@@ -46,16 +45,21 @@
     .organizer-stats-section{
         grid-area: organizerStats;
         background-color: #a3a4a6c7;
-        border: none;
-    
+        border: none;    
     }
 
     .hackathonsJoined {
         grid-area: hackathonsJoined;
         justify-self: center;
-        background-color: #f6e56183;
-        width: 100%;
         border: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        width: 100%;
+        position: relative;
+        background-color: #fff4a377;
         
     }
 

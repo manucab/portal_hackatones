@@ -31,13 +31,14 @@
 
     text-align: justify;
     margin: 10px 0px 10px 0px;
-    font-size: 2.5vw;
+    font-size: 15px;
+
 }
 
-.post-cover {
-    width: 300px;
-    height: 100px;
+.full-post .post-cover {
+    width: 100%;
     background-size: cover;
+    max-width: 500px;
 }
 
 .post-date {
@@ -81,10 +82,10 @@
 
 @media screen and (min-width: 768px) {
     .full-post-content p {
-        font-size: 17px;
+        font-size: 16px;
     }
 
-    .post-title h1 {
+    .full-post .post-title h1 {
         font-size: 20px;
     }
 }
