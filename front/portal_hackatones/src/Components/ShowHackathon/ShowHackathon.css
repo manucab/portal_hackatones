@@ -11,9 +11,10 @@
     display: flex;
     align-items: center;
     /* flex-wrap: nowrap; */
-    width: 80vw;
-    overflow-x: auto;
-    justify-content: center;
+    width: 90vw;
+    max-width: 900px;
+    overflow-x: scroll ;
+    justify-content: start;
   }
 
   .hackathonsCreated h1 {
