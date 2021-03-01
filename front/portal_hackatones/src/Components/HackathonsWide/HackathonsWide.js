@@ -1,7 +1,6 @@
 import { useSelector } from "react-redux";
 import { useParams } from "react-router-dom";
 import useFetch from "../../Hooks/useFetch";
-import CarouselHackathons from "../CarouselHackathons/CarouselHackathons";
 import ShowHackathon from "../ShowHackathon/ShowHackathon";
 
 function HackathonsWide(props) {
