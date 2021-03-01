@@ -1,113 +1,92 @@
+@media screen and (min-width: 768px) {
+  .hackathonsCreated {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #e2e2e2;
+  }
 
+  .hackSelection {
+    display: flex;
+    align-items: center;
+    /* flex-wrap: nowrap; */
+    width: 80vw;
+    overflow-x: auto;
+    justify-content: center;
+  }
 
-@media screen and (min-width: 768px) { 
+  .hackathonsCreated h1 {
+    flex-basis: 100%;
+  }
 
+  .hackSelection .hackathon {
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    border: 5px solid #f6e561;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    overflow: hidden;
+    width: 250px;
+    background-color: #a3a4a6f1;
+    margin: 5px 10% 25px 10%;
+    min-height: 400px;
+  }
 
-    .hackathonsCreated {
+  .hackSelection .hackathon .hackathon-info-section{
+    padding: 5px;
+  }
 
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-        background-color: #e2e2e2;
-       
-    }
+  .hackathonsJoined h1 {
+    flex-basis: 100%;
+  }
 
+  .hackathonsJoined .hackathon {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid #a3a4a6;
+    border-radius: 10px;
+    margin-bottom: 25px;
+    box-sizing: border-box;
+    overflow: hidden;
+    width: 225px;
+    background-color: #a3a4a6f1;
+    min-height: 400px;
+  }
 
-    .hackSelection {
+  .cover-picture {
+    height: 120px;
+    background-size: cover;
+    background-position: center;
+  }
 
-        display: flex;
-        align-items: center;
-        /* flex-wrap: nowrap; */
-        width: 80vw;
-        overflow-x: auto;
-        justify-content: center;
+  .timeToContainer {
+    display: flex;
+    justify-content: center;
+  }
 
-    }
+  .timeTo {
+    margin: auto;
+  }
 
-    .hackathonsCreated h1 {
-        flex-basis: 100%;
-      
-    }
+  .hackathon-info-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
-    
+  .cancel-hack {
+    margin-top: 5px;
+  }
 
-    .hackSelection .hackathon {
-        
-        flex-shrink: 0;
-        display: flex;
-        flex-direction: column;
-        border: 5px solid #F6E561;
-        border-radius: 10px;
-        margin-bottom: 10px;
-        box-sizing: border-box;
-        overflow: hidden;
-        width: 225px;
-        background-color: #a3a4a6f1;
-        margin: 5px 10% 25px 10%;
-        min-height: 375px;
-    }
-    
-
-
-
-
-    .hackathonsJoined h1 {
-        flex-basis: 100%;
-    }
-
-    .hackathonsJoined .hackathon {
-        display: flex;
-        flex-direction: column;
-        border: 2px solid #a3a4a6;
-        border-radius: 10px;
-        margin-bottom: 25px;
-        box-sizing: border-box;
-        overflow: hidden;
-        width: 225px;
-        background-color: #a3a4a6f1;
-    }
-
-    .cover-picture {
-        height: 120px;
-        background-size: cover;
-        background-position: center;
-    }
-
-    .timeToContainer {
-        display: flex;
-        justify-content: center;
-    }
-
-    .timeTo {
-        margin: auto;
-    }
-
-    
-
-    .hackathon-info-section {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .cancel-hack {
-        margin-top: 5px;
-    }
-
-    .hackSelection::-webkit-scrollbar{
-
-        background-color: #F6E561;
-        border-radius: 25px;
-
-    }
-    .hackSelection::-webkit-scrollbar-thumb{
-
-        background-color: #a3a4a6;
-        border-radius: 25px;
-    }
-
-
-
-
+  .hackSelection::-webkit-scrollbar {
+    background-color: #f6e561;
+    border-radius: 25px;
+  }
+  .hackSelection::-webkit-scrollbar-thumb {
+    background-color: #a3a4a6;
+    border-radius: 25px;
+  }
 }

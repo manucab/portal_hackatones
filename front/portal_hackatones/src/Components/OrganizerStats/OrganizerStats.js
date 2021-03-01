@@ -11,7 +11,7 @@ function showOrganizerStats(data) {
         <div>Creados</div>
       </div>
       <div className="stats">
-        <div className="stat">{data[4][2][0].avg_participants}</div>
+        <div className="stat">{data[4][2][0].avg_participants || "-" }</div>
         <div>Media Asistentes</div>
       </div>
       <div className="stats">

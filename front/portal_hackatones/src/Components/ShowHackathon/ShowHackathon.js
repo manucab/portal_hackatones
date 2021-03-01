@@ -12,7 +12,7 @@ function ShowHackathon({ hackathon: h, organizer, index }) {
   const [cancelBooking, setCancelBooking] = useState(false);
   const login = useSelector((s) => s.login);
   const history = useHistory();
-
+  console.log(h)
   const url =
     `http://localhost:3001/static/` + h.cover_picture || "default.png";
   const startYear = h.start_date.split("-")[0];
@@ -138,7 +138,7 @@ function ShowHackathon({ hackathon: h, organizer, index }) {
       <div className="hackathon-results">
         {isRanked && <div className="ranking">{h.ranking}º </div>}
         <div className="rate">
-          {isRated && !organizer ? (
+          {isRated && index === 1 ? (
             <div className="rate-box"> {h.rate} ⭐</div>
           ) : (
             ableToRate && (
@@ -169,9 +169,9 @@ function ShowHackathon({ hackathon: h, organizer, index }) {
           </div>
         ) : null}
 
-        {h.hackathon_status === "realizado" && organizer ? (
+        {h.hackathon_status === "realizado" && organizer && index === 2? (
           <div className="avg-rate">
-            <div>{h.avg_rate || "-"}</div>
+            <div>{h.avg_rate || "-"} <br></br>⭐</div>
             <div>Valoración</div>
           </div>
         ) : organizer && index === 2 ? (

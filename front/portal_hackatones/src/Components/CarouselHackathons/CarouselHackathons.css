@@ -223,3 +223,13 @@
     text-align: center;
 
 }
+
+@media screen and (min-width: 768px) {
+
+    .rate .rate-box {
+
+        border: solid 1px #F6E561;
+    
+    }
+
+}

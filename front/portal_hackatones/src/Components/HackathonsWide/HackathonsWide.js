@@ -9,9 +9,8 @@ function HackathonsWide(props) {
   const { id } = useParams();
   const data = useFetch(`http://localhost:3001/user/${id}`);
   if (!data) return "Loading...";
-  console.log(data)
-  const hackathonsJoined = data[props.index];
-  console.log(hackathonsJoined)
+  console.log(data[2])
+  const hackathons = data[props.index];
   const organizer = login.user.rol === "organizer";
 
   if (props.index === 1) {
@@ -19,8 +18,8 @@ function HackathonsWide(props) {
       <div className="hackathonsJoined">
         <h1>Participaciones en hackathones</h1>
 
-        {hackathonsJoined.length !== 0 ? (
-          hackathonsJoined.map((h) => (
+        {hackathons.length !== 0 ? (
+          hackathons.map((h) => (
             <ShowHackathon hackathon={h} organizer={organizer} index={props.index}/>
           ))
         ) : (
@@ -35,8 +34,8 @@ function HackathonsWide(props) {
         {organizer ? <h1>Hackathones Creados</h1> : null}
 
         <div className="hackSelection">
-          {hackathonsJoined.length !== 0 ? (
-            hackathonsJoined.map((h) => (
+          {hackathons.length !== 0 ? (
+            hackathons.map((h) => (
               <ShowHackathon hackathon={h} organizer={organizer} index={props.index} />
             ))
           ) : organizer ? (
