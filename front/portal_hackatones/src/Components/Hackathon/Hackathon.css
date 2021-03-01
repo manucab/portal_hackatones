@@ -1,6 +1,13 @@
 .hackathonId{
     width: 100%;
-    margin: 0px;
-    padding-top: 60px;
-    padding-bottom: 60px;
+    min-height: 100vh;
+    max-width: 1024px;
+    margin: 0px auto 0px auto;
+    padding-top: 55px;
+    padding-bottom: 55px;
+    font-size: calc(1em);
+    background-color: rgb(252, 252, 252);
+    box-sizing: border-box;
+display: flex;
+flex-direction: column;
 }

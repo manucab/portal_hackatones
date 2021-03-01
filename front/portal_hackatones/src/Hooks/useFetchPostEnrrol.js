@@ -12,10 +12,10 @@ function useFetchPostEnrrol(params, registerOk, url, login) {
 
     useEffect(() => {
 
+
         const headers = {
             'Content-Type': 'application/json',
-      Authorization: login.token,
-
+      Authorization: (login) ? login.token : ''
         }
 
         registerOk === 1 && fetch(url, {

@@ -44,13 +44,16 @@ flex-wrap: wrap;
     position: relative;
     background-color: #c0c0c0;
 border: 2px solid #F6E561;
-    box-sizing: border-box;
+    box-sizing: content-box;
+    font-size: calc(.7em);
+
 }
 
 
 .hackathonSearchFilters > div {
-    margin: 5px ;
     min-width: 130px;
+    box-sizing: content-box;
+
 }
 
 

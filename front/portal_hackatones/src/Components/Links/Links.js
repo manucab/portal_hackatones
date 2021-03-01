@@ -1,5 +1,6 @@
 import {useEffect, useState} from "react";
 import useFetch from "../../Hooks/useFetch";
+import './Links.css';
 
 function Links({h}) {
 
