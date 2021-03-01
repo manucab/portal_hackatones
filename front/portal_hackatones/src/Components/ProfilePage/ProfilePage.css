@@ -31,27 +31,29 @@
         margin-right: auto;
     }
 
-    .profile {
+    .profile-page-container .profile {
         grid-area: profile;
         border: none;
+        padding-bottom: 10px;
        
     }
 
-    .user-stats {
+    .profile-page-container .user-stats {
         grid-area: userStats;
         background-color: #a3a4a6c7;
-        border: none;
+        border-top: none;
        
     }
 
 
-    .organizer-stats-section{
+    .profile-page-container .organizer-stats-section{
         grid-area: organizerStats;
         background-color: #a3a4a6c7;
-        border: none;    
+        border: none;
+        box-sizing: border-box;    
     }
 
-    .hackathonsJoined {
+    .profile-page-container .hackathonsJoined {
         grid-area: hackathonsJoined;
         justify-self: center;
         border: none;
@@ -63,10 +65,11 @@
         width: 100%;
         position: relative;
         background-color: #fff4a377;
+        border: none;
         
     }
 
-    .hackathonsCreated {
+    .profile-page-container .hackathonsCreated {
         grid-area: hackathonsCreated;
         justify-self: center;
         width: 100%;
@@ -78,11 +81,11 @@
         justify-content: space-evenly;
     }
 
-    .stats {
+    .profile-page-container .stats {
         height: 150px;
         width: 150px;
     }
-    .stat{
+    .profile-page-container .stat{
         height: 75px;
         width: 75px;
         background-color: none;
