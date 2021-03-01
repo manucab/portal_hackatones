@@ -12,18 +12,28 @@
 
 .hackathonInfo{
     padding: 20px;
+    flex-grow: 1;
+    border-bottom: 1px solid black;
+}
+
+.hackathonInfo > h4{
+    text-align: center;
 }
 
 .hackathonAside{
     text-align: left;
     padding: 15px;
-   min-width: 280px;
+    /* min-width: 280px; */
+    min-width: 25%;
+    font-size: calc(1em - 0.2vw);
+
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     background-color: #f8f7f7;
-    border-left: 2px solid #eed1ab;
+    /* border-left: 2px solid #eed1ab; */
+    /* flex-shrink: 1; */
 }
 
 .noCommentP{
@@ -33,6 +43,17 @@
 
 .description-p{
     text-align: left;
+    flex-grow: 1;
+    font-size: calc(1em - 0.2vw);
+    margin-bottom: 40px;
+
+}
+
+.enrollDiv{
+    background-color: #426951;
+    padding:4px;
+    border-radius: 5px;
+    color: whitesmoke;
 }
 
 .organizerAsideData{
@@ -62,7 +83,11 @@ margin-bottom: 10px;
 
 
 
-@media screen and (max-width: 370px) {
+@media screen and (max-width: 890px) {
 
+    .hackathonAside{
+        min-width: 30%;
+
+    }
     
 }

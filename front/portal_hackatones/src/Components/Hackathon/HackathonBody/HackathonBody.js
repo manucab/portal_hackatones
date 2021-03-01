@@ -1,10 +1,22 @@
+import Comments from '../../Comments/Commets';
 import Links from '../../Links/Links';
 import './HackathonBody.css';
 
 function HackathonBody({h}) {
 
-    const {organizer, hackathon_info, commnet, cover_picture} = h;
+    console.log('h :>> ', h);
+
+    const {organizer, hackathon_info, comment, cover_picture} = h;
     const orgz = organizer[0].organizer;
+
+    const commentUser = comment[0].comment;
+    const userCommet = comment[0].user.name;
+
+
+    console.log('comment :>> ', comment);
+    console.log('commentUser :>> ', commentUser);
+console.log('userCommet :>> ', userCommet);
+
 
     let url = `http://localhost:3001/static` + cover_picture || 'default.png' || '';
 
@@ -15,9 +27,16 @@ function HackathonBody({h}) {
                 <h2>Decripcion del evento</h2>
                 <p className="description-p">
                     {hackathon_info} </p>
-
+                    <h4>Comentarios</h4>
                 {
-                (commnet) ? <p>Comentarios</p> : <p className="noCommentP">Este hackathon no tiene comentarios</p>
+                (comment) ? 
+
+                comment.map(com => 
+                    <Comments comment={com} />
+                )
+                : 
+                <p className="noCommentP">Este hackathon no tiene comentarios</p>
+            
             } </div>
             <div className="hackathonAside">
                 <h4>Organizado por</h4>

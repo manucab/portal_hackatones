@@ -1,0 +1,36 @@
+.comments{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: stretch;
+    margin: 10px 0px 10px 0px;
+    font-size: calc(1em - 0.2vw);
+
+}
+
+.legend{
+text-align: left;
+border-radius: 5px;
+margin:0px;
+padding-left: 0px 0px 0px 2px;
+border-color: #dfda94;
+}
+
+.userComment > img{
+    height: 25px;
+    width: 25px;
+    border-radius: 100%;
+    margin-right: 5px;
+border: 1px solid black;    
+    vertical-align: middle;
+}
+
+.userComment > span{
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.comment{
+flex-grow: 1;
+height: 200%;
+}
