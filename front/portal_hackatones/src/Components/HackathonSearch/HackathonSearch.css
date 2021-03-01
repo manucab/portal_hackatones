@@ -1,8 +1,9 @@
 .hackathonSearch{
-    margin-top: 55px;
+    padding-top: 55px;
     padding-bottom: 50px;
     background-color: whitesmoke;
     min-width: 320px;
+    box-sizing: border-box;
 }
 
 .hackathonSearchHeader{
