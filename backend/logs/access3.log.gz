@@ -5566,3 +5566,59 @@
 2021-02-28 -- 21:49:02:492 -- warn: 404 Router not found
 2021-02-28 -- 21:49:02:492 -- http: GET -- /static//hackathons/247cc4d6-cdd9-458b-94a0-955bbb89660c/1e057b57d2_edit_logo.png -- b04e0405-987f-407c-98fd-9a2a8fb9017a -- 404 -- 30 - 3.037 ms
 2021-02-28 -- 21:49:02:492 -- http: GET -- /user/2 -- 2480e08b-ce0a-42c7-aac4-62d30b5cde74 -- 304 -- - - 14.176 ms
+2021-03-01 -- 10:52:28:5228 -- info: listening on port 3001
+2021-03-01 -- 10:56:46:5646 -- http: GET -- /user/2 -- 860d57ea-38ee-453b-898b-71c63419fe11 -- 304 -- - - 154.010 ms
+2021-03-01 -- 10:56:46:5646 -- http: GET -- /static/users/86ac5c44-ab2c-48fe-9a6e-c112ede8af9a/e6e009d605_codeLogo.svg -- 8ec42851-f258-493b-9995-459c864b1db7 -- 304 -- - - 3.512 ms
+2021-03-01 -- 10:59:04:594 -- http: GET -- /user/2 -- 5dfd2a61-4ee6-4a95-98a3-ce74971f62da -- 304 -- - - 9.675 ms
+2021-03-01 -- 10:59:04:594 -- http: GET -- /user/2 -- 45b6cf03-bd01-4f12-aed6-54f96c66708f -- 304 -- - - 11.295 ms
+2021-03-01 -- 10:59:04:594 -- http: GET -- /user/2 -- 4880385c-cfcf-413a-8128-898a48c50e09 -- 304 -- - - 9.743 ms
+2021-03-01 -- 10:59:04:594 -- http: GET -- /user/2 -- 7415bfed-85e2-452d-83ee-682e40bfb834 -- 304 -- - - 8.046 ms
+2021-03-01 -- 10:59:04:594 -- http: GET -- /user/2 -- ee5c10dc-2cde-475b-8619-26933f1acee6 -- 304 -- - - 9.622 ms
+2021-03-01 -- 10:59:04:594 -- http: GET -- /user/2 -- cf1f5efd-6bcf-4550-a00c-8a54563b49e2 -- 304 -- - - 7.399 ms
+2021-03-01 -- 10:59:04:594 -- warn: 404 Router not found
+2021-03-01 -- 10:59:04:594 -- http: GET -- /static//hackathons/247cc4d6-cdd9-458b-94a0-955bbb89660c/1e057b57d2_edit_logo.png -- feeb3158-68fc-4f96-abb1-2a455137325b -- 404 -- 30 - 3.038 ms
+2021-03-01 -- 10:59:04:594 -- http: GET -- /static//hackathons/f3019b70-685a-4c7d-8adb-f108fed0cf73/2ac0aaf7c0_hack10.jpeg -- 474e9cdc-14ff-4603-8cf1-46ce756c0b9d -- 304 -- - - 1.280 ms
+2021-03-01 -- 10:59:04:594 -- http: GET -- /static//hackathons/d4cf164f-67cc-4b8d-9632-e5bd043c9146/4dec588ddb_codeLogo.svg -- 1a2af0ff-4eb9-4d98-b893-b89b6388e336 -- 304 -- - - 2.236 ms
+2021-03-01 -- 10:59:04:594 -- http: GET -- /static//hackathons/d45f59bb-d111-473e-9b66-e78c1ea75a10/46cbfd7549_codeLogo.svg -- eaa7f2e9-4b27-4afa-9c72-b3fb5fd17f9a -- 304 -- - - 0.753 ms
+2021-03-01 -- 10:59:04:594 -- http: GET -- /static//hackathons/4c50e37e-8bc9-4bfb-ad5d-68eda25943f1/a040a3336e_pexels-soloman-soh-1492232.jpg -- 211b18bc-c9bc-43b4-8414-5e5f7446befb -- 200 -- 3167680 - 32.044 ms
+2021-03-01 -- 10:59:05:595 -- http: GET -- /static//hackathons/e8d1cc59-1adf-4d19-b0cb-d2f51541174a/987f289272_pexels-daria-shevtsova-1560932.jpg -- 150156bc-98c8-47f4-937d-7c90c763ea99 -- 200 -- 3271306 - 46.824 ms
+2021-03-01 -- 11:01:08:18 -- info: listening on port 3001
+2021-03-01 -- 11:01:17:117 -- http: GET -- /user/2 -- 4157751e-0441-455f-8dc5-8c59a599fceb -- 200 -- 3025 - 27.975 ms
+2021-03-01 -- 11:01:17:117 -- http: GET -- /static/users/86ac5c44-ab2c-48fe-9a6e-c112ede8af9a/e6e009d605_codeLogo.svg -- f35683ed-62ae-4ee5-8547-1f80d066333b -- 304 -- - - 3.175 ms
+2021-03-01 -- 11:01:17:117 -- http: GET -- /user/2 -- ef3034e8-2ba2-4a64-9a3c-c9b496489e63 -- 304 -- - - 17.303 ms
+2021-03-01 -- 11:01:17:117 -- http: GET -- /user/2 -- 26f947fd-10cd-4e15-999f-f65d565a3391 -- 304 -- - - 12.784 ms
+2021-03-01 -- 11:01:17:117 -- http: GET -- /user/2 -- 06da498e-52eb-4fa2-a5a2-32b6b6b52810 -- 304 -- - - 10.974 ms
+2021-03-01 -- 11:01:18:118 -- http: GET -- /user/2 -- 22939d64-c031-4159-ba9b-b72600bc15c2 -- 304 -- - - 11.287 ms
+2021-03-01 -- 11:01:18:118 -- http: GET -- /user/2 -- 1fac4d49-8768-44db-8438-4f0e95d0ac01 -- 304 -- - - 10.787 ms
+2021-03-01 -- 11:01:18:118 -- http: GET -- /user/2 -- 8219d69f-878e-4598-a9c8-a0702e92cb70 -- 304 -- - - 8.454 ms
+2021-03-01 -- 11:01:18:118 -- warn: 404 Router not found
+2021-03-01 -- 11:01:18:118 -- http: GET -- /static//hackathons/247cc4d6-cdd9-458b-94a0-955bbb89660c/1e057b57d2_edit_logo.png -- 6cf31f0d-0118-4325-a3a0-5b187cf866c2 -- 404 -- 30 - 3.028 ms
+2021-03-01 -- 11:01:18:118 -- http: GET -- /static//hackathons/f3019b70-685a-4c7d-8adb-f108fed0cf73/2ac0aaf7c0_hack10.jpeg -- 7cb930a4-df19-4a5b-b785-337cde3c7d1b -- 304 -- - - 1.638 ms
+2021-03-01 -- 11:01:18:118 -- http: GET -- /static//hackathons/e8d1cc59-1adf-4d19-b0cb-d2f51541174a/987f289272_pexels-daria-shevtsova-1560932.jpg -- 0e58830c-690c-4881-bef3-a5233de3b761 -- 304 -- - - 1.429 ms
+2021-03-01 -- 11:01:18:118 -- http: GET -- /static//hackathons/d4cf164f-67cc-4b8d-9632-e5bd043c9146/4dec588ddb_codeLogo.svg -- 866462b4-e162-4cd8-a7c9-d6e46aaf73dd -- 304 -- - - 2.343 ms
+2021-03-01 -- 11:01:18:118 -- http: GET -- /static//hackathons/4c50e37e-8bc9-4bfb-ad5d-68eda25943f1/a040a3336e_pexels-soloman-soh-1492232.jpg -- 77b7ec5d-2c2a-43e9-9232-87b2c9ba1b19 -- 304 -- - - 0.922 ms
+2021-03-01 -- 11:01:18:118 -- http: GET -- /static//hackathons/d45f59bb-d111-473e-9b66-e78c1ea75a10/46cbfd7549_codeLogo.svg -- b189442d-c374-4b06-8e8d-6487e7028f56 -- 304 -- - - 1.913 ms
+2021-03-01 -- 11:06:43:643 -- info: listening on port 3001
+2021-03-01 -- 11:06:53:653 -- info: Init transaction query
+2021-03-01 -- 11:06:53:653 -- error: Table 'portal_hack2.comment' doesn't exist
+2021-03-01 -- 11:06:53:653 -- error: start transaction
+2021-03-01 -- 11:06:53:653 -- error: Table 'portal_hack2.comment' doesn't exist
+2021-03-01 -- 11:06:53:653 -- http: GET -- /hackathon/search?start_date=2021-03-01 -- a47c2522-2a8a-4f8d-9ca7-d94080623ba2 -- 500 -- 53 - 57.998 ms
+2021-03-01 -- 11:07:22:722 -- info: Init transaction query
+2021-03-01 -- 11:07:22:722 -- info: Commit
+2021-03-01 -- 11:07:22:722 -- http: GET -- /hackathon/search?start_date=2021-03-01 -- fb3413b6-62c4-4c38-8ae9-f71cb0386b1f -- 200 -- 26 - 19.402 ms
+2021-03-01 -- 11:07:22:722 -- info: Init transaction query
+2021-03-01 -- 11:07:22:722 -- info: commit
+2021-03-01 -- 11:07:22:722 -- http: GET -- /info/listTech -- 57d2710b-c442-4848-86e4-2c1dd8398036 -- 200 -- 2 - 5.923 ms
+2021-03-01 -- 11:07:22:722 -- info: Init transaction query
+2021-03-01 -- 11:07:22:722 -- info: commit
+2021-03-01 -- 11:07:22:722 -- http: GET -- /info/listCities -- 27aa7726-74d3-4c13-a584-adcb61d75024 -- 200 -- 2 - 4.795 ms
+2021-03-01 -- 11:07:22:722 -- info: Init transaction query
+2021-03-01 -- 11:07:22:722 -- info: commit
+2021-03-01 -- 11:07:22:722 -- http: GET -- /info/listThematics -- 2025d133-6b61-48da-b4bd-d5e4d3819a14 -- 200 -- 2 - 6.914 ms
+2021-03-01 -- 11:07:26:726 -- http: GET -- /blog -- f143ef1f-afbd-4775-b1f4-b77a32fa9ed0 -- 200 -- 2 - 3.860 ms
+2021-03-01 -- 11:09:57:957 -- debug: The user not exist in db, he can register now
+2021-03-01 -- 11:09:57:957 -- info: Init transaction query
+2021-03-01 -- 11:09:58:958 -- info: Commit
+2021-03-01 -- 11:09:58:958 -- debug: Register new user sucessfull
+2021-03-01 -- 11:09:58:958 -- http: POST -- /register -- 8592f065-af1f-47ea-9d11-6a1f415bc415 -- 200 -- 30 - 1213.083 ms

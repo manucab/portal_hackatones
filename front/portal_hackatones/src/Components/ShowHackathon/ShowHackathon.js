@@ -22,7 +22,7 @@ function ShowHackathon({ hackathon: h, organizer, index }) {
     `${startYear}-${startMonth}-${startDay}`
   );
   const daysTo =
-    parseInt(startDateFormated.diffNow("days").toObject().days) + 1;
+    parseInt(startDateFormated.diffNow("days").toObject().days) ;
   const hasEnded = h.hackathon_status === "realizado";
   const isRated = hasEnded && h.rate !== null;
   const ableToRate = hasEnded && !isRated;
@@ -103,7 +103,7 @@ function ShowHackathon({ hackathon: h, organizer, index }) {
       <div className="timeToContainer">
         {!hasEnded && (
           <div className="timeTo">
-            {daysTo > 1 ? `Quedan ${daysTo} días!!!` : daysTo > 0? `Es el gran día!!!` : null}
+            {daysTo >= 1 ? `Quedan ${daysTo} días!!!` :  `Queda 1 día!!!`}
           </div>
         )}
       </div>

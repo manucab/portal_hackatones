@@ -1143,3 +1143,6 @@
 2021-02-27 -- 18:18:22:1822 -- error: Duplicate entry 'https://www.youtube.com/watch?v=sapsxrjyccy&ab_channel=ecyvalon' for key 'link.url'
 2021-02-28 -- 19:25:33:2533 -- error: Lock wait timeout exceeded; try restarting transaction
 2021-02-28 -- 19:25:33:2533 -- error:  Error in create new a hackathon: Lock wait timeout exceeded; try restarting transaction 
+2021-03-01 -- 11:06:53:653 -- error: Table 'portal_hack2.comment' doesn't exist
+2021-03-01 -- 11:06:53:653 -- error: start transaction
+2021-03-01 -- 11:06:53:653 -- error: Table 'portal_hack2.comment' doesn't exist

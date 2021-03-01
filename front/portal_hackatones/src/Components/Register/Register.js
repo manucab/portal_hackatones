@@ -86,7 +86,7 @@ function Register() {
             title="¡Bienvenido a Hackathons Plays!"
             show={showModal}
             onClose={() => history.push("/")}
-            children={`Te has tegistrado satisfactoriamente, revisa la bandeja de entrada y activa tu cuenta en el enlace que te hemos enviado a ${email}`}
+            children={`Te has registrado satisfactoriamente, revisa la bandeja de entrada y activa tu cuenta en el enlace que te hemos enviado a ${email}`}
           ></Modal>
         )}
 
