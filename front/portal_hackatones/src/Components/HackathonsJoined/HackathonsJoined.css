@@ -1,13 +1,11 @@
- .hackathonsJoined {
+.hackathonsJoined {
+  border-top: 5px solid #a3a4a6;
+  border-bottom: 5px solid #a3a4a6;
+  background-color: #c5c6c9;
+}
 
-   border-top: 5px solid #a3a4a6;
-   border-bottom: 5px solid #a3a4a6;
-
- }
-
- .hackathonsCreated {
-
-   border-top: 5px solid #a3a4a6;
-   border-bottom: 5px solid #a3a4a6;
-
- }
+.hackathonsCreated {
+  border-top: 5px solid #a3a4a6;
+  border-bottom: 5px solid #a3a4a6;
+  background-color: #c5c6c9;
+}
