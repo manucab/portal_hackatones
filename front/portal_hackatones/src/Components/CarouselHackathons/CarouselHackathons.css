@@ -59,6 +59,7 @@
 
 }
 
+
 .ranking{
 
     height: 40px;
@@ -166,6 +167,8 @@
     border-radius: 25px;
     color: white;
     font-weight: bold;
+    margin: auto;
+    margin-right: 5px;
 
 }
 
@@ -235,6 +238,7 @@
     font-weight: bold;
     color: white;
     text-align: center;
+    margin: auto;
 
 }
 
