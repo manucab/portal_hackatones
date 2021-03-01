@@ -1,8 +1,8 @@
 .hackathonBody{
     display: flex;
-    font-size: calc(1em + .1vw);
-
-
+    justify-content: space-between;
+    font-size: calc(1em);
+    flex-grow: 1;
 }
 
 .hackathonBody span{
@@ -11,14 +11,58 @@
 
 
 .hackathonInfo{
-    flex-grow: 2;
     padding: 20px;
 }
 
 .hackathonAside{
-    flex-shrink: 1;
-    min-width: 300px;
     text-align: left;
-    padding: 20px;
+    padding: 15px;
+   min-width: 280px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-color: #f8f7f7;
+    border-left: 2px solid #eed1ab;
+}
 
+.noCommentP{
+    font-size: calc(.8em);
+
+}
+
+.description-p{
+    text-align: left;
+}
+
+.organizerAsideData{
+background-color: rgb(238, 238, 238);
+border-radius: 5px;
+padding: 5px;
+margin-bottom: 10px;
+}
+
+.organizerAsideData > p,  .organizerAsideData > image {
+    display: inline;
+}
+
+.organizerAsideData > p{
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.organizerAsideData > img{
+    vertical-align: middle;
+}
+
+
+.linksHack{
+    background-color: rgb(136, 20, 20);
+}
+
+
+
+@media screen and (max-width: 370px) {
+
+    
 }
