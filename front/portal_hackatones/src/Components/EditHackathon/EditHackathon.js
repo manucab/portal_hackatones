@@ -250,7 +250,6 @@ function EditHackathon() {
               name="city"
               value={city}
               onChange={(e) => setCity(e.target.value)}
-              required
             />
           </label>
         </fieldset>

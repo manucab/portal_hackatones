@@ -8,9 +8,10 @@ function HackathonsWide(props) {
   const login = useSelector((s) => s.login);
   const { id } = useParams();
   const data = useFetch(`http://localhost:3001/user/${id}`);
-
   if (!data) return "Loading...";
+  console.log(data)
   const hackathonsJoined = data[props.index];
+  console.log(hackathonsJoined)
   const organizer = login.user.rol === "organizer";
 
   if (props.index === 1) {
