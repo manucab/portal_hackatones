@@ -89,15 +89,6 @@ const requestFormat = ':method -- :url -- :id -- :status -- :res[content-length]
 
 const requests = morgan(requestFormat, { stream: { write: (message) => { logger.http(stripFinalNewLine(message)) } } });
 
-// TODO -- check this function
-// logger.header = (req) => {
-
-//     console.log('req', req.ip);
-
-//     const date = new Date().toISOString();
-//     return `${req.ip} -- ${date} -- ${req.id} -- ${req.method} -- ${req.originalUrl}`;
-// }
-
 // New trasnport to mode dev or not production
 if (process.env.NODE_ENV !== 'production') {
     logger.add(new winston.transports.Console({

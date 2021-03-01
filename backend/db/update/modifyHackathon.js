@@ -49,8 +49,6 @@ const modifyHackathon = async (
     const dt = await performQuery(deleteTechQuery, paramsDeleteQuery);
     const dl = await performQuery(deleteLinkQuery, paramsDeleteQuery);
 
-    console.log(dt, dl);
-
     logger.info("Prepare techs and links");
 
     //Update hackathon_tech and hackathon_link
@@ -112,7 +110,6 @@ const modifyHackathon = async (
     return "The hackathon has been succesfully modified";
   } catch (e) {
     
-    console.log(e);
     logger.error(e.message);
     throw e.message;
   }

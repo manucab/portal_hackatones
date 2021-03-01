@@ -6,7 +6,6 @@ const deleteHackathon = async (req, res) => {
 
   try {
     const check = await getHackathonId(idHackathon);
-    console.log(check)
     const checked = check.length === 1;
 
     if (!checked) {

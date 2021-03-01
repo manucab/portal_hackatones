@@ -5,7 +5,6 @@ import UserStats from "../UserStats/UserStats";
 import HackathonsJoined from "../HackathonsJoined/HackathonsJoined";
 import OrganizerStats from "../OrganizerStats/OrganizerStats";
 import HackathonsCreated from "../HackathonsCreated/HackathonsCreated";
-import Logout from "../Logout/Logout";
 import HackathonsWide from "../HackathonsWide/HackathonsWide";
 
 

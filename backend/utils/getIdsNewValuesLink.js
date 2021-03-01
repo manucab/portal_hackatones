@@ -2,7 +2,6 @@ const {performQuery} = require("../db/performQuery")
 
 const getIdsNewValuesLink = async (values) => {
     //Get the current list of values
-    console.log(values)
     const originalArrayQuery = `select url from link`
     const originalArrayResult = await performQuery(originalArrayQuery)
 
@@ -14,7 +13,6 @@ const getIdsNewValuesLink = async (values) => {
         //Check if the value is in the current list
         let {link,webName} = v
         link = link.trim()
-        console.log('trim1')
         web_name = webName.trim().toLowerCase()
 
         const exists = originalArray.indexOf(link) !== -1
@@ -25,7 +23,6 @@ const getIdsNewValuesLink = async (values) => {
             const params = [link]
             const idResult = await performQuery(idQuery,params)
             const id = idResult[0].id
-            console.log('id exists',id)
             return id
         } else {
             //If not we insert the new value 
@@ -34,7 +31,6 @@ const getIdsNewValuesLink = async (values) => {
             const insertQueryParams = [web_name,link]
             const idResult = await performQuery(insertQuery,insertQueryParams)
             const id = idResult.insertId
-            console.log('id noexists',id)
             return id
         }
 

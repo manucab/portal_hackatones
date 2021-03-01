@@ -15,8 +15,6 @@ const modifyHackathon = async (req, res) => {
       return;
     }
 
-    console.log(thematic)
-
     await hackathonValidator.validateAsync(req.body);
     result = await dbModifyHackathon(
       idUser,
@@ -33,10 +31,8 @@ const modifyHackathon = async (req, res) => {
       cover_picture,
       thematic
     );
-    console.log(result)
     res.send(result);
   } catch (e) {
-    console.log(e.message)
     res.status('304').send(e.message);
     return;
   }

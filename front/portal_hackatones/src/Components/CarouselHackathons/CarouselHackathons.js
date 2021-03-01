@@ -20,12 +20,14 @@ function CarouselHackathons({ hackathons, organizer, index }) {
       <img
         id="previous"
         src={arrow}
+        alt="logo"
         className={isFirst ? "off" : "on"}
         onClick={handlePrevious}
       />
       <ShowHackathon hackathon={hackathons[indexCar]} organizer={organizer} index={index}/>
       <img
         id="next"
+        alt="logo"
         src={arrow}
         className={isLast ? "off" : "on"}
         onClick={handleNext}

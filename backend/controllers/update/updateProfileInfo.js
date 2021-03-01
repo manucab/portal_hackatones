@@ -46,7 +46,6 @@ const updateProfileInfo = async (req, res) => {
       // 4. Check password with bcrypt
      
       const passwordIsvalid = await bcrypt.compare(currentPassword,passwordDB);
-      console.log(passwordIsvalid)
 
       if (!passwordIsvalid) {
         res.status(401).send("Incorrect current password");
@@ -69,7 +68,6 @@ const updateProfileInfo = async (req, res) => {
    
   } catch (e) {
     res.send(e.message);
-    console.log(e.message)
     return;
   }
  

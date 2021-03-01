@@ -17,17 +17,12 @@ const getListThematics = async (req, res) => {
 
         let listThematics = await getListThematicsDB();
 
-      //  console.log('listThematics', listThematics);
-
         if (!listThematics) listThematics = [];        
-
 
         // Commit mysql
         query = 'commit';
         await performQuery(query, params);
         logger.info(query);
-
-   
 
         //logger.debug(listThematics);
         res.json(listThematics);

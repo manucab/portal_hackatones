@@ -1,0 +1,104 @@
+@media screen and (min-width: 768px) {
+
+.hackathon{
+  font-size: calc(1em - .2vw);
+transform: scale(.8);
+}
+
+  .hackathonsCreated {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #e2e2e2;
+  }
+
+  .hackSelection {
+    display: flex;
+    align-items: center;
+    /* flex-wrap: nowrap; */
+    width: 90vw;
+    max-width: 900px;
+    overflow-x: scroll ;
+    justify-content: start;
+  }
+
+  .hackathonsCreated h1 {
+    flex-basis: 100%;
+  }
+
+  .hackSelection .hackathon {
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    border: 5px solid #f6e561;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    overflow: hidden;
+    width: 250px;
+    background-color: #a3a4a6f1;
+    margin: 5px 10% 25px 10%;
+    min-height: 400px;
+  }
+
+  .hackSelection .hackathon .hackathon-info-section{
+    padding: 5px;
+  }
+
+  .hackathonsJoined h1 {
+    flex-basis: 100%;
+  }
+
+  .hackathonsJoined .hackathon {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid #a3a4a6;
+    border-radius: 10px;
+    margin-bottom: 25px;
+    box-sizing: border-box;
+    overflow: hidden;
+    width: 225px;
+    background-color: #a3a4a6f1;
+    min-height: 400px;
+  }
+
+  .cover-picture {
+    height: 150px;
+    background-size: cover;
+    background-position: center;
+    border-bottom: 1px solid black;
+  }
+
+  .timeToContainer {
+    display: flex;
+    justify-content: center;
+  }
+
+  .timeTo {
+    margin: auto;
+    border-radius: 10px;
+  }
+
+  .hackathon-info-section {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: left;
+    padding:20px;
+    text-align: left;
+  }
+
+  .cancel-hack {
+    margin-top: 5px;
+  }
+
+  .hackSelection::-webkit-scrollbar {
+    background-color: #f6e561;
+    border-radius: 25px;
+  }
+  .hackSelection::-webkit-scrollbar-thumb {
+    background-color: #a3a4a6;
+    border-radius: 25px;
+  }
+}

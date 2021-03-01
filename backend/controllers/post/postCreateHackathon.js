@@ -26,11 +26,6 @@ const createHackathon = async(req, res) => {
     let query = '';
     let params = [];
 
-    console.log('thematic2 :>> ', thematic);
-    console.log('tech :>> ', tech);
-    console.log('links :>> ', links);
-
-
     try {
         // 2. Check if the parameters are valid
           await fieldsHackathons.validateAsync({ hackathon_name, hackathon_place, city, start_date, end_date, hackathon_status, hackathon_info, cover_picture, tech, thematic, links });
@@ -88,8 +83,6 @@ const createHackathon = async(req, res) => {
 
         //Delete dir of media files
        await fs.rmdirSync(nameDirHackathon, { recursive: true });
-        
-        console.log(e)
 
         let msgError = ` Error in create new a hackathon: ${e.message} `;
         logger.error( msgError);

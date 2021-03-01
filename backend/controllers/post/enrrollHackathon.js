@@ -40,9 +40,6 @@ const enrollHackathon = async (req, res) => {
     // Generate code for url validation
     const id_booking = cryptoRandomString({ length: parseInt(process.env.BOOKING_CODE_LEN), type: 'alphanumeric' });
 
-
-console.log(id_competitor, id_hackathon, inscription_status, id_booking);
-
     // 3. insert into db new participation hackathon
 await insertNewParticipation(id_competitor, id_hackathon, inscription_status, id_booking);
 

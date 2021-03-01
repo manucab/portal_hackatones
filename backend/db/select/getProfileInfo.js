@@ -51,7 +51,6 @@ const getProfileInfo = async (id) => {
     
     const profile = await performQuery(queryProfile, params);
     const hackathonsParticipations = await performQuery(queryHackathonsParticipations, params);
-    console.log(hackathonsParticipations)
     const hackathonsCreated = await performQuery(queryHackathonsCreated,params)
     const stats = await performQuery(queryStats, params);
     const organizerStats = [ await performQuery(queryCreated,params),
