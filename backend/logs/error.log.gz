@@ -1161,3 +1161,9 @@
 2021-03-01 -- 16:59:56:5956 -- error: Lock wait timeout exceeded; try restarting transaction
 2021-03-01 -- 16:59:56:5956 -- error: Lock wait timeout exceeded; try restarting transaction
 2021-03-01 -- 19:32:19:3219 -- error: Deadlock found when trying to get lock; try restarting transaction
+2021-03-01 -- 23:45:24:4524 -- error: jwt expired
+2021-03-01 -- 23:45:24:4524 -- error: jwt expired
+2021-03-01 -- 23:45:24:4524 -- error: jwt expired
+2021-03-01 -- 23:45:24:4524 -- error: jwt expired
+2021-03-01 -- 23:45:24:4524 -- error: jwt expired
+2021-03-01 -- 23:45:24:4524 -- error: jwt expired

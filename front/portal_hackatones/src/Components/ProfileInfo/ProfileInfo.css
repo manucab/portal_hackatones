@@ -65,7 +65,7 @@
     }
     .profile .personal-info {
         grid-area: info;
-        font-size: 1.8vh;
+        font-size: 18px;
     }
     .edit-profile {
         grid-area: button

@@ -17,9 +17,6 @@
     justify-content: start;
   }
 
-  .hackathonsCreated h1 {
-    flex-basis: 100%;
-  }
 
   .hackSelection .hackathon {
     flex-shrink: 0;

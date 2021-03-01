@@ -5,6 +5,12 @@
     align-items: center;
 }
 
+.profile-page-container .carousel {
+
+    width: auto;
+
+}
+
 .carousel .hackathon {
     box-sizing: border-box;
     width: 200px;
