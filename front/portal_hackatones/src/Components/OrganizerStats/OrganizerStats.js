@@ -34,7 +34,7 @@ function OrganizerStats() {
 
   return (
     <div className="organizer-stats-section">
-      <h1>Tus estadísticas como organizador</h1>
+      <h1>Tus estadísticas <br></br> como organizador</h1>
       {showOrganizerStats(data)}
     </div>
   );
