@@ -35,6 +35,8 @@
 .hackathon-info-section div {
     word-wrap: break-word;
     max-width: 180px;
+    text-align: justify;
+    padding-left: 10px;
 }
 
 .hackathon-results {
