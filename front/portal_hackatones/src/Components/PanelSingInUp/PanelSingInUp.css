@@ -3,18 +3,16 @@
   border-radius: 15;
   padding: 5px;
   font-size: 12px;
-  min-height: 100%;
   margin: 0px auto 0px auto;
   padding-top: 65px;
   box-sizing: border-box;
   max-width: 1024px;
-  
+  width: 100%;
 }
 
 ul {
-
-    padding: 0;
-    list-style-type: none;
+  padding: 0;
+  list-style-type: none;
 }
 
 .tabs {
@@ -25,12 +23,12 @@ ul {
 }
 
 .tabs:hover {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 li a {
   /* color: #a3a4a6; */
-  color:black;
+  color: black;
   font-size: 16px;
 }
 
@@ -51,34 +49,33 @@ li.tabs a {
   box-sizing: border-box;
   width: 350px;
   height: 450px;
-  margin-top: 0px;
-  margin-left: auto;
-  margin-right: auto;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-55%);
   border: 1px solid #a3a4a6;
   border-radius: 15px;
   padding: 20px;
-  position: relative;
-  background-color: #a3a4a6a2;
-
+  position: absolute;
+  background-color: #f3ecb7;
 }
 
 .singInUp::before {
+  content: " ";
+  position: absolute;
+  height: 100%;
+  margin: 0px auto 0px auto ;
+  background-image: url("../../Media/Images/Others/book2.jpg");
+  background-size: cover;
+  background-position: top;
+  z-index: -2;
+  border-radius: 12px;
+  width: 100%;
+  left: 0;
+  top: 0;
 
-    content: " ";
-    position: absolute;
-    height: 100vh;
-    width: 100vw;
-    left: 0%;
-    top: 0;
-    background-image: url('../../Media/Images/General/bg-computer2.jpeg');
-    background-size: cover;
-    background-position: top;
-    z-index: -2;
-    border-radius: 12px;
 }
 
 .tabContainer::after {
-
   content: " ";
   position: absolute;
   height: 100%;
@@ -88,6 +85,4 @@ li.tabs a {
   background-color: rgba(255, 255, 255, 0.603);
   z-index: -1;
   border-radius: 12px;
-
-
 }
