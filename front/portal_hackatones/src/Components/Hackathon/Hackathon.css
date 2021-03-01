@@ -9,6 +9,6 @@
     font-size: calc(1em);
     background-color: rgb(252, 252, 252);
     box-sizing: border-box;
-display: flex;
-flex-direction: column;
+    display: flex;
+    flex-direction: column;
 }

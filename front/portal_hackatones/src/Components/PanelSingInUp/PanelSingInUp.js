@@ -1,12 +1,10 @@
 import { useState } from "react";
-import { useHistory, useLocation } from "react-router-dom";
+import { useHistory } from "react-router-dom";
 import Login from "../Login/Login";
 import Register from "../Register/Register";
 import "./PanelSingInUp.css";
 
 function PanelSingInUp() {
-  const history = useHistory();
-
   const [active, setActive] = useState("signup");
 
   const handleClassTab = (tab) => {

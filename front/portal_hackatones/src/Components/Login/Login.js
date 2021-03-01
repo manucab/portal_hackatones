@@ -37,7 +37,7 @@ function Login() {
     }
   };
 
-  if (login) return <Redirect to="/" />;
+  if (login) return <Redirect to={`/user/${login.user.id}`} />;
 
   return (
     <div className="login-page">
