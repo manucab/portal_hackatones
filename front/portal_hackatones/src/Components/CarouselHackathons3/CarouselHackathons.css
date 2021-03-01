@@ -5,14 +5,9 @@
     align-items: center;
     font-size: 12px;
     margin: 20px auto 10px auto;
-    /* border: 1px solid black; */
     border-radius: 10px;
     padding: 20px;
     width: 500px;
-    /* background: #FFEFBA; 
-background: -webkit-linear-gradient(to top, #FFFFFF, #FFEFBA); 
-background: linear-gradient(to top, #FFFFFF, #FFEFBA);  */
-
 }
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
@@ -152,9 +147,9 @@ justify-content: space-around;
   display: block;
   flex-grow: 2;
   overflow: hidden;
-  transition-duration: .6s ;
+  transition-duration: .4s ;
   animation-name: descriptionEffect;
-  animation-duration: .6s;
+  animation-duration: .4s;
   animation-timing-function: ease;
   animation-delay: 0s;
   animation-direction: normal;

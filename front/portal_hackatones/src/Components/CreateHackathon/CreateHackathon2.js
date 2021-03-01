@@ -160,6 +160,8 @@ setWebUrl(e.target.value);
 
     const handleListLinks = e => {
 
+
+
         const urlInList = links.map(link => link.link).includes(webUrl);
         setHasWeb(urlInList);
 
