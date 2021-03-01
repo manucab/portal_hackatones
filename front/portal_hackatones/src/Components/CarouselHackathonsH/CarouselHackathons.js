@@ -13,7 +13,6 @@ export function ShowHackathon({h}) {
     const organizer = h.organizer[0].organizer.name;
     const avatar = `http://localhost:3001/static` + h.organizer[0].organizer.avatar;
 
-
     return (
 
         <div className="hackathonCard">
@@ -42,8 +41,8 @@ export function ShowHackathon({h}) {
             <div className="dateCard">
                 
                 {
-                    'Empieza el ' + 
-                DateTime.fromISO(h.start_date).toISODate()
+                    'Inicio, ' + 
+                DateTime.fromISO(h.start_date).toFormat('DDD')
             }
             
             </div>

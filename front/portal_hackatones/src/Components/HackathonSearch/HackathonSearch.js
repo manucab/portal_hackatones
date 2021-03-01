@@ -9,9 +9,7 @@ import useFetch from '../../Hooks/useFetch';
 import {ShowHackathon} from '../CarouselHackathonsH/CarouselHackathons';
 import {useHistory} from 'react-router-dom';
 
-
 const queryString = require('query-string');
-
 
 function HackathonSearch() {
 
@@ -25,7 +23,6 @@ function HackathonSearch() {
     const [tech, setTech] = useState('');
     const [city, setCity] = useState('');
     const [thematic, setThematic] = useState('');
-
 
     const params = {
         start_date,
