@@ -1,9 +1,6 @@
-import {useEffect, useState} from "react"
+import {useState} from "react"
 import './CarouselHackathons.css'
-import arrow from '../../Media/Images/General/Arrow-down.svg'
-import useFetch from "../../Hooks/useFetch";
 import {DateTime} from "luxon";
-import Links from "../Links/Links";
 
 import arrowL from '../../Media/Images/General/arrowL.svg';
 import arrowR from '../../Media/Images/General/arrowR.svg';
@@ -16,13 +13,12 @@ export function ShowHackathon({h}) {
     const organizer = h.organizer[0].organizer.name;
     const avatar = `http://localhost:3001/static` + h.organizer[0].organizer.avatar;
 
-
     return (
 
         <div className="hackathonCard">
 
 <div className="photoCard">
-                <img className="" src={url} alt="photo-Hackathon"/>
+                <img src={url} alt="logo"/>
             </div>
             <div className="thematicCard">
             {
@@ -45,8 +41,8 @@ export function ShowHackathon({h}) {
             <div className="dateCard">
                 
                 {
-                    'Empieza el ' + 
-                DateTime.fromISO(h.start_date).toISODate()
+                    'Inicio, ' + 
+                DateTime.fromISO(h.start_date).toFormat('DDD')
             }
             
             </div>
@@ -93,6 +89,7 @@ function CarouselHackathons({hackathons}) {
         <div className="carousel">
             <img id="arrowCard"
                 src={arrowL}
+                alt="logo"
                 className={
                     isFirst ? 'off' : 'on'
                 }
@@ -101,6 +98,7 @@ function CarouselHackathons({hackathons}) {
         }
             <img id="arrowCard"
                 src={arrowR}
+                alt="logo"
                 className={
                     isLast ? 'off' : 'on'
                 }
