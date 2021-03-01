@@ -1,8 +1,8 @@
-import { createRef, useEffect, useState } from "react";
+import {  useEffect, useState } from "react";
 import useFetch from "../../Hooks/useFetch";
 import "./EditHackathon.css";
-import Select, { components } from "react-select";
-import { Redirect, useHistory, useParams } from "react-router-dom";
+import Select from "react-select";
+import { useHistory, useParams } from "react-router-dom";
 import CreatableSelect from "react-select/creatable";
 import { styleSelectPlace } from "./stylesSelect";
 import { DateTime } from "luxon";
@@ -43,14 +43,11 @@ function EditHackathon() {
   let tech = [];
 
   const handleTechSelected = (newValue, actionMeta) => {
-    console.log("newValue :>> ", newValue)
     tech = newValue.map((item) => item.value).flat();
-    console.log('tech', tech)
     setTechs(tech);
   };
 
   const handlePlaceSelected = (newValue) => {
-    console.log("newValue :>> ", newValue.value);
     findPlaceIndex = optionPlace.findIndex((x) => x.value === newValue.value);
     setPlaceIndex(findPlaceIndex);
     sethackathon_place(newValue.value);
@@ -71,7 +68,6 @@ function EditHackathon() {
     const fd = new FormData();
     const logo = e.target.cover_picture.files[0];
 
-    console.log(hackathon_place);
 
     if(logo) { fd.append("cover_picture", logo)} 
     fd.append("place", hackathon_place.trim());
@@ -84,8 +80,6 @@ function EditHackathon() {
     fd.append("techs", JSON.stringify(techs));
     fd.append("links", JSON.stringify(links));
 
-    console.log('techs>>',JSON.stringify(techs))
-    console.log('links>>>',JSON.stringify(links) )
 
     const headers = {
       // 'Content-Type': 'application/json',
@@ -199,7 +193,6 @@ function EditHackathon() {
       });
 
       setTechs(h[0].techs.map(t => t.tech))
-      console.log(h[0].thematic)
       setThematic(h[0].thematic.split(',').map(t => t))
 
     });

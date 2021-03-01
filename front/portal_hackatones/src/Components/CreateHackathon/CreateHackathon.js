@@ -117,9 +117,7 @@ function CreateHackathon() {
     }
 
     const handleRemoveLink = e => {
-        console.log('start_date :>> ', DateTime.fromISO(start_date).plus({hour: 1}).toFormat('yyyy-MM-dd  HH:mm:ss.000'));
         setLinks(links.filter(link => link.link !== e))
-
     }
 
 

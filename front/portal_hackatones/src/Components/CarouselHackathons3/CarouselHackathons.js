@@ -16,7 +16,6 @@ export function ShowHackathon({h}) {
     const organizer = h.organizer[0].organizer.name;
     const avatar = `http://localhost:3001/static` + h.organizer[0].organizer.avatar;
 
-    console.log('organizer :>> ', h.organizer[0].organizer);
 
     return (
 

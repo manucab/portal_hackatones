@@ -33,14 +33,12 @@ function StarRating (props) {
             method: 'PUT'
         })
         
-        console.log(ret.statusText)
         if(ret.status === 200){
     
             alert('¡Gracias por valorar el hackathon!');
             handleClose()
             window.location.reload();
         }
-
 
     }
 

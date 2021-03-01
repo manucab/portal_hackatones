@@ -13,7 +13,6 @@ function Hackathon() {
     if (! hackathon) 
         return 'Loadin ...';
     
-        console.log('hackathon :>> ', hackathon);
 
     return (
         <div className="hackathonId">

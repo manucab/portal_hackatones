@@ -4,22 +4,11 @@ import './HackathonBody.css';
 
 function HackathonBody({h}) {
 
-    console.log('h :>> ', h);
 
     const {organizer, hackathon_info, comment, cover_picture} = h;
     const orgz = organizer[0].organizer;
 
-    const commentUser = comment[0].comment;
-    const userCommet = comment[0].user.name;
-
-
-    console.log('comment :>> ', comment);
-    console.log('commentUser :>> ', commentUser);
-console.log('userCommet :>> ', userCommet);
-
-
     let url = `http://localhost:3001/static` + cover_picture || 'default.png' || '';
-
 
     return (
         <div className="hackathonBody">
@@ -31,8 +20,8 @@ console.log('userCommet :>> ', userCommet);
                 {
                 (comment) ? 
 
-                comment.map(com => 
-                    <Comments comment={com} />
+                comment.map((com, i )=> 
+                    <Comments key={com.user.id} comment={com} />
                 )
                 : 
                 <p className="noCommentP">Este hackathon no tiene comentarios</p>

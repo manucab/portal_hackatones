@@ -45,8 +45,6 @@ function Register() {
 
   const ret = useFetchPost(params, registerOk, url);
 
-  console.log("ret :>> ", ret);
-
   const clickBtnShowPassword = () => {
     showPassword ? setShowPassword(false) : setShowPassword(true);
   };
@@ -60,7 +58,6 @@ function Register() {
     e.target.value.length < 8
       ? setErrorPassword(true)
       : setErrorPassword(false);
-    console.log("e.target.value.length :>> ", e.target.value.length);
   };
 
   const handleSubmit = (e) => {

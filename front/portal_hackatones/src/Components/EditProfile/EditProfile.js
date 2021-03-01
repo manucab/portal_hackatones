@@ -30,8 +30,6 @@ function EditProfile(props) {
     const fd = new FormData();
     const logo = e.target.profile_picture.files[0];
 
-    console.log(logo);
-
     fd.append("profile_picture", logo);
     fd.append("email", email);
     fd.append("user_name", user_name);
@@ -68,7 +66,6 @@ function EditProfile(props) {
       handleClose();
       window.location.reload();
     } else {
-      console.log(ret.body);
       alert(ret.statusText);
     }
   };

@@ -47,8 +47,6 @@ function HeaderHack({h}) {
 
     const numIlustration = random(1, 10);
 
-    console.log('numIlustration :>> ', numIlustration);
-
     let url = `http://localhost:3001/static` + cover_picture || 'default.png' || '';
     let urlLgDate = 'http://localhost:3001/static/icons/clock-3.png';
     let urlLgModality = `http://localhost:3001/static/icons/${logoLocation}.png`;
@@ -70,7 +68,6 @@ function HeaderHack({h}) {
     hackathonsId = (data) ? data[1].map(hackathon => hackathon.id) : hackathonsId;
 
     if (ret && ret.status === 200) {
-        console.log('Felicidades te has registrado :>> ');
 
         return <Redirect to={
             `/user/${

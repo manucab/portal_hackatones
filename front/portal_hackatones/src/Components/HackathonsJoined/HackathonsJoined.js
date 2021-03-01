@@ -14,8 +14,6 @@ function HackathonsJoined () {
     
     if(!data) return 'Loading...'
     const hackathonsJoined = data[1]
-
-    console.log('data :>> ', data);
    
     return(
 

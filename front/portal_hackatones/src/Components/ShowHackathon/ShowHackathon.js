@@ -12,7 +12,6 @@ function ShowHackathon({ hackathon: h, organizer, index }) {
   const [cancelBooking, setCancelBooking] = useState(false);
   const login = useSelector((s) => s.login);
   const history = useHistory();
-  console.log(h)
   const url =
     `http://localhost:3001/static/` + h.cover_picture || "default.png";
   const startYear = h.start_date.split("-")[0];
@@ -72,7 +71,6 @@ function ShowHackathon({ hackathon: h, organizer, index }) {
     }
   };
 
-  console.log(h.cover_picture);
   return (
     <div className="hackathon">
       <div className="cover-picture" style={{backgroundImage:`url(${url})`}}></div>

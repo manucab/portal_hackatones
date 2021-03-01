@@ -113,12 +113,8 @@ function CreateHackathon() {
     const handleSubmit = async (e) => {
 
         if(hackathon_name && city && start_date && end_date && hackathon_info && thematic && links && techs && inputBrige ){
-            console.log('Estan todos los campos rellenos');
           await  postData(e);
-        }else{
-            console.log('No estan correctos');
         }
-        
         setIsSubmit(true);
     }
 
@@ -140,7 +136,6 @@ setWebUrl(e.target.value);
     }
 
     const handleRemoveLink = e => {
-        console.log('start_date :>> ', DateTime.fromISO(start_date).plus({hour: 1}).toFormat('yyyy-MM-dd  HH:mm:ss.000'));
         setLinks(links.filter(link => link.link !== e))
 
     }
