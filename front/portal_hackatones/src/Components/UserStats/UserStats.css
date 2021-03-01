@@ -35,5 +35,7 @@
 }
 
 .user-stats {
-    border: solid 5px #F6E561;
+    border-bottom: 5px solid #F6E561;
+    border-top: 5px solid #F6E561;
+
 }

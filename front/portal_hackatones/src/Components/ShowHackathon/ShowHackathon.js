@@ -103,7 +103,7 @@ function ShowHackathon({ hackathon: h, organizer, index }) {
       <div className="timeToContainer">
         {!hasEnded && (
           <div className="timeTo">
-            {daysTo > 1 ? `Quedan ${daysTo} días!!!` : `Queda 1 día!!!`}
+            {daysTo > 1 ? `Quedan ${daysTo} días!!!` : daysTo > 0? `Es el gran día!!!` : null}
           </div>
         )}
       </div>

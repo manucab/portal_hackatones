@@ -40,3 +40,19 @@
 .close-modal-button {
     margin: 10px;
 }
+
+.modal button {
+
+    background-color: #A3A4A6;
+    border: none;
+    border-radius: 20px;
+    height: 20px;
+
+}
+
+
+.modal button:hover {
+
+    background-color: #d7d7d8;
+
+}

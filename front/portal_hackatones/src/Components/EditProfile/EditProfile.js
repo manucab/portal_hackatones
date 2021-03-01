@@ -1,8 +1,8 @@
 import { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import useFetch from "../../Hooks/useFetch";
 import Acordeon from "../Acordeon/Acordeon";
 import "./EditProfile.css";
+// import Avatar from '../Avatar/Avatar'
 
 function EditProfile(props) {
   const login = useSelector((s) => s.login);
@@ -79,6 +79,7 @@ function EditProfile(props) {
   return (
     <div id="signup" className="signup">
       <form className="edit-profile-form" onSubmit={handleSubmit} method="put">
+        {/* <Avatar/> */}
         <div id="edit-profile-avatar">
           Selecciona la foto principal de la portada
           <input type="file" name="profile_picture" accept="image/*" />

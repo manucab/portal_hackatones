@@ -1,5 +1,6 @@
 .organizer-stats-section {
 
-border: solid 5px #f6e561
+border-top: solid 5px #f6e561;
+border-bottom: solid 5px #f6e561;
 
 }
