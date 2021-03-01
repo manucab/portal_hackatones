@@ -7,14 +7,13 @@ import useFetch from "../../Hooks/useFetch";
 import "./Posts.css";
 
 function Posts() {
-  const [search, setSearch] = useState()
+  const [search, setSearch] = useState();
   const [result, setResult] = useState();
   const history = useHistory();
 
   const posts = useFetch("http://localhost:3001/blog");
   if (!posts) return "Loading ...";
 
-  
   const handleSubmit = async (e) => {
     e.preventDefault();
 
@@ -41,7 +40,11 @@ function Posts() {
           onChange={(e) => setSearch(e.target.value)}
         ></input>
         <div className="serch-result-text">
-          {result ? `Se ${result.length>1?'han':'ha'} encontrado ${result.length} ${result.length>1?'artículos':'artículo'}` : null}
+          {result
+            ? `Se ${result.length > 1 ? "han" : "ha"} encontrado ${
+                result.length
+              } ${result.length > 1 ? "artículos" : "artículo"}`
+            : null}
         </div>
       </form>
 
@@ -88,7 +91,13 @@ function Posts() {
               `http://localhost:3001/static` + p.cover_picture || "default.png";
 
             return (
-              <div className="post" key={p.id}>
+              <div
+                className="post"
+                key={p.id}
+                onClick={() => {
+                  return history.push(`/blog/post/${p.id}`);
+                }}
+              >
                 <div className="post-title">
                   <h1>{p.title}</h1>
                 </div>

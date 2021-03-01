@@ -32,6 +32,11 @@
 
 }
 
+.hackathon-info-section div {
+    word-wrap: break-word;
+    max-width: 180px;
+}
+
 .hackathon-results {
     display: flex;
     justify-content: center;
