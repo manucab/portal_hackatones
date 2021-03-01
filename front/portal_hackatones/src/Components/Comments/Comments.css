@@ -13,7 +13,8 @@ text-align: left;
 border-radius: 5px;
 margin:0px;
 padding-left: 0px 0px 0px 2px;
-border-color: #dfda94;
+border-color: #b4c0b5;
+background-color: rgb(250, 248, 246);
 }
 
 .userComment > img{
@@ -23,6 +24,8 @@ border-color: #dfda94;
     margin-right: 5px;
 border: 1px solid black;    
     vertical-align: middle;
+background-color: rgb(250, 248, 246);
+
 }
 
 .userComment > span{

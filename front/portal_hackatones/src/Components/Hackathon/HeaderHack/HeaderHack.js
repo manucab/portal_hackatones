@@ -4,7 +4,6 @@ import {Redirect} from 'react-router-dom';
 import {useSelector} from 'react-redux';
 import {useState} from 'react';
 import useFetchPostEnrrol from '../../../Hooks/useFetchPostEnrrol';
-import useFetch from '../../../Hooks/useFetch';
 import useFetchExpiredJwt from '../../../Hooks/useFetchExpiredJwt';
 
 
@@ -28,13 +27,13 @@ function HeaderHack({h}) {
     let id_hackathon = id;
     let inscription_status = 'inscrito';
 
-    const dateStartTitle = DateTime.fromISO(start_date).setLocale('es').toFormat('DD');
-    const dataStartAside = DateTime.fromISO(start_date).setLocale('es').toFormat('DDDD');
+    // const dateStartTitle = DateTime.fromISO(start_date).setLocale('es').toFormat('DD');
+    // const dataStartAside = DateTime.fromISO(start_date).setLocale('es').toFormat('DDDD');
     const dayStart = DateTime.fromISO(start_date).setLocale('es').toFormat('d');
     const monthStart = DateTime.fromISO(start_date).setLocale('es').toFormat('LLLL');
     const year = DateTime.fromISO(start_date).setLocale('es').toFormat('yyyy');
 
-    const dataEndAside = DateTime.fromISO(end_date).setLocale('es').toFormat('d');
+    // const dataEndAside = DateTime.fromISO(end_date).setLocale('es').toFormat('d');
     const dayEnd = DateTime.fromISO(end_date).setLocale('es').toFormat('d');
     const monthEnd = DateTime.fromISO(end_date).setLocale('es').toFormat('LLLL');
 
