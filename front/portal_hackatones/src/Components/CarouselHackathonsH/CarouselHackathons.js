@@ -1,9 +1,6 @@
-import {useEffect, useState} from "react"
+import {useState} from "react"
 import './CarouselHackathons.css'
-import arrow from '../../Media/Images/General/Arrow-down.svg'
-import useFetch from "../../Hooks/useFetch";
 import {DateTime} from "luxon";
-import Links from "../Links/Links";
 
 import arrowL from '../../Media/Images/General/arrowL.svg';
 import arrowR from '../../Media/Images/General/arrowR.svg';
@@ -22,7 +19,7 @@ export function ShowHackathon({h}) {
         <div className="hackathonCard">
 
 <div className="photoCard">
-                <img className="" src={url} alt="photo-Hackathon"/>
+                <img src={url} alt="logo"/>
             </div>
             <div className="thematicCard">
             {
@@ -93,6 +90,7 @@ function CarouselHackathons({hackathons}) {
         <div className="carousel">
             <img id="arrowCard"
                 src={arrowL}
+                alt="logo"
                 className={
                     isFirst ? 'off' : 'on'
                 }
@@ -101,6 +99,7 @@ function CarouselHackathons({hackathons}) {
         }
             <img id="arrowCard"
                 src={arrowR}
+                alt="logo"
                 className={
                     isLast ? 'off' : 'on'
                 }

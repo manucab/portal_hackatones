@@ -1,7 +1,6 @@
-import {useEffect, useState} from "react"
+import {useState} from "react"
 import './CarouselHackathons.css'
 import arrow from '../../Media/Images/General/Arrow-down.svg'
-import useFetch from "../../Hooks/useFetch";
 import {DateTime} from "luxon";
 import Links from "../Links/Links";
 
@@ -102,6 +101,7 @@ function CarouselHackathons({hackathons}) {
         <div className="carousel">
             <img id="previous"
                 src={arrow}
+                alt="logo"
                 className={
                     isFirst ? 'off' : 'on'
                 }
@@ -110,6 +110,7 @@ function CarouselHackathons({hackathons}) {
         }
             <img id="next"
                 src={arrow}
+                alt="logo"
                 className={
                     isLast ? 'off' : 'on'
                 }

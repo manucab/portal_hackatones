@@ -6,7 +6,7 @@ import {DateTime} from "luxon";
 import './HackathonSearch.css';
 import {useState} from 'react';
 import useFetch from '../../Hooks/useFetch';
-import {ShowHackathon} from '../CarouselHackathons3/CarouselHackathons';
+import {ShowHackathon} from '../CarouselHackathonsH/CarouselHackathons';
 import {useHistory} from 'react-router-dom';
 
 
