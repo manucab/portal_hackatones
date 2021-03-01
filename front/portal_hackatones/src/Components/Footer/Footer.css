@@ -8,7 +8,7 @@
     border-top: 5px solid #F6E561;
     bottom:0px;
     padding:20px;
-    font-size: calc(1em + .1vw);
+    font-size: calc(1em + -.2vw);
     width: 100%;
     height: 65px;
     position:absolute;

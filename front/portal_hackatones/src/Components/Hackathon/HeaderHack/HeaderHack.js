@@ -94,7 +94,7 @@ function HeaderHack({h}) {
                     <img src={urlLogoTitle}
                         alt="logo-portada"/>
                 </div>
-                <div>
+                <div id="textTitle">
                     <h1>{hackathon_name}</h1>
                     <h4>{dateStartTitle}</h4>
                     <span><img id="logoCompany"
@@ -106,7 +106,6 @@ function HeaderHack({h}) {
 
             </div>
             <div className="hDataHack">
-                <h1></h1>
                 <p>
                     <img className="lgHack"
                         src={urlLgDate}
