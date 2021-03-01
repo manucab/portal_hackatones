@@ -5,6 +5,7 @@
     align-items: center;
     padding: 10px;
     border-bottom: 5px solid #a3a4a6;
+   
 }
 
 .personal-info {
@@ -49,12 +50,13 @@
         margin: 0;
         align-content: space-around ;
         justify-items: center; 
-        background-color: white;          
+        background-color: white;  
+        padding: 0px 10px 0px 10px;
+                
     }
 
     .profile h1 {
         grid-area: header;
-        margin-top: 0;
     }
 
     .profile .avatar {

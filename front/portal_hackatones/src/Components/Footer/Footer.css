@@ -11,7 +11,7 @@
     font-size: calc(.9em);
     width: 100%;
     height: 65px;
-    position:absolute;
+    position:fixed;
 }
 
 .footer div span {

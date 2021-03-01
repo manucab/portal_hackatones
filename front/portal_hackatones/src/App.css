@@ -10,8 +10,19 @@
 
 .App {
   text-align: center;
+  padding-top: 50px;
+  padding-bottom: 60px;
+  /* width: 360px; */
+  /* margin-left: 50px;
+  margin-top: 50px; */
+  /* position: relative; */
+  /* height: max-content;
+  width: max-content; */
+  /* padding-bottom: 60px; */
+  /* overflow: scroll; */
   height: 100%;
-box-sizing: border-box;
+  box-sizing: border-box;
+
 }
 
 

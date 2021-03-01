@@ -1,6 +1,11 @@
 .organizer-stats-section {
 
-border-top: solid 5px #f6e561;
-border-bottom: solid 5px #f6e561;
+    border-top: solid 5px #f6e561;
+    border-bottom: solid 5px #f6e561;
+   
 
+}
+
+.organizer-stats-section h1 {
+    word-wrap: break-word;
 }

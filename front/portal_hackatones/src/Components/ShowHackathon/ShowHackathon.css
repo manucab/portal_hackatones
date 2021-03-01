@@ -21,6 +21,7 @@
         /* flex-wrap: nowrap; */
         width: 80vw;
         overflow-x: auto;
+        justify-content: center;
 
     }
 
@@ -46,6 +47,7 @@
         margin: 5px 10% 25px 10%;
         min-height: 375px;
     }
+    
 
 
 

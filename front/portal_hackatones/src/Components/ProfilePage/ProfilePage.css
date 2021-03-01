@@ -1,6 +1,6 @@
 .profile-page-container {
-    padding-top: 40px;
-    padding-bottom: 60px;
+    /* padding-top: 40px; */
+    /* padding-bottom: 60px; */
     white-space: nowrap;
 }
 
@@ -16,19 +16,17 @@
 
 @media screen and (min-width: 768px) {
     .profile-page-container{
-        width: 100vw;
+        
         display: grid;
-        grid-template-columns: 33% 33% 33%;
+        grid-template-columns: 1fr 1fr;
         grid-template-rows: auto ;
         grid-template-areas:
             "profile userStats userStats"
             "profile organizerStats organizerStats"
             "hackathonsJoined hackathonsJoined hackathonsJoined"
             "hackathonsCreated hackathonsCreated hackathonsCreated"
-            "logout logout logout"
         ;
-        height: 100%;
-   
+        
         /* background: linear-gradient(60deg,#F6E561,white,white,white, #F6E561); */
     }
 
@@ -42,8 +40,10 @@
         grid-area: userStats;
         background-color: #a3a4a6c7;
         border: none;
- 
+       
     }
+
+
     .organizer-stats-section{
         grid-area: organizerStats;
         background-color: #a3a4a6c7;
