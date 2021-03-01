@@ -17,12 +17,15 @@
 .star-rating-buttons {
     display: flex;
     justify-content: center;
-    margin: px;
+    margin: 10px;
 }
+
+
 
 .star-rating-buttons button span {
     font-size: 200%;
     color: #A3A4A6;
+   
 }
 
 .star-rating-buttons button span:hover {
@@ -35,6 +38,7 @@
     outline: none;
     cursor: pointer;
 }
+
 
 .rate-text {
     color: black;

@@ -32,6 +32,7 @@ function ProfileInfo () {
     const data = useFetch(`http://localhost:3001/user/${id}`)
 
     const [show,setShow] = useState(false)
+    const [change , setChange] = useState(0)
         
     if(!data) return 'Loading...' 
     if (!login) return <Redirect to="/" />
@@ -48,6 +49,7 @@ function ProfileInfo () {
     const handleClose = (e) => {
         
         setShow(false)
+        setChange(change + 1)
     }
 
 

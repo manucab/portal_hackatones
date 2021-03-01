@@ -45,7 +45,7 @@ const getProfileInfo = async (id) => {
     const queryAvgParticipants = `select round((count(a.id_competitor)/count(distinct b.id)),0) avg_participants
       from competitor_hackathon a
       right join hackathon b on a.id_hackathon = b.id 
-      where b.id_organizer = 2 and not a.inscription_status = 'cancelado'`
+      where b.id_organizer = ? and not a.inscription_status = 'cancelado'`
     
       
     
