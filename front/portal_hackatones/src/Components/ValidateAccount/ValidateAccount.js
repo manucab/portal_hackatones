@@ -12,8 +12,8 @@ function ValidateAccount() {
     if (! ret) 
         return 'loading...';
     
-    return (
-        <div className="validateAccount">
+     return (
+       <div className="validateAccount">
             {
             ret.status === 500 && alert('Upss algo a fallado')
         }
