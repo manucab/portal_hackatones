@@ -18,7 +18,7 @@ const performQuery = async(query, params) => {
         throw new Error(msgError);
     } finally {
         if (connection) {
-            connection.release();
+            connection.destroy();
         }
     }
 };
