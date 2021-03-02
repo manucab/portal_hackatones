@@ -95,6 +95,10 @@ function ShowHackathon({ hackathon: h, organizer, index }) {
           {h.techs}
         </div>
         <div>
+          <strong>Temática: </strong>
+          {h.thematic}
+        </div>
+        <div>
           <strong>Estado Hackathon:</strong> {h.hackathon_status}
         </div>
       </div>

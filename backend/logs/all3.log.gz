@@ -9010,3 +9010,59 @@
 2021-03-02 -- 11:46:36:4636 -- http: GET -- /user/2 -- 006cd34e-3387-49eb-8a83-9cd58e68a47f -- 304 -- - - 12.007 ms
 2021-03-02 -- 11:46:36:4636 -- http: GET -- /user/2 -- b6b39cc5-ff31-48e1-973b-2747c937175b -- 304 -- - - 15.036 ms
 2021-03-02 -- 11:46:36:4636 -- http: GET -- /static//hackathons/177a56cb-8ed0-40b4-8543-8b59a44b03f5/62ea24ec0a_pexels-fauxels-3183132.jpg -- ac4b1d2a-739f-4290-ae29-7240df78fd76 -- 304 -- - - 0.770 ms
+2021-03-02 -- 11:55:00:550 -- info: listening on port 3001
+2021-03-02 -- 11:59:54:5954 -- info: Init transaction query
+2021-03-02 -- 11:59:54:5954 -- info: commit
+2021-03-02 -- 11:59:54:5954 -- http: GET -- /info/listTech -- af8ea05d-ad80-4cf1-b123-742302e240cd -- 304 -- - - 16.798 ms
+2021-03-02 -- 11:59:54:5954 -- info: Init transaction query
+2021-03-02 -- 11:59:54:5954 -- info: commit
+2021-03-02 -- 11:59:54:5954 -- http: GET -- /info/listThematics -- 1d2c1252-1ca6-47d2-84c5-f1fb8836a583 -- 304 -- - - 23.895 ms
+2021-03-02 -- 12:03:10:310 -- info: Is organizer and state ACTIVE
+2021-03-02 -- 12:03:10:310 -- debug: Validate fields ok!!
+2021-03-02 -- 12:03:10:310 -- info: Init transaction query
+2021-03-02 -- 12:03:10:310 -- debug: Insert into tables tech and hackathon_tech OK!!
+2021-03-02 -- 12:03:10:310 -- debug: Insert into tables lin and hackathon_link OK!!
+2021-03-02 -- 12:03:10:310 -- info: commit
+2021-03-02 -- 12:03:10:310 -- debug: Create new hackathon successfully
+2021-03-02 -- 12:03:10:310 -- http: POST -- /createhackathon -- 2 -- 200 -- 33 - 438.281 ms
+2021-03-02 -- 12:03:12:312 -- http: GET -- /user/2 -- 83e82456-c6e1-4a2e-8ad0-9c93e71b21d0 -- 200 -- 1496 - 13.993 ms
+2021-03-02 -- 12:03:12:312 -- http: GET -- /user/2 -- e98600a1-efe4-402c-9b9e-e8d625ab7160 -- 304 -- - - 13.040 ms
+2021-03-02 -- 12:03:12:312 -- http: GET -- /user/2 -- 252da8bf-e5f9-4fd2-bcaa-61a4f9ac0c59 -- 304 -- - - 12.201 ms
+2021-03-02 -- 12:03:12:312 -- http: GET -- /user/2 -- a06c0ab4-ed77-4971-bce9-e7fab0dddf88 -- 304 -- - - 11.223 ms
+2021-03-02 -- 12:03:12:312 -- http: GET -- /user/2 -- 25baf063-3cbc-4b3f-aee0-fa6a4a11d4da -- 304 -- - - 19.371 ms
+2021-03-02 -- 12:03:12:312 -- http: GET -- /user/2 -- e82a2dab-b8cb-4353-b592-78209f68596f -- 304 -- - - 19.812 ms
+2021-03-02 -- 12:03:12:312 -- http: GET -- /static//hackathons/8ccb054e-f789-4cab-b577-0e0b53e5c591/43f030cb59_pexels-tembela-bohle-1884576.jpg -- b7342927-04a1-4d43-ace9-dff6860e19d9 -- 200 -- 4634144 - 7.480 ms
+2021-03-02 -- 12:03:12:312 -- http: GET -- /static//hackathons/177a56cb-8ed0-40b4-8543-8b59a44b03f5/62ea24ec0a_pexels-fauxels-3183132.jpg -- 08eabf2d-e5be-4065-a478-09221409c974 -- 200 -- 5228812 - 3.573 ms
+2021-03-02 -- 12:03:12:312 -- http: GET -- /static/users/84f5e317-8741-4a36-9706-158131a7a7b3/12efe0a4ea_edit_logo.png -- 5e217ca7-ddd6-4ff8-9ab5-311ae9064a5e -- 304 -- - - 1.162 ms
+2021-03-02 -- 12:07:01:71 -- info: listening on port 3001
+2021-03-02 -- 12:07:08:78 -- http: GET -- /user/2 -- 3399ffcd-0620-410c-b9c0-c948f6915776 -- 200 -- 1496 - 28.332 ms
+2021-03-02 -- 12:07:08:78 -- http: GET -- /user/2 -- 086e92d6-d756-4284-aa38-965a34450439 -- 304 -- - - 13.090 ms
+2021-03-02 -- 12:07:08:78 -- http: GET -- /user/2 -- 6d216d57-4df3-4922-9c54-6f658c45a3e4 -- 304 -- - - 13.554 ms
+2021-03-02 -- 12:07:09:79 -- http: GET -- /user/2 -- aac60a59-4413-45a5-97a2-82b8c10054a2 -- 304 -- - - 11.209 ms
+2021-03-02 -- 12:07:09:79 -- http: GET -- /user/2 -- 434a7a17-ca83-4888-ad44-95853179f61c -- 304 -- - - 13.103 ms
+2021-03-02 -- 12:07:09:79 -- http: GET -- /static/users/84f5e317-8741-4a36-9706-158131a7a7b3/12efe0a4ea_edit_logo.png -- bf49483b-0c4a-4ca1-9b31-c5b9123b125e -- 304 -- - - 6.985 ms
+2021-03-02 -- 12:07:09:79 -- http: GET -- /user/2 -- 4f1ba30a-a9f3-4df8-9ae3-5b05b06c290c -- 304 -- - - 17.645 ms
+2021-03-02 -- 12:07:09:79 -- http: GET -- /user/2 -- 700008d1-4e6b-4035-a593-cce0d61297df -- 304 -- - - 12.898 ms
+2021-03-02 -- 12:07:09:79 -- http: GET -- /static//hackathons/8ccb054e-f789-4cab-b577-0e0b53e5c591/43f030cb59_pexels-tembela-bohle-1884576.jpg -- 1cdfebaf-8c0d-4176-ba2c-9281654fc686 -- 200 -- 4634144 - 3.153 ms
+2021-03-02 -- 12:07:09:79 -- http: GET -- /static//hackathons/177a56cb-8ed0-40b4-8543-8b59a44b03f5/62ea24ec0a_pexels-fauxels-3183132.jpg -- 2594e33a-83f2-45a0-b998-75db48d4aaf1 -- 200 -- 5228812 - 1.612 ms
+2021-03-02 -- 12:10:38:1038 -- http: GET -- /user/2 -- 8c298b08-c905-4dc8-9ff2-10cb0050d459 -- 200 -- 1497 - 13.379 ms
+2021-03-02 -- 12:10:38:1038 -- http: GET -- /user/2 -- dba8ef6d-c2d0-4f57-bb80-d8eb695a7dc8 -- 304 -- - - 14.317 ms
+2021-03-02 -- 12:10:38:1038 -- http: GET -- /user/2 -- 64be0a6f-375e-4537-958b-3d736383f12a -- 304 -- - - 16.815 ms
+2021-03-02 -- 12:10:38:1038 -- http: GET -- /user/2 -- 0014542b-6527-4ba6-af29-4cd57d64c87a -- 304 -- - - 11.851 ms
+2021-03-02 -- 12:10:38:1038 -- http: GET -- /user/2 -- da1482c5-a719-469f-bf22-101f4748a859 -- 304 -- - - 11.176 ms
+2021-03-02 -- 12:10:38:1038 -- http: GET -- /user/2 -- f77cf580-42b8-47e9-a60d-29fd07e61ec3 -- 304 -- - - 11.876 ms
+2021-03-02 -- 12:10:38:1038 -- http: GET -- /static/users/84f5e317-8741-4a36-9706-158131a7a7b3/12efe0a4ea_edit_logo.png -- bc99a76b-aa84-48d1-aa72-03ebfdb422bc -- 304 -- - - 1.536 ms
+2021-03-02 -- 12:10:38:1038 -- http: GET -- /user/2 -- ae09b924-a3f6-4ebe-8874-c843a5d9a77d -- 304 -- - - 13.575 ms
+2021-03-02 -- 12:10:38:1038 -- http: GET -- /static//hackathons/8ccb054e-f789-4cab-b577-0e0b53e5c591/43f030cb59_pexels-tembela-bohle-1884576.jpg -- 7c23a695-81c2-4d32-895d-5210d822e40c -- 304 -- - - 0.652 ms
+2021-03-02 -- 12:10:38:1038 -- http: GET -- /static//hackathons/177a56cb-8ed0-40b4-8543-8b59a44b03f5/62ea24ec0a_pexels-fauxels-3183132.jpg -- 84b56520-7aa0-48a6-9455-14e5837ef1b0 -- 304 -- - - 0.980 ms
+2021-03-02 -- 12:15:42:1542 -- http: GET -- /static//hackathons/8ccb054e-f789-4cab-b577-0e0b53e5c591/43f030cb59_pexels-tembela-bohle-1884576.jpg -- 5ba4e1f8-3180-4bb9-afd2-01c69b0f0ffc -- 200 -- 4634144 - 1.043 ms
+2021-03-02 -- 12:16:14:1614 -- http: GET -- /user/2 -- 444f6be5-1a58-470e-be36-a5e12ddf12fc -- 304 -- - - 13.060 ms
+2021-03-02 -- 12:16:14:1614 -- http: GET -- /user/2 -- a9b57dcc-da58-4bf6-b263-69ac795e7e21 -- 304 -- - - 15.741 ms
+2021-03-02 -- 12:16:14:1614 -- http: GET -- /user/2 -- b2208601-8a6e-4e50-92f1-f9619cec6867 -- 304 -- - - 10.756 ms
+2021-03-02 -- 12:16:14:1614 -- http: GET -- /user/2 -- 6de03e18-9560-4805-930b-6d692dab7f74 -- 304 -- - - 19.569 ms
+2021-03-02 -- 12:16:14:1614 -- http: GET -- /static/users/84f5e317-8741-4a36-9706-158131a7a7b3/12efe0a4ea_edit_logo.png -- 9fed0db4-589b-4190-83f2-81934de7f915 -- 304 -- - - 11.700 ms
+2021-03-02 -- 12:16:14:1614 -- http: GET -- /user/2 -- 075105cd-7c08-4797-a12e-3ce026ce68e7 -- 304 -- - - 9.925 ms
+2021-03-02 -- 12:16:15:1615 -- http: GET -- /user/2 -- 6767053c-2466-4b09-95d6-fe955d3ee120 -- 304 -- - - 10.822 ms
+2021-03-02 -- 12:16:15:1615 -- http: GET -- /user/2 -- 5595ca82-6b4e-4db2-b833-e3c2d811baed -- 304 -- - - 13.204 ms
+2021-03-02 -- 12:16:15:1615 -- http: GET -- /static//hackathons/8ccb054e-f789-4cab-b577-0e0b53e5c591/43f030cb59_pexels-tembela-bohle-1884576.jpg -- 1a71095b-1214-4827-82e1-b2d498ace49b -- 304 -- - - 0.553 ms
+2021-03-02 -- 12:16:15:1615 -- http: GET -- /static//hackathons/177a56cb-8ed0-40b4-8543-8b59a44b03f5/62ea24ec0a_pexels-fauxels-3183132.jpg -- ccf1b4ec-be85-40ff-80a1-3a72bb5231d5 -- 304 -- - - 0.602 ms
