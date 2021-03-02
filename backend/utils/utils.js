@@ -48,7 +48,7 @@ const sendWelcome = async(email, code) => {
     const message = {
         to: email,
         from: 'furboenvena10@gmail.com',
-        subject: 'Bienvenido a hackathon play!',
+        subject: 'Bienvenido a Hackathon Place!',
         text: `Hola ya formas parte de nuestra familia...`,
         html: schemaWelcome(email, code),
     };

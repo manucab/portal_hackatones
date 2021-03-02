@@ -1167,3 +1167,29 @@
 2021-03-01 -- 23:45:24:4524 -- error: jwt expired
 2021-03-01 -- 23:45:24:4524 -- error: jwt expired
 2021-03-01 -- 23:45:24:4524 -- error: jwt expired
+2021-03-02 -- 12:15:05:155 -- error: Duplicate entry 'Java' for key 'tech.tech_name'
+2021-03-02 -- 12:15:06:156 -- error:  Error in create new a hackathon: Duplicate entry 'Java' for key 'tech.tech_name' 
+2021-03-02 -- 12:15:08:158 -- error: Duplicate entry 'https://musicalia.com' for key 'link.url'
+2021-03-02 -- 12:15:08:158 -- error:  Error in create new a hackathon: Duplicate entry 'https://musicalia.com' for key 'link.url' 
+2021-03-02 -- 12:23:18:2318 -- error: Lock wait timeout exceeded; try restarting transaction
+2021-03-02 -- 12:23:18:2318 -- error:  Error in create new a hackathon: Lock wait timeout exceeded; try restarting transaction 
+2021-03-02 -- 12:25:11:2511 -- error: Lock wait timeout exceeded; try restarting transaction
+2021-03-02 -- 12:25:11:2511 -- error:  Error in create new a hackathon: Lock wait timeout exceeded; try restarting transaction 
+2021-03-02 -- 12:34:20:3420 -- error: Duplicate entry 'Java' for key 'tech.tech_name'
+2021-03-02 -- 12:34:20:3420 -- error:  Error in create new a hackathon: Duplicate entry 'Java' for key 'tech.tech_name' 
+2021-03-02 -- 12:38:36:3836 -- error: Lock wait timeout exceeded; try restarting transaction
+2021-03-02 -- 12:38:36:3836 -- error:  Error in create new a hackathon: Lock wait timeout exceeded; try restarting transaction 
+2021-03-02 -- 12:40:58:4058 -- error: Lock wait timeout exceeded; try restarting transaction
+2021-03-02 -- 12:40:58:4058 -- error:  Error in create new a hackathon: Lock wait timeout exceeded; try restarting transaction 
+2021-03-02 -- 12:55:09:559 -- error: Duplicate entry 'React' for key 'tech.tech_name'
+2021-03-02 -- 12:55:09:559 -- error:  Error in create new a hackathon: Duplicate entry 'React' for key 'tech.tech_name' 
+2021-03-02 -- 13:05:55:555 -- error: Cannot read property 'trim' of null
+2021-03-02 -- 13:06:20:620 -- error: Duplicate entry 'javascript' for key 'tech.tech_name'
+2021-03-02 -- 13:06:20:620 -- error: Duplicate entry 'javascript' for key 'tech.tech_name'
+2021-03-02 -- 13:06:44:644 -- error: Cannot read property 'trim' of null
+2021-03-02 -- 13:09:20:920 -- error: Lock wait timeout exceeded; try restarting transaction
+2021-03-02 -- 13:09:20:920 -- error:  Error in create new a hackathon: Lock wait timeout exceeded; try restarting transaction 
+2021-03-02 -- 13:15:44:1544 -- error: Duplicate entry 'javascript' for key 'tech.tech_name'
+2021-03-02 -- 13:15:44:1544 -- error: Duplicate entry 'javascript' for key 'tech.tech_name'
+2021-03-02 -- 13:17:12:1712 -- error: Lock wait timeout exceeded; try restarting transaction
+2021-03-02 -- 13:17:12:1712 -- error: Lock wait timeout exceeded; try restarting transaction

@@ -1,5 +1,4 @@
-import {useEffect, useState} from "react";
-import {useParams} from "react-router";
+import {Redirect, useParams} from "react-router";
 import useActiveAccount from "../../Hooks/useActiveAccount";
 
 function ValidateAccount() {
@@ -7,38 +6,27 @@ function ValidateAccount() {
     const {id, code} = useParams();
     let urlValidateAccount = `http://localhost:3001/user/validate/${id}/${code}`
 
+
     const ret = useActiveAccount(urlValidateAccount);
 
-    if (! ret) 
-        return 'loading...';
+    if (! ret)  return 'loading...';
     
+     return (
+       <div className="validateAccount">
+            {
+            ret.status === 500 && alert('Upss algo a fallado')
+        }
 
-    return (
-        <div className="validateAccount">
-            <ShowValideMsg state={
-                ret.status
-            }/>
+            {
+            ret.status === 406 && alert('Su cuanta ya estaba activada')
+        }
+
+            {
+            ret.status === 200 && alert('Su cuenta ha sido activada satisfactoriamente')
+        }
+
+            <Redirect to="/"/>
         </div>
-    )
-}
-
-
-function ShowValideMsg({state}) {
-
-    return (
-
-        <div> {
-            state === 500 && <p>Upss algo a fallado</p>
-        }
-
-            {
-            state === 406 && <p>Su cuanta ya estaba activada</p>
-        }
-
-            {
-            state === 200 && <p>Su cuenta ha sido activada satisfactoriamente</p>
-        } </div>
-
     )
 }
 

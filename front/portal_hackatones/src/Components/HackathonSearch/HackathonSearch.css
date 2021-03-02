@@ -47,8 +47,8 @@
 flex-wrap: wrap;
     padding: 5px;
     position: relative;
-    background-color: #c0c0c0;
-border: 2px solid #F6E561;
+    background-color: #eeeeee;
+border: 2px solid #e0dcc2;
     box-sizing: content-box;
     font-size: calc(.7em);
 

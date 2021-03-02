@@ -12,6 +12,10 @@
       let valuesTech = [];
       let id_notExist = [];
 
+
+      console.log('tech :>> ', tech);
+      console.log('id_hackathon :>> ', id_hackathon);
+
       // Fucntion for prepara string query mysql, amoung of values as ? or a pair (?,?)
       const getParams = (len, format) => Array(len).fill(`${format}`).join();
 
@@ -20,6 +24,9 @@
 
       // 2.  Get the tech that exist in db
       id_exist = await getTechDB(tech, params);
+
+    console.log('id_exist :>> ', id_exist);
+
 
       // 3. Check if exist new tech
       if (id_exist.length < tech.length) {
@@ -49,9 +56,13 @@
       // 9. Prepare params of string query values (id_hackathon, tech))
       params = getParams(id_tech.length, '(?,?)');
 
+
+
       // Prepare values to format of query (id_hackathon, tech) values (), (), ()
       id_tech.forEach(item => valuesTech.push(id_hackathon, item));
 
+
+      console.log('valuesTech :>> ', valuesTech);
 
 
       // Insert into table new hackathon_tech

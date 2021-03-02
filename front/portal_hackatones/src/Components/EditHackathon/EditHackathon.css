@@ -3,10 +3,12 @@
     text-align: left;
     display: flex;
     flex-direction: column;
-    padding: 5px;
+    padding-top: 55px;
+    padding-bottom: 55px;
+
 }
 
-.createHackathon, input{
+.createHackathon > input{
     /* border-radius: 10px; */
     font-size: 12px;
     padding: 2px;

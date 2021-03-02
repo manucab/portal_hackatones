@@ -185,7 +185,7 @@ const schemaWelcome = (email, link) => {
                       <td valign="top" align="center" style="padding:0;Margin:0;width:560px">
                        <table width="100%" cellspacing="0" cellpadding="0" role="presentation" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px">
                          <tr style="border-collapse:collapse">
-                          <td class="es-m-txt-c" align="left" style="padding:0;Margin:0;padding-bottom:20px"><h1 style="Margin:0;line-height:36px;mso-line-height-rule:exactly;font-family:helvetica, 'helvetica neue', arial, verdana, sans-serif;font-size:30px;font-style:normal;font-weight:normal;color:#342F2D;text-align:center">WELCOME HACKATHON PLAY<br></h1></td>
+                          <td class="es-m-txt-c" align="left" style="padding:0;Margin:0;padding-bottom:20px"><h1 style="Margin:0;line-height:36px;mso-line-height-rule:exactly;font-family:helvetica, 'helvetica neue', arial, verdana, sans-serif;font-size:30px;font-style:normal;font-weight:normal;color:#342F2D;text-align:center">WELCOME HACKATHON PLACE<br></h1></td>
                          </tr>
                          <tr style="border-collapse:collapse">
                           <td class="es-m-txt-c" align="left" style="padding:0;Margin:0"><h3 style="Margin:0;line-height:22px;mso-line-height-rule:exactly;font-family:helvetica, 'helvetica neue', arial, verdana, sans-serif;font-size:18px;font-style:normal;font-weight:normal;color:#6AA38B;text-align:center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium iste ipsa numquam odio dolores, nam.</h3></td>
