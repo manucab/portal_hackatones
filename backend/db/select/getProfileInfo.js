@@ -6,7 +6,7 @@ const getProfileInfo = async (id) => {
   
     //Other option is have previous hackathons in a different variable than future hackathons
     const queryHackathonsParticipations = `select a.id ,a.hackathon_name, a.hackathon_place,a.city,a.hackathon_status,a.start_date, a.end_date,a.thematic,a.cover_picture,
-      b.inscription_status, b.ranking,b.id_competitor,b.rate,group_concat(distinct d.tech_name separator ',') as techs 
+      b.inscription_status, b.ranking,b.id_competitor,b.rate,group_concat( distinct d.tech_name separator ',') as techs 
       from hackathon a 
       join competitor_hackathon b on a.id=b.id_hackathon
       join hackathon_tech c on c.id_hackathon = b.id_hackathon

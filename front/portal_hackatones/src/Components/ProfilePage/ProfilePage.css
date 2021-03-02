@@ -79,6 +79,14 @@
     }
 
 
+
+    .profile-page-container .modalContent {
+        
+        width: 350px;
+
+    }
+
+
     .stats-section {
         justify-content: space-evenly;
     }

@@ -71,8 +71,7 @@ function Posts() {
                 <div className="post-date">
                   <h6>Publicación: {date}</h6>
                 </div>
-                <div className="post-cover">
-                  <img src={url} alt="cover picture" />
+                <div className="post-cover" style={{backgroundImage:'url('+url+')'}}>
                 </div>
                 <div className="post-content">
                   <p>{p.content}</p>
@@ -104,8 +103,7 @@ function Posts() {
                 <div className="post-date">
                   <h6>Publicación: {date}</h6>
                 </div>
-                <div className="post-cover">
-                  <img src={url} alt="cover picture" />
+                <div className="post-cover" style={{backgroundImage:'url('+url+')'}}>
                 </div>
                 <div className="post-content">
                   <p>{p.content}</p>
