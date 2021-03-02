@@ -6,7 +6,7 @@ const getProfileInfo = async (id) => {
   
     //Other option is have previous hackathons in a different variable than future hackathons
     const queryHackathonsParticipations = `select a.id ,a.hackathon_name, a.hackathon_place,a.city,a.hackathon_status,a.start_date, a.end_date,a.thematic,a.cover_picture,
-      b.inscription_status, b.ranking,b.id_competitor,b.rate,group_concat(d.tech_name separator ',') as techs 
+      b.inscription_status, b.ranking,b.id_competitor,b.rate,group_concat(distinct d.tech_name separator ',') as techs 
       from hackathon a 
       join competitor_hackathon b on a.id=b.id_hackathon
       join hackathon_tech c on c.id_hackathon = b.id_hackathon
@@ -15,7 +15,7 @@ const getProfileInfo = async (id) => {
       group by a.id order by a.start_date desc`;
     
     const queryHackathonsCreated = `select a.id ,a.hackathon_name, a.hackathon_place,a.city,a.hackathon_status,a.start_date, a.end_date,a.thematic,a.cover_picture,
-      group_concat(d.tech_name separator ',') as techs,
+      group_concat(distinct d.tech_name separator ',') as techs,
       round(avg(e.rate),1) as avg_rate,
       count(distinct e.id_competitor) as participants
       from hackathon a 
@@ -45,7 +45,7 @@ const getProfileInfo = async (id) => {
     const queryAvgParticipants = `select round((count(a.id_competitor)/count(distinct b.id)),0) avg_participants
       from competitor_hackathon a
       right join hackathon b on a.id_hackathon = b.id 
-      where b.id_organizer = ? and not a.inscription_status = 'cancelado'`
+      where b.id_organizer = ? and not a.inscription_status = 'cancelado' and not b.hackathon_status = 'cancelado'`
     
       
     

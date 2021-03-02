@@ -17,6 +17,12 @@
     justify-content: start;
   }
 
+  .hackSelection p{
+    margin: auto;
+    margin-bottom: 10px;
+  }
+
+
 
   .hackSelection .hackathon {
     flex-shrink: 0;
