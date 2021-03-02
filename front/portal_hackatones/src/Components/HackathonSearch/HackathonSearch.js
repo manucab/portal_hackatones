@@ -43,6 +43,7 @@ function HackathonSearch() {
 
     if (! listhackathons) 
         return 'Loading ...';
+
     
     const handleModality = (value) => {
         sethackathon_place(value);

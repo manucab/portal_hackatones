@@ -9,8 +9,7 @@ function ValidateAccount() {
 
     const ret = useActiveAccount(urlValidateAccount);
 
-    if (! ret) 
-        return 'loading...';
+    if (! ret)  return 'loading...';
     
      return (
        <div className="validateAccount">
